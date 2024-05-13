@@ -1,0 +1,44 @@
+{
+  "collapse-filter": false,
+  "search": "  -path:Excalidraw",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "tag:#Chemistry  ",
+      "color": {
+        "a": 1,
+        "rgb": 12903711
+      }
+    },
+    {
+      "query": "tag:#Mathematics  ",
+      "color": {
+        "a": 1,
+        "rgb": 4948957
+      }
+    },
+    {
+      "query": "tag:#Physics  ",
+      "color": {
+        "a": 1,
+        "rgb": 12258316
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": -0.9,
+  "nodeSizeMultiplier": 1.34567704426107,
+  "lineSizeMultiplier": 0.595789572393098,
+  "collapse-forces": true,
+  "centerStrength": 0.371249062265566,
+  "repelStrength": 14.7468117029257,
+  "linkStrength": 0.680326331582896,
+  "linkDistance": 147,
+  "scale": 0.7228597136751134,
+  "close": false
+}

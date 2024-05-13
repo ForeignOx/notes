@@ -1,0 +1,1 @@
+Let $(G,*)$ and $(H,\circ)$ be [[groups]]. A group homomorphism is a function $p:G\to H$ that preserves the group structure. That is, a function for which $p(g_{1}*g_{2})=p(g_{1})\circ p(g_{2}), \forall g_{1},g_{2} \in G$
