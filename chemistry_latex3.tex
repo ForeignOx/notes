@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{chemfig}
+\usepackage{geometry}
+\geometry{a3paper, landscape, margin=0.5cm}
+\usepackage{xcolor}
+\begin{document}
+\definecolor{background}{HTML}{1e1e2e}
+\definecolor{text}{HTML}{c6d0f5}
+\pagecolor{background}
+\color{text}
+
+\chemfig{H-[:-45]N(-[:-135]H)-C(-[:90]H)(-[:-90]R)-C(=[:45]O)-[:-45]OH}\\
+\chemfig{H-\charge{45:2pt=$+$}{N}(-[:-90]H)(-[:90]H)-C(-[:90]H)(-[:-90]R)-C(=[:45]O)-[:-45]\charge{45:2pt=$-$}{O}}\\
+\chemfig{H-\charge{45:2pt=$+$}{N}(-[:-90]H)(-[:90]H)-C(-[:90]H)(-[:-90]R)-C(=[:45]O)-[:-45]OH}\\
+\chemfig{H-[:-45]N(-[:-135]H)-C(-[:90]H)(-[:-90]R)-C(=[:45]O)-[:-45]\charge{45:2pt=$-$}{O}}\\\\
+
+\schemestart
+n\arrow{0}[,0] \chemfig{H-[:-45]N(-[:-135]H)-C(-[:90]H)(-[:-90]R_1)-C(=[:45]O)-[:-45]OH}
+\arrow{0}[,0]\+
+n \arrow{0}[,0]\chemfig{H-[:-45]N(-[:-135]H)-C(-[:90]H)(-[:-90]R_2)-C(=[:45]O)-[:-45]OH}
+\arrow
+\chemfig{H-[@{op,.75}:45]N(-[:-90]H)-C(-[:90]R_1)(-[:-90]H)-C(=[:45]O)-[:-45]N(-[:-135]H)-C(-[:-90]R_2)(-[:90]H)-C(=[:90]O)-[@{cl,0.25}:45]OH}
+\polymerdelim[height = 40pt, depth = 50pt, indice = \!\!n]{op}{cl}
+\arrow{0}[,0]\+ 
+(2n-1) \chemfig{H_2O}
+\schemestop\\\\
+
+\chemleft{[}
+\chemfig{
+    \charge{-30=\:}{Cl}-[:-30,,,,->]Pt(-[:30,,,,<-]\charge{-150=\:}{Cl})(-[:-30,,,,<-]\charge{150=\:}{N}H_3)(-[:-150,,,,<-]H_3\charge{30=\:}{N})
+}
+\chemright{]}\\\\
+
+\end{document}
