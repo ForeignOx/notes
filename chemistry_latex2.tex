@@ -1,0 +1,250 @@
+\documentclass{article}
+\usepackage{chemfig}
+\usepackage{geometry}
+\geometry{a3paper, landscape, margin=0.5cm}
+\usepackage{xcolor}
+\begin{document}
+\definecolor{background}{HTML}{1e1e2e}
+\definecolor{text}{HTML}{c6d0f5}
+\pagecolor{background}
+\color{text}
+
+\schemestart
+\chemfig{ R_1-@{c}\charge{0[anchor=180+\chargeangle]=$\delta^+$}{C}(=[@{a}:45]@{b}\charge{45[anchor=180+\chargeangle]=$\delta^-$}{O})(-[:-45]\charge{45[anchor=180+\chargeangle]=$\delta^-$}{O}-[:-135]C(-[:180]R_1)=[:-45]O)} \qquad
+\chemfig{@{d}\charge{-120=\:}{O}(-[:90]R_2)-H}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](a).. controls +(135:4mm) and +(135:7mm)..(b);
+\draw[shorten <=2pt,shorten >=1pt](d).. controls +(-120:18mm) and +(-135:14mm)..(c);}
+\arrow
+\chemfig{R_1-C(-[@{e}:90]@{f}\charge{45:2pt=$-$,0=\:}{O})(-[@{h}]@{g}O(-C(-[:-45]R_1)(=[:45]O)))-[:-90]O^+(-[:-30]H)(-[:-150]R_2)}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](f).. controls +(0:5mm) and +(0:5mm)..(e);
+\draw[shorten <=2pt,shorten >=1pt](h).. controls +(-90:5mm) and +(-90:5mm)..(g);}
+\arrow
+\chemfig{R_1-C(=[:45]O)-[:-45]@{l}O^+(-[@{k}]@{j}H)-[:-90]R_2}
+\qquad
+\chemfig{@{i}\charge{145:2pt=$-$,-135=\:}{O}-C(=[:45]O)(-[:-45]R_1)}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](i).. controls +(-135:7mm) and +(90:7mm)..(j);
+\draw[shorten <=2pt,shorten >=1pt](k).. controls +(90:5mm) and +(90:5mm)..(l);}
+\arrow
+\chemfig{R_1-C(=[:45]O)(-[:-45]O-R_2)}
+\+
+\chemfig{R_1-C(=[:45]O)(-[:-45]OH)}
+\schemestop\\\\\\
+
+\schemestart
+\chemfig{ R-@{c}\charge{0[anchor=180+\chargeangle]=$\delta^+$}{C}(=[@{a}:45]@{b}\charge{45[anchor=180+\chargeangle]=$\delta^-$}{O})(-[:-45]\charge{45[anchor=180+\chargeangle]=$\delta^-$}{O}-[:-135]C(-[:180]R)=[:-45]O)} \qquad
+\chemfig{@{d}\charge{-120=\:}{O}H_2}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](a).. controls +(135:4mm) and +(135:7mm)..(b);
+\draw[shorten <=2pt,shorten >=1pt](d).. controls +(-120:18mm) and +(-135:14mm)..(c);}
+\arrow
+\chemfig{R-C(-[@{e}:90]@{f}\charge{45:2pt=$-$,0=\:}{O})(-[@{h}]@{g}O(-C(-[:-45]R)(=[:45]O)))-[:-90]O^+(-[:-30]H)(-[:-150]H)}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](f).. controls +(0:5mm) and +(0:5mm)..(e);
+\draw[shorten <=2pt,shorten >=1pt](h).. controls +(-90:5mm) and +(-90:5mm)..(g);}
+\arrow
+\chemfig{R-C(=[:45]O)-[:-45]@{l}O^+(-[@{k}]@{j}H)-[:-90]H}
+\qquad
+\chemfig{@{i}\charge{145:2pt=$-$,-135=\:}{O}-C(=[:45]O)(-[:-45]R)}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](i).. controls +(-135:7mm) and +(90:7mm)..(j);
+\draw[shorten <=2pt,shorten >=1pt](k).. controls +(90:5mm) and +(90:5mm)..(l);}
+\arrow
+2 \chemfig{R-C(=[:45]O)(-[:-45]OH)}
+\schemestop\\\\\\
+
+\schemestart
+\chemfig{ R-@{c}\charge{0[anchor=180+\chargeangle]=$\delta^+$}{C}(=[@{a}:45]@{b}\charge{45[anchor=180+\chargeangle]=$\delta^-$}{O})(-[:-45]\charge{45[anchor=180+\chargeangle]=$\delta^-$}{O}-[:-135]C(-[:180]R)=[:-45]O)} \qquad
+\chemfig{@{d}\charge{-120=\:}{N}H_3}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](a).. controls +(135:4mm) and +(135:7mm)..(b);
+\draw[shorten <=2pt,shorten >=1pt](d).. controls +(-120:18mm) and +(-135:14mm)..(c);}
+\arrow
+\chemfig{R-C(-[@{e}:90]@{f}\charge{45:2pt=$-$,0=\:}{O})(-[@{h}]@{g}O(-C(-[:-45]R)(=[:45]O)))-[:-90]N^+(-[:-90]H)(-[:-180]H)(-H)}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](f).. controls +(0:5mm) and +(0:5mm)..(e);
+\draw[shorten <=2pt,shorten >=1pt](h).. controls +(-90:5mm) and +(-90:5mm)..(g);}
+\arrow
+\chemfig{R-C(=[:45]O)-[:-45]@{l}N^+(-[@{k}]@{j}H)(-[:180]H)-[:-90]H}
+\qquad
+\chemfig{@{i}\charge{145:2pt=$-$,-135=\:}{O}-C(=[:45]O)(-[:-45]R)}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](i).. controls +(-135:7mm) and +(90:7mm)..(j);
+\draw[shorten <=2pt,shorten >=1pt](k).. controls +(90:5mm) and +(90:5mm)..(l);}
+\arrow
+\chemfig{R-C(=[:45]O)(-[:-45]NH_2)}
+\+
+\chemfig{R-C(=[:45]O)(-[:-45]OH)}
+\schemestop\\\\\\
+
+\schemestart
+\chemfig{ R_1-@{c}\charge{0[anchor=180+\chargeangle]=$\delta^+$}{C}(=[@{a}:45]@{b}\charge{45[anchor=180+\chargeangle]=$\delta^-$}{O})(-[:-45]\charge{45[anchor=180+\chargeangle]=$\delta^-$}{O}-[:-135]C(-[:180]R_1)=[:-45]O)} \qquad
+\chemfig{@{d}\charge{-120=\:}{N}H_2R_2}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](a).. controls +(135:4mm) and +(135:7mm)..(b);
+\draw[shorten <=2pt,shorten >=1pt](d).. controls +(-120:18mm) and +(-135:14mm)..(c);}
+\arrow
+\chemfig{R_1-C(-[@{e}:90]@{f}\charge{45:2pt=$-$,0=\:}{O})(-[@{h}]@{g}O(-C(-[:-45]R_1)(=[:45]O)))-[:-90]N^+(-[:-90]H)(-[:-180]R_2)(-H)}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](f).. controls +(0:5mm) and +(0:5mm)..(e);
+\draw[shorten <=2pt,shorten >=1pt](h).. controls +(-90:5mm) and +(-90:5mm)..(g);}
+\arrow
+\chemfig{R_1-C(=[:45]O)-[:-45]@{l}N^+(-[@{k}]@{j}H)(-[:180]R_2)-[:-90]H}
+\qquad
+\chemfig{@{i}\charge{145:2pt=$-$,-135=\:}{O}-C(=[:45]O)(-[:-45]R_1)}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](i).. controls +(-135:7mm) and +(90:7mm)..(j);
+\draw[shorten <=2pt,shorten >=1pt](k).. controls +(90:5mm) and +(90:5mm)..(l);}
+\arrow
+\chemfig{R_1-C(=[:45]O)(-[:-45]N(-[:-90]H)-R_2)}
+\+
+\chemfig{R_1-C(=[:45]O)(-[:-45]OH)}
+\schemestop\\\\\\
+
+\schemestart
+\chemname{\chemfig[baseline=-20pt]{H_3C-C(=[:45]O)-[:-45]O-[:-135]C(=[:-45]O)(-[:180]H_3C)}}{Ethanoic Anhydride}
+\+
+\chemname{\chemfig[baseline=26pt]{**6(---(-[:30]C(=[:45]O)-[:-45]OH)-(-[:90]OH)--)}}{Salicylic Acid}
+\arrow(.base east--.base west)
+\chemname{\chemfig[baseline=26pt]{**6(---(-[:30]C(=[:45]O)-[:-45]OH)-(-[:90]O-[:180]C(=[:-135]O)-[:135]CH_3)--)}}{Aspirin}
+\+
+\chemname{\chemfig{H_3C-C(=[:45]O)-[:-45]OH}}{Ethanoic Acid}
+\schemestop\\\\
+
+\schemestart
+\chemfig{**6(----[@{a}]---)}\qquad
+\chemfig{@{b}C^+(=[:-45]O)-[:45]R}
+\chemmove{
+\draw[shorten <=-6pt,shorten >=1pt](a).. controls +(60:12mm) and +(135:7mm)..(b);}
+\arrow
+\chemfig{**[90,330]6(--(-[@{c},-1,,,draw=none]{+})-(-[@{d}:70]@{e}H)(-[:-10]C(=[:45]O)(-[:-45]R))---)}\qquad
+\chemfig{Cl-[@{f}]\charge{45:2pt=$-$}{Al}(-[:90]Cl)(-[:-90]Cl)-Cl}
+\chemmove{\draw(d)to[out=-20,in=-30](cyclecenter1);
+\draw[shorten <=2pt,shorten >=1pt](f).. controls +(90:16mm) and +(0:16mm)..(e);}
+\arrow
+\chemfig{**6(---(-[:30]C(=[:45]O)-[:-45]R)---)}
+\arrow{0}[,0]\+
+\chemfig{HCl}
+\+
+\chemfig{AlCl_3}
+\schemestop\\\\
+
+\schemestart
+\chemfig{**6(----[@{a}]---)}\qquad
+\chemfig{@{b}E^+}
+\chemmove{
+\draw[shorten <=-6pt,shorten >=1pt](a).. controls +(60:12mm) and +(135:7mm)..(b);}
+\arrow
+\chemfig{**[90,330]6(--(-[@{c},-1,,,draw=none]{+})-(-[@{d}:70]H)(-[:-10]E)---)}
+\chemmove{\draw(d)to[out=-20,in=-30](cyclecenter1);}
+\arrow
+\chemfig{**6(---(-[:30]E)---)}
+\arrow{0}[,0]\+
+\chemfig{H^+}
+\schemestop\\\\
+
+\schemestart
+\chemfig{**6(----[@{a}]---)}\qquad
+\chemfig{@{b}\charge{135:2pt=$+$}{N}O_2}
+\chemmove{
+\draw[shorten <=-6pt,shorten >=1pt](a).. controls +(60:12mm) and +(135:7mm)..(b);}
+\arrow
+\chemfig{**[90,330]6(--(-[@{c},-1,,,draw=none]{+})-(-[@{d}:70]H)(-[:-10]NO_2)---)}
+\chemmove{\draw(d)to[out=-20,in=-30](cyclecenter1);}
+\arrow
+\chemfig{**6(---(-[:30]NO_2)---)}
+\arrow{0}[,0]\+
+\chemfig{H^+}
+\schemestop\\\\
+\chemfig{N(-[:30]R)(-[:150]R)-[:-90]R}
+\\
+\schemestart
+\chemname{\chemfig{N(-[:30]H)(-[:150]H)-[:-90]R}}{Primary Amine}\qquad \qquad
+\chemname{\chemfig{N(-[:30]H)(-[:150]R)-[:-90]R}}{Secondary Amine}\qquad \qquad
+\chemname{\chemfig{N(-[:30]R)(-[:150]R)-[:-90]R}}{Tertiary Amine}\qquad \qquad
+\chemname{\chemfig{N^+(-R)(-[:180]R)(-[:90]R)-[:-90]R}}{Quaternary Amine}
+\schemestop\\\\
+\schemestart
+\chemfig[angle increment=30]{-[1]-[-1]-[1]-[-1]-[1]-[-1]-[1]-[-1]-[1]-N^+(-[:90]CH_3)(-[:-90]CH_3)-CH_3}\qquad
+\arrow{0}[,0]\qquad
+\chemfig{\charge{45:2pt=$-$}{Cl}}
+\schemestop\\\\
+
+\schemestart
+\chemfig{R-\charge{0=\:}{N}(-[:90]R)(-[:-90]R)}
+\+
+\chemfig{H^+}
+\arrow
+\chemleft{[}
+\chemfig{R-N(-[:90]R)(-[:-90]R)-[,,,,->]H}
+\chemright{]^+}
+\schemestop\\\\\\
+\schemestart
+\chemfig{**6(---(-[:30]NO_2)---)}
+\arrow{0}[,0]\+
+\chemfig{6[H]}
+\arrow
+\chemfig{**6(---(-[:30]NH_2)---)}
+\arrow{0}[,0]\+
+\chemfig{2H_2O}
+\schemestop\\\\
+
+\schemestart
+n\arrow{0}[,0] \chemfig{O=[:-45]C(-[:-135]HO)-R_1-C(=[:45]O)-[:-45]OH}
+\arrow{0}[,0]\+
+n \arrow{0}[,0]\chemfig{H-[:-45]N(-[:-135]H)-R_2-N(-[:45]H)-[:-45]H}
+\arrow
+\chemfig{HO-[@{op,.75}:45]C(=[:-45]O)-R_1-C(=[:45]O)-[:-45]N(-[:-135]H)-R_2-N(-[:135]H)-[@{cl,0.25}:45]H}
+\polymerdelim[height = 30pt, depth = 45pt, indice = \!\!n]{op}{cl}
+\arrow{0}[,0]\+ 
+(2n-1) \chemfig{H_2O}
+\schemestop\\\\
+
+\schemestart
+n\arrow{0}[,0] \chemfig{O=[:-45]C(-[:-135]HO)-**6(---(-C(=[:45]O)-[:-45]OH)---)}
+\arrow{0}[,0]\+
+n \arrow{0}[,0]\chemfig{H-[:-45]N(-[:-135]H)-**6(---(-N(-[:45]H)-[:-45]H)---)}
+\arrow
+\chemfig{HO-[@{op,.75}:45]C(=[:-45]O)-**6(---(-C(=[:45]O)-[:-45]N(-[:-135]H)-**6(---(-N(-[:135]H)-[@{cl,0.25}:45]H)---))---)}
+\polymerdelim[height = 30pt, depth = 45pt, indice = \!\!n]{op}{cl}
+\arrow{0}[,0]\+ 
+(2n-1) \chemfig{H_2O}
+\schemestop\\\\
+
+\schemestart
+n\arrow{0}[,0] \chemfig{O=[:-45]C(-[:-135]HO)-{(}CH_2{)}_4-C(=[:45]O)-[:-45]OH}
+\arrow{0}[,0]\+
+n \arrow{0}[,0]\chemfig{H-[:-45]N(-[:-135]H)-{(}CH_2{)}_6-N(-[:45]H)-[:-45]H}
+\arrow
+\chemfig{HO-[@{op,.75}:45]C(=[:-45]O)-{(}CH_2{)}_4-C(=[:45]O)-[:-45]N(-[:-135]H)-{(}CH_2{)}_6-N(-[:135]H)-[@{cl,0.25}:45]H}
+\polymerdelim[height = 30pt, depth = 45pt, indice = \!\!n]{op}{cl}
+\arrow{0}[,0]\+ 
+(2n-1) \chemfig{H_2O}
+\schemestop\\\\
+
+\schemestart
+n\arrow{0}[,0] \chemfig{O=[:-45]C(-[:-135]HO)-R_1-C(=[:45]O)-[:-45]OH}
+\arrow{0}[,0]\+
+n \arrow{0}[,0]\chemfig{HO-R_2-OH}
+\arrow
+\chemfig{HO-[@{op,.75}:45]C(=[:-45]O)-R_1-C(=[:45]O)-[:-45]O-R_2-O-[@{cl,0.25}:45]H}
+\polymerdelim[height = 30pt, depth = 25pt, indice = \!\!n]{op}{cl}
+\arrow{0}[,0]\+ 
+(2n-1) \chemfig{H_2O}
+\schemestop\\\\
+
+\schemestart
+n\arrow{0}[,0] \chemfig{O=[:-45]C(-[:-135]HO)-**6(---(-C(=[:45]O)-[:-45]OH)---)}
+\arrow{0}[,0]\+
+n \arrow{0}[,0]\chemfig{HO-C(-[:90]H)(-[:-90]H)-C(-[:90]H)(-[:-90]H)-OH}
+\arrow
+\chemfig{HO-[@{op,.75}:45]C(=[:-45]O)-**6(---(-C(=[:45]O)-[:-45]O-C(-[:90]H)(-[:-90]H)-C(-[:90]H)(-[:-90]H)-O-[@{cl,0.25}:45]H)---)}
+\polymerdelim[height = 30pt, depth = 50pt, indice = \!\!n]{op}{cl} 
+\arrow{0}[,0]\+ 
+(2n-1) \chemfig{H_2O}
+\schemestop\\\\
+
+
+\end{document}
