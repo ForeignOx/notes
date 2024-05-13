@@ -1,0 +1,270 @@
+\documentclass{article}
+\usepackage{chemfig}
+\usepackage{geometry}
+\geometry{a4paper, landscape, margin=2cm}
+\usepackage{xcolor}
+\begin{document}
+\definecolor{background}{HTML}{1e1e2e}
+\definecolor{text}{HTML}{c6d0f5}
+\pagecolor{background}
+\color{text}
+Branched molecule \vspace{.5cm}
+\chemleft{[}
+  \chemfig{L-[:30,,,,->]M(-[:150,,,,<-]L)(-[:30,,,,<-]L)(-[:90,,,,<-]L)(-[:-30,,,,<-]L)-[:-90,,,,<-]L}
+\chemright{]^{x+}}
+help\\
+\chemfig{
+    \charge{90=\:,145=-}{O}-[:-45]C(=[:-135]O)=C(=[:-45]O)-[:45]\charge{90=\:,35=-}{O}
+}
+sijos\\\\\\\\
+\chemfig{
+    H_2\charge{-90=\:}{N}-[:45]CH_2-CH_2-[:-45]\charge{-90=\:}{N}H_2
+}
+bhjkl acdefrsvwbhjklrfhjkb\\\\\\\\\\
+\chemleft{[}
+\chemfig{
+    \charge{-30=\:}{Cl}-[:-30,,,,->]Pt(-[:30,,,,<-]\charge{-150=\:}{Cl})(-[:-30,,,,<-]\charge{150=\:}{N}H_3)(-[:-150,,,,<-]H_3\charge{30=\:}{N})
+}
+\chemright{]}\\\\
+Wow isn't transition metals such a fun and not totally painful topic\\\\\\\\\\
+\chemleft{[}
+  \chemfig{H_3\charge{0=\:}{N}-[:0,,,,->]Ag -[:0,,,,<-]\charge{180=\:}{N}H_3}
+\chemright{]^{+}}
+\\\\ Wow you think tollen's is cool, wait till you see Haem\\\\
+\chemleft{[}
+  \chemfig{
+  (globin protein)-[:90]\charge{90=\:}{N}-
+  }
+\chemright{]^{+}}
+\\\\
+\chemleft{[}
+  \chemfig{L_1-[:30,,,,->]M(-[:150,,,,<-]L_1)(-[:30,,,,<-]L_2)(-[:90,,,,<-]L_2)(-[:-30,,,,<-]L_1)-[:-90,,,,<-]L_1}
+\chemright{]}\\\\
+\chemleft{[}
+  \chemfig{L_1-[:30,,,,->]M(-[:150,,,,<-]L_1)(-[:30,,,,<-]L_1)(-[:90,,,,<-]L_2)(-[:-30,,,,<-]L_1)-[:-90,,,,<-]L_2}
+\chemright{]}\\\\
+\chemleft{[}
+  \chemfig{L_1-[:30,,,,->]M(-[:150,,,,<-]L_2)(-[:30,,,,<-]L_1)(-[:-30,,,,<-]L_2)}
+\chemright{]}\\\\
+\chemleft{[}
+  \chemfig{H_2\charge{30=\:}{O}-[:30,,,,->]M(-[:150,,,,<-]H_2\charge{-30=\:}{O})(-[:30,,,,<-]\charge{-150=\:}{O}H_2)(-[:90,,,,<-]\charge{-90=\:}{O}H_2)(-[:-30,,,,<-]\charge{150=\:}{O}H_2)-[:-90,,,,<-]\charge{90=\:}{O}H_2}
+\chemright{]^{3+}}\\\\
+\chemfig{
+H-C(-H)(-H)-C(-H)(-H)-H
+}\\\\
+\newpage
+We love mechanisms
+\\ Nucleophilic Substitution\\\\
+\schemestart
+\chemfig{
+R_1-@{a}\charge{45[anchor=180+\chargeangle]=$\delta^+$}{C}(-[:90]R_2)(-[:-90]R_3)-[@{b}]@{c}\charge{45[anchor=180+\chargeangle]=$\delta^-$}{X}
+}\qquad
+\chemfig{@{d}\charge{-120[anchor=180+\chargeangle]=\:}{Nu}}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](b).. controls +(90:5mm) and +(100:5mm)..(c);
+\draw[shorten <=2pt,shorten >=1pt](d).. controls +(-120:10mm) and +(-30:10mm)..(a);
+}
+\arrow
+\chemfig{R_1-C(-[:90]R_2)(-[:-90]R_3)-\charge{30:2pt=$+$}{Nu}}
+\+
+\chemfig{\charge{145:2pt=$-$,180=\:}{X}}
+\schemestop\\\\
+
+\schemestart
+\chemfig{
+R_1-@{a}\charge{45[anchor=180+\chargeangle]=$\delta^+$}{C}(-[:90]R_2)(-[:-90]R_3)-[@{b}]@{c}\charge{45[anchor=180+\chargeangle]=$\delta^-$}{X}
+}\qquad
+\chemfig{@{d}\charge{145:2pt=$-$,-120[anchor=180+\chargeangle]=\:}{C}N}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](b).. controls +(90:5mm) and +(100:5mm)..(c);
+\draw[shorten <=2pt,shorten >=1pt](d).. controls +(-120:10mm) and +(-30:10mm)..(a);
+}
+\arrow
+\chemfig{R_1-C(-[:90]R_2)(-[:-90]R_3)-C~N}
+\+
+\chemfig{\charge{145:2pt=$-$,180=\:}{X}}
+\schemestop\\\\
+
+\schemestart
+\chemfig{
+R_1-@{a}\charge{45[anchor=180+\chargeangle]=$\delta^+$}{C}(-[:90]R_2)(-[:-90]R_3)-[@{b}]@{c}\charge{45[anchor=180+\chargeangle]=$\delta^-$}{X}
+}\qquad
+\chemfig{@{d}\charge{-120[anchor=180+\chargeangle]=\:}{N}H_3}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](b).. controls +(90:5mm) and +(100:5mm)..(c);
+\draw[shorten <=2pt,shorten >=1pt](d).. controls +(-120:10mm) and +(-30:10mm)..(a);
+}
+\arrow[-30]
+\chemfig{R_1-C(-[:90]R_2)(-[:-90]R_3)-@{e}\charge{45:2pt=$+$}{N}(-[:90]H)(-[:-90]H)-[@{f}]@{g}H} \qquad
+\chemfig{@{h}\charge{145=\:}{N}H_3}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](h).. controls +(145:5mm) and +(45:5mm)..(g);
+\draw[shorten <=2pt,shorten >=1pt](f).. controls +(-90:4mm) and +(-45:4mm)..(e);
+}
+\+
+\chemfig{\charge{145:2pt=$-$,180=\:}{X}}
+\arrow[30]
+\chemfig{R_1-C(-[:90]R_2)(-[:-90]R_3)-N(-[:60]H)(-[:-60]H)}
+\+
+\chemfig{NH_4^+}
+\+
+\chemfig{\charge{145:2pt=$-$,180=\:}{X}}
+\schemestop\\\\
+Elimination\\\\
+\schemestart
+\chemfig{R_1-C(-[@{a}:90]@{b}X)(-[:-90]R_2)-[@{c}]C(-[:90]R_3)(-[@{d}:-90]@{e}H)-R_4} \qquad
+\chemfig{@{f}\charge{-145=\:}{A}}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](a).. controls +(0:5mm) and +(-30:5mm)..(b);
+\draw[shorten <=2pt,shorten >=1pt](d).. controls +(180:4mm) and +(-90:4mm)..(c);
+\draw[shorten <=2pt,shorten >=1pt](f).. controls +(-145:10mm) and +(0:10mm)..(e);
+}
+\arrow
+\chemfig{R_1-[:-60]C(-[:-120]R_2)=@{z}C(-[:60]R_3)(-[:-60]R_4)}
+\+{,,-26pt}
+\chemfig[baseline=26pt]{HA^+}
+\+{,,-26pt}
+\chemfig[baseline=26pt]{\charge{145:2pt=$-$,180=\:}{X}}
+\schemestop
+\\\\
+
+\schemestart
+\chemfig{R_1-C(-[@{a}:90]@{b}X)(-[:-90]R_2)-[@{c}]C(-[:90]R_3)(-[@{d}:-90]@{e}H)-R_4} \qquad
+\chemfig{@{f}\charge{145:2pt=$-$,-145=\:}{O}H}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](a).. controls +(0:5mm) and +(-30:5mm)..(b);
+\draw[shorten <=2pt,shorten >=1pt](d).. controls +(180:4mm) and +(-90:4mm)..(c);
+\draw[shorten <=2pt,shorten >=1pt](f).. controls +(-145:10mm) and +(0:10mm)..(e);
+}
+\arrow
+\chemfig{R_1-[:-60]C(-[:-120]R_2)=@{z}C(-[:60]R_3)(-[:-60]R_4)}
+\+{,,-26pt}
+\chemfig[baseline=26pt]{H_2O}
+\+{,,-26pt}
+\chemfig[baseline=26pt]{\charge{145:2pt=$-$,180=\:}{X}}
+\schemestop\\\\
+Electrophilic addition anyone??\\\\
+
+\schemestart
+\chemfig{@{cc}{R_1}-[:-60]C(-[:-120]R_2)=[@{z}]C(-[:60]R_3)-[:-60]R_4}\qquad
+\chemfig[baseline=26pt]{@{a}E^+}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](z).. controls +(-90:8mm) and +(-135:10mm)..(a);}
+\arrow(@a--dd)[30]
+\chemfig{R_2-C^+(-[:90]R_1)-C(-[:90]R_3)(-[:-90]E)-R_4}
+\arrow(@a--ee)[-30]
+\chemfig{R_2-C(-[:-90]E)(-[:90]R_1)-C^+(-[:90]R_3)-R_4}
+\schemestop
+\\\\
+\schemestart
+\chemfig{@{cc}{R_1}-[:-60]C(-[:-120]R_2)=[@{z}]C(-[:60]R_3)-[:-60]R_4}\qquad
+\chemfig[baseline=26pt]{@{a}\charge{45[anchor=180+\chargeangle]=$\delta^+$}{Br}-@{x}\charge{45[anchor=180+\chargeangle]=$\delta^-$}{Br}}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](z).. controls +(-90:8mm) and +(-135:10mm)..(a);}
+\arrow
+\chemfig{R_2-C(-[:-90]Br)(-[:90]R_1)-@{r}C^+(-[:90]R_3)-R_4}
+\+
+\chemfig{@{q}\charge{145:2pt=$-$,-135=\:}{Br}}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](q).. controls +(-135:10mm) and +(-45:10mm)..(r);}
+\arrow
+\chemfig{R_2-C(-[:-90]Br)(-[:90]R_1)-C(-[:90]R_3)(-[:-90]Br)-R_4}
+\schemestop\\\\
+
+\schemestart
+\chemfig{@{cc}{R_1}-[:-60]C(-[:-120]R_2)=[@{z}]C(-[:60]R_3)-[:-60]R_4}\qquad
+\chemfig[baseline=26pt]{@{a}\charge{45[anchor=180+\chargeangle]=$\delta^+$}{H}-@{x}\charge{45[anchor=180+\chargeangle]=$\delta^-$}{X}}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](z).. controls +(-90:8mm) and +(-135:10mm)..(a);}
+\arrow(@x--dd)[30]
+\chemfig{R_2-C(-[:-90]H)(-[:90]R_1)-@{r}C^+(-[:90]R_3)-R_4}
+\+
+\chemfig{@{q}\charge{145:2pt=$-$,-135=\:}{X}}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](q).. controls +(-135:10mm) and +(-45:10mm)..(r);}
+\arrow
+\chemfig{R_2-C(-[:-90]H)(-[:90]R_1)-C(-[:90]R_3)(-[:-90]X)-R_4}
+\arrow(@x--ee)[-30]
+\chemfig{R_2-@{r}C^+(-[:90]R_1)-C(-[:-90]H)(-[:90]R_3)-R_4}
+\+
+\chemfig{@{q}\charge{145:2pt=$-$,-135=\:}{X}}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](q).. controls +(-135:10mm) and +(-45:10mm)..(r);}
+\arrow
+\chemfig{R_2-C(-[:-90]X)(-[:90]R_1)-C(-[:90]R_3)(-[:-90]H)-R_4}
+\schemestop\\\\
+\schemestart
+\chemname{\chemfig{R-C^+(-[:90]H)-H}}{Primary Carbocation}\qquad \qquad
+\chemname{\chemfig{R-C^+(-[:90]R)-H}}{Secondary Carbocation}\qquad \qquad
+\chemname{\chemfig{R-C^+(-[:90]R)-R}}{Tertiary Carbocation}
+\schemestop\\\\
+
+\schemestart
+\chemfig{@{cc}{R_1}-[:-60]C(-[:-120]R_2)=[@{z}]C(-[:60]R_3)-[:-60]R_4}\qquad
+\chemfig[baseline=26pt]{@{a}\charge{45[anchor=180+\chargeangle]=$\delta^+$}{H}-\charge{45[anchor=180+\chargeangle]=$\delta^-$}{O}-S(=[:90]O)(=[:-90]O)-@{x}OH}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](z).. controls +(-90:8mm) and +(-135:10mm)..(a);}
+\arrow(@x--dd)[30]
+\chemfig{R_2-C(-[:-90]H)(-[:90]R_1)-@{r}C^+(-[:90]R_3)-R_4}
+\+
+\chemfig{@{q}\charge{145:2pt=$-$,-135=\:}{O}-S(=[:90]O)(=[:-90]O)-OH}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](q).. controls +(-135:10mm) and +(-45:10mm)..(r);}
+\arrow
+\chemfig{R_2-C(-[:-90]H)(-[:90]R_1)-C(-[:90]R_3)(-R_4)-[:-90]O-[:-45]S(=[:45]O)(=[:-135]O)-[:-45]OH}
+\arrow(@x--ee)[-30]
+\chemfig{R_2-@{r}C^+(-[:90]R_1)-C(-[:-90]H)(-[:90]R_3)-R_4}
+\+
+\chemfig{@{q}\charge{145:2pt=$-$,-135=\:}{O}-S(=[:90]O)(=[:-90]O)-OH}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](q).. controls +(-135:10mm) and +(-45:10mm)..(r);}
+\arrow
+\chemfig{R_2-C(-[:-90]O(-[:-135]S(=[:-45]O)(=[:135]O)(-[:-135]OH)))(-[:90]R_1)-C(-[:90]R_3)(-[:-90]H)-R_4}
+\schemestop\\\\
+
+\schemestart
+n
+\chemfig[baseline=-26pt]{@{cc}{R_1}-[:-60]C(-[:-120]R_2)=[@{z}]C(-[:60]R_3)-[:-60]R_4}
+\arrow
+\chemfig{\vphantom{CH_2}-[@{op,.75}]C(-[:90]R_1)(-[:-90]R_2)-C(-[:90]R_3)(-[:-90]R_4)-[@{cl,0.25}]}
+\polymerdelim[height = 35pt, depth = 40pt, indice = \!\!n]{op}{cl}
+\schemestop
+\schemestart
+n
+\chemfig[baseline=-26pt]{@{cc}{Cl}-[:-60]C(-[:-120]H)=[@{z}]C(-[:60]H)-[:-60]H}
+\arrow
+\chemfig{\vphantom{CH_2}-[@{op,.75}]C(-[:90]Cl)(-[:-90]H)-C(-[:90]H)(-[:-90]H)-[@{cl,0.25}]}
+\polymerdelim[height = 35pt, depth = 40pt, indice = \!\!n]{op}{cl}
+\schemestop\\\\\\\\
+\schemestart
+\chemname{\chemfig{R-C(-[:-90]OH)(-[:90]H)-H}}{Primary Alcohol ($^\circ1$)}\qquad \qquad
+\chemname{\chemfig{R-C(-[:-90]OH)(-[:90]R)-H}}{Secondary Alcohol ($^\circ2$)}\qquad \qquad
+\chemname{\chemfig{R-C(-[:-90]OH)(-[:90]R)-R}}{Tertiary Alcohol ($^\circ3$)}
+\schemestop\\\\
+Back to eliminating stuff? jk this is E\_2\\\\
+
+\schemestart
+\chemfig{R_1-C(-[:90]H)(-[:-90]@{a}\charge{0=\:}{O}-[:-90]H)(-C(-[:90]R_2)(-[:-90]H)(-R_3))} \qquad
+\chemfig{@{b}H^+}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](a).. controls +(0:8mm) and +(-135:8mm)..(b);}
+\arrow
+\chemfig{R_1-C(-[:90]H)(-[@{c}:-90]@{d}O^+(-[:-150]H)(-[:-30]H))(-C(-[:90]R_2)(-[:-90]H)(-R_3))}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](c).. controls +(0:6mm) and +(30:4mm)..(d);}
+\arrow
+\chemfig{R_1-C^+(-[:90]H)(-[@{e}]C(-[:90]R_2)(-[@{f}:-90]H)(-R_3))}
+\chemmove{
+\draw[shorten <=2pt,shorten >=1pt](f).. controls +(180:4mm) and +(-90:4mm)..(e);}
+\+
+\chemfig{H_2O}
+\arrow
+\chemfig{H-[:-60]C(-[:-120]R_1)=C(-[:60]R_2)-[:-60]R_3}
+\arrow{0}[,0]\+
+\chemfig{H_2O}
+\+
+\chemfig{H^+}
+\schemestop\\\\
+
+
+\end{document}
