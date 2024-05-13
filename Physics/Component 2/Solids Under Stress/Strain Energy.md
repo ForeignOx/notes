@@ -1,0 +1,3 @@
+The [[work]] done stretching a [[Hookean Objects|Hookean object]] is given by $\frac{1}{2}F\Delta l$, this being the area under the force-extension graph. Releasing tension and allowing the object to contract allows it to do work, because the graph for relaxation is the same as tensioning. Hence the work done stretching a Hookean object is the [[energy]] stored in a body by virtue of its deformation. This energy is referred as the strain energy and is equivalent to [[elastic potential energy]]
+
+#Physics #Materials 

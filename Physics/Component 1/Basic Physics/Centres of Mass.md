@@ -1,0 +1,3 @@
+For any object one can identify a point at which it's weight is considered to act is as the centre of mass, aka centre of gravity. In symmetric body of uniform [[Density]], the centre of mass will lie on every line of symmetry. If an object's centre of mass is outside of the object, it can topple. For a standing object, the lower the centre of mass is, the lower the centre of mass, the more stable they are and the less likely they are to topple over. 
+
+#Physics #Basic_Physics #Definition 

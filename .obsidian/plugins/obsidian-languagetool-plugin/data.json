@@ -1,0 +1,11 @@
+{
+  "serverUrl": "https://api.languagetool.org",
+  "urlMode": "standard",
+  "glassBg": true,
+  "shouldAutoCheck": true,
+  "autoCheckDelay": 3000,
+  "pickyMode": true,
+  "motherTongue": "en-GB",
+  "staticLanguage": "en-GB",
+  "ruleOtherDisabledRules": "OXFORD_SPELLING_Z_NOT_S,PHRASE_REPETITION,PUNCTUATION_PARAGRAPH_END,EN_UPPER_CASE_NGRAM,ENGLISH_WORD_REPEAT_RULE,MORFOLOGIK_RULE_EN_GB,DASH_RULE,WANT,HYPHEN_TO_EN"
+}

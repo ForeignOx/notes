@@ -1,0 +1,27 @@
+{
+  "newFileLocation": "current",
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "Attachment bin",
+  "showLineNumber": false,
+  "useTab": false,
+  "spellcheck": false,
+  "spellcheckDictionary": [
+    "superelastic",
+    "monomode",
+    "emitting",
+    "WXYZ",
+    "WX",
+    "YZ",
+    "ZW",
+    "Lenz",
+    "YX",
+    "WXYZW",
+    "Tollens",
+    "autocatalyse",
+    "Ethanedioate",
+    "Tollen",
+    "globin",
+    "Haber",
+    "emits"
+  ]
+}

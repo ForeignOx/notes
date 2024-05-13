@@ -1,0 +1,3 @@
+An [[Electric Fields|electric field]] line is a line whose direction at each point along it it is the direction of the electric field at that point. These are very helpful for visualising how [[electric field strength]] and [[Electrical Potential|potential]] vary from point to point in an electric field. The arrows tend to show how a positive charge would act in the field
+
+#Physics #Fields #Definition
