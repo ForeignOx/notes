@@ -1,4 +1,4 @@
-The mass of the nucleus depend on $A$, the nucleon number - as they all have virtually the same [[mass]], $m$:
+The mass of the nucleus depend on $A$, the nucleon number - as they all have virtually the same [[Mass]], $m$:
 $$
 \text{Nuclear Mass}=Am
 $$
@@ -6,7 +6,7 @@ Assuming the nucleus is spherical, we have a volume:
 $$
 V=\frac{4}{3}\pi r^{3}
 $$
-Using the equation for [[density]],
+Using the equation for [[Density]],
 $$
 \rho=\frac{M}{V}=\frac{Am}{\frac{4}{3}\pi r^{3}}
 $$

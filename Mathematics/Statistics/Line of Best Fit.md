@@ -91,3 +91,5 @@ Since $(\bar{x},\bar{y})$ is on the line $y=a+b\bar{x}$, $\bar{y}=a+b\bar{x}$, H
 $$
 \sum \epsilon_{i} = n(a+b\bar{x}-a-b\bar{x})=0
 $$
+
+#Mathematics

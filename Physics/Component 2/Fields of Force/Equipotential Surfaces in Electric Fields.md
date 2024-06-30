@@ -3,6 +3,6 @@ Note that the surfaces are closer together where the field is stronger, this is 
 $$
 E=-\frac{dV}{dx}
 $$
-The [[electric field lines]] are at right angles to equipotential surfaces as they pass through them
+The [[Electric Field Lines]] are at right angles to equipotential surfaces as they pass through them
 
 #Physics #Fields #Definition

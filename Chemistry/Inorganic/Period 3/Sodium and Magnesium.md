@@ -1,4 +1,4 @@
-Sodium (Group 1) is more reactive than Magnesium ([[Group 2]]). When they react, they lose electrons to form $\ce{ Na+ }$ and $\ce{ Mg^2+ }$ respectively. Sodium is more reactive than magnesium as the amount of [[energy]] required to remove an electron is lower than it is to remove 2 from magnesium, hence more energy is needed for magnesium to react
+Sodium (Group 1) is more reactive than Magnesium ([[Group 2]]). When they react, they lose electrons to form $\ce{ Na+ }$ and $\ce{ Mg^2+ }$ respectively. Sodium is more reactive than magnesium as the amount of [[Energy]] required to remove an electron is lower than it is to remove 2 from magnesium, hence more energy is needed for magnesium to react
 ## Sodium Reacting with Water
 Sodium reacts vigorously with cold water, forming a ball and fizzing. The gas produced is hydrogen gas and an alkaline solution of sodium hydroxide is formed. The reaction is:
 $$

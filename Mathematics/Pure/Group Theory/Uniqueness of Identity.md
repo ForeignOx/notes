@@ -1,4 +1,4 @@
-Let $(G,*)$ be a [[groups|group]] with identity $e$
+Let $(G,*)$ be a [[Groups|group]] with identity $e$
 Suppose $e' \in G:\forall g \in G, g*e'=g, e'*g=g$ then $e'=e$
 ## Proof
 $$

@@ -1,4 +1,4 @@
-For a circular orbit, we can equate [[Newton's Law of Gravitation]] and the [[centripetal force]] of rotation:
+For a circular orbit, we can equate [[Newton's Law of Gravitation]] and the [[Centripetal Force]] of rotation:
 $$
 F=\frac{GMm}{r^{2}}=\frac{mv^{2}}{r}
 $$

@@ -1,10 +1,10 @@
-The total [[mechanical energy]] of bodies which orbit in closed elliptical orbits is negative. The reason for this is that, by definition, the [[Gravitational Potential Energy|potential energy]] of an object an infinite distance from a gravitating body is zero. Thus bodies with a positive total mechanical energy would be able to escape to infinity
+The total [[Mechanical Energy]] of bodies which orbit in closed elliptical orbits is negative. The reason for this is that, by definition, the [[Gravitational Potential Energy|potential energy]] of an object an infinite distance from a gravitating body is zero. Thus bodies with a positive total mechanical energy would be able to escape to infinity
 ## Circular Orbit
-The total mechanical energy, $E$, of a body in a circular orbit is the sum of the [[kinetic energy]] and the gravitational potential energy:
+The total mechanical energy, $E$, of a body in a circular orbit is the sum of the [[Kinetic Energy]] and the gravitational potential energy:
 $$
 E=\frac{1}{2}mv^{2}-\frac{GMm}{r}
 $$
-Using the equation for [[orbital velocity]]:
+Using the equation for [[Orbital Velocity]]:
 $$
 v^{2}=\frac{GM}{r}
 $$

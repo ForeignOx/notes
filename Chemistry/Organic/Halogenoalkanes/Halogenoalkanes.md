@@ -19,7 +19,7 @@ Halogenoalkanes also react with ammonia to produce [[Amines]]. The conditions ar
 Halogenoalkanes react with hydroxide ions via elimination using an alcohol solvent to form [[Alkenes]]. The conditions for this are alcoholic sources of hydroxide ions, such as an ethanol solvent with sodium hydroxide, carried out under reflux at high temperatures
 ![[Pasted image 20240504231826.png]]
 ## Boiling Point Trends of Halogenoalkanes
-The strength of the [[Intermolecular Forces]] govern the boiling point. The stronger the intermolecular bond, the higher the boiling point. As you go down group 7, the number of electrons in the halogen atoms increases. More electrons mean stronger [[Van der Waals Forces]] between the molecules, and so more [[energy]] is needed to overcome these forces. This leads to the boiling points increasing as we go down the group
+The strength of the [[Intermolecular Forces]] govern the boiling point. The stronger the intermolecular bond, the higher the boiling point. As you go down group 7, the number of electrons in the halogen atoms increases. More electrons mean stronger [[Van der Waals Forces]] between the molecules, and so more [[Energy]] is needed to overcome these forces. This leads to the boiling points increasing as we go down the group
 ![[Pasted image 20240503230315.png]]
 ## Halogenoalkane Reactivity
 [[Mean Bond Enthalpy|Bond enthalpy]] determines the reactivity of haloakanes, not the bond polarity. The table below shows bond enthalpies of a $\ce{ C-X }$ bond. The $\ce{ C-I }$ bond has the lowest bond enthalpy and is easiest to break. This means reactions with $\ce{ C-I }$ bonds are more likely to occur

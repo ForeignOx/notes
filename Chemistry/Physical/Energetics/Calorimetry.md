@@ -1,4 +1,4 @@
-Calorimetry is used to work out the [[enthalpy change of combustion]]
+Calorimetry is used to work out the [[Enthalpy Change of Combustion]]
 ![[Pasted image 20240229104622.png]]
 A fuel is burned to raise the temperature of the water by a specific amount. Generally we weigh the fuel before and after burning to work out the mass of fuel burned
 A lid is typically placed on top to prevent heat loss and wind shields are placed by the flame to prevent draught from moving the flame, a polystyrene cup can be used to prevent heat loss

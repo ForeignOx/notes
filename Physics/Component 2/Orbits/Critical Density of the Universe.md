@@ -5,13 +5,13 @@ m_{s}=4\pi r^{2}\rho\Delta r
 $$
 And the mass within the shell is given by:
 $$
-M_{s}=\frac{4}{3}\pi r^{3}\$rho
+M_{s}=\frac{4}{3}\pi r^{3}\rho
 $$
 where $\rho$ is the mean density of the universe. By [[Hubble's Law]], the recession speed of the shell is given by:
 $$
 v_{s}=H_{0}r
 $$
-The [[kinetic energy]] and [[gravitational potential energy]] of the shell are: 
+The [[Kinetic Energy]] and [[Gravitational Potential Energy]] of the shell are: 
 $$
 E_{k}=\frac{1}{2}m_{s}v_{s}^{2}
 $$ and

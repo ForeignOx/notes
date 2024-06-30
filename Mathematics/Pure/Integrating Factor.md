@@ -6,7 +6,7 @@ Let $P=P(x), Q=Q(x)$, we want to find a function $I=I(x)$ (known as the integrat
 $$
 I\frac{dy}{dx} +PIy=QI
 $$
-Such that $I\frac{dy}{dx}+PIy$ is a perfect derivative by [[product rule]]:
+Such that $I\frac{dy}{dx}+PIy$ is a perfect derivative by [[Product Rule]]:
 $$
 I\frac{dy}{dx} +PIy=\frac{d }{dx} (Iy)
 $$

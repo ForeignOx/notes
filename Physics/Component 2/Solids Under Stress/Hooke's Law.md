@@ -13,11 +13,11 @@ where $l$ is the natural length of the string (the string when no forces are app
 F=\frac{~\lambda x}{l}
 $$
 This assumes the string is [[Light|light]], the system has no friction and the [[Elastic Limit|elastic limit]] has not been exceeded
-Where Hooke's Law applies, the object also exhibits [[Elastic Materials|elastic]] behaviour. If an object is subject to too great a [[Types of Stress|stress]], it will fracture but, often before that happens, the tension-extension graph ceases to be linear. Some objects, particularly made of [[ductile]] metals, enter a [[Plastic Deformation|plastic]] region, in which they are permanently deformed by the tension
+Where Hooke's Law applies, the object also exhibits [[Elastic Materials|elastic]] behaviour. If an object is subject to too great a [[Types of Stress|stress]], it will fracture but, often before that happens, the tension-extension graph ceases to be linear. Some objects, particularly made of [[Ductile]] metals, enter a [[Plastic Deformation|plastic]] region, in which they are permanently deformed by the tension
 ## [[Energy]]
 
 ![[Pasted image 20240129125548.png]]
-Work done stretching one $\delta x=F\delta x=kx\delta x$,  and so total [[work]] done $=\sum kx\delta x$, so [[elastic potential energy]] can be written as:
+Work done stretching one $\delta x=F\delta x=kx\delta x$,  and so total [[Work]] done $=\sum kx\delta x$, so [[Elastic Potential Energy]] can be written as:
 $$
 
 \int _{0}^x kx\, dx=\frac{1}{2}kx^2=\frac{\lambda x^2}{2l}

@@ -1,4 +1,4 @@
-Pions are first generation [[mesons]] and have the following names and structure:
+Pions are first generation [[Mesons]] and have the following names and structure:
 $$
 \ce{ \pi+=u\bar{\text{d}} }
 $$

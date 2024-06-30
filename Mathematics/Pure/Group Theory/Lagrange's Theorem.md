@@ -1,4 +1,4 @@
-The [[Order of Elements|order]] of any [[Subgroups|subgroup]] of a finite [[groups|group]] is a factor of the order of the group
+The [[Order of Elements|order]] of any [[Subgroups|subgroup]] of a finite [[Groups|group]] is a factor of the order of the group
 ## Proof
 Let element $a$ have order $k$
 Then $<a> = \{ e,a,a^{2},\dots,a^{k-1} \}$

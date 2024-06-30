@@ -1,4 +1,4 @@
-Consider an atomic system that exists in two [[Atomic Energy Levels|energy states]], U and L (upper and lower) of a system with energies $E_\text{U}$ and $E_\text{L}$. An atom or molecule can change its state from L to U by [[Absorption Spectra|absorbing]] a [[Photoelectric Effect|photon]] of the same [[frequency]] $f$ where:
+Consider an atomic system that exists in two [[Atomic Energy Levels|energy states]], U and L (upper and lower) of a system with energies $E_\text{U}$ and $E_\text{L}$. An atom or molecule can change its state from L to U by [[Absorption Spectra|absorbing]] a [[Photoelectric Effect|photon]] of the same [[Frequency]] $f$ where:
 $$
 hf=E_\text{U}-E_\text{L}
 $$

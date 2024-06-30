@@ -1,4 +1,4 @@
-Since a [[Electric Current|current]] in a metal wire is made up of moving free electrons, it seems likely that the [[motor effect]] force on a current-carrying wire is simply equal to the sum of forces acting on the individual moving electrons. If so, we can easily find the magnetic force on an electron with [[drift velocity]] $v$:
+Since a [[Electric Current|current]] in a metal wire is made up of moving free electrons, it seems likely that the [[Motor Effect]] force on a current-carrying wire is simply equal to the sum of forces acting on the individual moving electrons. If so, we can easily find the magnetic force on an electron with [[Drift Velocity]] $v$:
 ![[Magnetic Fields on Moving Charges 2024-04-15 18.58.43.excalidraw]]
 Firstly, we know that if the wire has cross-sectional area $A$ and has $n$ free electrons per unit volume, then the current will be:
 $$
@@ -20,14 +20,14 @@ $$
 F=Bqv\sin\theta
 $$
 
-The direction of the force is given by [[Fleming's left hand motor rule]]
+The direction of the force is given by [[Fleming's Left Hand Motor Rule]]
 ## Path of a Charged Particle Moving in a [[Uniform Magnetic Fields|Uniform Magnetic Field]]
-Suppose that a charge, $q$, moving at speed $v$ is 'injected' into a uniform magnetic field, $B$, with angle $\theta$ between the directions of the field and the particle [[velocity]]. Assuming no other forces other than the magnetic force are acting on the particle, we can predict its path.
-First, note that the magnetic (motor effect) force is always at right angles to the particle's direction of motion. Therefore, the field can't do [[work]] on the particle. Its [[kinetic energy]], hence its [[speed]], remain constant. Instead, the force causes the particle's direction of motion to change at a constant rate. 
+Suppose that a charge, $q$, moving at speed $v$ is 'injected' into a uniform magnetic field, $B$, with angle $\theta$ between the directions of the field and the particle [[Velocity]]. Assuming no other forces other than the magnetic force are acting on the particle, we can predict its path.
+First, note that the magnetic (motor effect) force is always at right angles to the particle's direction of motion. Therefore, the field can't do [[Work]] on the particle. Its [[Kinetic Energy]], hence its [[Speed]], remain constant. Instead, the force causes the particle's direction of motion to change at a constant rate. 
 ### $\theta=0$
 If $\theta=0$, there will be no force, so the particle will carry on moving parallel to the field lines, at speed $v$
 ### $\theta=90^{\circ}$
-If, initially the particle is moving at right angles to the field, it will continue to do so, in a circular path. The motor effect force supplies the [[centripetal acceleration]], so it's easy to find the radius of the circle, using [[Newton's Second Law of Motion]]:
+If, initially the particle is moving at right angles to the field, it will continue to do so, in a circular path. The motor effect force supplies the [[Centripetal Acceleration]], so it's easy to find the radius of the circle, using [[Newton's Second Law of Motion]]:
 $$
 F=ma
 $$

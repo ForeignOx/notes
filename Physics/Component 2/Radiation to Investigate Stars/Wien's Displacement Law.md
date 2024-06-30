@@ -1,4 +1,4 @@
-The peak [[wavelength]] of radiation emitted by a [[black body]] is inversely proportional to the absolute temperature of the body:
+The peak [[Wavelength]] of radiation emitted by a [[Black Body]] is inversely proportional to the absolute temperature of the body:
 $$
 \lambda _\text{max}=\frac{W}{T}
 $$

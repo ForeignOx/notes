@@ -1,4 +1,4 @@
-The [[electrical potential]] [[energy]] of a test [[Electric Charge|charge]], $q$, at a point $P$ in an [[Electric Fields|electric field]], is the [[work]] done by the field on $q$ as $q$ goes from $P$ to 'infinity'. So the potential energy for a test charge $q$ is:
+The [[Electrical Potential]] [[Energy]] of a test [[Electric Charge|charge]], $q$, at a point $P$ in an [[Electric Fields|electric field]], is the [[Work]] done by the field on $q$ as $q$ goes from $P$ to 'infinity'. So the potential energy for a test charge $q$ is:
 $$
 PE=qV=\frac{qQ}{4\pi\epsilon_{0}r}
 $$

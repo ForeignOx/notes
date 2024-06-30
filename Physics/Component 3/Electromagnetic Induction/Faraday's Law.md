@@ -1,8 +1,8 @@
-When the [[magnetic flux]], $\Phi$, through a circuit changes, an [[emf]] is [[Emf Induced in a Moving Conductor|induced]] in the circuit, proportional to the rate of change of flux linkage. For a circuit with $N$ identical turns:
+When the [[Magnetic Flux]], $\Phi$, through a circuit changes, an [[Emf]] is [[Emf Induced in a Moving Conductor|induced]] in the circuit, proportional to the rate of change of flux linkage. For a circuit with $N$ identical turns:
 $$
 \mathscr{E}=-\frac{d(N\Phi)}{dt}
 $$
-$N\Phi$ is the [[flux linkage]]. If the circuit is a coil of $N$ turns, each with the same flux, $\Phi$, through each, the emf is the same as if there were $N$ times the flux through a single turn
+$N\Phi$ is the [[Flux Linkage]]. If the circuit is a coil of $N$ turns, each with the same flux, $\Phi$, through each, the emf is the same as if there were $N$ times the flux through a single turn
 ## Rod on Rails
 The law gives the emf induced in a circuit in the general case. For a rod on rails, in the time $\delta t$, the rod sweeps across and area $l\times v\delta t$
 ![[Faraday's Law 2024-04-22 18.16.42.excalidraw]]

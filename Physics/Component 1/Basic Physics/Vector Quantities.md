@@ -2,7 +2,7 @@ Vector quantities have both direction and magnitude, unlike [[Scalar Quantities]
 $$
 \left(\begin{matrix} a_{1} \\ a_{2} \\ \vdots \\ a_{n} \end{matrix}\right)+\left(\begin{matrix} b_{1} \\ b_{2} \\ \vdots \\b_{n} \end{matrix}\right)=\left(\begin{matrix} a_{1}+b_{1} \\ a_{2}+b_{2} \\ \vdots \\a_{n}+b_{n} \end{matrix}\right)
 $$
-You cannot multiply two vectors, you can instead take the [[dot product]] for a similar result
+You cannot multiply two vectors, you can instead take the [[Dot Product]] for a similar result
 Some examples of vectors are: [[Displacement]], [[Velocity]], [[Acceleration]], force, [[Momentum]], [[Electric Fields|electric field]] strength, [[Magnetic Fields|magnetic field]] strength (or magnetic flux density)
 
 #Physics #Basic_Physics

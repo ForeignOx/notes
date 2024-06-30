@@ -2,7 +2,7 @@ From [[Molecular Motion and Gas Pressure]] we know $pV=\frac{1}{3}Nm \bar{c^{2}}
 $$
 E_{k \text{ trans}}=\frac{1}{2}Nm \bar{c^{2}}=\frac{3}{2}\times \frac{1}{3}Nm \bar{c^{2}}=\frac{3}{2}pV
 $$
-We can instead write $E_{k \text{ trans}}$ in terms of temperature by using the [[ideal gas equation]] to give:
+We can instead write $E_{k \text{ trans}}$ in terms of temperature by using the [[Ideal Gas Equation]] to give:
 $$
 E_{k \text{ trans}}=\frac{3}{2}nRT
 $$

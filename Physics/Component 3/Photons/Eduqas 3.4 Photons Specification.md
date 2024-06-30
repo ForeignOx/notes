@@ -9,13 +9,13 @@ There are opportunities within this topic for learners to use theories, models a
 the difficulties encountered by trying to use the wave theory of light to explain the photoelectric effect and how the photon model of light was developed. Learners can also investigate how the Planck constant can be determined using light emitting diodes.
 ## Learners should be able to demonstrate and apply their knowledge and understanding of:
 - [[Photoelectric Effect|the fact that light can be shown to consist of discrete packets (photons) of energy]]
-- how the [[photoelectric effect]] can be demonstrated
+- how the [[Photoelectric Effect]] can be demonstrated
 - how a vacuum photocell can be used to measure the maximum kinetic energy, $E_{k\text{ max}}$, of emitted electrons in $\pu{ eV }$ and hence in $\pu{ J }$
 - the graph of $E_{k\text{ max}}$ against frequency of illuminating radiation
 - how a photon picture of light leads to Einstein's equation, $E_{k \text{ max}} = hf-\phi$, and how this equation correlates with the graph of $E_{k\text{ max}}$ against frequency
 - the fact that the visible spectrum runs approximately from $700 \pu{ nm }$ (red end) to $400\pu{  nm }$ (violet end) and the orders of magnitude of the wavelengths of the other named regions of the [[Electromagnetic Radiation|electromagnetic spectrum]]
 - typical photon energies for these radiations
-- how to produce line [[Emission Spectra|emission]] and line [[absorption spectra]] from atoms
+- how to produce line [[Emission Spectra|emission]] and line [[Absorption Spectra]] from atoms
 - the appearance of such spectra as seen in a diffraction grating
 - simple [[Atomic Energy Levels|atomic energy level]] diagrams, together with the photon hypothesis, line emission and line absorption spectra
 - how to determine ionisation energies from an energy level diagram

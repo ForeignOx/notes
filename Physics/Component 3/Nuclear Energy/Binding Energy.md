@@ -1,6 +1,6 @@
-The binding [[energy]] of a system is the energy required to separate the particles of the system. The binding energy of a nucleus is the energy required to disassemble the nucleus into its constituent protons and neutrons
+The binding [[Energy]] of a system is the energy required to separate the particles of the system. The binding energy of a nucleus is the energy required to disassemble the nucleus into its constituent protons and neutrons
 We can use the measured masses of the particles and [[Mass-Energy|$E=mc^2$]] to calculate the nuclear binding energy for any nucleus as follows:
-1. Calculate the [[mass]] deficit, $\Delta m$ of the nucleus. The nuclear mass is less than the sums of the masses of the individual protons and neutrons. The difference is the mass deficit
+1. Calculate the [[Mass]] deficit, $\Delta m$ of the nucleus. The nuclear mass is less than the sums of the masses of the individual protons and neutrons. The difference is the mass deficit
 2. calculate the binding energy using $E=\Delta mc^{2}$
 ## Binding Energy per Nucleon
 Imagine building up stable nuclei by adding more and more nucleons (protons and neutrons). As each extra nucleon is added, the binding energy must increase. If it didn't, that extra nucleon would not be bound to the others. Hence, we'd expect the binding energy of stable nuclei to increase with nucleon number, which is generally what we find. However, to determine how tightly the individual nucleons are bound we need to calculate the binding energy per nucleon:

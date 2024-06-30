@@ -1,4 +1,4 @@
-Consider two [[Progressive Waves|wave]] sources, $S_{1}$ and $S_{2}$, we can predict where there will be [[interference]] using path difference by working out at which point in a [[wavelength]] two waves are, using [[Phase of Oscillation|phase]]. If they are in phase, there will be constructive interference, if they are in antiphase, there will be destructive interference
+Consider two [[Progressive Waves|wave]] sources, $S_{1}$ and $S_{2}$, we can predict where there will be [[Interference]] using path difference by working out at which point in a [[Wavelength]] two waves are, using [[Phase of Oscillation|phase]]. If they are in phase, there will be constructive interference, if they are in antiphase, there will be destructive interference
 ![[Path Difference 2024-04-08 19.22.40.excalidraw]]
 The general rules for waves from in phase sources are:
 For constructive interference at a point $X$, the path difference, 

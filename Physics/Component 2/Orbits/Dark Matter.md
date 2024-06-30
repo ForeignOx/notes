@@ -7,7 +7,7 @@ One successful predictions of Einstein's general theory of relativity was that t
 ![[Pasted image 20240401174917.png]]
 Light from the quasar, labelled source, is diverted into multiple paths, each of which leads to an image. The degree of light bending reveals that the galaxy has much more mass than in the stars and gas clouds
 ## Evidence from [[CMBR]]
-The CMBR retains the imprint of the density fluctuations in the early universe. Baryonic matter and [[nonbaryonic matter]] have different effects. Detailed investigation of the CMBR images leads to the conclusion that $85\%$ of the matter in the universe is nonbaryonic
+The CMBR retains the imprint of the density fluctuations in the early universe. Baryonic matter and [[Nonbaryonic Matter]] have different effects. Detailed investigation of the CMBR images leads to the conclusion that $85\%$ of the matter in the universe is nonbaryonic
 ## Higgs boson relating to dark matter
 It has been suggested that the Higgs boson could be the source of dark matter. The Higgs normally decays into bosons or into fermions, but it has been suggested that it could also decay into a photon plus a dark matter particle
 

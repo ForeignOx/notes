@@ -1,4 +1,4 @@
-w[[Hadrons|Hadrons]] composed of 3 [[quarks]], e.g. proton, neutron
+w[[Hadrons|Hadrons]] composed of 3 [[Quarks]], e.g. proton, neutron
 The quark structures of protons and neutrons can be written as:
 $$
 \ce{ p=uud }

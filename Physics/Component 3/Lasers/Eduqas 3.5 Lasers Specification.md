@@ -8,10 +8,10 @@ There are a number of opportunities for the development of mathematical skills i
 There are opportunities within this topic for learners to communicate information and ideas in appropriate ways using appropriate terminology; to consider applications and implications of science and evaluate their associated benefits and risks. 
 ## Learners should be able to demonstrate and apply their knowledge and understanding of:
 - the process of [[Stimulated Photon Emission|stimulated emission]] and how this process leads to light emission that is coherent
-- the idea that a [[population inversion]] ($N_{2}>N_{1}$) is necessary for a laser to operate
+- the idea that a [[Population Inversion]] ($N_{2}>N_{1}$) is necessary for a laser to operate
 - [[LASERs|the idea that a population inversion is not (usually) possible with a 2-level energy system]]
 - [[LASERs|how a population inversion is attained in 3 and 4-level energy systems]]
-- the process of [[pumping]] and its purpose
+- the process of [[Pumping]] and its purpose
 - [[LASERs|the structure of a typical laser i.e. an amplifying medium between two mirrors, one of which partially transmits light]]
 - [[LASERs|the advantages and uses of a semiconductor laser i.e. small, cheap, far more efficient than other types of laser, and it is used for CDs, DVDs, telecommunication etc]]
 

@@ -1,4 +1,4 @@
-The potential, $V$, at a point $P$ in an [[Electric Fields|electric field]] is the [[work]] done by the field per unit [[Electric Charge|charge]] on a test charge as it goes from $P$ to infinity. The potential due to a point charge, $Q$ at distance $r$ from $Q$ is:
+The potential, $V$, at a point $P$ in an [[Electric Fields|electric field]] is the [[Work]] done by the field per unit [[Electric Charge|charge]] on a test charge as it goes from $P$ to infinity. The potential due to a point charge, $Q$ at distance $r$ from $Q$ is:
 $$
 V=\frac{Q}{4\pi\epsilon_{0}r}
 $$

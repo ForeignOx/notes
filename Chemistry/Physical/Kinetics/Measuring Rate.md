@@ -1,4 +1,4 @@
-Measuring [[rate of reaction]] can be done in a variety of ways:
+Measuring [[Rate of reaction]] can be done in a variety of ways:
 ### How long it takes for a precipitate to form
 Place a cross on paper and time how long it takes for the cross to disappear (precipitate to form). One problem with this method is that it is difficult to know exactly when the cross disappears
 ### Amount of mass lost

@@ -3,7 +3,7 @@ These are the steps required to balance a half equation:
 1. Write down the species before and after a reaction
 2. Balance any atoms apart from oxygen and hydrogen
 3. Balance any oxygens with $\ce{ H_{2}O }$
-4. Balance any hydrogens with $\ce{ H+ }$ [[ions]]
+4. Balance any hydrogens with $\ce{ H+ }$ [[Ions]]
 5. Balance charges with electrons $\ce{ e- }$
 
 ## Combining Half Equations

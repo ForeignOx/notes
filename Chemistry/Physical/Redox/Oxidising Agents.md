@@ -1,3 +1,3 @@
-Oxidising agents gain electrons and are [[redox|reduced]]
+Oxidising agents gain electrons and are [[Redox|reduced]]
 
 #Chemistry #Physical #Redox 

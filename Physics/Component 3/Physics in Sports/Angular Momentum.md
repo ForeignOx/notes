@@ -1,4 +1,4 @@
-Linear [[momentum]], $p$, is defined by the equation:
+Linear [[Momentum]], $p$, is defined by the equation:
 $$
 p=mv
 $$
@@ -6,6 +6,6 @@ Similarly we define the angular momentum, $J$, by:
 $$
 J=I\omega
 $$
-Where $I$ is the [[moment of inertia]] and $\omega$ is the [[angular speed]]
+Where $I$ is the [[Moment of Inertia]] and $\omega$ is the [[Angular Speed]]
 
 #Physics #Sports #Equation

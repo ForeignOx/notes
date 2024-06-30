@@ -1,4 +1,4 @@
-The discovery of the atomic nucleus by Rutherford, Geiger and Marsden was by the scattering of [[Alpha Decay|$\alpha$]] particles by gold atoms. The number of alpha particles, $N$, of [[kinetic energy]] $E_{k}$, scattered from the gold nuclei was found to depend upon the angle of scattering, $\theta$, according to:
+The discovery of the atomic nucleus by Rutherford, Geiger and Marsden was by the scattering of [[Alpha Decay|$\alpha$]] particles by gold atoms. The number of alpha particles, $N$, of [[Kinetic Energy]] $E_{k}$, scattered from the gold nuclei was found to depend upon the angle of scattering, $\theta$, according to:
 $$
 N\propto \frac{1}{E_{k}^{2}\sin ^{4}\left( \frac{\theta}{2} \right)}
 $$
@@ -9,6 +9,6 @@ $$
 $$
 \implies d=4.6\times 10^{-14}\pu{ m}
 $$
-So we conclude that the radius of the gold nucleus must be less than this. Later experiments with accelerated alpha particles showed a departure from the Rutherford formula above about $25\pu{ MeV}$, which leads to an estimate of $9\times 10^{-15}\pu{ m}$. The most accurate measurements are made using the [[diffraction]] of high-energy electrons from nuclei
+So we conclude that the radius of the gold nucleus must be less than this. Later experiments with accelerated alpha particles showed a departure from the Rutherford formula above about $25\pu{ MeV}$, which leads to an estimate of $9\times 10^{-15}\pu{ m}$. The most accurate measurements are made using the [[Diffraction]] of high-energy electrons from nuclei
 
 #Physics #Nuclear_Energy 

@@ -5,7 +5,7 @@ SMILES stands for Simplified Molecular Input Line Entry System. It is a way of e
 	* <span style="color:#21d07c">[C]</span> is a carbon atom, but <span style="color:#21d07c">C</span> is a methane molecule
 	* Ammonia is <span style="color:#21d07c">N</span>
 	* Water is <span style="color:#21d07c">O</span>
-*  Atoms in [[arenes|aromatic rings]] are specified by lower case letters, [[Aliphatic Compounds|aliphatic compounds]] use uppercase letters
+*  Atoms in [[Arenes|aromatic rings]] are specified by lower case letters, [[Aliphatic Compounds|aliphatic compounds]] use uppercase letters
 	* <span style="color:#21d07c">c1ccccc1</span> is benzene, while <span style="color:#21d07c">C1CCCCC1</span> is hexane
 * Formal charge is shown by either <span style="color:#21d07c">+</span> or <span style="color:#21d07c">-</span> followed by a digit
 	* <span style="color:#21d07c">[HO-]</span> is a hydroxide ion

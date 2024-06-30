@@ -1,6 +1,9 @@
-The geometric distribution counts the number of trials for the first success to occur, it is defined like so:
+A variable has a geometric distribution if it is modelled by the number of [[Independence|independant]] [[Bernoulli Distribution|bernoulli trials]] necessary for the first success:
 $$
-X\sim Geo(p)\iff P(X=r)=(1-p)^{r-1}p
+X\sim Geo(p)\iff P(X=r)=\begin{cases}
+(1-p)^{r-1}p && r \in \mathbb{N}
+\\ 0 && otherwise
+\end{cases}
 $$
 This is related to the [[Binomial Distribution|binomial distribution]] as it has:
 - a probability of success that is the same on each trial ($p$)
@@ -46,7 +49,7 @@ $$
 $$
 This is because you essentially are ignoring the first $r$ trials
 ___
-## Expectation
+## [[E(X)]]
 Find $E(X)$
 $$
 E(X)=\sum_{r=1}^\infty r(1-p)^{r-1}p=p\sum_{r=1}^\infty r(1-p)^{r-1}
@@ -66,7 +69,7 @@ $$
 \therefore E(X)=\frac{1}{p}
 $$
 ___
-## Variance
+## [[Var(X)]]
 Consider $E(X(X-1))$
 $$
 E(X(X-1))= 1\cdot 0p+2\cdot 1 p(1-p)+3 \cdot 2p(1-p)^{2}+4\cdot 3p(1-p)^{3}+\dots
@@ -109,6 +112,4 @@ $$
 \therefore Var(X)=\frac{1-p}{p^{2}}
 $$
 
-
-
-
+#Mathematics

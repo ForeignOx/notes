@@ -1,4 +1,4 @@
-The partial pressure of a gas is calculated using [[mole fractions]] and [[total pressure]] in a mixture
+The partial pressure of a gas is calculated using [[Mole Fractions]] and [[Total Pressure]] in a mixture
 $$
 \text{Partial Pressure}=\text{Mole Fraction}\times \text{Total Pressure}
 $$

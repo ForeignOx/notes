@@ -1,4 +1,4 @@
-Let $(G,*)$ be a [[groups|group]] with elements $a,b\in G$
+Let $(G,*)$ be a [[Groups|group]] with elements $a,b\in G$
 $$
 a*b=1\implies a^{-1}=b
 $$

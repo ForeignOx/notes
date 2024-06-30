@@ -1,9 +1,9 @@
-The capacitance, $C$, of a [[capacitor]] is the constant ratio of [[electric charge|charge]] on either plate divided by the [[potential difference]] between the plates:
+The capacitance, $C$, of a [[Capacitor]] is the constant ratio of [[Electric Charge|charge]] on either plate divided by the [[Potential Difference]] between the plates:
 $$
 C=\frac{Q}{V}
 $$
 Capacitance has the unit $\pu{ CV-1=F }$, the farad
-If a [[Batteries|battery]] is connected across a capacitor, some electrons are removed from one plate and transferred by the battery to the other. The plates gain equal and opposite charges (on facing surfaces). This 'charging' stops when the potential difference between the plates is equal to the [[emf]] of the battery
+If a [[Batteries|battery]] is connected across a capacitor, some electrons are removed from one plate and transferred by the battery to the other. The plates gain equal and opposite charges (on facing surfaces). This 'charging' stops when the potential difference between the plates is equal to the [[Emf]] of the battery
 ![[Capacitance 2024-03-22 09.23.38.excalidraw]]
 If we disconnect the battery, the charges are isolated on the plates, maintaining a potential difference between the plates. We can investigate how the charge ($\pm Q$) on the capacitor plates is related to the potential difference, $V$, and we find that the charge stored on either plate is proportional to the potential difference. So we can write:
 $$
@@ -43,7 +43,7 @@ If there are more than two capacitors, we simply go on adding reciprocals
 A battery connected briefly between two concentric spherical metal shells (hollow spheres) will transfer electrons from one shell to the other. Equal and opposite charges will therefore coat the facing surfaces of the shells, and there will be a [[Electric Fields|field]] in the gap as shown in the diagram below
 ![[Capacitance 2024-03-26 18.36.29.excalidraw]]
 
-The [[electric field strength]]  in the gap, at a distance $r$ from the centre will simply be
+The [[Electric Field Strength]]  in the gap, at a distance $r$ from the centre will simply be
 $$
 E=\frac{Q}{4\pi\epsilon_{0}r^{2}}
 $$

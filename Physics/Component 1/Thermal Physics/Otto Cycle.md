@@ -15,7 +15,7 @@ A petrol engine normally has several cylinders (often 4 in cars and operates at 
 $$
 P_\text{max}=nf(W_{1}-W_{2})
 $$
-Where $n$ is the number of cylinders, $f$ is the engine [[frequency]] and $W_{1}-W_{2}$ is the net energy output
+Where $n$ is the number of cylinders, $f$ is the engine [[Frequency]] and $W_{1}-W_{2}$ is the net energy output
 ### [[Efficiency]]
 Even in an ideal engine, we cannot get out 100% of the energy we put in. The maximum possible efficiency is
 $$

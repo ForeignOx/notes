@@ -1,5 +1,5 @@
 If a reaction at [[Dynamic Equilibrium|equilibrium]] is subjected to a change in pressure, temperature or concentration, the position of equilibrium will move to counteract the change
-Note this only occurs in [[homogeneous equilibria]]
+Note this only occurs in [[Homogeneous Equilibria]]
 ## Concentration
 If we increase the concentration of a reactant or product, the equilibrium will shift to try to reduce the concentration, if a concentration is decreased, the opposite will happen
 ## Pressure

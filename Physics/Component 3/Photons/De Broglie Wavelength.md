@@ -1,4 +1,4 @@
-The [[wavelength]] of a particle, $\lambda$, such as an electron, is related to its [[momentum]], $p$, by the equation:
+The [[Wavelength]] of a particle, $\lambda$, such as an electron, is related to its [[Momentum]], $p$, by the equation:
 $$
 \lambda=\frac{h}{p}
 $$

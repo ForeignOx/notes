@@ -1,3 +1,3 @@
-The compression modulus is pretty much the same as the [[Young modulus]], except for compression instead of tension, so the compression modulus is the [[compressive stress]] divided by the [[compressive strain]]. And since these are essentially the same as the [[tensile stress]] and [[tensile strain]], the compression modulus is essentially the same as the Young modulus
+The compression modulus is pretty much the same as the [[Young Modulus]], except for compression instead of tension, so the compression modulus is the [[Compressive Stress]] divided by the [[Compressive Strain]]. And since these are essentially the same as the [[Tensile Stress]] and [[Tensile Strain]], the compression modulus is essentially the same as the Young modulus
 
 #Physics #Materials #Definition

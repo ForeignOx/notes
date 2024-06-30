@@ -30,7 +30,7 @@ $\ce{ H_{2}SO_{4} }$ is sulfuric (VI) acid
 # Silicon and Aluminium Oxides
 Silicon and Aluminium oxides behave differently when added to water.
 ## $\ce{ SiO_{2} }$ 'Reacting' with Water
-Silicon dioxide forms a [[Giant Covalent Structures|giant covalent structure]] which has many, strong, covalent bonds that require large amounts of [[energy]] to break. For this reason, silicon dioxide is insoluble in water. It will react with a base to form a salt, so it is classed as an acid
+Silicon dioxide forms a [[Giant Covalent Structures|giant covalent structure]] which has many, strong, covalent bonds that require large amounts of [[Energy]] to break. For this reason, silicon dioxide is insoluble in water. It will react with a base to form a salt, so it is classed as an acid
 ## $\ce{ Al_{2}O_{3} }$ 'Reacting' with Water
 Aluminium oxide is [[Amphoteric Substances|amphoteric]]. It has both [[Covalent Character|covalent]] and ionic character and is insoluble in water. It will however react with both acids and bases to form salts which is why it is amphoteric
 

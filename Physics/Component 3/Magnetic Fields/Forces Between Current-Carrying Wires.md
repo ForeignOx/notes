@@ -1,7 +1,7 @@
-Knowing the [[magnetic flux density]] around a [[Magnetic Field due to a Current in a Circuit|long straight wire]] carrying a [[Electric Current|current]] $I_{1}$, we can calculate the motor effect force on a nearby parallel wire of length $l$ carrying current $I_{2}$. The force on $l$ will be the same whether the set-up is that shown in both of the below diagrams; we're not concerned with the forces on the rest of the circuit that carries $I_{2}$
+Knowing the [[Magnetic Flux Density]] around a [[Magnetic Field due to a Current in a Circuit|long straight wire]] carrying a [[Electric Current|current]] $I_{1}$, we can calculate the motor effect force on a nearby parallel wire of length $l$ carrying current $I_{2}$. The force on $l$ will be the same whether the set-up is that shown in both of the below diagrams; we're not concerned with the forces on the rest of the circuit that carries $I_{2}$
 ![[Forces Between Current-Carrying Wires 2024-04-20 17.52.54.excalidraw]]
 ![[Forces Between Current-Carrying Wires 2024-04-20 17.55.44.excalidraw]]
-In the vicinity of $l$, the field due to $I_{1}$ is into the page, as shown (using the [[right hand grip rule]]). So $l$ experiences a force towards $I_{1}$ (using [[Fleming's left hand motor rule]]). The magnitude of the force on $l$ is:
+In the vicinity of $l$, the field due to $I_{1}$ is into the page, as shown (using the [[Right Hand Grip Rule]]). So $l$ experiences a force towards $I_{1}$ (using [[Fleming's Left Hand Motor Rule]]). The magnitude of the force on $l$ is:
 $$
 F=BI_{2}l=\frac{\mu_{0}I_{1}}{2\pi d}\times I_{2}l
 $$

@@ -1,4 +1,4 @@
-The total power of the radiation emitted by a [[black body]], per unit area is directly proportional to $T^{4}$:
+The total power of the radiation emitted by a [[Black Body]], per unit area is directly proportional to $T^{4}$:
 $$
 P=A\sigma T^{4}
 $$

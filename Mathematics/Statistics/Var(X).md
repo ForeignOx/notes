@@ -59,3 +59,5 @@ So if $X$ and $Y$ are independent, their [[Covariance|covariance]] will be 0, so
 $$
 Var(X\pm Y)=Var(X)+Var(Y)
 $$
+
+#Mathematics

@@ -16,7 +16,7 @@ There are opportunities within this topic for learners to carry out experimental
 - the concept of [[Density]] and how to use the equation $\rho=\frac{m}{V}$ to calculate mass, density and volume
 - [[Moments|what is meant by the turning effect of a force]]
 - [[Principle of Moments|the use of the principle of moments]]
-- [[Physics/Component 1/Basic Physics/Centres of Mass|the use of centre of gravity, for example in problems including stability: identify its position in a cylinder, sphere and cuboid (beam) of uniform density]]
+- [[Git?/Physics/Component 1/Basic Physics/Centres of Mass|the use of centre of gravity, for example in problems including stability: identify its position in a cylinder, sphere and cuboid (beam) of uniform density]]
 - [[Equilibrium|when a body is in equilibrium the resultant force is zero and the net moment is zero, and be able to perform simple calculations]]
 ## Specified Practical Work
 • Measurement of the density of solids

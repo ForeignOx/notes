@@ -1,4 +1,4 @@
-[[Hadrons|Hadrons]] composed of 3 [[quarks|antiquarks]], e.g. antiproton
+[[Hadrons|Hadrons]] composed of 3 [[Quarks|antiquarks]], e.g. antiproton
 The quark structures of antiprotons and antineutrons can be written as:
 $$
 \ce{\bar{\text{p}}= \overline{\text{uud}} }

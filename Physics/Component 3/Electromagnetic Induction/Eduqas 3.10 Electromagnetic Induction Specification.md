@@ -7,7 +7,7 @@ There are a number of opportunities for the development of mathematical skills i
 ## How Science Works
 There is an opportunity within this topic for learners to use theories, models and ideas to develop scientific explanations. Learners can consider the applications and implications of science and the associated benefits to society by studying the application of Faraday’s law to the case of a rotating coil in a magnetic field. They can consider how the invention of devices such as the a.c. generator has benefitted society. Lenz’s law gives learners the opportunity to answer scientific questions and solve scientific problems.
 ## Learners should be able to demonstrate and apply their knowledge and understanding of:
-- the definition of [[magnetic flux]] as $\phi=AB\cos\theta$ and [[flux linkage]] $=N\phi$
+- the definition of [[Magnetic Flux]] as $\phi=AB\cos\theta$ and [[Flux Linkage]] $=N\phi$
 - the laws of [[Faraday's Law|Faraday]] and [[Lenz's Law|Lenz]]
 - how to apply the laws of Faraday and Lenz (i.e. emf = - rate of change of flux linkage)
 - the idea that an [[Emf Induced in a Moving Conductor|emf is induced in a linear conductor moving at right angles to a uniform magnetic field]]

@@ -1,4 +1,4 @@
-We suppose that the [[capacitor]] has no [[Electric Charge|charge]] on its plates initially, but that, at time $t=0$, the switch is closed, so that a fixed [[potential difference]], $V_{0}$ is applied across the $RC$ combination. At any time after $t=0$, the potential differences across $R$ and $C$ add up to $V_{0}$. Essentially:
+We suppose that the [[Capacitor]] has no [[Electric Charge|charge]] on its plates initially, but that, at time $t=0$, the switch is closed, so that a fixed [[Potential Difference]], $V_{0}$ is applied across the $RC$ combination. At any time after $t=0$, the potential differences across $R$ and $C$ add up to $V_{0}$. Essentially:
 $$
 V_{C}+V_{R}=V_{0}=\frac{Q}{C}+IR
 $$
@@ -10,7 +10,7 @@ We know that $V_{0}=\frac{Q_{0}}{C}$, so we have the differential equation:
 $$
 R\frac{d Q}{dt} +\frac{Q}{C}=\frac{Q_{0}}{C}
 $$
-This can be solved using an [[integrating factor]]:
+This can be solved using an [[Integrating Factor]]:
 $$
 \frac{d Q}{dt} +\frac{1}{RC}Q=\frac{Q_{0}}{RC}
 $$

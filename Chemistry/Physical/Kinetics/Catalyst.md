@@ -1,6 +1,6 @@
-A substance that increases the rate of a reaction by providing an alternative reaction pathway which has a lower [[activation energy]]. The catalyst is chemically unchanged at the end of the reaction
-As [[transition metals]] have variable [[oxidation states]] they are good catalysts by receiving and losing some electrons in the [[Electron Configuration|d-orbitals]] to speed up reactions
-Catalysts are used to make proeduct faster and can be used to lower the tmperature required for a reaction. This saves [[energy]] and money and is better for the environment
+A substance that increases the rate of a reaction by providing an alternative reaction pathway which has a lower [[Activation Energy]]. The catalyst is chemically unchanged at the end of the reaction
+As [[Transition Metals]] have variable [[Oxidation States]] they are good catalysts by receiving and losing some electrons in the [[Electron Configuration|d-orbitals]] to speed up reactions
+Catalysts are used to make proeduct faster and can be used to lower the tmperature required for a reaction. This saves [[Energy]] and money and is better for the environment
 ## Types of Catalyst
 Catalysts can be homogeneous or heterogeneous
 ### Heterogeneous

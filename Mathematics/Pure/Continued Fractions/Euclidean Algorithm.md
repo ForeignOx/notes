@@ -24,7 +24,7 @@ Each divisor of $a$ and $b-a$ is also a divisor of $b$
 
 Let $k|a$ and $k|(b-a)$ so $a=uk$ and $b-a=vk$, for $u,v \in\mathbb{Z}$, then $a_{(b-a)=uk+vk}\implies b=k(u+v)$ as $u+v \in\mathbb{Z},k|b$ This holds for all divisors, so must also hold for gcd
 ## Euclidean Algorithm
-Let $a,b\in\mathbb{Z}:a\geq b>0$, we can write $a=qb+r$, where $0 \leq r<b$ by the [[divisor algorithm]]
+Let $a,b\in\mathbb{Z}:a\geq b>0$, we can write $a=qb+r$, where $0 \leq r<b$ by the [[Divisor Algorithm]]
 In fact, we have a series of quotients $q$ and remainder $r_{i}$ such that $0\leq r_{i+1}<r$ ($i\in\mathbb{N}$) and $r_{0}=b$ with:
 $$
 a=q_{1}b+r_{1}

@@ -1,7 +1,7 @@
-This is a 'flat' coil that is turned by some external means in a [[Uniform Magnetic Fields|uniform magnetic field]]. As it rotates, the [[flux linkage]] changes, so an [[emf]] is [[Emf Induced in a Moving Conductor|induced]]. For simplicity, we consider a rectangular coil, WXYZ, represented as a single turn
+This is a 'flat' coil that is turned by some external means in a [[Uniform Magnetic Fields|uniform magnetic field]]. As it rotates, the [[Flux Linkage]] changes, so an [[Emf]] is [[Emf Induced in a Moving Conductor|induced]]. For simplicity, we consider a rectangular coil, WXYZ, represented as a single turn
 ![[Simple Alternating Current Generator 2024-04-23 17.38.09.excalidraw]]
 ![[Simple Alternating Current Generator 2024-04-23 17.44.30.excalidraw]]
-When the normal to the coil is at angle $\phi$ to the field, the [[magnetic flux]], $\Phi$ through the coil is
+When the normal to the coil is at angle $\phi$ to the field, the [[Magnetic Flux]], $\Phi$ through the coil is
 $$
 \Phi=BA\cos \phi
 $$
@@ -10,7 +10,7 @@ $$
 N\Phi=NBA\cos \phi
 $$
 $A\cos \phi$ is the area that the coil presents normally to the flux. For example, when $\phi=0$, the coil presents 'full frontally' and $A\cos \phi=A$, but when $\phi=\frac{\pi}{2}$, the coil presents 'edge-on' and $A\cos \phi=0$
-To find out how the emf changes with time, we note that, if the coil is being turned at a steady [[angular speed]] $\omega$, then at time $t$:
+To find out how the emf changes with time, we note that, if the coil is being turned at a steady [[Angular Speed]] $\omega$, then at time $t$:
 $$
 \phi=\omega t+\phi_{0}
 $$

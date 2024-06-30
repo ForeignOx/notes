@@ -5,7 +5,7 @@ $$
 ## GPE in terms of gravitational fields
 The potential energy of a test mass, $m$, at a point $P$ in a gravitational field is the work done by the field on $m$ as $m$ goes from $P$ to infinity
 Hence the work done by the field on $m$ is negative because the gravitational force on $m$ will be back towards the body or bodies responsible for the field, that is essentially the opposite direction to $m$'s journey from $P$ to infinity. This makes the  gravitational potential energy, $E_{p}$, a negative quantity, approaching zero as $P$ approaches infinity. The zero of $E_{p}$ at infinity is contrived for mathematical convenience
-We now concentrate on the potential energy of $m$ at a point $P$ outside a spherically symmetric mass distribution, $M$. We know that the $E_{p}$ is $m$ multiplied by the area under the $g-r$ graph, which is given by the equation for [[gravitational field strength]], so:
+We now concentrate on the potential energy of $m$ at a point $P$ outside a spherically symmetric mass distribution, $M$. We know that the $E_{p}$ is $m$ multiplied by the area under the $g-r$ graph, which is given by the equation for [[Gravitational Field Strength]], so:
 $$
 E_{p}=m\int _{r_{P}}^{\infty}g \, dr = -GmM\int_{r_{P}}^{\infty} \frac{1}{r^{2}} \, dr  
 $$

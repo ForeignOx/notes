@@ -1,4 +1,4 @@
-The potential difference, $V$ between two points $X$ and $Y$ is the [[work]] done, i.e. the loss of electrical potential energy per unit charge passing between $X$ and $Y$. It has unit volt, $\pu{ V =JC-1}$
+The potential difference, $V$ between two points $X$ and $Y$ is the [[Work]] done, i.e. the loss of electrical potential energy per unit charge passing between $X$ and $Y$. It has unit volt, $\pu{ V =JC-1}$
 ![[Potential Difference 2024-03-24 21.27.05.excalidraw]]
 $X$ is said to be at a higher potential if the voltmeter gives a positive reading
 ## Potential Difference in Parallel Circuits
@@ -21,7 +21,7 @@ $$
 $$
 ## Potential Difference in an [[Electric Fields|Electric Field]]
 The potential difference, $\Delta V$, between two points, $A$ and $B$ in an electric field is the work done per unit charge ($\frac{W}{q}$) by the field on a test charge, $q$, going from $A$ to $B$. If $\frac{W}{q}>0$, $A$ is at the higher potential. 
-Suppose that a test charge, $q$ is displaced by $\delta x$. from $A$ to $B$ in the direction of a [[uniform electric field]]. It loses [[electrical potential energy]] (EPE) equal to the work done on it by the field. So:
+Suppose that a test charge, $q$ is displaced by $\delta x$. from $A$ to $B$ in the direction of a [[Uniform Electric Field]]. It loses [[Electrical Potential Energy]] (EPE) equal to the work done on it by the field. So:
 $$
 \text{Change in EPE of }q = -(\text{force on }q\times\delta x)
 $$

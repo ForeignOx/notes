@@ -1,6 +1,6 @@
 A steady [[Electric Current|current]] requires a complete conducting circuit. We find that the circuit produces a [[Magnetic Fields|magnetic field]] and that the [[Magnetic Field Lines|lines of flux]] are linked with the circuit in the same topological way that handles of keys are linked with a key ring
 ![[Magnetic Field due to a Current in a Circuit 2024-04-16 20.14.10.excalidraw]]
-The direction of the field is given by the [[right hand grip rule]]. The rule can be applied all round the circuit; it's natural to suppose that each part of the circuit is contributing to the magnetic field. The [[Magnetic Flux Density|flux density]] at any point in the vicinity is the vector sum of flux densities due to all the little bits of the circuit
+The direction of the field is given by the [[Right Hand Grip Rule]]. The rule can be applied all round the circuit; it's natural to suppose that each part of the circuit is contributing to the magnetic field. The [[Magnetic Flux Density|flux density]] at any point in the vicinity is the vector sum of flux densities due to all the little bits of the circuit
 ## Magnetic Field due to a Current in a Long Straight Wire
 The wire will have to be part of a circuit, of course, but we shall consider the field only in a region which is close to the wire and far from both the ends of the straight part and the rest of the circuit. The field looks something like:
 ![[Magnetic Field due to a Current in a Circuit 2024-04-16 20.55.00.excalidraw]]

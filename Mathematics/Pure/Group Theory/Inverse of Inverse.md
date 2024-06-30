@@ -1,4 +1,4 @@
-Let $(G,*)$ be a [[groups|group]] with element $a\in G$
+Let $(G,*)$ be a [[Groups|group]] with element $a\in G$
 The inverse of the inverse of $a$ is $a$, i.e. $(a^{-1})^{-1}=a$
 ## Proof
 $$

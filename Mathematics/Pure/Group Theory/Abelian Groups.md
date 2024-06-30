@@ -1,4 +1,4 @@
-A binary operator of a [[groups|group]] is commutative if:
+A binary operator of a [[Groups|group]] is commutative if:
 $$
 \forall a,b \in G, a*b=b*a
 $$

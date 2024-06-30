@@ -7,7 +7,7 @@ x=A_{0}e^{ -\lambda t }\cos(\omega t+\epsilon)
 $$
 Note the that value of $\omega$ is not precisely equal to its value in the absence of damping, but it is very close
 ![[output-onlinepngtools.png]]
-Notice that the [[period]] of the oscillation is constant - the time for oscillations does not get shorter as the amplitude decays. Also the amplitude goes down by the same fraction in each cycle
+Notice that the [[Period]] of the oscillation is constant - the time for oscillations does not get shorter as the amplitude decays. Also the amplitude goes down by the same fraction in each cycle
 The greater the value of $\lambda$, the more rapidly the amplitude of the oscillations decreases
 ## Over Damping and Critical Damping
 As the degree of damping increases, the system initially returns to equilibrium more quickly

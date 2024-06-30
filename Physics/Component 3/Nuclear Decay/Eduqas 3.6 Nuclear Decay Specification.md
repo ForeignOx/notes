@@ -7,14 +7,14 @@ There are a number of opportunities for the development of mathematical skills i
 ## How Science Works
 There are opportunities within this topic for learners to use appropriate methodology, including ICT, to answer scientific questions and to solve scientific problems; to evaluate methodology, evidence and data, and resolve conflicting evidence to consider ethical issues in the treatment of humans and the environment, to evaluate the ways in which society uses science to inform decision making.
 ## Learners should be able to demonstrate and apply their knowledge and understanding of:
-- the spontaneous nature of [[nuclear decay]]; the nature of [[Alpha Decay|$\alpha$]], [[Beta Decay|$\beta$]] and [[Gamma Decay|$\gamma$]] radiation, and equations to represent the nuclear transformations using the $\ce{ ^A_{Z}X }$ notation
+- the spontaneous nature of [[Nuclear Decay]]; the nature of [[Alpha Decay|$\alpha$]], [[Beta Decay|$\beta$]] and [[Gamma Decay|$\gamma$]] radiation, and equations to represent the nuclear transformations using the $\ce{ ^A_{Z}X }$ notation
 - different methods used to distinguish between $\alpha$, $\beta$ and $\gamma$ radiation and the connections between the nature, [[Range of Nuclear Radiation|penetration and range for ionising particles]]
-- how to make allowance for [[background radiation]] in experimental measurements
-- the concept of the [[half-life]], $T_{\frac{1}{2}}$
+- how to make allowance for [[Background Radiation]] in experimental measurements
+- the concept of the [[Half-Life]], $T_{\frac{1}{2}}$
 - the definition of the [[Activity of Radioactive Sources|activity]], $A$, and the Becquerel
-- the [[decay constant]], $\lambda$, and the equation $A=\lambda N$
+- the [[Decay Constant]], $\lambda$, and the equation $A=\lambda N$
 - the [[Nuclear Decay|exponential law of decay]] in graphical and algebraic form, $N=N_{0}e^{ -\lambda t }$ and $A=A_{0}e^{ -\lambda t }$ or $N=\frac{N_{0}}{2^{x}}$ and $A=\frac{A_{0}}{2^{x}}$ where $x$ is the number of half-lives elapsed – not necessarily an integer
-- the derivation and use of [[half-life|$\lambda=\frac{\ln 2}{T_{\frac{1}{2}}}$]]
+- the derivation and use of [[Half-Life|$\lambda=\frac{\ln 2}{T_{\frac{1}{2}}}$]]
 ## Specified Practical Work
 - Investigation of radioactive decay – a dice analogy
 - Investigation of the variation of intensity of gamma radiation with distance

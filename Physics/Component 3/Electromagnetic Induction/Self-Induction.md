@@ -1,5 +1,5 @@
 Self-induction is the [[Emf Induced in a Moving Conductor|induction of an emf in a coil]] (or circuit) because of a changing [[Electric Current|current]] in that coil (or circuit)
-A changing current in one coil induces an [[emf]] in another coil, if flux from the first is linked with the second. But flux produced by any coil is linked with the very coil producing it, so we must have self-induction
+A changing current in one coil induces an [[Emf]] in another coil, if flux from the first is linked with the second. But flux produced by any coil is linked with the very coil producing it, so we must have self-induction
 A striking demonstration uses an inductor made of many turns of wire wound around an iron core. The two coils can be connected in series so that their fields are in the same sense around the core
 ![[Self-Induction 2024-04-23 19.50.40.excalidraw]]
 When the switch is closed the lamp is slow to light, because of the emf in the conductor (often called a back-emf) opposing the battery emf, in accordance with [[Lenz's Law]]. When the switch is opened, it is important for no-one to be touching any part of the circuit. This is because the current, and therefore the magnetic flux, decreases to zero in a very short time, and a large emf is induced in the coil. This produces an arc at the switch contacts
@@ -21,7 +21,7 @@ $$
 $$
 \implies \int  \, dN\Phi =\int \frac{\mu_{0}N^{2}A}{l} \, dI  
 $$
-We hence call $\frac{\mu_{0}N^{2}A}{l}$ the [[self-inductance]], $L$, of the coil, using [[Faraday's Law]], we know:
+We hence call $\frac{\mu_{0}N^{2}A}{l}$ the [[Self-Inductance]], $L$, of the coil, using [[Faraday's Law]], we know:
 $$
 \mathscr{E}=\frac{d N\Phi}{dt} 
 $$

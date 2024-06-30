@@ -1,4 +1,4 @@
-Let $(G,*)$ be a [[groups|group]] with element $b\in G$
+Let $(G,*)$ be a [[Groups|group]] with element $b\in G$
 $$
 b*b^{-1}=1
 $$

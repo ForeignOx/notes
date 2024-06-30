@@ -1,4 +1,4 @@
-[[De Broglie Wavelength|De Broglie's equation]] also applies to [[Photoelectric Effect|photons]]. This means that if photons are absorbed or reflected by an object, their [[momentum]] changes and so, by the [[law of conservation of momentum]], the object suffers an equal and opposite momentum change. It is often more convenient to express the momentum of a photon in terms of the [[frequency]], $f$, rather than the [[wavelength]] of the [[Electromagnetic Radiation|radiation]]:
+[[De Broglie Wavelength|De Broglie's equation]] also applies to [[Photoelectric Effect|photons]]. This means that if photons are absorbed or reflected by an object, their [[Momentum]] changes and so, by the [[Law of Conservation of Momentum]], the object suffers an equal and opposite momentum change. It is often more convenient to express the momentum of a photon in terms of the [[Frequency]], $f$, rather than the [[Wavelength]] of the [[Electromagnetic Radiation|radiation]]:
 $$
 p=\frac{h}{\lambda}=\frac{hf}{c}
 $$

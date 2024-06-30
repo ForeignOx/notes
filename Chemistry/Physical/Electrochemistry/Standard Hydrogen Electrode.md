@@ -9,7 +9,7 @@ If the hydrogen half cell is being reduced, then the value of $V$ will be negati
 $$
 \ce{ 2H+_{\text{(aq)}} + 2e- \to H_{2}_{\text{(g)}} }
 $$
-The $\ce{ H_{2} }$ gas will be at [[standard conditions]], with a concentration of $\ce{ H+ }$ ions of $1.0\pu{ moldm-3 }$
+The $\ce{ H_{2} }$ gas will be at [[Standard Conditions]], with a concentration of $\ce{ H+ }$ ions of $1.0\pu{ moldm-3 }$
 The [[Standard Cell Notation]] for a hydrogen half cell is:
 $$
 \ce{ Pt_{\text{(s)}}|H_{2}_{\text{(g)}}|H+_{\text{(aq)}}| | }

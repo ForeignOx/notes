@@ -1,3 +1,3 @@
-Reducing agents lose electrons and are [[redox|oxidised]]
+Reducing agents lose electrons and are [[Redox|oxidised]]
 
 #Chemistry #Physical #Redox 

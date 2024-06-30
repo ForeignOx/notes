@@ -3,8 +3,8 @@ The study of kinetics enables chemists to determine how a change in conditions a
 
 | Content                                                                                                                                                                                                                                                                                               | Opportunities for skills development |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
-| Reactions can only occur when collisions take place between particles having sufficient energy.<br><br>This energy is called the [[activation energy]].<br><br>**Students should be able to:**<br><br>- define the term activation energy<br>- explain why most collisions do not lead to a reaction. |                                      |
-## [[Maxwell-Boltzmann distribution]]
+| Reactions can only occur when collisions take place between particles having sufficient energy.<br><br>This energy is called the [[Activation Energy]].<br><br>**Students should be able to:**<br><br>- define the term activation energy<br>- explain why most collisions do not lead to a reaction. |                                      |
+## [[Maxwell-Boltzmann Distribution]]
 
 | Content                                                                                                                                                                           | Opportunities for skills development |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |

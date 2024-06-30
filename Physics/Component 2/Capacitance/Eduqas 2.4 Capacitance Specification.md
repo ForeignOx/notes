@@ -8,14 +8,14 @@ area between a curve and the x-axis and being able to calculate or estimate it b
 ## How Science Works
 There are opportunities within this topic for learners to use appropriate methodology, including ICT to answer scientific questions and to solve scientific problems; to carry out experimental and investigative activities, including appropriate risk management, in a range of contexts. Learners can investigate the use of capacitors to store charge, in time delay circuits and use risk management appropriately when dealing with power supplies. Opportunities exist to study electrostatic precipitation and devices such as photocopiers.
 ## Learners should be able to demonstrate and apply their knowledge and understanding of:
-- the idea that a simple parallel plate [[capacitor]] consists of a pair of equal parallel metal plates separated by a vacuum or air
+- the idea that a simple parallel plate [[Capacitor]] consists of a pair of equal parallel metal plates separated by a vacuum or air
 - a capacitor storing energy by transferring charge from one plate to the other, so that the plates carry equal but opposite charges (the net charge being zero)
-- the definition of [[capacitance]] as $C=\frac{Q}{V}$
+- the definition of [[Capacitance]] as $C=\frac{Q}{V}$
 - the use of $C=\frac{\epsilon_{0}A}{d}$ for a [[Capacitance|parallel plate capacitor]], with no dielectric
-- the idea that a [[dielectric]] increases the capacitance of a vacuum-spaced capacitor
+- the idea that a [[Dielectric]] increases the capacitance of a vacuum-spaced capacitor
 - the $E$ [[Electric Fields in Capacitors|field within a parallel plate capacitor]] being uniform and the use of the equation $E=\frac{V}{d}$
-- the equation $U=\frac{1}{2}QV$ for the [[energy stored in a capacitor]]
-- [[capacitance|the equations for capacitors in series and in parallel]]
+- the equation $U=\frac{1}{2}QV$ for the [[Energy Stored in a Capacitor]]
+- [[Capacitance|the equations for capacitors in series and in parallel]]
 - the process by which a capacitor [[Charging a Capacitor|charges]] and [[Discharging a Capacitor|discharges]] through a resistor
 - the equations: $Q=Q_{0}(1-e^{-t/RC})$ and $Q=Q_{0}e^{ -t/RC }$, where $RC$ is the time constant
 ## Specified Practical Work

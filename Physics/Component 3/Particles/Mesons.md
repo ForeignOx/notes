@@ -1,5 +1,5 @@
-[[Hadrons]] composed of a [[quarks|quark]] and an antiquark, e.g. [[Pions|pions]]
-Mesons are created in copious numbers when [[baryons]] are collided at moderate to high energies. A typical meson-generating reaction is
+[[Hadrons]] composed of a [[Quarks|quark]] and an antiquark, e.g. [[Pions|pions]]
+Mesons are created in copious numbers when [[Baryons]] are collided at moderate to high energies. A typical meson-generating reaction is
 $$
 \ce{ p +p -> p + n + \pi+ }
 $$

@@ -3,7 +3,7 @@ $$
 T^{2}\propto a^{3}
 $$
 ![[Kepler's Third Law of Planetary Motion 2024-03-27 18.33.15.excalidraw]]
-Simplifying, consider a circular orbit, the [[centripetal force]], $F$, on an object moving at constant [[velocity]] in a circle is directed towards the centre and is given by:
+Simplifying, consider a circular orbit, the [[Centripetal Force]], $F$, on an object moving at constant [[Velocity]] in a circle is directed towards the centre and is given by:
 $$
 F=\frac{mv^{2}}{r}
 $$

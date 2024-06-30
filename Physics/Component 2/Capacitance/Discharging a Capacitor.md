@@ -1,4 +1,4 @@
-We'll suppose that the [[capacitor]] has been charged in advance and that, at time $t=0$, a resistor is connected across it. At any time after that, we know that the [[potential difference]] across the resistor is equal to the potential difference across the capacitor, therefore
+We'll suppose that the [[Capacitor]] has been charged in advance and that, at time $t=0$, a resistor is connected across it. At any time after that, we know that the [[Potential Difference]] across the resistor is equal to the potential difference across the capacitor, therefore
 $$
 IR=\frac{Q}{C}
 $$
