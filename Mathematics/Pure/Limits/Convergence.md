@@ -96,6 +96,48 @@ $$
 \left| \frac{\sin n}{n}\right|=\frac{\left|\sin n\right|}{n}\leq \frac{1}{n}
 $$
 $$
-\therefore N_{\epsilon}=\left\lceil  \frac{1}{n}  \right\rceil +1
+\therefore N_{\epsilon}=\left\lceil  \frac{1}{\epsilon}  \right\rceil +1
 $$
 
+### Proof
+Given $a_{n}=\frac{\sin n}{n}$, $\epsilon>0$. Let $N_{\epsilon}=\left\lceil  \frac{1}{\epsilon}  \right\rceil+1$
+If $n\geq N_{\epsilon}$ then
+$$
+n\geq \left\lceil  \frac{1}{\epsilon}  \right\rceil +1>\left\lceil  \frac{1}{\epsilon}  \right\rceil \geq \frac{1}{\epsilon}
+$$
+$$
+\left|a_{n}-0\right|=\left| \frac{\sin n}{n}-0\right|=\frac{\left|\sin n\right|}{n}\leq \frac{1}{n}<\epsilon
+$$
+So $a_{n}$ converges to 0
+## Example 8
+Let $a_{n}=\frac{n^{2}}{1+n^{2}}$. Prove that $a_{n}$ converges to 1 as $n\to \infty$
+$$
+\left| \frac{n^{2}}{1+n^{2}}-1\right|=\left| \frac{n^{2}-(1+n^{2})}{1+n^{2}}\right|=\left| \frac{-1}{1+n^{2}}\right|=\frac{1}{1+n^{2}}<\epsilon 
+$$
+$$
+\implies \frac{1}{\epsilon}<1+n^{2}
+$$
+$$
+\implies \sqrt{ \frac{1-\epsilon}{\epsilon} }<n
+$$
+### Proof
+Given $a_{n}=\frac{n^{2}}{1+n^{2}}$ and $\epsilon>0$
+Let $N_{\epsilon}=\left\lceil  \sqrt{ \frac{1-\epsilon}{\epsilon} }  \right\rceil+1$
+If $n\geq N_{\epsilon}$ then
+$$
+n\geq \left\lceil  \sqrt{\frac{1-\epsilon}{\epsilon}}  \right\rceil +1>\left\lceil  \sqrt{ \frac{1-\epsilon}{\epsilon} }  \right\rceil \geq \sqrt{ \frac{1-\epsilon}{\epsilon} }
+$$
+$$
+\implies n>\sqrt{ \frac{1-\epsilon}{\epsilon} }
+$$
+$$
+\implies n^{2}+1>\frac{1}{\epsilon}
+$$
+$$
+\implies \epsilon>\frac{1}{1+n^{2}}
+$$
+$$
+\left|a_{n}-l\right|=\left| \frac{n^{2}}{1+n^{2}}-1\right|=\left| \frac{-1}{1+n^{2}}\right|=\frac{1}{1+n^{2}}<\epsilon
+$$
+so $a_{n}$ converges to 1
+## Example 9???
