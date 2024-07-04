@@ -28,3 +28,74 @@ For a convergent sequence such as $a_{n}=n^{2}$, we can never draw lines that bo
 ## Example 4
 $a_{n}=(-1)^{n}$
 If we take $\epsilon=2$, $N_{\epsilon}=1$, so that works, as $n\geq 1$, $\left|a_{n}-0\right|<2$, but if instead we take $\epsilon=0.5$, we cannot bound the sequence by the two lines, so it doesn't converge as the definition is only true for all $\epsilon>0$
+## Example 5
+Let $a_{n}=\frac{1}{n}$. Prove that $a_{n}$ converges to 0 as $n\to \infty$
+$$
+n=\frac{1}{\epsilon}\iff\epsilon=\frac{1}{n}
+$$
+So our $N\epsilon$ will have to be greater $\frac{1}{\epsilon}$, so we use:
+$$
+N_\epsilon=\left\lceil  \frac{1}{\epsilon}  \right\rceil 
+$$
+But when $\frac{1}{\epsilon}$ is an integer, this is still too small, so we instead use:
+$$
+N_\epsilon =\left\lceil  \frac{1}{\epsilon}  \right\rceil +1
+$$
+### Proof
+Given $a_{n}=\frac{1}{n}$ and $\epsilon>0$. Let $N_{\epsilon}=\left\lceil  \frac{1}{\epsilon}  \right\rceil+1$
+If $n\geq N_{\epsilon}$ then:
+$$
+n\geq \left\lceil  \frac{1}{\epsilon}  \right\rceil +1>\left\lceil  \frac{1}{\epsilon}  \right\rceil \geq \frac{1}{\epsilon}
+$$
+So $n>\frac{1}{\epsilon}$ since $\epsilon>0$ and $n\geq \frac{1}{\epsilon}>0$
+$$
+\left|a_{n}-0\right|=\left|\frac{1}{n}\right|=\frac{1}{n}<\epsilon
+$$
+So $a_{n}$ converges to 0
+## Example 6
+Let $a_{n}=\frac{(-1)^{n}}{2n^{2}}$. Prove that $a_{n}$ converges to 0 as $n\to \infty$
+$$
+\left| \frac{(-1)^{n}}{2n^{2}}-0\right|=\frac{1}{2n^{2}}<\epsilon 
+$$
+$$
+\implies \frac{1}{2\epsilon}<n^{2}
+$$
+$$
+\implies \sqrt{ \frac{1}{2\epsilon} }<n
+$$
+$$
+\therefore N_{\epsilon}=\left\lceil  \sqrt{ \frac{1}{2\epsilon} }  \right\rceil +1
+$$
+### Proof
+Let $\epsilon>0$
+Let $N_{\epsilon}=\left\lceil  \sqrt{ \frac{1}{2\epsilon} }  \right\rceil +1$
+ If $n\geq N_{\epsilon}$ then:
+ $$
+n\geq \left\lceil  \sqrt{ \frac{1}{2\epsilon} }  \right\rceil +1>\left\lceil  \sqrt{ \frac{1}{2\epsilon} }  \right\rceil \geq \sqrt{ \frac{1}{2\epsilon} }
+$$
+$$
+\implies n>\sqrt{ \frac{1}{2\epsilon} }
+$$
+$$
+\implies n^{2}>\frac{1}{2\epsilon}
+$$
+$$
+\implies \epsilon>\frac{1}{2n^{2}}
+$$
+as $n>0$
+$$
+\left|a_{n}-0\right|=\left| \frac{(-1)^{n}}{2n^{2}}-0\right|=\frac{1}{2n^{2}}<\epsilon
+$$
+So $a_{n}$ converges to 0
+## Example 7
+Let $a_{n}=\frac{\sin n}{n}$. Prove that $a_{n}$ converges to 0 as $n \to \infty$
+$$
+\left| \frac{\sin n}{n}-0\right|<\epsilon 
+$$
+$$
+\left| \frac{\sin n}{n}\right|=\frac{\left|\sin n\right|}{n}\leq \frac{1}{n}
+$$
+$$
+\therefore N_{\epsilon}=\left\lceil  \frac{1}{n}  \right\rceil +1
+$$
+
