@@ -120,8 +120,10 @@ $$
 $$
 \implies \sqrt{ \frac{1-\epsilon}{\epsilon} }<n
 $$
+If $\epsilon \leq 1$
 ### Proof
-Given $a_{n}=\frac{n^{2}}{1+n^{2}}$ and $\epsilon>0$
+Given $a_{n}=\frac{n^{2}}{1+n^{2}}$ and $\epsilon>0$ 
+If $\epsilon \leq 1$
 Let $N_{\epsilon}=\left\lceil  \sqrt{ \frac{1-\epsilon}{\epsilon} }  \right\rceil+1$
 If $n\geq N_{\epsilon}$ then
 $$
@@ -140,4 +142,39 @@ $$
 \left|a_{n}-l\right|=\left| \frac{n^{2}}{1+n^{2}}-1\right|=\left| \frac{-1}{1+n^{2}}\right|=\frac{1}{1+n^{2}}<\epsilon
 $$
 so $a_{n}$ converges to 1
+If $\epsilon>1$
+Let $N_{\epsilon}=1$
+If $n\geq N_{\epsilon}=1\implies n^{2}+1\geq 2$
+$$
+\left| \frac{n^{2}}{1+n^{2}}-1 \right|=\frac{1}{1+n^{2}}\leq \frac{1}{2}<\epsilon
+$$
+So $a_{n}$ converges to 1
 ## Example 9???
+Let $a_{n}=\frac{4n^{2}-1}{n^{2}+1}$. Prove that $a_{n}$ converges to 4 as $n\to \infty$
+$$
+\left| \frac{4n^{2}-1}{n^{2}+1}-4 \right|=\left| \frac{4n^{2}-n^{2}-4(n^{2}+1)}{n^{2}+1} \right|=\left| \frac{-5}{n^{2}+1} \right|=\frac{5}{n^{2}+1}
+$$
+$$
+\frac{5}{n^{2}+1}<\frac{5}{n^{2}}<\epsilon 
+$$
+$$
+\implies n>\sqrt{ \frac{5}{\epsilon} }
+$$
+### Proof
+Given $a_{n}=\frac{4n^{2}-1}{n^{2}+1}$ and $\epsilon>0$
+Let $N_{\epsilon}=\left\lceil  \sqrt{ \frac{5}{\epsilon} }  \right\rceil+1$
+If $n\geq N_{\epsilon}$ then
+$$
+n\geq \left\lceil  \sqrt{ \frac{5}{\epsilon} }  \right\rceil +1>\left\lceil  \sqrt{ \frac{5}{\epsilon} }  \right\rceil \geq \sqrt{ \frac{5}{\epsilon} }
+$$
+$$
+\implies n>\sqrt{ \frac{5}{\epsilon} }
+$$
+$$
+\implies \epsilon>\frac{5}{n^{2}}
+$$
+Since $n>0$
+$$
+\left| a_{n}-l \right|=\left| \frac{4n^{2}-1}{n^{2}+1}-4 \right|=\left| -\frac{5}{n^{2}+1} \right|=\frac{5}{n^{2}+1}<\frac{5}{n^{2}}<\epsilon
+$$
+So $a_{n}$ converges to 4
