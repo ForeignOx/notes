@@ -9,4 +9,9 @@ If $xy>0$ either $x>0$, $y>0$ or $x<0$, $y<0$
     If $x<0$, $y<0$ then $x+y<0$ so $\left| x+y \right|=-(x+y)=-x+-y=\left| x \right|+\left| y \right|$
 If $xy<0$, either $x>0$,$y<0$ or $x<0$, $y>0$
     Without loss of generalisation, $x>0$, $y<0$
-        If $\left| x \right|>\left| y \right|$ then $x+y>0$ so $\left| x+y \right|=x+y$
+        If $\left| x \right|>\left| y \right|$ then $x+y>0$ so $\left| x+y \right|=\left| x \right|-\left| y \right|<\left| x \right|<\left| x \right|+\left| y \right|$
+        If $\left| x \right|<\left| y \right|$, then $\left| x+y \right|=\left| y \right|-\left| x \right|<\left| y \right|<\left| x \right|+\left| y \right|$
+        If $\left| x \right|=\left| y \right|$, then $\left| x+y \right|=0=\left| x \right|+\left| y \right|$
+
+
+#Mathematics #Limits #Theorem
