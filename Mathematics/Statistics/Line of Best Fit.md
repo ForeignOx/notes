@@ -92,4 +92,4 @@ $$
 \sum \epsilon_{i} = n(a+b\bar{x}-a-b\bar{x})=0
 $$
 
-#Mathematics
+#Mathematics #Statistics

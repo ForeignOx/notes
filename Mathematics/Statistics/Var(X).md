@@ -60,4 +60,4 @@ $$
 Var(X\pm Y)=Var(X)+Var(Y)
 $$
 
-#Mathematics
+#Mathematics #Statistics 

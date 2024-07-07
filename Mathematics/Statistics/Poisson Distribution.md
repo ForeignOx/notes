@@ -189,4 +189,4 @@ declare function={binom(\k,\n,\p)=\n!/(\k!*(\n-\k)!)*\p^\k*(1-\p)^(\n-\k);}
 ```
 $X\sim B(n,p)$ can be approximated with $Y\sim Po(np)$, since $Var(Y)=np$ and $Var(X)=np(1-p)$, so the approximation is better the smaller the value of $p$
 
-#Mathematics
+#Mathematics #Statistics #Distribution

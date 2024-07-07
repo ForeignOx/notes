@@ -17,3 +17,5 @@ Anything more extreme than the critical value:
 $$
 |r_{s}|>\text{critical value}
 $$
+
+#Mathematics #Statistics

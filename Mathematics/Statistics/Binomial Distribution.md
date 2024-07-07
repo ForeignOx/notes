@@ -1,4 +1,4 @@
-The binomial distribution is the sum of $n$ independent [[Bernoulli Distribution|Bernoulli distributions]] with probability of success $p$
+The binomial distribution is the sum of $n$ [[Independence|independent]] [[Bernoulli Distribution|Bernoulli distributions]] with probability of success $p$
 So if:
 $$
 X_{n}\sim \text{Bernoulli}(p)
@@ -36,4 +36,4 @@ The binomial distribution is a suitable modelling distribution if the following 
 - The probability of success, $p$, is also fixed throughout all the trials
 - Trials are [[Independence|independent]] of one another
 
-#Mathematics
+#Mathematics #Statistics #Distribution 

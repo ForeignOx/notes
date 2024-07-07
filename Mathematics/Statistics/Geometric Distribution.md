@@ -112,4 +112,4 @@ $$
 \therefore Var(X)=\frac{1-p}{p^{2}}
 $$
 
-#Mathematics
+#Mathematics #Statistics #Distribution 

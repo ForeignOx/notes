@@ -4,4 +4,4 @@ In this case, only one of the variables can be considered as a random variable. 
 ## Random on Random
 In this case, both variables can be considered as random variables
 
-#Mathematics
+#Mathematics #Statistics 

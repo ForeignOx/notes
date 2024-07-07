@@ -22,4 +22,4 @@ $$
 \implies Var(X)=\frac{1}{12}(n+1)(n-1)=\frac{1}{12}(n^{2}-1)
 $$
 
-#Mathematics
+#Mathematics #Statistics #Distribution

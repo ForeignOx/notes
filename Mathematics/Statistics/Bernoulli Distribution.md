@@ -24,4 +24,4 @@ $$
 Var(X)=\sum x^{2}P(X=x)-(E(X))^{2}=1^{2}\times p+0^{2}\times (1-p)-p^{2}=p-p^{2}=p(1-p)=pq
 $$
 
-#Mathematics 
+#Mathematics #Statistics #Distribution

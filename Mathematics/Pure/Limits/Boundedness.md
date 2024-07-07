@@ -17,6 +17,10 @@ $$
 \exists M:\forall n\in\mathbb{N},\left| a_{n} \right|\leq M
 $$
 ___
-Let $a_{n}$ be a sequence of real numbers which is bounded from above. $M\in\mathbb{R}$ is called the supremem (or least upper bound) if:
+Let $a_{n}$ be a sequence of real numbers which is bounded from above. $M\in\mathbb{R}$ is called the supremum (or least upper bound) if:
 1. $M$ is an upper bound of $a_{n}$, and
 2. For any $x<M$, $x$ is not an upper bound of $a_{n}$
+Note that, if $x$ is not an upper bound of $a_{n}$ then there exists $i:a_{i}>x$
+Note that, if $a_{n}$ is bounded from above, then it must have a supremum
+
+#Mathematics #Definition #Limits 

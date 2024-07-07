@@ -3,3 +3,4 @@ For $\nu$ independent $Z_{i} \sim N(0,1)$, we can say that $X=Z_{1}^{2}+Z_{2}^{2
 $$
 f(x)=\frac{e^{-x/2}x^{(\nu-2)/2}}{2^{\nu/2}\Gamma\left( \frac{\nu}{2} \right)}
 $$
+#todo

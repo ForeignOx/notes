@@ -178,3 +178,5 @@ $$
 \left| a_{n}-l \right|=\left| \frac{4n^{2}-1}{n^{2}+1}-4 \right|=\left| -\frac{5}{n^{2}+1} \right|=\frac{5}{n^{2}+1}<\frac{5}{n^{2}}<\epsilon
 $$
 So $a_{n}$ converges to 4
+
+#Mathematics #Limits #Definition 
