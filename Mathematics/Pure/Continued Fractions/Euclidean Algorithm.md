@@ -63,3 +63,5 @@ $$
 =r_{n}
 $$
 We are guaranteed that this algorithm well terminate: $b=r_{0}>r_{1}>\dots>r_{n}>r_{n+1}=0$
+
+#Mathematics #Fractions #Algorithm #Theorem

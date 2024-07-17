@@ -5,3 +5,5 @@ $$
 gcd(a,b)=max\{d\in\mathbb{Z}^{+}:d|a\text{ and } d|b\}
 $$
 Note $gcd(a,0)=a$
+
+#Mathematics #Fractions #Definition

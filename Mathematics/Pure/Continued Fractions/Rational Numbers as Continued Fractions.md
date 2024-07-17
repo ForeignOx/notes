@@ -46,3 +46,4 @@ $$
 x=\frac{a}{b}=[q_{1};q_{2},\dots,q_{n+1}]
 $$
 
+#Mathematics #Fractions #Theorem 

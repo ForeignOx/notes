@@ -12,3 +12,5 @@ $$
 [a_{0};a_{1},a_{2},\dots,a_{n-1}a_{n}-1, 1]
 $$
 However we usually use the first representation, aka the canonical representation
+
+#Mathematics #Fractions #Definition

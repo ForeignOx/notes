@@ -15,3 +15,5 @@ $$
 y_{n-1}=a_{n-1}+\frac{1}{y_{n}}
 $$
 This process terminates when we have a unit fraction as the remainder, i.e. $y_{n}\in\mathbb{Z}$
+
+#Mathematics #Fractions #Algorithm
