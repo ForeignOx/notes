@@ -81,3 +81,4 @@ Consider the case when $k=r+1$:
 $$
 p_{r}q_{r+1}-p_{r+1}q_{r}=
 $$
+![[Convergents 2024-07-18 19.17.53.excalidraw]]
