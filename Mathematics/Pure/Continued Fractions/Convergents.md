@@ -66,4 +66,18 @@ $$
 $$
 Which is the claim for $k=r+1$
 Hence, if the claim is true for $k=r$ then the claim is true for $k=r+1$, and since we have shown that the claim is true for $k=2$, by induction, the claim is true for all $k\geq 2,k\in\mathbb{Z}$
-## 
+## Two successive convergents satisfy $p_{k-1}q_{k}-p_{k}q_{k-1}=(-1)^{k}$
+### Proof
+Base case, let $k=1$:
+$$
+p_{0}q_{1}-p_{1}q_{0}=a_{0}a_{1}-1(a_{0}a_{1}+1)=-1=(-1)^{1}
+$$
+So the claim is true for $k=1$
+Assume the claim is true for $k=r$:
+$$
+p_{r-1}q_{r}-p_{r}q_{r-1}=(-1)^{r}
+$$
+Consider the case when $k=r+1$:
+$$
+p_{r}q_{r+1}-p_{r+1}q_{r}=
+$$
