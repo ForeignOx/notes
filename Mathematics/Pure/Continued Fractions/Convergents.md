@@ -79,6 +79,17 @@ p_{r-1}q_{r}-p_{r}q_{r-1}=(-1)^{r}
 $$
 Consider the case when $k=r+1$:
 $$
-p_{r}q_{r+1}-p_{r+1}q_{r}=
+p_{r}q_{r+1}-p_{r+1}q_{r}=p_{r}(a_{r+1}q_{r}+q_{r-1})-(a_{r+1}p_{r}+p_{r-1})q_{r}=a_{r+1}p_{r}q_{r}+p_{r}q_{r-1}-a_{r+1}p_{r}q_{r}-p_{r-1}q_{r}
 $$
-![[Convergents 2024-07-18 19.17.53.excalidraw]]
+$$
+=p_{r}q_{r-1}-p_{r-1}q_{r}=-(-1)^{r}=(-1)^{r+1}
+$$
+Hence the claim is true by induction
+## [[Greatest Common Divisor|$gcd(p_{k},q_{k})=1$]]
+### Proof:
+Assume $gcd(p_{k},q_{k})=d$, where $d>1$. Then $d|p_{k}$ and $d|q_{k}$ which imply $d|(p_{k-1}q_{k}-p_{k}q_{k-1})$ as this is a linear combination of $p_{k}$ and $q_{k}$ (see the Lemma for the [[Euclidean Algorithm]])
+But we know $p_{k-1}q_{k}-p_{k}q_{k-1}=(-1)^{k}$, so this implied $d|(-1)^{k}$. This cannot hold for $d>1$
+
+
+
+#Mathematics #Fractions #Definition #Theorem
