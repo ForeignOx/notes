@@ -105,7 +105,12 @@ $$
 $$
 \therefore \left| x-c_{n} \right|<\frac{1}{q_{n}q_{n+1}}
 $$
-
+## Convergents oscillate, Odd Numbered Convergents are always Greater than Even Convergents
+If $x$ has convergents $c_{1},c_{2},\dots$ then
+$$
+c_{0}<c_{2}<c_{4}<\dots<c_{2n}<\dots<x<\dots<c_{2n-1}<\dots<c_{3}<c_{1}
+$$
+The convergents tend to $x$
 
 
 #Mathematics #Fractions #Definition #Theorem
