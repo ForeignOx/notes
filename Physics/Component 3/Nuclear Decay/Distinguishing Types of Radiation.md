@@ -12,4 +12,6 @@ Where $p$ is the [[Momentum]] of the particles, $q$ their charge and $B$ the flu
 ![[Distinguishing Types of Radiation 2024-04-12 13.11.08.excalidraw]]
 
 
+
+
 #Physics #Radiation 
