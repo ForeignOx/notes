@@ -1,4 +1,4 @@
-The $k$th convergent to a [[Finite Continued Fraction]] $x=[a_{0};a_{1},\dots a_{n}]$ is $c_{k}=[a_{0};a_{1},\dots,a_{k}]$ for $k\leq n$. Note we usually write $c_{k}=\frac{p_{k}}{q_{k}}$
+The $k$th convergent to a [[continued fraction]] $x=[a_{0};a_{1},\dots ]$ is $c_{k}=[a_{0};a_{1},\dots,a_{k}]$ for $k\leq n$. Note we usually write $c_{k}=\frac{p_{k}}{q_{k}}$
 ## Calculating Convergents
 Let $x=[a_{0};a_{1},\dots,a_{n}]$, then its convergents $c_{k}=\frac{p_{k}}{q_{k}}$ can be calculated using the following recurrence relations:
 $$
@@ -89,6 +89,22 @@ Hence the claim is true by induction
 ### Proof:
 Assume $gcd(p_{k},q_{k})=d$, where $d>1$. Then $d|p_{k}$ and $d|q_{k}$ which imply $d|(p_{k-1}q_{k}-p_{k}q_{k-1})$ as this is a linear combination of $p_{k}$ and $q_{k}$ (see the Lemma for the [[Euclidean Algorithm]])
 But we know $p_{k-1}q_{k}-p_{k}q_{k-1}=(-1)^{k}$, so this implied $d|(-1)^{k}$. This cannot hold for $d>1$
+## A real number $x$ with convergents $c_{n}=\frac{p_{n}}{q_{n}}$ satisfies $| x-c_{n} |<\frac{1}{q_{n}q_{n+1}}$ 
+### Proof
+For each $n$, we can write $x=[a_{0};a_{1},\dots,a_{n},y_{n+1}]$ such that $y_{n+1}>a_{n+1}$ (assuming $a_{n+1}$ is not the final term), then
+$$
+\left| x-c_{n} \right|=\left| \frac{y_{n+1}p_{n}+p_{n-1}}{y_{n+1}q_{n}+q_{n-1}}-\frac{p_{n}}{q_{n}} \right|=\left| \frac{y_{n+1}p_{n}q_{n}+q_{n}p_{n-1}-y_{n+1}p_{n}q_{n}-p_{n}q_{n-1}}{q_{n}(y_{n+1q_{n}+q_{n-1}})} \right|
+$$
+$$
+=\left| \frac{p_{n-1}q_{n}=p_{n}q_{n-1}}{q_{n}(y_{n+1}q_{n}+q_{n-1})} \right|=\left| \frac{(-1)^{n}}{q_{n}(y_{n+1}q_{n}+q_{n-1})} \right|= \frac{1}{q_{n}(y_{n+1}q_{n}+q_{n-1})}
+$$
+since $q_{n},y_{n+1},q_{n-1}>0$
+$$
+<\frac{1}{q_{n}(a_{n+1}q_{n}+q_{n-1})}=\frac{1}{q_{n}q_{n+1}}
+$$
+$$
+\therefore \left| x-c_{n} \right|<\frac{1}{q_{n}q_{n+1}}
+$$
 
 
 

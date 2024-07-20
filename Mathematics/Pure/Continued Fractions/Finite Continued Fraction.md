@@ -1,4 +1,4 @@
-A finite continued fraction is an expression of the form
+A finite [[continued fraction]] is an expression of the form
 $$
 a_{0}+\frac{1}{a_{1}+\frac{1}{a_{2}+\frac{1}{\ddots \frac{\vdots}{a_{n-1}+\frac{1}{a_{n}}}}}}
 $$
