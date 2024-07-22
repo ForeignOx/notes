@@ -111,6 +111,29 @@ $$
 c_{0}<c_{2}<c_{4}<\dots<c_{2n}<\dots<x<\dots<c_{2n-1}<\dots<c_{3}<c_{1}
 $$
 The convergents tend to $x$
+### Proof
+This is essentially a corollary of $p_{k-1}q_{k}-p_{k}q_{k-1}=(-1)^{k}$, dividing through by $q_{k}q_{k-1}$ gives:
+$$
+\frac{p_{k-1}}{q_{k-1}}-\frac{p_{k}}{q_{k}}=\frac{(-1)^{k}}{q_{k}q_{k-1}}
+$$
+$$
+\implies c_{k-1}-c_{k}=\frac{(-1)^{k}}{q_{k}q_{k-1}}
+$$
+$$
+\implies c_{k}-c_{k+1}=\frac{(-1)^{k+1}}{q_{k}q_{k+1}}
+$$
+By setting $k=2n+1$ gives:
+$$
+c_{2n+1}-c_{2n}=\frac{(-1)^{2n+2}}{q_{2n+1}q_{2n}}=\frac{1}{q_{2n+1}q_{2n}}>0
+$$
+So every odd convergent $c_{2n+1}$ is greater than its predecessor, the even convergent $c_{2n}$. By a similar argument we can also show that $c_{2n+1}>c_{2n+2}$. Then consider $c_{k}-c_{k-2}$:
+$$
+c_{k}-c_{k-2}=\frac{p_{k}}{q_{k}}-\frac{p_{k-2}}{q_{k-2}}=\frac{p_{k}q_{k-2}-q_{k}p_{k-2}}{q_{k}q_{k-2}}=\frac{q_{k-2}(a_{k}p_{k-1}+p_{k-2})-p_{k-2}(a_{k}q_{k-1}+q_{k-2})}{q_{k}q_{k-2}} 
+$$
+$$
+=\frac{a_{k}(p_{k-1}q_{k-2}-p_{k-2}q_{k-1})}{q_{k}q_{k-2}}=\frac{a_{k}(-(-1)^{k-1})}{q_{k}q_{k-2}}=\frac{a_{k}(-1)^{k}}{q_{k}q_{k-2}}
+$$
+Hence if $k$ is even $c_{k}-c_{k-2}>0\implies \{ c_{2n} \}$ is an increasing [[Sequences|sequence]], if $k$ is odd, $c_{k}-c_{k-2}<0\implies \{ c_{2n-1} \}$ is a decreasing sequence
 
 
 #Mathematics #Fractions #Definition #Theorem

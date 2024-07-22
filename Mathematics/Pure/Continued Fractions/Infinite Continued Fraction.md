@@ -26,3 +26,6 @@ $$
 \implies \epsilon>\frac{1}{n^{2}}
 $$
 Hence $\left| x-c_{n} \right| <\frac{1}{n^{2}}<\epsilon$ and so $c_{n}$ converges to $x$ as required
+
+
+#Mathematics #Fractions #Definition #Theorem

@@ -16,4 +16,6 @@ $$
 $$
 \implies \frac{1}{bq_{k}}\leq \left| x-c_{k} \right|<\frac{1}{q_{k}q_{k+1}}
 $$
-And hence $q_{k+1}<b$, but $\{ a_{k} \}$ is unbounded ($q_{k}\geq k$, so as $k\to \infty,$)
+And hence $q_{k+1}<b$, but $\{ a_{k} \}$ is unbounded ($q_{k}\geq k$, so as $k\to \infty,q_{k}\to \infty$), so this inequality cannot hold for all $q_{k+1}$, so the infinite continued fraction $x$ must be irrational
+
+#Mathematics #Fractions #Theorem 
