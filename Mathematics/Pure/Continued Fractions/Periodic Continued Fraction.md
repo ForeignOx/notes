@@ -1,0 +1,22 @@
+A periodic [[continued fraction]] is an [[infinite continued fraction]] in which $a_{l}=a_{l+k}$ for a fixed position $k$ and all $l>m$ i.e. $[a_{0};a_{1},a_{2},\dots,a_{m},a_{m+1},a_{m+2},\dots, a_{m+k},a_{m+1},a_{m+2}\dots,a_{m+k},\dots]$. We can write this as $[a_{0},a_{1},\dots,a_{m},\overline{a_{m+1},\dots,a_{m+k}}]$ similarly to the notation for repeating decimal expansions
+## Examples
+Find a closed form expression for $[3;\overline{2,6}]$
+$$
+x=3+\frac{1}{2+\frac{1}{6+\frac{1}{2+\frac{1}{\ddots}}}}
+$$
+We can see that part of this is self-similar, let $y=[2;6]$, so
+$$
+y=2+\frac{1}{6+\frac{1}{y}}
+$$
+$$
+= \frac{13y+2}{6y+1}
+$$
+$$
+\implies 6y^{2}+y=13y+2
+$$
+$$
+\implies 6y^{2}-12y-2=0
+$$
+$$
+\implies y=1\pm \frac{2}{\sqrt{ 3 }}
+$$
