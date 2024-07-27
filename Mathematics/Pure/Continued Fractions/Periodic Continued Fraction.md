@@ -20,3 +20,8 @@ $$
 $$
 \implies y=1\pm \frac{2}{\sqrt{ 3 }}
 $$
+We know $y=[\overline{2;6}]$, so $y>2$ and hence $y=1+\frac{2}{\sqrt{ 3 }}$
+$$
+\implies x=3+\frac{1}{y} =3+\frac{1}{1+\frac{2}{\sqrt{ 3 }}}=2\sqrt{ 3 }
+$$
+
