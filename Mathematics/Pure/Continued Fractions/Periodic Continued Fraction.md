@@ -24,4 +24,5 @@ We know $y=[\overline{2;6}]$, so $y>2$ and hence $y=1+\frac{2}{\sqrt{ 3 }}$
 $$
 \implies x=3+\frac{1}{y} =3+\frac{1}{1+\frac{2}{\sqrt{ 3 }}}=2\sqrt{ 3 }
 $$
-
+## Real Numbers have Periodic Continued Fractions iff they are [[Quadratic Irrationals]]
+A real number $x$ has a periodic continued fraction iff $x$ is a quadratic irrational; $x=a+b\sqrt{ d }$, $a,b\in\mathbb{Q}$, $b\neq 0$ and $d$ is a square free integer

@@ -134,6 +134,17 @@ $$
 =\frac{a_{k}(p_{k-1}q_{k-2}-p_{k-2}q_{k-1})}{q_{k}q_{k-2}}=\frac{a_{k}(-(-1)^{k-1})}{q_{k}q_{k-2}}=\frac{a_{k}(-1)^{k}}{q_{k}q_{k-2}}
 $$
 Hence if $k$ is even $c_{k}-c_{k-2}>0\implies \{ c_{2n} \}$ is an increasing [[Sequences|sequence]], if $k$ is odd, $c_{k}-c_{k-2}<0\implies \{ c_{2n-1} \}$ is a decreasing sequence
+## At Least one of Every Two Consecutive Convergents Satisfies $\left| x-\frac{p_{k}}{q_{k}} \right|\leq \frac{1}{2q_{k}^{2}}$
+### Proof
+We know from above:
+$$
+\left| \frac{p_{k}}{q_{k}}-\frac{p_{k+1}}{q_{k+1}} \right|=\frac{1}{q_{k}q_{k+1}}
+$$
+Now consider the [[AM-GM inequality]]
+$$
+\frac{a+b}{2}\geq \sqrt{ ab },a,b\geq 0\,a,b\in\mathbb{R}
+$$
+Take our two values to be: $\frac{1}{q_{k}^{2}}$ and $\frac{1}{q_{k+1}^{2}}$ (both non-negative real numbers)
 
 
 #Mathematics #Fractions #Definition #Theorem
