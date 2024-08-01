@@ -145,6 +145,59 @@ $$
 \frac{a+b}{2}\geq \sqrt{ ab },a,b\geq 0\,a,b\in\mathbb{R}
 $$
 Take our two values to be: $\frac{1}{q_{k}^{2}}$ and $\frac{1}{q_{k+1}^{2}}$ (both non-negative real numbers)
+$$
+AM=\frac{\frac{1}{q_{k}^{2}}+\frac{1}{q_{k+1}^{2}}}{2}=\frac{1}{2q_{k}^{2}}+\frac{1}{2q_{k+1}^{2}}
+$$
+$$
+GM=\sqrt{ \frac{1}{q_{k}^{2}}\times \frac{1}{q_{k+1}^{2}} }=\frac{1}{q_{k}q_{k+1}}
+$$
+$$
+\therefore \frac{1}{q_{k}q_{k+1}}\leq \frac{1}{2q_{k}^{2}}+\frac{1}{2q_{k+1}^{2}}
+$$
+Hence we can bound the difference between our successive convergents as
+$$
+\left| \frac{p_{k}}{q_{k}}-\frac{p_{k+1}}{q_{k+1}} \right|\leq \frac{1}{2q_{k}^{2}}+\frac{1}{2q_{k+1}^{2}}
+$$
+Consider the differences between these convergents and $x$:
+$$
+\left| x-\frac{p_{k}}{q_{k}} \right|+\left| x-\frac{p_{k+1}}{q_{k+1}} \right|=\left| \frac{p_{k}}{q_{k}}-\frac{p_{k+1}}{q_{k+1}} \right|
+$$
+As by the previous proof, we know convergents oscillate, and exactly one of $c_{k}$, $c_{k+1}$ will ve larger than $x$ 
+If we assume the claim is false for both convergents, i.e. $\left| x-c_{k} \right|>\frac{1}{2q_{k}^{2}}$ and $|x-c_{k+1}|>\frac{1}{2q_{k+1}^{2}}$, then
+$$
+\left| x-c_{k} \right|+\left| x-c_{k+1} \right|>\frac{1}{2q_{k}^{2}}+\frac{1}{2q_{k+1}^{2}}
+$$
+Which is a contradiction. Hence:
+$$
+\left| x-c_{k} \right|\leq \frac{1}{2q_{k}^{2}}
+$$
+or
+$$
+\left| x-c_{k+1} \right|\leq \frac{1}{2q_{k+1}^{2}}
+$$
+## At Fewest one of every 3 Consecutive Convergents Satisfies $\left| x-\frac{p_{k}}{q_{k}} \right|\leq \frac{1}{\sqrt{ 5 }q_{k}^{2}}$
+### Proof
+Assume this is false, i.e. that
+$$
+\left| x-\frac{p_{i}}{q_{i}} \right|>\frac{1}{\sqrt{ 5 }q_{i}^{2}}
+$$
+for $i= k,k+1,k+2,\dots$
+As above, we know
+$$
+\left| x-\frac{p_{k}}{q_{k}} \right|+\left| x-\frac{p_{k+1}}{q_{k+1}} \right|=\frac{1}{q_{k}q_{k+1}}
+$$
+By assumbtion, we can replace the left hand side terms to give
+$$
+\frac{1}{q_{k}q_{k+1}}>\frac{1}{\sqrt{ 5 }q_{k}^{2}}+\frac{1}{\sqrt{ 5 }q_{k+1}^{2}}
+$$
+$$
+\implies \sqrt{ 5 }>\frac{q_{k+1}}{q_{k}}+\frac{q_{k}}{q_{k+1}}
+$$
+Let $\alpha=\frac{q_{k+1}}{q_{k}}$, we know $a>1$ ($q_{k+1}>q_{k}$) and so:
+$$
+\alpha+\frac{1}{\alpha}<\sqrt{ 5 }
+$$
+
 
 
 #Mathematics #Fractions #Definition #Theorem
