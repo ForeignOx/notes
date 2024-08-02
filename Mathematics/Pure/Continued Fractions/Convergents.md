@@ -197,7 +197,36 @@ Let $\alpha=\frac{q_{k+1}}{q_{k}}$, we know $a>1$ ($q_{k+1}>q_{k}$) and so:
 $$
 \alpha+\frac{1}{\alpha}<\sqrt{ 5 }
 $$
-
-
+Consider the points of intersection:
+$$
+x^{2}-\sqrt{ 5 }x+1=0
+$$
+$$
+\implies x=\frac{1\pm \sqrt{ 5 }}{2}
+$$
+If we consider that $x+\frac{1}{x}$ has an asymtote at $x=0$, we know that the inequality solves to be like so:
+$$
+\frac{1-\sqrt{ 5 }}{2}<\alpha<\frac{1+\sqrt{ 5 }}{2}
+$$
+But we want $a>1$, so the relevant inequality is $\alpha<\frac{1+\sqrt{ 5 }}{2}$, hence
+$$
+\alpha=\frac{q_{k+1}}{q_{k}}<\frac{1+\sqrt{ 5 }}{2}
+$$$$
+\therefore \frac{q_{k}}{q_{k+1}}>\frac{2}{1+\sqrt{ 5 }}=\frac{\sqrt{ 5 }-1}{2}
+$$
+We can use the same argument to show also that $\frac{q_{k+1}}{q_{k+1}}<\frac{\sqrt{ 5 }+1}{2}$
+Note that:
+$$
+\frac{q_{k+2}}{q_{k+1}}=\frac{q_{k+2}q_{k+1}+q_{k}}{q_{k+1}}=q_{k+2}+\frac{q_{k}}{q_{k+1}}>1+\frac{\sqrt{ 5 }-1}{2}
+$$
+As $q_{k+2}\geq 1$ and from above we can say that with equals $\frac{\sqrt{ 5 }+1}{2}$ which is a contradiction
+Hence $\left| x-c_{k} \right|\leq \frac{1}{\sqrt{ 5 }q_{k}^{2}}$ for at fewest one of every 3 consecutive convergents
+### Corollary
+For any irrational number $x$, there are infinitely many rational numbers $\frac{p}{q}$ such that
+$$
+\left| x-\frac{p}{q} \right|<\frac{1}{\sqrt{ 5 }q^{2}}
+$$
+This is becuase we have infinitely many convergents by the proposition above, at least one of these satisfies the required condition
+This is part of a theorem which further states $\sqrt{ 5 }$ is the best we can do, for any larger constants in the denominator, this would only be there for finitely many approximations of $\varphi=\frac{1+\sqrt{ 5 }}{2}$, in fact, there is a discrete sequence of value $\mathscr{L}(x):\mathscr{L}$ is the [[Boundedness|supremum]] for which $\left| x-\frac{p}{q} \right|<\frac{1}{\mathscr{L}q^{2}}$, which holds for infinitely many $\frac{p}{q}$ ($p,q$ are coprime). It turns out $\mathscr{L}\in\{ \sqrt{ 5 },3 \}$
 
 #Mathematics #Fractions #Definition #Theorem
