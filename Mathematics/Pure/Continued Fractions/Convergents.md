@@ -228,5 +228,6 @@ $$
 $$
 This is becuase we have infinitely many convergents by the proposition above, at least one of these satisfies the required condition
 This is part of a theorem which further states $\sqrt{ 5 }$ is the best we can do, for any larger constants in the denominator, this would only be there for finitely many approximations of $\varphi=\frac{1+\sqrt{ 5 }}{2}$, in fact, there is a discrete sequence of value $\mathscr{L}(x):\mathscr{L}$ is the [[Boundedness|supremum]] for which $\left| x-\frac{p}{q} \right|<\frac{1}{\mathscr{L}q^{2}}$, which holds for infinitely many $\frac{p}{q}$ ($p,q$ are coprime). It turns out $\mathscr{L}\in\{ \sqrt{ 5 },3 \}$
+## For $x \in \mathbb{R}  \mathbb{Q}$, if 
 
 #Mathematics #Fractions #Definition #Theorem
