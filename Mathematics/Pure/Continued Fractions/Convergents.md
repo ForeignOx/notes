@@ -211,7 +211,9 @@ $$
 But we want $a>1$, so the relevant inequality is $\alpha<\frac{1+\sqrt{ 5 }}{2}$, hence
 $$
 \alpha=\frac{q_{k+1}}{q_{k}}<\frac{1+\sqrt{ 5 }}{2}
-$$$$
+$$
+
+$$
 \therefore \frac{q_{k}}{q_{k+1}}>\frac{2}{1+\sqrt{ 5 }}=\frac{\sqrt{ 5 }-1}{2}
 $$
 We can use the same argument to show also that $\frac{q_{k+1}}{q_{k+1}}<\frac{\sqrt{ 5 }+1}{2}$
@@ -228,6 +230,18 @@ $$
 $$
 This is becuase we have infinitely many convergents by the proposition above, at least one of these satisfies the required condition
 This is part of a theorem which further states $\sqrt{ 5 }$ is the best we can do, for any larger constants in the denominator, this would only be there for finitely many approximations of $\varphi=\frac{1+\sqrt{ 5 }}{2}$, in fact, there is a discrete sequence of value $\mathscr{L}(x):\mathscr{L}$ is the [[Boundedness|supremum]] for which $\left| x-\frac{p}{q} \right|<\frac{1}{\mathscr{L}q^{2}}$, which holds for infinitely many $\frac{p}{q}$ ($p,q$ are coprime). It turns out $\mathscr{L}\in\{ \sqrt{ 5 },3 \}$
-## For $x \in \mathbb{R}  \mathbb{Q}$, if 
+## For $x \in \mathbb{R} \backslash \mathbb{Q}$, if $\exists \frac{a}{b} \in\mathbb{Q}$ ($b\geq 1$): $\left| x-\frac{a}{b} \right|<\frac{1}{2b^{2}}$, then $\frac{a}{b}$ is one of the convergents of the continued fraction expansion of $x$
+### Proof
+Assume, for a contradiction, that $\frac{a}{b}$ is not a convergent of $x$, as the $q_{k}$ terms are slightly increasing and unbounded, we can find some $n:q_{n}\leq b<q_{n+1}$. Since we know convergents are the [[Best Approximation of the Second Kind|best approximations of the second kind]], so
+$$
+\left| bx-a \right|\geq \left| q_{n}x-p_{n} \right|
+$$
+So we can consider $\left| x-\frac{p_{n}}{q_{n}} \right|$ and that $q_{n}>0$
+$$
+\left| x-\frac{p_{n}}{q_{n}} \right|=\frac{1}{q_{n}}\left| q_{n}x-p_{n} \right|\leq \frac{1}{q_{n}}\left| bx-a \right|=\frac{b}{q_{n}}\left| x-\frac{a}{b} \right|<\frac{b}{q_{n}}\times \frac{1}{2b^{2}}=\frac{1}{2bq_{n}}
+$$
+Using the assumption, so if $\frac{a}{b}\neq \frac{p_{n}}{q_{n}}$
+
+
 
 #Mathematics #Fractions #Definition #Theorem
