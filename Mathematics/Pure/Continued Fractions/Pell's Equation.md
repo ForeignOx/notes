@@ -16,5 +16,15 @@ The positive integer solutions to $x^{2}-dy^{2}=1$ are kiven by $x=p_{kr-1}$, $y
 Similarly if $r$ is odd, then $x=p_{kr-1}$, $y=q_{kr-1}$ give all integer solutions for:
 - $x^{2}-dy^{2}=-1$ for $k$ being odd
 - $x^{2}-dy^{2}=1$ for $k$ being even
+## Finding all solutions
+If $(x_{0},y_{0})$ is the smallest positive integer solution of $x^{2}-dy^{2}=1$ then all positive integer solutions are given by $(x_{n},y_{n}): x_{n}+y_{n}\sqrt{ d }=(x_{0}+y_{0}\sqrt{ d })^{n}$ for $n \in\mathbb{N}$ 
+### Proof
+First we check that $(x_{n},y_{n})$ is a solution. Note that $x_{n}+y_{n}\sqrt{ d }=(x_{0}+y_{0}\sqrt{ d })^{n}\implies x_{n}-y_{n}\sqrt{ d }=(x_{0}-y_{0}\sqrt{ d })^{n}$ by binomial expansion, hence:
+$$
+x_{n}^{2}-dy_{n}^{2}=(x_{n}-y_{n}\sqrt{ d })(x_{n}+y_{n}\sqrt{ d })=(x_{0}-y_{0}\sqrt{ d })^{n}(x_{0}+y_{0}\sqrt{ d })^{n}=(x_{0}^{2}-dy_{0}^{2})^{n}=1^{n}=1
+$$
+Which is what we want. 
+
+
 
 #Mathematics #Fractions #Definition
