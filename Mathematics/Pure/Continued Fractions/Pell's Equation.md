@@ -23,8 +23,30 @@ First we check that $(x_{n},y_{n})$ is a solution. Note that $x_{n}+y_{n}\sqrt{ 
 $$
 x_{n}^{2}-dy_{n}^{2}=(x_{n}-y_{n}\sqrt{ d })(x_{n}+y_{n}\sqrt{ d })=(x_{0}-y_{0}\sqrt{ d })^{n}(x_{0}+y_{0}\sqrt{ d })^{n}=(x_{0}^{2}-dy_{0}^{2})^{n}=1^{n}=1
 $$
-Which is what we want. 
-
+Which is what we want
+Secondly we need to show that this way of generating $(x_{n},y_{n})$ obtains all positive integer solutions
+Assume there is a positive solution $x=s$, $y=t$ that is not generated as part of the $(x_{n},y_{n})$ solution set. Note that $x^{2}-dy^{2}=1\implies(x-y\sqrt{ d })(x+y\sqrt{ d })=1$ which means for positive solutions, one factor must be greater than 1 and the other factor must be between 0 and 1
+Hence $x_{0}+y_{0}\sqrt{ d }>1$ and $s+t\sqrt{ d }>1$
+There must therefore be some integer $m$ such that:
+$$
+(x_{0}+y_{0}\sqrt{ d })^{m}<s+t\sqrt{ d }<(x_{0}+y_{0}\sqrt{ d })^{m+1}
+$$
+Now consider $(x_{0}+y_{0}\sqrt{ d })^{-m}$:
+$$
+(x_{0}+y_{0}\sqrt{ d })^{-m}=\frac{(x_{0}-y_{0}\sqrt{ d })^{m}}{(x_{0}+y_{0}\sqrt{ d })^{m}(x_{0}-y_{0}\sqrt{ d })^{m}}=\frac{(x_{0}-y_{0}\sqrt{ d })^{m}}{(x_{0}^{2}-dy_{0}^{2})^{m}}=(x_{0}-y_{0}\sqrt{ d })^{m}
+$$
+As the denominator is equal to $1^{m}$
+Taking the above inequality and multiplying by $(x_{0}-y_{0}\sqrt{ d })^{m}$ gives:
+$$
+(x_{0}+y_{0}\sqrt{ d })^{m}<s+t\sqrt{ d }<(x_{0}+y_{0}\sqrt{ d })^{m+1}
+$$
+$$
+\implies 1<(s+t\sqrt{ d })(x_{0}-y_{0}\sqrt{ d })^{m}<x_{0}+y_{0}\sqrt{ d }
+$$
+Let's consider the central expression here and define integers $a,b$ such that:
+$$
+a+b\sqrt{ d }=(s+t\sqrt{ d })(x_{0}-y_{0}\sqrt{ d })^{m}
+$$
 
 
 #Mathematics #Fractions #Definition
