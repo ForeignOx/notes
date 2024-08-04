@@ -240,7 +240,16 @@ So we can consider $\left| x-\frac{p_{n}}{q_{n}} \right|$ and that $q_{n}>0$
 $$
 \left| x-\frac{p_{n}}{q_{n}} \right|=\frac{1}{q_{n}}\left| q_{n}x-p_{n} \right|\leq \frac{1}{q_{n}}\left| bx-a \right|=\frac{b}{q_{n}}\left| x-\frac{a}{b} \right|<\frac{b}{q_{n}}\times \frac{1}{2b^{2}}=\frac{1}{2bq_{n}}
 $$
-Using the assumption, so if $\frac{a}{b}\neq \frac{p_{n}}{q_{n}}$
+Using the assumption, so if $\frac{a}{b}\neq \frac{p_{n}}{q_{n}}$ and so $\left| aq_{n}-bp_{n} \right|\geq 1$
+Hence by replacing the numerator
+$$
+\frac{1}{bq_{n}}\leq \frac{\left| aq_{n}-bp_{n} \right|}{bq_{n}}=\left| \frac{a}{b}-\frac{p_{n}}{q_{n}} \right|\leq \left| \frac{a}{b}-x \right|+\left| x-\frac{p_{n}}{q_{n}} \right|<\frac{1}{2b^{2}}+\frac{1}{2bq_{n}}
+$$
+By triangle inequality and using the assumption
+$$
+\therefore \frac{1}{2bq_{n}}<\frac{1}{2b^{2}}
+$$
+$b<q_{n}$ since all terms are positive. This contradicts $q_{n}\leq b\leq q_{n+1}$, so $\frac{a}{b}$ must be a convergent of $x$
 
 
 
