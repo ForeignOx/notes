@@ -22,3 +22,5 @@ $$
 $$
 \implies \frac{a+b}{2}\geq \sqrt{ ab }
 $$
+
+#Mathematics 

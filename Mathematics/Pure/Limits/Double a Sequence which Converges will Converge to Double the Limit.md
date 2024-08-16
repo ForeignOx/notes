@@ -16,3 +16,5 @@ $$
 \implies \left| b_{n}-2l \right|<\epsilon
 $$
 So $b_{n}$ converges to $2l$
+
+#Mathematics #Limits #Theorem 
