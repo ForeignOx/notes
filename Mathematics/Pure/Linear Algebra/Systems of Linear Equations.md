@@ -56,7 +56,7 @@ $$
 $$
 This is known as an [[Augmented Matrices|augmented matrix]]. If the system is homogeneous 
 $$
-augmat
+augmat3
 $$
 
 #Mathematics #LinAlg #Definition
