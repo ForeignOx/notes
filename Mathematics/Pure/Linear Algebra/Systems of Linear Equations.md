@@ -1,4 +1,4 @@
-A system of [[linear]] equations is a nubmer of linear equations in a given number of variables
+A system of [[linear]] equations is a number of linear equations in a given number of variables
 ## Example
 $$
 a_{11}x_{1}+a_{12}x_{2}+\dots+a_{1n}x_{n}=b_{1}
@@ -54,8 +54,9 @@ $$
 \end{array}
 \right)
 $$
-This is known as an augmented matrix. If the system is homogeneous 
-
-
+This is known as an [[Augmented Matrices|augmented matrix]]. If the system is homogeneous 
+$$
+augmat
+$$
 
 #Mathematics #LinAlg #Definition
