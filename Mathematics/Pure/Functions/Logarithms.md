@@ -1,0 +1,1 @@
+A logarithm is the [[Inverses of Functions|inverse]] of an [[Exponential Functions|exponential]] [[Real Functions|function]]: if $y=b^{x}$, then $x=\log_{b}(y)$. As with exponential functions, we have to specify the base of the logarithm

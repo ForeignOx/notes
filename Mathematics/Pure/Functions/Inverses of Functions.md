@@ -8,6 +8,8 @@ $$
 f(x)=\frac{1}{3x-4}
 $$
 (which has domain $S=\mathbb{R}\setminus \{ \frac{4}{3}\}$) then
+The graph of the inverse of a funciton $f^{-1}(x)$ is found by reflecting the graph of $f(x)$ in the line $y=x$
+
 $$
 f^{-1}(y)=\frac{1+4y}{3y}
 $$
