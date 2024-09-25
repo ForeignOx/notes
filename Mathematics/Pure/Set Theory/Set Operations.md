@@ -29,3 +29,5 @@ Similarly we can write
 $$
 \bigcup_{i=1}^nA_{i}=A_{1}\cup A_{2}\cup A_{3}\cup\dots \cup A_{n}=\{ x : x \in A_{i} \text{ for at least one }i \}
 $$
+
+#Mathematics #Set
