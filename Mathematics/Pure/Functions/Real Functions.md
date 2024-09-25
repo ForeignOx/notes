@@ -34,3 +34,5 @@ $$
  (x,y)\mapsto x\sin(y)
 $$
 This defines a function which takes two real numbers as its inputs, $x$ and $y$, and produces $f(x,y)=x\sin (y)$
+
+#Mathematics #Functions 

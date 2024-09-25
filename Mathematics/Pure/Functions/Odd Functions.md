@@ -1,1 +1,3 @@
 We say that a [[Real Functions|function]] $f$ is odd if we always have $f(x)=-f(-x)$. This means that its graph has rotational symmetry around the origin (and must have $f(0)=0$)
+
+#Mathematics #Functions 

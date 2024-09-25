@@ -1,1 +1,3 @@
 We say that a [[Real Functions|function]] $f$ is even if we always have $f(x)=f(-x)$. This means that its graph has reflectional symmetry around $x=0$
+
+#Mathematics #Functions 

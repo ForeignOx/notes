@@ -19,3 +19,5 @@ y=f(x)
 $$
 and then rearranging so that $x$ is the subject
 We can't always find the inverse of a function over a given domainl. For example, $f(x)=x^{2}$ does not have an inverse over the whole real line, because there are two $x$-values for each $y$-value. On the other hand, if we only look at the positive part of the real line, we can find an inverse: $f^{-1}(x)=\sqrt{ x }$
+
+#Mathematics #Functions 

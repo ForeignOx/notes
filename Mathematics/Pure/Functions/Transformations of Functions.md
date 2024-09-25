@@ -9,3 +9,5 @@ $|f(x)|$ reflects the portions of the graph of $f(x)$ that are below the $x$-axi
 ## Scalling
 $\lambda f(x)$ is a vertical stretch of the graph $f(x)$ if $\lambda>1$ and a vertical contraction if $0<\lambda<1$
 $f(\mu x)$ is a horizontal contraction of the graph of $f(x)$ if $\mu>1$ and a horizontal stretch if $0<\mu<1$
+
+#Mathematics #Functions 

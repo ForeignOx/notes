@@ -11,3 +11,5 @@ There is a special value of the base (called the natural base) $b=e$. One of the
 $$
 \frac{d}{dx}e^{x}=e^{x}
 $$
+
+#Mathematics #Functions 
