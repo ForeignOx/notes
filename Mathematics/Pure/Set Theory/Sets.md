@@ -25,6 +25,12 @@ $$
 which means all $n$ such that the properties to the right of the $:$ hold. Note that $|$ is another notation for $:$
 As mentioned above, $x \in S$ means the element $x$ is an element of the set $S$. The negation is $x \not\in S$. For example $3 \in\mathbb{Z}$, but $-4\not\in\mathbb{N}$
 
+We often write sets like so:
+$$
+X=\{ x:A(x) \}=\{ x|A(x) \}
+$$
+Which means that $X$ is the set of all objects $x$ for which the [[Proposition|contitional proposition]] $A(x)$ is true
+
 Two sets $R$ and $S$ are equal iff $R\subseteq S$ and $S\subseteq R$
 
 

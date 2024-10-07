@@ -1,4 +1,4 @@
-If $R$ and $S$ are [[Sets|sets]], then $R\subset S$ means $R$ is a proper subset of $S$, so every element of $R$ is also an element of $S$, but $R \neq S$, or there are elements in $S$ that are not in $R$
+If $R$ and $S$ are [[Sets|sets]], then $R\subset S$ means $R$ is a proper subset of $S$, so every element of $R$ is also an element of $S$, but there are elements in $S$ that are not in $R$
 $$
 x\in R\implies x\in S
 $$
