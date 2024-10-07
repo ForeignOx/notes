@@ -2,7 +2,7 @@ Let $a_{n}$ be a [[Sequences|sequence]] of real numbers and $l\in\mathbb{R}$. $a
 $$
 \forall\epsilon>0,\exists N_{\epsilon}\in\mathbb{N}:\forall n\geq N_{\epsilon},\left|a_{n}-l\right|<\epsilon
 $$
-And using a proof in [[proofs with inequalities]], we know:
+And using a proof in [[Proofs with Inequalities]], we know:
 $$
 \left|a_{n}-l\right|<\epsilon\iff l-\epsilon<a_{n}<l+\epsilon
 $$

@@ -1,4 +1,7 @@
-If $R$ and $S$ are [[Sets|sets]], then $R\subset S$ means $R$ is a proper subset of $S$, so every element of $R$ is also an element of $S$, but $R \neq S$
+If $R$ and $S$ are [[Sets|sets]], then $R\subset S$ means $R$ is a proper subset of $S$, so every element of $R$ is also an element of $S$, but $R \neq S$, or there are elements in $S$ that are not in $R$
+$$
+x\in R\implies x\in S
+$$
 If $R$ and $S$ are sets, then $R\subseteq S$ means $R$ is an improper subset of $S$, so every element of $R$ is also an element of $S$, so we have $\emptyset\subseteq S$ and $S\subseteq S$. We also have for example $\mathbb{N}\subset \mathbb{Z}\subset \mathbb{R}$
 
 #Mathematics #Set

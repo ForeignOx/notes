@@ -1,5 +1,5 @@
 A set is defined by the elements that belong to the set. If an element $x$ belongs to a set $S$, we write $x \in S$
-Many sets will be finite or countably infinite, which means that we can write them as a (finite or infinite) list, such as
+Many sets will be finite or countably infinite, which means that we  can write them as a (finite or infinite) list, such as
 $$
 S=\{ e_{1},e_{2},\dots,e_{n} \}
 $$
@@ -24,6 +24,8 @@ S=\{ n:n\text{ is an integer},0\leq n\leq 9 \}
 $$
 which means all $n$ such that the properties to the right of the $:$ hold. Note that $|$ is another notation for $:$
 As mentioned above, $x \in S$ means the element $x$ is an element of the set $S$. The negation is $x \not\in S$. For example $3 \in\mathbb{Z}$, but $-4\not\in\mathbb{N}$
+
+Two sets $R$ and $S$ are equal iff $R\subseteq S$ and $S\subseteq R$
 
 
 #Mathematics #Set 

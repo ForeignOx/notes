@@ -1,21 +1,39 @@
 Given several [[sets|sets]], there are a few important ways of combining them to make further sets using set operations
-Given sets $A$ and $B$, $A\cup B$ is the union of $A$ and $B$, which is the set consisting of those elements that are in $A$ or in $B$ (or in both). For example,
+## Union
+Given sets $A$ and $B$, $A\cup B$ is the union of $A$ and $B$, which is the set consisting of those elements that are in $A$ or in $B$ (or in both)
+$$
+A\cup B=\{ x:x\in A \text{ or }x\in B\text{ or }x\in \text{both} \}
+$$
+
+For example,
 $$
 \{ -2,-1,0 \}\cup \{ 0,1,2 \}=\{ -1,-2,0,1,2 \}
 $$
-$A\cap B$ is the intersection of sets $A$ and $B$, whichis the set of those elements thjat are in both $A$ and $B$. For example,
+![[Set Operations 2024-10-07 15.48.18.excalidraw]]
+## Intersection
+$A\cap B$ is the intersection of sets $A$ and $B$, whichis the set of those elements thjat are in both $A$ and $B$
+$$
+A\cap B=\{ x:x\in A\text{ and }x\in B \}
+$$
+For example,
 $$
 \{ -2,-1,0 \}\cap \{ 0,1,2 \}=\{ 0 \}
 $$
 From the definitions, we can see that $A\cup B=B\cup A$, so $\cup$ is commutative, and $A\cap B=B\cap A$ so $\cap$ is also commutative
 We also have $A\cup \emptyset=A$ and $A\cap \emptyset=\emptyset$
 ![[Set Operations 2024-09-21 13.31.26.excalidraw]]
+## Set Difference
 The set difference between $A$ and $B$, sometimes called $A$ minus $B$, is the set consisting of the elements of $A$ which are not also in $B$. We write:
 $$
 A\setminus B=\{ x \in A:x \not\in B \}
 $$
 For example, $\mathbb{Z}\setminus \mathbb{N}=\{ 0,-1,-2,\dots \}$
 ![[Set Operations 2024-09-21 13.48.08.excalidraw]]
+## Compliment
+The compliment of set $A$ is written $A^c$, which means all elements not in the set $A$
+$$
+A^c=\{ x:x \not\in A \}
+$$
 ## Many sets
 When we want to take the union or intersection of several sets, we can use more compact notation: instead of writing
 $$

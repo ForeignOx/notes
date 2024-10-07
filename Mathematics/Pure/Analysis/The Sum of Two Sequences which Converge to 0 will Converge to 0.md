@@ -1,4 +1,4 @@
-If $a_{n}$ and $b_{n}$ are [[sequences]] of real numbers which both [[Convergence|converge]] to 0, then $a_{n}+b_{n}$ converges to 0
+If $a_{n}$ and $b_{n}$ are [[Sequences]] of real numbers which both [[Convergence|converge]] to 0, then $a_{n}+b_{n}$ converges to 0
 ## Proof
 Given $a_{n}$ and $b_{n}$ both converge to 0, then if $\epsilon>0$ then there also exists $\frac{\epsilon}{2}>0$ such that:
 $$
