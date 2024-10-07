@@ -41,3 +41,14 @@ v_{1}\\v_{2}\\\vdots\\v_{n}
 \end{pmatrix}
 $$
 These operations satisfy the axioms of a real vectorspace
+The vectorspace $\mathbb{R}^n$ quite obviously satisfies the vectorspace axioms, especially when you consider:
+$$
+-\vec{v}=(-1)\begin{pmatrix}
+v_{1}\\v_{2}\\\vdots\\v_{n}
+\end{pmatrix}=
+\begin{pmatrix}
+-v_{1}\\-v_{2}\\\vdots\\-v_{n}
+\end{pmatrix}
+$$
+
+#Mathematics #LinAlg #Definition

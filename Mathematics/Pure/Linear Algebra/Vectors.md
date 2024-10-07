@@ -4,3 +4,4 @@ Vectors can be the point, or they can be thought of as the directions to a point
 
 ## Scalar multiplication image
 
+#Mathematics #LinAlg 

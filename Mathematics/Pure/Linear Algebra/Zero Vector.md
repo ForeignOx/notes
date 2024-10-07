@@ -4,3 +4,5 @@ $$
 \end{pmatrix}\in \mathbb{R}^n
 $$
 The zero vector is a key vector in the [[Vectorspace Rn|vectorspace $\mathbb{R}^n$]] 
+
+#Mathematics #LinAlg #Definition

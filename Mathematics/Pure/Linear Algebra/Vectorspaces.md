@@ -38,3 +38,6 @@ $$
 $$
 \lambda(\vec{v}+\vec{w})=\lambda \vec{v}+\lambda \vec{w}\,\forall\lambda \in \mathbb{R},\forall \vec{v},\vec{w}\in \mathbb{R}^n
 $$
+
+
+#Mathematics #LinAlg #Definition

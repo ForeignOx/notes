@@ -11,3 +11,5 @@ Then the augmented matrix $(A|B)$ is written:
 $$
 (A|B)=
 $$
+
+#Mathematics #LinAlg 
