@@ -9,7 +9,3 @@ $\hspace{0pt}5$ people on a beach divide themselves into up to $\hspace{0pt}3$ t
 A woman wants to buy postage stamps witha value of $\hspace{0pt}5$ pence. How many different ways are there of making the purchase with at most $\hspace{0pt}3$ stamps
 ![[Starter Problems 2024-10-08 15.28.43.excalidraw]]
 Very important, boxes can be empty
-
-| X   | Y   | Z   |
-| --- | --- | --- |
-| Z   |     |     |
