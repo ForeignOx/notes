@@ -4,7 +4,7 @@ $n$-dimensional real space
 $$
 \mathbb{R}^n:=\{ \vec{x}=\begin{pmatrix}
 x_{1}\\x_{2}\\\vdots\\x_{n}
-\end{pmatrix}:x_{i}\in \mathbb{R} \}
+\end{pmatrix}:x_{i}\in \mathbb{R},0\leq i\leq n \}
 $$
 There are two operations on $\mathbb{R}^n$
 $\hspace{0pt}1$. Vector addition
@@ -50,5 +50,7 @@ v_{1}\\v_{2}\\\vdots\\v_{n}
 -v_{1}\\-v_{2}\\\vdots\\-v_{n}
 \end{pmatrix}
 $$
+## Is $\mathbb{R}=\mathbb{R}^1$?
+There is a very obvious bijection between the two [[sets|sets]], but the set $\mathbb{R}^1$ technically has fewer operations soooooooooooooooooooooo nuh uh. 
 
 #Mathematics #LinAlg #Definition
