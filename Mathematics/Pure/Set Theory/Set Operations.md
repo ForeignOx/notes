@@ -41,6 +41,15 @@ $$
 X\times Y=\{ (x,y)|x\in X,y\in Y \}
 $$
 Where $(x,y)$ is an [[Ordered Pairs|ordered pair]] of elements in each set
+For example if $X=\{ 1,2,3 \}$, and $Y=\{ a,b \}$:
+$$
+X\times Y=\{ (1,a),(2,a),(3,a),(1,b),(2,b),(3,b) \}
+$$
+Note the notation $X\times X=X^{2}$ and in general $X^{n}=X\times X\times \dots \times X$ $n$ times
+$$
+X^n=\{ (x_{1},x_{2},\dots,x_{n})|x_{i}\in X\forall i \}
+$$
+Let $X$ and $Y$ be finite sets, then $|X\times Y|=|X||Y|$, and hence $|X^{n}|=|X|^{n}$
 ## Many sets
 When we want to take the union or intersection of several sets, we can use more compact notation: instead of writing
 $$
