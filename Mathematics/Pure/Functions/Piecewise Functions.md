@@ -1,0 +1,1 @@
+Some [[Functions|functions]] may be defined piecewise, i.e. with different expressions at diffferent [[Intervals|intervals]] of the domain, this can lead to discontinuities in the function

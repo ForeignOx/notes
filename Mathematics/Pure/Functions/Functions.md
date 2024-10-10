@@ -15,7 +15,6 @@ $$
 These are functions where the domain is $\mathbb{R}$, or a subset
 ## Real-Valued Functions
 Real valued functions are functions where the codomain is $\mathbb{R}$ or a subset
-
 ## Examples
 Consider a function $f:\mathbb{R}\to \mathbb{R}$ given by $f(x)=x^{2},\,\forall x\in\mathbb{R}$, so $\text{Dom}f=\mathbb{R}$, $\text{Codom}f=\mathbb{R}$, but $\text{Ran}f=[0,\infty)$ 
 Here the codomain was a choice that could have been more restrictive, but having the codomain be $\mathbb{R}$, we can compose this function with other functions with domain $\mathbb{R}$
