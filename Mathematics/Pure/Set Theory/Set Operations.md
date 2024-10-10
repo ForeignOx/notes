@@ -2,7 +2,7 @@ Given several [[sets|sets]], there are a few important ways of combining them to
 ## Union
 Given sets $A$ and $B$, $A\cup B$ is the union of $A$ and $B$, which is the set consisting of those elements that are in $A$ or in $B$ (or in both)
 $$
-A\cup B=\{ x:x\in A \text{ or }x\in B\text{ or }x\in \text{both} \}
+A\cup B=\{ x|x\in A \text{ or }x\in B\text{ or }x\in \text{both} \}
 $$
 
 For example,
@@ -13,7 +13,7 @@ $$
 ## Intersection
 $A\cap B$ is the intersection of sets $A$ and $B$, whichis the set of those elements thjat are in both $A$ and $B$
 $$
-A\cap B=\{ x:x\in A\text{ and }x\in B \}
+A\cap B=\{ x|x\in A\text{ and }x\in B \}
 $$
 For example,
 $$
@@ -25,15 +25,16 @@ We also have $A\cup \emptyset=A$ and $A\cap \emptyset=\emptyset$
 ## Set Difference
 The set difference between $A$ and $B$, sometimes called $A$ minus $B$, is the set consisting of the elements of $A$ which are not also in $B$. We write:
 $$
-A\setminus B=\{ x \in A:x \not\in B \}
+A\setminus B=\{ x \in A|x \not\in B \}
 $$
 For example, $\mathbb{Z}\setminus \mathbb{N}=\{ 0,-1,-2,\dots \}$
 ![[Set Operations 2024-09-21 13.48.08.excalidraw]]
 ## Compliment
 The compliment of set $A$ is written $A^c$, which means all elements not in the set $A$
 $$
-A^c=\{ x:x \not\in A \}
+A^c=\{ x|x \not\in A \}
 $$
+We often use compliment in the context of sets being [[Subsets|subsets]]; if $A\subset S$, $A^c$ will be all other elements in $S$, rather than any elements possible at all 
 ## Many sets
 When we want to take the union or intersection of several sets, we can use more compact notation: instead of writing
 $$
@@ -41,11 +42,11 @@ A_{1}\cap A_{2}\cap A_{3}\cap\dots \cap A_{n}
 $$
 We instead write
 $$
-\bigcap_{i=1}^nA_{i}=\{ x:x \in A_{i} \text{ for every } i\}
+\bigcap_{i=1}^nA_{i}=\{ x|x \in A_{i} \text{ for every } i\}
 $$
 Similarly we can write
 $$
-\bigcup_{i=1}^nA_{i}=A_{1}\cup A_{2}\cup A_{3}\cup\dots \cup A_{n}=\{ x : x \in A_{i} \text{ for at least one }i \}
+\bigcup_{i=1}^nA_{i}=A_{1}\cup A_{2}\cup A_{3}\cup\dots \cup A_{n}=\{ x | x \in A_{i} \text{ for at least one }i \}
 $$
 
 #Mathematics #Set

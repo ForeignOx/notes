@@ -1,0 +1,1 @@
+Suppose $\vec{u},\vec{v}\in\mathbb{R}^n$ with $\vec{u},\vec{v}\neq \vec{0}$ then we define the angle between them to be the unique $0\leq\theta \leq \pi$ such that $\vec{u}\cdot \vec{v}=|u| |v|\cos\theta$ 
