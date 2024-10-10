@@ -33,5 +33,7 @@ Which means that $X$ is the set of all objects $x$ for which the [[Proposition|c
 
 Two sets $R$ and $S$ are equal iff $R\subseteq S$ and $S\subseteq R$
 
+Note that there is no largest set $U$ such that $X\subset U$ for all $X$
+
 
 #Mathematics #Set 

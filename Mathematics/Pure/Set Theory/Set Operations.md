@@ -29,12 +29,18 @@ A\setminus B=\{ x \in A|x \not\in B \}
 $$
 For example, $\mathbb{Z}\setminus \mathbb{N}=\{ 0,-1,-2,\dots \}$
 ![[Set Operations 2024-09-21 13.48.08.excalidraw]]
-## Compliment
-The compliment of set $A$ is written $A^c$, which means all elements not in the set $A$
+## Complement
+The complement of set $A$ is written $A^c$, which means all elements not in the set $A$
 $$
 A^c=\{ x|x \not\in A \}
 $$
-We often use compliment in the context of sets being [[Subsets|subsets]]; if $A\subset S$, $A^c$ will be all other elements in $S$, rather than any elements possible at all 
+We often use complement in the context of sets being [[Subsets|subsets]]; if $A\subset S$, $A^c$ will be all other elements in $S$, rather than any elements possible at all; it is a different way of writing the set difference
+## Cartesian Product
+The cartesian product of two sets $X,Y$ is given by:
+$$
+X\times Y=\{ (x,y)|x\in X,y\in Y \}
+$$
+Where $(x,y)$ is an [[Ordered Pairs|ordered pair]] of elements in each set
 ## Many sets
 When we want to take the union or intersection of several sets, we can use more compact notation: instead of writing
 $$

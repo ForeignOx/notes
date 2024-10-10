@@ -1,5 +1,8 @@
 A function $f:D\to C$ is a map ($f$) from a [[sets|set]] $D$ called the domain ($\text{Dom}f$), to a set $C$ called the codomain $\text{Codom}$f
-For every $x\in D$, there is a unique $f(x)\in C$ called the image of $x$ under $f$
+For every $x\in D$, there is a unique $f(x)\in C$ called the [[Image and Pre-Image|image]] of $x$ under $f$
+Let $X$, $Y$ be sets, a function $f$ from $X$ to $Y$ is a [[Subsets|subset]] $f\subset X\times Y$ such that for every $x\in X$ there exists exactly one $y\in Y$ with $(x,y)\in f$
+We write $f:X\to Y$ for a function and write $f(x)$ for the unique element of $Y$ with $(x,f(x))\in f$
+
 ![[Functions 2024-10-08 14.39.36.excalidraw]]
 We sometimes write:
 $$
