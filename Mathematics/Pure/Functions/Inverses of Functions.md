@@ -1,4 +1,4 @@
-Given a [[Real Functions|function]] $f$ with domain $S$ and image $I$, an inverse function is a function $g$ with domain $I$ and image $S$ such that, for every $y\in I$,
+Given a [[Real Functions|function]] $f$ with domain $S$ and [[Image and Pre-Image|image]] $I$, an inverse function is a function $g$ with domain $I$ and image $S$ such that, for every $y\in I$,
 $$
 f(g(y))=y
 $$

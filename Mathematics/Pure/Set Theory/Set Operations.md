@@ -1,4 +1,4 @@
-Given several [[sets|sets]], there are a few important ways of combining them to make further sets using set operations
+Given several [[sets|sets]], there are a few important ways of combining them to make further sets using set operations, in probability they are known as [[events|event]] calculus 
 ## Union
 Given sets $A$ and $B$, $A\cup B$ is the union of $A$ and $B$, which is the set consisting of those elements that are in $A$ or in $B$ (or in both)
 $$
@@ -11,7 +11,7 @@ $$
 $$
 ![[Set Operations 2024-10-07 15.48.18.excalidraw]]
 ## Intersection
-$A\cap B$ is the intersection of sets $A$ and $B$, whichis the set of those elements thjat are in both $A$ and $B$
+$A\cap B$ is the intersection of sets $A$ and $B$, whichis the set of those elements that are in both $A$ and $B$
 $$
 A\cap B=\{ x|x\in A\text{ and }x\in B \}
 $$
@@ -35,6 +35,7 @@ $$
 A^c=\{ x|x \not\in A \}
 $$
 We often use complement in the context of sets being [[Subsets|subsets]]; if $A\subset S$, $A^c$ will be all other elements in $S$, rather than any elements possible at all; it is a different way of writing the set difference
+Note that $(A^c)^c=A$
 ## Cartesian Product
 The cartesian product of two sets $X,Y$ is given by:
 $$
@@ -63,5 +64,17 @@ Similarly we can write
 $$
 \bigcup_{i=1}^nA_{i}=A_{1}\cup A_{2}\cup A_{3}\cup\dots \cup A_{n}=\{ x | x \in A_{i} \text{ for at least one }i \}
 $$
+## Probability Analogues
+
+| Notation                   | Set Theory Language                 | Probability Analogue | Meaning as Events                |
+| -------------------------- | ----------------------------------- | -------------------- | -------------------------------- |
+| $A\cup B$                  | $A$ union $B$                       | $A$ or $B$ (or both) | $A$ or $B$ occurs, or both occur |
+| $A\cap B$                  | $A$ intersection $B$                | $A$ and $B$          | Both $A$ and $B$ occur           |
+| $A^c$                      | $A$ complement                      | Not $A$              | $A$ does not occur               |
+| $A\setminus B$             | $A$ 'setminus' $B$                  | $A$ but not $B$      | $A$ occurs, but $B$ does not     |
+| $A\subseteq B$             | $A$ is a [[Subsets\|subset]] of $B$ | $A$ implies $B$      | If $A$ occurs, $B$ also occurs   |
+| [[Empty Set\|$\emptyset$]] | Null Set                            | Impossible event     | <-                               |
+
+
 
 #Mathematics #Set
