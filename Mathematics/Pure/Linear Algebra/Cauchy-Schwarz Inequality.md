@@ -3,3 +3,5 @@ $$
 |\vec{u}||\vec{v}|\geq|\vec{u}\cdot \vec{v}|
 $$
 With equality iff $\vec{u}$ and $\vec{v}$ are parallel (multiples of each other)
+
+#Mathematics #LinAlg 

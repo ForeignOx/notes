@@ -107,3 +107,4 @@ $a(2\alpha)+b(2\alpha x+\beta )+c(\alpha x^2 + \beta x + \gamma )$
 #### $f(x)$ = polynomial#
 Try $y=\alpha_{0}+\alpha_{1}x+\alpha_{2}x^{2}+\dots+\alpha_{n}x^{n}$
 
+#Mathematics #Calculus

@@ -15,3 +15,5 @@ $$
 \bar{x}\int ^{b}_{a} \sqrt{ 1+(f(x))^{2} } \, dx =\int ^{b}_{a} x\sqrt{1+(f(x))^{2}  } \, dx 
 $$
 Similarly for $\bar{y}$
+
+#Mathematics 

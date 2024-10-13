@@ -97,3 +97,5 @@ New bounds, $\frac{1}{2}\leq u\leq 1, 1\leq v\leq 2$
 $$
 \implies V=\int _{\frac{1}{2}}^{1}\int _{1}^{2} \frac{e^{ v }}{2u} \, dv  \, du =\frac{\ln 2}{2}(e^{2}-e)
 $$
+
+#Mathematics

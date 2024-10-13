@@ -16,3 +16,6 @@ If no horizontal line intersects the [[Graph of a Function|graph]] of $f$ more t
 ## Example
 $f(x)=2x+1$ is injective since $f(x_{1})=f(x_{2})\implies x_{1}=x_{2}$
 $f(x)=x^{2}$ is not injective since $f(x)=f(-x)$, but $x\neq-x\forall x\neq 0$
+
+
+#Mathematics #Functions #Definition

@@ -9,4 +9,4 @@ f'(x)=\lim_{ h \to 0 } \frac{f(x+h)-f(x)}{h}
 $$
 This is known as differentiation from first principles
 
-#Mathematics
+#Mathematics #Calculus

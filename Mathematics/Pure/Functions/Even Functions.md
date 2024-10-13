@@ -13,4 +13,4 @@ e^x=\cosh x+\sinh x
 $$
 The product of two odd functions is an even function, the product of two even functions is an even function and the product of an even function and an odd function is an odd function
 
-#Mathematics #Functions 
+#Mathematics #Functions #Definition

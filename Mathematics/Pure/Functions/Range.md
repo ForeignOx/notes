@@ -3,3 +3,5 @@ We can write this as:
 $$
 \text{Ran}f=\{ f(x)|x\in \text{Dom}f \}\subseteq \text{Codom}f
 $$
+
+#Mathematics #Functions #Definition

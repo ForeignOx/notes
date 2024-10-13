@@ -3,3 +3,5 @@ $$
 2^S=\{ A|A\subseteq S \}
 $$
 We know $\emptyset,S\in2^S$
+
+#Mathematics #Set

@@ -34,3 +34,4 @@ $$
 $$
 \implies \bar{x}=\frac{3}{4}h
 $$
+#Mathematics 

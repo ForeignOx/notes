@@ -21,3 +21,5 @@ $$
 x \mapsto x^{2}
 $$
 Is not surjective since, for example, -$\hspace{0pt}2$ is not the image of any real number $x\in\mathbb{R}$ (in fact true $\forall u<0,u\in\mathbb{R}$)
+
+#Mathematics #Functions #Definition

@@ -13,3 +13,5 @@ $$
 This gives rise to some strange propositions such as:
     “If $p$ is the largest prime, then $p$ is $\hspace{0pt}72$"
 Which is a true proposition
+
+#Mathematics #Logic 

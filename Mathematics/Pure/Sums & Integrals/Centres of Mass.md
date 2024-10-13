@@ -7,3 +7,4 @@ $$
 $$
 \implies \sum(m_{i}x _{i})=\bar{x}\sum m_{i}
 $$
+#Mathematics

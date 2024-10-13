@@ -6,3 +6,5 @@ Let $A$ and $B$ be [[Proposition|propositions]] “not $A$” is the proposition
 | T   | F    |
 | F   | T    |
 | F   | T    |
+
+#Mathematics #Logic 

@@ -35,3 +35,5 @@ $$
 w_{1}^{2}+(w_{1}-1)^{2}+(1-w_{1})^{2}=1
 $$
 Solve for $w_{1}$ (it's a quadratic), then we can get $w_{2}$ and $w_{3}$
+
+#Mathematics #LinAlg 

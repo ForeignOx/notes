@@ -7,3 +7,5 @@ The substitution $t=\tan\left( \frac{x}{2} \right)$ is often useful
 $$
 \int \sec(x) \, dx 
 $$
+
+#todo

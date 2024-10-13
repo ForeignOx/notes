@@ -6,3 +6,5 @@ Let $A$ and $B$ be [[Proposition|propositions]], "$A$ and $B$” is the proposit
 | T   | F   | F         |
 | F   | T   | F         |
 | F   | F   | F         |
+
+#Mathematics #Logic 

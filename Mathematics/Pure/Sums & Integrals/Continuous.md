@@ -86,3 +86,4 @@ $$
 ## Joint distributions
 Consider random variables $X,Y$, which are jointly continuous if $\exists f_{X,Y}\geq 0, f_{X,Y}:\mathbb{R}^{2}\to \mathbb{R}$ 
 
+#Mathematics

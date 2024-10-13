@@ -9,3 +9,5 @@ $$
 | T   | F   | F         |
 | F   | T   | F         |
 | F   | F   | T         |
+
+#Mathematics #Logic 

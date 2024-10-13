@@ -4,3 +4,5 @@ When necessary, we use a closed shaded circle to indicate an included point, and
 The graph of a function is a curve, but not every curve is the graph of a function
 ## The vertical line test
 If any vertical line intersects the curve more than once, then the curve is not the graph of a function
+
+#Mathematics #Functions 

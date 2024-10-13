@@ -22,4 +22,4 @@ $$
 $$
 f'(x) = a_{1}+2a_{2}x+\dots+na_{n}x^{n-1}
 $$
-#Mathematics
+#Mathematics #Calculus

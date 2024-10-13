@@ -3,4 +3,4 @@ $$
 y \in \mathbb{Z},\,\,\,\,\,\,\,y\geq x,\,\,\,\,\,\,\,y<x+1
 $$
 
-#Mathematics #Functions
+#Mathematics #Functions #Definition

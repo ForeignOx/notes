@@ -27,3 +27,5 @@ To prove this, we want to show both $f^{-1}(C\cap D)\subseteq f^{-1}(C)\cap f^{-
 Take $x\in f^{-1}(C\cap D)$. Then $f(x)\in C\cap D$. So $f(x)\in C$ and $f(x)\in D$. So $x\in f^{-1}(C)$ and $x\in f^{-1}(D)$
 Hence $x \in f^{-1}(C)\cap f^{-1}(D)$ so $f^{-1}(C\cap D)\subseteq f^{-1}(C)\cap f^{-1}(D)$ is true
 Take $x\in f^{-1}(C)\cap f^{-1}(D)$. So $x\in f^{-1}(C)$ and $x\in f^{-1}(D)$ so $f(x)\in C$ and $f(x)\in D$. So $f(x)\in C\cap D$ so $x\in f^{-1}(C\cap D)$, $x$ is in the pre-image by definition, so we have, $f^{-1}(C\cap D)\supseteq f^{-1}(C)\cap f^{-1}(D)$ thus we have equality
+
+#Mathematics #Functions #Definition

@@ -10,3 +10,5 @@ Given two [[Functions|functions]] $f$ and $g$ and $\lambda\in\mathbb{R}$, we can
 | Scalar Multiplication $(\lambda f)$ | $(\lambda f)(x)=\lambda f(x)$                     | $\text{Dom}(\lambda f)=\text{Dom}f$                                                              |
 Note: unlike multiplication, function composition is not commutative
 Using the above, we can also form more general linear combinations such as $(af+bg)(x)=af(x)+bg(x),a,b\in\mathbb{R},\text{Dom}(af+bg)=\text{Dom}f\cap \text{Dom}g$  
+
+#Mathematics #Functions 
