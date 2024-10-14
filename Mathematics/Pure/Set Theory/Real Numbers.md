@@ -1,5 +1,89 @@
 The real numbers, $\mathbb{R}$ is the [[Sets|set]] of rational and irrational numbers
-The real numers are ordered in the sense that if $a$ and $b$ are real numbers, then exactly one of the following holds: $a<b,a=b,a>b$, this is known as trichotomy
+## Standard Properties (Axioms)
+There is a set of real numbers $\mathbb{R}$ which admits [[Functions|functions]]:
+### Addition:
+$$
++:\mathbb{R}\times \mathbb{R}\to \mathbb{R}
+$$
+$$
++(x,y)= x+y
+$$
+Addition satisfies $\hspace{0pt}4$ axioms:
+- Commutativity
+$$
+a+b=b+a\forall a,b\in \mathbb{R}
+$$
+- Associativity
+$$
+a+(b+c)=(a+b)+c\forall a,b,c\in \mathbb{R}
+$$
+- Identity(existence of $\hspace{0pt}0$): there is a real number $\hspace{0pt}0$ such that:
+$$
+0+a=a+0=a\forall a\in \mathbb{R}
+$$
+- Inverses (existence of the negative): for every $a\in\mathbb{R}$ there is a unique number $x\in\mathbb{R}$ such that $a+x=0$, we denote this $-a$. By [[Uniqueness of Inverse|uniqueness of the negative]], $-(-a)=a$
+### Multiplication
+$$
+\times:\mathbb{R}\times \mathbb{R}\to \mathbb{R}
+$$
+$$
+\times(a,b)=a\times b=a\cdot b=ab
+$$
+Multiplication satisfies $\hspace{0pt}4$ axioms:
+- Commutativity
+$$
+a\times b=b\times a\forall a,b\in \mathbb{R}
+$$
+- Associativity
+$$
+a\times(b\times c)=(a\times b)\times c\forall a,b,c\in \mathbb{R}
+$$
+- Identity (existence of $1$): there is a real number $\hspace{0pt}1$ that is different to $0$ such that:
+$$
+1\times a=a\times 1=a\forall a\in\mathbb{R} 
+$$
+- Inverses (existance of reciprocal) For every $a\in\mathbb{R}\setminus \{ 0 \}$, there is a unique $x\in\mathbb{R}$ with $a\times x=1$, we denote this $a^{-1}$ or $\frac{1}{a}$
+There is also one axiom linking the two operations:
+- Distributivity
+$$
+a\times(b+c)=(a\times b)+(a\times c)
+$$
+## Consequences
+Let $a\in\mathbb{R}$
+### $a\times 0=0$
+$$
+a\times 0=a\times(0+0)=a\times 0+a\times 0
+$$
+Recall $a\times 0\in\mathbb{R}$, so there is a negative, $-(a\times 0)$, which we can add to this equation to get:
+$$
+a\times 0-a\times 0=a\times 0+a\times 0-a\times 0
+$$
+$$
+\implies 0=a\times 0
+$$
+### $-a=-1\times a$
+please complete future oren :)
+### $(-a)\times(-a)=(-a)^{2}=a^{2}$
+also this
+## Ordering
+The next property of the reals is the existance of an order using [[inequalities|inequalities]]
+For every $a,b\in\mathbb{R}$ there is a statement $a<b$ "$a$ is smaller than $b$" we need to specify when this is true:
+- Exactly one of the following holds: $a<b,a=b,a>b$, this is known as trichotomy 
+- If $a<b$ and $b<c$, then $a<c$ (transitivity)
+- If $a<b$, then $a+c<b+c$ for all real numbers $c$ (monotony of addition)
+- If $a<b$ and $c>0$, then $ac<bc$ (monotony of multipication case 1)
+- If $a<b$ and $c<0$, then $ac>bc$ (monotony of multiplication case 2)
+Note that if $a$ is different from $\hspace{0pt}0$, then either $a<0$ or $0<a$ then $-a$ is also different from $\hspace{0pt}0$ and by the monotony of addition, either $0<-a$ or $-a<0$ 
+### Consequences
+Let $a,b,c,d\in\mathbb{R}$ then:
+- If $a\neq 0$, then $a^{2}>0$. In particular $1>0$
+If $a>0$, then $a^{2}=a\times a>a\times 0=0$, if $a<0$, then $-a>0$ now we use $(-a)^{2}=a^{2}$ to show the same thing, note that $1=1\times 1=1^{2}>0$, so $1>0$
+- If $a<b$ and $c<d$, then $a+c<b+d$ which follows from monotony of addition twice
+- If $0<a<b$ and $0<c<d$ then $ac<bd$ which follows from monotony of multiplication twice
+- If $a<b$ and $c<0$ then $cb<ca$ 
+We use $-c>0$ so $-c\times a<-c\times b$ now apply monotony of addition by adding $c\times a+c\times b$
+- If $0<a<b$ then $0<b^{-1}<a^{-1}$
+Note $b^{-1}\neq 0$ 
 ## Decimal Representation
 Each real number can be represented by a decimal. If $r=\frac{p}{q}$ is a [[Rational Numbers|rational number]], then its decimal representation is found by dividing the denominator $q$ into the numberator $p$. The resulting decimal expansion will either terminate or repeat. For example, $\frac{3}{5}=0.6$ is a terminating decimal and $\frac{15}{11}=1.3636363636\dots=1.\overline{36}$ is a repeating decimal. The converse is true; every terminating or repeating decimal represents a rational number
 The decimal representation of an [[Irrational Numbers|irrational number]] neither terminates nor repeats
