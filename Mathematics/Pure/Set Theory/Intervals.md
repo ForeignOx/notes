@@ -8,4 +8,5 @@ $$
 $$
 We say that $[a,b]$ is a closed interval, and $(a,b)$ is an open interval. One can also mix the brackets, so for instance $[a,b)=\{ x \in \mathbb{R}:a\leq x<b \}$
 
+
 #Mathematics #Set
