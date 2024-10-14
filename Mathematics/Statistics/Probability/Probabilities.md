@@ -1,4 +1,4 @@
-Probability is a measure of chance that we assign to [[events|events]] $A\in\mathfrak{F}$
+Probability is a measure of chance that we assign to [[events|events]] [[Sigma Algebra|$A\in\mathfrak{F}$]] 
 Associated to [[Sample Spaces|$\Omega$]], there is a collection denoted as $\mathfrak{F}$, which is the collection of all possible events:
 $$
 \mathfrak{F}=\{ A|A\subseteq\Omega \}
@@ -7,6 +7,9 @@ For finite $\Omega$, we will take [[Power Sets|$\mathfrak{F}=2^\Omega$]]
 
 ## Definition of Probability
 A probability $\mathbb{P}$ on a sample space $\Omega$, with $\mathfrak{F}$ is a mapping such that for every event in $\mathfrak{F}$, $\mathbb{P}(A)$ is a real number satisfying the following [[axiom|axioms]]:
+$$
+\mathbb{P}:\mathfrak{F}\to \mathbb{R}
+$$
 - $\mathbb{P}(A)\geq 0$ (Probability is always non-negative)
 - $\mathbb{P}(\Omega)=1$ (Sample space has full probability)
 - If $A,B\in\mathfrak{F}$ and $A$ and $B$ are disjoint, that is, $A\cap B=\emptyset$, then $\mathbb{P}(A\cup B)=\mathbb{P}(A)+\mathbb{P}(B)$ (Finite additivity)
@@ -14,7 +17,9 @@ A probability $\mathbb{P}$ on a sample space $\Omega$, with $\mathfrak{F}$ is a 
 $$
 (\Omega,\mathfrak{F},\mathbb{P})
 $$
-Is the triplet known as the probability space
+Is the triplet known as the probability space 
+## Consequences
+- $A,B\in\mathfrak{F}$ then $\mathbb{P}()$
 ## Example
 $$
 \Omega=\{ \omega_{1},\omega_{2},\dots,\omega_{m} \}
