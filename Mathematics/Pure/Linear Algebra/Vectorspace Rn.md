@@ -51,6 +51,6 @@ v_{1}\\v_{2}\\\vdots\\v_{n}
 \end{pmatrix}
 $$
 ## Is $\mathbb{R}=\mathbb{R}^1$?
-There is a very obvious bijection between the two [[sets|sets]], but the set $\mathbb{R}^1$ technically has fewer operations soooooooooooooooooooooo nuh uh. 
+There is a very obvious bijection between the two [[sets|sets]], but the set $\mathbb{R}^1$ technically has fewer operations soooooooooooooooooooooo nuh uh. except that other guy said yuh uh sooooooo idk \shrugh
 
 #Mathematics #LinAlg #Definition
