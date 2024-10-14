@@ -1,4 +1,6 @@
+A set is a well-defined collection of distinct objects
 A set is defined by the elements that belong to the set. If an element $x$ belongs to a set $S$, we write $x \in S$
+For a collection $S$ of objects to be a set, it must be well-defined in the sense that given any object $x$ whatsoever, it must be possible to determine whether or not $x$ is an element of $S$
 Many sets will be finite or countably infinite, which means that we  can write them as a (finite or infinite) list, such as
 $$
 S=\{ e_{1},e_{2},\dots,e_{n} \}

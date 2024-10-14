@@ -1,4 +1,4 @@
-A real number $x$ has an [[infinite continued fraction]] expansion iff $x$ is irrational
+A [[Real Numbers|real number]] $x$ has an [[infinite continued fraction]] expansion iff $x$ is [[Irrational Numbers|irrational]]
 ## Proof
 WTS: $x$ is irrational $\implies x=[a_{0};a_{1},\dots]$ for some infinite [[Sequences|sequence]] $\{ a_{k} \}$
 Consider $x=a_{0}+\frac{1}{y_{0}}$ for $a_{0}=\lfloor x \rfloor,y_{1}>1,y\in\mathbb{R}$, $y_{1}=a_{1}+\frac{1}{y_{2}}$
