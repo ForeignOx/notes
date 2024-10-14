@@ -19,4 +19,4 @@ If $b^{2}-4ac=0$, the equation has one real root and $r_{1}=r_{2}=-\frac{b}{2a}$
 $$
 ax^{2}+bx+c=a(x-r)^{2}
 $$
-If $b^{2}-4ac<0$, the equation has no real roots, but it will have $\hspace{0pt}2$ complex roots that will be the complex conjugates of one another  
+If $b^{2}-4ac<0$, the equation has no real roots, but it will have $\hspace{0pt}2$ complex roots that will be the complex conjugates of one anotherll.;
