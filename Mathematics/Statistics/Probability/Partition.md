@@ -11,3 +11,4 @@ $$
 1=\mathbb{P}\left( \bigcup_{i=1}^k E_{i}\right)=\sum_{i=1}^k(\mathbb{P}(E_{i}))
 $$
 
+#Mathematics #Probability 

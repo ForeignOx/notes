@@ -65,3 +65,5 @@ $$
 \therefore |\vec{x}\times \vec{y}|=rs\sin\theta
 $$
 As we must take the positive square root
+
+#Mathematics #LinAlg #Definition

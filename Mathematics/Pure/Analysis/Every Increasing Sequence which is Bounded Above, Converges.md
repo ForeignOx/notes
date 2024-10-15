@@ -30,4 +30,4 @@ $$
 $$
 So $a_{n}$ [[Convergence|converges]] to $M$
 
-#Mathematics #Limits #Theorem 
+#Mathematics #Analysis  #Theorem 

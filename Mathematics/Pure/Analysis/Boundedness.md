@@ -23,4 +23,4 @@ Let $a_{n}$ be a sequence of real numbers which is bounded from above. $M\in\mat
 Note that, if $x$ is not an upper bound of $a_{n}$ then there exists $i:a_{i}>x$
 Note that, if $a_{n}$ is bounded from above, then it must have a supremum
 
-#Mathematics #Definition #Limits 
+#Mathematics #Definition #Analysis 

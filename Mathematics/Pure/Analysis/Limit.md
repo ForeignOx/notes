@@ -8,3 +8,6 @@ $$
 $$
 If there is no such $L$ then the limit does not exist
 Note we do not require $f(a)=L$ or for $f(a)$ to even exist, as we only consider the interval $0<|x-a|<\delta$
+
+
+#Mathematics #Analysis #Definition

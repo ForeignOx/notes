@@ -16,4 +16,4 @@ $$
 $$
 So $b_{n}$ converges to $k$
 
-#Mathematics #Limits #Theorem
+#Mathematics #Analysis  #Theorem

@@ -10,4 +10,4 @@ $$
 $$
 So $b_{n}$ converges to 0
 
-#Mathematics #Limits #Theorem
+#Mathematics #Analysis  #Theorem

@@ -33,4 +33,4 @@ $$
 $$
 So $a_{n}$ is bounded, but $a_{n}$ is not convergent
 
-#Mathematics #Limits #Theorem 
+#Mathematics #Analysis #Theorem 

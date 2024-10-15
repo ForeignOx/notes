@@ -11,7 +11,7 @@ So if $N=max(N_{a},N_{b})$, then if $n\geq N$ then $\left| a_{n} \right|<\frac{\
 $$
 \left| a_{n}+b_{n} \right|\leq \left| a_{n} \right|+\left| b_{n} \right|
 $$
-From [[The Absolute Value of x+y is Less Than or Equal    to the Sum of the Absolute Values of x and y|this]] theorem
+From [[Triangle Inequality|this]] theorem
 $$
 \implies \left| a_{n}+b_{n} \right|<\frac{\epsilon}{2}+\frac{\epsilon}{2}=\epsilon 
 $$

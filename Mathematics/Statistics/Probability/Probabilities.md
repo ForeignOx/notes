@@ -3,7 +3,7 @@ Associated to [[Sample Spaces|$\Omega$]], there is a collection denoted as $\mat
 $$
 \mathfrak{F}=\{ A|A\subseteq\Omega \}
 $$
-For finite $\Omega$, we will take [[Power Sets|$\mathfrak{F}=2^\Omega$]] 
+For finite $\Omega$, we can take [[Power Sets|$\mathfrak{F}=2^\Omega$]] 
 
 ## Definition of Probability
 A probability $\mathbb{P}$ on a sample space $\Omega$, with $\mathfrak{F}$ is a mapping such that for every event in $\mathfrak{F}$, $\mathbb{P}(A)$ is a real number satisfying the following [[axiom|axioms]]:

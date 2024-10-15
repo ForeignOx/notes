@@ -5,3 +5,5 @@ We take a point $\vec{a}\in L$, and a vector $\vec{d}\neq 0$ parallel to $L$, th
 $$
 L=\{ \vec{a}+\lambda \vec{d}|\lambda i\in \mathbb{R} \}
 $$
+
+#Mathematics #LinAlg 

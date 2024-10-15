@@ -7,3 +7,5 @@ A function is continuous at the point $a$ if:
 - $f(a)$ exists
 - $\lim_{ x \to a }f(x)$ exists
 - $f(a)=\lim_{ x \to a }f(x)$
+
+#Mathematics #Analysis #Definition
