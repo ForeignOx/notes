@@ -12,3 +12,4 @@ Note: unlike multiplication, function composition is not commutative
 Using the above, we can also form more general linear combinations such as $(af+bg)(x)=af(x)+bg(x),a,b\in\mathbb{R},\text{Dom}(af+bg)=\text{Dom}f\cap \text{Dom}g$  
 
 #Mathematics #Functions 
+
