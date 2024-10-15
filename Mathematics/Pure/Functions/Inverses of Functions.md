@@ -1,8 +1,13 @@
-Given a [[Real Functions|function]] $f$ with domain $S$ and [[Image and Pre-Image|image]] $I$, an inverse function is a function $g$ with domain $I$ and image $S$ such that, for every $y\in I$,
+Given a [[Bijective Functions|bijective]] [[Real Functions|function]] $f$ with domain $S$ and [[Image and Pre-Image|image]] $I$, an inverse function is a unique function $g$ with domain $I$ and image $S$ such that, for every $y\in I$,
 $$
 f(g(y))=y
 $$
-Usually we use the notation $f^{-1}$ for the inverse function.
+Usually we use the notation $f^{-1}$ for the inverse function, so:
+$$
+(f\cdot f^{-1})(x)=x=(f^{-1}\cdot f)(x)
+$$
+![[Inverses of Functions 2024-10-15 14.13.37.excalidraw]]
+Note that $\text{Ran}f^{-1}=\text{Dom}f,\text{Dom}f^{-1}=\text{Ran}f$, equivalently, $i=f^{-1}(x)\iff f(y)=x$
 For example, if
 $$
 f(x)=\frac{1}{3x-4}
