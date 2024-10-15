@@ -2,9 +2,9 @@ $\mathbb{R}^n$ is the [[Vectorspaces|vectorspace]] of the [[Real Numbers|real nu
 ## Definition
 $n$-dimensional real space
 $$
-\mathbb{R}^n:=\{ \vec{x}=\begin{pmatrix}
-x_{1}\\x_{2}\\\vdots\\x_{n}
-\end{pmatrix}:x_{i}\in \mathbb{R},0\leq i\leq n \}
+\mathbb{R}^n:=\left\{  \vec{x}=\begin{pmatrix}
+x_{1}\\x_{2}\\\vdots\\ x_{n}
+\end{pmatrix}:x_{i}\in \mathbb{R},0\leq i\leq n  \right\}
 $$
 There are two operations on $\mathbb{R}^n$
 $\hspace{0pt}1$. Vector addition
