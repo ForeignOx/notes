@@ -80,6 +80,7 @@ If $A\subseteq B$ then
 ___
 - For any two events $A$ and $B$, $\mathbb{P}(A\cup B)=\mathbb{P}(A)+\mathbb{P}(B)-\mathbb{P}(A\cap B)$
 ### Proof
+
 # 
 ___
 - If events $A_{1},A_{2},\dots,A_{k}$ are pairwise disjoint (so $A_{i}\cap A_{j}=\emptyset$ if $i\neq j$) then we call finite additivity the property that:
@@ -117,7 +118,30 @@ $$
 ### Proof
 
 For the finite case, we can use induction. Let $k=2$
-
+$$
+\mathbb{P}\left( \bigcup_{i=1}^2A_{i} \right)=\mathbb{P}(A_{1}\cup A_{2})=\mathbb{P}(A_{1})+\mathbb{P}(A_{2})-\mathbb{P}(A_{1}\cap A_{2})
+$$
+From the consequence above. From the first axiom, we also know $\mathbb{P}(A_{1}\cap A_{2})\geq 0$, so we then know:
+$$
+\mathbb{P}\left( \bigcup_{i=1}^2A_{i} \right) \leq \mathbb{P}(A_{1})+\mathbb{P}(A_{2})=\sum_{i=1}^2A_{i}
+$$
+So the proposition is true for $k=2$
+Now assume that the proposition is true for $k=n$:
+$$
+\mathbb{P}\left( \bigcup_{i=1}^n A_{i} \right)\leq \sum_{i=1}^n \mathbb{P}(A_{i})
+$$
+Now consider:
+$$
+\mathbb{P}\left( \bigcup_{i=1}^n A_{i}\cup A_{n+1}\right)=\mathbb{P}\left( \bigcup_{i=1}^n A_{i} \right)+\mathbb{P}(A_{n+1})-\mathbb{P}\left( \bigcup_{i=1}^n A_{i}\cap A_{n+1}\right)
+$$
+Again, the third term is greater than $\hspace{0pt}0$, so:
+$$
+\mathbb{P}\left( \bigcup_{i=1}^n A_{i}\cup A_{n+1}\right)\leq \mathbb{P}\left( \bigcup_{i=1}^n A_{i} \right)+\mathbb{P}(A_{n+1})\leq \sum_{i=1}^n\mathbb{P}(A_{i})+\mathbb{P}(A_{n+1})
+$$
+$$
+\therefore \mathbb{P}\left( \bigcup_{i=1}^{n+1} A_{i} \right)\leq \sum_{i=1}^{n+1} \mathbb{P}(A_{i})
+$$
+So if the statement is true for $k=n$, it is also true for $k=n+1$, and since it is true for $k=2$, it is true for all $k=2,3,4,\dots$ by induction
 # 
 ___
 - Boole's other inequality: For any events $A_{1},A_{2},\dots$:
@@ -163,22 +187,6 @@ $$
 Then $A\subseteq\Omega$, 
 $$
 \mathbb{P}(A)=\sum_{i|w_{i}\in A}p_{i}
-$$
-### Equally Likely Outcomes
-If an experiment has equally likely outcomes, it means that $p_{i}$ are all equal and, in this example, $p_{1}=p_{2}=\dots=p_{m}=\frac{1}{m}$ 
-### Throwing a Fair Die (A D6)
-$$
-\Omega=\{ 1,2,\dots,6 \}
-$$
-In this case, Fair$\equiv$equally likely, so
-$$
-\mathbb{P}(\{ 1 \})=\mathbb{P}(\{ 2 \})=\dots=\mathbb{P}(\{ 6 \})=\frac{1}{6}
-$$
-$$
-A=\{ \text{even score} \}=\{ 2,4,6 \}
-$$
-$$
-\mathbb{P}(A)=\sum_{i|\omega_{i}\in A}p_{i}=\frac{1}{6}|A|=\frac{3}{6}=\frac{1}{2}
 $$
 
 
