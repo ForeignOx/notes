@@ -70,7 +70,7 @@ $$
 ___
 - $A\in\mathfrak{F},\mathbb{P}(A)\leq 1$
 ### Proof#
-Since 
+Since $\mathbb{P}(\Omega)=1$ and $\mathbb{P}(A)+\mathbb{P}(A^c)=1$
 
 
 ## Example
