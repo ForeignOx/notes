@@ -18,4 +18,4 @@ Because in each of the $k$ places you have $n$ possibilities so you do $n\times 
 ## Standard Problem $\hspace{0pt}2$ (yippeee)
 How many lists of length $k$ with no repetition can be made from elements of set $S$ with $|S|=n$
 Solution: $n(n-1)(n-2)\dots(n-k+1)=\frac{n!}{(n-k)!}$ for $k\leq n$
-We use the [[Multiplication Principle|multiplication principle]] 
+We use the [[Rule of Product|multiplication principle]] 

@@ -1,1 +1,0 @@
-An $r$ [[Git?/Mathematics/Pure/Group Theory/Permutations|permutation]] is a list of $r$ distinct elements from $S$ ordinary permutatio
