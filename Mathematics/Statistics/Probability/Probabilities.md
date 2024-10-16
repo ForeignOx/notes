@@ -75,7 +75,7 @@ Since $\mathbb{P}(A)\geq 0$ and $\mathbb{P}(A)+\mathbb{P}(A^c)=1$, we are adding
 ___
 - If $A\subseteq B$, then $\mathbb{P}(A)\leq \mathbb{P}(B)$, known as monotonicity
 ### Proof
-If $A\subseteq B$ then $\mathbb{P}(A\cap B)=\mathbb{P}(A)$, and $\mathbb{P}(B\setminus A)\geq 0$ from the first axiom, so, from the consequence above:
+If $A\subseteq B$ then $\mathbb{P}(A\cap B)=\mathbb{P}(A)$, and $\mathbb{P}(B\setminus A)\geq 0$ from the first axiom, so, from the consequence above for the set difference:
 $$
 \mathbb{P}(B\setminus A)=\mathbb{P}(B)-\mathbb{P}(A\cap B)=\mathbb{P}(B)-\mathbb{P}(A)\geq 0
 $$
@@ -86,7 +86,14 @@ $$
 ___
 - For any two events $A$ and $B$, $\mathbb{P}(A\cup B)=\mathbb{P}(A)+\mathbb{P}(B)-\mathbb{P}(A\cap B)$
 ### Proof
-
+Consider the fact that $B\setminus A\cap A=\emptyset$, and $B\setminus A\cup A=B\cup A$, we can use the third axiom to say:
+$$
+\mathbb{P}(A\cup B)=\mathbb{P}(B\setminus A\cup A)=\mathbb{P}(B\setminus A)+\mathbb{P}(A)
+$$
+And with the consequence above for the set difference:
+$$
+\mathbb{P}(A\cup B)=\mathbb{P}(A)+\mathbb{P}(B)-\mathbb{P}(A\cap B)
+$$
 # 
 ___
 - If events $A_{1},A_{2},\dots,A_{k}$ are pairwise disjoint (so $A_{i}\cap A_{j}=\emptyset$ if $i\neq j$) then we call finite additivity the property that:
@@ -122,7 +129,7 @@ $$
 \mathbb{P}\left( \bigcup_{i=1}^k A_{i} \right)\leq \sum_{i=1}^k \mathbb{P}(A_{i})
 $$
 ### Proof
-
+For the infinite case, hmmmmmm
 For the finite case, we can use induction. Let $k=2$
 $$
 \mathbb{P}\left( \bigcup_{i=1}^2A_{i} \right)=\mathbb{P}(A_{1}\cup A_{2})=\mathbb{P}(A_{1})+\mathbb{P}(A_{2})-\mathbb{P}(A_{1}\cap A_{2})
@@ -152,10 +159,24 @@ So if the statement is true for $k=n$, it is also true for $k=n+1$, and since it
 ___
 - Boole's other inequality: For any events $A_{1},A_{2},\dots$:
 $$
-\mathbb{P}\left( \bigcap_{i=1}^\infty \right)\geq 1-\sum_{i=1}^\infty \mathbb{P}(A^c_{i})
+\mathbb{P}\left( \bigcap_{i=1}^\infty A_{i} \right)\geq 1-\sum_{i=1}^\infty \mathbb{P}(A^c_{i})
 $$
 ### Proof
-
+Consider Boole's inequality for events $A^c_{1},A^c_{2},\dots$:
+$$
+\mathbb{P}\left( \bigcup_{i=1}^\infty A^c_{i} \right)\leq \sum_{i=1}^\infty \mathbb{P}(A^c_{i})
+$$
+By [[De Morgan's Laws|De Morgan's law]], we can rewrite this as:
+$$
+\mathbb{P}\left(\left( \bigcap_{i=1}^\infty A_{i} \right)^c\right)\leq \sum_{i=1}^\infty \mathbb{P}(A^c_{i})
+$$
+Using the consequence above about the compliment of an event, we can say:
+$$
+1-\mathbb{P}\left( \bigcap_{i=1}^\infty A_{i} \right)\leq \sum_{i=1}^\infty \mathbb{P}(A^c_{i})
+$$
+$$
+\implies \mathbb{P}\left( \bigcap_{i=1}^\infty A_{i} \right)\geq 1-\sum_{i=1}^\infty \mathbb{P}(A^c_{i})
+$$
 # 
 ___
 - Continuity along monotone limits. If $A_{1}\subseteq A_{2}\subseteq\dots$ is an increasing sequence of events, then:
@@ -166,6 +187,7 @@ $$
 $$
 \mathbb{P}\left( \bigcap_{i=1}^\infty A_{i} \right)=\lim_{ i \to \infty } \mathbb{P}(A_{i})
 $$
+
 ## Example
 $$
 \Omega=\{ \omega_{1},\omega_{2},\dots,\omega_{m} \}
