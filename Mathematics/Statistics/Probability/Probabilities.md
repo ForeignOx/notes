@@ -19,7 +19,49 @@ $$
 $$
 Is the triplet known as the probability space 
 ## Consequences
-- $A,B\in\mathfrak{F}$ then $\mathbb{P}()$
+- $A,B\in\mathfrak{F}$ then $\mathbb{P}(B\setminus A)=\mathbb{P}(B)-\mathbb{P}(A\cap B)$
+### Proof
+Note that:
+$$
+(B\setminus A)\cup(A\cap B)=B
+$$
+$$
+\implies \mathbb{P}(B)=\mathbb{P}((B\setminus A)\cup(A\cap B))
+$$
+And since $B\setminus A$ and $A\cap B$ are disjoint by definition of set difference, we can use the third axiom to say:
+$$
+\mathbb{P}(B)=\mathbb{P}(B\setminus A)+\mathbb{P}(A\cap B)
+$$
+$$
+\implies \mathbb{P}(B\setminus A)=\mathbb{P}(B)-\mathbb{P}(A\cap B)
+$$
+# <br>
+___
+- $A\in\mathfrak{F}$ then $\mathbb{P}(A^c)=1-\mathbb{P}(A)$
+### Proof
+Since:
+$$
+A\cup A^c=\Omega
+$$
+And $A$ and $A^c$ are disjoint, then, using the third axiom:
+$$
+\mathbb{P}(A\cup A^c)=\mathbb{P}(\Omega)
+$$
+And so using the second axiom:
+$$
+ \implies \mathbb{P}(A)+\mathbb{P}(A^c)=1
+$$
+ 
+$$
+\implies \mathbb{P}(A^c)=1-\mathbb{P}(A)
+$$
+# <br>
+___
+- $\mathbb{P}(\emptyset)=0$
+### Proof#
+
+
+
 ## Example
 $$
 \Omega=\{ \omega_{1},\omega_{2},\dots,\omega_{m} \}
