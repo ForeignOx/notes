@@ -70,9 +70,72 @@ $$
 ___
 - $A\in\mathfrak{F},\mathbb{P}(A)\leq 1$
 ### Proof#
-Since $\mathbb{P}(\Omega)=1$ and $\mathbb{P}(A)+\mathbb{P}(A^c)=1$
+Since $\mathbb{P}(A)\geq 0$ and $\mathbb{P}(A)+\mathbb{P}(A^c)=1$, we are adding two probabilites greater than $\hspace{0pt}0$ that sum to $\hspace{0pt}1$, so each must be less than or equal to $\hspace{0pt}1$, so $0\leq\mathbb{P}(A)\leq 1$
+# 
+___
+- If $A\subseteq B$, then $\mathbb{P}(A)\leq \mathbb{P}(B)$, known as monotonicity
+### Proof
+If $A\subseteq B$ then 
+# 
+___
+- For any two events $A$ and $B$, $\mathbb{P}(A\cup B)=\mathbb{P}(A)+\mathbb{P}(B)-\mathbb{P}(A\cap B)$
+### Proof
+# 
+___
+- If events $A_{1},A_{2},\dots,A_{k}$ are pairwise disjoint (so $A_{i}\cap A_{j}=\emptyset$ if $i\neq j$) then we call finite additivity the property that:
+$$
+\mathbb{P}\left( \bigcup_{i=1}^kA_{i} \right)=\sum_{i=1}^{k}\mathbb{P}(A_{i})
+$$
+### Proof
+Consider the case when $k=2$, then
+$$
+\mathbb{P}\left( \bigcup_{i=1}^2A_{i} \right)=\mathbb{P}(A_{1}\cup A_{2})=\mathbb{P}(A_{1})+\mathbb{P}(A_{2})=\sum_{i=1}^2\mathbb{P}(A_{i})
+$$
+Using the third axiom, since $A_{1}$ and $A_{2}$ are disjoint
+Assume the proposition is true for $k=n$, then
+$$
+\mathbb{P}\left( \bigcup_{i=1}^n A_{i} \right)=\sum_{i=1}^n\mathbb{P}(A_{i})
+$$
+Consider an even $A_{n+1}$ that is pairwise disjoint with all other $A_{1},A_{2},\dots,A_{n}$, then
+$$
+\mathbb{P}\left( \left( \bigcup_{i=1}^n A_{i} \right)\cup A_{n+1} \right)=\mathbb{P}\left( \bigcup_{i=1}^n A_{i} \right)+\mathbb{P}(A_{n+1})=\sum_{i=1}^n\mathbb{P}(A_{i})+\mathbb{P}(A_{n+1})
+$$
+$$
+\therefore \mathbb{P}\left( \bigcup_{i=1}^{n+1}A_{i} \right)=\sum_{i=1}^{n+1}\mathbb{P}(A_{i})
+$$
+So if it is true for $k=n$ it is also true for $k=n+1$, and since it is true for $k=2$, it is true for all $k=2,3,4,\dots$ by mathematical induction
+# 
+___
+- Boole's inequality: For any events $A_{1},A_{2},\dots$ (they need not be disjoint):
+$$
+\mathbb{P}\left( \bigcup_{i=1}^\infty A_{i} \right)\leq \sum_{i=1}^\infty \mathbb{P}(A_{i})
+$$
+- It is also valid in the finite case for events $A_{1},A_{2},\dots,A_{k}$:
+$$
+\mathbb{P}\left( \bigcup_{i=1}^k A_{i} \right)\leq \sum_{i=1}^k \mathbb{P}(A_{i})
+$$
+### Proof
 
+For the finite case, we can use induction. Let $k=2$
 
+# 
+___
+- Boole's other inequality: For any events $A_{1},A_{2},\dots$:
+$$
+\mathbb{P}\left( \bigcap_{i=1}^\infty \right)\geq 1-\sum_{i=1}^\infty \mathbb{P}(A^c_{i})
+$$
+### Proof
+
+# 
+___
+- Continuity along monotone limits. If $A_{1}\subseteq A_{2}\subseteq\dots$ is an increasing sequence of events, then:
+$$
+\mathbb{P}\left( \bigcup_{i=1}^\infty A_{i} \right)=\lim_{ i \to \infty }\mathbb{P}(A_{i}) 
+$$
+- If $A_{1} \supseteq A_{2} \supseteq\dots$ is a decreasing sequence of events, then
+$$
+\mathbb{P}\left( \bigcap_{i=1}^\infty A_{i} \right)=\lim_{ i \to \infty } \mathbb{P}(A_{i})
+$$
 ## Example
 $$
 \Omega=\{ \omega_{1},\omega_{2},\dots,\omega_{m} \}
