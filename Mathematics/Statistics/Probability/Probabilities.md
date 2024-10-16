@@ -35,7 +35,7 @@ $$
 $$
 \implies \mathbb{P}(B\setminus A)=\mathbb{P}(B)-\mathbb{P}(A\cap B)
 $$
-# <br>
+# 
 ___
 - $A\in\mathfrak{F}$ then $\mathbb{P}(A^c)=1-\mathbb{P}(A)$
 ### Proof
@@ -55,11 +55,22 @@ $$
 $$
 \implies \mathbb{P}(A^c)=1-\mathbb{P}(A)
 $$
-# <br>
+#
 ___
 - $\mathbb{P}(\emptyset)=0$
+### Proof
+$$
+\emptyset=\Omega^c
+$$
+Using the previous consequence and the second axiom,
+$$
+ \implies \mathbb{P}(\emptyset)=\mathbb{P}(\Omega^c)=1-\mathbb{P}(\Omega)=1-1=0
+$$
+#
+___
+- $A\in\mathfrak{F},\mathbb{P}(A)\leq 1$
 ### Proof#
-
+Since $$
 
 
 ## Example
