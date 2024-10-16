@@ -75,7 +75,13 @@ Since $\mathbb{P}(A)\geq 0$ and $\mathbb{P}(A)+\mathbb{P}(A^c)=1$, we are adding
 ___
 - If $A\subseteq B$, then $\mathbb{P}(A)\leq \mathbb{P}(B)$, known as monotonicity
 ### Proof
-If $A\subseteq B$ then 
+If $A\subseteq B$ then $\mathbb{P}(A\cap B)=\mathbb{P}(A)$, and $\mathbb{P}(B\setminus A)\geq 0$ from the first axiom, so, from the consequence above:
+$$
+\mathbb{P}(B\setminus A)=\mathbb{P}(B)-\mathbb{P}(A\cap B)=\mathbb{P}(B)-\mathbb{P}(A)\geq 0
+$$
+$$
+\implies \mathbb{P}(B)\geq \mathbb{P}(A)
+$$
 # 
 ___
 - For any two events $A$ and $B$, $\mathbb{P}(A\cup B)=\mathbb{P}(A)+\mathbb{P}(B)-\mathbb{P}(A\cap B)$
