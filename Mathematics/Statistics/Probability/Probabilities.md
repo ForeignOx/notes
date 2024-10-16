@@ -70,7 +70,7 @@ $$
 ___
 - $A\in\mathfrak{F},\mathbb{P}(A)\leq 1$
 ### Proof#
-Since $$
+Since 
 
 
 ## Example
