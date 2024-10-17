@@ -13,6 +13,30 @@ If $xy<0$, either $x>0$,$y<0$ or $x<0$, $y>0$
         If $\left| x \right|>\left| y \right|$ then $x+y>0$ so $\left| x+y \right|=\left| x \right|-\left| y \right|<\left| x \right|<\left| x \right|+\left| y \right|$
         If $\left| x \right|<\left| y \right|$, then $\left| x+y \right|=\left| y \right|-\left| x \right|<\left| y \right|<\left| x \right|+\left| y \right|$
         If $\left| x \right|=\left| y \right|$, then $\left| x+y \right|=0=\left| x \right|+\left| y \right|$
+### Alternate Version
+We can also say:
+$$
+||a|-|b| |\leq|a-b|
+$$
+#### Proof
+$$
+|a|=|a-b+b|\leq|a-b|+|b|
+$$
+$$
+\implies |a|-|b|\leq|a-b
+$$
+$$
+|b-a+a|\leq |b-a| +| a|=|a-b|+|a|
+$$
+$$
+\implies |b|-|a|\leq|a-b|
+$$
+$$
+\implies -|a-b|\leq|a|-|b|
+$$
+$$
+\therefore | |a|-|b| |\leq|a-b|
+$$
 ## [[Vectors|Vectors]] in $\mathbb{R}^n$
 The triangle inequality is as follows:
 $$

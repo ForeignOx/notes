@@ -15,6 +15,11 @@ $$
 \{ 0,1,2,3 \}\,\text{   and   }\, \{ 3,1,2,0 \}
 $$
 are the same set
+This does not mean however, that ordering doesn't matter, for example the outcomes of tossing a coin twice are:
+$$
+\{ H,H \},\{ H,T \},\{ T, H\},\{ T,T \}
+$$
+Here $\{ H,T \}\neq \{ T,H \}$
 When we work with sets, we ignore any repeated elements, so:
 $$
 \{ 0,1,1,2,1,3 \}\,\text{   and   }\,\{ 0,1,2,3 \}

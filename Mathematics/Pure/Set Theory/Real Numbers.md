@@ -81,9 +81,12 @@ If $a>0$, then $a^{2}=a\times a>a\times 0=0$, if $a<0$, then $-a>0$ now we use $
 - If $a<b$ and $c<d$, then $a+c<b+d$ which follows from monotony of addition twice
 - If $0<a<b$ and $0<c<d$ then $ac<bd$ which follows from monotony of multiplication twice
 - If $a<b$ and $c<0$ then $cb<ca$ 
+- $a\leq b\iff a^{2}\leq b^{2}$ if $a,b\geq 0$
 We use $-c>0$ so $-c\times a<-c\times b$ now apply monotony of addition by adding $c\times a+c\times b$
 - If $0<a<b$ then $0<b^{-1}<a^{-1}$
-Note $b^{-1}\neq 0$ 
+$b^{-1}\neq 0$ because $b\times b^{-1}=1$, $b^{-1}=(b^{-1})^{2}\times b>0$, since $b>0$ and the other term is a square. This also works for $(ab)^{-1}=a^{-1}v^{-1}>0$ lok at $a<b$, multiply with $a^{-1}b^{-1}$, you get $b^{-1}<a^{-1}$
+From these, we have $0<1\implies 1<1+1\implies 1+1\neq 0$
+We then use the usual symbols for numbers
 ## Decimal Representation
 Each real number can be represented by a decimal. If $r=\frac{p}{q}$ is a [[Rational Numbers|rational number]], then its decimal representation is found by dividing the denominator $q$ into the numberator $p$. The resulting decimal expansion will either terminate or repeat. For example, $\frac{3}{5}=0.6$ is a terminating decimal and $\frac{15}{11}=1.3636363636\dots=1.\overline{36}$ is a repeating decimal. The converse is true; every terminating or repeating decimal represents a rational number
 The decimal representation of an [[Irrational Numbers|irrational number]] neither terminates nor repeats
