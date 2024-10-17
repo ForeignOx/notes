@@ -1,5 +1,5 @@
 If a procedure can be broken down into first and second stages, and if there are $m$ possible outcomes for the first stage and if, for each of these outcomes, there are $n$ possible outcomes for the second stage, then the total procedure can be carried out, in the designated order, in $mn$ ways
-This is also referred to as the principle of choice
+This is also referred to as the principle of choice or the multiplication principle
 Note that the rule can be extended to more than two stages
 If for $1\leq i\leq k$ there are $n_{i}$ choices for the $i$th item in a [[arrangements|list]] regardless of previous choices, then the number of possible lists is $n_{1\times}n_{2}\times\dots \times n_{k}$
 ## Example
