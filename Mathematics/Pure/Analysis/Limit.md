@@ -8,6 +8,16 @@ $$
 $$
 If there is no such $L$ then the limit does not exist
 Note we do not require $f(a)=L$ or for $f(a)$ to even exist, as we only consider the interval $0<|x-a|<\delta$
+## Facts About Limits
+You can use the following facts without proof:
+- The limit is unique at any point
+- If $f(x)=g(x)$ (except possiby at $x=a$) in some [[intervals|interval]] containing $a$, then they have the same limit at $x=a$; $\lim_{ x \to a }f(x)=\lim_{ x \to a }g(x)$
+- If $f(x)$ is [[Boundedness|bounded]] from below, $f(x)\geq k$ on either some interval $(a,b)$ or $(c,a)$ and if $\lim_{ x \to a }f(x)=L$ then $L\leq k$
+- If $f(x)$ is bounded from above, $f(x)\leq k$ on either some interval $(a,b)$ or $(c,a)$ and if $\lim_{ x \to a }f(x)=L$ then $L\geq k$
+- Calculus of Limits theorem (CoLT): If $\lim_{ x \to a }f(x)=L$ and $\lim_{ x \to a }g(x)=M$, then:
+    - $\lim_{ x \to a }(f(x)+g(x))=L+M$, 
+    - $\lim_{ x \to a }(f(x)g(x))=LM$, 
+    - if $M\neq 0$, $\lim_{ x \to a }\left( \frac{f(x)}{g(x)} \right)=\frac{L}{M}$
 
 
 #Mathematics #Analysis #Definition
