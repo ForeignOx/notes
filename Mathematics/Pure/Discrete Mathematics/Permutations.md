@@ -14,15 +14,38 @@ The permutations on set $\{ M,A,T,H \}$ are:
 MATH,MAHT,MHTA,... ($\hspace{0pt}24$ total)
 ## Example $\hspace{0pt}2$ (the birthday problem)
 This is part of a large class of problems called the mattching probems
-In a room there are $n$ people, a year has $\hspace{0pt}365$ days and:
+In a room there are $n<365$ people, a year has $\hspace{0pt}365$ days and:
 $$
 B:=\{ \text{At least two people have the same birthday} \}
 $$
 Find $\mathbb{P}(B)$
+We can write $B$ as an $n$-tuple:
+$$
+(D_{1},D_{2},\dots,D_{n})
+$$
+Where $D_{i}$ represents the $i$th person's birthday. $\Omega$ is the collection of all such tuples, so $|\Omega|=365^n$ since each of the $n$ people can be born on any of the $\hspace{0pt}365$ days
 $$
 B^c=\{ \text{No two people have the same birthday} \}
 $$
-
+We can see that:
+$$
+B=\{ \text{Exactly $\hspace{0pt}2$ poeple have the same birthday} \}\cup \{ \text{Exactly $\hspace{0pt}3$ people have the same birthday} \}\cup\dots 
+$$
+$$
+ \cup \{ \text{All people have the same birthday} \}
+$$
+Let $B_{i}=\{ \text{Exactly }i+1\text{ people have the same birthday} \}$, then:
+$$
+B=\bigcup_{i=1}^{n-1}B_{i}
+$$
+Then by [[De Morgan's Laws|De Morgan's Laws]], we get:
+$$
+B^{c}=\bigcap_{i=1}^{n-1}B_{i}^{c}
+$$
+And we can work out $|B^{c}|=(365)_{n}$ because the first person would have $\hspace{0pt}365$ choices, then the second would have $\hspace{0pt}364$ and so on as each person cannot choose a day that has come before therefore, since $|A|+|A^{c}|=|\Omega|$, and $\mathbb{P}(B)=1-\mathbb{P}(B^{c})$:
+$$
+\mathbb{P}(B)=1-\frac{(365)_{n}}{365^{n}}
+$$
 
 ## Proposition
 If $|S|=n$ there are $n!$ permutations on $S$
