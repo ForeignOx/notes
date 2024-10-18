@@ -1,5 +1,7 @@
 A permutation on a [[sets|set]] $S$ is a [[Arrangements|list]] of elements of $S$ using each element exactly once
 Given a collection of $n$ distinct objects, any linear [[Arrangements|arrangement]] of these objects is called a permutation of the collection 
+A permutation of a set $X$ is a bijective mapping $\sigma:X\to X$ (one-to-one and onto)
+The set of permutations of $n$ objects is $S_{n}$ and it has $n!$ elements
 In general, if there are $n$ distinct objects, denoted $a_{1},a_{2},\dots,a_{n}$, and $r$ is an integer, with $1\leq r\leq n$, then by the rule of product, the number of permutations of size $r$ for the $n$ objects is:
 $$
 n\times(n-1)\times(n-2)\times\dots \times(n-r+1)=\frac{n!}{(n-r)!}
