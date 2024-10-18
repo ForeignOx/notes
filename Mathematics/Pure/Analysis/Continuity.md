@@ -63,6 +63,17 @@ $f(x)=\frac{1}{x}$
 has an infinite discontinuity at $x=0$, in theis case, neither $L^+$ nor $L^{-}$ exists
 ___
 $f(x)=\sin\left( \frac{1}{x} \right)$
-![[Continuity 2024-10-17 14.37.18.excalidraw]]
+![[Pasted image 20241018150942.png]]
 Has an infinite discontinuity at $x=0$. Neither at $x=0$. Neither $L^{+}$ nor $L^{-}$ exists
+The following are continuous:
+$$
+f(x)=2x^{3}+x+7,g(x)=\frac{3x}{x-1}
+$$
+even though $g(x)$ seems to have a discontinuity at $x=1$, but it is still considered continuous as $x=1$ is not in the domain of the function, similarly:
+$$
+h(x)=\left| \frac{1+x^{2}}{\sin x}\right|
+$$
+Is continuous
+
+
 #Mathematics #Analysis #Definition
