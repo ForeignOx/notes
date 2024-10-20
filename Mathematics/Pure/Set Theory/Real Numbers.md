@@ -90,7 +90,31 @@ We then use the usual symbols for numbers
 ## Decimal Representation
 Each real number can be represented by a decimal. If $r=\frac{p}{q}$ is a [[Rational Numbers|rational number]], then its decimal representation is found by dividing the denominator $q$ into the numberator $p$. The resulting decimal expansion will either terminate or repeat. For example, $\frac{3}{5}=0.6$ is a terminating decimal and $\frac{15}{11}=1.3636363636\dots=1.\overline{36}$ is a repeating decimal. The converse is true; every terminating or repeating decimal represents a rational number
 The decimal representation of an [[Irrational Numbers|irrational number]] neither terminates nor repeats
-If ew stop the decimal expansion of a given number at a certain decimal place, then the result is a rational number which appriximates the given number. For instance $3.14$ is a common rational number approximation for $\pi$. More accurate approximations can be obtained by taking more decimal places in the expansions
+If we stop the decimal expansion of a given number at a certain decimal place, then the result is a rational number which appriximates the given number. For instance $3.14$ is a common rational number approximation for $\pi$. More accurate approximations can be obtained by taking more decimal places in the expansions
+### Converting Detween Decimal and Fraction
+For terminating decimals, this process is very easy, simply set $r$ to be equal to the number and then multiply by a power of $10$ to obtain an integer, for example if it has $\hspace{0pt}3$ digits after the decimal, multiplying by $10^{3}$ will convert it into an integer, from then, simply divide by this power of $\hspace{0pt}10$, and you have a fraction that you can then simplify by cancelling powers of $2$ and $5$ example:
+$$
+r=0.236
+$$
+$$
+ 1000r=236
+$$
+$$
+ r=\frac{236}{1000}=\frac{59}{250}
+$$
+For repeating decimals, this process is very similar, set $r$ to be equal to the number, multiply by a power of $\hspace{0pt}10$ equal to the number of digits that repeat, so $0.\overline{123}$ would be $10^3$, and then subtracting $r$ from both sides to obtain an integer, then dividing by the multiple of $r$ and simplifying:
+$$
+r=0.\overline{123}
+$$
+$$
+ 1000r=123.\overline{123}
+$$
+$$
+ 999r=123
+$$
+$$
+r=\frac{123}{999}=\frac{41}{333}
+$$
 ## Geometric Representation
 A fundamental concept in mathematics which connects the abstract notion of a real number with the geometric notion of a point is the representation of the real numbers as points on a straight line. This is done by choosing an arbitary point $O$ on a horizontal line to represent the number $0$, and another point $U$, (usually taken to the right of $O$) to represent the number $\hspace{0pt}1$
 ![[Real Numbers 2024-10-13 22.02.50.excalidraw]]
