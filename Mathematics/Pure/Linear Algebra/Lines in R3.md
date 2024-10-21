@@ -5,7 +5,7 @@ We take a point $\vec{a}\in L$, and a vector $\vec{d}\neq 0$ parallel to $L$, th
 $$
 L=\{ \vec{a}+\lambda \vec{d}|\lambda \in \mathbb{R} \}
 $$
-## Cartedian Description
+## Cartesian Description
 We can abstract this from the cartesian description, set:
 $$
 \vec{a}=\begin{pmatrix}
@@ -151,8 +151,10 @@ $$
 So
 $$
 L=\left\{  \begin{pmatrix}
-\frac{\frac{2}{3}\\4}{}
-\end{pmatrix}  \right\}
+\frac{2}{3}\\ \frac{4}{3}\\0
+\end{pmatrix}+\lambda \begin{pmatrix}
+2\\1\\-3
+\end{pmatrix}|\lambda \in \mathbb{R}  \right\}
 $$
 
 
