@@ -18,6 +18,7 @@ Let $a,b\in\mathbb{R}$
 - $||a|-|b| |\leq|a-b|$ this is a variant of the triangle inequality
 - $|a|^{2}=|a^{2}|=a^{2}$
 - $|a|\leq b\iff-b\leq a\leq b$
+- $|x|\geq a\iff x\geq a\text{ or }x\leq -a$, these last two also apply for strict inequalities in the way you'd imagine
 ## $|x-a|<b \iff a-b<x<a+b$ 
 If $b<0$ then both statements are never true
 We know that either $x-a\geq 0$ or $x-a<0$
@@ -98,6 +99,12 @@ So $\forall x,a\in\mathbb{R}$, $b\in\mathbb{R}^+$:
 $$
 |x-a|<b \iff a-b<x<a+b
 $$
+A graphical depiction is thus
+![[Absolute Value 2024-10-20 21.56.25.excalidraw]]
+## $0<|x-a|<b\iff a-b<x<c\text{ or }c<x<c+b$ 
+This is like the previous inequality, but has the exra requirement that $x\neq a$
+The combination of these inequalities are essential to the formal definition of [[limit|limits]] 
+
 ## Examples
 1. Solve $|3x-4|\leq 2$:
 $$
