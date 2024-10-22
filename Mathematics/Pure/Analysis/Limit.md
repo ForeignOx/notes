@@ -39,5 +39,33 @@ $$
 \lim_{ x \to 0 } \frac{\sin x}{x}=1,\lim_{ x \to 0 } \frac{1-\cos x}{x}=0
 $$
 These can be proven usen the squeeze theorem
+We can use this to rewrite other trigonometric limits, for example:
+$$
+\lim_{ x \to 0 } \frac{\tan x}{x}=\lim_{ x \to 0 } \left( \frac{\sin x}{x} \right)\left( \frac{1}{\cos x} \right)=1\cdot 1=1
+$$
+## Limits as $x\to \infty$
+Rough idea: a function has a limit $L$ as $x\to \infty$ if $f(x)$ can be kept arbitrarily close to $L$ by making $x$ sufficiently large
+Formal definition:
+$$
+\lim_{ x \to \infty } f(x)=L\iff \forall\epsilon>0\exists S>0:|f(x)-L|<\epsilon \forall x>S
+$$
+Similarly limits can be done as $x\to-\infty$:
+$$
+\lim_{ x \to -\infty } f(x)=L\iff \forall\epsilon>0\exists S>0:|f(x)-L|<\epsilon \forall x<-S
+$$
+An easy way to calculate limits as $x\to \infty$ is to make the substitution $x=\frac{1}{u}$ then:
+$$
+\lim_{ x \to \infty } f(x)=\lim_{ u \to 0^+ } f\left( \frac{1}{u} \right)
+$$
+Note, the graph of $f(x)$ has a horizontal asymptote to the right (or left) at $y=L$ if $\lim_{ x \to \infty }f(x)=L$ (or $\lim_{ x \to -\infty }f(x)=L$ respectively)
+### Examples
+$$
+\lim_{ x \to \infty } \frac{x\cos\left( \frac{1}{x} \right)+2}{x}=\lim_{ u \to 0^+ } (\cos u+2u)=1+0=1
+$$
+$$
+\lim_{ x \to \infty } \frac{2x+3}{x+5}=\lim_{ x \to \infty } \frac{2+\frac{3}{x}}{1+\frac{5}{x}}=\lim_{ u \to 0^+ } \frac{2+3u}{1+5u}=\frac{2}{1}=2 
+$$
+ 
+
 
 #Mathematics #Analysis #Definition
