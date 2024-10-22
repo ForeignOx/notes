@@ -41,3 +41,5 @@ $$
 \lim_{ x \to 0 }  \frac{1-\cos x}{x}=\lim_{ x \to 0 }  \frac{(1-\cos x)(1+\cos x)}{x(1+\cos x)}=\lim_{ x \to 0 }  \frac{\sin ^{2}x}{x(1+\cos x)}=\lim_{ x \to 0 } \left( \frac{\sin x}{x} \right)\left( \frac{\sin x}{1+\cos x} \right)=0
 $$
 As $\lim_{ x \to 0 } \frac{\sin x}{1+\cos x}=0$
+
+#Mathematics #Analysis #Theorem 

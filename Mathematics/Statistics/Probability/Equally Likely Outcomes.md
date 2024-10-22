@@ -20,3 +20,5 @@ $$
 $$
 \mathbb{P}(A)=\sum_{i|\omega_{i}\in A}p_{i}=\frac{1}{6}|A|=\frac{3}{6}=\frac{1}{2}
 $$
+
+#Mathematics #Probability 

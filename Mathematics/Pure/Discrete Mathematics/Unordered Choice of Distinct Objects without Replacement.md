@@ -14,3 +14,5 @@ n\\n-r
 \end{pmatrix}
 $$
 
+
+#Mathematics #Discrete 

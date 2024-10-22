@@ -12,3 +12,5 @@ E:=\{ \text{There are a total of }3\text{ heads, H} \}
 $$
 Find $\mathbb{P}(E)$
 The unrestricted number of all possible choices is $|\Omega|=2^7$
+
+#Mathematics #Discrete 

@@ -17,3 +17,5 @@ If $A\in M_{m\times n}(\mathbb{R})$, we write $A_{ij}$ or $a_{ij}$ for the $(i,j
 $$
 A=(a_{ij})_{m\times n}
 $$
+
+#Mathematics #LinAlg #Definition

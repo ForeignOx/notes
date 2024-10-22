@@ -30,3 +30,5 @@ $$
  \vec{n}_{1}\cdot(\vec{n}_{2}\times \vec{n}_{3})\neq 0
 $$
 Another way of saying this is that the [[scalar triple product|scalar triple product]] is non-zero, so a point satisfies $\hspace{0pt}3$ linear equations
+
+#Mathematics #LinAlg 

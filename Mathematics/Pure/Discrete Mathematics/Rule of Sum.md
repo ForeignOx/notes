@@ -5,3 +5,5 @@ Another way of writing this you have two [[sets|sets]] $A$ and $B$, and $A\cap B
 ## Examples
 ### Example 1
 A college library has $\hspace{0pt}40$ textbooks on sociology and $\hspace{0pt}50$ textbooks dealing with anthropology. By the rule of sum, a student can select amont $40+50=90$ textbooks in order to learn more about one or the other of these two subjects
+
+#Mathematics #Discrete 

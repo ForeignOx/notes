@@ -17,3 +17,5 @@ The negation is that "there is rational $x$ with $x^{2}=2$", then $x=\frac{p}{q}
 $x^{2}=2\implies \frac{p^{2}}{q^{2}}=2\implies p^{2}=2q^{2}$, so $p^{2}$ is even, hence $p$ is even or $p=2k$ then $p^{2}=4k^{2}=2q^{2}\implies q^{2}=2k^{2}$, so $q^{2}$ is even, hence $q$ is even, buuuuuut this is not cool because $p$ and $q$ are meant to be in their lowest form and that isn't happenin yo
 So the proper way of putting this is
 For all rational $x$ we have $x^{2}\neq 2$, negation is: "there is rational $x$ with $x^{2}=2$" which we then showed is not possible
+
+#Mathematics #Logic 

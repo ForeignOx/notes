@@ -21,3 +21,5 @@ $$
 $$
 The number of sequences satisfying the first issue is $\hspace{0pt}10$, as all the sequences are $[1,1,1,1],[2,2,2,2],\dots,[9,9,9,9]$
 For the second issue the increasing sequences can start with any number from $0,1,2,\dots,6$ which gives $\hspace{0pt}7$ options, and there will be the same number of decreasing sequences by reflection, so $\hspace{0pt}14$ total, so the number of possible pins overall will be $10^4-24$
+
+#Mathematics #Discrete 

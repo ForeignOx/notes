@@ -1,7 +1,7 @@
 Here we need a [[Proposition|proposition]] $A(n)$ for every $n\in\mathbb{N}$, if we want to show that $A(n)$ is a true statement for every $n$, we need to start by showing $A(1)$ is true, then we need to show for every $n\in\mathbb{N}$, $A(n)\implies A(n+1)$ 
 ## Examples
 $1^{3}+2^{3}+3^{3}+\dots+n^{3}=\frac{n^{2}(n+1)^{2}}{4}$, which we can call $A(n)$
-Check $A(1)$, $LHS=1$, $RHS=\frac{1^{2}2^{2}}{4}=1=LHS$ yayyy
+Check $A(1)$, $LHS=1$, $RHS=\frac{1^{2}2^{2}}{4}=1=LHS$ 
 Assume $A(k)$ is true, for some $k\in\mathbb{N}$:
 $$
 1+2^{3}+3^{3}+\dots+k^{3}+(k+1)^{3}=\frac{k^{2}(k+1)^{2}}{4}+(k+1)^{3}
@@ -30,4 +30,6 @@ $$
 $$
  \implies a_{1}+a_{2}+..+a_{k+1}>n+1
 $$
-Proved QED yaya
+Thus it is proved
+
+#Mathematics #Logic 

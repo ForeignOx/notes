@@ -26,3 +26,5 @@ $$
 \frac{(u+r)!}{u!r!}
 $$
 This theory can then be expanded to more dimensions
+
+#Mathematics #Discrete 

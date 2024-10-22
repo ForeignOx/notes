@@ -7,3 +7,5 @@ We can then generalise this to if $n=ak$, where $a\in\mathbb{Z}$, by considering
 $$
 \frac{n!}{(a!)^{k}}
 $$
+
+#Mathematics #Discrete 

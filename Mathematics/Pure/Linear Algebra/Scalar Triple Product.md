@@ -59,3 +59,6 @@ $$
 = a_{1}b_{2}c_{3}+a_{2}b_{3}c_{1}+a_{3}b_{1}c_{2}-a_{1}b_{3}c_{2}-a_{2}b_{1}c_{3}-a_{3}b_{2}c_{1}
 $$
 We can see that the subscripts are in fact undergoing cyclic permutation, so we can see that there will be invariance if you interchange the $a$'s, $b$'s and $c$'s cyclically, then if you change the order, then we are using the second half of the equation and the negative signs switch
+
+
+#Mathematics #LinAlg #Definition

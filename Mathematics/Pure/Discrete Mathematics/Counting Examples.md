@@ -27,3 +27,5 @@ Let $E=\{ \text{words with at least one E} \}$, $T=\{ \text{words with at least 
 Now we know $|E\cup T|=26^4-24^4$, but we want $|E\cap T|$. We know $|E\cup T|=|E|+|T|-|E\cap T|$ from here follows: $|E\cap T|=|E|+|T|-|E\cup T|=(26^4-25^4)+(26^4-25^4)-(26^4-24^4)=26^4-2\times 25^4+24^4$ 
 ### Number $\hspace{0pt}5$ 
 Number of words with $\hspace{0pt}3$ distinct letters is $26\times 25\times 24=P(26,3)$ which we know from [[Git?/Mathematics/Pure/Discrete Mathematics/Permutations|permutations]] If we pick a general word with $\hspace{0pt}3$ distinct letters, there will be $\hspace{0pt}6$ ways to order it, but only one of them will be in alphabetical order (example the word CAT,ACT,TAC,ATC,CTA,TCA, only ACT is in order) so the answer to the problem is $\frac{26\times 25\times 24}{6}=26\times 25\times 4$ 
+
+#Mathematics #Discrete 

@@ -52,3 +52,4 @@ If $|S|=n$ there are $n!$ permutations on $S$
 ### Proof
 This is the same as [[Arrangements#Standard Problem $ hspace{0pt}2$ (yippeee)|this standard problem]] with $n=k$, so in our example there are $4\neq 24$ permutations
 
+#Mathematics #Discrete 

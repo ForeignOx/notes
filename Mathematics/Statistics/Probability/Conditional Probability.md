@@ -59,3 +59,5 @@ $$
 $$
     So $\mathbb{P}_{B}$ is a probability on $(\Omega,\mathfrak{F})$, so satisfies the axioms of probability
 
+
+#Mathematics #Probability #Definition 
