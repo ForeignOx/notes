@@ -29,7 +29,7 @@ is satisfied by the unique vector given by $\left( \frac{1}{\lambda} \right)\vec
 ## Vector Addition
 ![[Vectors 2024-10-13 21.43.04.excalidraw]]
 
-## Scalar multiplication image
+## Scalar multiplication
 ![[Vectors 2024-10-13 21.44.11.excalidraw]]
 
 #Mathematics #LinAlg 
