@@ -20,7 +20,7 @@ Assume that $C,D\subset Y$. Then:
 - $f(Y\setminus C) \supset f(Y)\setminus f(C)$
 
 ## Proof
-Look at $f(A\cap B)\subset f(A)\cap f(B)$
+Look at $f(A\cap B)\subset f(A)\cap f(B)$ 
 Take $y\in f(A\cap B)$ then there is $x\in A\cap B$ with $f(x)=y$ Then $x\in A$ and $x\in B$. Then $y=f(x)\in f(A)$ and $y= f(x)\in f(B)$ so $y\in f(A)\cap f(B)$
 Look now at $f^{-1}(C\cap D)=f^{-1}(C)\cap f^{-1}(D)$
 To prove this, we want to show both $f^{-1}(C\cap D)\subseteq f^{-1}(C)\cap f^{-1}(D)$ and $f^{-1}(C\cap D)\supseteq f^{-1}(C)\cap f^{-1}(D)$
