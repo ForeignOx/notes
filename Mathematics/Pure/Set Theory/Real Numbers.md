@@ -1,4 +1,4 @@
-![[Pasted image 20241016161342.png]]The real numbers, $\mathbb{R}$ is the [[Sets|set]] of rational and irrational numbers
+The real numbers, $\mathbb{R}$ is the [[Sets|set]] of rational and irrational numbers
 ## Standard Properties (Axioms)
 There is a set of real numbers $\mathbb{R}$ which admits [[Functions|functions]]:
 ### Addition:
