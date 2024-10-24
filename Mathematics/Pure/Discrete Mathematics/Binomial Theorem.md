@@ -43,6 +43,63 @@ $$
 n+1\\k
 \end{pmatrix}a^{n+1-k}b^{k}
 $$
-
-
-
+## Examples
+Prove for integer $n\geq 0$
+$$
+\sum_{ k=0} ^{ n}\begin{pmatrix}
+n\\k
+\end{pmatrix}=2^{n}  
+$$
+For $n\geq 1$
+$$
+\sum_{ k=0} ^{ n}\begin{pmatrix}
+n\\k
+\end{pmatrix}(-1)^{k}=0
+$$
+For $n\geq 0$
+$$
+\sum_{ k=0} ^{ n}\begin{pmatrix}
+n\\k
+\end{pmatrix}2^{k}=3^{n}  
+$$
+$$
+\sum_{ k=0} ^{ n}\begin{pmatrix}
+n\\k
+\end{pmatrix}k=n\times 2^{n-1}
+$$
+To solve these, we can consider the binomial theorem in the form:
+$$
+(1+x)^{n}=\sum_{k=0}^{n}\begin{pmatrix}
+n\\k
+\end{pmatrix}x^{k}
+$$
+For the first one, let $x=1$,
+$$
+(1+1)^{n}=\sum_{ k=0} ^{ n}  \begin{pmatrix}
+n\\k
+\end{pmatrix}=2^{n}
+$$
+For the second, let $x=-1$
+$$
+(1-1)^{n}=\sum_{ k=0} ^{ n}  \begin{pmatrix}
+n\\k
+\end{pmatrix}(-1)^{k}=0
+$$
+For the third, let $x=2$
+$$
+(1+2)^{n}=\sum_{ k=0} ^{ n}  \begin{pmatrix}
+n\\k
+\end{pmatrix}2^{k}=3^{n}
+$$
+For the fourth, the trick is to differentiate both sides with respect to $n$:
+$$
+n(1+x)^{n-1}=\sum_{k=0}^{n}\begin{pmatrix}
+n\\k
+\end{pmatrix}kx^{k-1}
+$$
+Now let $x=1$
+$$
+n(1+1)^{n-1}=\sum_{k=0}^{n}\begin{pmatrix}
+n\\k
+\end{pmatrix}k=n 2^{n-1}
+$$
