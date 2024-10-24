@@ -19,3 +19,4 @@ One important application of the IVT is finding the zeros (roots) pf a function.
 ## Example
 $f(x)=x^{2}-2$ is continuos on $[1,2]$ with $f(1)=-1<0$ and $f(2)=2>0$ so the IVT tells me that there is at least one root of $x^{2}-2$ in $(1,2)$, iterating this, leads to the bisection method ooooooooOoOoOoOOooOOoOOOOoOoooooOoOoOoOOooOOOoooooooOO to find roots to arbitrary accuracy
 
+#Mathematics #Analysis #Theorem

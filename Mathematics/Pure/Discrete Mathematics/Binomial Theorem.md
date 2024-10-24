@@ -103,3 +103,5 @@ n(1+1)^{n-1}=\sum_{k=0}^{n}\begin{pmatrix}
 n\\k
 \end{pmatrix}k=n 2^{n-1}
 $$
+
+#Mathematics #Discrete #Theorem 

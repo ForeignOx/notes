@@ -8,3 +8,5 @@ $$
 1&\text{if }i=j\\0&\text{if }i\neq j
 \end{cases}
 $$
+
+#Mathematics #LinAlg #Functions #Definition 

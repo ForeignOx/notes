@@ -12,3 +12,5 @@ $$
 \frac{d 
 }{dx}((x^{2}+3x)^{4})=4(x^{2}+3x)^{3}(2x+3) 
 $$
+
+#Mathematics #Calculus 

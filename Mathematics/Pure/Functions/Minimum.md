@@ -3,3 +3,5 @@ $$
 m=\text{min}(X)
 $$
 If such $m$ exists
+
+#Mathematics #Functions #Definition 

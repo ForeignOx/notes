@@ -9,3 +9,5 @@ If such a $B$ exists, we call it the inverse of $A$, and denote it $A^{-1}$
 - ;yvutcyrtxy
 - If $A\in M_{n}(\mathbb{R})$ is invertible, then so is [[Transpose|$A^{t}$]]: $(A^{t})^{-1}=(A^{-1})^{t}$
 - If $A,B\in M_{n}(\mathbb{R})$ and $AB=I_{n}$, then $B=A^{-1}$ and $A=B^{-1}$
+
+#Mathematics #LinAlg #Definition

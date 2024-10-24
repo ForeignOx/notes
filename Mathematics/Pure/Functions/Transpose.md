@@ -6,4 +6,5 @@ $$
  A\mapsto A^t
 $$
 Which is defined by $(A^t)_{ij:=A_{ji}}$
-## Example
+
+#Mathematics #LinAlg #Functions #Definition 

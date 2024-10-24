@@ -5,3 +5,5 @@ I_{n}=(\delta_{ij})_{n\times n}=\begin{pmatrix}
 \end{pmatrix}
 $$
 (This uses the [[Kronecker Delta Function|Kronecker Delta function]])
+
+#Mathematics #LinAlg #Definition

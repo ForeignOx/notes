@@ -8,3 +8,5 @@ Solution: this is the same as [[Unordered Choice of Distinct Objects without Rep
 ## Example
 From the letters $P,Q,R,S$, find the number of combinations of $\hspace{0pt}2$ distinct letters, then $\hspace{0pt}3$ distinct letters
 Solution: for the first case there are $\hspace{0pt}6$ combinations, for the second there are $\hspace{0pt}4$, 
+
+#Mathematics #Discrete 

@@ -3,3 +3,5 @@ $$
 M=\text{max}(X)
 $$
 If such $M$ exists
+
+#Mathematics #Functions #Definition 
