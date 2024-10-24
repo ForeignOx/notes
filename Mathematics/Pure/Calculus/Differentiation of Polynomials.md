@@ -1,4 +1,4 @@
-Consider the derivative of $f(x)=x^{n}$, from [[Differentiation From First Principles|first principles]]:
+Consider the derivative of $f(x)=x^{n}$, from [[Differentiation|first principles]]:
 $$
 f'(x)=\lim_{ h \to 0 } \frac{(x+h)^{n}-x^{n}}{h}
 $$

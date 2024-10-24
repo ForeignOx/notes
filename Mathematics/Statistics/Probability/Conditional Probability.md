@@ -64,7 +64,12 @@ $$
     - $\mathbb{P}_{B}(A_{1} \cup A_{2})=\mathbb{P}_{B}(A_{1})+\mathbb{P}_{B}(A_{2})$ if $A_{1}\cap A_{2}=\emptyset$
 ### Proof
 $$
-\mathbb{P}_{B}(A)=
+\mathbb{P}_{B}(A)=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}
+$$
+And since $\mathbb{P}(A\cap B)$ and $\mathbb{P}(B)$ are both probabilities, so by the first axiom, are both positive, so $\mathbb{P}_{B}(A)\geq 0$
+Since $\mathbb{P}(B\cap\Omega)=\mathbb{P}(B)$,
+$$
+\mathbb{P}_{B}(\Omega)=\frac{\mathbb{P}(B\cap\Omega)}{\mathbb{P}(B)}=\frac{\mathbb{P}(B)}{\mathbb{P}(B)}=1
 $$
 $$
 \mathbb{P}_{B}(A_{1}\cup A_{2})= \frac{\mathbb{P}((A_{1}\cup A_{2})\cap B)}{\mathbb{P}(B)}
