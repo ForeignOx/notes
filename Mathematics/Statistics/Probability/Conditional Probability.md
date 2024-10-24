@@ -4,6 +4,7 @@ $$
 $$
 When $\mathbb{P}(B)>0$
 Another way of thinking about this is to find the probability of $A$ whan we have observed $B$
+Note we have only defined it as a probability, $A|B$ does not have a definition
 ## Examples
 Roll of the die:
 $$
@@ -53,11 +54,59 @@ $$
 $$
 ## Properties of Conditional Probability
 - Let $B$ be an event, such that $\mathbb{P}(B)>0$, then $\mathbb{P}(\cdot|B)$ (the $\cdot$ represents any set) satisfies the axioms of [[Probabilities|probability]]
-- Given the event $B$, let us define:
+    Given the event $B$, let us define:
 $$
 \mathbb{P}_{B}:\mathfrak{F}\to \mathbb{R}:\forall A\in \mathfrak{F},\mathbb{P}_{B}(A):=\mathbb{P}(A|B)
 $$
-    So $\mathbb{P}_{B}$ is a probability on $(\Omega,\mathfrak{F})$, so satisfies the axioms of probability
+    So $\mathbb{P}_{B}$ is a probability on $(\Omega,\mathfrak{F})$, so satisfies the axioms of probability:
+    - $\mathbb{P}_{B}(A)\geq 0$
+    - $\mathbb{P}_{B}(\Omega)=1$
+    - $\mathbb{P}_{B}(A_{1} \cup A_{2})=\mathbb{P}_{B}(A_{1})+\mathbb{P}_{B}(A_{2})$ if $A_{1}\cap A_{2}=\emptyset$
+### Proof
+more proofs here pls
+$$
+\mathbb{P}_{B}(A_{1}\cup A_{2})= \frac{\mathbb{P}((A_{1}\cup A_{2})\cap B)}{\mathbb{P}(B)}
+$$
+Since $A_{1}\cap A_{2}=\emptyset$, $(A_{1}\cap B)\cap (A_{2}\cap B)=\emptyset$, therefore we have:
+$$
+(A_{1}\cup A_{2})\cap B=(A_{1}\cap B)\cup (A_{2}\cap B)
+$$
+So:
+$$
+\mathbb{P}((A_{1}\cup A_{2})\cap B)=\mathbb{P}((A_{1}\cap B)\cup (A_{2}\cap B))=\mathbb{P}(A_{1}\cap B)+\mathbb{P}(A_{2}\cap B)
+$$
+Since $(A_{1}\cap B)$ and $(A_{2}\cap B)$ are mutually exclusive, so substituting this, we get:
+$$
+\mathbb{P}_{B}(A_{1}\cup A_{2})=\frac{\mathbb{P}(A_{1}\cap B)+\mathbb{P}(A_{2}\cap B)}{\mathbb{P}(B)}=\frac{\mathbb{P}(A_{1}\cap B)}{\mathbb{P}(B)}+\frac{\mathbb{P}(A_{2}\cap B)}{\mathbb{P}(B)}=\mathbb{P}_{B}(A_{1})+\mathbb{P}_{B}(A_{2})
+$$
+Which is what we want
+- Since it satisfies the axioms, it must also satisfy the consequences:
+    - $\mathbb{P}(A^{c}|B)=1=\mathbb{P}(A|B)$
+    - If $A_{1}\subseteq A_{2}$, $\mathbb{P}(A_{1}|B)\leq \mathbb{P}(A_{2}|B)$
+    - $\mathbb{P}(A_{1}\cup A_{2}|B)=\mathbb{P}(A_{1}|B)+\mathbb{P}(A_{2}|B)-\mathbb{P}(A_{1}\cap A_{2}|B)$
+    - If $A_{1},A_{2},\dots$ are pairwise disjoint, then:
+$$
+\mathbb{P}\left( \bigcup_{i=1}^{n}A_{i}|B \right)=\sum_{i=1}^{n}\mathbb{P}(A_{i}|B)
+$$
+- The multiplication rule: for any $\hspace{0pt}2$ events $A,B\in\mathfrak{F}$, with $\mathbb{P}(A)\neq 0$, $\mathbb{P}(B)\neq 0$, we have, by rearranging the definition:
+$$
+\mathbb{P}(A\cap B)=\mathbb{P}(A|B)\mathbb{P}(B)=\mathbb{P}(B|A)\mathbb{P}(A)
+$$
+    A more general statement is also true:
+$$
+\mathbb{P}(A\cap B|C)=\mathbb{P}(B|C)\mathbb{P}(A|B\cap C),\text{ if }\mathbb{P}(B\cap C)>0
+$$
+(proof mayhaps????)
+    It is enough to assume that $\mathbb{P}(B\cap C)>0$ because $B\cap C\subseteq C$, so $0<\mathbb{P}(B\cap C)\leq \mathbb{P}(C)$, therefore $\mathbb{P}(C)>0$ and hence we can define conditional probability of events given $C$
+- General multiplication rule: Let $A_{0},A_{1},A_{2},\dots$ be events such that:
+$$
+\mathbb{P}\left(\bigcap_{i=1}^{k}A_{i}\right)>0
+$$
+    Then:
+$$
+\mathbb{P}\left( \bigcap_{i=0}^{k}A_{i}|A_{0} \right)=\mathbb{P}(A_{1}|A_{0})\mathbb{P}(A_{2}|A_{1}\cap A_{0})\mathbb{P}(A_{3}|A_{2}\cap A_{1}\cap A_{0})\dots \mathbb{P}\left( A_{k-1}|\bigcap_{i=0}^{k-2}A_{i} \right)\mathbb{P}\left( A_{k}|\bigcap_{i=1}^{k-1}A_{i} \right)
+$$
+
 
 
 #Mathematics #Probability #Definition 

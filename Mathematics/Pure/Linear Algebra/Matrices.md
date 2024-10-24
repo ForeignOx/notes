@@ -15,7 +15,7 @@ $$
 1&5&10\\2&3&4
 \end{pmatrix}\in M_{2\times 3}(\mathbb{R})
 $$
-and for example $4$ is the $(2,3)$ entry
+and for example $4$ is the $(2,3)$ entry 
 # 
 ___
 If $A\in M_{m\times n}(\mathbb{R})$, we write $A_{ij}$ or $a_{ij}$ for the $(i,j)$th entry or element of $A$, and for shorthand, we write:
