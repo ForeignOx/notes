@@ -23,7 +23,7 @@ $$
 |a|=|a-b+b|\leq|a-b|+|b|
 $$
 $$
-\implies |a|-|b|\leq|a-b
+\implies |a|-|b|\leq|a-b|
 $$
 $$
 |b-a+a|\leq |b-a| +| a|=|a-b|+|a|
