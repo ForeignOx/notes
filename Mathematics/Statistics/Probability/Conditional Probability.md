@@ -63,7 +63,9 @@ $$
     - $\mathbb{P}_{B}(\Omega)=1$
     - $\mathbb{P}_{B}(A_{1} \cup A_{2})=\mathbb{P}_{B}(A_{1})+\mathbb{P}_{B}(A_{2})$ if $A_{1}\cap A_{2}=\emptyset$
 ### Proof
-more proofs here pls
+$$
+\mathbb{P}_{B}(A)=
+$$
 $$
 \mathbb{P}_{B}(A_{1}\cup A_{2})= \frac{\mathbb{P}((A_{1}\cup A_{2})\cap B)}{\mathbb{P}(B)}
 $$

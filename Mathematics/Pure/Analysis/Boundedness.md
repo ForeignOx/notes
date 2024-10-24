@@ -1,3 +1,15 @@
+Let $X\subset \mathbb{R}$, we say that $X$ is bounded above if:
+$$
+\exists C\in \mathbb{R}:x\leq C\forall x\in X
+$$
+$C$ is known as an upper bound
+Similarly $X$ is bounded below if:
+$$
+\exists c\in \mathbb{R}:c\leq x\forall x\in X
+$$
+$c$ is known as a lower bound
+If $X$ is bounded above and bounded below, we say $X$ is bound
+## Sequences
 Let $a_{n}$ be a [[Sequences|sequence]] of real numbers
 ___
 $a_{n}$ is bounded above if:
