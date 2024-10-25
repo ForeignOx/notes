@@ -4,3 +4,12 @@ Regular coordinates are assigned to points of the plane as follows: the point on
 ![[Coordinate Plane 2024-10-24 22.29.05.excalidraw]]
 This procedure assigns an ordered pair of real numbers to each point of the plane. Moreover, the procedure is reversible. Given any ordered pair $(c,d)$ of real numbers, there is a unique point $Q$ in the plane with coordinates $(c,d)$
 To indicate that $P$ has coordinates $(a,b)$ we write $P(a,b)$
+
+$$
+
+$$
+
+A function f is a mapping from its domain, Dom f , to a codomain. Its range, Ran f , is
+the image of Dom f , i.e. the set of all values that f (x) can actually take for x ∈ Dom f 
+
+![[Coordinate Plane 2024-10-25 09.41.23.excalidraw]]
