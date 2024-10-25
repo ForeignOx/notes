@@ -1,4 +1,4 @@
-Let $A,B\in\Omega$ be two [[Events|events]]. We define the conditional probability of $A$ given $B$, and denote it by $\mathbb{P}(A|B)$, as follows:
+ Let $A,B\in\Omega$ be two [[Events|events]]. We define the conditional probability of $A$ given $B$, and denote it by $\mathbb{P}(A|B)$, as follows:
 $$
 \mathbb{P}(A|B)=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}
 $$
