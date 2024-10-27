@@ -41,4 +41,10 @@ $$
 ## Parallel Lines
 Given two nonvertical lines $l_{1}$ and $l_{2}$ with slopes $m_{1}$ and $m_{2}$ respectively, then, are parallel iff $m_{1}=m_{2}$
 ## Perpendicular Lines
-Given two nonvertical lines $l_{1}$ and $l_{2}$ with slopes $m_{1}$ and $m_{2}$ respectively, then, are parallel iff $m_{1}=m_{2}$
+Given two nonvertical lines $l_{1}$ and $l_{2}$ with slopes $m_{1}$ and $m_{2}$ respectively, then, are perpendicular iff $m_{1}m_{2}=1$
+## [[Angle Between Vectors|Angle Between two Lines]]
+![[Lines in R2 2024-10-27 16.31.06.excalidraw]]
+Consider two intersecting lines as shown in the image above, named $l_{1}$ and $l_{2}$ with inclinations $\theta_{1}$ and $\theta_{2}$. These lines form two angles $\alpha=\theta_{2}-\theta_{1}$ and $\pi-\alpha$. If these two angles are equal, then $\alpha=\frac{\pi}{2}$ and the lines are perpendicular. If $\alpha$ and $\pi-\alpha$ are not equal, then the smaller of the two is called the angle between $l_{1}$ and $l_{2}$,
+$$
+\tan\alpha=\left| \frac{m_{2}-m_{1}}{1-m_{1}m_{2}}\right|
+$$
