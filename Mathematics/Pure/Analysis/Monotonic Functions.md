@@ -14,3 +14,5 @@ A function $f(x)$ is strictly monotonic decreasing in $[a,b]$ if
 $$
 f(x_{1})< f(x_{2})\forall x_{1},x_{2}:a\leq x_{1}<x_{2}\leq b
 $$
+
+#Mathematics #Analysis #Definition 

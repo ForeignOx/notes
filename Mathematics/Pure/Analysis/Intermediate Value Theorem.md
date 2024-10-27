@@ -17,6 +17,6 @@ $$
 So $L^+\neq L^-$
 One important application of the IVT is finding the zeros (roots) pf a function. If $f$ is continuous on $[a,b]$ and $f(a)<0<f(b)$ then by the IVT it must go through zero somewhere in the interval there is at least one root such that $f(x)=0$
 ## Example
-$f(x)=x^{2}-2$ is continuos on $[1,2]$ with $f(1)=-1<0$ and $f(2)=2>0$ so the IVT tells me that there is at least one root of $x^{2}-2$ in $(1,2)$, iterating this, leads to the bisection method ooooooooOoOoOoOOooOOoOOOOoOoooooOoOoOoOOooOOOoooooooOO to find roots to arbitrary accuracy
+$f(x)=x^{2}-2$ is continuos on $[1,2]$ with $f(1)=-1<0$ and $f(2)=2>0$ so the IVT tells me that there is at least one root of $x^{2}-2$ in $(1,2)$, iterating this, leads to the bisection method to find roots to arbitrary accuracy
 
 #Mathematics #Analysis #Theorem

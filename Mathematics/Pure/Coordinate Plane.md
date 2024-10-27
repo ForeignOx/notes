@@ -3,13 +3,7 @@ The correspondence between the [[Real Numbers|real numbers]] and points on a num
 Regular coordinates are assigned to points of the plane as follows: the point on the $x$-axis with line coordinate $a$ is assigned rectangular coordinates $(a,0)$. The point on the $y$-axis with line coordinate $b$ is assigned rectangular coordinates $(0,b)$. Thus the origin is assigned coordinates $(0,0)$. A point $P$ not on one of the coordinate axes is assigned coordinates $(a,b)$ provided that the line $l_{1}$ passes through $P$ and is parallel to the $y$-axis and intersects the $x$-axis at the point $(a,0)$, and the line $l_{2}$ that passes through $P$ and is parallel to the $x$-axis intersects the $y$-axis at the point with coordinates $(0,b)$
 ![[Coordinate Plane 2024-10-24 22.29.05.excalidraw]]
 This procedure assigns an ordered pair of real numbers to each point of the plane. Moreover, the procedure is reversible. Given any ordered pair $(c,d)$ of real numbers, there is a unique point $Q$ in the plane with coordinates $(c,d)$
-To indicate that $P$ has coordinates $(a,b)$ we write $P(a,b)$
+To indicate that $P$ has coordinates $(a,b)$ we write $P(a,b)$. The number $a$ is called the $x$-coordinate (the abscissa), and the number $b$ is called the $y$-coordinate (the ordinate)
+This coordinate system is known as the cartesian coordinate system
 
-$$
-
-$$
-
-A function f is a mapping from its domain, Dom f , to a codomain. Its range, Ran f , is
-the image of Dom f , i.e. the set of all values that f (x) can actually take for x ∈ Dom f 
-
-![[Coordinate Plane 2024-10-25 09.41.23.excalidraw]]
+#Mathematics

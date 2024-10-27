@@ -22,3 +22,5 @@ $$
 \mathbb{P}(A_{1})\mathbb{P}(A_{2})=\frac{3}{6}\times \frac{2}{6}=\frac{1}{6}=\mathbb{P}(A_{1}\cap A_{2})
 $$
 So $A_{1}$ and $A_{2}$ are independent
+
+#Mathematics #Probability #Definition

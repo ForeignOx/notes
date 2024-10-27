@@ -29,3 +29,6 @@ $$
 \mathbb{P}(R|C)=\frac{\mathbb{P}(R)\mathbb{P}(C|R)}{\mathbb{P}(C)}=\frac{\mathbb{P}(R)\mathbb{P}(C|R)}{\mathbb{P}(C|R)\mathbb{P}(R)+\mathbb{P}(C|R^c)\mathbb{P}(R^c)}=\frac{\frac{1}{2}\times \frac{1}{10}}{\frac{1}{2}\times \frac{7}{10}}=\frac{1}{7}
 $$
 
+
+
+#Mathematics #Probability #Theorem 

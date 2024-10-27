@@ -30,3 +30,5 @@ $$
 $$
 = \frac{1}{3}\left( \frac{10+20+30}{100} \right)=0.2
 $$
+
+#Mathematics #Probability #Theorem  

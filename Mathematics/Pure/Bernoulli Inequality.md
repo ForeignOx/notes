@@ -21,3 +21,4 @@ $$
 (1+x)^{n+1}=(1+x)(1+x)^{n}\geq\underbrace{ (1+x) }_{ >0 }(1+nx)=1+nx+x+nx^{2}=1+(n+1)x+\underbrace{ nx^{2} }_{ \geq0 }\geq 1+(n+1)x
 $$
 
+#Mathematics 

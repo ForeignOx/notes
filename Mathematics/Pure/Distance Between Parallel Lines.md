@@ -20,3 +20,5 @@ $$
 x_{1} \\ x_{2} \\x_{3}
 \end{matrix}\right) \cdot \vec{AB}=0
 $$
+
+#Mathematics
