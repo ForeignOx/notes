@@ -1,6 +1,6 @@
  Let $A,B\in\Omega$ be two [[Events|events]]. We define the conditional probability of $A$ given $B$, and denote it by $\mathbb{P}(A|B)$, as follows:
 $$
-\mathbb{P}(A|B)=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}
+\mathbb{P}(A|B):=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}
 $$
 When $\mathbb{P}(B)>0$
 Another way of thinking about this is to find the probability of $A$ whan we have observed $B$
@@ -113,6 +113,7 @@ $$
 $$
 \mathbb{P}\left( \bigcap_{i=0}^{k}A_{i}|A_{0} \right)=\mathbb{P}(A_{1}|A_{0})\mathbb{P}(A_{2}|A_{1}\cap A_{0})\mathbb{P}(A_{3}|A_{2}\cap A_{1}\cap A_{0})\dots \mathbb{P}\left( A_{k-1}|\bigcap_{i=0}^{k-2}A_{i} \right)\mathbb{P}\left( A_{k}|\bigcap_{i=1}^{k-1}A_{i} \right)
 $$
+
 
 
 

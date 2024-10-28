@@ -10,6 +10,7 @@ So if two events are indepentent, then:
 $$
 \mathbb{P}(A|B)=\mathbb{P}(A)
 $$
+Note that independence cannot be observed on a Venn Diagram
 ## Example
 Roll a fair die:
 $$
