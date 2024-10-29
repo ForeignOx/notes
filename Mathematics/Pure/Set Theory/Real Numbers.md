@@ -87,6 +87,11 @@ We use $-c>0$ so $-c\times a<-c\times b$ now apply monotony of addition by addin
 $b^{-1}\neq 0$ because $b\times b^{-1}=1$, $b^{-1}=(b^{-1})^{2}\times b>0$, since $b>0$ and the other term is a square. This also works for $(ab)^{-1}=a^{-1}v^{-1}>0$ lok at $a<b$, multiply with $a^{-1}b^{-1}$, you get $b^{-1}<a^{-1}$
 From these, we have $0<1\implies 1<1+1\implies 1+1\neq 0$
 We then use the usual symbols for numbers
+## Completeness Axiom
+Every non-empty subset of $\mathbb{R}$ which is [[Boundedness|bounded]] above has a supremum
+### Consequences
+Every set that is bounded below will have an infimum
+
 ## Decimal Representation
 Each real number can be represented by a decimal. If $r=\frac{p}{q}$ is a [[Rational Numbers|rational number]], then its decimal representation is found by dividing the denominator $q$ into the numberator $p$. The resulting decimal expansion will either terminate or repeat. For example, $\frac{3}{5}=0.6$ is a terminating decimal and $\frac{15}{11}=1.3636363636\dots=1.\overline{36}$ is a repeating decimal. The converse is true; every terminating or repeating decimal represents a rational number
 The decimal representation of an [[Irrational Numbers|irrational number]] neither terminates nor repeats

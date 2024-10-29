@@ -87,6 +87,7 @@ $$
 \mathbb{P}_{B}(A_{1}\cup A_{2})=\frac{\mathbb{P}(A_{1}\cap B)+\mathbb{P}(A_{2}\cap B)}{\mathbb{P}(B)}=\frac{\mathbb{P}(A_{1}\cap B)}{\mathbb{P}(B)}+\frac{\mathbb{P}(A_{2}\cap B)}{\mathbb{P}(B)}=\mathbb{P}_{B}(A_{1})+\mathbb{P}_{B}(A_{2})
 $$
 Which is what we want
+___
 - Since it satisfies the axioms, it must also satisfy the consequences:
     - $\mathbb{P}(A^{c}|B)=1=\mathbb{P}(A|B)$
     - If $A_{1}\subseteq A_{2}$, $\mathbb{P}(A_{1}|B)\leq \mathbb{P}(A_{2}|B)$
