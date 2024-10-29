@@ -1,6 +1,6 @@
 In general, if there are $n$ objects with $n_{1}$ of a first type, $n_{2}$ of a second type,..., and $n_{r}$ of an $r$th type, where $n_{1}+n_{2}+\dots+n_{r}=n$, then there are:
 $$
-\frac{n!}{n_{1}!\times n_{2}!\times \dots \times n_{r}!}
+P(n_{n}1,n_{2},\dots,n_{r}):=\frac{n!}{n_{1}!\times n_{2}!\times \dots \times n_{r}!}
 $$
 linear [[Arrangements|arrangements]] of the given $n$ objects (objects of the same type are indistinguishable)
 ## Examples
@@ -10,7 +10,7 @@ $$
 $$
 and the answer to the original problem of finding all arrangements of the four letters in BALL is $\frac{4!}{2}$
 Using this idea, we now consider the arrangements of all six letter in PEPPER
-There are $3!$ arrangements with the P's distinguished for each earrangement in which the P's are distinguished for each arrangement fin which the P's are not distinguished, for example,
+There are $3!$ arrangements with the P's distinguished for each earrangement in which the P's are distinguished for each arrangement in which the P's are not distinguished, for example,
 $$
 \{P_{1},E,P_{2},P_{3},E,R\},\{ P_{1},E,P_{3},P_{2},E,R \},\{ P_{2},E,P_{1},P_{3},E,R \},\{ P_{2},E,P_{3},P_{1},E,R \},\{ P_{3},E,P_{1},P_{2},E,R \},
 $$
