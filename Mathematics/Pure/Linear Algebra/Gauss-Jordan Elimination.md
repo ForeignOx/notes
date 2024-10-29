@@ -95,3 +95,4 @@ $$
 A\vec{x}=\vec{b}\iff A^{-1}A\vec{x}=A^{-1}\vec{b}\iff \vec{x}=A^{-1}\vec{b}
 $$
 And $A^{-1}\vec{b}$ exists and is unique
+## Gauss-Jordan Algorithm
