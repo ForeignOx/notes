@@ -13,6 +13,7 @@ An interior point $x=a$ of the domain of $f(x)$ is a critical point if either $f
 If $f(x)$ is twice differentiable in an open interval around $x=a$ with $f''(a)=0$ and changes sign at $x=a$, then we say that $x=a$ is a point of inflection
 If $c\in \text{Dom}f$ and if $\exists h>0$ such that $f(x)$ is defined on $[c,c+h)$, but not $(c-h,c]$ (or vice-versa), then $x=c$ is an endpoint of $f(x)$
 If $x=c$ is an endpoint of $f(x)$, then $f(x)$ has an endpoint maximum (or minimum) at $x=c$ if $f(x)\leq f(c)$ (or $f(x)\geq f(c)$) for $x$ close to $c$
+If $f(x)$ is continuous on $[a,b]$, then all cloval extrema in this interval are attained either at critical points or endpoints
 ## Proof
 Since $f(x)$ is differentiable at $x=a$:
 $$
@@ -37,12 +38,29 @@ Suppose $f(x)$ is [[Continuity|continuous]] at a critical point $x=a$
 - If $\exists h>0:f'(x)<0\forall x\in(a-h,a),f'(x)>0\forall x\in(a,a+h)$, then $x=a$ is a local minimum
 - If $\exists h>0:f'(x)>0\forall x\in(a-h,a),f'(x)<0\forall x\in(a,a+h)$, then $x=a$ is a local maximum
 - If $\exists h>0:f'(x)$ has constant sign $\forall x\neq a$ in $(a-h,a+h)$, then $x=a$ is not a local extremum
+- If $f(x)$ is continuous and differentiable close to an endpoint, then the sign of the deribative can determine the natrue of the endpoint
 ### Example
 $f(x)=|x|$ is a continuous function, but $f'(x)\neq 0$, so $\not\exists$ stationary point. $x=a$ is a critical point (as the first derivative doesn't exist here)
 $$
 f(x)<0\forall x\in (-1,0)\,\&\,f'(x)>0\forall x\in (0,1)
 $$
 So $x=0$ is a local minimum
+___
+Find the global extrema of $f(x)=x^{2}-2|x|=2$ for $x\in\left[ -\frac{1}{2},2 \right]$, first note:
+$$
+f(x)=\begin{cases}
+x^{2}-2x+2&\text{for }x\in [0,2]\\x^{2}+2x+2&\text{for }x\in \left[ -\frac{1}{2},0 \right]
+\end{cases}
+$$
+On $(0,2),f'(x)=2x-2$, so critical point at $x=1$, $f(1)=1$, so $(1,1)$ in cartesian coordinates
+On $\left( -\frac{1}{2},0 \right),f'(x)=2x+2$, so no critical point in this interval
+Note:
+$$
+\lim_{ x \to 0^+ } f'(x)=-2\neq 2=\lim_{ x \to 0^- } 
+$$
+So $x=0$ is a critical point with $f(0)=0$
+The endpoit values are $f\left( -\frac{1}{2} \right)$ and $f(2)=2$, so global min is $1$ (at $x=1$) and global max is $2$
+so $f'(x)$ doesn't exist at $x=0$
 ## Second Derivative Test
 Suppose $f(x)$ is twice differentiable at $x=a$, with $f'(a)=0$
 - If $f''(a)>0$ then $x=a$ is a local minimum
