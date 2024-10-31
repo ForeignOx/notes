@@ -96,3 +96,12 @@ A\vec{x}=\vec{b}\iff A^{-1}A\vec{x}=A^{-1}\vec{b}\iff \vec{x}=A^{-1}\vec{b}
 $$
 And $A^{-1}\vec{b}$ exists and is unique
 ## Gauss-Jordan Algorithm
+### EROs
+Each ERO is a function:
+$$
+M_{m\times n}(\mathbb{R})\to M_{m\times n}(\mathbb{R})
+$$
+They are:
+- $P_{rs}$ interchanges row $r$ with row $s$ (the $P$ stands for 'permute')
+- $M_{r}(\lambda)$ multiplies the elements in the $r$th row by $\lambda \neq 0$
+- $A_{rs}(\lambda)$ adds $\lambda \in\mathbb{R}$ times the $r$th row 
