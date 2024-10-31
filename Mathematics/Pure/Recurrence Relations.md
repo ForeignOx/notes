@@ -1,4 +1,4 @@
-For a recurrence relation like so:
+For a recurrence [[Sequences|sequence]] defined as so:
 $$
 a_{1}u_{n-k}+a_{2}u_{n-k+1}+\dots+a_{k-1}u_{n-1}+a_{k}u_{n}=f(n)
 $$
