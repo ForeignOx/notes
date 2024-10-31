@@ -49,3 +49,13 @@ $$
 k-1\\n-1
 \end{pmatrix}
 $$
+## Theorem (?)
+The number of $k$-combinations from $n$ different objects with repetitions is:
+$$
+\begin{pmatrix}
+k+n-1\\k
+\end{pmatrix}
+$$
+### Proof
+Consider $k+n-1$ places, we now have $n-1$ markers to put in these places without putting more than one in each place no way it's stars and bars again!!!
+ther are also $k$ unused places, so you can arrange them too if you so desire, honestly i don't really care this note is getting deleted at the earliest convenience 
