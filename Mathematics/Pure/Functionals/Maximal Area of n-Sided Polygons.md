@@ -43,3 +43,19 @@ $$
 x(b)=x(a),y(b)=y(a)
 $$
 In which now the quantities $x,y$ depend on the parameter $t$ which varies ontinuously in a certain intervl $(a,b)$; this continuous parameter $t$ takes the place of the dicontinuous index $i$, so corresponding to the formulas containing sums with respect to the index $i$, we get instead the formulae containing integrals in which we may take the parameter $t$ as the variable of integration
+The path followed in this particular example to pass fro a problem with a finite number of unknowns to a problem in which the unknown is a function (a problem with an infinite number of unknowns) has the character of a general method. In many other cases in which this eventuality arises, it will in fact be sufficient to replace a discontinuous index $i$ by a continuous index, or parameter $t$, and the sum with respect to this index $i$ by the integral with respect to the variable of integration $t$
+There are however problems in which the unknown is a function, but which we have a different character. Thus, for instance, if we wish to determine a curve, $y=y(x)$, whose subtangent is constant $(=a)$, we shall get the differential equation:
+$$
+a \frac{dy}{dx}=y
+$$
+and in this equation, theree is no integral with respect to $x$; all the infinite number of values of the unknown $y$ corresponding to the infinite number of values of $x$ do not simultaneously enter into consideration; we can say rather that this equation establishes a relation solely between a value of $y$ and the value it has at an infinitely near point determined by $\frac{d y}{dx}$. More generally, all the problems that give rise to an ordinary differential equation:
+$$
+f(x,y,y',\dots,y^{(n)})=0
+$$
+which establishes a relation only between the values taken by $y$ at a point $x$ and at $n$ infinitely near points, are of this type
+## Similar(ish) Problem
+A related problem is that of determining a plane curbe (of equation $y=y(x)$) passing through two given points inthe plane (of coordinates $(x_{0},y_{0}): y_{0}=y(x_{0}),(x_{1},y_{1}): y_{1}=y(x_{1})$) such that when it rotates round a line fixed in the plane, for example the $x$-axis, it generates the surface of minimum area. In this case, the area $A$, the quantity to be made a minimum, is given by the expression:
+$$
+A=2\pi \int _{x_{0}}^{x_{1}}y\sqrt{ 1+y'^{2} } \, dx 
+$$
+And therefore depends on all the values of $y$ in the interval $(x_{0},x_{1})$
