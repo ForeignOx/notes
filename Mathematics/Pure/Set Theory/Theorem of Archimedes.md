@@ -7,3 +7,5 @@ $$
 nb=x>C-b\iff nb+b=\underbrace{ (n+1)b }_{ \in  X }>C
 $$
 But then $C$ cannot be an upper bound of $X$, so is not the supremum, so yeah
+
+#Mathematics #Theorem 

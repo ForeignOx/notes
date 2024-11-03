@@ -31,3 +31,5 @@ $$
 $$
 Since $f'(x)\geq 0\forall x\in(x_{1},x_{2})$, then we must have $f(x_{2})\geq f(x_{1})$, so $f(x)$ is monotonic increasing
 We can show similar results for monotonic decreasing and strictly monotonic increasing/decreasing
+
+#Mathematics #Calculus #Theorem 

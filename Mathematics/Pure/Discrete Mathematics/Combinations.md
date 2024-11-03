@@ -1,3 +1,6 @@
+If we start with $n$ distinct objects, each selection, or combination, of $r$ of these objects, with no reference to order, corresponds to $r!$ [[Permutations|permutations]] of a size $r$ from the $n$ objects
+
+
 A combination from a [[Sets|set]] of objects is an unordered selection of elements of that set. Repeats may be allowed
 So $STOAT$ and $TOAST$ are different [[Arrangements|arrangements]], but the same combinations
 Formally a combination on set $S$ is identified by factors $m_{i}$, $i\in S$, where $m_{i}=$ number of times element $i$ appears

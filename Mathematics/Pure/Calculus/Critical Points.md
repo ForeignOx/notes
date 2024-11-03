@@ -80,4 +80,4 @@ $$
 These are some classifications for stationary points in 3D:
 ![[Pasted image 20240311125832.png]]
 
-#Mathematics #Calculus
+#Mathematics #Calculus #Definition 
