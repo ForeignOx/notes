@@ -11,6 +11,22 @@ $$
 \mathbb{P}(A|B)=\mathbb{P}(A)
 $$
 Note that independence cannot be observed on a Venn Diagram
+## Complement
+Show that if $A$ and $B$ are independent, then $A$ and $B^{c}$ are also indepent
+### Proof
+We know that $\mathbb{P}(A\cap B)=\mathbb{P}(A)\mathbb{P}(B)$, we have to also show that $\mathbb{P}(A\cap B^{c})=\mathbb{P}(A)\mathbb{P}(B^{c})$
+Observe that $A=(A\cap B)\cup (A\cap B^{c})$, so:
+$$
+\mathbb{P}(A)=\mathbb{P}(A\cap B)+\mathbb{P}(A\cap B^{c})
+$$
+Since $(A\cap B)\cap(A\cap B^{c})=\emptyset$
+So
+$$
+\mathbb{P}(A)=\mathbb{P}(A)\mathbb{P}(B)+\mathbb{P}(A\cap B^{c})
+$$
+$$
+\implies \mathbb{P}(A\cap B^{c})
+$$
 ## Example
 Roll a fair die:
 $$

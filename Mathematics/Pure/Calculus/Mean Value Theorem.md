@@ -21,3 +21,13 @@ $$
 f'(c)=\frac{f(b)-f(a)}{b-a}
 $$
 
+___
+We can use the mean value theorem to prove results relating monoticity to the sign of the derivative
+Suppose $f(x)$ is continuous on $[a,b]$, and differentiable on $(a,b)$ with $f'(x)\geq 0\forall x\in(a,b)$, then $f(x)$ is monotonic increasing
+## Proof
+If $a\leq x_{1}<x_{2}\leq b$, then by the MVT,
+$$
+\exists c\in(x_{1},x_{2}):f'(c)=\frac{f(x_{2})-f(x_{1})}{x_{2}-x_{1}}
+$$
+Since $f'(x)\geq 0\forall x\in(x_{1},x_{2})$, then we must have $f(x_{2})\geq f(x_{1})$, so $f(x)$ is monotonic increasing
+We can show similar results for monotonic decreasing and strictly monotonic increasing/decreasing
