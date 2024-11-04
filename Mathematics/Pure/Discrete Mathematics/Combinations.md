@@ -11,9 +11,7 @@ n\\r
 \end{pmatrix}:=\frac{P(n,r)}{r!}=\frac{n!}{r!(n-r)!}=\frac{n(n-1)(n-2)\dots(n-r+1)}{r!}
 $$
 Note that:
-$$
 
-$$
 $$
 \begin{pmatrix}
 n\\r
