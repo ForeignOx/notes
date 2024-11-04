@@ -11,7 +11,7 @@ ___
 The probability mass function is as follows:
 $$
 P(X=r)=\begin{pmatrix}
-n\\x
+n\\r
 \end{pmatrix}p^{r}q^{n-r}
 $$
 For $r \in \{ 0,1,\dots,n \}$
