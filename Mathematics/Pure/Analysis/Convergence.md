@@ -16,6 +16,8 @@ And using a proof in [[Proofs with Inequalities]], we know:
 $$
 \left|a_{n}-l\right|<\epsilon\iff l-\epsilon<a_{n}<l+\epsilon
 $$
+## Criteria
+
 ## Example 1
 $a_{n}=\frac{1}{n}$, clearly $l=0$
 ![[Convergence 2024-07-02 09.51.22.excalidraw]]

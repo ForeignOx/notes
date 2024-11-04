@@ -1,6 +1,6 @@
 We can see from graphs that this appears to be true
 ![[Every Convergent Sequence is Bounded 2024-07-07 19.40.23.excalidraw]]
-
+Note tht by the [[Contrapositive Proof|contrapositive]], an unbounded sequence is divergent
 ## Proof
 If $a_{n}$ is a [[Convergence|convergent]] [[Sequences|sequence]] with limit $l$, then:
 $$

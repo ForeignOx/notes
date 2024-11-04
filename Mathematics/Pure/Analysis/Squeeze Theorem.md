@@ -41,5 +41,18 @@ $$
 \lim_{ x \to 0 }  \frac{1-\cos x}{x}=\lim_{ x \to 0 }  \frac{(1-\cos x)(1+\cos x)}{x(1+\cos x)}=\lim_{ x \to 0 }  \frac{\sin ^{2}x}{x(1+\cos x)}=\lim_{ x \to 0 } \left( \frac{\sin x}{x} \right)\left( \frac{\sin x}{1+\cos x} \right)=0
 $$
 As $\lim_{ x \to 0 } \frac{\sin x}{1+\cos x}=0$
+## Sequences
+Let $(x_{n})_{n\in\mathbb{N}}$ and $(y_{n})_{n\in\mathbb{N}}$ be real [[Sequences|sequences]], if $|x_{n}|\leq y_{n}$ for all $n\in\mathbb{N}$ and $y_{n}\to0$ asn $n\to \infty$, then [[Convergence|$\lim_{ n \to \infty }x_{n}=0$]] 
+### Proof
+Let $\epsilon>0$ be given. Then there is $n_{0}\in\mathbb{N}$ with:
+$$
+|y_{n}-0|=|y_{n}|<\epsilon \forall n\geq n_{0}
+$$
+Then
+$$
+|x_{n}-0|=|x_{n}|\leq y_{n}=|y_{n}|<\epsilon \forall n\geq n_{0}
+$$
+So $x_{n}$ converges to $\hspace{0pt}0$ as $n\to \infty$
+
 
 #Mathematics #Analysis #Theorem 
