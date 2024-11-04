@@ -17,6 +17,7 @@ $$
 $$
 For $i=1,\dots,m$
 The way to solve this is to epress the system as an [[Augmented Matrices|augmented matrix]], then perform operations known as ERO's (Elementary Row Operations) to the matrix without changing the solution set, which will turn the augmented matrix into RREF (Row Reduced Echolon Form) using the Gauss-Jordan algorithm, which allows us to then read off the solution set
+Note that non-leading 1's correspond to free variables
 If $A=(a_{ij})_{m\times n}$, then $A$ is known as the matrix of coefficients:
 $$
 A=\begin{pmatrix}
