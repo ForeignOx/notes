@@ -106,5 +106,61 @@ They are:
 - $P_{rs}$ interchanges row $r$ with row $s$ (the $P$ stands for 'permute')
 - $M_{r}(\lambda)$ multiplies the elements in the $r$th row by $\lambda \neq 0$
 - $A_{rs}(\lambda)$ adds $\lambda \in\mathbb{R}$ times the $r$th row to the $s$th row
+## More Stuff
+### Lemma
+If $B\in M_{m}(\mathbb{R})$ is invertible, then the system $A\vec{x}=\vec{b}$ has the same solution set as:
+$$
+(BA)\vec{x}=B\vec{b}
+$$
+#### Proof
+First note that if $A\vec{x}=\vec{b}$, then
+$$
+(BA)\vec{x}=B(A\vec{x})=B(\vec{b})=B\vec{b}
+$$
+Also if $(BA)\vec{x}=B\vec{b}$:
+$$
+A\vec{x}=(B^{-1}B)A\vec{x}=B^{-1}(BA)\vec{x}=B^{-1}(B\vec{b})=\vec{b}
+$$
+$w^{5}$
+### ERO's do not change the solution set
+This lemma is why performing ERO's in the [[Gauss-Jordan Elimination|Gauss-Jordan algorithm]] does not change the solution set
+#### Proof
+By the Lemma, it is enough to see that ERO's can be performed by left multiplication by invertible matrices, so we want to find invertible matrices corresponding to the ERO's
+- The ERO $P_{rs}$ can be performed by left multiplication by the matrix denoted $P_{rs}$ (which is a bit of an abuse of notation but oh well) which is obtained from $I_{m}$ by exchanging the $r$th and $s$th rows
+$$
+(P_{rs})_{ij}=\begin{cases}
+1&\text{if }i=j,i\neq r,s\\1&\text{if }i=r,j=s\\1&\text{if }i=s,j=r\\0&\text{otherwise}
+\end{cases}
+$$
+    one can check that $(P_{rs})^{-1}=P(rs)$
+- The matrix $M_{r}(\lambda)$ is given by 
+$$
+(M_{r}(\lambda))_{ij}=\begin{cases}
+1&\text{if }i=j\neq r\\\lambda&\text{if }i=j=r\\0&\text{otherwise}
+\end{cases}
+$$
+    similarly one can check that $(M_{r}(\lambda))^{-1}=M_{r}\left( \frac{1}{\lambda} \right)$
+- The matrix $A_{rs}(\lambda)$ is given by
+$$
+(A_{rs}(\lambda))_{ij}=\begin{cases}
+1&\text{if } i=j\\\lambda&\text{if }i=s,j=r\\0&\text{otherwise}
+\end{cases}
+$$
+    one can check that $(A_{rs}(\lambda))^{-1}=A_{rs}(-\lambda)$
+### Lemma
+Let $A\in M_{n}(\mathbb{R})$ be a square matrix, then the following statements are each equivalent to one another
+- In each column of the [[Row Reduced Echelon Form|RREF]] of $A$, there is a leading 1
+- The RREF of $A$ is $I_{n}$
+- The only solution to $A\vec{x}=\vec{0}$ is $\vec{x}=\vec{0}$
+#### Proof
+Statement $\hspace{0pt}2$ implies $\hspace{0pt}1$ clearly, also $\hspace{0pt}1$ implies $\hspace{0pt}2$ since all non-leading $\hspace{0pt}1$ entries in columns with leading 1's are $\hspace{0pt}0$ (and the leading 1's are arranged left to right and top to bottom)
+$2\implies3$ Assume 2: the solution set to $A\vec{x}=\vec{0}$ agrees with the solution set to $I_{n}\vec{x}=\vec{0}$, i.e. $\vec{x}=\vec{0}$
+$3 \implies 1$ If not each column had a leading $\hspace{0pt}1$, then the solution set would have free variables, so i.e. more than one solution
+### Theorem
+A square matrix $A\in M_{n}(\mathbb{R})$ is invertible iff any one of the conditions of this above lemma hold
+
+
+
+
 
 #Mathematics #LinAlg 

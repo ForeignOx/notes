@@ -28,5 +28,8 @@ So $(A^{-1})^{t}=(A^{t})^{-1}$
 ___
 - If $A,B\in M_{n}(\mathbb{R})$ and $AB=I_{n}$, then $BA=I_{n}$, $B=A^{-1}$ and $A=B^{-1}$
 
+## More Stuff
+Consider the [[Systems of Linear Equations|linear system]] $A\vec{x}=\vec{b}$, $A\in M_{m\times n}(\mathbb{R})$
+
 
 #Mathematics #LinAlg #Definition
