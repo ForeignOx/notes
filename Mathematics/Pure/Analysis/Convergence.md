@@ -2,6 +2,16 @@ Let $a_{n}$ be a [[Sequences|sequence]] of real numbers and $l\in\mathbb{R}$. $a
 $$
 \forall\epsilon>0,\exists N_{\epsilon}\in\mathbb{N}:\forall n\geq N_{\epsilon},\left|a_{n}-l\right|<\epsilon
 $$
+Another way of writing this is using $l=x$, $N_{\epsilon}=n_{0}$,
+$$
+\forall\epsilon>0\exists n_{0}\in \mathbb{N}:|x_{n}-x|<\epsilon \forall n\geq n_{0}
+$$
+A sequence that converges to a limit is called a converent sequence. If a sequence is not convergent, we call it a divergent sequence
+We often write:
+$$
+l=\lim_{ n \to \infty }a_{n} 
+$$
+Or $a_{n}\to l$ as $n\to \infty$
 And using a proof in [[Proofs with Inequalities]], we know:
 $$
 \left|a_{n}-l\right|<\epsilon\iff l-\epsilon<a_{n}<l+\epsilon
@@ -18,9 +28,21 @@ For $n\geq 11$, $-0.1<a_{n}<0.1$, so we can take $N_{\epsilon}=11$, however, thi
 $$
 N_{\epsilon}\in\{ x \in\mathbb{N}:x\geq 11 \}
 $$
-## Example 2
+### Proof
+Pick an $\epsilon>0$:
+$$
+\left| \frac{1}{n}-0\right|=\frac{1}{n}<\epsilon \forall n\geq n_{0}
+$$
+Choose $n_{0}\in\mathbb{N}$ such that $n_{0}>\frac{1}{\epsilon}$ (which is possible by [[Theorem of Archimedes|theorem of Archimides]])
+## Example 2Uni
 $a_{n}=1$,
 If we take $\epsilon=1$, we can have $N_{\epsilon}=1$, if we take $\epsilon=0.5$ we can have $N_{\epsilon}=1$, if we take $\epsilon=0.000001$, we can have $N_{\epsilon}=1$ because it has already converged, so constant sequences clearly converge
+### Proof
+A mathematical way of showing this is that:
+$$
+|a_{n}-l|=|1-1|=0<\epsilon
+$$
+Since $\epsilon$ is defined to be strictly positive
 ## Example 3
 For a convergent sequence such as $a_{n}=n^{2}$, we can never draw lines that bound the sequence, it always escapes:
 ![[Convergence 2024-07-02 10.11.07.excalidraw]]
