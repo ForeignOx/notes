@@ -28,8 +28,25 @@ So $(A^{-1})^{t}=(A^{t})^{-1}$
 ___
 - If $A,B\in M_{n}(\mathbb{R})$ and $AB=I_{n}$, then $BA=I_{n}$, $B=A^{-1}$ and $A=B^{-1}$
 
-## More Stuff
-Consider the [[Systems of Linear Equations|linear system]] $A\vec{x}=\vec{b}$, $A\in M_{m\times n}(\mathbb{R})$
+## Computing the Inverse
+Consider a matrix $A\in M_{n}(\mathbb{R})$, we perform the following steps:
+- First form an [[Augmented Matrices|augmented matrix]] $(A|I_{n})$
+- Second run the [[Gauss-Jordan Elimination|Gauss-Jordan algorithm]], i.e. left multiply by a sequence of elementary matrices $E_{1},E_{2},\dots,E_{r}(=I_{n})$
+- If $A$ is invertible, it will become $I_{n}$ by [[Gauss-Jordan Elimination#Theorem|this theorem]] 
+So we have:
+$$
+E_{r}\dots E_{2}E_{1}(A|I_{n})
+$$
+$$
+= (E_{r}\dots E_{2}E_{1}A|E_{r}\dots E_{2}E_{1})
+$$
+$$
+= (I_{n}|E_{r}\dots E_{2}E_{1})
+$$
+$$
+= (I_{n}|A^{-1})
+$$
+Note that if $A$ was not invertivle, then LHS would not become $I_{n}$ (RREF of $A$ is not $I_{n}$)
 
 
 #Mathematics #LinAlg #Definition

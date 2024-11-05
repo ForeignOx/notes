@@ -158,8 +158,51 @@ $2\implies3$ Assume 2: the solution set to $A\vec{x}=\vec{0}$ agrees with the so
 $3 \implies 1$ If not each column had a leading $\hspace{0pt}1$, then the solution set would have free variables, so i.e. more than one solution
 ### Theorem
 A square matrix $A\in M_{n}(\mathbb{R})$ is invertible iff any one of the conditions of this above lemma hold
-
-
+#### Proof
+Backwards direction:
+If $A^{-1}$ exists, then:
+$$
+A\vec{x} =\vec{0}
+$$
+$$
+\implies \vec{x}=A^{-1}(A\vec{x})=A^{-1}\vec{0}=\vec{0}
+$$
+So $\vec{x}=\vec{0}$ is the unique solution to $A\vec{x}=\vec{0}$
+Forwards direction:
+If the RREF of $A$ is $I_{n}$, then there exists a sequence of elementary matrices (which form the elementary row operations) $E_{1},E_{2},\dots,E_{r}$ such that:
+$$
+E_{r}\dots E_{2}E_{1}A=I_{n}
+$$
+From this we see that $B=E_{r}\dots E_{2}E_{1}$ is a left inverse for $A$, so we try to show that $AB=I_{n}$:
+$$
+AB=AE_{r}\dots E_{2}E_{1}
+$$
+$$
+= (E_{1}^{-1}E_{2}^{-1}\dots E_{r}^{-1})\underbrace{ (E_{r}\dots E_{2}E_{1})A }_{ I_{n} }(E_{r}\dots E_{2}E_{1})
+$$
+$$
+=(E_{1}^{-1}E_{2}^{-1}\dots E_{r}^{-1})(E_{r}\dots E_{2}E_{1})=I_{n}
+$$
+So $A^{-1}=B$
+#### Corollary
+Any invertivle matrix is a product of elementary matrices
+##### Proof
+Suppose $A\in M_{n}(\mathbb{R})$ is invertible and $A^{-1}=E_{r}\dots E_{2}E_{1}$ as above, then 
+$$
+A=(A^{-1})^{-1}=(E_{r}\dots E_{2}E_{1})^{-1}=E_{1}^{-1}E_{2}^{-1}\dots E_{r}^{-1}
+$$
+And inverses of elementary matrices are elementary
+#### Corollary
+If $BA=I_{n}$, then $AB=I_{n}$ ($A,B \in M_{n}(\mathbb{R})$)
+##### Proof
+Suppose $A\vec{x}=\vec{0}$, then:
+$$
+\vec{x}=BA\vec{x}=B \vec{0}=\vec{0}
+$$
+So by the theorem, we have that $A$ is invertible, so
+$$
+AB=AB(AA^{-1})=A(BA)A^{-1}=A A^{-1}=I_{n}
+$$
 
 
 
