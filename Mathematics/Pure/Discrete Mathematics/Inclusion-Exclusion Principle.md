@@ -13,4 +13,4 @@ $$
 or another way of thinking about this is:
 Consider any element $x\in A_{1}\cup A_{2}\cup A_{3}$, on the LHS it is counded exatly one, we must show it is counted exactly once on the RHS too.
 If $x$ is in exactly one of the sets, say $A_{1}$, it is indeed just counted once, in $|A_{1}|$
-If $x$ is in exactly two sets, say $A_{1}$ and $A_{2}$, it appears with a positive sign in $|A_{1}|$ and $|A_{2}|$ and ``
+If $x$ is in exactly two sets, say $A_{1}$ and $A_{2}$, it appears with a positive sign in $|A_{1}|$ and $|A_{2}|$ and 
