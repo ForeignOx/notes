@@ -188,6 +188,5 @@ $$
 = (-1)^{k} \frac{(n+k-1)!}{(n-1)!k!}
 $$
 Which is the claimed result
-![[Binomial Theorem 2024-11-05 15.29.27.excalidraw]]
 
 #Mathematics #Discrete #Theorem 
