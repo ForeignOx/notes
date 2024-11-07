@@ -148,4 +148,7 @@ Expand along $r$th row:
 $$
 \det(M_{r}(\lambda)A)=\sum_{ j=1} ^{ n}  (-1)^{r+j}\lambda a_{rj}\det(A_{r,j})
 $$
-And note that deleting the $r$th row of the matrix $M_{r}(\lambda)A$ gives the same matrix as doing the same to $A$,
+And note that deleting the $r$th row of the matrix $M_{r}(\lambda)A$ gives the same matrix as doing the same to $A$, so:
+$$
+\det(M_{r}(\lambda)A)=\lambda \sum_{ j=1} ^{ n}  (-1)^{r+j}\det(A_{r,j})=\lambda \det A
+$$
