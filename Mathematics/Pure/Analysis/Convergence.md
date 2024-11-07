@@ -16,9 +16,8 @@ And using a proof in [[Proofs with Inequalities]], we know:
 $$
 \left|a_{n}-l\right|<\epsilon\iff l-\epsilon<a_{n}<l+\epsilon
 $$
-## Criteria
-
-## Example 1
+## Examples
+### Example 1
 $a_{n}=\frac{1}{n}$, clearly $l=0$
 ![[Convergence 2024-07-02 09.51.22.excalidraw]]
 We can take an example of $\epsilon$ to be $\epsilon=0.1$, so we are looking for:
@@ -30,29 +29,29 @@ For $n\geq 11$, $-0.1<a_{n}<0.1$, so we can take $N_{\epsilon}=11$, however, thi
 $$
 N_{\epsilon}\in\{ x \in\mathbb{N}:x\geq 11 \}
 $$
-### Proof
+#### Proof
 Pick an $\epsilon>0$:
 $$
 \left| \frac{1}{n}-0\right|=\frac{1}{n}<\epsilon \forall n\geq n_{0}
 $$
 Choose $n_{0}\in\mathbb{N}$ such that $n_{0}>\frac{1}{\epsilon}$ (which is possible by [[Theorem of Archimedes|theorem of Archimides]])
-## Example 2Uni
+### Example 2
 $a_{n}=1$,
 If we take $\epsilon=1$, we can have $N_{\epsilon}=1$, if we take $\epsilon=0.5$ we can have $N_{\epsilon}=1$, if we take $\epsilon=0.000001$, we can have $N_{\epsilon}=1$ because it has already converged, so constant sequences clearly converge
-### Proof
+#### Proof
 A mathematical way of showing this is that:
 $$
 |a_{n}-l|=|1-1|=0<\epsilon
 $$
 Since $\epsilon$ is defined to be strictly positive
-## Example 3
+### Example 3
 For a convergent sequence such as $a_{n}=n^{2}$, we can never draw lines that bound the sequence, it always escapes:
 ![[Convergence 2024-07-02 10.11.07.excalidraw]]
 
-## Example 4
+### Example 4
 $a_{n}=(-1)^{n}$
 If we take $\epsilon=2$, $N_{\epsilon}=1$, so that works, as $n\geq 1$, $\left|a_{n}-0\right|<2$, but if instead we take $\epsilon=0.5$, we cannot bound the sequence by the two lines, so it doesn't converge as the definition is only true for all $\epsilon>0$
-## Example 5
+### Example 5
 Let $a_{n}=\frac{1}{n}$. Prove that $a_{n}$ converges to 0 as $n\to \infty$
 $$
 n=\frac{1}{\epsilon}\iff\epsilon=\frac{1}{n}
@@ -65,7 +64,7 @@ But when $\frac{1}{\epsilon}$ is an integer, this is still too small, so we inst
 $$
 N_\epsilon =\left\lceil  \frac{1}{\epsilon}  \right\rceil +1
 $$
-### Proof
+#### Proof
 Given $a_{n}=\frac{1}{n}$ and $\epsilon>0$. Let $N_{\epsilon}=\left\lceil  \frac{1}{\epsilon}  \right\rceil+1$
 If $n\geq N_{\epsilon}$ then:
 $$
@@ -76,7 +75,7 @@ $$
 \left|a_{n}-0\right|=\left|\frac{1}{n}\right|=\frac{1}{n}<\epsilon
 $$
 So $a_{n}$ converges to 0
-## Example 6
+### Example 6
 Let $a_{n}=\frac{(-1)^{n}}{2n^{2}}$. Prove that $a_{n}$ converges to 0 as $n\to \infty$
 $$
 \left| \frac{(-1)^{n}}{2n^{2}}-0\right|=\frac{1}{2n^{2}}<\epsilon 
@@ -90,7 +89,7 @@ $$
 $$
 \therefore N_{\epsilon}=\left\lceil  \sqrt{ \frac{1}{2\epsilon} }  \right\rceil +1
 $$
-### Proof
+#### Proof
 Let $\epsilon>0$
 Let $N_{\epsilon}=\left\lceil  \sqrt{ \frac{1}{2\epsilon} }  \right\rceil +1$
  If $n\geq N_{\epsilon}$ then:
@@ -111,7 +110,7 @@ $$
 \left|a_{n}-0\right|=\left| \frac{(-1)^{n}}{2n^{2}}-0\right|=\frac{1}{2n^{2}}<\epsilon
 $$
 So $a_{n}$ converges to 0
-## Example 7
+### Example 7
 Let $a_{n}=\frac{\sin n}{n}$. Prove that $a_{n}$ converges to 0 as $n \to \infty$
 $$
 \left| \frac{\sin n}{n}-0\right|<\epsilon 
@@ -123,7 +122,7 @@ $$
 \therefore N_{\epsilon}=\left\lceil  \frac{1}{\epsilon}  \right\rceil +1
 $$
 
-### Proof
+#### Proof
 Given $a_{n}=\frac{\sin n}{n}$, $\epsilon>0$. Let $N_{\epsilon}=\left\lceil  \frac{1}{\epsilon}  \right\rceil+1$
 If $n\geq N_{\epsilon}$ then
 $$
@@ -133,7 +132,7 @@ $$
 \left|a_{n}-0\right|=\left| \frac{\sin n}{n}-0\right|=\frac{\left|\sin n\right|}{n}\leq \frac{1}{n}<\epsilon
 $$
 So $a_{n}$ converges to 0
-## Example 8
+### Example 8
 Let $a_{n}=\frac{n^{2}}{1+n^{2}}$. Prove that $a_{n}$ converges to 1 as $n\to \infty$
 $$
 \left| \frac{n^{2}}{1+n^{2}}-1\right|=\left| \frac{n^{2}-(1+n^{2})}{1+n^{2}}\right|=\left| \frac{-1}{1+n^{2}}\right|=\frac{1}{1+n^{2}}<\epsilon 
@@ -145,7 +144,7 @@ $$
 \implies \sqrt{ \frac{1-\epsilon}{\epsilon} }<n
 $$
 If $\epsilon \leq 1$
-### Proof
+#### Proof
 Given $a_{n}=\frac{n^{2}}{1+n^{2}}$ and $\epsilon>0$ 
 If $\epsilon \leq 1$
 Let $N_{\epsilon}=\left\lceil  \sqrt{ \frac{1-\epsilon}{\epsilon} }  \right\rceil+1$
@@ -173,7 +172,7 @@ $$
 \left| \frac{n^{2}}{1+n^{2}}-1 \right|=\frac{1}{1+n^{2}}\leq \frac{1}{2}<\epsilon
 $$
 So $a_{n}$ converges to 1
-## Example 9???
+### Example 9???
 Let $a_{n}=\frac{4n^{2}-1}{n^{2}+1}$. Prove that $a_{n}$ converges to 4 as $n\to \infty$
 $$
 \left| \frac{4n^{2}-1}{n^{2}+1}-4 \right|=\left| \frac{4n^{2}-n^{2}-4(n^{2}+1)}{n^{2}+1} \right|=\left| \frac{-5}{n^{2}+1} \right|=\frac{5}{n^{2}+1}
@@ -184,7 +183,7 @@ $$
 $$
 \implies n>\sqrt{ \frac{5}{\epsilon} }
 $$
-### Proof
+#### Proof
 Given $a_{n}=\frac{4n^{2}-1}{n^{2}+1}$ and $\epsilon>0$
 Let $N_{\epsilon}=\left\lceil  \sqrt{ \frac{5}{\epsilon} }  \right\rceil+1$
 If $n\geq N_{\epsilon}$ then
@@ -202,5 +201,32 @@ $$
 \left| a_{n}-l \right|=\left| \frac{4n^{2}-1}{n^{2}+1}-4 \right|=\left| -\frac{5}{n^{2}+1} \right|=\frac{5}{n^{2}+1}<\frac{5}{n^{2}}<\epsilon
 $$
 So $a_{n}$ converges to 4
+## In the form of $x_{n}=c^{n}$
+If $c=0$ or $c=1$, then $x_{n}$ is constant, so we get convergence to $c$
+If $c=(-1)$, then $x_{n}=(-1)^{n}$ is divergent
+If $c>1$, write $c=1+h,h>0$, now:
+$$
+x_{n}=(1+h)^{n}\geq 1+hn\geq hn
+$$
+By the [[Bernoulli Inequality|Bernoulli Inequality]], so the sequence is [[Boundedness|unbounded]], so it is divergent by [[Every Convergent Sequence is Bounded|this theorem]] 
+If $c<-1$, consider $x_{2n}=(c^{2})^{n}$ with $c^{2}>1$, so also unbounded and also divergent
+If $0<c<1$, write $c=\frac{1}{1+h}$ with $h>0$, so
+$$
+x_{n}=\frac{1}{(1+h)^{n}}\leq \frac{1}{1+nh}\leq \frac{1}{nh}=y_{n}
+$$
+Using the Bernoulli Inequality again, and using the $y_{n}$ from the [[Squeeze Theorem|squeeze theorem]], so $x_{n}\to0$
+If $-1<c<0$, write $c=-\frac{1}{1+h}$, with $h> 0$,
+$$
+|x_{n}|=\frac{1}{(1+h)^{n}}
+$$
+Giving the same as above, so again by the squeeze theorem, $x_{n}$ goes to $\hspace{0pt}0$
+## Geometric Series
+### Example
+Consider $a_{n}=1+\frac{1}{2}+\dots+\frac{1}{2^{n}}$, nos $2-a_{n}=\frac{1}{2^{n}}$, which can be proved by [[Proof by Mathematical Induction!!!!!|induction]]
+So
+$$
+|a_{n}-2|=\frac{1}{2^{n}}
+$$
+Which is an example of $x_{n}=c^{n}$, so $|a_{n}-2|$ converges to $\hspace{0pt}0$, and hence $a_{n}$ converges to 2
 
 #Mathematics #Analysis  #Definition 
