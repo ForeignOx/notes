@@ -124,4 +124,28 @@ $$
 $$
     Combining this with the previous one we have linearity in each row
 - $\det(P_{rs}A)=-\det A$ where $P_{rs}$ is the ERO swapping $r$th and $s$th rows of $A$
-- If $A$ has two equal (or even collinear)
+- If $A$ has two equal (or even collinear) rows then $\det (A)=0$
+- $\det(A)=0$ if $A$ has a row of zeroes
+- $\det(A_{rs}(\lambda)A)=\det A$:
+$$
+\det(A_{rs}(\lambda)A)=\det\begin{pmatrix}
+\vec{a_{1}}\\\vdots\\\vec{a_{r}}\\\vdots\\\vec{a_{s}}+\lambda  \vec{a_{r}}\\\vdots\\\vec{a_{n}}
+\end{pmatrix}=\det\begin{pmatrix}
+\vec{a_{1}}\\\vdots\\\vec{a_{r}}\\\vdots\\\vec{a_{s}}\\\vdots\\\vec{a_{n}}
+\end{pmatrix}=\det(A)
+$$
+### Proof
+#### First Property:
+Induction on $n$
+Let $n=1$, $\det(1)=1$ so base case is true
+Also, expanding $\det(I_{n})$ along the top row gives:
+$$
+\det(I_{n})=(I_{n})_{11}(-1)^{1+1}\det(I_{n-1})=\det(I_{n-1})
+$$
+Since all other terms are $\hspace{0pt}0$, so proved by induction
+#### Second Property
+Expand along $r$th row:
+$$
+\det(M_{r}(\lambda)A)=\sum_{ j=1} ^{ n}  (-1)^{r+j}\lambda a_{rj}\det(A_{r,j})
+$$
+And note that deleting the $r$th row of the matrix $M_{r}(\lambda)A$ gives the same matrix as doing the same to $A$,
