@@ -30,3 +30,32 @@ $$
 \int ^{b}_{a} f(x) \, dx =\lim_{ |S| \to 0 } R
 $$
 It can be shown that this limit does exists if $f$ is continuous on $[a,b]$
+We can define:
+$$
+\int ^{b}_{a} f(x) \, dx -\int ^{a}_{b}  f(x)\, dx 
+$$
+Which implies:
+$$
+\int ^{a}_{a} f(x) \, d=0
+$$
+### Properties
+The definite integral satisfies the following properties:
+Let $f(x),g(x)$ be integrable functions in $(a,b)$
+- Linearity, if $\lambda,\mu \in\mathbb{R}$, then $(\lambda f+\mu g)(x)$ is also integrable in $(a,b)$ with
+$$
+\int ^{b}_{a} (\lambda f+\mu g)(x) \, dx =\lambda \int ^{b}_{a} f(x) \, dx +\mu \int ^{b}_{a} g(x) \, dx 
+$$
+- If $c\in[a,b]$, then
+$$
+\int ^{b}_{a} f(x) \, dx =\int ^{c}_{a} f(x) \, dx +\int ^{b}_{c} f(x) \, dx 
+$$
+- If $f(x)\geq g(x)\forall x\in(a,b)$, then
+$$
+\int ^{b}_{a} f(x) \, dx \geq \int ^{b}_{a} g(x) \, dx 
+$$
+- If $m\leq f(x)\leq M\forall x\in(a,b)$ then
+$$
+m(b-a)\leq\int ^{b}_{a} f(x) \, dx \leq M(b-a)
+$$
+
+#Mathematics #Calculus #Definition

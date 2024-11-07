@@ -2,3 +2,4 @@ Let $f(x)$ be a [[Functions|function]] defined on [[Intervals|$[a,b]$]]. The Rie
 $$
 R=\sum_{ j=1} ^{ n}  \underbrace{ (x_{j}-x_{j-1})f(z_{j}) }_{ \text{area of }j\text{th rectangle} }
 $$
+#Mathematics #Definition 

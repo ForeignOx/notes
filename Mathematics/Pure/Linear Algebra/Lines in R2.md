@@ -48,3 +48,5 @@ Consider two intersecting lines as shown in the image above, named $l_{1}$ and $
 $$
 \tan\alpha=\left| \frac{m_{2}-m_{1}}{1-m_{1}m_{2}}\right|
 $$
+
+#Mathematics #LinAlg 

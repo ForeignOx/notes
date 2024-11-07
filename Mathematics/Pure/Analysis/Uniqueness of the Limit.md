@@ -11,3 +11,5 @@ $$
 |x-x'|=|x-x_{n}+x_{n}-x'|\leq |x-x_{n}|+|x_{n}-x'|<2\epsilon=|x-x'|
 $$
 Which is a contradiction
+
+#Mathematics #Analysis #Theorem 

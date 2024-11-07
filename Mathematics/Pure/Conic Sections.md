@@ -57,3 +57,5 @@ ___
 Standard forms are obtained from the general form $Ax^{2}+By^{2}+Cx+Dy+E=0$ and completing the square
 The circle, the ellipse, the parabola, and the hyperbola are known as the conic sections because each of these configurations can be obtained by slicing a double right circular cone by a suitably inclined plane:
 ![[Pasted image 20241027173911.png]]
+
+#Mathematics

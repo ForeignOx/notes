@@ -7,3 +7,5 @@ p(x)=\mathbb{P}(X=x)
 $$
 For every $x\in\chi$ 
 $p(x)$ is known as the probability mass function (pmf)
+
+#Mathematics #Probability #Function 

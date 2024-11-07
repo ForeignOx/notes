@@ -54,6 +54,4 @@ $$
 $$
 Yay
 
-
-
 #Mathematics #Discrete 

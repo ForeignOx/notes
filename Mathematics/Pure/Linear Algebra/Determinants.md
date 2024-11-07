@@ -152,3 +152,37 @@ And note that deleting the $r$th row of the matrix $M_{r}(\lambda)A$ gives the s
 $$
 \det(M_{r}(\lambda)A)=\lambda \sum_{ j=1} ^{ n}  (-1)^{r+j}\det(A_{r,j})=\lambda \det A
 $$
+#### Third Property
+Expand along $r$th row
+#### Fourth Property
+H/W
+#### Fifth Property
+First note that if row $r$ is collinear to row $s$, then by $M_{r}(\lambda)$, for some $\lambda$, we obtain a matrix with two equal rows. If the $r$th row of $A$ equals the $s$th row of $A$, then
+$$
+\det(A)=\det(P_{rs}(A))=-\det(A)
+$$
+$$
+\implies \det(A)=0
+$$
+#### Sixth Property
+Expand along the $\hspace{0pt}0$ row, giving each term is zero, so the determinant is 0
+#### Seventh Property
+Write $B$ for the matrix that I get by replacing the $s$th row of $A$ with another copy of the $r$th row of $A$. Then $\det(B)=0$ by the 5th property, so:
+$$
+\det(A_{rs}(\lambda)A)=\det(A)+\det(M_{r}(\lambda)B)=\det (A)+\lambda \det(B)=\det(A)
+$$
+## If a Function Satisfies the Above Properties, then the Function must be the Determinant
+Let $f:M_{n}(\mathbb{R})\to \mathbb{R}$ that satisfies this list of properties, then $f(A)=\det (A)$, in other words these properties characterise $\det$
+### Proof
+Let $A\in M_{n}(\mathbb{R})$, we can run the Gauss-Jordan algorithm to get the RREF $B$, As $f$ and $\det$ satisfy properties $\hspace{0pt}2$,$\hspace{0pt}4$,$\hspace{0pt}5$,$\hspace{0pt}7$ as we apply EROs, $f$ and $\det$ change in the same way, so:
+$$
+\det (A)=\lambda_{1}\lambda_{2}\dots\lambda_{k}\det(B)
+$$
+$$
+f(A)=\lambda_{1}\lambda_{2}\dots\lambda_{k}f(B)
+$$
+where $\lambda_{i}\neq 0$
+Then either $B=I_{n}$ in which case $\det (A)=f(A)$ or $B$ has a row of 0's so $\det(B)=0$ and $f(B)=0$, by the 4th property
+Hence $\det (A)=f(A)$
+
+#Mathematics #LinAlg #Definition #Theorem 

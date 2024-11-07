@@ -12,3 +12,5 @@ $$
 $$
  \mathbb{P}(A_{1}\cap A_{2}\cap A_{3})=\mathbb{P}(A_{1})\mathbb{P}(A_{2})\mathbb{P}(A_{3})
 $$
+
+#Mathematics #Probability

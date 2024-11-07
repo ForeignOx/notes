@@ -43,6 +43,29 @@ We can use this to rewrite other trigonometric limits, for example:
 $$
 \lim_{ x \to 0 } \frac{\tan x}{x}=\lim_{ x \to 0 } \left( \frac{\sin x}{x} \right)\left( \frac{1}{\cos x} \right)=1\cdot 1=1
 $$
+### Limits with Logarithms, Powers, and Exponentials
+#### Lemma 1
+$$
+\forall x\geq 0,e^{ x }\geq 1+x
+$$
+##### Proof
+Consider $f(x)=e^{ x }-(1+x)$, we have $f(0)=0$, and $f'(x)=e^{ x }-2$, so $f(x)$ is [[Monotonic Functions|monotonic increasing]] on $[0,\infty)$, so $f(x)\geq 0$ on $[0,\infty)$
+#### Lemma 2
+$$
+\forall x\geq 0,n\in \mathbb{N},e^{ x }\geq \sum_{ j=0} ^{ n}  \frac{x^{j}}{j!}
+$$
+##### Proof
+Note that when $n=1$, this is Lemma 1
+Now let 
+$$
+f_{n}(x)=e^{ x }-\sum_{ j=0} ^{ n} \frac{x^{j}}{j!}=e^{ x }-\left( 1+x+\frac{x^{2}}{2}+\dots+\frac{x^{n}}{n!} \right)  
+$$
+Note $f_{n}(0)=0\forall n\in\mathbb{N}$
+$$
+f_{n}'(x)=e^{ x }-\left( 1+x+\frac{x^{2}}{2}+\dots+\frac{x^{n-1}}{(n-1)!} \right)=e^{ x }-\sum_{ j=0} ^{ n-1} \frac{x^{j}}{j!}  
+$$
+So since $f_{1}(x)\geq 0$, by Lemma $\hspace{0pt}1$, $f_{2}'(x)\geq 0$, so $f_{2}(x)\geq 0$, then we can repeat to get that $f_{n}(x)\geq 0$ by [[Proof by Mathematical Induction!!!!!|induction]]
+
 ## Limits as $x\to \infty$
 Rough idea: a function has a limit $L$ as $x\to \infty$ if $f(x)$ can be kept arbitrarily close to $L$ by making $x$ sufficiently large
 Formal definition:

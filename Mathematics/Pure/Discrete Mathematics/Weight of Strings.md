@@ -18,3 +18,4 @@ $$
 2^{10}+{10 \choose 2 }2^{8}+{10 \choose 4 }2^{6}+{10 \choose 6 }2^{4}+{10 \choose 8 }2^{2}+{10 \choose 10 }=\sum_{ n=0} ^{ 5}{10 \choose 2n }2^{10-2n}
 $$
 
+#Mathematics #Discrete #Function #Definition 

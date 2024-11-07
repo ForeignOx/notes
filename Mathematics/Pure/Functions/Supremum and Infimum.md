@@ -15,3 +15,5 @@ $$
 $$
 Which is always true
 Also $f(1)=\frac{1}{2}$, so $\text{sup}(f)=\frac{1}{2}$, similarly $\text{inf}(f)=-\frac{1}{2}$
+
+#Mathematics #Function #Analysis #Definition 

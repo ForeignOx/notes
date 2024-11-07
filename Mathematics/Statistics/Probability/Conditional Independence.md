@@ -9,3 +9,5 @@ $$
  \mathbb{P}(B|A\cap B)=\mathbb{P}(B|C)
 $$
 We say A and $B$ are conditionally independent given $C$
+
+#Mathematics #Probability 

@@ -157,3 +157,6 @@ Now we will abuse notation slightly and consider these as the same:
 $$
 \mathbb{P}_{X}(\{ x \})=\mathbb{P}_{X}(x)
 $$
+
+
+#Mathematics #Probability #Definition 

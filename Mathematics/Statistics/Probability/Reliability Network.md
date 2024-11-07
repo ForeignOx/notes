@@ -25,3 +25,4 @@ $$
 \mathbb{P}(S)=\mathbb{P}(W_{1}\cup W_{2})=\mathbb{P}(W_{1})+\mathbb{P}(W_{2})-\mathbb{P}(W_{1}\cap W_{2})=\mathbb{P}(W_{1})+\mathbb{P}(W_{2})-\mathbb{P}(W_{1})\mathbb{P}(W_{2})=p_{1}+p_{2}-p_{1}p_{2}
 $$
 
+#Mathematics #Probability #Definition 

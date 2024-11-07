@@ -1,1 +1,0 @@
-A square [[Matrices|matrix]] $A\in M_{n}(\mathbb{R})$ is [[Matrix Inverses|ivertible]] iff any one of the conditions of this lemma 

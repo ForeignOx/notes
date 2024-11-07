@@ -15,3 +15,4 @@ a-x_{n}=a-x+x-x_{n}=2\epsilon+x-x_{n}>\epsilon>0
 $$
 So $a>x_{n}$ which is a contradiction
 
+#Mathematics #Analysis #Theorem 

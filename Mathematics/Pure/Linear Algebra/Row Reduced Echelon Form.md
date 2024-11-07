@@ -103,3 +103,6 @@ $$
 0\\-12\\7\\0\\5\\0\\1\\0
 \end{pmatrix}\mid\lambda_{1},\lambda_{2},\lambda_{3}\in \mathbb{R}  \right\}
 $$
+
+
+#Mathematics #LinAlg #Definition 

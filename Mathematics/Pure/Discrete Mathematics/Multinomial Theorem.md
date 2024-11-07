@@ -17,3 +17,5 @@ $$
 {n \choose n_{1},n_{2},n_{3},\dots,n_{t} }
 $$
 And is called the multinomial coefficient
+
+#Mathematics #Discrete #Theorem 
