@@ -1,16 +1,16 @@
 A random variable $X$ on [[Sample Spaces|$\Omega$]] is a mapping from $\Omega$ to some set of possible values
 $$
-X:\Omega\to \mathbb{Y}\text{ (some arbitrary sace)}
+X:\Omega\to \chi\text{ (some arbitrary sace)}
 $$
 $$
 X(\Omega)=\{ X(\omega)|\omega \in \Omega \}
 $$
 $$
-X(\omega)\in \mathbb{Y}
+X(\omega)\in \chi
 $$
 
 For us, we will be concerned with $X(\Omega)\subset \mathbb{R}$ or $\mathbb{R}^n$
-We now define [[Probabilities|probability]] function $\mathbb{P}_{X}(B)$, where $B\in\mathbb{Y}$:
+We now define [[Probabilities|probability]] function $\mathbb{P}_{X}(B)$, where $B\in\chi$:
 $$
 \mathbb{P}_{X}(B):X(\Omega)\to[0,1]
 $$
@@ -18,6 +18,7 @@ $$
 \mathbb{P}_{X}(B):=\mathbb{P}((X \in B))=\mathbb{P}(X ^{-1}(B))=\mathbb{P}(\{ \omega\mid X(\omega) \in B \})
 $$
 Where $X ^{-1}$ is the [[Image and Pre-Image|pre-image]] of $X$, this is also known as the distribution/cumulative density/distribution function of $X$
+The random variables we might see are either discrete or continuous or neither
 ## Examples
 Tossing a fair coin thrice and let $X$ denote the number of heads:
 
@@ -57,6 +58,12 @@ $$
 $$
 (i,j)\mapsto X(i,j)=i+j
 $$
+Here $\chi=\{ 0,1,2,3 \}$, so let's find the [[Probability Mass Function|pmf]] of $X$, note that $|\Omega|=2^{3}=8$:
+
+| x      | 0             | 1             | 2             | 3             |
+| ------ | ------------- | ------------- | ------------- | ------------- |
+| $p(x)$ | $\frac{1}{8}$ | $\frac{3}{8}$ | $\frac{3}{8}$ | $\frac{1}{8}$ |
+Note that the total is $\hspace{0pt}1$
 ## Theorem
 Let $X:\Omega\to \mathbb{R}$ be a random variable, then $\mathbb{P}_{X}$ is a probability on $\mathbb{R}$
 ### Proof
@@ -68,3 +75,85 @@ $$
 \mathbb{P}_{X}(\mathbb{R})=\mathbb{P}(X ^{-1}(\mathbb{R}))=\mathbb{P}(\Omega)=1
 $$
 As $X ^{-1}(\mathbb{R})=\{ \omega \mid X(\omega)\in\mathbb{R} \}=\Omega$ 
+We want to show:
+$$
+\mathbb{P}_{X}(A\cup B)=\mathbb{P}_{X}(A)+\mathbb{P}_{X}(B)
+$$
+Where $A$ and $B$ are disjoint, $A,B\in\mathbb{R},A\cap B=\emptyset$
+$$
+X ^{-1}(A\cup B)=X ^{-1}(A) \cup X ^{-1}(B)
+$$
+And
+$$
+X ^{-1}(A)\cap X ^{-1}(B)=\emptyset
+$$
+So:
+$$
+\mathbb{P}_{X}(A\cup B)=\mathbb{P}(X ^{-1}(A\cup B))
+$$
+Now we want to prove $X ^{-1}(A\cup B)=X ^{-1}(A) \cup X ^{-1}(B)$, so we have to show that:
+- $X ^{-1}(A\cup B)\subseteq X ^{-1}(A)\cup X ^{-1}(B)$
+- $X ^{-1}(A\cup B)\supseteq X ^{-1}(A)\cup X ^{-1}(B)$
+Let us show the first
+Let $\omega \in X ^{-1}(A\cup B)$
+$$
+\implies X(\omega)\in A\cup B
+$$
+$$
+\implies X(\omega)\in A\text{ or }X(\omega)\in B
+$$
+$$
+\implies \omega \in X ^{-1}(A) \text{ or }\omega \in X ^{-1}(B)
+$$
+$$
+\implies \omega \in  X ^{-1}(A)\cup X ^{-1}(B)
+$$
+Prove the second!
+If $A\cap B=\emptyset$, then $X ^{-1}(A)\cap X ^{-1}(B)=\emptyset$, proof by contradiction:
+$$
+X ^{-1}(A)\cap X ^{-1}(B)\neq \emptyset
+$$
+$$
+\therefore \exists \omega \in X ^{-1}(A)\cap X ^{-1}(B)
+$$
+For this $\omega$, we have
+$$
+X(\omega)\in A\text{ and }X(\omega)\in B
+$$
+$$
+\implies A\cap B\neq \emptyset
+$$
+So we have a contradiction
+So:
+$$
+\mathbb{P}(X ^{-1}(A)\cup X ^{-1}(B))=\mathbb{P}(X ^{-1}(A))+\mathbb{P}(X ^{-1}(B))=\mathbb{P}_{X}(A)+\mathbb{P}_{X}(B)
+$$
+## Indicator Random Variable
+Let $A\subseteq\Omega$, then the indicator of $A$, denoted by $\mathbb{1}_{A}$ is defined as follows:
+$$
+\mathbb{1}_{A}(\omega)=\begin{cases}
+1&\text{if }\omega \in A\\0&\text{if }\omega \not\in A
+\end{cases}
+$$
+The number of ways the indicator function gives $\hspace{0pt}1$ is also the [[Cardinality of Sets|cardinality]] of $A$, so
+$$
+\mathbb{P}(A)=\frac{|A|}{|\Omega|}
+$$
+$$
+ |A|=\sum_{\omega \in A}\mathbb{1}_{A}(\omega)
+$$
+But also since the other $\omega_{i}$ will give zero, we can in fact say
+$$
+|A|=\sum_{\omega \in \Omega}\mathbb{1}_{A}(\omega)
+$$
+We can also say
+$$
+\mathbb{P}_{A}(\{ 1 \})=\mathbb{P}(\{ \omega\mid \mathbb{1}_{A}(\omega)=1 \})=\mathbb{P}(A)
+$$
+$$
+\mathbb{P}_{A}(\{ 0 \})=\mathbb{P}(\{ \omega\mid \mathbb{1}_{A}(\omega)=0 \})=\mathbb{P}(A^{c})
+$$
+Now we will abuse notation slightly and consider these as the same:
+$$
+\mathbb{P}_{X}(\{ x \})=\mathbb{P}_{X}(x)
+$$

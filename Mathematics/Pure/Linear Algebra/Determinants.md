@@ -53,7 +53,7 @@ $$
 $$
 c_{1}x+c_{2}y+c_{3}z=0
 $$
-Have a unique solution iff the [[Scalar Triple Product|scalar triple product]] is non-zero from what we know about [[Lines in R3|lines in $\mathbb{R}^3$]], so iff
+Have a unique solution iff the [[Scalar Triple Product|scalar triple product]] is non-zero from what we know about [[Points in R3|points in $\mathbb{R}^3$]], so iff
 $$
 \begin{pmatrix}
 a_{1}\\a_{2}\\a_{3}
@@ -70,3 +70,58 @@ b_{1}&b_{3}\\c_{1}&c_{3}
 b_{1}&b_{2}\\c_{1}&c_{2}
 \end{pmatrix}\neq 0
 $$
+___
+## Recursive Definition
+We can see that these are sort of following a pattern, that for the first row, you multiply the first element by the determinant of the matrix you obtain by ignoring the row and column of that element, then alternate negatives and positives
+Based on this, we can give an inductive definition of a determinant:
+Let $A=(a_{ij})\in M_{n}(\mathbb{R})$
+For $1\leq r,s\leq n$, we let $A_{r,s}$ be the $(r,s)$th minor of $A$, which is the $(n-1)\times (n-1)$ matrix obtained by deleting the $r$th row and $s$th column of $A$
+Let $\det(A_{r,s})$ be the $(r,s)$th unsigned cofactor of $A$, then $(-1)^{r+s}\det(A_{r,s})$ is the signed cofactor
+Using this we can inductively define $\det A$ by setting:
+$$
+\det A=\sum_{ j=1} ^{ n} (-1)^{1+j} a_{1j}\det(A_{1,j})
+$$
+### Proposition
+If $A\in M_{n}(\mathbb{R})$ and $1\leq i\leq n$, then we can in fact expand on any row (not just the first)
+$$
+\det(A)=\sum_{ j=1} ^{ n}  (-1)^{i+j}a_{ij}\det(A_{i,j})
+$$
+#### Proof
+Nasty (see notes)
+## Fundamenta Poperties of the Determinant
+The determinant is the unique function that satisfies these properties
+Let $A\in M_{n}(\mathbb{R})$, let $\vec{a_{r}}$ be the $r$th row vector of $A$:
+$$
+\vec{a_{r}}=\begin{pmatrix}
+a_{r_{1}}&a_{r_{2}}&\dots&a_{rn}
+\end{pmatrix}
+$$
+So
+$$
+A=\begin{pmatrix}
+\vec{a_{1}}\\\vec{a_{2}}\\\vdots\\\vec{a_{n}}
+\end{pmatrix}
+$$
+The properties are:
+- $\det(I_{n})=1$
+- $\det(M_{r}(\lambda)A)=\lambda \det(A)$, where $M_{r}(\lambda)$ is the [[Gauss-Jordan Elimination|ERO]] 
+ $$
+\det(M_{r}(\lambda)A)=\det \begin{pmatrix}
+\vec{a_{1}}\\\vdots\\\lambda\vec{a_{r}}\\\vdots\\\vec{a_{n}}
+\end{pmatrix}=\lambda \det\begin{pmatrix}
+\vec{a_{1}}\\\vdots\\\vec{a_{r}}\\\vdots\\\vec{a_{n}}
+\end{pmatrix}=\lambda \det(A)
+$$
+- For any vector $\vec{b_{r}}$, we have
+$$
+\det\begin{pmatrix}
+\vec{a_{1}}\\\vdots\\\vec{a_{r}}+\vec{b_{r}}\\\vdots\\\vec{a_{n}}
+\end{pmatrix}=\det\begin{pmatrix}
+\vec{a_{1}}\\\vdots\\\vec{a_{r}}\\\vdots\\\vec{a_{n}}
+\end{pmatrix}+\det\begin{pmatrix}
+\vec{a_{1}}\\\vdots\\\vec{b_{r}}\\\vdots\\\vec{a_{n}}
+\end{pmatrix}
+$$
+    Combining this with the previous one we have linearity in each row
+- $\det(P_{rs}A)=-\det A$ where $P_{rs}$ is the ERO swapping $r$th and $s$th rows of $A$
+- If $A$ has two equal (or even collinear)
