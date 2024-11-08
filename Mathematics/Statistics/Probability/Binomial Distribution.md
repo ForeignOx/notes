@@ -1,4 +1,4 @@
-The binomial distribution is the sum of $n$ [[Independence|independent]] [[Bernoulli Distribution|Bernoulli distributions]] with probability of success $p$
+The binomial distribution is the sum of $n$ (given and fixed) [[Independence|independent]] [[Bernoulli Distribution|Bernoulli distributions]] with probability of success $p$
 So if:
 $$
 X_{n}\sim \text{Bernoulli}(p)
@@ -6,8 +6,30 @@ $$
 $$
 Y\sim B(n,p) \iff Y=\sum_{ r=1} ^{ n}  X_{r}
 $$
+$X:=$ numer of successes in $n$ trials,
+$$
+\Omega=\{ \omega\mid\omega=(\omega_{1}\omega_{2}\dots\omega_{n}),\text{ where each }\omega_{i} \text{ is a success or failure for }1\leq i\leq n\}
+$$
+Let us assign the value $\hspace{0pt}1$ to sucess and $\hspace{0pt}0$ to failure, so $\omega_{i}=1$ if success, and $\omega_{i}=0$ if zero
+For a given $\omega=(\omega_{1}\omega_{2}\dots\omega_{n})$, $X(\omega)$ is the number for which $\omega_{i}=1$, so
+$$
+X(\omega)=\sum_{ i=1} ^{ n}  \omega_{i}
+$$
+Let $\omega=(\omega_{1}\omega_{2}\dots\omega_{n})\in\Omega$ with $x$ successes and $n-x$ failures,
+$$
+\mathbb{P}(\{ \omega \})=p^{x}(1-p)^{n-x}
+$$
+So
+$$
+\mathbb{P}(X=x)=\mathbb{P}\left( \bigcup_{\omega:\sum_{ i=1} ^{ n}  \omega_{i}=x}\{ \omega \} \right)=\sum_{\omega:\sum_{ i=1} ^{ n}  \omega_{i}=x}\mathbb{P}(\{ \omega \})
+$$
+So, since $\{ X=x \}=\{ \omega:X(\omega)=x \}=\left\{  \omega:\omega=(\omega_{1}\omega_{2}\dots\omega_{n}),\text{ then }\sum_{ i=1} ^{ n} \omega_{i}=x  \right\}$, so
+$$
+\sum_{\omega:\sum_{ i=1} ^{ n}  \omega_{i}=x}\mathbb{P}(\{ \omega \})={n \choose x }p^{x}(1-p)^{n-x}
+$$
+Which is how we obtain the pmf below (?????)
 ___
-## PMF
+## [[Discrete Random Variables#Probability Mass Function|PMF]]
 The probability mass function is as follows:
 $$
 P(X=r)=\begin{pmatrix}

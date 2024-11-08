@@ -1,4 +1,4 @@
-$Var(X)$ is the variance of a [[Discrete Random Variables|discrete random variable]] and tells us about the spread of the possible values of $X$, we calculate it like so:
+$Var(X)$ is the variance of a [[Git?/Mathematics/Statistics/Probability/Discrete Random Variables|discrete random variable]] and tells us about the spread of the possible values of $X$, we calculate it like so:
 $$
 Var(X)=E((X-E(X))^{2})=E(X^2-2XE(X)+E(X)^2)
 $$
@@ -35,7 +35,7 @@ $$
 \implies Var(aX+b)=a^{2}Var(X)
 $$
 ___
-Consider two [[Discrete Random Variables|discrete random variables]] $X$ and $Y$, where
+Consider two [[Git?/Mathematics/Statistics/Probability/Discrete Random Variables|discrete random variables]] $X$ and $Y$, where
 $$
 p(x,y)=P(X=x, Y=y)
 $$

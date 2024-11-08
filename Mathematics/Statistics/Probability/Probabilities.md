@@ -13,7 +13,7 @@ $$
 - $\mathbb{P}(A)\geq 0$ (Probability is always non-negative)
 - $\mathbb{P}(\Omega)=1$ (Sample space has full probability)
 - If $A,B\in\mathfrak{F}$ and $A$ and $B$ are disjoint, that is, $A\cap B=\emptyset$, then $\mathbb{P}(A\cup B)=\mathbb{P}(A)+\mathbb{P}(B)$ (Finite additivity)
-- If you have a collection of events $A_{1},A_{2},\dots$ that are pointwise disjoint, i.e. $A_{i}\cap A_{j}=\emptyset$, for all $i\neq j$, then $\mathbb{P}\left( \bigcup_{n=1}^\infty A_{n}=\sum_{n=1}^n\mathbb{P}(A_{n}) \right)$ (Countable additivity, this is an equivalent axiom to the previous one)
+- If you have a collection of events $A_{1},A_{2},\dots$ that are pointwise disjoint, i.e. $A_{i}\cap A_{j}=\emptyset$, for all $i\neq j$, then $\mathbb{P}\left( \bigcup_{n=1}^\infty A_{n}=\sum_{n=1}^\infty\mathbb{P}(A_{n}) \right)$ (Countable additivity, this is an equivalent axiom to the previous one)
 $$
 (\Omega,\mathfrak{F},\mathbb{P})
 $$

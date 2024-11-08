@@ -58,7 +58,7 @@ $$
 $$
 (i,j)\mapsto X(i,j)=i+j
 $$
-Here $\chi=\{ 0,1,2,3 \}$, so let's find the [[Probability Mass Function|pmf]] of $X$, note that $|\Omega|=2^{3}=8$:
+Here $\chi=\{ 0,1,2,3 \}$, so let's find the [[Git?/Mathematics/Statistics/Probability/Discrete Random Variables#Probability Mass Function|pmf]] of $X$, note that $|\Omega|=2^{3}=8$:
 
 | x      | 0             | 1             | 2             | 3             |
 | ------ | ------------- | ------------- | ------------- | ------------- |

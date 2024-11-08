@@ -65,7 +65,65 @@ $$
 f_{n}'(x)=e^{ x }-\left( 1+x+\frac{x^{2}}{2}+\dots+\frac{x^{n-1}}{(n-1)!} \right)=e^{ x }-\sum_{ j=0} ^{ n-1} \frac{x^{j}}{j!}  
 $$
 So since $f_{1}(x)\geq 0$, by Lemma $\hspace{0pt}1$, $f_{2}'(x)\geq 0$, so $f_{2}(x)\geq 0$, then we can repeat to get that $f_{n}(x)\geq 0$ by [[Proof by Mathematical Induction!!!!!|induction]]
-
+#### Powers beat logs
+For any $a>0$,
+$$
+\lim_{ x \to \infty } \frac{\ln x}{x^{a}}=0
+$$
+##### Proof
+Let $x=e^{ y }$, then
+$$
+\lim_{ x \to \infty } \frac{\ln x}{x^{a}}=\lim_{ y \to \infty } \frac{y}{e^{ ay }}
+$$
+For $y>0$, using Lemma $\hspace{0pt}2$ with $n=2$, so
+$$
+\frac{y}{e^{ ay }}\leq \frac{y}{1+ay+\frac{a^{2}y^{2}}{2}}\leq \frac{y}{\frac{1}{2}a^{2}y^{2}}=\frac{2}{a^{2}y}
+$$
+Since 
+$$
+\lim_{ y \to \infty } \frac{2}{a^{2}y}=0
+$$
+By the pinching theorem,
+$$
+\lim_{ y \to \infty } \frac{y}{e^{ ay }}=0=\lim_{ x \to \infty } \frac{\ln x}{x^{a}}
+$$
+#### Exponentials beat powers
+For any $a>0$,
+$$
+\lim_{ x \to \infty } \frac{x^{a}}{e^{ x }}=0
+$$
+##### Proof
+Let $n$ be the smallest integer such that $n>a$, then by Lemma $\hspace{0pt}2$ (for $x>0$):
+$$
+0\leq\frac{x^{a}}{e^{ x }}\leq \frac{x^{a}}{1+x+\frac{x^{2}}{2}+\dots+\frac{x^{n}}{n!}}=\frac{x^{a-n}}{x^{-n}+x^{1-n}+\frac{x^{2-n}}{2}+\dots+\frac{1}{n!}}
+$$
+As $a-n<0$, the numerator goes to $\hspace{0pt}0$, as and the terms in the denominator also goes to $\hspace{0pt}0$, except the $\frac{1}{n!}$ term, and since the numerator goes to zero, and the denominator goes to a constant, the limit is $\hspace{0pt}0$, so using the squeeze theorem again,
+$$
+\lim_{ x \to \infty } \frac{x^{a}}{e^{ x }}=0
+$$
+#### Exponential as a limit
+For any $a\in\mathbb{R}$,
+$$
+\lim_{ x \to \infty } \left( 1+\frac{a}{x} \right)^{x}=e^{ a }
+$$
+##### Proof
+Let $f(x)=\ln x$, then $f'(x)=\frac{1}{x}$ and:
+$$
+f'(1)=\lim_{ h \to 0 } \frac{\ln(1+h)-\ln(1)}{h}=\lim_{ h \to 0 } \frac{\ln(1+h)}{h}
+$$
+Now letting $h=\frac{a}{x}$,
+$$
+1=\lim_{ x \to \infty } \frac{\ln\left( 1+\frac{a}{x} \right)}{\frac{a}{x}}
+$$
+So
+$$
+a=\lim_{ x \to \infty } x\ln\left( 1+\frac{a}{x} \right)=\lim_{ x \to \infty } \ln\left( 1+\frac{a}{x} \right)^{x}
+$$
+Now exponentiating both sides gives:
+$$
+e^{ a }=e^{  \lim_{ x \to \infty } \ln\left( 1+\frac{a}{x} \right)^{x}}=\lim_{ x \to \infty } e^{ \ln(1+a/x)^{x} }=\left( 1+\frac{a}{x} \right)^{x}
+$$
+Using the fact that $e^{ x }$ is continuous
 ## Limits as $x\to \infty$
 Rough idea: a function has a limit $L$ as $x\to \infty$ if $f(x)$ can be kept arbitrarily close to $L$ by making $x$ sufficiently large
 Formal definition:

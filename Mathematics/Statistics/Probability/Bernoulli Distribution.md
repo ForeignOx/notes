@@ -4,7 +4,7 @@ A Bernoulli trial is a random experiment with only two possible outcomes:
 
 
 ___
-The Bernoulli distribution assigns a random variable to a Bernoulli trial with:
+The Bernoulli distribution assigns a [[Random Variables|random variable]] to a Bernoulli trial with:
 - a value of 1 corresponding to a 'success'
 - a value of 0 corresponding to a 'failure'
 So:

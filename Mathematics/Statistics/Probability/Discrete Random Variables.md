@@ -1,0 +1,48 @@
+Let $X$ be a [[Random Variables|random variable]], $X$ is discrete if there exists $\chi \subseteq X(\Omega)$ such that $\chi$ is either finite or [[Countable Sets|countable]], i.e.
+$$
+\mathbb{P}(X \in  \chi)=1
+$$
+## Probability Mass Function
+We will define
+$$
+p:\chi\to[0,1]
+$$
+$$
+p(x)=\mathbb{P}(X=x)
+$$
+For every $x\in\chi$ 
+$p(x)$ is known as the probability mass [[Functions|function]] (pmf)
+## Theorem
+Let $X$ be a discrete random variable with pmf $p$, then for any $A\subseteq \chi$, 
+$$
+\mathbb{P}(X \in A)=\sum_{x \in A}p(x)
+$$
+Furthermore,
+$$
+\sum_{x\in \chi}p(x)=1
+$$
+### Proof
+$A\subseteq \chi$, where $\chi$ is countable or finite, so you can enlist/enumerate the elements of $A$
+Let $A=\{ a_{1},a_{2},\dots \}$, so
+$$
+A=\bigcup_{i=1}^{\infty}\{ a_{i} \}
+$$
+So
+$$
+\mathbb{P}(X \in A)=\mathbb{P}\left( \bigcup_{i=1}^{\infty}\{ X=a_{i} \} \right)
+$$
+Observe that $\{ X=a_{i} \}\cap \{ X=a_{j} \}=\emptyset$ for $i\neq j$, so by the 4th axiom of [[Probabilities|probability]]:
+$$
+\mathbb{P}(X \in A)=\sum_{i=1}^{\infty}\mathbb{P}(X=a_{i})=\sum_{i=1}^{\infty}p(x)=\sum_{x \in A}p(x)
+$$
+We have to show that $\sum_{x\in\chi}p(x)=1$, since we have established the first part,
+$$
+\mathbb{P}(X\in \chi)=\sum_{x\in \chi}p(x)
+$$
+And we know when we defined $\mathbb{P}_{X}$ that $\mathbb{P}(X \in\chi)=1$, so that completes the proof:
+$$
+\sum_{x\in \chi}p(x)=1
+$$
+
+
+#Mathematics #Probability #Function 

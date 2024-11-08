@@ -1,4 +1,4 @@
-$E(X)$ is the expected value, or mean of a [[Discrete Random Variables|discrete random variable]] X, and can be calculated like so:
+$E(X)$ is the expected value, or mean of a [[Git?/Mathematics/Statistics/Probability/Discrete Random Variables|discrete random variable]] X, and can be calculated like so:
 $$
 E(X)=\sum xP(X=x)
 $$
@@ -23,7 +23,7 @@ $$
 \therefore E(aX+b)=aE(X)+b
 $$
 ___
-Consider two [[Discrete Random Variables|discrete random variables]] $X$ and $Y$, where 
+Consider two [[Git?/Mathematics/Statistics/Probability/Discrete Random Variables|discrete random variables]] $X$ and $Y$, where 
 $$
 p(x,y)=P(X=x, Y=y)
 $$
