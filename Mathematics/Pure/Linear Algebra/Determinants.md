@@ -87,7 +87,18 @@ $$
 \det(A)=\sum_{ j=1} ^{ n}  (-1)^{i+j}a_{ij}\det(A_{i,j})
 $$
 #### Proof
-Nasty (see notes)
+This proof is via [[Proof by Mathematical Induction!!!!!|induction]] on $n$. For notational convenience, let
+$$
+\det_{i}(A):=\sum_{ k=1} ^{ n}  (-1)^{i+k}a_{ik}\det(A_{i,k})
+$$
+We wish to show $\det_{i}(A)=\det (A)$. In the case $n=2$, it is easy to chec k we have $\det_{2}=\det$, indeed
+$$
+\det_{2}(A)=\sum_{k=1}^{2}(-1)^{2+k}a_{2k}\det(A_{2,k})=-a_{21}\det(a_{12})+a_{22}\det(a_{11})=a_{11}a_{22}-a_{12}a_{21}=\det(A)
+$$
+This is the base case
+So let's assume that we know for any $(n-1)\times(n-1)$ matrix, we have $\det_{i}=\det$ for $1\leq i\leq n-1$. Let $A$ be an $n\times n$ matrix and suppose $2\leq i\leq n$. For integers $k$ and $l$ between $1$ and $n$, notice (by thinking about what it means to be a minor) that the minors of the minors satisfy:
+- if $l<k$, then we have $(A_{i,k})_{1,l}=(A_{1,l})_{i-1,k-1}$
+- if $k<l$, then we have $(A_{i,k})_{1,l-1}$ 
 ## Fundamenta Poperties of the Determinant
 The determinant is the unique function that satisfies these properties
 Let $A\in M_{n}(\mathbb{R})$, let $\vec{a_{r}}$ be the $r$th row vector of $A$:
