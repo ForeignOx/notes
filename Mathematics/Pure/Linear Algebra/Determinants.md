@@ -99,7 +99,40 @@ This is the base case
 So let's assume that we know for any $(n-1)\times(n-1)$ matrix, we have $\det_{i}=\det$ for $1\leq i\leq n-1$. Let $A$ be an $n\times n$ matrix and suppose $2\leq i\leq n$. For integers $k$ and $l$ between $1$ and $n$, notice (by thinking about what it means to be a minor) that the minors of the minors satisfy:
 - if $l<k$, then we have $(A_{i,k})_{1,l}=(A_{1,l})_{i-1,k-1}$
 - if $k<l$, then we have $(A_{i,k})_{1,l-1}$ 
-## Fundamenta Poperties of the Determinant
+## Columns
+If we had tried to develop the theory of determinants by expanding along columns rather than rows, we would have arrived at a function:
+$$
+\text{coldet}:M_{n}(\mathbb{R})\to \mathbb{R}
+$$
+It turns out that we would get $\text{coldet}=\det$
+Equivalently we have:
+$$
+\det(A^{t})=\det (A)
+$$
+For all square matrices
+### Proof
+Apply EROs $E_{1},E_{2},\dots,E_{r}$ to $A$ to get RREF $A'$:
+$$
+A'=E_{r}\dots E_{2}E_{1}A
+$$
+Then
+$$
+A=E_{1}^{-1}E_{2}^{-1}\dots E_{r}^{-1}A'
+$$
+Recall each $E_{i}^{-1}$ is also elementary, then
+$$
+\det(A^{t})=\det((A')^{t}(E_{r}^{-1})^{t}\dots(E_{2}^{-1})^{t}(E_{1}^{-1})^{t})
+$$
+$$
+=\det((E_{r}^{-1})^{t}\dots(E_{2}^{-1})^{t}(E_{1}^{-1})^{t})
+$$
+If $A$ is invertible, since then $A'=I_{n}$, so $(A')^{t}=I_{n}$
+$$
+\det(E_{r}^{-1})\dots \det(E_{2}^{-1})\det( E_{1}^{-1})=\det(E_{1}^{-1}E_{2}^{-1}\dots E_{r}^{-1}A')=\det (A)
+$$
+Since $\det(E^{t})=\det(E)$ can be checked for $E$ elementary, so $E^{t}$ is elementary if $E$ is elementary
+If $A$ is not invertible, then neither is $A^{t}$, so $\det(A)=0=\det(A^{t})$
+## Fundamental Poperties of the Determinant
 The determinant is the unique function that satisfies these properties
 Let $A\in M_{n}(\mathbb{R})$, let $\vec{a_{r}}$ be the $r$th row vector of $A$:
 $$
@@ -195,5 +228,46 @@ $$
 where $\lambda_{i}\neq 0$
 Then either $B=I_{n}$ in which case $\det (A)=f(A)$ or $B$ has a row of 0's so $\det(B)=0$ and $f(B)=0$, by the 4th property
 Hence $\det (A)=f(A)$
+___
+## Calculations
+We know how $\det$ changes under EROs:
+- $A_{rs}(\lambda)$ doesn't change $\det$
+- $M_{r}(\lambda)$: $\det(M_{r}(\lambda)A)=\lambda \det(A)$
+- $P_{rs}$: $\det(P_{rs}A)=-\det(A)$
 
-#Mathematics #LinAlg #Definition #Theorem 
+Note EROs change $\det$ by non-zero multiples, so if we apply some EROs to $A$, including $M_{r_{i}}(\lambda_{i})$ for $i=1,\dots,s$ and $t$ occurences of $P_{ab}$ resulting in $A'$, then
+$$
+\det(A')=\lambda_{1}\lambda_{2}\dots\lambda_{s}(-1)^{t}\det(A)
+$$
+If $A'$ is in RREF (for example), then $\det(A')=1$ if $A'=I_{n}$ and $\det(A)=0$ otherwise, so then we can read off $\det(A)$
+### Proposition
+If $A\in M_{n}(\mathbb{R})$ which is upper-triangular (i.e. $A_{ij}=0$ for $i>j$, so only has entries on or above the leading diagonal), then $\det(A)=\prod_{ i=1} ^{ n}a_{ii}=a_{11}a_{22}\dots a_{nn}$
+#### Proof
+induct :)
+#### Use
+We now only want to put $A'$ in upper triangular form to find $\det (A)$
+#### Examples
+![[Determinants 2024-11-11 11.22.40.excalidraw]]
+So $\det(A')=1\times 1\times 2=2$, so:
+$$
+\det(A)=(-1)\det(A')=-2
+$$
+Since we only did one $P_{rs}$ and no $M_{r}(\lambda)$
+___
+![[Determinants 2024-11-11 11.45.31.excalidraw]]
+Obtained by taking factors $a,b,c$ out of each column
+![[Determinants 2024-11-11 11.47.01.excalidraw]]
+By performing column operations $\text{col}A_{12}(-1)$ and $\text{col}A_{13}(-1)$
+![[Determinants 2024-11-11 11.48.48.excalidraw]]
+By expanding along row 1
+![[Determinants 2024-11-11 11.49.51.excalidraw]]
+By taking factors $(b-a),(c-a)$ out of each column
+$$
+=abc(b-a)(c-a)(c^{2}+ca+a^{2}-b^{2}-ab-a^{2})=abc(b-a)(c-a)(c^{2}+ac-ab-b^{2})
+$$
+$$
+= abc(b-a)(c-a)(c-b)(a+b+c)
+$$
+
+
+#Mathematics #LinAlg #Function #Definition #Theorem 

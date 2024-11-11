@@ -47,6 +47,14 @@ $$
 = (I_{n}|A^{-1})
 $$
 Note that if $A$ was not invertivle, then LHS would not become $I_{n}$ (RREF of $A$ is not $I_{n}$)
-
+## [[Determinants|Determinants]]
+$A\in M_{n}(\mathbb{R})$ then $A$ is invertible iff $\det(A)\neq 0$
+### Proof
+We apply EROs $E_{1},E_{2},\dots ,E_{r}$ to $A$ so that $A'=E_{r}\dots E_{2}E_{1}A$ is in RREF so there exists non-zero factors $M_{1},M_{2},\dots,M_{r}$ such that
+$$
+\det(A')=M_{r}\dots M_{2}M_{1}\det(A)
+$$
+Since EROs change $\det$ by non-zero factors
+A is invertible iff $A'=I_{n}$ iff $\det(A')\neq 0$, since $A'$ is in RREF (and if it is not $I_{n}$, then it must have a row of zeros) iff $\det(A)\neq 0$ by the observation above
 
 #Mathematics #LinAlg #Definition
