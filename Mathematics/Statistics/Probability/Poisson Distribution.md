@@ -34,8 +34,9 @@ $$
 
 We write this in the following way:
 $$
-X \sim Po(\lambda)\iff P(X=r)=\frac{e^{-\lambda}\lambda^r}{r!}
+X \sim Po(\lambda)\iff P(X=r)=\frac{e^{-\lambda}\lambda^r}{r!},r\in \mathbb{N}
 $$
+
 
 ___
 ## Shape of the distribution

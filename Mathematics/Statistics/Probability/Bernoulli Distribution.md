@@ -1,8 +1,6 @@
 A Bernoulli trial is a random experiment with only two possible outcomes:
 - Success, with probability $p$
 - Failure, with probability $1-p(=q)$
-
-
 ___
 The Bernoulli distribution assigns a [[Random Variables|random variable]] to a Bernoulli trial with:
 - a value of 1 corresponding to a 'success'
@@ -15,6 +13,7 @@ p && x=1 \\
 0 && \text{otherwise}
 \end{cases}
 $$
+Note that [[Binomial Distribution|$\text{Bernoulli}(p)=B(1,p)$]] 
 ___
 ## [[E(X)]]
 $$
