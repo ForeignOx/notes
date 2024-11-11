@@ -1,4 +1,4 @@
-An exponentiasl [[Real Functions|function]] is any function of the form $f(x)=b^{x}$, where $b$ (called the base) is a positive real number not equal to $\hspace{0pt}1$
+An exponential [[Real Functions|function]] is any function of the form $f(x)=b^{x}$, where $b$ (called the base) is a positive real number not equal to $\hspace{0pt}1$
 For all values of the base, the graph passes through the point $(0,1)$
 There are two types of behaviour
 - If $b>1$, the graph is increasing and has a horizontal asymtote $y=0$ along the negative $x$-axis

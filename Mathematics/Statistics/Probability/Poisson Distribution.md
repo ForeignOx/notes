@@ -1,5 +1,5 @@
 ## Probability Density Function
-The poisson distribution is a probability distribution. 
+The poisson distribution is a [[Discrete Random Variables|discrete]] probability distribution. 
 If you take a family of [[Binomial Distribution|binomial distributions]] with a set value of $np$, as $n\rightarrow \infty$ the probabilities seem to converge.
 $$
 X \sim \lim_{ n \to \infty }\left( B\left( n,\frac{\lambda}{n} \right) \right)
@@ -93,7 +93,7 @@ $$
 $$
 So the probabilities do indeed sum to 1.
 ___
-## Expectation
+## [[E(X)|Expectation]]
 Find $E(X)$:
 $$
 E(X)=\sum_{r=0}^\infty\left( r\left( \frac{e^{-\lambda}\lambda^r}{r!} \right) \right)=e^{-\lambda}\sum_{r=1}^\infty\left( \frac{\lambda^r}{(r-1)!} \right) 
@@ -103,7 +103,7 @@ $$
 $$
 Therefore $E(X)=\lambda$
 ___
-## Variance
+## [[Var(X)|Variance]] 
 Find $Var(X)$:
 $$
 E(X^{2})-E(X)=E(X(X-1))=\sum_{r=0}^\infty\left( r(r-1) \frac{e^{-\lambda}\lambda^r}{r!} \right)
@@ -154,7 +154,7 @@ P(X+Y=r)=\frac{e^{\lambda+\mu}(\lambda+\mu)^r}{r!}
 $$
 so  $X+Y\sim Po(X+Y)$ as expected.
 ___
-## Similarity to binomial
+## Similarity to [[Binomial Distribution|binomial]] 
 ```tikz
 \usepackage{pgfplots}
 \pgfmathdeclarefunction{poiss}{1}{%

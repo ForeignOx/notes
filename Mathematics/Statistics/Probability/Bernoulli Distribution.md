@@ -14,6 +14,7 @@ p && x=1 \\
 \end{cases}
 $$
 Note that [[Binomial Distribution|$\text{Bernoulli}(p)=B(1,p)$]] 
+A Bernoulli variable will be a [[Discrete Random Variables|discrete random variable]]
 ___
 ## [[E(X)]]
 $$
