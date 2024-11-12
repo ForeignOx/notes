@@ -75,7 +75,7 @@ ___
 We can see that these are sort of following a pattern, that for the first row, you multiply the first element by the determinant of the matrix you obtain by ignoring the row and column of that element, then alternate negatives and positives
 Based on this, we can give an inductive definition of a determinant:
 Let $A=(a_{ij})\in M_{n}(\mathbb{R})$
-For $1\leq r,s\leq n$, we let $A_{r,s}$ be the $(r,s)$th minor of $A$, which is the $(n-1)\times (n-1)$ matrix obtained by deleting the $r$th row and $s$th column of $A$
+For $1\leq r,s\leq n$, we let $A_{r,s}$ be the $(r,s)$th [[Matrix Minor|minor]] of $A$, which is the $(n-1)\times (n-1)$ matrix obtained by deleting the $r$th row and $s$th column of $A$
 Let $\det(A_{r,s})$ be the $(r,s)$th unsigned cofactor of $A$, then $(-1)^{r+s}\det(A_{r,s})$ is the signed cofactor
 Using this we can inductively define $\det A$ by setting:
 $$
@@ -268,6 +268,62 @@ $$
 $$
 = abc(b-a)(c-a)(c-b)(a+b+c)
 $$
+## Areas and Volumes
+Consider [[Vectorspace Rn|$\mathbb{R}^2$]], 
+![[Determinants 2024-11-12 11.43.48.excalidraw]]
+We have a parallelogram with vertices $0,\vec{v},\vec{w},\vec{v}+\vec{w}$, it has an area we can obtain by considering two equal triangles of:
+$$
+\text{Area}(P)=|\vec{v}||\vec{w}|\sin\theta
+$$
+Now imagine $\mathbb{R}^{2}\times \{ 0 \}\subseteq \mathbb{R}^3$:
+![[Determinants 2024-11-12 11.47.05.excalidraw]]
+So this is that same parallelogram, but with one coordinate $\hspace{0pt}0$
+$$
+\vec{v}=\begin{pmatrix}
+a\\c\\0
+\end{pmatrix},\vec{w}=\begin{pmatrix}
+b\\d\\0
+\end{pmatrix}
+$$
+So,
+$$
+\text{Area}(P)=|\vec{v}| |\vec{w}|\sin\theta=|\vec{v} \times \vec{w}|
+$$
+$$
+=\left|\begin{pmatrix}
+a\\c\\0
+\end{pmatrix}\times \begin{pmatrix}
+b\\d\\0
+\end{pmatrix}\right|=\left| \begin{pmatrix}
+0\\0\\ad-bc
+\end{pmatrix}\right|=|ad-bc|=|\det(\vec{v}\vec{w})=\left|\det \begin{pmatrix}
+a&b\\c&d
+\end{pmatrix}\right|
+$$
+### Example
+Find the area of the trianle $T\subseteq \mathbb{R}^{2}$ with vertices:
+$$
+\vec{a}=\begin{pmatrix}
+2\\5
+\end{pmatrix},\vec{b}=\begin{pmatrix}
+-1\\3
+\end{pmatrix},\vec{c}=\begin{pmatrix}
+1\\2
+\end{pmatrix}
+$$
+![[Determinants 2024-11-12 11.52.56.excalidraw]]
+So
+$$
+T=\frac{1}{2}\text{Area}(\text{Parallelogram})=\frac{1}{2}\left|\det \begin{pmatrix}
+\vec{b}-\vec{a}&\vec{c}-\vec{a}
+\end{pmatrix}\right|
+$$
+$$
+= \frac{1}{2}\left| \det \begin{pmatrix}
+-3&-1\\-2&-3
+\end{pmatrix}\right|=\frac{1}{2}|9-2|=\frac{7}{2}
+$$
+Note we can change where we put the triangle 
 
 
 #Mathematics #LinAlg #Function #Definition #Theorem 
