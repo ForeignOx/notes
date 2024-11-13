@@ -24,7 +24,7 @@ $$
 ### Rectangular regions
 ![[Double Integrals 2024-02-21 15.33.49.excalidraw]]
 $$
-V=\iint_{R}f(x,y)dA , R=\{(x,y):a\leq x\leq b, c\leq y\leq d\}=\int ^{b}_{a} \int _{c}^d f(x,y) \, dy  \, dx
+V=\iint_{R}f(x,y)dA , R=\{(x,y)\mid a\leq x\leq b, c\leq y\leq d\}=\int ^{b}_{a} \int _{c}^d f(x,y) \, dy  \, dx
 $$
 #### Example
 $$
