@@ -353,10 +353,17 @@ $$
 $$
 Then
 $$
-\text{Volume}(P)=\left|\det \begin{pmatrix}
+\left|\det \begin{pmatrix}
 \vec{a}&\vec{b}&\vec{c}
 \end{pmatrix}\right|
 $$
+Is either $\text{Volume}(P)$ when $\vec{a},\vec{b},\vec{c}$ are not coplanar or $0$ when $\vec{a},\vec{b},\vec{c}$  are the vertices of a face of $P$, in fact 
+$$
+\det \begin{pmatrix}
+\vec{a}&\vec{b}&\vec{c}
+\end{pmatrix}=0
+$$
+When $\vec{a},\vec{b},\vec{c}$ are coplanar as the parallelopiped they span would have no volume
 ## Higher $n$
 This generalises for higher $n$, so one can find the volume of the shape 'spanned' by $\vec{u_{1}},\vec{u_{2}},\dots,\vec{u_{k}}\in\mathbb{R}$ to be
 $$
@@ -364,5 +371,7 @@ $$
 \vec{u_{1}}&\vec{u_{2}}&\dots&\vec{u}_{k}
 \end{pmatrix}|
 $$
+
+
 
 #Mathematics #LinAlg #Function #Definition #Theorem 
