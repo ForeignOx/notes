@@ -45,4 +45,11 @@ $$
 \mathbb{P}( X \in (-\infty,b])=\int _{-\infty}^{b}f(x) \, dx ,\mathbb{P}(X \in [a,\infty) )=\int _{a}^{\infty}f(x) \, dx 
 $$
 As we can write:
-
+$$
+(-\infty,b]=\bigcup_{n=1}^{\infty}\left( -\infty,b-\frac{1}{n} \right]
+$$
+Which is a countable union
+From this we can say:
+$$
+\mathbb{P}(X\in\mathbb{R})=\mathbb{P}(-\infty<x<\infty)=\int_{-\infty}^{\infty} f(t) \, dt =1
+$$

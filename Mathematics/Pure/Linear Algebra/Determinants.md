@@ -269,6 +269,7 @@ $$
 = abc(b-a)(c-a)(c-b)(a+b+c)
 $$
 ## Areas and Volumes
+### $n=2$
 Consider [[Vectorspace Rn|$\mathbb{R}^2$]], 
 ![[Determinants 2024-11-12 11.43.48.excalidraw]]
 We have a parallelogram with vertices $0,\vec{v},\vec{w},\vec{v}+\vec{w}$, it has an area we can obtain by considering two equal triangles of:
@@ -300,7 +301,17 @@ b\\d\\0
 a&b\\c&d
 \end{pmatrix}\right|
 $$
-### Example
+Note that, by considering where you put the second triangle to construct the parallelogram,
+$$
+|\det \begin{pmatrix}
+\vec{v}&\vec{w}
+\end{pmatrix}|=|\det \begin{pmatrix}
+\vec{v}&\vec{v}+\vec{w}
+\end{pmatrix}|=|\det \begin{pmatrix}
+\vec{w}&\vec{v}+\vec{w}
+\end{pmatrix}|
+$$
+#### Example
 Find the area of the trianle $T\subseteq \mathbb{R}^{2}$ with vertices:
 $$
 \vec{a}=\begin{pmatrix}
@@ -323,7 +334,34 @@ $$
 -3&-1\\-2&-3
 \end{pmatrix}\right|=\frac{1}{2}|9-2|=\frac{7}{2}
 $$
-Note we can change where we put the triangle 
-
-
+Note we can change where we put the triangle to get the same area in different ways, as above
+### $n=3$
+Consider the parallelopiped formed by $\hspace{0pt}3$ non collinear vectors $\vec{u},\vec{v},\vec{w}$:
+![[Determinants 2024-11-14 18.44.56.excalidraw]]
+Let $P'$ be a pivot unit vector perpendicular to the base, $\theta$ is the angle between $P'$ and $\vec{w}$
+$$
+\text{Volume}(P)=|\vec{v}\times \vec{u}||\vec{u}| |\cos\theta|=|\vec{v}\times \vec{u}| |\vec{u}|\left| \frac{\vec{u}\cdot(\vec{v}\times \vec{w})}{|\vec{u}| |\vec{v}\times \vec{w}|}\right|=|\vec{u}\cdot(\vec{v}\times \vec{w})|
+$$
+$$
+=| \det \begin{pmatrix}
+\vec{u}&\vec{v}&\vec{w}
+\end{pmatrix}|
+$$
+Similarly to when $n=2$, we can form equivalent expressions by icking any $\hspace{0pt}3$ non-zero vertices of $P$, 
+$$
+\{ \vec{a},\vec{b},\vec{c} \}\subseteq \{ \vec{u},\vec{v},\vec{w},\vec{u}+\vec{v},\vec{u}+\vec{w},\vec{v}+\vec{w},\vec{u}+\vec{v}+\vec{w} \}
+$$
+Then
+$$
+\text{Volume}(P)=\left|\det \begin{pmatrix}
+\vec{a}&\vec{b}&\vec{c}
+\end{pmatrix}\right|
+$$
+## Higher $n$
+This generalises for higher $n$, so one can find the volume of the shape 'spanned' by $\vec{u_{1}},\vec{u_{2}},\dots,\vec{u_{k}}\in\mathbb{R}$ to be
+$$
+|\det \begin{pmatrix}
+\vec{u_{1}}&\vec{u_{2}}&\dots&\vec{u}_{k}
+\end{pmatrix}|
+$$
 #Mathematics #LinAlg #Function #Definition #Theorem 
