@@ -364,4 +364,5 @@ $$
 \vec{u_{1}}&\vec{u_{2}}&\dots&\vec{u}_{k}
 \end{pmatrix}|
 $$
+
 #Mathematics #LinAlg #Function #Definition #Theorem 
