@@ -22,3 +22,12 @@ If $f_{\text{even}}(x)$ is an integrable [[Even Functions|even]] function on $[-
 $$
 \int _{-a}^{a}f_{\text{even}}(x) \, dx =2\int _{0}^{a}f_{\text{even}}(x) \, dx 
 $$
+## Turning Functions into Odd and Even
+Recall tha any function can be decomposed into the sum of an odd and even function,
+$$
+f(x)=f_{\text{even}}(x)+f_{\text{odd}}(x)=\frac{1}{2}(f(x)+f(-x))+\frac{1}{2}(f(x)-f(-x))
+$$
+From this we can see that:
+$$
+\int _{-a}^{a}f(x) \, dx =2\int _{0}^{a}f_{\text{even}}(x) \, dx 
+$$
