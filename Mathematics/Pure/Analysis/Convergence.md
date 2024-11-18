@@ -228,5 +228,34 @@ $$
 |a_{n}-2|=\frac{1}{2^{n}}
 $$
 Which is an example of $x_{n}=c^{n}$, so $|a_{n}-2|$ converges to $\hspace{0pt}0$, and hence $a_{n}$ converges to 2
+## [[Exponential Functions|Exponentials]] beat Powers
+$$
+\lim_{ n \to \infty } \frac{n^{k}}{e^{ n }}=0
+$$
+### Proof
+$$
+e^{ n }\geq\left( 1+\frac{n}{k+1} \right)^{k+1}\geq \frac{n^{k+1}}{(k+1)^{k+1}}
+$$
+Where the last term is the final term in the [[Binomial Theorem|binomial expansion]] of the second term
+Now
+$$
+0\leq \frac{n^{k}}{e^{ n}}\leq \frac{n^{k}(k+1)^{k+1}}{n^{k+1}}=\frac{(k+1)^{k+1}}{n}\to0
+$$
+Which means, by the squeezing theorem, it tends to 0
+## Powers beat Logarithms
+
+$$
+\lim_{ n \to \infty } \frac{\ln(n)}{\sqrt[k]{n  }}
+$$
+By substituting $m=\sqrt[k]{n  }$, we get
+$$
+\lim_{ n \to \infty } \frac{\ln(n)}{\sqrt[k]{n  }}=\lim_{ m \to \infty } \frac{\ln(m^{k})}{m}=\lim_{ m \to \infty } k \frac{\ln m}{m}
+$$
+Then using a substitution of $l=\ln m$, we get
+$$
+\lim_{ n \to \infty } \frac{\ln(n)}{\sqrt[k]{n  }}=\lim_{ l \to \infty } k \frac{l}{e^{ l }}=0
+$$
+
+
 
 #Mathematics #Analysis  #Definition 
