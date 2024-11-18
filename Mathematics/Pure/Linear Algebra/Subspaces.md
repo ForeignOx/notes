@@ -30,3 +30,73 @@ A(\lambda \vec{u})=\lambda A\vec{u}=\lambda0=0
 $$
 So $\lambda \vec{u}\in S$
 And finally $\vec{0}\in S$ as $A\vec{0}=\vec{0}$
+## [[span|Spans]]
+If $\vec{u}_{1},\vec{u}_{2},\dots,\vec{u}_{k}\in\mathbb{R}^{n}$ then $U=\text{span}<\vec{u}_{1},\vec{u}_{2},\dots,\vec{u}_{k}> \subseteq \mathbb{R}^{n}$ is a subspace of $\mathbb{R}^{n}$
+### Proof
+Check contitions to be a subspace:
+$\hspace{0pt}1$. Suppose $\lambda \vec{u}_{1}+\dots+\lambda_{k}\vec{u}_{k},\mu_{1}\vec{u}_{1}+\dots+\mu_{k}\vec{u}_{k}\in U$, then
+$$
+(\lambda_{1} \vec{u}_{1}+\dots+\lambda_{k}\vec{u}_{k})+(\mu_{1}\vec{u}_{1}+\dots+\mu_{k}\vec{u}_{k})=(\lambda_{1}+\mu_{1})\vec{u}_{1}+\dots+(\lambda_{k}+\mu_{k})\vec{u}_{k}\in U
+$$
+$\hspace{0pt}2$. Suppose $\lambda \vec{u}_{1}+\dots+\lambda_{k}\vec{u}_{k}\in U,\lambda \in\mathbb{R}$, then:
+$$
+\lambda(\lambda \vec{u}_{1}+\dots+\lambda_{k}\vec{u}_{k})=(\lambda\lambda_{1})\vec{u}_{1}+\dots+(\lambda\lambda_{k})\vec{u}_{k}\in U
+$$
+$\hspace{0pt}3$. $\vec{0}=0\vec{u}_{1}+\dots+0\vec{u}_{k}\in U$
+### Examples
+- $0=\{ \vec{0} \}\subseteq \mathbb{R}^{n}$, $0=\text{span}<\vec{0}>$
+- $\mathbb{R}^{n}\subseteq \mathbb{R}^{n}$, $\mathbb{R}^{n}=\text{span}< \vec{e}_{1},\dots,\vec{e}_{n}>$
+- $\Pi=\{ \lambda \vec{a}+\mu \vec{b} \mid\lambda,\mu \in\mathbb{R}\}\subseteq \mathbb{R}^{n},\vec{a},\vec{b}\in\mathbb{R}^{n}$, $\Pi=\text{span}<\vec{a},\vec{b}>$
+#### Discussion
+What is the span inside $\mathbb{R}^{3}$ of 
+$$
+\vec{u}_{1}=\begin{pmatrix}
+1\\1\\1
+\end{pmatrix},\vec{u}_{2}=\begin{pmatrix}
+-1\\0\\2
+\end{pmatrix},\vec{u}_{3}=\begin{pmatrix}
+0\\1\\3
+\end{pmatrix},\vec{u}_{4}=\begin{pmatrix}
+-1\\1\\5
+\end{pmatrix}
+$$
+Let:
+$$
+A=\begin{pmatrix}
+\vec{u}_{1}&\vec{u}_{2}&\vec{u}_{3}&\vec{u}_{4}
+\end{pmatrix}\in M_{3\times 4}(\mathbb{R})
+$$
+Then, given $\vec{b}\in\mathbb{R}^{3}$, we could like to know if $\exists\vec{\lambda}\in\mathbb{R}^{4}$ such that $A\vec{\lambda}=\vec{b}$, so $\vec{b}\in \text{span}<\vec{u}_{1},\vec{u}_{2},\vec{u}_{3},\vec{u}_{4}>:=U$
+I.e. when does $A\vec{\lambda}=\vec{b}$ have solutions?
+$$
+\left(
+\begin{array}{cccc|c}
+1&-1&0&-1&b_{1}\\
+1&0&1&1&b_{2}\\1&2&3&5&b_{3}
+\end{array}
+\right)\to 
+\left(
+\begin{array}{cccc|c}
+1&0&1&1&b_{2}\\
+0&1&1&2&b_{2}-b_{1}\\
+0&0&0&0&2b_{1}-3b_{2}+b_{3}
+\end{array}
+\right)
+$$
+By using [[Gauss-Jordan Elimination|Gauss-Jordan elimination]], so we have solutions exactly when $2b_{1}-3b_{2}+b_{3}=0$, so:
+$$
+U=\left\{  \begin{pmatrix}
+b_{1}\\b_{2}\\b_{3}
+\end{pmatrix}\mid2b_{1}-3b_{2}+b_{3}=0  \right\}
+$$
+$U$ is a plane inside $\mathbb{R}^{3}$passing through the origin of normal vector
+$$
+\begin{pmatrix}
+2\\-3\\1
+\end{pmatrix}
+$$
+Also 
+$$
+U=\text{span}<\vec{u}_{1},\vec{u}_{2},\vec{u}_{3},\vec{u}_{4}> =\text{span}<\vec{u}_{1},\vec{u}_{2}>=\text{span}<\vec{u}_{i},\vec{u}_{j}>
+$$
+where $i\neq j$, $1\leq i,j\leq 4$ (since $U$ is a plane)
