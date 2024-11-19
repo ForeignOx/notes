@@ -1,4 +1,4 @@
-A non-[[Empty Set|empty]] [[Subsets|subset]] of $U$ of a [[Vectorspaces|vectorspace]] is called a vectorsubspace or linear subspace or subspace if it satisfies the following conditions:
+A non-[[Empty Set|empty]] [[Subsets|subset]] of $U$ of a [[Real Vectorspaces|vectorspace]] is called a vectorsubspace or linear subspace or subspace if it satisfies the following conditions:
 - If $\vec{u},\vec{v}\in U$, then $\vec{u}+\vec{v}\in U$ (closure under addition)
 - If $\vec{u}\in U,\lambda \in\mathbb{R}$, then $\lambda \vec{u}\in U$ (closure under scalar multiplication)
 - $\{ \vec{0} \}\in U$ (existence of 0)

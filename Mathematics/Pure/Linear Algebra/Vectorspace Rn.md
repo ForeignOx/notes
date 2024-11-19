@@ -1,4 +1,4 @@
-$\mathbb{R}^n$ is the [[Vectorspaces|vectorspace]] of the [[Real Numbers|real numbers]]
+$\mathbb{R}^n$ is the [[Real Vectorspaces|vectorspace]] of the [[Real Numbers|real numbers]]
 ## Definition
 $n$-dimensional real space
 $$
