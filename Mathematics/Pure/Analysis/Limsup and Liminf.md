@@ -57,3 +57,5 @@ $$
 \overline{y_{n}}=\text{sup}\left\{  1-\frac{1}{n},-\left( 1-\frac{1}{n_{1}} \right),1-\frac{1}{n+2},\dots  \right\}=1
 $$
 Also for $n$ odd
+
+#Mathematics #Analysis #Definition 

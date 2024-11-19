@@ -53,3 +53,5 @@ From this we can say:
 $$
 \mathbb{P}(X\in\mathbb{R})=\mathbb{P}(-\infty<x<\infty)=\int_{-\infty}^{\infty} f(t) \, dt =1
 $$
+
+#Mathematics #Probability #Definition 

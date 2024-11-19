@@ -22,3 +22,5 @@ $$
 $$
 \mu+\sigma Z\sim N(\mu,\sigma^{2})
 $$
+
+#Mathematics #Probability #Definition 

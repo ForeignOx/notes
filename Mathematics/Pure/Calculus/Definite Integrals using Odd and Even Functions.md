@@ -31,3 +31,5 @@ From this we can see that:
 $$
 \int _{-a}^{a}f(x) \, dx =2\int _{0}^{a}f_{\text{even}}(x) \, dx 
 $$
+
+#Mathematics #Calculus 

@@ -50,3 +50,5 @@ A^{-1}=\frac{1}{\det (A)}\text{Adj}(A)
 $$
 Which is proved automatically by dividing by $\det (A)$
 This is useful, not for calculations, but is interesting that you can express the inverse of $A$ as a polynomial of the entries of $A$
+
+#Mathematics #LinAlg #Definition

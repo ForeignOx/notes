@@ -31,3 +31,5 @@ $$
 =\frac{1}{\underbrace{ \sqrt{ \frac{n+1}{n} } }_{ \to 1 }+1}
 $$
 So this converges to $\frac{1}{2}$
+
+#Mathematics #Analysis #Theorem 

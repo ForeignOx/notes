@@ -1,5 +1,5 @@
 Suppose we have [[Systems of Linear Equations|$A\vec{x}=\vec{b}$]] for [[Matrices|$A\in M_{n}(\mathbb{R})$]] and [[Determinants|$\det(A)\neq 0$]]; $A$ is [[Matrix Inverses|invertible]]
-The unique solution to $A\vec{x}=\vec{b}$is given by:
+The unique solution to $A\vec{x}=\vec{b}$ is given by:
 $$
 x_{i}=\frac{\det(\vec{a_{1}},\dots,\vec{a}_{i-1},\vec{b},\vec{a}_{i+1},\dots,\vec{a_{n}})}{\det(A)}
 $$
@@ -22,3 +22,5 @@ $$
 =\frac{\det(\vec{a_{1}},\dots,\vec{a}_{i-1},\vec{b},\vec{a}_{i+1},\dots,\vec{a_{n}})}{\det(A)}
 $$
 We get the numerator by performing the expansion of $\det$ along the $i$th column
+
+#Mathematics #LinAlg #Theorem 

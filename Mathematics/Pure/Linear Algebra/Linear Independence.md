@@ -75,3 +75,5 @@ Are these linearly independent?
 Same process:
 ![[Linear Independence 2024-11-19 11.34.55.excalidraw]]
 There are no free variables, so unique solution to $\lambda_{1}\vec{v}_{1}+\lambda_{2}\vec{v}_{2}+\lambda_{3}\vec{v}_{3}=\vec{0}$ hence $\vec{v}_{1},\vec{v}_{2},\vec{v}_{3}$ are linearly independent
+
+#Mathematics #LinAlg #Definition

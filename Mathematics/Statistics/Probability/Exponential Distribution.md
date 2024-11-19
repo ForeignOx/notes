@@ -8,3 +8,4 @@ f(x)=\begin{cases}
 \beta e^{ -\beta x }&\text{if }x\geq 0\\0&\text{otherwise}
 \end{cases}
 $$
+#Mathematics #Probability #Distribution

@@ -55,3 +55,6 @@ $$
 $$
 = (\lambda_{1}\mu_{2}+\lambda_{2})\vec{u}_{2}+\dots+(\lambda_{1}\mu_{k}+\lambda_{k})\vec{u}_{k}\in V
 $$
+
+
+#Mathematics #LinAlg #Definition #Theorem

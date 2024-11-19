@@ -100,3 +100,5 @@ $$
 U=\text{span}<\vec{u}_{1},\vec{u}_{2},\vec{u}_{3},\vec{u}_{4}> =\text{span}<\vec{u}_{1},\vec{u}_{2}>=\text{span}<\vec{u}_{i},\vec{u}_{j}>
 $$
 where $i\neq j$, $1\leq i,j\leq 4$ (since $U$ is a plane)
+
+#Mathematics #LinAlg #Definition 

@@ -8,3 +8,5 @@ f(x)=\begin{cases}
 \frac{1}{b-a}&\text{if }x\in [a,b]\\0&\text{otherwise}
 \end{cases}
 $$
+
+#Mathematics #Probability #Distribution

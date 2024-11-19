@@ -93,3 +93,4 @@ $$
 If $s\leq t$, $(-\infty,s]\subseteq(-\infty,t]$, then $\mathbb{P}(A)\leq \mathbb{P}(B)$, using this, we get $F(s)\leq F(t)$
 
 
+#Mathematics #Probability #Definition

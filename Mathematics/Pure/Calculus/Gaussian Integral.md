@@ -27,3 +27,5 @@ Therefore:
 $$
 I=\sqrt{ \frac{\pi}{a} }
 $$
+
+#Mathematics #Calculus #Definition

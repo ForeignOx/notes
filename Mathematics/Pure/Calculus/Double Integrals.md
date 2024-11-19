@@ -175,4 +175,4 @@ So $dA=|J|dudv=2dudv$, finally the integrand is $x+y=2u$, so
 $$
 \iint_{D}(x+y)\,dA=\int _{0}^{1}\int _{0}^{1}2u\times 2 \, du  \, dv=2 
 $$
-#Mathematics
+#Mathematics #Calculus

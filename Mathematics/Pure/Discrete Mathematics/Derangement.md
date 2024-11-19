@@ -31,3 +31,4 @@ $$
 $$
 = n!
 $$
+#Mathematics #Discrete #Definition

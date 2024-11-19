@@ -61,3 +61,5 @@ Which is the general solution to the ODE in implicit form
 ## First Order Homogeneous ODEs
 The ODE is homogeneous if in $\frac{d y}{dx}=f(x,y)$, the $f(x,y)=f(tx,ty)\forall t\in\mathbb{R}$
 In this case, the substitution $y=xv(x)$ which gives a seqarable ODE for $v(x)$
+
+#Mathematics #Calculus 

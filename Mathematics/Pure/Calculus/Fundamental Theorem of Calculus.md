@@ -64,3 +64,5 @@ $$
 = \frac{1}{1+e^{u}}2x=\frac{2x}{1+e^{x^{2}}}
 $$
 
+
+#Mathematics #Calculus #Theorem 
