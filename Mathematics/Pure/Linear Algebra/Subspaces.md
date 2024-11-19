@@ -33,7 +33,7 @@ And finally $\vec{0}\in S$ as $A\vec{0}=\vec{0}$
 ## [[span|Spans]]
 If $\vec{u}_{1},\vec{u}_{2},\dots,\vec{u}_{k}\in\mathbb{R}^{n}$ then $U=\text{span}<\vec{u}_{1},\vec{u}_{2},\dots,\vec{u}_{k}> \subseteq \mathbb{R}^{n}$ is a subspace of $\mathbb{R}^{n}$
 ### Proof
-Check contitions to be a subspace:
+Check conditions to be a subspace:
 $\hspace{0pt}1$. Suppose $\lambda \vec{u}_{1}+\dots+\lambda_{k}\vec{u}_{k},\mu_{1}\vec{u}_{1}+\dots+\mu_{k}\vec{u}_{k}\in U$, then
 $$
 (\lambda_{1} \vec{u}_{1}+\dots+\lambda_{k}\vec{u}_{k})+(\mu_{1}\vec{u}_{1}+\dots+\mu_{k}\vec{u}_{k})=(\lambda_{1}+\mu_{1})\vec{u}_{1}+\dots+(\lambda_{k}+\mu_{k})\vec{u}_{k}\in U
