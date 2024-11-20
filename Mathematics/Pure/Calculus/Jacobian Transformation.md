@@ -4,7 +4,7 @@ J(u,v)=\frac{ \partial (x,y) }{ \partial (u,v) } =\det\left(
 \begin{matrix}
 \frac{ \partial x }{ \partial u } &\frac{ \partial x }{ \partial v } \\
 \frac{ \partial y }{ \partial u } & \frac{ \partial y }{ \partial v } 
-\end{matrix} \right)=\frac{ \partial x }{ \partial y } \cdot \frac{ \partial y }{ \partial v } -\frac{ \partial x }{ \partial v } \cdot \frac{ \partial y }{ \partial u } 
+\end{matrix} \right)=\frac{ \partial x }{ \partial u } \cdot \frac{ \partial y }{ \partial v } -\frac{ \partial x }{ \partial v } \cdot \frac{ \partial y }{ \partial u } 
 $$
 Note that to then use this to integrate, one needs to make sure the region becomes either $u$-simple or $v$-simple to perform an iterated integral
 ## Converting to polar
