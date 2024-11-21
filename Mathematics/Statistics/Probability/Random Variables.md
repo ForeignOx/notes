@@ -157,6 +157,32 @@ Now we will abuse notation slightly and consider these as the same:
 $$
 \mathbb{P}_{X}(\{ x \})=\mathbb{P}_{X}(x)
 $$
+## MultipleVariables
+Say we have two or multiple random variables:
+$$
+X:\Omega\to \chi 
+$$
+$$
+Y:\Omega\to\Gamma
+$$
+$$
+(X,Y):\Omega\to \chi \times\Gamma
+$$
+$$
+(X,Y)(\omega)=(X(\omega),Y(\omega))
+$$
+Let $A\in\chi \times \Gamma$, what is $\mathbb{P}((X,Y)\in A)$?
+$$
+\{ (X,Y)\in A \}=\{ \omega:(X(\omega),Y(\omega))\in A \}
+$$
+### Example
+Suppose $\chi=\mathbb{R}=\Gamma$; $A=[0,1]\times[0,1]$,
+$$
+\mathbb{P}((X,Y)\in [0,1]\times [0,1])
+$$
+$$
+ \{ X=x,Y=y \}=\{ \omega:X(\omega)=x,Y(\omega)=y \}=\{ \omega:X(\omega)=x \}\cap \{ \omega:Y(\omega)=y \}
+$$
 
 
 #Mathematics #Probability #Definition 

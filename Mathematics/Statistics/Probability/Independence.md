@@ -39,5 +39,11 @@ $$
 \mathbb{P}(A_{1})\mathbb{P}(A_{2})=\frac{3}{6}\times \frac{2}{6}=\frac{1}{6}=\mathbb{P}(A_{1}\cap A_{2})
 $$
 So $A_{1}$ and $A_{2}$ are independent
+## Multiple [[Random Variables|Radom Variables:]]
+$\hspace{0pt}2$ random variables $X$ and $Y$ are [[Independence|independent]] iff:
+$$
+\mathbb{P}(X \in C,Y\in D)=\mathbb{P}(X \in C)\mathbb{P}(Y\in D)
+$$
+For all $C,D$ such that $C\subseteq \chi,D\subseteq\Gamma$
 
 #Mathematics #Probability #Definition

@@ -43,6 +43,12 @@ And we know when we defined $\mathbb{P}_{X}$ that $\mathbb{P}(X \in\chi)=1$, so 
 $$
 \sum_{x\in \chi}p(x)=1
 $$
-
+## Joint Distribution
+The joint pmf:
+Let $(X,Y)$ be bi-variate such that $\mathbb{P}((X,Y)\in Z)=1$, then the joint pmf is given by
+$$
+p(x,y)=\mathbb{P}(X=x,Y=y)=\sum_{(x,y):x\in A,y\in B}p(x,y)
+$$
+For all $(x,y)\in Z$
 
 #Mathematics #Probability #Function 

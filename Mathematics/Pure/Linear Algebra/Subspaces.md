@@ -1,4 +1,4 @@
-A non-[[Empty Set|empty]] [[Subsets|subset]] of $U$ of a [[Real Vectorspaces|vectorspace]] is called a vectorsubspace or linear subspace or subspace if it satisfies the following conditions:
+A non-[[Empty Set|empty]] [[Subsets|subset]] of $U$ of a [[Real Vectorspaces|vectorspace]] is called a vectorsubspace or linear subspace or subspace if it satisfies the following conditions, and is itself a vectorspace:
 - If $\vec{u},\vec{v}\in U$, then $\vec{u}+\vec{v}\in U$ (closure under addition)
 - If $\vec{u}\in U,\lambda \in\mathbb{R}$, then $\lambda \vec{u}\in U$ (closure under scalar multiplication)
 - $\{ \vec{0} \}\in U$ (existence of 0)
@@ -100,5 +100,29 @@ $$
 U=\text{span}<\vec{u}_{1},\vec{u}_{2},\vec{u}_{3},\vec{u}_{4}> =\text{span}<\vec{u}_{1},\vec{u}_{2}>=\text{span}<\vec{u}_{i},\vec{u}_{j}>
 $$
 where $i\neq j$, $1\leq i,j\leq 4$ (since $U$ is a plane)
+## Examples
+$\mathbb{R}^{1}=\mathbb{R}$ is a vectorspace, $\mathbb{Z},\mathbb{Q}\subseteq \mathbb{R}$, $\mathbb{Z}$ and $\mathbb{Q}$ are not subspaces, as they are not closed under scalar multiplication, as for example, $1\in\mathbb{Z},\mathbb{Q}$, but $\sqrt{ 2 }=\sqrt{ 2 }\times 1\not\in\mathbb{Z}$ or $\mathbb{Q}$ 
+$\mathbb{R}[x]_{n}\subseteq \mathbb{R}[x]_{n+1}\subseteq \mathbb{R}[x]$, are subspaces
+Function spaces:
+$$
+\{ f:[0,1]\to \mathbb{R}\mid \text{conditions} \}
+$$
+Are subspaces of each other if the conditions are strict enough
+A subspace of $M_{n}(\mathbb{R})$ is the symmtric matrices:
+$$
+\text{sym}_{n}(\mathbb{R}):=\{ A\in M_{n}(\mathbb{R}) \mid A^{t}=A\}
+$$
+### Proof
+$0\in M_{n}(\mathbb{R})$ as the $\hspace{0pt}0$ matrix, as $0^{t}=0$
+Suppose $A,B\in \text{sym}_{n}(\mathbb{R})$, then $(A+B)^{t}=A^{t}B^{t}$, so we have closeure under addition
+$$
+A \in  \text{sym}_{n}(\mathbb{R}),\lambda \in \mathbb{R}
+$$
+$$
+(\lambda A)^{t}=\lambda(A)^{t}=\lambda A
+$$
+So we have closure under scalar multiplication
+___
+The set of even polynomials (only even powers of $x$), $\mathbb{R}[x]_\text{even}\subseteq \mathbb{R}[x]$ is a subspace of $\mathbb{R}[x]$
 
 #Mathematics #LinAlg #Definition 

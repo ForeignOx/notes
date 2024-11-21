@@ -22,5 +22,41 @@ $$
 $$
 \mu+\sigma Z\sim N(\mu,\sigma^{2})
 $$
+### Proof
+Let $Y$ be the random variable $\frac{X-\mu}{\sigma}$ where $X\sim N(\mu,\sigma^{2})$
+$$
+\mathbb{P}(Y\leq y)=\mathbb{P}\left( \frac{X-\mu}{\sigma}\leq y \right)=\mathbb{P}(X\leq \mu+\sigma y)
+$$
+$$
+= \frac{1}{\sqrt{ 2\pi }\sigma}\int _{-\infty}^{\mu+\sigma y}e^{ -(t-\mu)^{2}/2\sigma^{2} } \, dt 
+$$
+Let $z=\frac{t-\mu}{\sigma}$, then $t \to -\infty,z\to \infty,t+\mu+\sigma y,z=y,\sigma dz=dt$, so we get:
+$$
+\mathbb{P}(Y\leq y)=\frac{1}{\sqrt{ 2\pi }}\int _{-\infty}^{y}e^{ -z^{2}/2 } \, dz =\Phi(y)
+$$
+Where $\Phi$ is the cdf of a $N(0,1)$
+## Properties of Stadard Normal
+The standard normal density function is symmetric around the origin; $\phi(z)=\phi(-z)$, similarly the pdf of $N(\mu,\sigma)$ is symmetric around $\mu$
+### Proof
+$$
+\phi(z)=\frac{1}{\sqrt{ 2\pi }}e^{ -z^{2}/2 }=\phi(-z)
+$$
+Due to the square
+___
+$$
+\Phi(z)=1-\Phi(-z)
+$$
+### Proof
+$$
+\Phi(z)=\frac{1}{\sqrt{ 2\pi }}\int _{-\infty}^{z}e^{ -t^{2}/2 } \, dt 
+$$
+Letting $t=-u$, $dt=-du$, $t\to -\infty,u\to \infty,t=z,u=-z$, which putting back into the integral gives:
+$$
+\Phi(z)=-\frac{1}{\sqrt{ 2\pi }}\int _{\infty}^{-z}e^{ -u^{2}/2 } \, du=\frac{1}{\sqrt{ 2\pi }}\int _{z}^{\infty}e^{ -u^{2}/2 } \, du
+$$
+$$
+ =\mathbb{P}(Z\geq-z)=1-\Phi(-z)
+$$
+
 
 #Mathematics #Probability #Definition 

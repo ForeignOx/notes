@@ -53,5 +53,19 @@ From this we can say:
 $$
 \mathbb{P}(X\in\mathbb{R})=\mathbb{P}(-\infty<x<\infty)=\int_{-\infty}^{\infty} f(t) \, dt =1
 $$
-
+## Joint Distribution
+The joint pdf:
+Let $X,Y$ be real valued random variables, then the joint probability function:
+$$
+f:\mathbb{R}^{2}\to R
+$$
+Which $f\geq 0$, such that:
+$$
+\mathbb{P}(X\in [a,b],Y\in [c,d])=\int _{a}^{b}\left( \int _{c}^{d} f(x,y) \, dx  \right) \, dy 
+$$
+Recall that for a continuous random variable,
+$$
+\mathbb{P}(X \in [a,b])=\int ^{b}_{a}  \, f(x)dx 
+$$
+Refers to an area, with two variables, it is instead the bolume scale factor
 #Mathematics #Probability #Definition 
