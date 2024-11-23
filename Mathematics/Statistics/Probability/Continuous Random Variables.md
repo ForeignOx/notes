@@ -55,9 +55,9 @@ $$
 $$
 ## Joint Distribution
 The joint pdf:
-Let $X,Y$ be real valued random variables, then the joint probability function:
+Let $X,Y$ be real valued random variables are jointly continuously distributed if they have a joint probability function:
 $$
-f:\mathbb{R}^{2}\to R
+f:\mathbb{R}^{2}\to \mathbb{R}
 $$
 Which $f\geq 0$, such that:
 $$
@@ -67,5 +67,49 @@ Recall that for a continuous random variable,
 $$
 \mathbb{P}(X \in [a,b])=\int ^{b}_{a}  \, f(x)dx 
 $$
-Refers to an area, with two variables, it is instead the bolume scale factor
+Refers to an area, with two variables, it is instead the volume scale factor
+## Theorem
+For a set $A\subseteq \mathbb{R}^{2}$, 
+$$
+\mathbb{P}((X,Y)\in A)=\iint_{A}f(x,y)\,dydx
+$$
+When $A$ is a finite union of sets of the following type:
+$$
+\{ x\in [a,b],\phi_{1}(x)\leq y\leq\phi_{2}(x) \},
+$$
+$$
+ \{\psi_{1}(y)\leq x\leq \psi_{2}(y),y\in [c,d] \}
+$$
+For continuous functions $\phi_{1},\phi_{2},\psi_{1},\psi_{2}$
+An interpretation is:
+$$
+\mathbb{P}(X=0)=0
+$$
+$$
+\mathbb{P}(X\in [x,x+dx])\approx f(x)dx
+$$
+$$
+ \mathbb{P}(X \in [x,x+dx],Y \in [y,y+dy])=f(x,y)dxdy
+$$
+#### Corollary
+$$
+\iint_{\mathbb{R}^{2}}f(x,y)=1
+$$
+$$
+\mathbb{R}^{2}=(-\infty,\infty)\times(-\infty ,\infty)=A=\{ -\infty<x<\infty ,-\infty<y<\infty \}
+$$
+Then the [[marginals|marginal]] densities are given by
+$$
+f_{X}(x)=\int_{-\infty}^{\infty} f(x,y) \, dy,f_{Y}(y)=\int_{-\infty}^{\infty} f(x,y) \, dx
+$$
+If $X$ is continuous, $f_{X}$, and $Y$ is continuous, $f_{Y}$, then $(X,Y)$ is not necessarily coninuously distributed, for example, let $X$ be a continuous random variable with pdf $f_{X}$. Define $Y=2X$, Then $(X,Y)$ is not jointly distributed
+##### Proof
+Suppose not, then there exists a joint pdf, sya $f(x,y)$;
+$$
+\mathbb{P}(2X=Y)=\iint_{\{ (x,y):y=2x \}}f(x,y)\,dydx=\int_{-\infty}^{\infty}  \,\int _{2x}^{2x}f(x,y) \, dy  dx =0
+$$
+However, we know that $\mathbb{P}(Y=2X)=1$
+
+
+
 #Mathematics #Probability #Definition 

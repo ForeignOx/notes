@@ -114,6 +114,20 @@ $$
 $$
 \mathbb{P}\left( \bigcap_{i=0}^{k}A_{i}|A_{0} \right)=\mathbb{P}(A_{1}|A_{0})\mathbb{P}(A_{2}|A_{1}\cap A_{0})\mathbb{P}(A_{3}|A_{2}\cap A_{1}\cap A_{0})\dots \mathbb{P}\left( A_{k-1}|\bigcap_{i=0}^{k-2}A_{i} \right)\mathbb{P}\left( A_{k}|\bigcap_{i=1}^{k-1}A_{i} \right)
 $$
+___
+## Multivariate Distributions
+$$
+\mathbb{P}(A|B)=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}
+$$
+When $\mathbb{P}(B)>0$, this is applicable to $\hspace{0pt}2$ random varibales, $X$ and $Y$, the conditional probability of $X$ given $Y=y$ is defined as:
+$$
+p_{X|Y}(x|y)=\frac{p_{(X,Y)}(x,y)}{p_{Y}(y)}=\mathbb{P}(X=x|Y=y)
+$$
+Where $p_{Y}(y)>0$
+Similarly:
+$$
+p_{Y|X}(y|x)=\frac{p(x,y)}{p_{X}(x)}=\mathbb{P}(Y=y|X=x)
+$$
 
 
 

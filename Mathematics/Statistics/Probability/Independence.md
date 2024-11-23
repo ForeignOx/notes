@@ -44,6 +44,14 @@ $\hspace{0pt}2$ random variables $X$ and $Y$ are [[Independence|independent]] if
 $$
 \mathbb{P}(X \in C,Y\in D)=\mathbb{P}(X \in C)\mathbb{P}(Y\in D)
 $$
-For all $C,D$ such that $C\subseteq \chi,D\subseteq\Gamma$
+For all $C,D$ such that $C\subseteq \chi,D\subseteq\Gamma$, known as the product of the marginals, or marginal split
+This can be rewritten for [[Discrete Random Variables|discrete variables]] as:
+$$
+p_{(X,Y)}(x,y)=p_{X}(x)p_{Y}(y)
+$$
+And [[Continuous Random Variables|continuous variables]] as:
+$$
+f(x,y)=f_{X}(x)f_{Y}(y)
+$$
 
 #Mathematics #Probability #Definition

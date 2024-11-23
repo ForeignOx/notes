@@ -45,10 +45,35 @@ $$
 $$
 ## Joint Distribution
 The joint pmf:
-Let $(X,Y)$ be bi-variate such that $\mathbb{P}((X,Y)\in Z)=1$, then the joint pmf is given by
+Let $(X,Y)$ be a bivariate random vector, such that $\mathbb{P}((X,Y)\in Z)=1$, then the joint pmf is given by
 $$
 p(x,y)=\mathbb{P}(X=x,Y=y)=\sum_{(x,y):x\in A,y\in B}p(x,y)
 $$
 For all $(x,y)\in Z$
+### $(X,Y)$ is Discrete iff $X$ and $Y$ are both Discrete
+Let $X$ and $Y$ be $\hspace{0pt}2$ random variables on the same probability space $\Omega$, then the bivariate random variable $(X,Y)$ is discrete iff both $X$ and $Y$ are discrete
+Moreover if $\mathbb{P}(X \in\chi)={{\mathbb{P}(Y\in\Gamma)}}=1$, then:
+$$
+p_{X}(x):=\mathbb{P}(X=x)=\sum_{y\in \Gamma}p(x,y)
+$$
+$$
+ p_{Y}(y):=\mathbb{P}(Y=y)=\sum_{x\in \chi}p(x,y)
+$$
+So the pmfs for $X$ and $Y$ become the [[Marginal|marginals]] of $X$ and $Y$
+#### Proof
+$$
+\mathbb{P}(X=x)=\mathbb{P}(X=x,Y\in \Gamma)=\mathbb{P}\left( \bigcup_{y\in \Gamma}\{ X=x,Y=y \} \right)
+$$
+Which by the [[Partition Theorem|partition theorem]], is equal to:
+$$
+=\sum_{y\in \Gamma}\mathbb{P}(X=x,Y=y)=p(x,y)
+$$
+By symmetry, the same is true for $Y$
+### Subsets
+If $X$ and $Y$ are jointly discfrete, then $A\subseteq Z$, where $\mathbb{P}((X,Y)\in Z)=1$, then for any $A\subseteq Z$,
+$$
+\mathbb{P}((X,Y)\in A)=\sum_{(x,y)\in A}p(x,y)
+$$
+### Independce
 
 #Mathematics #Probability #Function 

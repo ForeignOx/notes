@@ -30,5 +30,9 @@ $$
 $$
 = \frac{1}{3}\left( \frac{10+20+30}{100} \right)=0.2
 $$
+## Joint Distribution
+$$
+\mathbb{P}((X=x)|(Y=y))=p_{X}(x)=\sum_{y\in \Gamma}p_{y|x}(y|x)p_{X}(x)
+$$
 
 #Mathematics #Probability #Theorem  

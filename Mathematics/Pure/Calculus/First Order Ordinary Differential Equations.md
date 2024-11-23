@@ -217,5 +217,95 @@ $$
 \implies y= \frac{c-e^{x}}{e^{ 3x }+1}
 $$
 By rewriting the ODE in the original form to check that this is indeed a solution
+___
+Consider an ODE $Mdx+Ndy=0$ which is not exact, i.e. with $\frac{ \partial M }{ \partial y }\neq \frac{ \partial N }{ \partial x }$, multiplying the ODE by $I(x,y)$ gives an equivalent ODE $mdx+ndy=0$, where $m=MI$ and $n=NI$, if this new ODE is exact, i.e. $\frac{ \partial m }{ \partial y }=\frac{ \partial n }{ \partial x }$, then $I(x,y)$ is an integrating factor for the original ODE
+### Example
+Show that $x$ is an integrating factor for $(3xy-y^{2})dx+x(x-y)dy=0$ and hence find the general solution
+$$
+M=3xy-y^{2},N=x^{2}-xy
+$$
+So
+$$
+\frac{ \partial M }{ \partial y } =3x-2y,\frac{ \partial N }{ \partial x } =2x-y
+$$
+So not exact, but with $I(x,y)=x$, we have
+$$
+m=MI=3x^{2}y-xy^{2}
+$$
+$$
+ n=NI=x^{3}-x^{2}y
+$$
+And
+$$
+\frac{ \partial m }{ \partial y } =3x^{2}-2xy=\frac{ \partial n }{ \partial x} 
+$$
+So $mdx+ndy=0$ is exact, we can now solve with previous method:
+$$
+m=\frac{ \partial g }{ \partial x } =3x^{2}y-xy^{2}
+$$
+So
+$$
+g(x,y)=x^{3}y-\frac{1}{2}x^{2}y^{2}+\phi (y)
+$$
+Then
+$$
+\frac{ \partial g }{ \partial y } =x^{3}-x^{2}y+\phi'(y)
+$$
+And
+$$
+n=x^{3}-x^{2}y
+$$
+So $\phi'(y)=0$, so we can take $\phi(y)=0$, so final solution is then $g=c$, so
+$$
+x^{3}y-\frac{1}{2}x^{2}y^{2}=c
+$$
+Research how to find these integrating factors plssss
+Sam my baby thinks that there is always an integrating factor, but there is not a perfect method to find them :(
+## Bernoulli Equations
+A Bernoulli Equation is a non-linear [[Differential Equations|ODE]] of the form
+$$
+y'+p(x)y=q(x)y^{n}
+$$
+With $n\neq 0,1$
+Dividing through by $y^{n}$ gives
+$$
+y^{-n}y'+p(x)y^{1-n}=q(x)
+$$
+Using the substitution $v(x)=y^{1-n}(x)$, we have $v'=(1-n)y^{-n}y'$, and so we can re-write the ODE in terms of $v$ as
+$$
+\frac{1}{1-n}v'+p(x)v=q(x)
+$$
+Or
+$$
+v'+(1-n)p(x)v=(1-n)q(x)
+$$
+Which is now linear for $v$, so we we can solve it using the above method for linear ODEs
+### Example
+Solve
+$$
+y'-\frac{2y}{x}=-x^{2}y^{2}
+$$
+This is Bernoulli with $n-2$, so we make the substitution $v(x)=y^{1-n}=y^{-1}$, hence $v'=-y^{-2}y'$ and so if we divide our original ODE by $y^{2}$, we get that:
+$$
+y^{-2}y'-\frac{2}{xy}=-x^{2}
+$$
+Then we can write this in terms of $v$ as:
+$$
+-v'-\frac{2v}{x}=-x^{2}
+$$
+So we have the linear ODE
+$$
+v'+\frac{2v}{x}=x^{2}
+$$
+The integrating factor is $I(x)=\exp\left( \int \frac{2}{x} \, dx \right)=x^{2}$ and hence the solution is
+$$
+v(x)=\frac{1}{I}\int QI \, dx=x^{-2}\int x^{4} \, dx =\frac{1}{5}(x^{3}+cx^{-2}) 
+$$
+Hence the solution to the original Bernoulli ODE is:
+$$
+y(x)=\frac{1}{v(x)}=\frac{5x^{2}}{x^5+c}
+$$
+
+
 
 #Mathematics #Calculus 
