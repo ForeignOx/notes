@@ -18,7 +18,8 @@ Suppse $\vec{u},\vec{v}\in\mathbb{R}^{n}$, $\vec{u}\neq  \vec{0}\neq \vec{v}$, t
 $\vec{u},\vec{v}$ are linearly dependent iff $\exists\lambda,\mu \in\mathbb{R}$, where neither are $\hspace{0pt}0$ such that $\lambda \vec{u}+\mu \vec{v}= \vec{0}$
 Say $\lambda \neq 0$ without loss of generality, then $\vec{u}=\left( -\frac{\mu}{\lambda} \right)\vec{v}$, also given $\vec{u}\neq 0$
 ## Extending Linearly Independent Sets
-Suppose $\vec{u}_{1},\dots,\vec{u}_{r}\in\mathbb{R}^{n}$ are linearly independent, and suppose $\vec{u}\in\mathbb{R}^{n}$, [[span|$\vec{u} \not\in \text{span}< \vec{u}_{1},\dots,\vec{u}_{r} >$]], then $\{\vec{u}, \vec{u}_{1},\dots,\vec{u}_{r} \}$ is also linearly indipendent
+Suppose $\vec{u}_{1},\dots,\vec{u}_{r}\in V$ are linearly independent, and suppose $\vec{u}\in V$, [[span|$\vec{u} \not\in \text{span}< \vec{u}_{1},\dots,\vec{u}_{r} >$]], then $\{\vec{u}, \vec{u}_{1},\dots,\vec{u}_{r} \}$ is also linearly indipendent
+This can be used to find [[Basis|bases]], but may not terminate, so is potentially not as useful as [[Span#Lemma 2|this method]]  
 ### Proof
 Suppose $\vec{u},\vec{u}_{1},\dots,\vec{u}_{r}$ are not linearly independent, then there exists not all $\lambda,\lambda_{i}\in\mathbb{R},1\leq i\leq r$ such that:
 $$

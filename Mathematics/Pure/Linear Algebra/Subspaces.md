@@ -31,7 +31,7 @@ $$
 So $\lambda \vec{u}\in S$
 And finally $\vec{0}\in S$ as $A\vec{0}=\vec{0}$
 ## [[span|Spans]]
-If $\vec{u}_{1},\vec{u}_{2},\dots,\vec{u}_{k}\in\mathbb{R}^{n}$ then $U=\text{span}<\vec{u}_{1},\vec{u}_{2},\dots,\vec{u}_{k}> \subseteq \mathbb{R}^{n}$ is a subspace of $\mathbb{R}^{n}$
+If $\vec{u}_{1},\vec{u}_{2},\dots,\vec{u}_{k}\in\mathbb{R}^{n}$ then $U=\text{span}<\vec{u}_{1},\vec{u}_{2},\dots,\vec{u}_{k}> \subseteq V$ is a subspace of $V$
 ### Proof
 Check conditions to be a subspace:
 $\hspace{0pt}1$. Suppose $\lambda \vec{u}_{1}+\dots+\lambda_{k}\vec{u}_{k},\mu_{1}\vec{u}_{1}+\dots+\mu_{k}\vec{u}_{k}\in U$, then
@@ -43,6 +43,8 @@ $$
 \lambda(\lambda \vec{u}_{1}+\dots+\lambda_{k}\vec{u}_{k})=(\lambda\lambda_{1})\vec{u}_{1}+\dots+(\lambda\lambda_{k})\vec{u}_{k}\in U
 $$
 $\hspace{0pt}3$. $\vec{0}=0\vec{u}_{1}+\dots+0\vec{u}_{k}\in U$
+## Any Vectorspace
+If $\vec{u}_{1},\dots,\vec{u}_{r}\in V$, then $\text{span}< \vec{u}_{1},\dots,\vec{u}_{r} >\subseteq V$ is a subspace of $V$ 
 ### Examples
 - $0=\{ \vec{0} \}\subseteq \mathbb{R}^{n}$, $0=\text{span}<\vec{0}>$
 - $\mathbb{R}^{n}\subseteq \mathbb{R}^{n}$, $\mathbb{R}^{n}=\text{span}< \vec{e}_{1},\dots,\vec{e}_{n}>$
