@@ -115,7 +115,8 @@ $$
 \mathbb{P}\left( \bigcap_{i=0}^{k}A_{i}|A_{0} \right)=\mathbb{P}(A_{1}|A_{0})\mathbb{P}(A_{2}|A_{1}\cap A_{0})\mathbb{P}(A_{3}|A_{2}\cap A_{1}\cap A_{0})\dots \mathbb{P}\left( A_{k-1}|\bigcap_{i=0}^{k-2}A_{i} \right)\mathbb{P}\left( A_{k}|\bigcap_{i=1}^{k-1}A_{i} \right)
 $$
 ___
-## Multivariate Distributions
+## Multivariate Distributions#
+### Discrete
 $$
 \mathbb{P}(A|B)=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}
 $$
@@ -127,6 +128,22 @@ Where $p_{Y}(y)>0$
 Similarly:
 $$
 p_{Y|X}(y|x)=\frac{p(x,y)}{p_{X}(x)}=\mathbb{P}(Y=y|X=x)
+$$
+### Continuous
+Let $X$ and $Y$ be joint continuous with joint pdf $f(x,y)$, then the conditional pdf of $X$ given $Y=y$ is given by:
+$$
+f_{X|Y}(x|y)=\frac{f(x,y)}{f_{Y}(y)}
+$$
+Derivation:
+$$
+\mathbb{P}(X|Y)=\mathbb{P}(X \in [x,x+dx]|Y \in [y,y+dy])=\frac{\mathbb{P}(X \in [x,x+dx]\cap Y\in [y,y+dy])}{\mathbb{P}(Y\in [y,dy])}
+$$
+$$
+ \approx \frac{f(x,y)dxdy}{f_{Y}(y)dy}\approx \frac{f(x,y)}{f_{Y}(y)}
+$$
+When $f_{Y}(y)>0$, and similarly the conditional pdf of $Y$ given $X=x$ is:
+$$
+f_{Y|X}(y|x)=\frac{f(x,y)}{f_{X}(x)}
 $$
 
 

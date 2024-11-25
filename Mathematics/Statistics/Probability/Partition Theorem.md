@@ -34,5 +34,11 @@ $$
 $$
 \mathbb{P}((X=x)|(Y=y))=p_{X}(x)=\sum_{y\in \Gamma}p_{y|x}(y|x)p_{X}(x)
 $$
+Let $X$ and $Y$ be jointly continuous, with pdf $f$, then:
+$$
+f_{X}(x)=\int_{-\infty}^{\infty} f_{X|Y}(x|y)f_{Y}(y) \, dx 
+$$
+
+
 
 #Mathematics #Probability #Theorem  
