@@ -171,6 +171,16 @@ $$
 |x_{n}-\sqrt{ 2 }|\leq \frac{1}{2^{n}}
 $$
 And we know $\frac{1}{2^{n}}$ is a case of [[Convergence#In the form of $x_{n}=c {n}$|$c^{n}$]], so we know it converges to $\hspace{0pt}0$, so $x_{n}-\sqrt{ 2 }$ tends to $\hspace{0pt}0$, so $x_{n}$ tends to $\sqrt{ 2 }$
-
+## [[Series|Series]]
+Assume the series $\sum_{k=0}^{\infty} a_{k}$ and $\sum_{k=0}^{\infty} b_{k}$ are convergent with limits $a$ and $b$ respectively, then:
+$$
+\sum_{k=0}^{\infty}a_{k}+b_{k}
+$$
+Converges to $a+b$
+$$
+\sum_{k=0}^{\infty}ca_{k}
+$$
+Converges to $ca$, where $c\in\mathbb{R}$
+The proof is obtained by using CoLT for sequences on the partial sums
 
 #Mathematics #Analysis #Theorem 

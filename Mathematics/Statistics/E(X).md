@@ -1,6 +1,10 @@
 $E(X)$ is the expected value, or mean of a [[Git?/Mathematics/Statistics/Probability/Discrete Random Variables|discrete random variable]] X, and can be calculated like so:
 $$
-E(X)=\sum xP(X=x)
+E(X)=\sum_{x\in \mathbb{R}} xP(X=x)
+$$
+Or for a [[Continuous Random Variables|continuous random variable]],
+$$
+E(X)=\int_{-\infty}^{\infty} xf(x) \, dx 
 $$
 ___
 To find $E(f(X))$, where $f(X)$ is a function of $X$, you can use the formula:
