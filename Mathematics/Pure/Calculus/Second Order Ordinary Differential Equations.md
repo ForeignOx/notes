@@ -82,7 +82,7 @@ Where $R=\sqrt{ P^{2}+Q^{2} }$ and $\theta=\arctan\left( \frac{Q}{P} \right)$
 ### Non-Homogeneous
 For a 2nd order, linear non-homogeneous ODE with constant coefficients:
 $$
-a \frac{d^{2}y}{dx^{2}}+b \frac{dy}{dx}+cy=f(x)
+a \frac{d^{2}y}{dx^{2}}+b \frac{dy}{dx}+cy=\phi(x)
 $$
 #### General Form
 If $y=y_{1}$ is a solution to:
@@ -119,15 +119,18 @@ $$
 y=Ae^{\alpha x}+Be^{\beta x}
 $$
 #### Particular Integral
-This is $y_{1}$ from above, do this part second
-##### f(x)=constant
-Try $y=\alpha$
-##### f(x)=linear
-Try $y=\alpha x+\beta$
-##### f(x)=quadratic
-Try $y=\alpha x^{2}+\beta x+\gamma\implies y'=2\alpha x+\beta\implies y''=2\alpha$
-$a(2\alpha)+b(2\alpha x+\beta )+c(\alpha x^2 + \beta x + \gamma )$
-##### $f(x)$ = polynomial#
-Try $y=\alpha_{0}+\alpha_{1}x+\alpha_{2}x^{2}+\dots+\alpha_{n}x^{n}$
+We need to find a particular integral to satisfy the ODE
+When $\phi(x)$ ha s the form of a polynomial, exponential or $\sin$ or $\cos$ function, or a sum or product of these, we can apply the method of undetermined coefficients
+To apply this method, we try a $y_{PI}$ of a particular form based on the form of $\phi$ containing some unknown constant coefficients. We then determine these coeffifiences such that $y_{PI}$ solves the original equation
+The following table lists terms that can appear in $\phi$ in order to use this method, and the corresponding form to try for $y_{PI}$
+
+| Term in $\phi(x)$ | Form to try for $y_{PI}$                   |
+| ----------------- | ------------------------------------------ |
+| $e^{ \gamma x }$  | $a_{1}e^{ \gamma x }$                      |
+| $x^{n}$           | $a_{0}+a_{1}x+a_{2}x^{2}+\dots+a_{n}x^{n}$ |
+| $\cos(\gamma x)$  | $a_{1}\cos(\gamma x)+a_{2}\sin(\gamma x)$  |
+| $\sin(\gamma x)$  | $a_{1}\cos(\gamma x)+a_{2}\sin(\gamma x)$  |
+If $\phi(x)$ contains sums or products of the above terms,, we try the corresponding sum/product of the corresponding forms
+If the listed form to try is already in the complimentary function, then putting this into the original ODE will give $0$ rather than $\phi(x)$, we then try a $y_{PI}$ of the suggested form multiplied by $x$. We can apply this rule twice (or more times) if the first applicatio also gives a terms in $y_{CF}$
 
 #Mathematics #Calculus
