@@ -38,6 +38,27 @@ $$
 y=(A+Bx)e^{\alpha x}
 $$
 Note that in this case the product rule will be needed to find the particular solution
+We know this as $y_{2}=xe^{ \lambda x }$ is also a solution to $y_{1}=e^{ \lambda x }$, since:
+$$
+0=ay''+by+c
+$$
+Which one can rewrite as:
+$$
+0=a(y''-2\lambda y'+\lambda^{2}y)
+$$
+Since there is a repeated root
+We have:
+$$
+y_{2}'=e^{ \lambda x }+\lambda e^{ \lambda x }
+$$
+$$
+y_{2}''=\lambda e^{ \lambda x }+\lambda e^{ \lambda x }+\lambda^{2}xe^{ \lambda x }=2\lambda e^{ \lambda x }+\lambda^{2}xe^{ \lambda x }
+$$
+So:
+$$
+y_{2}''-2\lambda y_{2}'+\lambda^{2}y_{2}=(2\lambda e^{ \lambda x }+\lambda xe^{ \lambda x })-2\lambda(e^{ \lambda x }+\lambda e^{ \lambda x })+\lambda^{2}(xe^{ \lambda x })=0
+$$
+So $y_{2}$ is a second independent solution, as required
 ### Complex Roots
 If $\alpha,\beta \in \mathbb{C}$, $\alpha=\beta ^{*}$, ie. $\alpha=a+bi$, $\beta=a-bi$ and the general solution will be:
 $$
