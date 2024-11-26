@@ -113,3 +113,13 @@ Assume $\hspace{0pt}2$, suppose $\exists \vec{u}\in V$ not expressible in this w
 If we have $\vec{u}=\lambda_{1}\vec{u}_{1}+\dots+\lambda_{r}\vec{u}_{r}$, and $\vec{u}=\mu_{1}\vec{u}_{1}+\dots+\mu_{r}\vec{u}_{r}$ then $(\lambda_{1}-\mu_{1})\vec{u}_{1}+\dots+(\lambda_{r}-\mu_{r})\vec{u}_{r}= \vec{0}$, hence $\lambda_{i}=\mu_{i}$ for $1\leq i\leq r$
 $3\implies 4$:
 Assume $\hspace{0pt}3$, then $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is spanning since all $\vec{u}\in V$  satisfy $\vec{u}\in \text{span}< \vec{u}_{1},\dots,\vec{u}_{r} >$ is not minimal. Without loss of generality, suppose $V=\text{span}< \vec{u}_{2},\dots,\vec{u}_{r} >$ ten $\vec{u}_{1}=\lambda_{2}\vec{u}_{2}+\dots+\lambda_{r}\vec{u}_{r}$ or some $\lambda_{2},\dots,\lambda_{r} \in\mathbb{R}$, these are two different expressions for $\vec{u}_{1}$ which gives a contradiction :O
+$4\implies1$:
+Assume $\hspace{0pt}4$, then $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is certainly spanning, but is it linearly independent? Suppose it isn't for a contradiction, then $\exists\lambda_{1},\dots,\lambda _{r}\in\mathbb{R}$, not all $\hspace{0pt}0$ such that $\lambda_{1}\vec{u}_{1}+\dots+\lambda_{r}\vec{u}_{r}= \vec{0}$, if $\lambda _{i}\neq 0$, then 
+$$
+\vec{u}_{i}=-\frac{-\lambda_{1}}{\lambda_{i}}\vec{u}_{1}+\dots+\frac{-\lambda_{i-1}}{\lambda_{i}}\vec{u}_{i-1}+\frac{-\lambda_{i+1}}{\lambda_{i}}\vec{u}_{i+1}+\dots+\frac{-\lambda_{r}}{\lambda_{i}}\vec{u}_{r}
+$$
+$$
+\in \text{span}< \vec{u}_{1},\dots,\vec{u}_{i-1},\vec{u}_{i+1},\dots,\vec{u}_{r} > 
+$$
+So $\text{span}< \vec{u},\dots,\vec{u}_{i-1},\vec{u}_{i+1},\dots,\vec{u}_{r} >=\text{span}< \vec{u}_{1},\dots,\vec{u}_{r} >$, so $\text{span}< \vec{u}_{1},\dots,\vec{u}_{r} >$ was not a minimal spanning set
+

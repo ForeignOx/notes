@@ -115,5 +115,8 @@ $$
 $$
  \lambda p=(\lambda a_{0})+(\lambda a_{1})x+\dots+(\lambda a_{n})x^{n}
 $$
+## Finite Dimensional Vectorspaces
+We call a vectorspace finite dimensional iff it has a finite [[basis|basis]]
+What is the dimension of a finite dimensional vectorspace? Our test can be that we want $\text{dim}(\mathbb{R}^{n})=n$
 
 #Mathematics #LinAlg #Definition
