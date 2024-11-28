@@ -23,3 +23,27 @@ $$
 \end{pmatrix}  \right\}
 $$
 Which we can check to be spanning and linearly indipendent, so $\text{dim}(\text{sim}_{2}(\mathbb{R}))=3$
+## Theorem
+Suppose that $V$ is a finite dimensional vectorspace, and that $U\in V$ is a subspace of $V$, then $U$ is also finite dimensional, $\text{dim}(U)\leq \text{dim}(V)$
+### Proof
+If $U$ were not finite dimensional, then it doesn't contain a finite basis, i.e. it doesn't contain any maximal linearly independent subset
+Hence $U$ contains arbitrarily large linearly independent subsets, hence so does $V$, but any linealy independent subset of $V$. But any linearly indep;nendnt subset, since $V$ has a spanning set of $\text{dim}(V)$ elements, so we have a contradiction, thus $U$ is of finite dimension
+Suppowe $\text{dim}(U)>\text{dim}(V)$, then $U$ contaisnsa basis for $U$ (and so $V$) contains a basis for $U$ of $\text{dim}(U)$ elements, but this is a linearly idependent subset with more elements than are spanning set given by a basis of $V$, giving us a contradiction
+The other direction (iff):
+Let $V\subseteq U$, let $A$ be a basis for $U$. If $B$ is not a basis for $B$, then it is not maximal linearly independnent subset of $V$, so then we can find a linearly independent subset of $U$, with
+$$
+\text{dim}(B)=\text{dim(U)}+1=\text{dim}(V)
+$$
+elements, but this has more elements than a basis
+## Thrm
+Let $V$ be a vectorspace, with dimension of $\text{dim}(v)=k$, let $S=\{ \vec{v}_{1},..,\vec{v}_{l} \}\subseteq V$
+If $l>k$, then $S$ is not linearly independntm If $l<k$ then $S$ is not spanning
+If $l=k$, then these statements are pairwise equivalent:
+- $S$ is a basis for $V$
+- $S$ is linearly independent
+- $S$ is a spanning set for $V$
+### Proof
+Let there be $V$ containing a basis, hence a spanning set of $k$ elements, hence the second statement follows from steinitz
+$V$ contains a basis, hence a linearly independnent set of $k$ elements, hence this follows from steinitz
+Assume the second statement, $S$ must be a maximal linearly independent set since linearly independent sets have at most $k=l$ elements, then $S$ is  basis
+$S$ must be a minimal spanning set since spanning sets have at least $k=l$ elements

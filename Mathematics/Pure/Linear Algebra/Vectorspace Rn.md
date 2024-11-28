@@ -52,5 +52,39 @@ v_{1}\\v_{2}\\\vdots\\v_{n}
 $$
 ## Is $\mathbb{R}=\mathbb{R}^1$?
 There is a very obvious bijection between the two [[sets|sets]], but the set $\mathbb{R}^1$ technically has fewer operations soooooooooooooooooooooo nuh uh. except that other guy said yuh uh sooooooo idk \shrugh
+## Basis?
+$\{ e_{1},\dots,e_{n}q\subseteq \mathbb{R}^{n}  \}\subseteq \mathbb{R}^{n}$ is the standard base, other bases exist, for example, we shaw that:
+$$
+\left\{  
+\begin{pmatrix}
+1\\0
+\end{pmatrix},\begin{pmatrix}
+1\\1
+\end{pmatrix}
+ \right\}\in \mathbb{R}^{2}
+$$
+
+Is a spanning set for $\mathbb{R}^{2}$, since $\text{dim}(\mathbb{R}^{2})=2$, tiis $B$ is in vact a basis for $\mathbb{R}^{2}$
+
+## Thrm
+Suppose $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}\subseteq \mathbb{R}^{n}$, then
+If $r>n$, then $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is not linearly independent
+If $r<n$, then $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is not spanning
+Suppose $r=n$, we have that $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is a basis iff:
+$$
+A=\begin{pmatrix}
+\vec{u}_{1}&\vec{u}_{2}&\dots&\vec{u}_{n}
+\end{pmatrix}\in M_{n}(\mathbb{R})
+$$
+Is non-singular iff $\det(A)\neq 0$
+### Proof
+The first two are just the previous theorem
+The third one: $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is a basis iff $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is linearly independent (again by previous theorem) iff
+$$
+\lambda_{1}\vec{u}_{1}+\dots+\lambda_{n}\vec{u}_{n}\implies\lambda_{1}+\dots+\lambda_{n}\vec{u}_{n}=\vec{0}\iff \vec{\lambda}=\vec{0}
+$$
+iff $A$ is invertible; $\det(A)\neq 0$
+
+
 
 #Mathematics #LinAlg #Definition
