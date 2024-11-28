@@ -180,4 +180,24 @@ a_{n}=\begin{cases}
 \end{cases}
 $$
 ___
-
+Solve for $(a_{n})$ satisfying the recurrence relation $a_{n}=a_{n-1}+n$ with initial condition $a_{0}=1$
+$$
+f(x)=\sum_{ n=0} ^{\infty}  a_{n}x^{n}=a_{0}+\sum_{ n=1} ^{\infty}  a_{n}x^{n}=a_{0}+\sum_{ n=1} ^{\infty}  (a_{n-1}+n)x^{n}
+$$
+$$
+= a_{0}+\sum_{ n=1} ^{\infty}  a_{n-1}x^{n}+\sum_{ n=1} ^{\infty}  nx^{n}
+$$
+$$
+=1+x \sum_{ n=1} ^{\infty}  a_{n-1}x^{n-1}+x \sum_{ n=1} ^{\infty}  nx^{n}
+$$
+$$
+= 1+x \sum_{ n=1} ^{\infty}  a_{n}x^{n}+x \sum_{ n=1} ^{\infty}  (n+1)x^{n}
+$$
+$$
+= 1+xf(x)+x(1-x)^{-2}
+$$
+As 
+$$
+(1-x)^{-2}=\sum_{ n=0} ^{\infty}  (n+1)x^{n}
+$$
+Which we obtain from the above formula, substituting $n=2$
