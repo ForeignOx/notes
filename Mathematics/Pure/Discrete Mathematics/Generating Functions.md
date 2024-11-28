@@ -68,4 +68,44 @@ $$
 (1+x+x^{2})^{n}=\sum_{ k=1} ^{\infty}  a_{k}x^{k}
 $$
 Is the generating function of the sequence $a_{k}$
-To mak further progress, we need to be able to handl these formal sums in a more compact form
+To mak further progress, we need to be able to handle these formal sums in a more compact form
+In nice exapmles, the formal power series has a closed form expression in terms of elementary functions for which we know the power series expension explicitly, for insance we can write:
+$$
+(1+x+x^{2})^{2}=\left( \frac{1-x^{3}}{1-x} \right)^{n}
+$$
+## Lemma
+For $n\geq 0\in\mathbb{Z}$,
+$$
+\sum_{ k=1} ^{ n}  x^{k}=\frac{1-x^{n+1}}{1-x}
+$$
+Is the generating function for the sequence $1,1,1,1,\dots,1,1,0,0,\dots$ (the first $n+1$ terms are 1)
+### Proof
+This is the sum of a geometric sequence, it can be proven by induction, or directly in the form:
+$$
+(1-x)\sum_{ k=0} ^{ n}  x^{k}=\sum_{ k=0} ^{ n}  (x^{k}-x^{k+1})=1-x^{n+1}
+$$
+Since the sum telescoples
+___
+The generating functon for the sequence $(a_{k})_{k\in\mathbb{N}}=1$ is:
+$$
+\sum_{ k=0} ^{\infty} x^{k}=\frac{1}{1-x} 
+$$
+The sum to infinity makes analytical sense only for $|x|<1$, in which case, we can take $n\to \infty$ in the part above
+___
+The generating function for the sequence ${n+k-1 \choose k }$, for $k\geq 0$ is:
+$$
+\sum_{ k=0} ^{\infty} {n+k-1 \choose k }x^{k}=\frac{1}{(1-x)^{n}}
+$$
+If you use the [[Binomial Theorem#Extended Theorem|extended binomial theorem]] here, you derive the required result
+Alternatively, we can use the method 
+___
+If $f(x)=\sum_{ k=0} ^{\infty} a_{k}x^{k}$ and $g(x)=\sum_{ k=0} ^{\infty} b_{k}x^{k}$ are the generating functions for the sequences $(a_{k})$ and $(b_{k})$ respectively, then
+$$
+f(x)g(x)=\sum_{ k=0} ^{\infty}  c_{k}x^{k}
+$$
+Is the generating function of the sequence $(c_{k})$ where
+$$
+c_{k}=\sum_{l=0}^{k}a_{l}b_{k-l}
+$$
+
+

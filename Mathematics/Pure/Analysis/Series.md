@@ -1,5 +1,4 @@
-
-cLet $(a_{k})_{k\in\mathbb{N}}$ be a [[Sequences|sequence]] of [[Real Numbers|real numbers]], then the sequence of partial sums $(s_{n})_{n\in\mathbb{N}}$ is defined as:
+Let $(a_{k})_{k\in\mathbb{N}}$ be a [[Sequences|sequence]] of [[Real Numbers|real numbers]], then the sequence of partial sums $(s_{n})_{n\in\mathbb{N}}$ is defined as:
 $$
 s_{n}=\sum_{k=1}^{n}a_{k}
 $$
@@ -128,4 +127,19 @@ $$
 c_{k}\geq \frac{1}{\sqrt{ k }}\times \frac{\sqrt{ \frac{1}{2} }}{4}
 $$
 So by comparison test and CoLT, $\sum_{k=1}^{\infty} c_{k}$ diverges
+
+___
+$$
+d_{k}=\frac{(2k^{2}-2k+9)(k^{2}-4k+3)}{(k^{3}+6k-1)^{2}}\leq \frac{(2k^{2}+9)(k^{2}+3)}{k^{6}}\leq 11k^{2}\times \frac{4k^{2}}{k^{6}}=44\times \frac{1}{k^{2}}
+$$
+So $\sum_{k=1}^{\infty} d_{k}$ is convergent
+___
+$$
+e_{k}=\frac{k+1}{e^{ k }\sqrt{ k^{3}+1 }}
+$$
+The $\frac{k+1}{\sqrt{ k^{3}+1 }}\leq 1$, and then the $e^{ k }$ gives a geometric seies, so
+$$
+e_{k}\leq \frac{1}{e^{ k }}
+$$
+Which by coparison test, this si converget
 

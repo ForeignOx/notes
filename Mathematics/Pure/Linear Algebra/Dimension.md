@@ -10,7 +10,7 @@ Consider $U\subseteq \mathbb{R}[x]_{n}$, $U:=\{ p\in\mathbb{R}[x]_{n}\mid p(1)=0
 $$
 \{ (x-1),(x-1)x,\dots,(x-1)x^{n-1} \}
 $$
-Which we can check to be spanning and linearly independent, so $\text{dim}(U)=n$
+Which we can check to be [[span|spanning]] and [[Linear Independence|linearly independent]], so $\text{dim}(U)=n$
 ___
 $\text{sym}_{2}(\mathbb{R})\subseteq M_{2}(\mathbb{R})$ has basis:
 $$
@@ -35,8 +35,8 @@ $$
 \text{dim}(B)=\text{dim(U)}+1=\text{dim}(V)
 $$
 elements, but this has more elements than a basis
-## Thrm
-Let $V$ be a vectorspace, with dimension of $\text{dim}(v)=k$, let $S=\{ \vec{v}_{1},..,\vec{v}_{l} \}\subseteq V$
+## Theorem
+Let $V$ be a vectorspace, with dimension of $\text{dim}(V)=k$, let $S=\{ \vec{v}_{1},..,\vec{v}_{l} \}\subseteq V$
 If $l>k$, then $S$ is not linearly independntm If $l<k$ then $S$ is not spanning
 If $l=k$, then these statements are pairwise equivalent:
 - $S$ is a basis for $V$

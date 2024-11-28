@@ -66,17 +66,17 @@ $$
 
 Is a spanning set for $\mathbb{R}^{2}$, since $\text{dim}(\mathbb{R}^{2})=2$, tiis $B$ is in vact a basis for $\mathbb{R}^{2}$
 
-## Thrm
+## Theorem
 Suppose $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}\subseteq \mathbb{R}^{n}$, then
-If $r>n$, then $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is not linearly independent
-If $r<n$, then $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is not spanning
-Suppose $r=n$, we have that $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is a basis iff:
+If $r>n$, then $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is not [[Linear Independence|linearly independent]]
+If $r<n$, then $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is not [[span|spanning]]
+Suppose $r=n$, we have that $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is a [[basis|basis]] iff:
 $$
 A=\begin{pmatrix}
 \vec{u}_{1}&\vec{u}_{2}&\dots&\vec{u}_{n}
 \end{pmatrix}\in M_{n}(\mathbb{R})
 $$
-Is non-singular iff $\det(A)\neq 0$
+Is non-[[Matrix Inverses|singular]] iff [[Determinants|$\det(A)\neq 0$]]
 ### Proof
 The first two are just the previous theorem
 The third one: $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is a basis iff $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is linearly independent (again by previous theorem) iff
