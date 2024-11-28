@@ -97,7 +97,19 @@ $$
 \sum_{ k=0} ^{\infty} {n+k-1 \choose k }x^{k}=\frac{1}{(1-x)^{n}}
 $$
 If you use the [[Binomial Theorem#Extended Theorem|extended binomial theorem]] here, you derive the required result
-Alternatively, we can use the method 
+Alternatively, we can use the method of counting to recognise that this is a case to use [[Ordered Grouping of Indistinguishable Objects|stars and bars]] and the principle of upper negation:
+$$
+{-n \choose k }=(-1)^{k}{k+n-1 \choose k }
+$$
+So
+$$
+(1-x)^{-n}=\sum_{ k=0} ^{\infty}{n+k-1 \choose k }x^{k}
+$$
+Or even that:
+$$
+(1-x)^{-n}=((1-x)^{-1})^{n}=(1+x+x^{2}+\dots)^{n}
+$$
+and the coefficient of $x^{k}$ in the power series expansion here is the number of solutions to $e_{1}+e_{2}+\dots+e_{n}=k$ where $e_{i}\geq 0$ are integers, which we know has solution ${n+k-1 \choose k }$
 ___
 If $f(x)=\sum_{ k=0} ^{\infty} a_{k}x^{k}$ and $g(x)=\sum_{ k=0} ^{\infty} b_{k}x^{k}$ are the generating functions for the sequences $(a_{k})$ and $(b_{k})$ respectively, then
 $$
@@ -107,5 +119,65 @@ Is the generating function of the sequence $(c_{k})$ where
 $$
 c_{k}=\sum_{l=0}^{k}a_{l}b_{k-l}
 $$
-
+This can be shown by simply collecting terms
+## Example
+Find the coefficient of $x^{17}$ in the expansion of $f(x)=(1+x+x^{2}+\dots+x^{10})^{5}$, we use the geometric sum to rewrite it:
+$$
+f(x)=\left( \frac{1-x^{11}}{1-x} \right)^{5}=(1-x)^{-5}(1-x^{11})^{5}
+$$
+Considerign separately the two terms in the product, we have:
+$$
+(1-x^{11})^{5}=\sum_{i=0}^{5}{5 \choose i }(-x^{11})^{i}=\sum_{i=0}^{5}{5 \choose i }(-1)^{i}x^{11i}
+$$
+And
+$$
+(1-x)^{-5}=\sum_{j=0}^{\infty}{4+j \choose 4 }x^{j}
+$$
+So the terms in the product
+$$
+\left( \sum_{i=0}^{5}{5 \choose i }(-1)^{i}x^{11i} \right)\left(  \sum_{j=0}^{\infty}{4+j \choose 4 }x^{j} \right)
+$$
+that contribute $x^{11i+j}=x^{17}$ are $(i,j)=(0,17)$ and $(i,j)=(1,6)$, so the required coefficient is:
+$$
+{5 \choose 0 }{21 \choose 4 }-{5 \choose 1 }{10 \choose 4 }=4935
+$$
+## [[Recurrence Relations|Recurrrence Relations]]
+Generating functions also find uses in solving recurrence relations
+### Examples
+Solve for $(a_{n})$ satisfying the recurrence relation $a_{n}=a_{n-1}+2a_{n-2}$, $n\geq 2$ with initial conditions $a_{0}=1,a_{1}=-1$
+The idea is that we write the generating function for $(a_{n})$ as $f(x)=\sum_{ n=0} ^{\infty} a_{n}x^{n}$. In this sum, substitute in for $a_{n}$ using the recurrence relation for those values of $n$ for which it is valid, then tidy up the remaining terms using the initial conditions. After some manipulations, obtain an algebraic equation involving $f(x)$ which can be solved to give a closed form formula for $f(x)$
+In this case, the recurrence relation allows us to replace $a_{n}$ by $a_{n-1}+2a_{n-2}$ for all $n\geq 2$, so we can write:
+$$
+f(x)=a_{0}+a_{1}x+\sum_{n=2}^{\infty}a_{n}x^{n}=a_{0}+a_{1}x+\sum_{n=2}^{\infty}(a_{n-1}+2a_{n-2})x^{n}
+$$
+$$
+= 1-x+\sum_{n=2}^{\infty}a_{n-1}x^{n}+2\sum_{n=2}^{\infty}a_{n-2}x^{n}=1-x+x\sum_{n=2}^{\infty}a_{n-1}x^{n-1}+2x^{2}\sum_{n=2}^{\infty}a_{n-2}x^{n-2}
+$$
+$$
+= 1-x+x\sum_{n=1}^{\infty}a_{n}x^{n}+2x^{2}\sum_{n=0}^{\infty}a_{n}x^{n}
+$$
+We see that the last terms is $\sum_{n=0}^{\infty}a_{n}x^{n}=f(x)$ by definition, the other sum is not quite $f(x)$, as it is missing the $n=0$ term:
+$$
+\sum_{n=1}^{\infty} a_{n}x^{n}=\sum_{ n=0} ^{\infty}  a_{n}x^{n}-a_{0}=f(x)-1
+$$
+By the initial condition, so we obtain the following equation for $f(x)$:
+$$
+f(x)=1-x+x(f(x)-1)+2x^{2}f(x)
+$$
+$$
+\implies f(x)(2x^{2}+x-1)=2x-1
+$$
+$$
+\implies f(x)(2x-1)(x+1)=2x-1
+$$
+$$
+\implies f(x)=\frac{1}{x+1}=\frac{1}{1-(-x)}=1-x+x^{2}-x^{3}+\dots
+$$
+So our solution is:
+$$
+a_{n}=\begin{cases}
+1&\text{if }n\text{ is even}\\0&\text{if }n\text{ is odd}
+\end{cases}
+$$
+___
 
