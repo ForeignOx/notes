@@ -57,6 +57,18 @@ $$
 $$
  =\mathbb{P}(Z\geq-z)=1-\Phi(-z)
 $$
-
+## [[E(X)|E(X)]]
+Let $Z\sim N(0,1)$, find $E(Z)$
+$$
+E(Z)=\int_{-\infty}^{\infty} z\phi(z) \, dx 
+$$
+$$
+=\underbrace{ \frac{1}{\sqrt{ 2\pi }} \int _{-\infty}^{0}ze^{ -z^{2}/2 } \, }_{ =I_{1} } dx +\underbrace{ \frac{1}{\sqrt{ 2\pi }}\int _{0}^{\infty}ze^{ -z^{2}/2 } \, dx  }_{ =I_{2} }
+$$
+Then $z\to-t$, $dx=-dt$, $z\to-\infty$, $z=0$, $t=0$, then
+$$
+    I_{1}=\frac{1}{\sqrt{ 2\pi }}\int _{-\infty}^{\infty} t e^{ -t^{2}/2 } \, dx =-\frac{1}{\sqrt{ 2\pi }}\int _{0} ^{\infty } te^{ -t^{2}/2 }\, dx =I_{2}
+$$
+Therefore $E[Z]=E[-z]$
 
 #Mathematics #Probability #Definition 
