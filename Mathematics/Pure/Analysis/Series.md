@@ -1,4 +1,5 @@
-Let $(a_{k})_{k\in\mathbb{N}}$ be a [[Sequences|sequence]] of [[Real Numbers|real numbers]], then the sequence of partial sums $(s_{n})_{n\in\mathbb{N}}$ is defined as:
+
+cLet $(a_{k})_{k\in\mathbb{N}}$ be a [[Sequences|sequence]] of [[Real Numbers|real numbers]], then the sequence of partial sums $(s_{n})_{n\in\mathbb{N}}$ is defined as:
 $$
 s_{n}=\sum_{k=1}^{n}a_{k}
 $$
@@ -65,3 +66,66 @@ $$
 \frac{1}{n^{2}}=\frac{2}{n^{2}+n^{2}}\leq \frac{2}{n^{2}+n}=\frac{2}{n(n+1)}
 $$
 We know $\sum_{k=1}^{\infty} \frac{2}{k(k+1)}$ converges to $\hspace{0pt}2$ by [[Calculus of Limits Theorem|CoLT]] and the example above, so by comparison test, we know it also converges
+## Theorem
+Let $\alpha \in\mathbb{R}$, then
+$$
+\sum_{ k=1} ^{\infty}  \frac{1}{k^\alpha}
+$$
+Is convergent iff $\alpha>1$
+### Proof
+For $\alpha=1$, we know it is divergent, by comparison test, we also get divergence for $\alpha \leq1$
+For $\alpha>1$, we need convergence, we will do this by looking at the sequence of partial sums:
+$$
+s_{n}=\sum_{ k=1} ^{ n}  \frac{1}{k^{\alpha}}
+$$
+This sequence is monotonically increasing, consider $s_{2n+1}$:
+$$
+s_{2n+1}=\sum_{ k=1} ^{ 2n+1} \frac{1}{k^{\alpha}}=1+\sum_{ k=1} ^{ n} \left(  \frac{1}{(2k)^{\alpha}}+\frac{1}{(2k+1)^{\alpha}}   \right)
+$$
+$$
+ \leq 1+\sum_{ k=1} ^{ n}  \frac{2}{(2k)^{\alpha}}=1+\sum_{ k=1} ^{ n}  \frac{2^{1-\alpha}}{k^{\alpha}}
+$$
+$2^{1-\alpha}$ is some constant less than 1:
+$$
+=1+2^{1-\alpha}\sum_{ k=1} ^{ n}  \frac{1}{k^{\alpha}}
+$$
+$$
+\therefore s_{2n+1}\leq 1+2^{1-\alpha}s_{n}\leq 1+2^{1-\alpha}s_{2n+1}
+$$
+Since $s_{n}$ is increasing, so $s_{2n+1}\geq s_{n}$
+$$
+\therefore (1-2^{1-\alpha})s_{2n+1}\leq 1\iff s_{2n+1}\leq \frac{1}{1-2^{1-\alpha}}
+$$
+As $1-2^{1-\alpha}>0$
+Since the sequence is monotonically increasing and has an upper bound, the sequence of partial sums is convergent, hence
+$$
+\sum_{ n=1} ^{\infty}  \frac{1}{n^{\alpha}}
+$$
+Is convergent for $\alpha>1$
+## Examples
+$$
+a_{k}=\frac{\sqrt{ k^{2}+1 }}{k^{2}}
+$$
+Looks like if we let $k$ be big, $1$ is irrellevant, so $\sqrt{ k^{2}+1 }\sim k$, so it tends to $\frac{1}{k}$ which is divergent, so we use comparison tests for divergence:
+$$
+a_{k}=\frac{\sqrt{ k^{2}+ 1}}{k^{2}}\geq \frac{\sqrt{ k^{2} }}{k^{2}}=\frac{1}{k}
+$$
+So $\sum_{k=1}^{\infty} a_{k}$ is divergent
+___
+$$
+b_{k}=\frac{\sqrt{ k^{2}-1 }}{k^{2}}
+$$
+This also looks like it would tend to $\frac{1}{k}$, but we use the comparison theorem like last time, it doesn't work as $\sqrt{ k^{2}-1 }\leq \sqrt{ k^{2} }$, but instead consider:
+$$
+b_{k}=\frac{\sqrt{ k^{2}-1 }}{k^{2}}\underbrace{ \geq }_{ \text{for }k\geq 2 } \frac{\sqrt{ k^{2}-\frac{1}{2}k^{2} }}{k^{2}}=\frac{1}{\sqrt{ 2 }} \frac{k}{k^{2}}=\frac{1}{\sqrt{ 2 }} \frac{1}{k}
+$$
+Which is divergent by CoLT
+___
+$$
+c_{k}=\frac{\sqrt{ k^{3}-k+2 }}{4k^{2}-2}=\frac{k^{3/2}\sqrt{ 1-\frac{1}{k^{2}}+\frac{2}{k^{3}} }}{k^{2}\left( 4-\frac{2}{k^{2}} \right)}\sim \frac{1}{\sqrt{ k }}\times c
+$$
+$$
+c_{k}\geq \frac{1}{\sqrt{ k }}\times \frac{\sqrt{ \frac{1}{2} }}{4}
+$$
+So by comparison test and CoLT, $\sum_{k=1}^{\infty} c_{k}$ diverges
+
