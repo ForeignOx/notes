@@ -118,7 +118,7 @@ This is $y_{2}$ from above, always do this first, this is the same as with homog
 $$
 y=Ae^{\alpha x}+Be^{\beta x}
 $$
-#### Particular Integral
+#### Undetermined Coefficients
 We need to find a particular integral to satisfy the ODE
 When $\phi(x)$ ha s the form of a polynomial, exponential or $\sin$ or $\cos$ function, or a sum or product of these, we can apply the method of undetermined coefficients
 To apply this method, we try a $y_{PI}$ of a particular form based on the form of $\phi$ containing some unknown constant coefficients. We then determine these coeffifiences such that $y_{PI}$ solves the original equation
@@ -132,5 +132,38 @@ The following table lists terms that can appear in $\phi$ in order to use this m
 | $\sin(\gamma x)$  | $a_{1}\cos(\gamma x)+a_{2}\sin(\gamma x)$  |
 If $\phi(x)$ contains sums or products of the above terms,, we try the corresponding sum/product of the corresponding forms
 If the listed form to try is already in the complimentary function, then putting this into the original ODE will give $0$ rather than $\phi(x)$, we then try a $y_{PI}$ of the suggested form multiplied by $x$. We can apply this rule twice (or more times) if the first applicatio also gives a terms in $y_{CF}$
+## Method of Variation of Parameters
+Our method of undetermined coefficients allows us to solve an inhomogeneous ODE, but only when the inhomogeneous terms $\phi(x)$ takes particular forms. The following method allows us to solve more general inhomogeneous ODEs
+### Wronskian
+Given two differentiable functions, $y_{1}$ and $y_{2}$, a Wronskian is defined in the following way:
+$$
+W(y_{1},y_{2})=\det \begin{pmatrix}
+y_{1}&y_{2}\\y_{1}'&y_{2}'
+\end{pmatrix}=y_{1}y_{2}'-y_{2}y_{1}'
+$$
+If $y_{1}$ and $y_{2}$ are linearly dependent, $y_{1}(x)=\lambda y_{2}(x)$ for all $x$. Then $y_{1}'(x)=\lambda y_{2}'(x)$ and $W(y_{1},y_{2})=\lambda y_{2}y_{2}'-\lambda y_{2}'y_{2}=0$, so $W(y_{1},\lambda y_{1})=0\forall x$
+Therefore, if $W(y_{1},y_{2})$ is not identically zero, $y_{1}$ and $y_{2}$ are [[Linear Independence|linearly independent]]
+We wish to find a particular integral for the inhomogeneous ODE, we swtart by considering the two linearly independent solutions $y_{1},y_{2}$ of the associated homogeneous ODE:
+$$
+y_{CF}=Ay_{1}+By_{2}
+$$
+We now replace the constants $A$ and $B$ in $y_{CF}$ by functions $u_{1}(x)$ and $u_{2}(x)$ respectively. That is, we look for solutions of the form:
+$$
+y_{PI}=u_{1}(x)y_{1}(x)+u_{2}(x)y_{2}(x)
+$$
+We wish to find $u_{1}(x)$ and $u_{2}(x)$ such that $y_{PI}$ is a solution to the original ODE. This give one constraint on $u_{1}$ and $u_{2}$ so to find unique function we should impose a second constraint on $u_{1}$ and $u_{2}$, we choose:
+$$
+u_{1}'y_{1}+u_{2}'y_{2}=0
+$$
+Then
+$$
+y'_{PI}=u_{1}'y_{1}+u_{1}y_{1}'+u_{2}'y_{2}+u_{2}y_{2}'=u_{1}y_{1}'+u_{2}y_{2}'
+$$
+From above and:
+$$
+y_{PI}''=u_{1}'y_{1}'+u_{1}y_{1}''+u_{2}'y_{2}'+u_{2}y_{2}''
+$$
+Next, we need to substitute this into the original ODE in order to identify $u_{1}(x)$ and $u_{2}(x)$
+
 
 #Mathematics #Calculus
