@@ -78,5 +78,27 @@ $$
 E(X\pm Y)=E(X)\pm E(Y)
 $$
 ___
+## Lotus
+$$
+E(g(X))=\sum_{x} g(x)p(x)
+$$
+For discrete
+$$
+E(g(X))=\int_{-\infty}^{\infty} g(x)f(x) \, dx 
+$$
+For continuous
+### Multivariate
+$$
+E(g(X,Y))=\sum_{x}\sum_{y}g(x,y)p(x,y)
+$$
+For discrete
+$$
+E(g(X,Y))=\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} g(x,y)f(x,y) \, dx  \, dy 
+$$
+### Linearity
+$$
+E(\alpha X+\beta Y)=\alpha E(X)+\beta E(Y)
+$$
+For $\alpha,\beta \in\mathbb{R}$
 
 #Mathematics #Statistics 

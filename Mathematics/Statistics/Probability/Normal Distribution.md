@@ -69,6 +69,15 @@ Then $z\to-t$, $dx=-dt$, $z\to-\infty$, $z=0$, $t=0$, then
 $$
     I_{1}=\frac{1}{\sqrt{ 2\pi }}\int _{-\infty}^{\infty} t e^{ -t^{2}/2 } \, dx =-\frac{1}{\sqrt{ 2\pi }}\int _{0} ^{\infty } te^{ -t^{2}/2 }\, dx =I_{2}
 $$
-Therefore $E[Z]=E[-z]$
+Therefore $E[Z]=E[-Z]=-E(Z)$, so $E(Z)=0$
+Now $Z=\frac{X-\mu}{\sigma}$, so $X=\mu+\sigma Z$, so by linearity:
+$$
+E(X)=\mu+\sigma E(Z)=\mu
+$$
+___
+## [[Var(X)|Var(X)]]
+Assume for now $Var(Z)=1$, then $Var(X)=Var(\mu+\sigma X)=\sigma^{2}Var(Z)=\sigma^{2}$
+
+
 
 #Mathematics #Probability #Definition 

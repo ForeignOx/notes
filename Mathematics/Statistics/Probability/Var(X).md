@@ -14,6 +14,16 @@ Var(X)=E(X^{2})-E(X)^{2}
 $$
 It is useful to note that variance is the square of the [[Standard Deviation|standard deviation]], $Var(X)=\sigma^{2}$
 ___
+By LOTUS, taking $g(x)=(X-E(x))^{2}$, for discrete,
+$$
+Var(X)=\sum_{x}(x-E(X))^{2}p(x)
+$$
+For continuous:
+$$
+Var(X)=\int_{-\infty}^{\infty} (x-E(X))^{2}f(x) \, dx 
+$$
+
+___
 To find $Var(f(X))$, where $f(X)$ is a function of X, we do:
 $$
 Var(f(X))=E(f(X)^{2})-E(f(X))^{2}
@@ -58,6 +68,17 @@ $$
 So if $X$ and $Y$ are independent, their [[Covariance|covariance]] will be 0, so we can write:
 $$
 Var(X\pm Y)=Var(X)+Var(Y)
+$$
+Another way of showing this using properties of covariance is as follows:
+$$
+Var(X+Y)=Cov(X+Y,X+Y)=Cov(X,X)+Cov(X,Y)+Cov(Y,X)+Cov(Y,Y)
+$$
+$$
+= Var(X)+Var(Y)+2Cov(X,Y)
+$$
+Using this,
+$$
+Var\left( \sum_{i=1}^{n}X_{i} \right)=\sum_{ i=1} ^{ n}Var(X_{i})+2\sum_{i<j}Cov(X_{i},X_{j})
 $$
 
 #Mathematics #Statistics 
