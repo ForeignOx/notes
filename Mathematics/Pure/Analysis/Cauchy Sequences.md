@@ -4,7 +4,7 @@ $$
 $$
 Which is useful because you only look at the sequence, you do not need to know the limit
 ## Cauchy Sequences are [[Boundedness|Bounded]]
-Let $(x_{n})_{n\in\mathbb{N}}$ be a Cauchy sequence. THen $(x_{n})_{n\in\mathbb{N}}$ is bounded
+Let $(x_{n})_{n\in\mathbb{N}}$ be a Cauchy sequence. Then $(x_{n})_{n\in\mathbb{N}}$ is bounded
 ### Proof
 very similar to [[Every Convergent Sequence is Bounded]]
 ## [[Convergence|Convergent]] Sequences are Cauchy Sequences
