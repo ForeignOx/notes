@@ -134,15 +134,6 @@ If $\phi(x)$ contains sums or products of the above terms,, we try the correspon
 If the listed form to try is already in the complimentary function, then putting this into the original ODE will give $0$ rather than $\phi(x)$, we then try a $y_{PI}$ of the suggested form multiplied by $x$. We can apply this rule twice (or more times) if the first applicatio also gives a terms in $y_{CF}$
 ## Method of Variation of Parameters
 Our method of undetermined coefficients allows us to solve an inhomogeneous ODE, but only when the inhomogeneous terms $\phi(x)$ takes particular forms. The following method allows us to solve more general inhomogeneous ODEs
-### Wronskian
-Given two differentiable functions, $y_{1}$ and $y_{2}$, a Wronskian is defined in the following way:
-$$
-W(y_{1},y_{2})=\det \begin{pmatrix}
-y_{1}&y_{2}\\y_{1}'&y_{2}'
-\end{pmatrix}=y_{1}y_{2}'-y_{2}y_{1}'
-$$
-If $y_{1}$ and $y_{2}$ are linearly dependent, $y_{1}(x)=\lambda y_{2}(x)$ for all $x$. Then $y_{1}'(x)=\lambda y_{2}'(x)$ and $W(y_{1},y_{2})=\lambda y_{2}y_{2}'-\lambda y_{2}'y_{2}=0$, so $W(y_{1},\lambda y_{1})=0\forall x$
-Therefore, if $W(y_{1},y_{2})$ is not identically zero, $y_{1}$ and $y_{2}$ are [[Linear Independence|linearly independent]]
 We wish to find a particular integral for the inhomogeneous ODE, we swtart by considering the two linearly independent solutions $y_{1},y_{2}$ of the associated homogeneous ODE:
 $$
 y_{CF}=Ay_{1}+By_{2}
@@ -163,7 +154,112 @@ From above and:
 $$
 y_{PI}''=u_{1}'y_{1}'+u_{1}y_{1}''+u_{2}'y_{2}'+u_{2}y_{2}''
 $$
-Next, we need to substitute this into the original ODE in order to identify $u_{1}(x)$ and $u_{2}(x)$
+Next, we need to substitute this into the original ODE in order to identify $u_{1}(x)$ and $u_{2}(x)$, which gives:
+$$
+a_{2}(u_{1}'y_{1}'+u_{1}y_{1}''+u_{2}'y_{2}'+u_{2}y_{2}'')+a_{1}(u_{1}y_{1}'+u_{2}y_{2}')+a_{0}(u_{1}y_{1}+u_{2}y_{2})=\phi
+$$
+Collecting the $u_{1}$ and $u_{2}$ terms gives:
+$$
+u_{1}\underbrace{ (a_{2}y_{1}''+a_{1}y_{1}'+a_{0}y_{1}) }_{ =0 }+u_{2}\underbrace{ (a_{2}y_{2}''+a_{1}y_{2}'+a_{0}y_{2}) }_{ =0 }+a_{2}(u_{1}'y_{1}'+u_{2}'y_{2}')=\phi
+$$
+Since $y_{1}$ and $y_{2}$ are solutions to the homogeneous equation, so our equation simplifies to:
+$$
+a_{2}(u_{1}'y_{1}'+u_{2}'y_{2}')=\phi
+$$
+Which is first order in the derivatives of $u_{i}$
+We now have two simultaneous equations for $u_{1}$ and $u_{2}$, namely: $a_{2}(u_{1}'y_{1}'+u_{2}'y_{2}')=\phi$ and $u_{1}'y_{1}+u_{2}'y_{2}=0$, which can be solved by multiplying the first by $y_{1}$ and rearranging:
+$$
+u_{1}'y_{1}'y_{1}+u_{2}'y_{2}'y_{1}=\frac{\phi y_{1}}{a_{2}}
+$$
+Then using $u_{1}'y_{1}=-u_{2}'y_{2}$,
+$$
+u_{2}'(y_{2}'y_{1}-y_{1}'y_{2})=\frac{\phi y_{1}}{a_{2}}
+$$
+$$
+\implies u_{2}'=\frac{\phi y_{1}}{a_{2}W(y_{1},y_{2})}
+$$
+Where $W(y_{1},y_{2})$ is the [[Wronskian|wronskian]]
+And then also:
+$$
+u_{1}'=\frac{-\phi y_{2}}{a_{2}W(y_{1},y_{2})}
+$$
+Hence we find $u_{1}$ and $u_{2}$ by integrating:
+$$
+u_{1}(x)=-\int \frac{\phi(x)y_{2}(x)}{a_{2}W(y_{1},y_{2})} \, dx 
+$$
+$$
+u_{2}(x)=\int \frac{\phi(x)y_{1}(x)}{a_{2}W(y_{1},y_{2})} \, dx 
+$$
+#### Examples
+Solve $y''-y=e^{ 2x }$, which is doable by the method of undetermined coefficients, but we want to cause maximal suffering (to check our new method)
+The auxiliary equation is:
+$$
+\lambda^{2}-1=0\iff\lambda=\pm 1
+$$
+So:
+$$
+y_{CF}=Ae^{ x }+Be^{ -x }
+$$
+Therefore $y_{1}=e^{ x }$ and $y_{2}=e^{ -x }$, so we can find the Wronskian:
+$$
+W(y_{1},y_{2})=\det \begin{pmatrix}
+y_{1}&y_{2}\\y_{1}'&y_{2}'
+\end{pmatrix}=\det \begin{pmatrix}
+e^{ x }&e^{ -x }\\e^{ x }&-e^{ -x }
+\end{pmatrix}=-2
+$$
+So
+$$
+    u_{1}=-\int \frac{e^{ 2x }e^{ -x }}{-2} \, dx =\frac{1}{2}\int e^{ x } \, dx =\frac{1}{2}e^{ x }
+$$
+$$
+u_{2}=\int \frac{e^{ 2x }e^{ x }}{-2} \, dx =-\frac{1}{2}\int e^{ 3x } \, dx =-\frac{1}{6}e^{ 3x }
+$$
+Therefore
+$$
+y_{PI}=u_{1}y_{1}+u_{2}y_{2}=\frac{1}{2}e^{ x }e^{ x }+\left( -\frac{1}{6}e^{ 3x } \right)e^{ -x }=\frac{1}{3}e^{ 2x }
+$$
+So the general solution to the ODE is then:
+$$
+y(x)=y_{CF}+y_{PI}=Ae^{ x }+Be^{ -x }+\frac{1}{3}e^{ 2x }
+$$
+The reason we can ignore the constants is that they become reincorporated into the $A$ and $B$
+___
+Solve
+$$
+y''-2y'+y=\frac{e^{ x }}{x^{2}+1}
+$$
+Now $\phi=\frac{e^{ x }}{x^{2}+1}$ is not a sum or product of things we had in our table of particular integrals, so we must use variation of parameters
+Firstly the characteristic equations is:
+$$
+\lambda^{2}-2\lambda+1=0
+$$
+So we have a repeated root at $\lambda=1$, so
+$$
+y_{CF}=Ae^{ x }+Bxe^{ x }
+$$
+So $y_{1}=e^{ x }$, $y_{2}=xe^{ x }$, so we can calculate their Wronskian
+$$
+W(y_{1},y_{2})=\det \begin{pmatrix}
+e^{ x }&xe^{ x }\\e^{ x }&e^{ x }+xe^{ x }
+\end{pmatrix}=e^{ 2x }+xe^{ 2x }-xe^{ 2x }=e^{ 2x }
+$$
+Which is not identically $\hspace{0pt}0$, telling us that $y_{1}$ and $y_{2}$ are not linearly independent
+And so
+$$
+u_{1}=-\int \frac{e^{ x }xe^{ x }}{(x^{2}+1)e^{ 2x }} \, dx =-\int \frac{x}{x^{2}+1} \, dx =-\frac{1}{2}\ln(x^{2}+1)
+$$
+$$
+u_{2}=\int \frac{e^{ x }e^{ x }}{(x^{2}+1)e^{ 2x }} \, dx =\int \frac{1}{x^{2}+1} \, dx =\arctan(x)
+$$
+So
+$$
+y_{PI}=u_{1}y_{1}+u_{2}y_{2}=-\frac{1}{2}e^{ x }\ln(x^{2}+1)+xe^{ x }\arctan(x)
+$$
+And so the general solution to the ODE is
+$$
+y(x)=y_{CF}+y_{PI}=e^{ x }\left( A+Bx-\frac{1}{2}\ln(x^{2}+1)+x\arctan(x) \right)
+$$
 
 
 #Mathematics #Calculus

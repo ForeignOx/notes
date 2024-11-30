@@ -1,7 +1,4 @@
-$$
-\mathbb{1}_{A}:\Omega\to \{ 0,1 \}
-$$
-For $A\subseteq\Omega$ is defined:
+Using the [[Indicator Random Variable|Indicator random variable]], we know
 $$
 \mathbb{1}_{A}(\omega)=1
 $$
