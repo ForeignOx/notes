@@ -38,7 +38,61 @@ Let $X$ and $Y$ be jointly continuous, with pdf $f$, then:
 $$
 f_{X}(x)=\int_{-\infty}^{\infty} f_{X|Y}(x|y)f_{Y}(y) \, dx 
 $$
-
+## [[E(X)|Expectation]]
+Let $E_{1},E_{2},\dots,E_{k}$ be a finite partition, then
+$$
+E(X)=\sum_{i=1}^{k}E(X|E_{i})\mathbb{P}(E_{i})
+$$
+If you have a countably infinite partition, $E_{1},E_{2},\dots$. then
+$$
+E(X)=\sum_{ i=1} ^{\infty}  E(X|E_{i})\mathbb{P}(E_{i})
+$$
+### Proof
+Note that
+$$
+\Omega=\bigcup_{i=1}^{k}E_{i}
+$$
+And 
+$$
+\mathbb{1}_{\Omega}=\sum_{i=1}^{k}\mathbb{1}_{E_{i}}
+$$
+Only for disjoint sets, and
+$$
+E(X)=E(X\mathbb{1}_{\Omega})=E\left( X\sum_{i=1}^{k}\mathbb{1}_{E_{i}} \right)=E\left( \sum_{i=1}^{k}X\mathbb{1}E_{i} \right)=\sum_{i=1}^{k}E(X\mathbb{1}_{E_{i}})=\sum_{i=1}^{k}E(X|E_{i})\mathbb{P}(E_{i})
+$$
+___
+Let $X$ and $Y$ be two random variables, then
+$$
+E(X)=E(E(X|Y))
+$$
+### Proof
+Assume that $Y$ is discrete:
+$$
+E(X)=\sum_{y}\mathbb{P}(X|Y=y)\mathbb{P}(Y=y)
+$$
+As our partition is $\{ Y=y \}$, and using $g(y)=\mathbb{P}(X|Y=y)$
+$$
+=\sum_{y}g(y)\mathbb{P}(Y=y)=E(g(Y)=E(E(X|Y))
+$$
+### Example
+Toss a coin $\hspace{0pt}3$ times, and let $H$ denote number of heads, then roll a fair dice $H$ times
+Let $T$ be the total score, what is $E(T)$
+Let $X_{1},X_{2},\dots$ denote the score of the $i$th throw of the die, so
+$$
+T=\sum_{i=1}^{H}X_{i}
+$$
+We know that
+$$
+H\sim \text{Bin}\left( 3,\frac{1}{2} \right)
+$$
+So
+$$
+E(T)=E(E(T|H))
+$$
+Give $\{ H=h \}$, observe that
+$$
+E(T|H=h)=\sum
+$$
 
 
 #Mathematics #Probability #Theorem  

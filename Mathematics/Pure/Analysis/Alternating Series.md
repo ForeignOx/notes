@@ -27,4 +27,17 @@ Write
 $$
 s ^{e}=\lim_{ n \to \infty } s_{2n}
 $$
-Note $s_{2n}=s_{2n-1}-a_{2n}$, that is $a_{2n}=s_{2n-1}-s_{2n}$, by colt
+Note $s_{2n}=s_{2n-1}-a_{2n}$, that is $a_{2n}=s_{2n-1}-s_{2n}$, by colt, $\lim_{ n \to \infty }s_{2n}=\lim_{ n \to \infty }s_{2n+1}=s\in\mathbb{R}$
+To show
+$$
+\lim_{ n \to \infty } s_{n}=s
+$$
+Let $\epsilon>0$, then there exists $n_\text{even}\in\mathbb{N}$ with $|s_{2n}-s|<\epsilon$ whenever $2n\geq n_\text{even}$, and there exists $n_\text{odd}$ with $|s_{2n-1}-s|<\epsilon$ whenever $2n-1\geq n_\text{odd}$
+Take $n_{0}=\text{max}\{ n_\text{odd},n_\text{even} \}$, for $n\geq n_{0}$, we get $|s_{n}-s|<\epsilon$, since $n$ is either even or odd, but since $n\geq n_\text{even}$ and $n\geq n_\text{odd}$, we can use either inequality
+## Example
+The series $\sum_{k=1}^{\infty} \frac{(-1)^{k+1}}{k}$, letting $a_{k}=\frac{1}{k}$ but tends to $\hspace{0pt}0$ as $k\to \infty$, we get that it is divergent, check that it is monotonically decreasing, as $\frac{1}{k+1}<\frac{1}{k}\iff k<k+1$, so by the alternating series test the series must tend to 0
+___
+The series $\sum_{k=1}^{\infty} \frac{(-1)^{k}}{\sqrt{ k }}$ converges by alternating sign theorem and colt, as it is equal to $-\sum_{k=1}^{\infty} \frac{(-1)^{k+1}}{\sqrt{ k }}$, and it is monotonically decreasing as $\frac{1}{\sqrt{ k+1 }}\leq \frac{1}{k}\iff k\leq k+1$ and $\frac{1}{\sqrt{ k }}\to0$ 
+___
+The series $\sum_{k=1}^{\infty} \frac{1}{k}+\frac{(-1)^{k+1}}{\sqrt{ k }}$, note $\frac{1}{k}<\frac{1}{\sqrt{ k }}$ for $k>1$, the summand for $k=1$ is $1+1$, the summand for $k=2$ is $\frac{1}{2}-\frac{1}{\sqrt{ 2 }}<0$, for $k=3$, it will be positive, but the evens are negative, but consider the series being written as: $\sum_{k=1}^{\infty}(-1)^{k+1}| \frac{1}{k}+\frac{(-1)^{k+1}}{\sqrt{ k }}|=b_{k}$, then $0\leq b_{k}\leq \frac{1}{k}+\frac{1}{\sqrt{ k }}\to0$
+Note that the sequence is not monotonically decreasing, so we can't use the alternating sign teest here, so it is not convergent
