@@ -23,4 +23,63 @@ Then we can substitute these expressions for $z$ and $z'$ into the second equati
 $$
 -\frac{y''}{2}+\frac{y'}{2}+1=3y-4\left( -\frac{y'}{2}+\frac{y}{2}+x \right)+2x
 $$
-Which can be rearranged and solved
+Which can be rearranged to:
+$$
+y''+3y'+2y=4x+2
+$$
+Which has characteristic equation
+$$
+\lambda^{2}+3\lambda+2=(\lambda+1)(\lambda+2)=0
+$$
+So 
+$$
+y_{CF}=Ae^{ -x }+Be^{ -2x }
+$$
+Try
+$$
+y_{PI}=a_{1}x+a_{0}
+$$
+$$
+y'_{PI}=a_{1}
+$$
+$$
+y''_{PI}=0
+$$
+Which substituting gives:
+$$
+3a_{1}+2a_{1}x+2a_{0}=4x+2
+$$
+By comparing coeffcients gives:
+$$
+a_{1}=2,a_{0}=-2
+$$
+So 
+$$
+y_{PI}=2x-2
+$$
+And hence the general solution for $y$ is:
+$$
+y=Ae^{ -x }+Be^{ -2x }+2x-2
+$$
+And using the first of the system of equations:
+$$
+z=-\frac{1}{2}y'+\frac{1}{2}y+x=\frac{A}{2}e^{ -x }+Be^{ 2x }-1+\frac{A}{2}e^{ -x }+\frac{B}{2}e^{ -2x }+x-1+x
+$$
+$$
+=Ae^{ -x }+\frac{3B}{2}e^{ -2x }+2x-2
+$$
+We now apply the initial conditions:
+$$
+y(0)=A+B-2=1\implies A+B=3
+$$
+$$
+z(0)=A+\frac{3}{2}B-2=2\implies A+\frac{3}{2}B=4
+$$
+Which can be solved and have solution $B=2,A=1$, so the solution is:
+$$
+y(x)=e^{ -x }+2(e^{ -2x }+x-1)
+$$
+$$
+z(x)=e^{ -x }+3e^{ -2x }+2(x-1)
+$$
+
