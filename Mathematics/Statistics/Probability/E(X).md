@@ -78,7 +78,7 @@ $$
 E(X\pm Y)=E(X)\pm E(Y)
 $$
 ___
-## Lotus
+## LotUS
 $$
 E(g(X))=\sum_{x} g(x)p(x)
 $$
