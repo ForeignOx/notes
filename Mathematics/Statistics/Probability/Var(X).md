@@ -81,4 +81,5 @@ $$
 Var\left( \sum_{i=1}^{n}X_{i} \right)=\sum_{ i=1} ^{ n}Var(X_{i})+2\sum_{i<j}Cov(X_{i},X_{j})
 $$
 
+
 #Mathematics #Statistics 

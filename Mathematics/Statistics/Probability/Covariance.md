@@ -54,3 +54,32 @@ $$
 $$
 Cov(X,Y+Z)=Cov(X,Y)+Cov(X,Z)
 $$
+## Expecation
+If $X$ and $Y$ are [[Independence|independent]], then $Cov(X,Y)=0$
+### Proof
+$$
+Cov(X,Y)=E(XY)-E(X)E(Y)
+$$
+When they are independent, $E(XY)=E(X)E(Y)$, so
+$$
+Cov(X,Y)=E(X)E(Y)-E(X)E(Y)=0
+$$
+The converse is not true;
+$$
+\mathbb{P}((X,Y)=(1,0))=\mathbb{P}((X,Y)=(0,1))=\mathbb{P}((X,Y)=(0,-1))=\mathbb{P}((X,Y)=(-1,0))=\frac{1}{4}
+$$
+So
+$$
+\mathbb{P}(XY=0)=1
+$$
+So $E(XY)=0$, and we can find $E(X)=E(Y)=0$
+But
+$$
+\mathbb{P}(X=1,Y=1)=0\neq \mathbb{P}(X=1)\mathbb{P}(Y=1)
+$$
+$$
+ \mathbb{P}(X=1)=\mathbb{P}(X=1,Y=0)=\frac{1}{4}
+$$
+Similarly $\mathbb{P}(Y=1)=\frac{1}{4}$
+Hence $X$ and $Y$ are nt independent
+

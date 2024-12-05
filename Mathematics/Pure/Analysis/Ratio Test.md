@@ -18,3 +18,16 @@ $$
 \sum_{j=0}^{\infty} |a_{n_{0}}|q^{j}=\frac{\left| a_{n_{0}} \right|  }{1-q}
 $$
 So $\sum_{j=0}^{\infty} \left| a_{n_{0}+j} \right|$ is convergent by comparison test and is equal to $\sum_{k=n_{0}}^{\infty} \left| a_{k} \right|$ so is absolutely convergent. Hence $\sum_{k=1}^{\infty} \left| a_{k} \right|$ is also absolutely convergent
+Note: if $\lim_{ k \to \infty } \frac{\left| a_{k+1} \right|}{\left| a_{k} \right|}=q>1$, then look at $\epsilon=q-1>0$, then we have $n_{0}\in\mathbb{N}$ with 
+$$
+\left| \left| \frac{a_{k+1}}{a_{k}} \right| -q \right| <\epsilon \forall k\geq n_{0}
+$$
+$$
+\implies -\epsilon< \left| \frac{a_{k+1}}{a_{k}} \right| -q<\epsilon=q-1
+$$
+So
+$$
+\left| \frac{a_{k+1}}{a_{k}} \right| >1
+$$
+Proof of the second part: there is $n_{0}\in\mathbb{N}$ with $\left| \frac{a_{k+1}}{a_{k}} \right|\geq 1$ for all $k\geq n_{0}$, which implies $\left| a_{k+1} \right|\geq \left| a_{k} \right|>0$
+In particular, $(a_{k})_{k\in\mathbb{N}}$ does not converge to $0$, the series is therefore divergent

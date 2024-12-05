@@ -53,5 +53,24 @@ And [[Continuous Random Variables|continuous variables]] as:
 $$
 f(x,y)=f_{X}(x)f_{Y}(y)
 $$
+## [[E(X)|Expectation]]
+If $X$ and $Y$ are independent, then $E(XY)=E(X)E(Y)$ and more generally, 
+$$
+E(g(X)h(Y))=E(g(X))E(h(Y))
+$$
+### Proof
+Let us assume that $(X,Y)$ is jointly discrete with pmf $p(x,y)$
+$$
+E(g(X)h(Y))=\sum_{x}\sum_{y}g(x)h(y)p(x,y)
+$$
+Since $X$ and $Y$ are independent, $p(x,y)=p_{X}(x)p_{Y}(y)$, which can be put into our sum as:
+$$
+=\sum_{x}\sum_{y}g(x)h(y)p_{X}(x)p_{Y}(y)=\left( \sum_{x}g(x)p_{X}(x) \right)\left( \sum_{y}h(y)p_{Y}(y) \right)
+$$
+$$
+=E(g(X))E(h(Y))
+$$
+
+
 
 #Mathematics #Probability #Definition

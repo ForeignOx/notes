@@ -89,10 +89,26 @@ So
 $$
 E(T)=E(E(T|H))
 $$
+Observe that:
+$$
+E(X_{i})=\frac{1}{6}(1+2+\dots+6)=\frac{7}{2}
+$$
 Give $\{ H=h \}$, observe that
 $$
-E(T|H=h)=\sum
+E(T|H=h)=E\left( \sum_{i=1}^{h}X_{i} \right)=\sum_{i=1}^{h}E(X_{i})=\sum_{i=1}^{h} \frac{7h}{2}
 $$
+Substituting back, we get:
+$$
+E(T)=E\left( \frac{7H}{2} \right)=\frac{7}{2}E(H)
+$$
+$$
+ E(H)=3\times \frac{1}{2}=\frac{3}{2}
+$$
+So
+$$
+E(T)=\frac{7}{2}\times \frac{3}{2}=\frac{21}{4}
+$$
+
 
 
 #Mathematics #Probability #Theorem  

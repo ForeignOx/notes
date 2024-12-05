@@ -100,5 +100,74 @@ $$
 E(\alpha X+\beta Y)=\alpha E(X)+\beta E(Y)
 $$
 For $\alpha,\beta \in\mathbb{R}$
+## Monotonicity of Expectation
+Let $X:\Omega\to \mathbb{R}$, $a\in\mathbb{R}$ such that $\mathbb{P}(X\geq a)=1$, then $E(X)\geq a$
+### Proof
+Define $Y:\Omega\to \mathbb{R}$ as $Y=X-a$, since $\mathbb{P}(X\geq a)=1$, $\mathbb{P}(Y\geq 0)=1$ therefore $E(Y)\geq0$
+Let us assume $X$ is continuous, then 
+$$
+E(Y)=\int_{-\infty}^{\infty} xf(x) \, d-\int_{-\infty}^{\infty} af(x)\, dx  =E(X)-a\underbrace{ \int_{-\infty}^{\infty} f(x) \, dx }_{ =1 } =E(X)-a
+$$
+We know $E(Y)\geq 0$, so $E(X)-a\geq 0$ so $E(X)\geq a$
+
+### Example
+If $\mathbb{P}(X\geq Y)=1$, then $E(X)\geq E(Y)$
+#### Proof
+Define $Z:=X-Y$
+
+Then $\mathbb{P}(Z\geq 0)=1$, since $\mathbb{P}(X\geq Y)=1$ using the monotonicity of expectation
+We also know linearity of independence
+$$
+E(Z)=E(X)-E(Y)\geq 0
+$$
+$$
+\implies E(X)\geq E(Y)
+$$
+___
+$E(X^{2})\geq (E(X))^{2}$
+#### Proof
+Ovserve that
+$$
+Y=(X-E(X))^{2}\geq 0
+$$
+From the monotonicity, we have $E(Y)\geq 0$, substituting these:
+$$
+E(X^{2})-(E(X))^{2}\geq 0
+$$
+$$
+\implies E(X^{2})\geq(E(X))^{2}
+$$
+## Markov Inequality
+If $X\geq 0$, then for any $a>0$,
+### Proof
+Observe
+$$
+\mathbb{P}(X>a)\leq \frac{E(X)}{a}
+$$
+Then
+$$
+X\geq a\mathbb{1}_{\{ X\geq a \}}
+$$
+$$
+a\mathbb{1}_{\{ X\geq a \}}=\begin{cases}
+a&\text{if }X(\omega)\geq a\\0&\text{otherwise}
+\end{cases}
+$$
+Hence
+$$
+E(X)\geq E(a\mathbb{1}_{\{ X\geq a \}})=a\mathbf{E}(\mathbb{1}_{\{ X\geq a \}})=a\mathbb{P}(X\geq a)
+$$
+## Chebyshev's Inequality
+Let $X:\Omega\to \mathbb{R}$ be a random vaiable, let $a(\in\mathbb{R})$, then
+$$
+\mathbb{P}(|X-E(X)|\geq a)\leq \frac{1}{a^{2}}Var(X)
+$$
+### Proof
+$$
+\mathbb{P}(|X-E(X)|\geq a)=\mathbb{P}((X-E(X))^{2}\geq a^{2})\leq \frac{1}{a^{2}}E((X-E(X))^{2})=\frac{1}{a^{2}}Var(X)
+$$
+
+
+
 
 #Mathematics #Statistics 
