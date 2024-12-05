@@ -137,7 +137,7 @@ $$
 \alpha\\k
 \end{pmatrix}x^{k}  
 $$
-Where using [[Maclaurin series|Maclaurin's theorem]], for $\alpha \in\mathbb{R}$ and integer $k\geq 0$ we define
+Where using [[Taylor Series|Maclaurin's theorem]], for $\alpha \in\mathbb{R}$ and integer $k\geq 0$ we define
 $$
 \begin{pmatrix}
 \alpha\\k

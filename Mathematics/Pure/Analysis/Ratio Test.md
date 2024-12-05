@@ -31,3 +31,64 @@ $$
 $$
 Proof of the second part: there is $n_{0}\in\mathbb{N}$ with $\left| \frac{a_{k+1}}{a_{k}} \right|\geq 1$ for all $k\geq n_{0}$, which implies $\left| a_{k+1} \right|\geq \left| a_{k} \right|>0$
 In particular, $(a_{k})_{k\in\mathbb{N}}$ does not converge to $0$, the series is therefore divergent
+## Examples
+Look at $\sum_{n=1}^{\infty} \frac{1}{n}$, $\sum_{n=1}^{\infty} \frac{1}{n^{2}}$
+Look at
+$$
+\frac{\frac{1}{n+1}}{\frac{1}{n}}=\frac{n}{n+1}\to1
+$$
+So we can't say anything :(
+Look at
+$$
+\frac{\frac{1}{(n+1)^{2}}}{\frac{1}{n^{2}}}=\frac{n^{2}}{(n+1)^{2}}\to 1
+$$
+So also fails
+Key takeaway; ratio test will fail to give an answer when $a_{n}=\frac{f(n)}{g(n)}$, with $f$ and $g$ polynomials
+___
+It works well for factorials and exponentials, for example:
+$$
+a_{k}=\frac{c^{k}}{k!}
+$$
+With $c\in\mathbb{R}\setminus \{ 0 \}$
+$$
+\left| \frac{a_{k+1}}{a_{k}} \right| =\frac{\left| c \right| ^{k+1}}{(k+1)!}\times \frac{k!}{\left| c \right|^{k} }=\frac{|c|}{k+1}\to0<1
+$$
+So $\sum_{k=1}^{\infty} a_{k} \frac{c^{k}}{k!}$ converges absolutely
+___
+Another!
+$$
+b_{k}=k!c^{k}
+$$
+Using the ratio test gives:
+$$
+\left| \frac{(k+1)!\left| c \right| ^{k+1}}{k!\left| c \right| ^{k}} \right| =(k+1)\left| c \right|\to \infty
+$$
+Which diverges
+___
+$$
+c_{k}=kc^{k}
+$$
+The test gives:
+$$
+\frac{(k+1)\left| c \right| ^{k+1}}{k\left| c \right| ^{k}}=\frac{k+1}{k}\left| c \right| \to \left| c \right| 
+$$
+We get absolute convergence for $|c|<1$ and divergence for $\left| c \right|>1$
+___
+$$
+d_{k}=\frac{(c+3)^{k}}{k^{3}\times 5^{k}}
+$$
+The ratio test gives:
+$$
+\frac{|c+3|^{k+1}}{(k+1)^{3}\times 5^{k+1}}\times \frac{k^{3}\times 5^{k}}{\left| c+3 \right| ^{k}}=\frac{\left| c+3 \right| }{5}\times \frac{k^{3}}{(k+1)^{3}}\to \frac{\left| c+3 \right|}{5}
+$$
+So we get absolute convergence for $\frac{\left| c+3 \right|}{5}<1\iff c\in(-8,2)$, and divergence for $c\in(-\infty,-8)\cup(2,\infty)$
+If $c=2$, then $d_{k}=\frac{5^{k}}{k^{3}\times 5^{k}}=\frac{1}{k^{3}}$ and we get absolute convergence
+If $c=-8$, then $d_{k}=\frac{(-5)^{k}}{k^{3}\times 5^{k}}=\frac{(-1)^{k}}{k^{3}}$ which is also absolutely convergent
+___
+$$
+e_{k}=(2+(-1)^{k})c^{k}
+$$
+$$
+\left| \frac{e_{k+1}}{e_{k}} \right| =\frac{(2+(-1)^{k+1})|c|^{k+1}}{(2+(-1)^{k})|c|^{k}}=\frac{2\pm 1}{2 \mp 1}|c|
+$$
+Which does not converge, but we could look at the $\limsup_{ k \to \infty }\left| \frac{e_{k+1}}{e_{k}} \right|=3|c|$, and so for $|c|<\frac{1}{3}$, we get aboslute convergence, and using a similar argument with liminf, we get if $|c|>3$ we have divergence

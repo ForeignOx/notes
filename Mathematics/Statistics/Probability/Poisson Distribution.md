@@ -83,7 +83,7 @@ $$
 $$
 =e^{-\lambda}\left( 1+\lambda+\frac{\lambda^{2}}{2}+\frac{\lambda^{3}}{3}+\dots \right)
 $$
-From the [[Maclaurin series]]:
+From the [[Taylor Series|Taylor Series]]:
 $$
 1+\lambda+\frac{\lambda^{2}}{2}+\frac{\lambda^{3}}{3}+\dots=e^{\lambda}
 $$
