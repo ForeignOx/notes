@@ -166,8 +166,6 @@ $$
 $$
 \mathbb{P}(|X-E(X)|\geq a)=\mathbb{P}((X-E(X))^{2}\geq a^{2})\leq \frac{1}{a^{2}}E((X-E(X))^{2})=\frac{1}{a^{2}}Var(X)
 $$
-
-
-
+Using Markov's inequality
 
 #Mathematics #Statistics 
