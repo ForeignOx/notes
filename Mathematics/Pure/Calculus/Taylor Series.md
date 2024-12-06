@@ -161,13 +161,21 @@ One can show that the Taylor Series for $\sin$ and $\cos$ are valid $\forall x\i
 Use Taylor series to calculate $\lim_{ x \to 0 } \frac{\sin x}{x}$
 From the Taylor series:
 $$
-\sin x=x-\frac{x^{3}}{3!}+\frac{x^{5}}{5!}-\dots
-$$
-$$
-=x+o(x^{2})
+\sin x=x-\frac{x^{3}}{3!}+\frac{x^{5}}{5!}-\dots=x+o(x^{2})
 $$
 (using [[o Notation|o notation]])
 Hence 
 $$
-\lim_{ x \to =0= } \frac{\sin x}{x}=\lim_{ x \to 0 } \frac{x+o(x^{2})}{x}=\lim_{ x \to  } 
+\lim_{ x \to 0} \frac{\sin x}{x}=\lim_{ x \to 0 } \frac{x+o(x^{2})}{x}=\lim_{ x \to 0 }(1+o(x))=1 
 $$
+___
+Use Taylor series to calculate $\lim_{ x \to 0 } \frac{1-\cos x}{x}$
+From the Taylor series:
+$$
+\cos x=1-\frac{x^{2}}{2}+\frac{x^{4}}{4!}-\dots=1-\frac{x^{2}}{2}+o(x^{3})
+$$
+Hence
+$$
+\lim_{ x \to 0 } \frac{1-\cos x}{x}=\lim_{ x \to 0 } \left( \frac{1-\left( 1-\frac{x^{2}}{2}+o(x^{3}) \right)}{x} \right)=\lim_{ x \to 0 } \left( \frac{x}{2}+o(x^{2}) \right)=0
+$$
+
