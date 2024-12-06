@@ -60,7 +60,7 @@ $$
 $$
 \cosh(x)=\sum_{ k=0} ^{\infty}  \frac{1}{(2k)!}x^{2k}
 $$
-This also follows directly from the Taylor series of the exponential since $\cosh$ is the [[Even Functions]] part and $\sinh$ is the [[Odd Functions|odd]] part of $e^{ x }$. Note that this works for any odd and even function combination
+This also follows directly from the Taylor series of the exponential since $\cosh$ is the [[Even Functions|even]] part and $\sinh$ is the [[Odd Functions|odd]] part of $e^{ x }$. Note that this works for any odd and even function combination
 Since $\ln (x)$ is not defined at $x=0$, it doesn't make sense at $x=0$, so instead, we usually consider the Taylor series about $x=1$
 $$
 f(x)=\ln x,f(1)=0
@@ -134,6 +134,40 @@ $$
 $$
 Hence $0=h^{(n+1)}(c)=f^{(n+1)}(c)(x-a)^{n+1}-(f(x)-P_{n})(x)(n+1)!$ and by rearranging:
 $$
-f(x)=P_{n}(x)= \frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}
+f(x)=P_{n}(x)+ \frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}
 $$
-
+___
+The Lagrange form of the remainder is useful for putting a bound on the error of a Taylor polynomial approximation to a function. Suppose,
+$$
+|f^{(n+1)}(t)|\leq M\forall t\in [a,x]
+$$
+Then
+$$
+\left| R_{n}(x) \right|\leq M \frac{\left| x-a \right| ^{n+1}}{(n+1)!} 
+$$
+Which provides a bound on the error
+### Example
+Show that the error in approximating $e^{ x }$ by its 6th order Taylor polynomial is less than $0.0006$ throughout the interval $[0,1]$
+We have $f(x)=e^{ x }$ and $a=0$, and we wnat a bound on $|R_{6}(t)|$ for $t\in[0,1]$. Then $\left| f^{(7)}(t) \right|=\left| e^{t} \right|$, since $e^{ t }$ is monotonic increasing and positive, $e^{ t }=e^{ t }\leq e^{ 1 }<3$, so take $M=3$
+Then
+$$
+\left| R_{6}(x) \right| \leq \frac{3\left| x \right| ^{7}}{7!}\leq \frac{3}{7!}
+$$
+Since $\frac{3}{7!}<0.0006$, and so we have the required result
+## [[Limit|Limits]] using Taylor Series
+If we knwo a Taylor series is valid on some suitable open interval, then it may be useful for calculating certain limits
+One can show that the Taylor Series for $\sin$ and $\cos$ are valid $\forall x\in\mathbb{R}$
+### Example
+Use Taylor series to calculate $\lim_{ x \to 0 } \frac{\sin x}{x}$
+From the Taylor series:
+$$
+\sin x=x-\frac{x^{3}}{3!}+\frac{x^{5}}{5!}-\dots
+$$
+$$
+=x+o(x^{2})
+$$
+(using [[o Notation|o notation]])
+Hence 
+$$
+\lim_{ x \to =0= } \frac{\sin x}{x}=\lim_{ x \to 0 } \frac{x+o(x^{2})}{x}=\lim_{ x \to  } 
+$$
