@@ -200,4 +200,26 @@ As
 $$
 (1-x)^{-2}=\sum_{ n=0} ^{\infty}  (n+1)x^{n}
 $$
-Which we obtain from the above formula, substituting $n=2$
+Which we obtain from the above formula, substituting $n=2$, we can re-arrange to obtain
+$$
+f(x)(1-x)=1+x(1-x)^{-2}
+$$
+$$
+\implies f(x)=(1-x)^{-1}+x(1-x)^{-3}
+$$
+The last step is to identify the coefficients, we know from the above lemma that:
+$$
+(1-x)^{-1}=\sum_{ k=0} ^{\infty}  x^{n},(1-x)^{-3}=\sum_{ k=0} ^{\infty}  {n+2 \choose 2 }x^{n}
+$$
+So we get
+$$
+f(x)=\sum_{ k=0} ^{\infty}  x^{n}+x \sum_{ k=0} ^{\infty}  {n+2 \choose 2 }x^{n}=\sum_{ k=0} ^{\infty}  x^{n}+\sum_{ k=0} ^{\infty}  {n+2 \choose 2 }x^{n+1}
+$$
+$$
+= \sum_{k=0}^{\infty}x^{n}+\sum_{ k=1} ^{\infty}  {n+1 \choose 2 }x^{n}=\sum_{ k=0} ^{\infty}  \left( 1+{n+1 \choose 2 } \right)x^{n}
+$$
+So we deduce that
+$$
+a_{n}=1+{n+1 \choose 2 }
+$$
+
