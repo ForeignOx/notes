@@ -25,7 +25,7 @@ $$
 $$
 \implies -e^{ -y }=-xe^{ -x }+\int e^{ -x } \, dx
 $$
-By [[Leibniz Rule|Leibniz rule]]
+By [[Leibniz Rule|Leibniz rule]] 
 $$
 e^{ -y }=-xe^{ -x }-e^{ -x }+c
 $$
