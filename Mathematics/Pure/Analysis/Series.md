@@ -1,4 +1,4 @@
-Let $(a_{k})_{k\in\mathbb{N}}$ be a [[Sequences|sequence]] of [[Real Numbers|real numbers]], then the sequence of partial sums $(s_{n})_{n\in\mathbb{N}}$ is defined as:
+1Let $(a_{k})_{k\in\mathbb{N}}$ be a [[Sequences|sequence]] of [[Real Numbers|real numbers]], then the sequence of partial sums $(s_{n})_{n\in\mathbb{N}}$ is defined as:
 $$
 s_{n}=\sum_{k=1}^{n}a_{k}
 $$
