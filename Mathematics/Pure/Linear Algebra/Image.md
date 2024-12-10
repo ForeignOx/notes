@@ -4,4 +4,12 @@ $$
 $$
 $\text{im}(T)$ is a subspace
 ## Proof
-Suppose $\vec{u},\vec{w}\in \text{im}(T),\lambda \in\mathbb{R}$
+Suppose $\vec{u},\vec{w}\in \text{im}(T),\lambda \in\mathbb{R}$, then $\exists \vec{x},\vec{y}\in V$ such that
+$$
+T(\vec{x})=\vec{u},T(\vec{y})=\vec{w}
+$$
+So
+$$
+\vec{u}+\vec{w}=T(\vec{x})+T(\vec{y})=T(\vec{x}+\vec{y})\in  \text{im}(T)
+$$
+
