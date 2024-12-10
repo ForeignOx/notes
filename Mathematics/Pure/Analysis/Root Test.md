@@ -3,7 +3,7 @@ $$
 a=\limsup_{ k \to \infty }\sqrt[k]{\left| a_{k} \right|   } 
 $$
 If $a<1$, then [[series|$\sum_{k=1}^{\infty} a_{k}$]] is [[Absolute Convergence|absolutely convergent]]
-If $a>1$, then $\sum_{k=1}^{\infty} a_{k}$ is devergent
+If $a>1$, then $\sum_{k=1}^{\infty} a_{k}$ is divergent
 ## Proof
 Assume $a<1$, then for all but finitely many $k$, we have:
 $$
