@@ -2,7 +2,7 @@ Idea: if we consider a sample of size $n$, $X_{1},X_{2},\dots,X_{n}$, then the s
 $$
 \overline{X}_{n}=\frac{1}{n}\sum_{ i=1} ^{ n}X_{i}
 $$
-Then $X_{n}$ converges to [[E(X)|E(X)]]
+Then $\overline{X}_{n}$ converges to [[E(X)|E(X)]]
 ___
 Theorem:
 Let $X_{1},X_{2},\dots$ be an [[Independence|independent]] sequence of [[Random Variables|random variables]], with [[E(X)|$E(X_{i})=\mu$]] and [[Var(X)|$Var(X_{i})=\sigma^{2}$]] for all $i\geq 1$, 
@@ -10,6 +10,7 @@ Let $\overline{X}_{n}=\frac{1}{n}\sum_{i=1}^{n}X_{i}$, then for any $\epsilon>0$
 $$
 \lim_{ n \to \infty } \mathbb{P}(| \overline{X}_{n}-\mu|>\epsilon)=0
 $$
+In the most general case, we need not know $\sigma^{2}$, here in our case, we wanted to use Chebyshev's inequality and hence we needed it, this is known as the advances Kolmogorov Law of Large Numbers
 ## Example
 Let $X$ denote the number of heads in $n$ tosses of coin with probability of success $p$
 $$
@@ -52,3 +53,7 @@ $$
 $$
 \implies \mathbb{P}(\left| X_{n}-\mu \right|>\epsilon )=1-\mathbb{P}(\left| \overline{X}_{n}-u \right|\leq\epsilon)
 $$
+## Example
+Let us collect a sample of size $n$ of heights of individuals, let $H_{i}$ denote the height of the $i$th individual
+Suppose we know that $E(H_{i})=\mu$
+Suppose we know that $E(H_{i})=\mu$ and $Var(H_{i})=\sigma^{2}$. Then if $\overline{X}_{n}=\frac{1}{n}\sum_{ i=1} ^{ n} H_{i}$, then $\forall\epsilon>0$, $\mathbb{P}(\left| \overline{X}_{n}-\mu \right|>\epsilon)\to 0$ as $n\to \infty$, that is, with high probability that $\overline{X}_{n}$ is very close to $\mu$
