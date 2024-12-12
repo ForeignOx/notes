@@ -48,7 +48,7 @@ M_{Y}(t)=E\left( e^{ t\sum_{ i=1} ^{ n}   X_{i}} \right)=E(e^{ tX_{1} }e^{ tX_{2
 $$
 Which, since they are independent, is equal to
 $$
-=\prod_{ i=1} ^{ n}  E(e^{ tX_{i} })=
+=\prod_{ i=1} ^{ n}  E(e^{ tX_{i} })=2
 $$
 Convergence:
 Let $X_{1},X_{2},\dots$ be an infinite sequence of independent random variables and let $X$ be some random variable, then if there is $n>0$ such that
