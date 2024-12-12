@@ -1,4 +1,4 @@
-Anything is a normal distribution if you squint hard enough
+obuAnything is a normal distribution if you squint hard enough
 Let $X_{1},X_{2},\dots$ be an [[Independent and Identically Distributed|IID]] sequence of [[Random Variables|random variables]]. Let $\mu=E(X_{i})$ and define:
 $$
 \overline{X}_{n}=\frac{1}{n}\sum_{ i=1} ^{ n}  X_{i}

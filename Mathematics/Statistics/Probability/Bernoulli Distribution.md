@@ -25,5 +25,17 @@ ___
 $$
 Var(X)=\sum x^{2}P(X=x)-(E(X))^{2}=1^{2}\times p+0^{2}\times (1-p)-p^{2}=p-p^{2}=p(1-p)=pq
 $$
+## stuff
+Let $Y_{1},Y_{2},\dots,Y_{n}$ be an [[Independent and Identically Distributed|iid]] Bernoulli random varibale
+$$
+B_{n}=\sum_{ i=1} ^{ n}  Y_{i}
+$$
+So obvserve that $E(B_{n})=\sum_{ i=1} ^{ n} E(Y_{i})=np$, since $E(Y_{i})=p$
+$$
+Var(B_{n})=\sum_{ i=1} ^{ n}  
+Var(Y_{i})
+
+$$
+
 
 #Mathematics #Statistics #Distribution

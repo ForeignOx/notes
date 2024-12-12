@@ -57,5 +57,19 @@ The binomial distribution is a suitable modelling distribution if the following 
 - The number of trials, $n$, is fixed
 - The probability of success, $p$, is also fixed throughout all the trials
 - Trials are [[Independence|independent]] of one another
+## Approxuimation to Normal
+Let $X\sim B(n,p)$ and $0<p<1$, then
+$$
+B_{n}=\frac{1}{n}X
+$$
+and
+$$
+Z_{n} = \frac{X_{n}-np}{np(1-p)}=\frac{B_{n}-p}{\sqrt{ p(1-p) }}
+$$
+Then $\lim_{ n \to \infty }F_{Z_{n}}(z)=\lim_{ n \to 0 }\mathbb{P}(Z_{n}\leq z)=\Phi(z_{n})$
+
+
+
+
 
 #Mathematics #Statistics #Distribution 
