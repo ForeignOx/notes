@@ -76,4 +76,4 @@ $$
 $$
 ### Independce
 
-#Mathematics #Probability #Function 
+#Mathematics #Probability #Functions

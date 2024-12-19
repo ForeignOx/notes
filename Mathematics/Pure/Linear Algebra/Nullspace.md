@@ -4,3 +4,5 @@ $$
 $$
 ## Nullity
 The nullity of $A$ is the [[Git?/Mathematics/Pure/Linear Algebra/Dimension|dimension]] of the nullspace
+
+#Mathematics #LinAlg 

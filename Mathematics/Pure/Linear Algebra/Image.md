@@ -13,3 +13,4 @@ $$
 \vec{u}+\vec{w}=T(\vec{x})+T(\vec{y})=T(\vec{x}+\vec{y})\in  \text{im}(T)
 $$
 
+#Mathematics #LinAlg #Definition 

@@ -40,3 +40,5 @@ $k\geq l$, so any linearly independent set has as many or fewer vectors than a s
 In a finite dimensional vectorspace, every [[Basis|basis]] has the same [[Cardinality of Sets|cardinality]]
 ### Proof
 If $A=\{ \vec{a}_{1},\dots,\vec{a}_{r} \}$ and $B=\{ \vec{b}_{1},\dots,\vec{b}_{s} \}$ are two bases for $V$, then $r\geq s$ since $A$ is spanning and $B$ is linearly independent, also $s\geq r$, since $B$ is spanning and $A$ is linearly independent, so $r=s$
+
+#Mathematics #LinAlg #Theorem 

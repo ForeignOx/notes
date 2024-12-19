@@ -56,3 +56,5 @@ $$
 N:=\text{number of potaties needed to exceed }2000\pu{ g}
 $$
 Let $X_{i}$ be the weight of the $i$th potato
+
+#Mathematics #Probability #Theorem 

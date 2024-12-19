@@ -66,3 +66,5 @@ $$
 $$
  p\cap(p\cup q)\iff p
 $$
+
+#Mathematics #Logic 

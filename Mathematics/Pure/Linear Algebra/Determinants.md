@@ -374,4 +374,4 @@ $$
 
 
 
-#Mathematics #LinAlg #Function #Definition #Theorem 
+#Mathematics #LinAlg #Functions #Definition #Theorem 

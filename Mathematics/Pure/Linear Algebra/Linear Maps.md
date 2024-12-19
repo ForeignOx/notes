@@ -233,3 +233,4 @@ T\circ S(\vec{x})=T(S(\vec{x}))=T(A\vec{x})=BA\vec{x}
 $$
 Which in a way is where matrix multiplication comes from (very cool)
 
+#Mathematics #LinAlg #Definition #Theorem 

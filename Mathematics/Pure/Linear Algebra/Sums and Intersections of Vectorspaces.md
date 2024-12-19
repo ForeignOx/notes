@@ -129,3 +129,5 @@ $$
 \left( \frac{1}{2}(A-A^{t}) \right)^{t}=\frac{1}{2}(A^{t}-(A^{t})^{t})=\frac{1}{2}(A^{t}-A)=-\frac{1}{2}(A-A^{t})
 $$
 Suppse $A\in S\cap T$, then $A=A^{t}=-A$, so $ZA=0$
+
+#Mathematics #LinAlg #Definition #Theorem 

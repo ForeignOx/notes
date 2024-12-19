@@ -20,3 +20,6 @@ $$
 f''(x)=6x^5-6x^4+6x-6=6(x^5-x^4+x-1)=6(x-1)(x^{4}+1)
 $$
 But $x^{4}\geq 0$, so $x^{4}\neq-1$ in $\mathbb{R}$, so $f''(x)$ has only $\hspace{0pt}1$ real root hence contradiction yayyy
+
+
+#Mathematics #Calculus #Theorem 

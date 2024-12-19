@@ -57,3 +57,5 @@ $$
 Let us collect a sample of size $n$ of heights of individuals, let $H_{i}$ denote the height of the $i$th individual
 Suppose we know that $E(H_{i})=\mu$
 Suppose we know that $E(H_{i})=\mu$ and $Var(H_{i})=\sigma^{2}$. Then if $\overline{X}_{n}=\frac{1}{n}\sum_{ i=1} ^{ n} H_{i}$, then $\forall\epsilon>0$, $\mathbb{P}(\left| \overline{X}_{n}-\mu \right|>\epsilon)\to 0$ as $n\to \infty$, that is, with high probability that $\overline{X}_{n}$ is very close to $\mu$
+
+#Mathematics #Probability #Theorem 

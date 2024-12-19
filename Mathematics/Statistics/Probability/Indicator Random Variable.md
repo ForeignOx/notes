@@ -31,3 +31,5 @@ $$
 \mathbb{1}_{A\cap B}=\mathbb{1}_{A}\mathbb{1}_{B}
 $$
 Because if $\omega \in A$ and $\omega \in B$, then $\mathbb{1}_{A}=1$, $\mathbb{1}_{B}=1$, so $\mathbb{1}_{A\cap B}=1$, in any other case $\mathbb{1}_{A\cap B}=0$ as one of $\mathbb{1}_{A}$ or $\mathbb{1}_{B}$ is zero
+
+#Mathematics #Probability #Definition 

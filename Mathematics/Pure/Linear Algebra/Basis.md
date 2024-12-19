@@ -123,3 +123,4 @@ $$
 $$
 So $\text{span}< \vec{u},\dots,\vec{u}_{i-1},\vec{u}_{i+1},\dots,\vec{u}_{r} >=\text{span}< \vec{u}_{1},\dots,\vec{u}_{r} >$, so $\text{span}< \vec{u}_{1},\dots,\vec{u}_{r} >$ was not a minimal spanning set
 
+#Mathematics #LinAlg #Definition #Theorem 

@@ -4,3 +4,5 @@ $(\neg p)^{d}$ is also the same as $\neg p$
 The propositions $p \cup \neg p$ and $p \cap \neg p$ are duals of each other whenever $p$ is primitive, as are the statements $p \cup T_{0}$ and $p\cap F_{0}$
 ## Principle of Duality
 Let $s$ and $t$ be propositions, if $s\iff t$, then $s^{d}\iff t^{d}$
+
+#Mathematics #Logic #Definition 

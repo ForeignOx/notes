@@ -79,3 +79,5 @@ $$
 \text{rowspace}(A')=\text{span}< \vec{r}_{1},\dots \vec{r}_{m} > \subseteq \mathbb{R}^{k}
 $$
 Where $\vec{r}_{i}$ is the $i$th row of $A'$, where we have discarded columns rows of zeros, so we only have $m$ of them, but note $\{ \vec{r}_{1},\dots,\vec{r}_{m} \}$ is linearly independent by looking at the coordinates of the leading 1's, so $\text{rowrank}(A')=m$
+
+#Mathematics #LinAlg #Definition #Theorem 

@@ -169,3 +169,5 @@ A\vec{e}_{1}&\dots&A\vec{e}_{n}
 \Phi_{B}T(\vec{v}_{1})&\Phi_{b}T(\vec{v}_{n})
 \end{pmatrix}
 $$
+
+#Mathematics #LinAlg #Definition #Theorem 

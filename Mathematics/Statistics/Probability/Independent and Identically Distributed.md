@@ -7,3 +7,6 @@ $$
 E(X_{i})=\int_{-\infty}^{\infty} xf(x) \, dx 
 $$
 For all $X_{i}$ as they have the same distribution, and for variance, the same type of thing applies
+
+
+#Mathematics #Probability #Definition 

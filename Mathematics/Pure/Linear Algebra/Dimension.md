@@ -47,3 +47,5 @@ Let there be $V$ containing a basis, hence a spanning set of $k$ elements, hence
 $V$ contains a basis, hence a linearly independnent set of $k$ elements, hence this follows from steinitz
 Assume the second statement, $S$ must be a maximal linearly independent set since linearly independent sets have at most $k=l$ elements, then $S$ is  basis
 $S$ must be a minimal spanning set since spanning sets have at least $k=l$ elements
+
+#Mathematics #LinAlg #Definition 

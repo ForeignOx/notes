@@ -3,3 +3,5 @@ $$
 M_{X}(t)=M_{Y}(t)<\infty,t\in (-h,h)
 $$
 Then $F_{X}(x)=F_{Y}(x)$, conversley, if $F_{X}(x)=F_{Y}(x)$, then $M_{X}(F$
+
+???

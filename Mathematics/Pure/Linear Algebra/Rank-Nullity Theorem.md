@@ -2,3 +2,5 @@ If [[Matrices|$A \in M_{n\times k}(\mathbb{R})$]], then we have a relationship b
 $$
 \text{rk}(A)+\text{null}(A)=k
 $$
+
+#Mathematics #LinAlg #Theorem 

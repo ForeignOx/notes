@@ -59,3 +59,6 @@ $$
 \lim_{ n \to \infty } F_{X_{n}}(x)=F_{X}(x)
 $$
 For all $x\in\mathbb{R}$, where $F_{X}(\cdot)$ is continuous. We say "$X_{n}$ converges in distribution to $X$"
+
+
+#Mathematics #Probability #Definition 

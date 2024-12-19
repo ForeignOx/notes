@@ -1,4 +1,4 @@
-The following are equivalent as proven here
+The following are equivalent as proven here(!)
 - $B$ is a [[basis|basis]] for $V$
 - $B$ is a maximal [[Linear Independence|linearly independent]] [[Subsets|subset]]
 - $B$ is a minimal [[span|spanning]] set
@@ -166,3 +166,6 @@ $$
 \end{pmatrix}
 $$
 Which is incorrect! Pls fix 
+
+
+#Mathematics #LinAlg #Definition 

@@ -7,3 +7,5 @@ And is written:
 $$
 X_{n} \overset{d}{\to} X
 $$
+
+#Mathematics #Probability #Definition 
