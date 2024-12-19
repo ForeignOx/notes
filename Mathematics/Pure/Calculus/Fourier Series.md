@@ -127,7 +127,7 @@ $$
 b_{n}=\int _{-1}^{1}\left| x \right| \sin(n\pi x) \, dx =0
 $$
 Since this is the integral of an odd function over a symmetric interval
-Putting hte above together, we have the Fourier cosine series for $f(x)$
+Putting the above together, we have the Fourier cosine series for $f(x)$
 $$
 f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty} a_{n}\cos\left( \frac{n\pi x}{L} \right)+b_{n}\left( \frac{n\pi x}{L} \right) 
 $$
@@ -140,7 +140,7 @@ $$
 Note that in this example $a_{2n}=0$, and $a_{2n-1}=-\frac{4}{(2n+1)^{2}\pi^{2}}$
 So we can also write the Fourier series as:
 $$
-f(x)
+f(x)=
 $$
 
 
