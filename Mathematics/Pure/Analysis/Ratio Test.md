@@ -92,3 +92,5 @@ $$
 \left| \frac{e_{k+1}}{e_{k}} \right| =\frac{(2+(-1)^{k+1})|c|^{k+1}}{(2+(-1)^{k})|c|^{k}}=\frac{2\pm 1}{2 \mp 1}|c|
 $$
 Which does not converge, but we could look at the $\limsup_{ k \to \infty }\left| \frac{e_{k+1}}{e_{k}} \right|=3|c|$, and so for $|c|<\frac{1}{3}$, we get aboslute convergence, and using a similar argument with liminf, we get if $|c|>3$ we have divergence
+
+#Mathematics #Analysis #Theorem

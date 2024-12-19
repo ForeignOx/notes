@@ -82,3 +82,6 @@ $$
 \frac{1}{2^{m-2}}|u_{2}-u_{1}|<\epsilon
 $$
 Hence $(u_{n})_{n\in\mathbb{N}}$ is a Cauchy sequence
+
+
+#Mathematics #Analysis #Definition #Theorem   

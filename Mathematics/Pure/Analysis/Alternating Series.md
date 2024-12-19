@@ -41,3 +41,5 @@ The series $\sum_{k=1}^{\infty} \frac{(-1)^{k}}{\sqrt{ k }}$ converges by altern
 ___
 The series $\sum_{k=1}^{\infty} \frac{1}{k}+\frac{(-1)^{k+1}}{\sqrt{ k }}$, note $\frac{1}{k}<\frac{1}{\sqrt{ k }}$ for $k>1$, the summand for $k=1$ is $1+1$, the summand for $k=2$ is $\frac{1}{2}-\frac{1}{\sqrt{ 2 }}<0$, for $k=3$, it will be positive, but the evens are negative, but consider the series being written as: $\sum_{k=1}^{\infty}(-1)^{k+1}| \frac{1}{k}+\frac{(-1)^{k+1}}{\sqrt{ k }}|=b_{k}$, then $0\leq b_{k}\leq \frac{1}{k}+\frac{1}{\sqrt{ k }}\to0$
 Note that the sequence is not monotonically decreasing, so we can't use the alternating sign teest here, so it is not convergent
+
+#Mathematics #Analysis #Theorem 

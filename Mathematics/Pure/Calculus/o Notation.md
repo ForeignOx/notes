@@ -8,3 +8,6 @@ $$
 \lim_{ x \to 0 } \frac{f(x)}{x^{n}}=0
 $$
 In particular, for any constant $\alpha \neq 0$, $\alpha x^{m}=o(x^{n})$ iff $m>n$
+
+
+#Mathematics 

@@ -8,3 +8,5 @@ $$
 \sum_{k=1}^{\infty} \frac{(-1)^{k+1}}{k^{2}} 
 $$
 Is not
+
+#Mathematics #Analysis #Definition 

@@ -41,3 +41,5 @@ $$
 So we get absolute convergence for $|c|<1$, and divergece for $|c|>1$
  If $c=1$, $e_{k}=2+(-1)^{k}$ does not converge to $\hspace{0pt}0$, we get divergence
  If $c=-1$, $e_{k}=(-1)^{k}(2+(-1)^{k})$ does not converge to $\hspace{0pt}0$, we get divergence
+ 
+#Mathematics #Analysis #Theorem 

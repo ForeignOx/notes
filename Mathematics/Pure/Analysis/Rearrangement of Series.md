@@ -21,3 +21,4 @@ $$
 = \frac{1}{2}\left( 1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\frac{1}{5}-\frac{1}{6}+\dots \right)=\frac{c}{2}
 $$
 Which links to the fact that commutativity does not work for infinite series
+????

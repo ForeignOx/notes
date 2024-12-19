@@ -142,3 +142,6 @@ So we can also write the Fourier series as:
 $$
 f(x)
 $$
+
+
+#Mathematics #Calculus 

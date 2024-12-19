@@ -141,5 +141,6 @@ The $\frac{k+1}{\sqrt{ k^{3}+1 }}\leq 1$, and then the $e^{ k }$ gives a geometr
 $$
 e_{k}\leq \frac{1}{e^{ k }}
 $$
-Which by coparison test, this si converget
+Which by comparison test, this is converget
 
+#Mathematics #Analysis #Definition #Theorem 

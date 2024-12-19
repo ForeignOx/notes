@@ -83,3 +83,4 @@ $$
 z(x)=e^{ -x }+3e^{ -2x }+2(x-1)
 $$
 
+#Mathematics #Calculus 

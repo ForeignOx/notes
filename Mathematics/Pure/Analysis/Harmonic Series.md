@@ -21,3 +21,5 @@ $$
 s_{2^{n}}\geq 1+n\times \frac{1}{2}
 $$
 So there is a [[Subsequences|subsequence]] of partial sums which diverges, so the sequence of partial sums is divergent, so the harmonic series is divergent
+
+#Mathematics #Analysis 

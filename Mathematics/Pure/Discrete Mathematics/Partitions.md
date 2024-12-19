@@ -55,3 +55,5 @@ A similar idea extends to the general case, where multiple parts of the same siz
 ### Example
 How many ways are there to make a total of $n$ pence using 1p,2p and 5p coins?
 Let $e_{k}$ be the 
+
+#Mathematics #Discrete 

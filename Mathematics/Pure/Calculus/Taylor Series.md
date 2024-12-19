@@ -179,3 +179,5 @@ $$
 \lim_{ x \to 0 } \frac{1-\cos x}{x}=\lim_{ x \to 0 } \left( \frac{1-\left( 1-\frac{x^{2}}{2}+o(x^{3}) \right)}{x} \right)=\lim_{ x \to 0 } \left( \frac{x}{2}+o(x^{2}) \right)=0
 $$
 
+
+#Mathematics #Calculus #Theorem 
