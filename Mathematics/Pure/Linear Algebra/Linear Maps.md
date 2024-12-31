@@ -1,4 +1,4 @@
-Suppose $V,W$ are [[Real Vectorspaces|vectorspaces]], a linear map (aka linear transformation) is a [[Functions|funciton]] $T:V\to W$ satisfying linearity:
+Suppose $V,W$ are [[Real Vectorspaces|vectorspaces]], a linear map (aka linear transformation) is a [[Functions|function]] $T:V\to W$ satisfying linearity:
 - For all $\vec{u},\vec{v}\in V$, we have
 $$
 T(\vec{u}+\vec{v})=T(\vec{u})+T(\vec{v})
@@ -218,7 +218,7 @@ T\begin{pmatrix}
 $$
 ## Properties of Linear Maps
 ### Lemma
-Suppose $S:U\to V$,$T:V\to W$ are linear, then $T\circ S:U\to W$ is linear, similarly if $S:\mathbb{R}^m\to \mathbb{R}^{n}$, $T:\mathbb{R}^{n}\to \mathbb{R}^k$ are given by $S(\vec{x})-A\vec{x}$, $T(\vec{y})=B\vec{y}$, then $T\circ S(\vec{x})=BA\vec{x}$
+Suppose $S:U\to V$, $T:V\to W$ are linear, then $T\circ S:U\to W$ is linear, similarly if $S:\mathbb{R}^m\to \mathbb{R}^{n}$, $T:\mathbb{R}^{n}\to \mathbb{R}^k$ are given by $S(\vec{x})-A\vec{x}$, $T(\vec{y})=B\vec{y}$, then $T\circ S(\vec{x})=BA\vec{x}$
 #### Proof
 Suppose $\vec{u},\vec{v}\in U,\lambda \in\mathbb{R}$, then
 $$
@@ -232,5 +232,48 @@ $$
 T\circ S(\vec{x})=T(S(\vec{x}))=T(A\vec{x})=BA\vec{x}
 $$
 Which in a way is where matrix multiplication comes from (very cool)
+## Proposition
+If $T:V\to W$ is linear, then the following are equivalent:
+- [[Kernel|$\text{ker}(T)=0=\{ \vec{0} \}$]]
+- $T$ is [[Injective Functions|injective]] (1-1)
+- If $\{ \vec{v}_{1},\dots,\vec{v}_{n} \}\subseteq V$ are [[Linear Independence|linearly independent]], then $\{ T(\vec{v}_{1}),\dots,T(\vec{v}_{n}) \}\subseteq W$ are linearly independent
+### Proof
+$1\implies2$ Assume 1:
+Suppose $T(\vec{u})=T(\vec{v})$, so for injectivity we want to show $\vec{u}=\vec{v}$
+$$
+T(\vec{u}-\vec{v})=T(\vec{u})-T(\vec{v})=\vec{0}
+$$
+$$
+\implies \vec{u}-\vec{v}\in \text{ker}(T)=0
+$$
+$$
+\implies \vec{u}-\vec{v}=\vec{0}
+$$
+$$
+\implies \vec{u}=\vec{v}
+$$
+$2\implies 3$: Assume $2$:
+Suppose 
+$$
+\lambda_{1}T(\vec{v}_{1})+\dots+\lambda_{n}T(\vec{v}_{n})=\vec{0}
+$$
+$$
+\implies T(\lambda_{1}\vec{v}_{1}+\dots+\lambda_{n}\vec{v}_{n})=\vec{0}=T(\vec{0})
+$$
+Hence, since $T$ is 1$\hspace{0pt}-1$, 
+$$
+\lambda_{1}\vec{v}_{1}+\dots+\lambda_{n}\vec{v}_{n}=\vec{0} 
+$$
+$$
+\implies \lambda_{1}=\dots=\lambda_{n}=0
+$$
+So the $\vec{v}_{i}$'s are linearly independent
+$3\implies1$: Assume $3$
+Suppose $\vec{u}\neq 0$ and $\vec{u}\in\text{ker}(T)$ then $\{ \vec{u} \}$ is linearly independent, but $\{ \vec{0} \}=\{ T(\vec{u}) \}$ is not linearly independent, which contradicts our $3$, so $\text{ker}(T)=\{ \vec{0} \}$
+### Corollary
+Let $T:V\to W$ be linear and suppose $\text{ker}(T)=0$, then if $\{ \vec{v}_{1},\dots,\vec{v}_{n} \}$ is a basis for $\vec{v}$, we have that $\{ T(\vec{v}_{1}),\dots,T(\vec{v}_{n}) \}$ is a basis for $\text{im}(T)$, hence $\text{rk}(T)=\dim(\text{im}(T))=n=\dim(V)$
+#### Proof
+$\{ T(\vec{v}_{1}),\dots,T(\vec{v}_{n}) \}$ is spanning by [[Image#Lemma|this lemma]] and linearly independent by the proposition, so is a basis for $\text{im}(T)$
+
 
 #Mathematics #LinAlg #Definition #Theorem 

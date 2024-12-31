@@ -169,5 +169,16 @@ A\vec{e}_{1}&\dots&A\vec{e}_{n}
 \Phi_{B}T(\vec{v}_{1})&\Phi_{b}T(\vec{v}_{n})
 \end{pmatrix}
 $$
+## Proposition
+Suppose $T:V\to W$ is linear and $\phi:V'\to V$ and $\psi:W\to W'$ are isomorphisms, then we know the following about the [[Kernel|nullity]] and the [[Image|rank]]: 
+$$
+\text{rk}(\psi \circ T\circ \phi)=\text{rk}(T)
+$$
+$$
+\text{null}(\psi \circ T\circ \phi)=\text{null}(T)
+$$
+### Proof
+Since $\phi$ is onto, $\text{im}(\psi \circ T\circ \phi)=\text{im}(\psi \circ T)=\psi(\text{im}(T))$, but since $\psi$ is an isomorphism, it has the same dimension as $\text{im}(T)$, so since it is injective, by this [[Linear Maps#Corollary|this corollary]], it is equal
+$\psi$ is 1$\hspace{0pt}-1$ so $\text{ker}(\psi \circ T\circ \phi)=\text{ker}(T\circ \phi)$, but $\text{ker}(T \circ \phi)=\phi ^{-1}(\text{ker}(T))$ which has the same dimnsion as $\text{ker}(T)$ by the corollary again
 
 #Mathematics #LinAlg #Definition #Theorem 

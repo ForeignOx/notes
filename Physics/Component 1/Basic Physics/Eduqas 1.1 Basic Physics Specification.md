@@ -8,7 +8,7 @@ There are a number of opportunities for the development of mathematical skills i
 There are opportunities within this topic for learners to carry out experimental and investigative activities, including appropriate risk management, in a range of contexts.
 ## Learners should be able to demonstrate and apply their knowledge and understanding of:
 - [[SI units|the 6 essential base SI units (kg, m, s, A, mol, K)]]
-- [[Git?/Physics/Component 1/Basic Physics/Dimension|representing units in terms of the 6 base SI units]] and their [[SI multipliers|prefixes]]
+- [[Dimension of Quantity|representing units in terms of the 6 base SI units]] and their [[SI multipliers|prefixes]]
 - [[Homogeinity of Equations|checking equations for homogeneity using units]]
 - the difference between [[Scalar Quantities|scalar]] and [[Vector Quantities|vector]] quantities and to give examples of each – displacement, velocity, acceleration, force, speed, time, density, pressure etc
 - the addition and subtraction of coplanar [[Vector Quantities|vectors]], and perform mathematical calculations limited to [[Components of vectors|two perpendicular vectors]]
