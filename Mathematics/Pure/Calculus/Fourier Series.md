@@ -117,6 +117,83 @@ In general we want to know what happens to the partial sum $S_{m}(x)$ for all $x
 If $f(x)$ is [[Even Functions|even]] on $(-L,L)$, then all $b_{n}=0$ and the Fourier series contains only cosine terms (plus a constant), such a series is called a cosine series
 ## Sine Series
 If $f(x)$ is [[Odd Functions|odd]] on $(-L,L)$, then all $a_{n}=0$ and the Fourier series contains only sine terms, such a series is called a sine series
+## Half-Range Fourier Series
+Given a function $f(x)$ defined on $(0,L)$, we can find different Fourier series which converge to $f(x)$ on $(0,L)$
+Given $f(x)$ on $(0,L)$, we obtain it's half range sine series by calculating the Fourier sine series of its odd extension:
+$$
+f_{o}(x)=\begin{cases}
+f(x)&x\in (0,L)\\-f(-x)&x\in (-L,0)
+\end{cases}
+$$
+The Fourier coefficients of $f_{o}(x)$ are $a_{n}=0$ and 
+$$
+b_{n}=\frac{1}{L}\int _{-L}^{L}f_{o}(x)\sin\left( \frac{n\pi x}{L} \right) \, dx=\frac{2}{L}\int _{0}^{L}f(x)\sin\left( \frac{n\pi x}{L} \right) \, dx 
+$$
+The half range sine series for $f(x)$ on $(0,L)$ is then
+$$
+f(x)=\sum_{ n=1} ^{\infty}  b_{n}\sin\left( \frac{n\pi x}{L} \right)
+$$
+Similarly, given $f(x)$ on $(0,L)$, we obtain it's half range cosine series by calculating the Fourier series of its even extension
+$$
+f_{e}(x)=\begin{cases}
+f(x)&x\in (0,L)\\f(-x)&x\in (-L,0)
+\end{cases}
+$$
+The Fourier coefficients of $f_{e}(x)$ are $b_{n}=0$ and
+$$
+    a_{n}=\frac{1}{L}\int _{-L}^{L}f_{e}(x)\cos\left( \frac{n\pi x}{L} \right) \, dx =\frac{2}{L}\int_{0}^{L}f(x)\cos\left( \frac{n\pi x}{L} \right) \, dx 
+$$
+This gives the half range cosine series for $f(x)$ on $(0,L)$ as
+$$
+f(x)=\frac{a_{0}}{2}+\sum_{ n=1} ^{\infty}  a_{n}\cos\left( \frac{n\pi x}{L} \right)
+$$
+So we have two different ways of writing different Fourier series that converge to the same function on the interval $(0,L)$
+For a given problem on $(0,L)$, it is usually the boundary conditions which determine whether a half range sine or cosine series is appropriate
+## Fourier Series in Complex Form
+Fourier series can be written in a more compact simple form if written in terms of complex variables. Given the Fourier series
+$$
+f(x)=\frac{a_{0}}{2}+\sum_{ n=1} ^{\infty}  \left( a_{n}\cos\left( \frac{n\pi x}{L} \right)+b_{n}\sin\left( \frac{n\pi x}{L} \right) \right)
+$$
+We can use the identities 
+$$
+\cos\left( \frac{n\pi x}{L} \right)=\frac{1}{2}(e^{ in\pi x/L }+e^{ -in\pi x/L })
+$$
+$$
+ \sin\left( \frac{n\pi x}{L} \right)=\frac{1}{2i}(e^{ in\pi x/L }-e^{ -in\pi x/L })
+$$
+To rewrite this as:
+$$
+f(x)=\frac{a_{0}}{2}+\frac{1}{2}\sum_{ n=1} ^{\infty}  (a_{n}-ib_{n})e^{ in\pi x/L }+(a_{n}+ib_{n})e^{ -in\pi x/L }
+$$
+$$
+=\sum_{ n=-\infty} ^{\infty}  c_{n}e^{ in\pi x/L }
+$$
+Where we define 
+$$
+c_{0}=\frac{a_{0}}{2}=\frac{1}{2L}\int _{-L}^{L}f(x) \, dx 
+$$
+For $n>0$:
+$$
+c_{n}=\frac{1}{2}(a_{n}-ib_{n})=\frac{1}{2L}\int_{-L}^{L}f(x)\cos\left( \frac{n\pi x}{L} \right)-i\sin\left( \frac{n\pi x}{L} \right) \, dx 
+$$
+$$
+= \frac{1}{2L}\int _{-L}^{L}f(x)e^{ -in\pi x/L } \, dx 
+$$
+For $n<0$:
+$$
+c_{n}=\frac{1}{2}(a_{-n}+ib_{-n})=\frac{1}{2L}\int _{-L}^{L}f(x)\cos\left( -\frac{n\pi x}{L} \right)+i\sin\left( -\frac{n\pi x}{L} \right) \, dx 
+$$
+$$
+= \frac{1}{2L}\int _{-L}^{L}f(x)e^{ -in\pi x/L } \, dx 
+$$
+Which is the same formula for all three cases which can be written as a single formula:
+$$
+c_{n}=\frac{1}{2L}\int _{-L}^{L}f(x)e^{ -in\pi x/L } \, dx 
+$$
+With Fourier series
+$$
+f(x)=\sum_{ n=-\infty} ^{\infty}  c_{n}e^{ in\pi x/L }
+$$
 ## Examples
 The function $f(x)$ has period $\hspace{0pt}2$ i.e. $f(x+2)=f(x)$ and is given by $f(x)=|x|$ for $-1<x<1$, so looks like:
 ![[Fourier Series 2024-12-10 14.40.53.excalidraw]]
@@ -187,5 +264,50 @@ $$
 = 2\left( \sin (x)-\frac{1}{2}\sin(2x)+\frac{1}{3}\sin(3x)+\dots \right)
 $$
 As we include more terms in the partial sum, the Fourier series becomes an increasingly accurate approximation to $f(x)$ on $(-\pi,\pi)$, however at the points $x=(2p+1)\pi$, $p \in\mathbb{Z}$, where $f(x)$ is not [[Continuity|continuous]], the Fourier series converges to $0$, the midpoint of the jump
+___
+Let $f(x)$ have period $2\pi$ and be given as 
+$$
+f(x)=\begin{cases}
+1&0\leq x< \pi\\
+-1&-\pi<x<0
+\end{cases}
+$$
+Then we can use the complex form
+$$
+c_{n}=\frac{1}{2\pi}\int _{-\pi}^{\pi}f(x)e^{ -inx } \, dx 
+$$
+$$
+= -\frac{1}{2\pi}\int _{-\pi}^{0}e^{ -inx } \, dx +\frac{1}{2\pi}\int _{0}^{\pi}e^{ -inx } \, dx 
+$$
+For $n=0$, 
+$$
+c_{0}=-\frac{1}{2\pi}\int _{\pi}^{0}1 \, dx+\frac{1}{2\pi}\int _{0}^{\pi}1 \, dx =-\frac{1}{2}+\frac{1}{2}=0
+$$
+For $n\neq 0$,
+$$
+c_{n}=\left[ \frac{1}{2\pi in}e^{ -inx } \right]_{-\pi}^{0}-\left[ \frac{1}{2\pi in}e^{ -inx } \right]_{0}^{\pi}=\frac{1}{2\pi in}(1-e^{ in\pi }-e^{ -in\pi }+1)
+$$
+$$
+= \frac{i}{\pi n}(e^{ in\pi }-1)=\frac{i}{\pi n}((-1)^{n}-1)
+$$
+So $c_{2m}=0$ and $c_{2m+1}=-\frac{2i}{\pi(2m+1)}$, so
+$$
+f(x)=\sum_{ n=-\infty} ^{\infty}  -\frac{2i}{\pi(2n+1)}e^{ i(2n+1)x }
+$$
+This can be converted back to the real form, since $f(x)=\overline{f(x)}$,
+$$
+2f(x)=\sum_{ n=-\infty} ^{\infty}  -\frac{2i}{\pi(2n+1)}e^{ i(2n+1)x }+\sum_{ n=-\infty} ^{\infty}  \frac{2i}{\pi(2n+1)}e^{ -i(2n+1)x }
+$$
+Hence
+$$
+f(x)=\sum_{ n=-\infty} ^{\infty}  -\frac{i}{\pi(2n+1)}(e^{ i(2n+1)x }-e^{ -i(2n+1)x })
+$$
+$$
+= \sum_{ n=-\infty} ^{\infty}  \frac{2}{\pi(2n+1)}\sin((2n+1)x)
+$$
+$$
+= \sum_{ n=0} ^{\infty}  \frac{4}{\pi(2n+1)}\sin((2n+1)x)
+$$
+
 
 #Mathematics #Calculus 
