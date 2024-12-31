@@ -16,7 +16,7 @@ Since $\cos(2x)=2\cos ^{2}x-1$,
 $$
 f(x)=1+\cos\left( \frac{2\pi x}{L} \right)+3\sin\left( \frac{\pi x}{L} \right)
 $$
-Is theFourier Series of $f(x)$ containing only a finite number of terms with $a_{0}=2$, $a_{2}=1$, $b_{1}=3$, and all the other coefficients are $\hspace{0pt}0$
+Is the Fourier Series of $f(x)$ containing only a finite number of terms with $a_{0}=2$, $a_{2}=1$, $b_{1}=3$, and all the other coefficients are $\hspace{0pt}0$
 In general, an infinite number of coefficients may be non-zero, so we need a method to find them for a given $f(x)$
 ## Identities :)
 Let $m$ and $n$ be positive integers, then:
@@ -99,13 +99,24 @@ $$
 a_{n}=\frac{1}{L}\int _{-L}^{L}f(x)\cos\left( \frac{n\pi x}{L} \right) \, dx 
 $$
 Or $a_{n}= <f,\cos\left( \frac{n\pi x}{L} \right)>$
-Note htat with $n=0$, this also gives the correct expression for $a_{0}$
+Note that with $n=0$, this also gives the correct expression for $a_{0}$
 Similarly multiplying the fourier series by $\sin\left( \frac{m\pi x}{L} \right)$ and integrating gives
 $$
 \frac{1}{L}\int _{-L}^{L}f(x)\sin\left( \frac{m\pi x}{L} \right) \, dx=\frac{1}{L}\int _{-L}^{L}\left( \frac{a_{0}}{2}+\sum_{n=1}^{\infty} a_{n}\cos\left( \frac{n\pi x}{L} \right) +b_{n}\sin\left( \frac{n\pi x}{L} \right)\right) \, dx 
 $$
 pls finish :)
 
+
+In order to see how the Fourier series apporaches $f(x)$ we can define the partial sum:
+$$
+S_{m}(x)=\frac{a_{0}}{2}+\sum_{n=1}^{m}a_{n}\cos\left( \frac{n\pi x}{L} \right)+b_{n}\sin\left( \frac{n\pi x}{L} \right)
+$$
+In general the partial sum $S_{m}$ is an approximation to $f(x)$ which improves as $m\to \infty$
+In general we want to know what happens to the partial sum $S_{m}(x)$ for all $x$ as $m\to \infty$ and how this relates to the original function
+## Cosine Series
+If $f(x)$ is [[Even Functions|even]] on $(-L,L)$, then all $b_{n}=0$ and the Fourier series contains only cosine terms (plus a constant), such a series is called a cosine series
+## Sine Series
+If $f(x)$ is [[Odd Functions|odd]] on $(-L,L)$, then all $a_{n}=0$ and the Fourier series contains only sine terms, such a series is called a sine series
 ## Examples
 The function $f(x)$ has period $\hspace{0pt}2$ i.e. $f(x+2)=f(x)$ and is given by $f(x)=|x|$ for $-1<x<1$, so looks like:
 ![[Fourier Series 2024-12-10 14.40.53.excalidraw]]
@@ -132,16 +143,49 @@ $$
 f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty} a_{n}\cos\left( \frac{n\pi x}{L} \right)+b_{n}\left( \frac{n\pi x}{L} \right) 
 $$
 $$
-\implies \left| x \right| =\frac{1}{2}+\sum_{n=1}^{\infty} \frac{2((-1)-1)}{n^{2}\pi^{2}}\cos(n\pi x)
+=\frac{1}{2}+\sum_{n=1}^{\infty} \frac{2((-1)^{n}-1)}{n^{2}\pi^{2}}\cos(n\pi x)
 $$
 $$
 = \frac{1}{2}-\frac{4}{\pi^{2}}\left( \cos(\pi x)+\frac{1}{9}\cos(3\pi x)+\dots \right)
 $$
-Note that in this example $a_{2n}=0$, and $a_{2n-1}=-\frac{4}{(2n+1)^{2}\pi^{2}}$
+Note that in this example $a_{2n}=0$, and $a_{2n-1}=-\frac{4}{(2n-1)^{2}\pi^{2}}$
 So we can also write the Fourier series as:
 $$
-f(x)=
+f(x)=\frac{1}{2}-\frac{4}{\pi^{2}}\sum_{ n=1} ^{\infty}  \frac{\cos((2n-1)\pi x)}{(2n-1)^{2}}
 $$
-
+In this example
+$$
+S_{1}=\frac{1}{2}-\frac{4}{\pi^{2}}\cos(\pi x)=S_{2}
+$$
+$$
+S_{3}=\frac{1}{2}-\frac{4}{\pi^{2}}\left( \cos(\pi x)+\frac{1}{9}\cos(3\pi x) \right)=S_{4}
+$$
+___
+Let $f(x)$ have period $2\pi$ and be iven by $f(x)=x$ for $-\pi<x<\pi$, calculate the Fourier series of $f(x)$. This time the function looks like
+![[Fourier Series 2024-12-31 15.18.32.excalidraw]]
+Note this function has jump discontinuities at $x=(2p+1)\pi$ for $p \in\mathbb{Z}$
+We use our previous results with $L=\pi$. For $n\geq 0$:
+$$
+a_{n}=\frac{1}{\pi}\int _{-\pi}^{\pi}x\cos(nx) \, dx =0
+$$
+Since this is the integral of an odd function function over a symmetric interval
+For $n>0$,
+$$
+b_{n}=\frac{1}{\pi}\int _{-\pi}^{\pi}x\sin(nx) \, dx =\frac{1}{\pi}\left( \left[ -\frac{x}{n}\cos(nx) \right]^{\pi}_{-\pi}-\frac{1}{n}\int _{-\pi}^{\pi}\cos(nx) \, dx  \right)
+$$
+$$
+= \frac{1}{\pi}\left( -\frac{\pi}{n}\cos(n\pi)-\frac{\pi}{n}\cos(n\pi) +\underbrace{ \left[ \frac{1}{n^{2}}\sin(nx) \right]_{-\pi}^{\pi} }_{ =0 } \right)
+$$
+$$
+= -\frac{2}{n}\cos(n\pi)=-\frac{2}{n}(-1)^{n}=\frac{2}{n}(-1)^{n+1}
+$$
+We therefore have the Fourier sine series
+$$
+f(x)=\sum_{ n=1} ^{\infty}  \frac{2(-1)^{n+1}}{n}\sin(nx)
+$$
+$$
+= 2\left( \sin (x)-\frac{1}{2}\sin(2x)+\frac{1}{3}\sin(3x)+\dots \right)
+$$
+As we include more terms in the partial sum, the Fourier series becomes an increasingly accurate approximation to $f(x)$ on $(-\pi,\pi)$, however at the points $x=(2p+1)\pi$, $p \in\mathbb{Z}$, where $f(x)$ is not [[Continuity|continuous]], the Fourier series converges to $0$, the midpoint of the jump
 
 #Mathematics #Calculus 
