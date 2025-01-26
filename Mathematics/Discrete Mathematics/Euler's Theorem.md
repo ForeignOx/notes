@@ -1,0 +1,3 @@
+Let $G=(V,E,\phi)$ be a finite [[Connectedness|connected]] [[Graphs|graph]] with $\left| V \right|>1$. THen $G$ has an Euler [[Trails#Circuits|circuit]] iff all vertices of $G$ have even deegree
+## Lemma 
+If a graph $G=(V,E,\phi)$ is finite and connected, with $\left| V \right|>1$ and all vertices of even degree, then $G$ is a finite union of edge-disjoint [[Paths#Cycle|cycles]] (where no two cycles $C_{1},C_{2}$ in $G$ having edges $e_{j},)

@@ -1,9 +1,0 @@
-## Circular Arrangements
-If six people, designatesd as A,B,…,F, are seated about a round table, how many different circular arrangements are possible, if arrangements are considered the same when one can be obtained from the oher by rotation, for example below, the first two arrangements are considered identical, whereas the third is distinct:
-![[Non-Linear Arrangements 2024-10-18 12.20.56.excalidraw]]
-A good way to solve this is to consider how it relates to linear arrangements. In this case with $\hspace{0pt}6$ people, a given arrangement has $\hspace{0pt}6$ linear [[Arrangements|arrangements]], one for each rotation, and since there are $6!$ [[Permutations|permutations]] of a list of $\hspace{0pt}6$ distinct arrangements, then the total number of arrangements must be $\frac{6!}{6}=5!=120$ arrangements
-Another way of obtaining this solution is by considering if we place A at the table, it can go anywhere and not affect the ordering, and from there, the other $\hspace{0pt}5$ letters need to be permuted which can occur in $5!$ ways. Essentially placing A turns the cases into linear arrangements as that is a start and end place
-Suppose now that now the $\hspace{0pt}6$ people are $\hspace{0pt}3$ married heterosexual couples and that A,B and C are the females. We want to arrange the six people around the table such that the sexes alternate
-We can start by placing a female A anywhere, then the next position, clockwise from A, is marked M1 (male $\hspace{0pt}1$) and can be filled in three ways. Continuing clockwise from A, position F2 (female $\hspace{0pt}2$) can be filled in $\hspace{0pt}2$ ways. Proceeding in this manner, by the [[Rule of Product|rule of product]], there are $3\times 2\times 2\times 1\times 1=12$ ways in which these $\hspace{0pt}6$ people can be arranged with no two men or women seated next to each other 
-
-#Mathematics #Discrete 
