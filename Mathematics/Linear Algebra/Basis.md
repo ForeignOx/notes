@@ -1,12 +1,12 @@
 A basis for a [[Real Vectorspaces|vectorspace]] $V$ is a finite [[Sets|set]] of [[Vectors|vectors]]:
 $$
-\{ \vec{v}_{1},\vec{v}_{2},\dots,\vec{v}_{n} \}\subseteq V
+\{ \underline{v}_{1},\underline{v}_{2},\dots,\underline{v}_{n} \}\subseteq V
 $$
 Such that:
-- $\{ \vec{v}_{1},\vec{v}_{2},\dots,\vec{v}_{n} \}$ is [[Linear Independence|linearly independent]]
-- $\{ \vec{v}_{1},\vec{v}_{2},\dots,\vec{v}_{n} \}$ [[Span|spans]] $V$
+- $\{ \underline{v}_{1},\underline{v}_{2},\dots,\underline{v}_{n} \}$ is [[Linear Independence|linearly independent]]
+- $\{ \underline{v}_{1},\underline{v}_{2},\dots,\underline{v}_{n} \}$ [[Span|spans]] $V$
 ## Examples
-For [[Vectorspace Rn|$\mathbb{R}^{n}$]] $\{\vec{e}_{1},\vec{e}_{2},\dots,\vec{e}_{n} \}$ (the standard basis), is the standard basis for $\mathbb{R}^{n}$
+For [[Vectorspace Rn|$\mathbb{R}^{n}$]] $\{\underline{e}_{1},\underline{e}_{2},\dots,\underline{e}_{n} \}$ (the standard basis), is the standard basis for $\mathbb{R}^{n}$
 ___
 For $\mathbb{R}[x]_{n}$,:
 $$
@@ -99,28 +99,28 @@ $$
 \implies \lambda_{3}=\lambda_{4}=0
 $$
 ## Theorem: What is a Basis???
-Suppose $\vec{u}_{1},\dots,\vec{u}_{r}\in V$, then the following are equivalent:
-- $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is a basis for $V$
-- $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ are a maximal linearly independent subset of $V$ (maximal meaning we cannot add another vector to $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ and stay linearly independent)
-- Any vector $\vec{u}\in V$ can be written uniquely as $\vec{u}=\lambda_{1}\vec{u}_{1}+\dots+\lambda_{r}\vec{u}_{r}$ (unique choice of $\lambda_{i}$'s)
-- $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ are a minimal spanning set for $V$
+Suppose $\underline{u}_{1},\dots,\underline{u}_{r}\in V$, then the following are equivalent:
+- $\{ \underline{u}_{1},\dots,\underline{u}_{r} \}$ is a basis for $V$
+- $\{ \underline{u}_{1},\dots,\underline{u}_{r} \}$ are a maximal linearly independent subset of $V$ (maximal meaning we cannot add another vector to $\{ \underline{u}_{1},\dots,\underline{u}_{r} \}$ and stay linearly independent)
+- Any vector $\underline{u}\in V$ can be written uniquely as $\underline{u}=\lambda_{1}\underline{u}_{1}+\dots+\lambda_{r}\underline{u}_{r}$ (unique choice of $\lambda_{i}$'s)
+- $\{ \underline{u}_{1},\dots,\underline{u}_{r} \}$ are a minimal spanning set for $V$
 ### Proof
 $1\implies2$:
-Assume $1$, first note that $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is linearly independent, so is it maximal? Suppose $\vec{u}\in V$, then $\vec{u}=\lambda_{1}\vec{u}_{1}+\dots+\lambda_{r}\vec{u}_{r}$ for some $\lambda_{i}\in\mathbb{R}$, as $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ span $V$
-So $\lambda_{1}\vec{u}_{1}+\dots+\lambda_{r}\vec{u}_{r}-\vec{u}= \vec{0}$, hence $\{ \vec{u}_{1},\dots,\vec{u}_{r},\vec{u} \}$ is not linearly independent, so $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ are maximal
+Assume $1$, first note that $\{ \underline{u}_{1},\dots,\underline{u}_{r} \}$ is linearly independent, so is it maximal? Suppose $\underline{u}\in V$, then $\underline{u}=\lambda_{1}\underline{u}_{1}+\dots+\lambda_{r}\underline{u}_{r}$ for some $\lambda_{i}\in\mathbb{R}$, as $\{ \underline{u}_{1},\dots,\underline{u}_{r} \}$ span $V$
+So $\lambda_{1}\underline{u}_{1}+\dots+\lambda_{r}\underline{u}_{r}-\underline{u}= \underline{0}$, hence $\{ \underline{u}_{1},\dots,\underline{u}_{r},\underline{u} \}$ is not linearly independent, so $\{ \underline{u}_{1},\dots,\underline{u}_{r} \}$ are maximal
 $2\implies 3$:
-Assume $\hspace{0pt}2$, suppose $\exists \vec{u}\in V$ not expressible in this way, this means $\vec{u}\not\in\text{span}< \vec{u}_{1},\dots,\vec{u}_{r} >$. Hence $\{ \vec{u}_{1},\dots,\vec{u}_{r},\vec{u} \}$ is linearly indepnedent, this means $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is not maximal, so we have a contradiction
-If we have $\vec{u}=\lambda_{1}\vec{u}_{1}+\dots+\lambda_{r}\vec{u}_{r}$, and $\vec{u}=\mu_{1}\vec{u}_{1}+\dots+\mu_{r}\vec{u}_{r}$ then $(\lambda_{1}-\mu_{1})\vec{u}_{1}+\dots+(\lambda_{r}-\mu_{r})\vec{u}_{r}= \vec{0}$, hence $\lambda_{i}=\mu_{i}$ for $1\leq i\leq r$
+Assume $\hspace{0pt}2$, suppose $\exists \underline{u}\in V$ not expressible in this way, this means $\underline{u}\not\in\text{span}< \underline{u}_{1},\dots,\underline{u}_{r} >$. Hence $\{ \underline{u}_{1},\dots,\underline{u}_{r},\underline{u} \}$ is linearly indepnedent, this means $\{ \underline{u}_{1},\dots,\underline{u}_{r} \}$ is not maximal, so we have a contradiction
+If we have $\underline{u}=\lambda_{1}\underline{u}_{1}+\dots+\lambda_{r}\underline{u}_{r}$, and $\underline{u}=\mu_{1}\underline{u}_{1}+\dots+\mu_{r}\underline{u}_{r}$ then $(\lambda_{1}-\mu_{1})\underline{u}_{1}+\dots+(\lambda_{r}-\mu_{r})\underline{u}_{r}= \underline{0}$, hence $\lambda_{i}=\mu_{i}$ for $1\leq i\leq r$
 $3\implies 4$:
-Assume $\hspace{0pt}3$, then $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is spanning since all $\vec{u}\in V$  satisfy $\vec{u}\in \text{span}< \vec{u}_{1},\dots,\vec{u}_{r} >$ is not minimal. Without loss of generality, suppose $V=\text{span}< \vec{u}_{2},\dots,\vec{u}_{r} >$ ten $\vec{u}_{1}=\lambda_{2}\vec{u}_{2}+\dots+\lambda_{r}\vec{u}_{r}$ or some $\lambda_{2},\dots,\lambda_{r} \in\mathbb{R}$, these are two different expressions for $\vec{u}_{1}$ which gives a contradiction :O
+Assume $\hspace{0pt}3$, then $\{ \underline{u}_{1},\dots,\underline{u}_{r} \}$ is spanning since all $\underline{u}\in V$  satisfy $\underline{u}\in \text{span}< \underline{u}_{1},\dots,\underline{u}_{r} >$ is not minimal. Without loss of generality, suppose $V=\text{span}< \underline{u}_{2},\dots,\underline{u}_{r} >$ ten $\underline{u}_{1}=\lambda_{2}\underline{u}_{2}+\dots+\lambda_{r}\underline{u}_{r}$ or some $\lambda_{2},\dots,\lambda_{r} \in\mathbb{R}$, these are two different expressions for $\underline{u}_{1}$ which gives a contradiction :O
 $4\implies1$:
-Assume $\hspace{0pt}4$, then $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is certainly spanning, but is it linearly independent? Suppose it isn't for a contradiction, then $\exists\lambda_{1},\dots,\lambda _{r}\in\mathbb{R}$, not all $\hspace{0pt}0$ such that $\lambda_{1}\vec{u}_{1}+\dots+\lambda_{r}\vec{u}_{r}= \vec{0}$, if $\lambda _{i}\neq 0$, then 
+Assume $\hspace{0pt}4$, then $\{ \underline{u}_{1},\dots,\underline{u}_{r} \}$ is certainly spanning, but is it linearly independent? Suppose it isn't for a contradiction, then $\exists\lambda_{1},\dots,\lambda _{r}\in\mathbb{R}$, not all $\hspace{0pt}0$ such that $\lambda_{1}\underline{u}_{1}+\dots+\lambda_{r}\underline{u}_{r}= \underline{0}$, if $\lambda _{i}\neq 0$, then 
 $$
-\vec{u}_{i}=-\frac{-\lambda_{1}}{\lambda_{i}}\vec{u}_{1}+\dots+\frac{-\lambda_{i-1}}{\lambda_{i}}\vec{u}_{i-1}+\frac{-\lambda_{i+1}}{\lambda_{i}}\vec{u}_{i+1}+\dots+\frac{-\lambda_{r}}{\lambda_{i}}\vec{u}_{r}
+\underline{u}_{i}=-\frac{-\lambda_{1}}{\lambda_{i}}\underline{u}_{1}+\dots+\frac{-\lambda_{i-1}}{\lambda_{i}}\underline{u}_{i-1}+\frac{-\lambda_{i+1}}{\lambda_{i}}\underline{u}_{i+1}+\dots+\frac{-\lambda_{r}}{\lambda_{i}}\underline{u}_{r}
 $$
 $$
-\in \text{span}< \vec{u}_{1},\dots,\vec{u}_{i-1},\vec{u}_{i+1},\dots,\vec{u}_{r} > 
+\in \text{span}< \underline{u}_{1},\dots,\underline{u}_{i-1},\underline{u}_{i+1},\dots,\underline{u}_{r} > 
 $$
-So $\text{span}< \vec{u},\dots,\vec{u}_{i-1},\vec{u}_{i+1},\dots,\vec{u}_{r} >=\text{span}< \vec{u}_{1},\dots,\vec{u}_{r} >$, so $\text{span}< \vec{u}_{1},\dots,\vec{u}_{r} >$ was not a minimal spanning set
+So $\text{span}< \underline{u},\dots,\underline{u}_{i-1},\underline{u}_{i+1},\dots,\underline{u}_{r} >=\text{span}< \underline{u}_{1},\dots,\underline{u}_{r} >$, so $\text{span}< \underline{u}_{1},\dots,\underline{u}_{r} >$ was not a minimal spanning set
 
 #Mathematics #LinAlg #Definition #Theorem 

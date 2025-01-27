@@ -35,15 +35,15 @@ a_{1}&a_{2}&a_{3}\\b_{1}&b_{2}&b_{3}\\c_{1}&c_{2}&c_{3}
 $$
 Say we have:
 $$
-\vec{a}=\begin{pmatrix}
+\underline{a}=\begin{pmatrix}
 a_{1}\\a_{2}\\a_{3}
-\end{pmatrix},\vec{b}=\begin{pmatrix}
+\end{pmatrix},\underline{b}=\begin{pmatrix}
 b_{1}\\b_{2}\\b_{3}
-\end{pmatrix},\vec{c}=\begin{pmatrix}
+\end{pmatrix},\underline{c}=\begin{pmatrix}
 c_{1}\\c_{2}\\c_{3}
 \end{pmatrix}
 $$
-$A$ is invertible iff $A\vec{x}=\vec{0}$ as shown in this [[Gauss-Jordan Elimination#Theorem|theorem]], so it is invertible iff:
+$A$ is invertible iff $A\underline{x}=\underline{0}$ as shown in this [[Gauss-Jordan Elimination#Theorem|theorem]], so it is invertible iff:
 $$
 a_{1}x+a_{2}y+a_{3}z=0
 $$
@@ -107,7 +107,7 @@ $$
 It turns out that we would get $\text{coldet}=\det$
 Equivalently we have:
 $$
-\det(A^{t})=\det (A)
+\det(A^{\top})=\det (A)
 $$
 For all square matrices
 ### Proof
@@ -121,29 +121,29 @@ A=E_{1}^{-1}E_{2}^{-1}\dots E_{r}^{-1}A'
 $$
 Recall each $E_{i}^{-1}$ is also elementary, then
 $$
-\det(A^{t})=\det((A')^{t}(E_{r}^{-1})^{t}\dots(E_{2}^{-1})^{t}(E_{1}^{-1})^{t})
+\det(A^{\top})=\det((A')^{\top}(E_{r}^{-1})^{\top}\dots(E_{2}^{-1})^{\top}(E_{1}^{-1})^{\top})
 $$
 $$
-=\det((E_{r}^{-1})^{t}\dots(E_{2}^{-1})^{t}(E_{1}^{-1})^{t})
+=\det((E_{r}^{-1})^{\top}\dots(E_{2}^{-1})^{\top}(E_{1}^{-1})^{\top})
 $$
-If $A$ is invertible, since then $A'=I_{n}$, so $(A')^{t}=I_{n}$
+If $A$ is invertible, since then $A'=I_{n}$, so $(A')^{\top}=I_{n}$
 $$
 \det(E_{r}^{-1})\dots \det(E_{2}^{-1})\det( E_{1}^{-1})=\det(E_{1}^{-1}E_{2}^{-1}\dots E_{r}^{-1}A')=\det (A)
 $$
-Since $\det(E^{t})=\det(E)$ can be checked for $E$ elementary, so $E^{t}$ is elementary if $E$ is elementary
-If $A$ is not invertible, then neither is $A^{t}$, so $\det(A)=0=\det(A^{t})$
+Since $\det(E^{\top})=\det(E)$ can be checked for $E$ elementary, so $E^{\top}$ is elementary if $E$ is elementary
+If $A$ is not invertible, then neither is $A^{\top}$, so $\det(A)=0=\det(A^{\top})$
 ## Fundamental Poperties of the Determinant
 The determinant is the unique function that satisfies these properties
-Let $A\in M_{n}(\mathbb{R})$, let $\vec{a_{r}}$ be the $r$th row vector of $A$:
+Let $A\in M_{n}(\mathbb{R})$, let $\underline{a}_{r}$ be the $r$th row vector of $A$:
 $$
-\vec{a_{r}}=\begin{pmatrix}
-a_{r_{1}}&a_{r_{2}}&\dots&a_{rn}
+\underline{a}_{r}=\begin{pmatrix}
+a_{r_{1}}&a_{r_{2}}&\dots&a_{r_{n}}
 \end{pmatrix}
 $$
 So
 $$
 A=\begin{pmatrix}
-\vec{a_{1}}\\\vec{a_{2}}\\\vdots\\\vec{a_{n}}
+\underline{a}_{1}\\\underline{a}_{2}\\\vdots\\\underline{a}_{n}
 \end{pmatrix}
 $$
 The properties are:
@@ -151,19 +151,19 @@ The properties are:
 - $\det(M_{r}(\lambda)A)=\lambda \det(A)$, where $M_{r}(\lambda)$ is the [[Gauss-Jordan Elimination|ERO]] 
  $$
 \det(M_{r}(\lambda)A)=\det \begin{pmatrix}
-\vec{a_{1}}\\\vdots\\\lambda\vec{a_{r}}\\\vdots\\\vec{a_{n}}
+\underline{a}_{1}\\\vdots\\\lambda\underline{a}_{r}\\\vdots\\\underline{a}_{n}
 \end{pmatrix}=\lambda \det\begin{pmatrix}
-\vec{a_{1}}\\\vdots\\\vec{a_{r}}\\\vdots\\\vec{a_{n}}
+\underline{a}_{1}\\\vdots\\\underline{a}_{r}\\\vdots\\\underline{a}_{n}
 \end{pmatrix}=\lambda \det(A)
 $$
-- For any vector $\vec{b_{r}}$, we have
+- For any vector $\underline{b}_{r}$, we have
 $$
 \det\begin{pmatrix}
-\vec{a_{1}}\\\vdots\\\vec{a_{r}}+\vec{b_{r}}\\\vdots\\\vec{a_{n}}
+\underline{a}_{1}\\\vdots\\\underline{a}_{r}+\underline{b}_{r}\\\vdots\\\underline{a}_{n}
 \end{pmatrix}=\det\begin{pmatrix}
-\vec{a_{1}}\\\vdots\\\vec{a_{r}}\\\vdots\\\vec{a_{n}}
+\underline{a}_{1}\\\vdots\\\underline{a}_{r}\\\vdots\\\underline{a}_{n}
 \end{pmatrix}+\det\begin{pmatrix}
-\vec{a_{1}}\\\vdots\\\vec{b_{r}}\\\vdots\\\vec{a_{n}}
+\underline{a}_{1}\\\vdots\\\underline{b}_{r}\\\vdots\\\underline{a}_{n}
 \end{pmatrix}
 $$
     Combining this with the previous one we have linearity in each row
@@ -173,9 +173,9 @@ $$
 - $\det(A_{rs}(\lambda)A)=\det A$:
 $$
 \det(A_{rs}(\lambda)A)=\det\begin{pmatrix}
-\vec{a_{1}}\\\vdots\\\vec{a_{r}}\\\vdots\\\vec{a_{s}}+\lambda  \vec{a_{r}}\\\vdots\\\vec{a_{n}}
+\underline{a}_{1}\\\vdots\\\underline{a}_{r}\\\vdots\\\underline{a}_{s}+\lambda  \underline{a}_{r}\\\vdots\\\underline{a}_{n}
 \end{pmatrix}=\det\begin{pmatrix}
-\vec{a_{1}}\\\vdots\\\vec{a_{r}}\\\vdots\\\vec{a_{s}}\\\vdots\\\vec{a_{n}}
+\underline{a}_{1}\\\vdots\\\underline{a}_{r}\\\vdots\\\underline{a}_{s}\\\vdots\\\underline{a}_{n}
 \end{pmatrix}=\det(A)
 $$
 ### Proof
@@ -272,23 +272,23 @@ $$
 ### $n=2$
 Consider [[Vectorspace Rn|$\mathbb{R}^2$]], 
 ![[Determinants 2024-11-12 11.43.48.excalidraw]]
-We have a parallelogram with vertices $0,\vec{v},\vec{w},\vec{v}+\vec{w}$, it has an area we can obtain by considering two equal triangles of:
+We have a parallelogram with vertices $0,\underline{v},\underline{w},\underline{v}+\underline{w}$, it has an area we can obtain by considering two equal triangles of:
 $$
-\text{Area}(P)=|\vec{v}||\vec{w}|\sin\theta
+\text{Area}(P)=|\underline{v}||\underline{w}|\sin\theta
 $$
 Now imagine $\mathbb{R}^{2}\times \{ 0 \}\subseteq \mathbb{R}^3$:
 ![[Determinants 2024-11-12 11.47.05.excalidraw]]
 So this is that same parallelogram, but with one coordinate $\hspace{0pt}0$
 $$
-\vec{v}=\begin{pmatrix}
+\underline{v}=\begin{pmatrix}
 a\\c\\0
-\end{pmatrix},\vec{w}=\begin{pmatrix}
+\end{pmatrix},\underline{w}=\begin{pmatrix}
 b\\d\\0
 \end{pmatrix}
 $$
 So,
 $$
-\text{Area}(P)=|\vec{v}| |\vec{w}|\sin\theta=|\vec{v} \times \vec{w}|
+\text{Area}(P)=|\underline{v}| |\underline{w}|\sin\theta=|\underline{v} \times \underline{w}|
 $$
 $$
 =\left|\begin{pmatrix}
@@ -297,28 +297,28 @@ a\\c\\0
 b\\d\\0
 \end{pmatrix}\right|=\left| \begin{pmatrix}
 0\\0\\ad-bc
-\end{pmatrix}\right|=|ad-bc|=|\det(\vec{v}\vec{w})=\left|\det \begin{pmatrix}
+\end{pmatrix}\right|=|ad-bc|=|\det(\underline{v}\underline{w})=\left|\det \begin{pmatrix}
 a&b\\c&d
 \end{pmatrix}\right|
 $$
 Note that, by considering where you put the second triangle to construct the parallelogram,
 $$
 |\det \begin{pmatrix}
-\vec{v}&\vec{w}
+\underline{v}&\underline{w}
 \end{pmatrix}|=|\det \begin{pmatrix}
-\vec{v}&\vec{v}+\vec{w}
+\underline{v}&\underline{v}+\underline{w}
 \end{pmatrix}|=|\det \begin{pmatrix}
-\vec{w}&\vec{v}+\vec{w}
+\underline{w}&\underline{v}+\underline{w}
 \end{pmatrix}|
 $$
 #### Example
 Find the area of the trianle $T\subseteq \mathbb{R}^{2}$ with vertices:
 $$
-\vec{a}=\begin{pmatrix}
+\underline{a}=\begin{pmatrix}
 2\\5
-\end{pmatrix},\vec{b}=\begin{pmatrix}
+\end{pmatrix},\underline{b}=\begin{pmatrix}
 -1\\3
-\end{pmatrix},\vec{c}=\begin{pmatrix}
+\end{pmatrix},\underline{c}=\begin{pmatrix}
 1\\2
 \end{pmatrix}
 $$
@@ -326,7 +326,7 @@ $$
 So
 $$
 T=\frac{1}{2}\text{Area}(\text{Parallelogram})=\frac{1}{2}\left|\det \begin{pmatrix}
-\vec{b}-\vec{a}&\vec{c}-\vec{a}
+\underline{b}-\underline{a}&\underline{c}-\underline{a}
 \end{pmatrix}\right|
 $$
 $$
@@ -336,39 +336,39 @@ $$
 $$
 Note we can change where we put the triangle to get the same area in different ways, as above
 ### $n=3$
-Consider the parallelopiped formed by $\hspace{0pt}3$ non collinear vectors $\vec{u},\vec{v},\vec{w}$:
+Consider the parallelopiped formed by $\hspace{0pt}3$ non collinear vectors $\underline{u},\underline{v},\underline{w}$:
 ![[Determinants 2024-11-14 18.44.56.excalidraw]]
-Let $P'$ be a pivot unit vector perpendicular to the base, $\theta$ is the angle between $P'$ and $\vec{w}$
+Let $P'$ be a pivot unit vector perpendicular to the base, $\theta$ is the angle between $P'$ and $\underline{w}$
 $$
-\text{Volume}(P)=|\vec{v}\times \vec{u}||\vec{u}| |\cos\theta|=|\vec{v}\times \vec{u}| |\vec{u}|\left| \frac{\vec{u}\cdot(\vec{v}\times \vec{w})}{|\vec{u}| |\vec{v}\times \vec{w}|}\right|=|\vec{u}\cdot(\vec{v}\times \vec{w})|
+\text{Volume}(P)=|\underline{v}\times \underline{u}||\underline{u}| |\cos\theta|=|\underline{v}\times \underline{u}| |\underline{u}|\left| \frac{\underline{u}\cdot(\underline{v}\times \underline{w})}{|\underline{u}| |\underline{v}\times \underline{w}|}\right|=|\underline{u}\cdot(\underline{v}\times \underline{w})|
 $$
 $$
 =| \det \begin{pmatrix}
-\vec{u}&\vec{v}&\vec{w}
+\underline{u}&\underline{v}&\underline{w}
 \end{pmatrix}|
 $$
 Similarly to when $n=2$, we can form equivalent expressions by icking any $\hspace{0pt}3$ non-zero vertices of $P$, 
 $$
-\{ \vec{a},\vec{b},\vec{c} \}\subseteq \{ \vec{u},\vec{v},\vec{w},\vec{u}+\vec{v},\vec{u}+\vec{w},\vec{v}+\vec{w},\vec{u}+\vec{v}+\vec{w} \}
+\{ \underline{a},\underline{b},\underline{c} \}\subseteq \{ \underline{u},\underline{v},\underline{w},\underline{u}+\underline{v},\underline{u}+\underline{w},\underline{v}+\underline{w},\underline{u}+\underline{v}+\underline{w} \}
 $$
 Then
 $$
 \left|\det \begin{pmatrix}
-\vec{a}&\vec{b}&\vec{c}
+\underline{a}&\underline{b}&\underline{c}
 \end{pmatrix}\right|
 $$
-Is either $\text{Volume}(P)$ when $\vec{a},\vec{b},\vec{c}$ are not coplanar or $0$ when $\vec{a},\vec{b},\vec{c}$  are the vertices of a face of $P$, in fact 
+Is either $\text{Volume}(P)$ when $\underline{a},\underline{b},\underline{c}$ are not coplanar or $0$ when $\underline{a},\underline{b},\underline{c}$  are the vertices of a face of $P$, in fact 
 $$
 \det \begin{pmatrix}
-\vec{a}&\vec{b}&\vec{c}
+\underline{a}&\underline{b}&\underline{c}
 \end{pmatrix}=0
 $$
-When $\vec{a},\vec{b},\vec{c}$ are coplanar as the parallelopiped they span would have no volume
+When $\underline{a},\underline{b},\underline{c}$ are coplanar as the parallelopiped they span would have no volume
 ## Higher $n$
-This generalises for higher $n$, so one can find the volume of the shape 'spanned' by $\vec{u_{1}},\vec{u_{2}},\dots,\vec{u_{k}}\in\mathbb{R}$ to be
+This generalises for higher $n$, so one can find the volume of the shape 'spanned' by $\underline{u}_{1},\underline{u}_{2},\dots,\underline{u}_{k}\in\mathbb{R}$ to be
 $$
 |\det \begin{pmatrix}
-\vec{u_{1}}&\vec{u_{2}}&\dots&\vec{u}_{k}
+\underline{u}_{1}&\underline{u}_{2}&\dots&\underline{u}_{k}
 \end{pmatrix}|
 $$
 

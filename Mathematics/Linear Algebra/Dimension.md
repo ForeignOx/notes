@@ -1,6 +1,6 @@
 If $V$ is a finite dimensional [[Real Vectorspaces|vectorspace]], we define its dimension, $\text{dim}(V)$ to be the [[Cardinality of Sets|cardinality]] of any [[Basis|basis]] of $V$
 ## Examples
-$\text{dim}(\mathbb{R}^{n})=n$, as $n=|\{ \vec{e}_{1},\dots,\vec{e}_{n} \}|$
+$\text{dim}(\mathbb{R}^{n})=n$, as $n=|\{ \underline{e}_{1},\dots,\underline{e}_{n} \}|$
 ___
 $\text{dim}(\mathbb{R}[x]_{n})$ as a basis: $\{ 1,x,x^{2},\dots,x^{n} \}$ which has cardinality $n+1$ as we go through powers of $x$ from $\hspace{0pt}0$ to $n$
 ___
@@ -36,7 +36,7 @@ $$
 $$
 elements, but this has more elements than a basis
 ## Theorem
-Let $V$ be a vectorspace, with dimension of $\text{dim}(V)=k$, let $S=\{ \vec{v}_{1},..,\vec{v}_{l} \}\subseteq V$
+Let $V$ be a vectorspace, with dimension of $\text{dim}(V)=k$, let $S=\{ \underline{v}_{1},..,\underline{v}_{l} \}\subseteq V$
 If $l>k$, then $S$ is not linearly independntm If $l<k$ then $S$ is not spanning
 If $l=k$, then these statements are pairwise equivalent:
 - $S$ is a basis for $V$

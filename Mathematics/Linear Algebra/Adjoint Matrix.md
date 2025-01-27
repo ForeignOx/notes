@@ -37,9 +37,9 @@ $$
 This is the expansion along row $s$ of a matrix $B$ obtained from $A$ by replacing its $s$th row with its $r$th row:
 $$
 A=\begin{pmatrix}
-\vec{a_{1}}\\\vdots\\\vec{a_{r}}\\\vdots\\\vec{a_{s}}\\\vdots\\\vec{a_{n}}
+\underline{a}_{1}\\\vdots\\\underline{a}_{r}\\\vdots\\\underline{a}_{s}\\\vdots\\\underline{a}_{n}
 \end{pmatrix},B=\begin{pmatrix}
-\vec{a_{1}}\\\vdots\\\vec{a_{r}}\\\vdots\\\vec{a_{r}}\\\vdots\\\vec{a_{n}}
+\underline{a}_{1}\\\vdots\\\underline{a}_{r}\\\vdots\\\underline{a}_{r}\\\vdots\\\underline{a}_{n}
 \end{pmatrix}
 $$
 And the determinant of $B$ must equal $\hspace{0pt}0$, since it has two equal rows

@@ -2,15 +2,15 @@ The following are equivalent as proven here(!)
 - $B$ is a [[Basis|Basis]] for $V$
 - $B$ is a maximal [[Linear Independence|linearly independent]] [[Subsets|subset]]
 - $B$ is a minimal [[Span|spanning]] set
-- $B=\{ \vec{v}_{1},\dots,\vec{v}_{n} \}$ is a basis iff we can write each $\vec{v}\in V$ uniquely as $\vec{v}=\lambda_{1}\vec{v}_{1}+\dots+\lambda_{n}\vec{v}_{n}$
-We call $\lambda_{1},\dots,\lambda_{n}$ the coordinates of $\vec{v}$ with respect to $B$
+- $B=\{ \underline{v}_{1},\dots,\underline{v}_{n} \}$ is a basis iff we can write each $\underline{v}\in V$ uniquely as $\underline{v}=\lambda_{1}\underline{v}_{1}+\dots+\lambda_{n}\underline{v}_{n}$
+We call $\lambda_{1},\dots,\lambda_{n}$ the coordinates of $\underline{v}$ with respect to $B$
 ## Coordinate Map
 We define the coordinate map with respect to $B$ (an ordered basis) as:
 $$
 \Phi_{B}:V\to \mathbb{R}^{n}
 $$
 $$
- \Phi_{B}:\vec{v}\mapsto \begin{pmatrix}
+ \Phi_{B}:\underline{v}\mapsto \begin{pmatrix}
 \lambda_{1}\\\vdots\\\lambda_{n}
 \end{pmatrix}
 $$
@@ -105,7 +105,7 @@ a-b\\b\\c\\d
 \end{pmatrix}
 $$
 ## Coordinates on $\mathbb{R}^{n}$
-If $B=\{ \vec{e}_{1},\dots,\vec{e}_{n} \}$ is the standard basis for $\mathbb{R}^{n}$, then
+If $B=\{ \underline{e}_{1},\dots,\underline{e}_{n} \}$ is the standard basis for $\mathbb{R}^{n}$, then
 $$
 \Phi_{B}:\begin{pmatrix}
 \lambda_{1}\\\vdots\\\lambda_{n}
@@ -114,16 +114,16 @@ $$
 \end{pmatrix}
 $$
 So $\Phi_{B}:\mathbb{R}^{n}\to \mathbb{R}^{n}$
-Suppose $C=\{ \vec{v}_{1},\dots,\vec{v}_{n} \}$ is a basis for $\mathbb{R}^{n}$, let's think about $\Phi_{C}:\mathbb{R}^{n}\to \mathbb{R}^{n}$
+Suppose $C=\{ \underline{v}_{1},\dots,\underline{v}_{n} \}$ is a basis for $\mathbb{R}^{n}$, let's think about $\Phi_{C}:\mathbb{R}^{n}\to \mathbb{R}^{n}$
 Set 
 $$
 P=\begin{pmatrix}
-\vec{v}_{1}&\vec{v}_{2}&\dots&\vec{v}_{n}
+\underline{v}_{1}&\underline{v}_{2}&\dots&\underline{v}_{n}
 \end{pmatrix}\in M_{n}(\mathbb{R})
 $$
 Is [[Matrix Inverses|invertible]] since $C$ is a basis, then if
 $$
-\vec{v}=\lambda_{1}\vec{v}_{1}+\lambda_{2}\vec{v}_{2}+\dots+\lambda_{n}\vec{v}_{n}
+\underline{v}=\lambda_{1}\underline{v}_{1}+\lambda_{2}\underline{v}_{2}+\dots+\lambda_{n}\underline{v}_{n}
 $$
 $$
 = P\begin{pmatrix}
@@ -132,22 +132,22 @@ $$
 $$
 So 
 $$
-\Phi_{C}(\vec{v})=\begin{pmatrix}
+\Phi_{C}(\underline{v})=\begin{pmatrix}
 \lambda_{1}\\\vdots\\\lambda_{n}
-\end{pmatrix}=P^{-1}\vec{v}
+\end{pmatrix}=P^{-1}\underline{v}
 $$
 ### Example
 Show that
 $$
-\vec{v}_{1}=\begin{pmatrix}
+\underline{v}_{1}=\begin{pmatrix}
 1\\2\\3
-\end{pmatrix},\vec{v}_{2}=\begin{pmatrix}
+\end{pmatrix},\underline{v}_{2}=\begin{pmatrix}
 2\\3\\2
-\end{pmatrix},\vec{v}_{3}=\begin{pmatrix}
+\end{pmatrix},\underline{v}_{3}=\begin{pmatrix}
 3\\2\\1
 \end{pmatrix}
 $$
-Is a basis for $\mathbb{R}^{3}$ and give the coordinates of $\vec{v}$ with respect to the basis
+Is a basis for $\mathbb{R}^{3}$ and give the coordinates of $\underline{v}$ with respect to the basis
 First we form:
 $$
 P=\begin{pmatrix}

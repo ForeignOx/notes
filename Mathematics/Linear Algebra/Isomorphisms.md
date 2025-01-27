@@ -1,34 +1,34 @@
 If $T:V\to W$ is a [[Bijective Functions|bijective]] [[Linear Maps|linear map]] (onto and 1-1), then we call $T$ an isomorphism and we call $V$ and $W$ isomorphic. We write $V\cong W$
 ## Lemma
 If $T:V\to W$ is an isomorphism, then so is $T^{-1}:W\to V$ 
-For the linear map $T:\mathbb{R}^{n}\to \mathbb{R}^m$ given by [[Matrices|$A\in M_{m\times n}(\mathbb{R})$]], we have $T$ is an isomorphism iff $A$ is invertible and then $T^{-1}(\vec{y})=A^{-1}\vec{y}$
+For the linear map $T:\mathbb{R}^{n}\to \mathbb{R}^m$ given by [[Matrices|$A\in M_{m\times n}(\mathbb{R})$]], we have $T$ is an isomorphism iff $A$ is invertible and then $T^{-1}(\underline{y})=A^{-1}\underline{y}$
 ### Proof
 We essentially need to check that $T^{-1}$ is also a linear map
-Let $\vec{w}_{1},\vec{w}_{2}\in W,\lambda \in\mathbb{R}$, then there exist unique $\vec{v}_{1},\vec{v}_{2}\in V$ such that $T(\vec{v}_{1})=\vec{w}_{1},T(\vec{v}_{2})=\vec{w}_{2}$, since $T$ is a bijection
+Let $\underline{w}_{1},\underline{w}_{2}\in W,\lambda \in\mathbb{R}$, then there exist unique $\underline{v}_{1},\underline{v}_{2}\in V$ such that $T(\underline{v}_{1})=\underline{w}_{1},T(\underline{v}_{2})=\underline{w}_{2}$, since $T$ is a bijection
 Then
 $$
-\vec{w}_{1}+\vec{w}_{2}=T(\vec{v}_{1})+T(\vec{v}_{2})=T(\vec{v}_{1}+\vec{v}_{2})
+\underline{w}_{1}+\underline{w}_{2}=T(\underline{v}_{1})+T(\underline{v}_{2})=T(\underline{v}_{1}+\underline{v}_{2})
 $$
 To which we apply $T^{-1}$:
 $$
-T^{-1}(\vec{w}_{1}+\vec{w}_{2})=\vec{v}_{1}+\vec{v}_{2}=T^{-1}(\vec{w}_{1})+T^{-1}(\vec{w}_{2})
+T^{-1}(\underline{w}_{1}+\underline{w}_{2})=\underline{v}_{1}+\underline{v}_{2}=T^{-1}(\underline{w}_{1})+T^{-1}(\underline{w}_{2})
 $$
 $$
-\lambda \vec{w}_{1}=\lambda T(\vec{v}_{1})=T(\lambda \vec{v}_{1})
+\lambda \underline{w}_{1}=\lambda T(\underline{v}_{1})=T(\lambda \underline{v}_{1})
 $$
 Applying $T^{-1}$:
 $$
-T^{-1}(\lambda \vec{w}_{1})=\lambda \vec{v}_{1}=\lambda T^{-1}(\vec{w}_{1})
+T^{-1}(\lambda \underline{w}_{1})=\lambda \underline{v}_{1}=\lambda T^{-1}(\underline{w}_{1})
 $$
 Prove the second part here :)
 ## Fundamental Example
-If $B$ is a [[Basis|basis]] for [[Real Vectorspaces|$V$]], $\{ \vec{v}_{1},\dots,\vec{v}_{n} \}$, then we have a [[Coordinates|coordinate]] map
+If $B$ is a [[Basis|basis]] for [[Real Vectorspaces|$V$]], $\{ \underline{v}_{1},\dots,\underline{v}_{n} \}$, then we have a [[Coordinates|coordinate]] map
 $$
 \Phi_{B}:V\to \mathbb{R}^{n}
 $$
 Where $\dim(V)=n$, $\Phi_{B}$ is an isomorphism:
 $$
-\lambda_{1}\vec{v}_{1}+\dots+\lambda_{n}\vec{v}_{n}\mapsto \begin{pmatrix}
+\lambda_{1}\underline{v}_{1}+\dots+\lambda_{n}\underline{v}_{n}\mapsto \begin{pmatrix}
 \lambda_{1}\\\vdots\\\lambda_{n}
 \end{pmatrix}
 $$
@@ -36,12 +36,12 @@ $$
 We have seen that $\Phi_{B}$ is linear, is it a bijection?
 Check 1$\hspace{0pt}-1$, if
 $$
-\vec{v}=\lambda_{1}\vec{v}_{1}+\dots+\lambda_{n}\vec{v}_{1}
+\underline{v}=\lambda_{1}\underline{v}_{1}+\dots+\lambda_{n}\underline{v}_{1}
 $$
 $$
- \vec{w}=\mu_{1}\vec{v}_{1}+\dots+\mu_{n}\vec{v}_{n}
+ \underline{w}=\mu_{1}\underline{v}_{1}+\dots+\mu_{n}\underline{v}_{n}
 $$
-Then $\Phi_{B}(\vec{v})=\Phi_{B}(\vec{w})$
+Then $\Phi_{B}(\underline{v})=\Phi_{B}(\underline{w})$
 $$
 \implies \begin{pmatrix}
 \lambda_{1}\\\vdots\\\lambda_{n}
@@ -53,7 +53,7 @@ $$
 \implies \lambda_{i}=\mu_{i}
 $$
 $$
-\implies \vec{v}=\vec{w}
+\implies \underline{v}=\underline{w}
 $$
 Now check onto, if
 $$
@@ -63,7 +63,7 @@ $$
 $$
 Then
 $$
-\Phi_{B}(\lambda_{1}\vec{v}_{1}+\dots+\lambda_{n}\vec{v}_{n})=\begin{pmatrix}
+\Phi_{B}(\lambda_{1}\underline{v}_{1}+\dots+\lambda_{n}\underline{v}_{n})=\begin{pmatrix}
 \lambda_{1}\\ \vdots\\\lambda_{n}
 \end{pmatrix}
 $$
@@ -118,7 +118,7 @@ $$
 So what is $A\in M_{4\times 5}(\mathbb{R})$?
 $$
 \begin{pmatrix}
-A\vec{e}_{1}&\dots&A\vec{e}_{5}
+A\underline{e}_{1}&\dots&A\underline{e}_{5}
 \end{pmatrix}=\begin{pmatrix}
 0&1&0&0&0\\0&0&2&0&0\\0&0&0&3&0\\0&0&0&0&4
 \end{pmatrix}
@@ -159,14 +159,14 @@ $$
 A=\Phi_{B}\circ T\circ \Phi_{C}^{-1}
 $$
 $$
- A\vec{e}_{i}=(\Phi_{B} \circ T\circ \Phi_{C}^{-1})(\vec{e}_{i})=\Phi _{B}\circ T(\vec{v}_{i})
+ A\underline{e}_{i}=(\Phi_{B} \circ T\circ \Phi_{C}^{-1})(\underline{e}_{i})=\Phi _{B}\circ T(\underline{v}_{i})
 $$
-Where $\vec{v}_{i}$ is the $i$th basis element of $e$, so
+Where $\underline{v}_{i}$ is the $i$th basis element of $e$, so
 $$
 A=\begin{pmatrix}
-A\vec{e}_{1}&\dots&A\vec{e}_{n}
+A\underline{e}_{1}&\dots&A\underline{e}_{n}
 \end{pmatrix}=\begin{pmatrix}
-\Phi_{B}T(\vec{v}_{1})&\Phi_{b}T(\vec{v}_{n})
+\Phi_{B}T(\underline{v}_{1})&\Phi_{b}T(\underline{v}_{n})
 \end{pmatrix}
 $$
 ## Proposition

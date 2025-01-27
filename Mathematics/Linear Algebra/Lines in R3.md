@@ -1,16 +1,16 @@
 Lines can be described in a few ways in [[Vectorspace Rn|$\mathbb{R}^3$]]
 ## Parametric Description
 ![[Lines in R3 2024-10-15 11.52.34.excalidraw]]
-We take a point $\vec{a}\in L$, and a vector $\vec{d}\neq 0$ parallel to $L$, then
+We take a point $\underline{a}\in L$, and a vector $\underline{d}\neq 0$ parallel to $L$, then
 $$
-L=\{ \vec{a}+\lambda \vec{d}|\lambda \in \mathbb{R} \}
+L=\{ \underline{a}+\lambda \underline{d}|\lambda \in \mathbb{R} \}
 $$
 ## Cartesian Description
 We can abstract this from the cartesian description, set:
 $$
-\vec{a}=\begin{pmatrix}
+\underline{a}=\begin{pmatrix}
 a_{1}\\a_{2}\\a_{3}
-\end{pmatrix},\vec{d}=\begin{pmatrix}
+\end{pmatrix},\underline{d}=\begin{pmatrix}
 d_{1}\\d_{2}\\d_{3}
 \end{pmatrix}
 $$
@@ -60,7 +60,7 @@ You can also think of the cartesian form as a description that is the intersecti
 ## Intersection of Two [[Planes in R3|Planes]]
 Suppose we have two planes for $i=1,2$:
 $$
-\Pi_{i}=\{ \vec{x}\in \mathbb{R}^3|\vec{n}_{i}\cdot \vec{x} =l_{i}\}\subseteq \mathbb{R}^3
+\Pi_{i}=\{ \underline{x}\in \mathbb{R}^3|\underline{n}_{i}\cdot \underline{x} =l_{i}\}\subseteq \mathbb{R}^3
 $$
 Then what is $\Pi_{1}\cap \Pi_{2}$?
 ### If $n_{1},n_{2}$ are parallel (collinear)
@@ -69,13 +69,13 @@ Then either $\Pi_{1}=\Pi_{2}$, or they are parallel planes, so $\Pi_{1}\cap \Pi_
 Then their intersection is a line $L$
 So
 $$
-L=\{ \vec{x}\in \mathbb{R}^3|\vec{n}_{1}\cdot \vec{x}=l_{1},\vec{n}_{2}\cdot \vec{x}=l_{2} \}
+L=\{ \underline{x}\in \mathbb{R}^3|\underline{n}_{1}\cdot \underline{x}=l_{1},\underline{n}_{2}\cdot \underline{x}=l_{2} \}
 $$
 Letting
 $$
-\vec{n}_{1}=\begin{pmatrix}
+\underline{n}_{1}=\begin{pmatrix}
 a\\b\\c
-\end{pmatrix},\vec{n}_{2}=\begin{pmatrix}
+\end{pmatrix},\underline{n}_{2}=\begin{pmatrix}
 d\\e\\f
 \end{pmatrix}
 $$
@@ -87,15 +87,15 @@ ax+by+cz=l_{1}\\dx+ey+fz=l_{2}
 \end{matrix}  \right\}
 $$
 ### Converting between this description and parametric description
-We need $\vec{a}\in L,\vec{d}\neq 0$ where $\vec{d}$ is parallel to $L$
+We need $\underline{a}\in L,\underline{d}\neq 0$ where $\underline{d}$ is parallel to $L$
 ![[Lines in R3 2024-10-17 10.40.14.excalidraw]]
-$\vec{d}$ is parallel to $\Pi_{1}$ and $\Pi_{2}$ so
+$\underline{d}$ is parallel to $\Pi_{1}$ and $\Pi_{2}$ so
 $$
-\vec{d}\cdot \vec{n}_{1}=0,\vec{d}\cdot \vec{n}_{2}=0
+\underline{d}\cdot \underline{n}_{1}=0,\underline{d}\cdot \underline{n}_{2}=0
 $$
 So set
 $$
-\vec{d}=\vec{n}_{1}\times \vec{n}_{2}=\begin{pmatrix}
+\underline{d}=\underline{n}_{1}\times \underline{n}_{2}=\begin{pmatrix}
 a\\b\\c
 \end{pmatrix}\times \begin{pmatrix}
 d\\e\\f
@@ -103,9 +103,9 @@ d\\e\\f
 bf-ce\\cd-af\\ae-bd
 \end{pmatrix}
 $$
-To find $\vec{a}\in L$, if $ae-bd\neq 0$, i.e. the third coordinate is non-zero, then $\vec{d}$ has some $z$-component, so must intersect the $x$-$y$ plane at a unique point when $z=0$, which we can take to be $\vec{a}$:
+To find $\underline{a}\in L$, if $ae-bd\neq 0$, i.e. the third coordinate is non-zero, then $\underline{d}$ has some $z$-component, so must intersect the $x$-$y$ plane at a unique point when $z=0$, which we can take to be $\underline{a}$:
 $$
-\vec{a}=\begin{pmatrix}
+\underline{a}=\begin{pmatrix}
 g\\h\\0
 \end{pmatrix}
 $$
@@ -122,9 +122,9 @@ $$
 $$
 \Pi_{2}:2x-y+z=0
 $$
-We can find $\vec{d}$ by reading off the normal vectors
+We can find $\underline{d}$ by reading off the normal vectors
 $$
-\vec{d}=\vec{n}_{1}\times \vec{n}_{2}=\begin{pmatrix}
+\underline{d}=\underline{n}_{1}\times \underline{n}_{2}=\begin{pmatrix}
 1\\1\\1
 \end{pmatrix}\times \begin{pmatrix}
 2\\-1\\1
@@ -134,7 +134,7 @@ $$
 $$
 and then find 
 $$
-\vec{a}=\begin{pmatrix}
+\underline{a}=\begin{pmatrix}
 g\\h\\0
 \end{pmatrix}\in L
 $$

@@ -25,24 +25,24 @@ a_{11}&a_{12}&\dots&a_{1j}&\dots& a_{1n}\\a_{21}&a_{22}&\dots&a_{2j}&\dots& a_{2
 \end{pmatrix}
 $$
 $$
-\vec{x}=\begin{pmatrix}
+\underline{x}=\begin{pmatrix}
 x_{1}\\x_{2}\\\vdots\\x_{i}\\\vdots\\x_{n}
-\end{pmatrix},\vec{b}=\begin{pmatrix}
+\end{pmatrix},\underline{b}=\begin{pmatrix}
 b_{1}\\b_{2}\\\vdots\\b_{i}\\\vdots\\b_{n}
 \end{pmatrix}
 $$
 The system of equations is:
 $$
-A\vec{x}=\vec{b} 
+A\underline{x}=\underline{b} 
 $$
 We are thus looking for 
 $$
-\{ \vec{x}\in \mathbb{R}^{n}\mid A\vec{x}=\vec{b} \}
+\{ \underline{x}\in \mathbb{R}^{n}\mid A\underline{x}=\underline{b} \}
 $$
-If $\vec{b}=\vec{0}$, we call the system homogeneous, if $\vec{b}\neq  \vec{0}$, we call it inhomogeneous, if $\vec{b}$ is homogeneous, there is always a solution $\vec{x}=0$
-So we make the augmented matrix of the system is $(A|\vec{b})$:
+If $\underline{b}=\underline{0}$, we call the system homogeneous, if $\underline{b}\neq  \underline{0}$, we call it inhomogeneous, if $\underline{b}$ is homogeneous, there is always a solution $\underline{x}=0$
+So we make the augmented matrix of the system is $(A|\underline{b})$:
 $$
-(A|\vec{b})=\left(\begin{array}{cccccc|c}
+(A|\underline{b})=\left(\begin{array}{cccccc|c}
 a_{11}&a_{12}&\dots&a_{1j}&\dots& a_{1n}&b_{1}\\a_{21}&a_{22}&\dots&a_{2j}&\dots& a_{2n}&b_{2}\\\vdots&\vdots&&\vdots& & \vdots&\vdots\\a_{i1}&a_{i2}&\dots&a_{ij}&\dots& a_{in}&b_{i}\\\vdots&\vdots&&\vdots& & \vdots&\vdots\\a_{n1}&a_{m2}&\dots&a_{mj}&\dots& a_{mn}&b_{n}
 \end{array}\right)
 $$
@@ -84,18 +84,18 @@ $$
 \right)
 $$
 ## Lemma
-Let $A\in M_{n}(\mathbb{R})$ and $\vec{v}\in\mathbb{R}^{n},\vec{v}\neq 0$ such that $A\vec{v}=\vec{0}$, then $A$ is not [[Matrix Inverses|invertible]] i.e. is singular
-If $A\in M_{n}(\mathbb{R})$ is invertible, then the system $A\vec{x}=\vec{b}$ has a unique solution
+Let $A\in M_{n}(\mathbb{R})$ and $\underline{v}\in\mathbb{R}^{n},\underline{v}\neq 0$ such that $A\underline{v}=\underline{0}$, then $A$ is not [[Matrix Inverses|invertible]] i.e. is singular
+If $A\in M_{n}(\mathbb{R})$ is invertible, then the system $A\underline{x}=\underline{b}$ has a unique solution
 ### Proof
 Assume $A^{-1}$ exists, then:
 $$
-\vec{v}=I_{n}\vec{v}=A^{-1}(A\vec{v})=A^{-1}\vec{0}=\vec{0}
+\underline{v}=I_{n}\underline{v}=A^{-1}(A\underline{v})=A^{-1}\underline{0}=\underline{0}
 $$
-Which is a contradiction to $\vec{v}\neq  \vec{0}$
+Which is a contradiction to $\underline{v}\neq  \underline{0}$
 $$
-A\vec{x}=\vec{b}\iff A^{-1}A\vec{x}=A^{-1}\vec{b}\iff \vec{x}=A^{-1}\vec{b}
+A\underline{x}=\underline{b}\iff A^{-1}A\underline{x}=A^{-1}\underline{b}\iff \underline{x}=A^{-1}\underline{b}
 $$
-And $A^{-1}\vec{b}$ exists and is unique
+And $A^{-1}\underline{b}$ exists and is unique
 ## Gauss-Jordan Algorithm
 ### EROs
 Each ERO is a function:
@@ -108,18 +108,18 @@ They are:
 - $A_{rs}(\lambda)$ adds $\lambda \in\mathbb{R}$ times the $r$th row to the $s$th row
 ## More Stuff
 ### Lemma
-If $B\in M_{m}(\mathbb{R})$ is invertible, then the system $A\vec{x}=\vec{b}$ has the same solution set as:
+If $B\in M_{m}(\mathbb{R})$ is invertible, then the system $A\underline{x}=\underline{b}$ has the same solution set as:
 $$
-(BA)\vec{x}=B\vec{b}
+(BA)\underline{x}=B\underline{b}
 $$
 #### Proof
-First note that if $A\vec{x}=\vec{b}$, then
+First note that if $A\underline{x}=\underline{b}$, then
 $$
-(BA)\vec{x}=B(A\vec{x})=B(\vec{b})=B\vec{b}
+(BA)\underline{x}=B(A\underline{x})=B(\underline{b})=B\underline{b}
 $$
-Also if $(BA)\vec{x}=B\vec{b}$:
+Also if $(BA)\underline{x}=B\underline{b}$:
 $$
-A\vec{x}=(B^{-1}B)A\vec{x}=B^{-1}(BA)\vec{x}=B^{-1}(B\vec{b})=\vec{b}
+A\underline{x}=(B^{-1}B)A\underline{x}=B^{-1}(BA)\underline{x}=B^{-1}(B\underline{b})=\underline{b}
 $$
 $w^{5}$
 ### ERO's do not change the solution set
@@ -151,10 +151,10 @@ $$
 Let $A\in M_{n}(\mathbb{R})$ be a square matrix, then the following statements are each equivalent to one another
 - In each column of the [[Row Reduced Echelon Form|RREF]] of $A$, there is a leading 1
 - The RREF of $A$ is $I_{n}$
-- The only solution to $A\vec{x}=\vec{0}$ is $\vec{x}=\vec{0}$
+- The only solution to $A\underline{x}=\underline{0}$ is $\underline{x}=\underline{0}$
 #### Proof
 Statement $\hspace{0pt}2$ implies $\hspace{0pt}1$ clearly, also $\hspace{0pt}1$ implies $\hspace{0pt}2$ since all non-leading $\hspace{0pt}1$ entries in columns with leading 1's are $\hspace{0pt}0$ (and the leading 1's are arranged left to right and top to bottom)
-$2\implies3$ Assume 2: the solution set to $A\vec{x}=\vec{0}$ agrees with the solution set to $I_{n}\vec{x}=\vec{0}$, i.e. $\vec{x}=\vec{0}$
+$2\implies3$ Assume 2: the solution set to $A\underline{x}=\underline{0}$ agrees with the solution set to $I_{n}\underline{x}=\underline{0}$, i.e. $\underline{x}=\underline{0}$
 $3 \implies 1$ If not each column had a leading $\hspace{0pt}1$, then the solution set would have free variables, so i.e. more than one solution
 ### Theorem
 A square matrix $A\in M_{n}(\mathbb{R})$ is invertible iff any one of the conditions of this above lemma hold
@@ -162,12 +162,12 @@ A square matrix $A\in M_{n}(\mathbb{R})$ is invertible iff any one of the condit
 Backwards direction:
 If $A^{-1}$ exists, then:
 $$
-A\vec{x} =\vec{0}
+A\underline{x} =\underline{0}
 $$
 $$
-\implies \vec{x}=A^{-1}(A\vec{x})=A^{-1}\vec{0}=\vec{0}
+\implies \underline{x}=A^{-1}(A\underline{x})=A^{-1}\underline{0}=\underline{0}
 $$
-So $\vec{x}=\vec{0}$ is the unique solution to $A\vec{x}=\vec{0}$
+So $\underline{x}=\underline{0}$ is the unique solution to $A\underline{x}=\underline{0}$
 Forwards direction:
 If the RREF of $A$ is $I_{n}$, then there exists a sequence of elementary matrices (which form the elementary row operations) $E_{1},E_{2},\dots,E_{r}$ such that:
 $$
@@ -195,9 +195,9 @@ And inverses of elementary matrices are elementary
 #### Corollary
 If $BA=I_{n}$, then $AB=I_{n}$ ($A,B \in M_{n}(\mathbb{R})$)
 ##### Proof
-Suppose $A\vec{x}=\vec{0}$, then:
+Suppose $A\underline{x}=\underline{0}$, then:
 $$
-\vec{x}=BA\vec{x}=B \vec{0}=\vec{0}
+\underline{x}=BA\underline{x}=B \underline{0}=\underline{0}
 $$
 So by the theorem, we have that $A$ is invertible, so
 $$

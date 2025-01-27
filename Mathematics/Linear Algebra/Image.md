@@ -1,16 +1,16 @@
 If [[Linear Maps|$T:V\to W$]], we define the image of $T$ by:
 $$
-\text{im}(T):=\{ T(\vec{v})\mid\vec{v}\in  V \}\subseteq W
+\text{im}(T):=\{ T(\underline{v})\mid\underline{v}\in  V \}\subseteq W
 $$
 $\text{im}(T)$ is a subspace
 ## Proof
-Suppose $\vec{u},\vec{w}\in \text{im}(T),\lambda \in\mathbb{R}$, then $\exists \vec{x},\vec{y}\in V$ such that
+Suppose $\underline{u},\underline{w}\in \text{im}(T),\lambda \in\mathbb{R}$, then $\exists \underline{x},\underline{y}\in V$ such that
 $$
-T(\vec{x})=\vec{u},T(\vec{y})=\vec{w}
+T(\underline{x})=\underline{u},T(\underline{y})=\underline{w}
 $$
 So
 $$
-\vec{u}+\vec{w}=T(\vec{x})+T(\vec{y})=T(\vec{x}+\vec{y})\in  \text{im}(T)
+\underline{u}+\underline{w}=T(\underline{x})+T(\underline{y})=T(\underline{x}+\underline{y})\in  \text{im}(T)
 $$
 ## [[Columnspace and Rowspace|Rank]]
 The rank of $T$ is the [[Dimension|dimension]] of the image of $T$
@@ -20,7 +20,7 @@ $$
 ## Example
 If [[Matrices|$A\in M_{m\times n}(\mathbb{R})$]], $A:\mathbb{R}^{n}\to \mathbb{R}^{n}$, 
 $$
-\text{im}(A)=\{ A\vec{v}\mid \vec{v}\in \mathbb{R}^{n} \}=\text{colspace(A)}\subseteq \mathbb{R}^{n}
+\text{im}(A)=\{ A\underline{v}\mid \underline{v}\in \mathbb{R}^{n} \}=\text{colspace(A)}\subseteq \mathbb{R}^{n}
 $$
 ### Subexample
 $$
@@ -55,11 +55,11 @@ $$
  \text{rk}\left( \frac{d }{dx}  \right)=n=\dim(\mathbb{R}[x]_{n-1})
 $$
 ## Lemma
-Let $T:V\to W$ be linear and $\{ \vec{v}_{1},\dots,\vec{v}_{n} \}$ be a [[Span|spanning set]] for $V$ (eg. a [[Basis|basis]]), then $\{ T(\vec{v}_{1},\dots,T(\vec{v}_{n})) \}$ is a spanning set for $\text{im}(T)$
+Let $T:V\to W$ be linear and $\{ \underline{v}_{1},\dots,\underline{v}_{n} \}$ be a [[Span|spanning set]] for $V$ (eg. a [[Basis|basis]]), then $\{ T(\underline{v}_{1},\dots,T(\underline{v}_{n})) \}$ is a spanning set for $\text{im}(T)$
 ### Proof
-Suppose $\vec{w}\in\text{im}(T)$, then $\exists \vec{v}\in V:T(\vec{v})=\vec{w}$, we have $\vec{v}=\lambda_{1}\vec{v}_{1}+\dots+\lambda_{n}\vec{v}_{n}$ for some $\lambda_{i}$'s. So 
+Suppose $\underline{w}\in\text{im}(T)$, then $\exists \underline{v}\in V:T(\underline{v})=\underline{w}$, we have $\underline{v}=\lambda_{1}\underline{v}_{1}+\dots+\lambda_{n}\underline{v}_{n}$ for some $\lambda_{i}$'s. So 
 $$
-\vec{w}=T(\vec{v})=T(\lambda_{1}\vec{v}_{1}+\dots+\lambda_{n}\vec{v}_{n})=\lambda_{1}T(\vec{v}_{1})+\dots+\lambda_{n}T(\vec{v}_{n})
+\underline{w}=T(\underline{v})=T(\lambda_{1}\underline{v}_{1}+\dots+\lambda_{n}\underline{v}_{n})=\lambda_{1}T(\underline{v}_{1})+\dots+\lambda_{n}T(\underline{v}_{n})
 $$
 Hence proved
 

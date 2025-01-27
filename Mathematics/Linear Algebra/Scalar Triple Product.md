@@ -3,19 +3,19 @@ $$
 \mathbb{R}^3\times \mathbb{R}^3\times \mathbb{R}^3\to \mathbb{R}
 $$
 $$
- (\vec{a},\vec{b},\vec{c})\mapsto[\vec{a},\vec{b},\vec{c}]
+ (\underline{a},\underline{b},\underline{c})\mapsto[\underline{a},\underline{b},\underline{c}]
 $$
 Where:
 $$
-[\vec{a},\vec{b},\vec{c}]:=\vec{a}\cdot(\vec{b}\times \vec{c})
+[\underline{a},\underline{b},\underline{c}]:=\underline{a}\cdot(\underline{b}\times \underline{c})
 $$
 So if:
 $$
-\vec{a}=\begin{pmatrix}
+\underline{a}=\begin{pmatrix}
 a_{1}\\a_{2}\\a_{3}
-\end{pmatrix},\vec{b}=\begin{pmatrix}
+\end{pmatrix},\underline{b}=\begin{pmatrix}
 b_{1}\\b_{2}\\b_{3}
-\end{pmatrix},\vec{c}=\begin{pmatrix}
+\end{pmatrix},\underline{c}=\begin{pmatrix}
 c_{1}\\c_{2}\\c_{3}
 \end{pmatrix}\in \mathbb{R}^3,l_{1},l_{2},l_{3}\in \mathbb{R}
 $$
@@ -29,23 +29,23 @@ $$
 $$
  c_{1}x+c_{2}y+c_{3}z=l_{3}
 $$
-Has a unique solution iff $[\vec{a},\vec{b},\vec{c}]\neq 0$
+Has a unique solution iff $[\underline{a},\underline{b},\underline{c}]\neq 0$
 ## Note
 $$
-[\vec{a},\vec{b},\vec{c}]=\det(\vec{a}\,\vec{b}\,\vec{c})
+[\underline{a},\underline{b},\underline{c}]=\det(\underline{a}\,\underline{b}\,\underline{c})
 $$
-where $(\vec{a}\,\vec{b}\,\vec{c})$ is a $3\times 3$ [[Matrices|matrix]]
+where $(\underline{a}\,\underline{b}\,\underline{c})$ is a $3\times 3$ [[Matrices|matrix]]
 ## Invariance Under Cyclic Permutation
-If $\vec{a},\vec{b},\vec{c}\in\mathbb{R}^3$ then:
+If $\underline{a},\underline{b},\underline{c}\in\mathbb{R}^3$ then:
 $$
-[\vec{a},\vec{b},\vec{c}]=[\vec{b},\vec{c},\vec{a}]=[\vec{c},\vec{a},\vec{b}]
+[\underline{a},\underline{b},\underline{c}]=[\underline{b},\underline{c},\underline{a}]=[\underline{c},\underline{a},\underline{b}]
 $$
 $$
- =-[\vec{b},\vec{a},\vec{c}]=-[\vec{a},\vec{c},\vec{b}]=-[\vec{c},\vec{b},\vec{a}]
+ =-[\underline{b},\underline{a},\underline{c}]=-[\underline{a},\underline{c},\underline{b}]=-[\underline{c},\underline{b},\underline{a}]
 $$
 ### Proof
 $$
-[\vec{a},\vec{b},\vec{c}]=\vec{a}\cdot \left( \begin{pmatrix}
+[\underline{a},\underline{b},\underline{c}]=\underline{a}\cdot \left( \begin{pmatrix}
 b_{1}\\ b_{2}\\b_{3}
 \end{pmatrix}\times \begin{pmatrix}
 c_{1}\\c_{2}\\c_{3}

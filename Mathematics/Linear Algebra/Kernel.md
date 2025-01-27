@@ -1,6 +1,6 @@
 If [[Linear Maps|$T:V\to W$]], we define the kernel of $T$:
 $$
-\text{ker}(T):=\{ \vec{v}\in V\mid T(\vec{v})=\vec{0} \}\subseteq V
+\text{ker}(T):=\{ \underline{v}\in V\mid T(\underline{v})=\underline{0} \}\subseteq V
 $$
 ## [[Nullspace|Nullity]]
 The nullity of $T$ is the [[Dimension|dimension]] of the kernel of $T$:
@@ -10,7 +10,7 @@ $$
 ## Example
 If [[Matrices|$A\in M_{m\times n}(\mathbb{R})$]], $A:\mathbb{R}^{n}\to \mathbb{R}^{n}$, 
 $$
-\text{ker}(A)=\text{nullspace}(A)=\{ \vec{v}\in \mathbb{R}^{n}\mid A\vec{v}=\vec{0} \}\subseteq \mathbb{R}^{n}
+\text{ker}(A)=\text{nullspace}(A)=\{ \underline{v}\in \mathbb{R}^{n}\mid A\underline{v}=\underline{0} \}\subseteq \mathbb{R}^{n}
 $$
 ### Subexample
 $$

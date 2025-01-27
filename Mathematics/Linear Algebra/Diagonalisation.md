@@ -119,6 +119,20 @@ $$
 $$
 Which is impossible
 For generalisation to $> 2$ eigenvalues is In notes pls dooooo
+# 
+___
+So the number of linearly independent eigenvectors is
+$$
+\dim(V_{\lambda_{1}})+\dim(V_{\lambda_{2}})+\dots+\dim(V_{\lambda_{p}})
+$$
+So
+$$
+p\leq\dim(V_{\lambda_{1}})+\dim(V_{\lambda_{2}})+\dots+\dim(V_{\lambda_{p}})\leq \sum_{i=1}^{p}k_{i}=N
+$$
+So for $A$ to be diagonalisable we need $N$ linearly independent eigenvectors which is only possible if $\dim(V_{\lambda_{i}})=p_{i}=k_{i}\forall i=1,\dots ,p$ 
+## $A$ is Diagonalisable if Geometric Multiplicity is equal to Algebraic Multiplicity
+
+
 ## Example
 Consider a Predator-Prey model in discrete time. Let $x_{n}$ be the number of owls at the end of year $n$ and $y_{n}$ be the number of mice at the end of year $n$. Owls are predators, mice are prey
 A possible equation could be:

@@ -1,30 +1,30 @@
 Suppose $V,W$ are [[Real Vectorspaces|vectorspaces]], a linear map (aka linear transformation) is a [[Functions|function]] $T:V\to W$ satisfying linearity:
-- For all $\vec{u},\vec{v}\in V$, we have
+- For all $\underline{u},\underline{v}\in V$, we have
 $$
-T(\vec{u}+\vec{v})=T(\vec{u})+T(\vec{v})
+T(\underline{u}+\underline{v})=T(\underline{u})+T(\underline{v})
 $$
-- For all $\lambda \in\mathbb{R}$, and $\vec{u}\in V$, we have
+- For all $\lambda \in\mathbb{R}$, and $\underline{u}\in V$, we have
 $$
-T(\lambda \vec{u})=\lambda T(\vec{u})
+T(\lambda \underline{u})=\lambda T(\underline{u})
 $$
 The idea is that linear maps preserve the structure of the vectorspace
 ## Lemma
-If $T:V\to W$ is linear, then $T(\vec{0})=\vec{0}$
+If $T:V\to W$ is linear, then $T(\underline{0})=\underline{0}$
 ### Proof
 $$
-T(\vec{0})=T(\vec{0}+\vec{0})=T(\vec{0})+T(\vec{0})=2T(\vec{0})
+T(\underline{0})=T(\underline{0}+\underline{0})=T(\underline{0})+T(\underline{0})=2T(\underline{0})
 $$
 $$
-\implies T(\vec{0})=\vec{0}
+\implies T(\underline{0})=\underline{0}
 $$
 ## Examples
-If [[Matrices|$A\in M_{m\times n}(\mathbb{R})$]], then we can define a map $T_{A}:\mathbb{R}^{n}\to \mathbb{R}^{m}$ by $T_{A}(\vec{v})=A\vec{v}$
-Check: is $T_{A}$ linear? consider some $\vec{u},\vec{v}\in\mathbb{R}^{n},\lambda \in\mathbb{R}$
+If [[Matrices|$A\in M_{m\times n}(\mathbb{R})$]], then we can define a map $T_{A}:\mathbb{R}^{n}\to \mathbb{R}^{m}$ by $T_{A}(\underline{v})=A\underline{v}$
+Check: is $T_{A}$ linear? consider some $\underline{u},\underline{v}\in\mathbb{R}^{n},\lambda \in\mathbb{R}$
 $$
-T_{A}(\vec{u}+\vec{v})=A(\vec{u}+\vec{v})=A\vec{u}+A\vec{v}=T(\vec{u})+T(\vec{v})
+T_{A}(\underline{u}+\underline{v})=A(\underline{u}+\underline{v})=A\underline{u}+A\underline{v}=T(\underline{u})+T(\underline{v})
 $$
 $$
-T_{A}(\lambda \vec{u})=A(\lambda \vec{u})=\lambda A\vec{u}=\lambda T(\vec{u})
+T_{A}(\lambda \underline{u})=A(\lambda \underline{u})=\lambda A\underline{u}=\lambda T(\underline{u})
 $$
 ___
 If $B$ is a [[Basis|Basis]] for $V$, then [[Coordinates|$\Phi_{B}:V\to \mathbb{R}^{n}$]] is a linear map
@@ -118,42 +118,42 @@ $$
 $$
 Which is not linear, for many reasons, such as $4=f(2)=f(1+1)\neq f(1)+f(1)=2$
 ## Lemma
-Suppose $\{ \vec{v}_{1},\dots,\vec{v}_{n} \}$ is a basis for $V$, then
-- Any linear map $T:V\to W$ is determined by its values $T(\vec{v}_{1}),T(\vec{v}_{2}),\dots,T(\vec{v}_{n})$
-- Given arbitrary vectors $\vec{w}_{1},\vec{w}_{2},\dots,\vec{w}_{n}\in W$, then there exists a linear map $T:V\to W$ with $T(\vec{v}_{1})=\vec{w}_{1},T(\vec{v}_{2})=\vec{w}_{2},\dots,T(\vec{v}_{n})=\vec{w}_{n}$ 
+Suppose $\{ \underline{v}_{1},\dots,\underline{v}_{n} \}$ is a basis for $V$, then
+- Any linear map $T:V\to W$ is determined by its values $T(\underline{v}_{1}),T(\underline{v}_{2}),\dots,T(\underline{v}_{n})$
+- Given arbitrary vectors $\underline{w}_{1},\underline{w}_{2},\dots,\underline{w}_{n}\in W$, then there exists a linear map $T:V\to W$ with $T(\underline{v}_{1})=\underline{w}_{1},T(\underline{v}_{2})=\underline{w}_{2},\dots,T(\underline{v}_{n})=\underline{w}_{n}$ 
 ### Proof
 First part:
 Is any linear map determined by its values?
-Suppose $\vec{v}\in V$, then we have $\vec{v}=\lambda_{1}\vec{v}_{1}+\dots+\lambda _{n}\vec{v}_{n}$ for some $\lambda_{i}\in\mathbb{R}$, so 
+Suppose $\underline{v}\in V$, then we have $\underline{v}=\lambda_{1}\underline{v}_{1}+\dots+\lambda _{n}\underline{v}_{n}$ for some $\lambda_{i}\in\mathbb{R}$, so 
 $$
-T(\vec{v})=T(\lambda_{1}\vec{v}_{1}+\dots+\lambda _{n}\vec{v}_{n})=\lambda_{1}T(\vec{v}_{1})+\dots+\lambda_{n}T(\vec{v}_{n})
+T(\underline{v})=T(\lambda_{1}\underline{v}_{1}+\dots+\lambda _{n}\underline{v}_{n})=\lambda_{1}T(\underline{v}_{1})+\dots+\lambda_{n}T(\underline{v}_{n})
 $$
 So any vector in the linear map is in fact determined by its values, hence proved
 Second part:
-We wish to define such a $T:V\to W$, suppose $\vec{v}\in V$ then $\vec{v}=\lambda_{1}\vec{v}_{1}+\dots+\lambda _{n}\vec{v}_{n}$ for a unique choice of $\lambda_{i}\in\mathbb{R}$, then we define $T:V\to W$
+We wish to define such a $T:V\to W$, suppose $\underline{v}\in V$ then $\underline{v}=\lambda_{1}\underline{v}_{1}+\dots+\lambda _{n}\underline{v}_{n}$ for a unique choice of $\lambda_{i}\in\mathbb{R}$, then we define $T:V\to W$
 $$
-T(\vec{v}):=\lambda_{1}\vec{w}_{1}+\dots+\lambda_{n}\vec{w}_{n}
+T(\underline{v}):=\lambda_{1}\underline{w}_{1}+\dots+\lambda_{n}\underline{w}_{n}
 $$
-Note this is well-defined since the $\lambda_{i}$'s are unique. Also note $T(\vec{v}_{i})=\vec{w}_{i}$
+Note this is well-defined since the $\lambda_{i}$'s are unique. Also note $T(\underline{v}_{i})=\underline{w}_{i}$
 Now we have defined a map, but is it linear?
-Suppose $\vec{u},\vec{v}\in V,\lambda \in\mathbb{R}$, then $\vec{u}=\lambda_{1}\vec{v}_{1}+\dots+\lambda_{n}\vec{v}_{n}$, and $\vec{v}=\mu_{1}\vec{v}_{1}+\dots+\mu_{n}\vec{v}_{n}$ for some $\lambda_{i},\mu_{i}\in\mathbb{R}$, then
+Suppose $\underline{u},\underline{v}\in V,\lambda \in\mathbb{R}$, then $\underline{u}=\lambda_{1}\underline{v}_{1}+\dots+\lambda_{n}\underline{v}_{n}$, and $\underline{v}=\mu_{1}\underline{v}_{1}+\dots+\mu_{n}\underline{v}_{n}$ for some $\lambda_{i},\mu_{i}\in\mathbb{R}$, then
 $$
-T(\vec{u}+\vec{v})=T((\lambda_{1}+\mu_{1})\vec{v}_{1}+\dots+(\lambda_{n}+\mu_{n})\vec{v}_{n})
-$$
-$$
-= (\lambda_{1}+\mu_{1})\vec{w}_{1}+\dots+(\lambda_{n}+\mu_{n})\vec{w}_{n}
+T(\underline{u}+\underline{v})=T((\lambda_{1}+\mu_{1})\underline{v}_{1}+\dots+(\lambda_{n}+\mu_{n})\underline{v}_{n})
 $$
 $$
-= (\lambda_{1}\vec{w}_{1}+\dots+\lambda_{n}\vec{w}_{n})+(\mu_{1}\vec{w}_{1}+\dots+\mu_{n}\vec{w}_{n})=T(\vec{u})+T(\vec{v})
+= (\lambda_{1}+\mu_{1})\underline{w}_{1}+\dots+(\lambda_{n}+\mu_{n})\underline{w}_{n}
 $$
 $$
-T(\lambda \vec{u})=T(\lambda\lambda_{1}\vec{v}_{1}+\dots+\lambda\lambda_{n}\vec{v}_{n})
+= (\lambda_{1}\underline{w}_{1}+\dots+\lambda_{n}\underline{w}_{n})+(\mu_{1}\underline{w}_{1}+\dots+\mu_{n}\underline{w}_{n})=T(\underline{u})+T(\underline{v})
 $$
 $$
-= (\lambda\lambda_{1})\vec{w}_{1}+\dots+(\lambda\lambda_{n})\vec{w}_{n}
+T(\lambda \underline{u})=T(\lambda\lambda_{1}\underline{v}_{1}+\dots+\lambda\lambda_{n}\underline{v}_{n})
 $$
 $$
-=\lambda(\lambda_{1}\vec{w}_{1}+\dots+\lambda_{n}\vec{w}_{n})=\lambda T(\vec{v})
+= (\lambda\lambda_{1})\underline{w}_{1}+\dots+(\lambda\lambda_{n})\underline{w}_{n}
+$$
+$$
+=\lambda(\lambda_{1}\underline{w}_{1}+\dots+\lambda_{n}\underline{w}_{n})=\lambda T(\underline{v})
 $$
 ## Lemma
 $$
@@ -161,32 +161,32 @@ T:\mathbb{R}^{n}\to \mathbb{R}^{n}
 $$
 is linear iff $\exists A\in M_{m\times n}(\mathbb{R})$ such that
 $$
-T(\vec{v})=A\vec{v}
+T(\underline{v})=A\underline{v}
 $$
 ### Proof
 If direction:
 We already know this, so $T$ is linear if the map is matrix multiplication, as shown above in examples
 Only if direction:
-Consider $\{ \vec{e}_{1},\dots, \vec{e}_{n}\}$ is a basis for $\mathbb{R}^{n}$, then
+Consider $\{ \underline{e}_{1},\dots, \underline{e}_{n}\}$ is a basis for $\mathbb{R}^{n}$, then
 $$
 T\begin{pmatrix}
 \lambda_{1}\\\vdots\\\lambda_{n}
-\end{pmatrix}=T(\lambda_{1}\vec{e}_{1}+\dots+\lambda_{n}\vec{e}_{n})
+\end{pmatrix}=T(\lambda_{1}\underline{e}_{1}+\dots+\lambda_{n}\underline{e}_{n})
 $$
 $$
-= \lambda_{1}T(\vec{e}_{1})+\dots+\lambda_{n}T(\vec{e}_{n})
+= \lambda_{1}T(\underline{e}_{1})+\dots+\lambda_{n}T(\underline{e}_{n})
 $$
 $$
  =\begin{pmatrix}
-T(\vec{e}_{1})&\dots&T(\vec{e}_{n})
+T(\underline{e}_{1})&\dots&T(\underline{e}_{n})
 \end{pmatrix}\begin{pmatrix}
 \lambda_{1}\\\vdots\\\lambda_{n}
 \end{pmatrix}
 $$
-So $T\vec{\lambda}=A\vec{\lambda}$, where 
+So $T\underline{\lambda}=A\underline{\lambda}$, where 
 $$
 A=\begin{pmatrix}
-T(\vec{e}_{1})&\dots&T(\vec{e}_{n})
+T(\underline{e}_{1})&\dots&T(\underline{e}_{n})
 \end{pmatrix}
 $$
 ### Example
@@ -200,7 +200,7 @@ x\\y\\z
 $$
 $$
 A=\begin{pmatrix}
-T(\vec{e}_{1})&T(\vec{e}_{2})&T(\vec{e}_{3})
+T(\underline{e}_{1})&T(\underline{e}_{2})&T(\underline{e}_{3})
 \end{pmatrix}
 $$
 $$
@@ -218,62 +218,62 @@ T\begin{pmatrix}
 $$
 ## Properties of Linear Maps
 ### Lemma
-Suppose $S:U\to V$, $T:V\to W$ are linear, then $T\circ S:U\to W$ is linear, similarly if $S:\mathbb{R}^m\to \mathbb{R}^{n}$, $T:\mathbb{R}^{n}\to \mathbb{R}^k$ are given by $S(\vec{x})-A\vec{x}$, $T(\vec{y})=B\vec{y}$, then $T\circ S(\vec{x})=BA\vec{x}$
+Suppose $S:U\to V$, $T:V\to W$ are linear, then $T\circ S:U\to W$ is linear, similarly if $S:\mathbb{R}^m\to \mathbb{R}^{n}$, $T:\mathbb{R}^{n}\to \mathbb{R}^k$ are given by $S(\underline{x})-A\underline{x}$, $T(\underline{y})=B\underline{y}$, then $T\circ S(\underline{x})=BA\underline{x}$
 #### Proof
-Suppose $\vec{u},\vec{v}\in U,\lambda \in\mathbb{R}$, then
+Suppose $\underline{u},\underline{v}\in U,\lambda \in\mathbb{R}$, then
 $$
-T\circ S(\vec{u}+\vec{v})=T(S(\vec{u}+\vec{v}))=T(S(\vec{u})+S(\vec{v}))=T(S(\vec{u}))+T(S(\vec{v}))=T\circ S(\vec{u})+T\circ S(\vec{v})
+T\circ S(\underline{u}+\underline{v})=T(S(\underline{u}+\underline{v}))=T(S(\underline{u})+S(\underline{v}))=T(S(\underline{u}))+T(S(\underline{v}))=T\circ S(\underline{u})+T\circ S(\underline{v})
 $$
 $$
-T\circ S(\lambda \vec{u})=T(S(\lambda \vec{u}))=T(\lambda S(\vec{u}))=\lambda T(S(\vec{u}))=\lambda T\circ S(\vec{u})
+T\circ S(\lambda \underline{u})=T(S(\lambda \underline{u}))=T(\lambda S(\underline{u}))=\lambda T(S(\underline{u}))=\lambda T\circ S(\underline{u})
 $$
 For the second statement, note:
 $$
-T\circ S(\vec{x})=T(S(\vec{x}))=T(A\vec{x})=BA\vec{x}
+T\circ S(\underline{x})=T(S(\underline{x}))=T(A\underline{x})=BA\underline{x}
 $$
 Which in a way is where matrix multiplication comes from (very cool)
 ## Proposition
 If $T:V\to W$ is linear, then the following are equivalent:
-- [[Kernel|$\text{ker}(T)=0=\{ \vec{0} \}$]]
+- [[Kernel|$\text{ker}(T)=0=\{ \underline{0} \}$]]
 - $T$ is [[Injective Functions|injective]] (1-1)
-- If $\{ \vec{v}_{1},\dots,\vec{v}_{n} \}\subseteq V$ are [[Linear Independence|linearly independent]], then $\{ T(\vec{v}_{1}),\dots,T(\vec{v}_{n}) \}\subseteq W$ are linearly independent
+- If $\{ \underline{v}_{1},\dots,\underline{v}_{n} \}\subseteq V$ are [[Linear Independence|linearly independent]], then $\{ T(\underline{v}_{1}),\dots,T(\underline{v}_{n}) \}\subseteq W$ are linearly independent
 ### Proof
 $1\implies2$ Assume 1:
-Suppose $T(\vec{u})=T(\vec{v})$, so for injectivity we want to show $\vec{u}=\vec{v}$
+Suppose $T(\underline{u})=T(\underline{v})$, so for injectivity we want to show $\underline{u}=\underline{v}$
 $$
-T(\vec{u}-\vec{v})=T(\vec{u})-T(\vec{v})=\vec{0}
-$$
-$$
-\implies \vec{u}-\vec{v}\in \text{ker}(T)=0
+T(\underline{u}-\underline{v})=T(\underline{u})-T(\underline{v})=\underline{0}
 $$
 $$
-\implies \vec{u}-\vec{v}=\vec{0}
+\implies \underline{u}-\underline{v}\in \text{ker}(T)=0
 $$
 $$
-\implies \vec{u}=\vec{v}
+\implies \underline{u}-\underline{v}=\underline{0}
+$$
+$$
+\implies \underline{u}=\underline{v}
 $$
 $2\implies 3$: Assume $2$:
 Suppose 
 $$
-\lambda_{1}T(\vec{v}_{1})+\dots+\lambda_{n}T(\vec{v}_{n})=\vec{0}
+\lambda_{1}T(\underline{v}_{1})+\dots+\lambda_{n}T(\underline{v}_{n})=\underline{0}
 $$
 $$
-\implies T(\lambda_{1}\vec{v}_{1}+\dots+\lambda_{n}\vec{v}_{n})=\vec{0}=T(\vec{0})
+\implies T(\lambda_{1}\underline{v}_{1}+\dots+\lambda_{n}\underline{v}_{n})=\underline{0}=T(\underline{0})
 $$
 Hence, since $T$ is 1$\hspace{0pt}-1$, 
 $$
-\lambda_{1}\vec{v}_{1}+\dots+\lambda_{n}\vec{v}_{n}=\vec{0} 
+\lambda_{1}\underline{v}_{1}+\dots+\lambda_{n}\underline{v}_{n}=\underline{0} 
 $$
 $$
 \implies \lambda_{1}=\dots=\lambda_{n}=0
 $$
-So the $\vec{v}_{i}$'s are linearly independent
+So the $\underline{v}_{i}$'s are linearly independent
 $3\implies1$: Assume $3$
-Suppose $\vec{u}\neq 0$ and $\vec{u}\in\text{ker}(T)$ then $\{ \vec{u} \}$ is linearly independent, but $\{ \vec{0} \}=\{ T(\vec{u}) \}$ is not linearly independent, which contradicts our $3$, so $\text{ker}(T)=\{ \vec{0} \}$
+Suppose $\underline{u}\neq 0$ and $\underline{u}\in\text{ker}(T)$ then $\{ \underline{u} \}$ is linearly independent, but $\{ \underline{0} \}=\{ T(\underline{u}) \}$ is not linearly independent, which contradicts our $3$, so $\text{ker}(T)=\{ \underline{0} \}$
 ### Corollary
-Let $T:V\to W$ be linear and suppose $\text{ker}(T)=0$, then if $\{ \vec{v}_{1},\dots,\vec{v}_{n} \}$ is a basis for $\vec{v}$, we have that $\{ T(\vec{v}_{1}),\dots,T(\vec{v}_{n}) \}$ is a basis for $\text{im}(T)$, hence $\text{rk}(T)=\dim(\text{im}(T))=n=\dim(V)$
+Let $T:V\to W$ be linear and suppose $\text{ker}(T)=0$, then if $\{ \underline{v}_{1},\dots,\underline{v}_{n} \}$ is a basis for $\underline{v}$, we have that $\{ T(\underline{v}_{1}),\dots,T(\underline{v}_{n}) \}$ is a basis for $\text{im}(T)$, hence $\text{rk}(T)=\dim(\text{im}(T))=n=\dim(V)$
 #### Proof
-$\{ T(\vec{v}_{1}),\dots,T(\vec{v}_{n}) \}$ is spanning by [[Image#Lemma|this lemma]] and linearly independent by the proposition, so is a basis for $\text{im}(T)$
+$\{ T(\underline{v}_{1}),\dots,T(\underline{v}_{n}) \}$ is spanning by [[Image#Lemma|this lemma]] and linearly independent by the proposition, so is a basis for $\text{im}(T)$
 
 
 #Mathematics #LinAlg #Definition #Theorem 

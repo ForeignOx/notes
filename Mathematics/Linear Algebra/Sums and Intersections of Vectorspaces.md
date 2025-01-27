@@ -1,10 +1,10 @@
 Suppose $V$ is a [[Real Vectorspaces|vectorspace]], and $U,W\subseteq V$ are [[Subspaces|subspaces]], then
 $$
-U+W:=\{ \vec{u}+\vec{w}\mid \vec{u}\in U,\vec{w}\in W \}\subseteq V
+U+W:=\{ \underline{u}+\underline{w}\mid \underline{u}\in U,\underline{w}\in W \}\subseteq V
 $$
 One can think of the sum as the [[Span|span]] of the union; it is the smallest subspace of $V$ containing $U$ and $W$
 $$
-U\cap W:=\{ \vec{u}\in V\mid \vec{u}\in U,\vec{u}\in W \}\subseteq V
+U\cap W:=\{ \underline{u}\in V\mid \underline{u}\in U,\underline{u}\in W \}\subseteq V
 $$
 ## Proof
 yeh
@@ -17,11 +17,11 @@ $$
 $$
 ### Proof
 First note that $U\cap W\subseteq U$ and $U$ is finite dimensional, therefore $U\cap W$ is finite dimensional
-Let $\{ \vec{v}_{1},\dots,\vec{v}_{k} \}$ be a basis for $U\cap W$, extend this to a basis $\{ \vec{v}_{1},\dots,\vec{v}_{k},\vec{u}_{1},\dots,\vec{u}_{l} \}$ of $U$
-and to a basis of $W$; $\{ \vec{v}_{1},\dots,\vec{v}_{k},\vec{w}_{1},\dots,\vec{w}_{m} \}$
+Let $\{ \underline{v}_{1},\dots,\underline{v}_{k} \}$ be a basis for $U\cap W$, extend this to a basis $\{ \underline{v}_{1},\dots,\underline{v}_{k},\underline{u}_{1},\dots,\underline{u}_{l} \}$ of $U$
+and to a basis of $W$; $\{ \underline{v}_{1},\dots,\underline{v}_{k},\underline{w}_{1},\dots,\underline{w}_{m} \}$
 Claim:
 $$
-B=\{ \vec{v}_{1},\dots,\vec{v}_{k},\vec{u}_{1},\dots,\vec{u}_{l},\vec{w}_{1},\dots,\vec{w}_{m} \}
+B=\{ \underline{v}_{1},\dots,\underline{v}_{k},\underline{u}_{1},\dots,\underline{u}_{l},\underline{w}_{1},\dots,\underline{w}_{m} \}
 $$
 is a basis for $U+W$, so 
 $$
@@ -30,23 +30,23 @@ $$
 Certainly $B$ spans $U+W$, is $B$ linearly independent??
 Suppose
 $$
-\lambda_{1}\vec{v}_{1}+\dots+\lambda_{k}\vec{v}_{k}+\mu_{1}\vec{u}_{1}+\dots+\mu_{l}\vec{u}_{l}+\eta_{1}\vec{w}_{1}+\dots+\eta_{m}\vec{w}_{m}=\vec{0}
+\lambda_{1}\underline{v}_{1}+\dots+\lambda_{k}\underline{v}_{k}+\mu_{1}\underline{u}_{1}+\dots+\mu_{l}\underline{u}_{l}+\eta_{1}\underline{w}_{1}+\dots+\eta_{m}\underline{w}_{m}=\underline{0}
 $$
 So we have
 $$
-\underbrace{ \lambda_{1}\vec{v}_{1}+\dots+\lambda_{k}\vec{v}_{k}+\mu_{1}\vec{u}_{1}+\dots+\mu_{l}\vec{u}_{l} }_{ \in U }=\underbrace{ -(\eta_{1}\vec{w}_{1}+\dots+\eta_{m}\vec{w}_{m}) }_{ \in W }\in U\cap W
+\underbrace{ \lambda_{1}\underline{v}_{1}+\dots+\lambda_{k}\underline{v}_{k}+\mu_{1}\underline{u}_{1}+\dots+\mu_{l}\underline{u}_{l} }_{ \in U }=\underbrace{ -(\eta_{1}\underline{w}_{1}+\dots+\eta_{m}\underline{w}_{m}) }_{ \in W }\in U\cap W
 $$
 So 
 $$
--(\eta_{1}\vec{w}_{1}+\dots+\eta_{m}\vec{w}_{})=\lambda_{1}'\vec{v}_{1}+\dots+\lambda_{k}'\vec{v}_{k}
+-(\eta_{1}\underline{w}_{1}+\dots+\eta_{m}\underline{w}_{})=\lambda_{1}'\underline{v}_{1}+\dots+\lambda_{k}'\underline{v}_{k}
 $$
 $$
-\implies \lambda_{1}'\vec{v}_{1}+\dots+\lambda_{k}'\vec{v}_{k}+\eta_{1}\vec{w}_{1}+\dots+\eta_{m}\vec{w}_{m}=\vec{0}
+\implies \lambda_{1}'\underline{v}_{1}+\dots+\lambda_{k}'\underline{v}_{k}+\eta_{1}\underline{w}_{1}+\dots+\eta_{m}\underline{w}_{m}=\underline{0}
 $$
 But this is is a basis for $W$, so since they are linearly independent, so $\lambda_{1}'=\dots=\lambda_{k}'=\eta_{1}=\dots=\eta_{m}=0$
 So the original linear combination becomes:
 $$
-\lambda_{1}\vec{v}_{1}+\dots+\lambda_{k}\vec{v}_{k}+\mu_{1}\vec{u}_{1}+\dots \mu_{l}\vec{u}_{l}=\vec{0}
+\lambda_{1}\underline{v}_{1}+\dots+\lambda_{k}\underline{v}_{k}+\mu_{1}\underline{u}_{1}+\dots \mu_{l}\underline{u}_{l}=\underline{0}
 $$
 Hence $\lambda_{1}=\dots=\lambda_{k}=\mu_{1}=\dots=\mu_{l}=0$
 ## Example
@@ -97,37 +97,37 @@ $$
 $$
 So $\dim(U)=3$, $\dim(L)=3$, $\dim(U\cap L)=\dim(D)=2$, $\dim(U+L)=3+3-2=4$, so $U_{L}=M_{2}(\mathbb{R})$
 ## Direct Sums
-Suppose $U,W\subseteq V$ are subspaces that satisfy $U+W=V$, $U\cap W=0=\{ \vec{0} \}$, then we call $V$ the 'direct sum' of $U$  and $W$, and write
+Suppose $U,W\subseteq V$ are subspaces that satisfy $U+W=V$, $U\cap W=0=\{ \underline{0} \}$, then we call $V$ the 'direct sum' of $U$  and $W$, and write
 $$
 V=U \oplus W
 $$
 ## Proposition
 If $V$ is finite dimensional, and $U,W\subseteq V$ are subspaces, then the following are pairwise equivalent:
 1. $V=U\oplus W$
-2. If $\{ \vec{u}_{1},\dots,\vec{u}_{l} \},\{ \vec{w}_{1},\dots,\vec{w}_{k} \}$ are bases for $U$ and $W$ respectively, then $\{ \vec{u}_{1},\dots,\vec{u}_{l},\vec{w}_{1},\dots,\vec{w}_{k} \}$ is a basis for $V$
+2. If $\{ \underline{u}_{1},\dots,\underline{u}_{l} \},\{ \underline{w}_{1},\dots,\underline{w}_{k} \}$ are bases for $U$ and $W$ respectively, then $\{ \underline{u}_{1},\dots,\underline{u}_{l},\underline{w}_{1},\dots,\underline{w}_{k} \}$ is a basis for $V$
 3. $V=U+W$ and $\dim(V)=\dim(U)+\dim(W)$
-4. Every $\vec{v}\in V$ can be written uniquely as $\vec{v}=\vec{u}+\vec{w}$ for some unique choice of $\vec{u}\in U,\vec{w}\in W$
+4. Every $\underline{v}\in V$ can be written uniquely as $\underline{v}=\underline{u}+\underline{w}$ for some unique choice of $\underline{u}\in U,\underline{w}\in W$
 
 ### Proof
 $1\iff2\iff 3$ follows from the proposition above, and $1 \iff 4$ is on a problem sheet :(
 ### Exapmle
-$V=M_{n}(\mathbb{R})$, $S=\{ A\in V \mid A^{t}=A \}$, $T=\{ A\in V\mid A^{t} = -A \}$
+$V=M_{n}(\mathbb{R})$, $S=\{ A\in V \mid A^{\top}=A \}$, $T=\{ A\in V\mid A^{\top} = -A \}$
 $S$ is the $n\times n$ symmetric matrices, $T$ is the $n\times n$ antisymmetric matrices
 $S,T\subseteq V$ are subspaces, also $V=S\oplus T$
 #### Proof
 Check definition:
 If $A\in V$, then 
 $$
-A=\underbrace{ \frac{1}{2}(A+A^{t}) }_{ \in S }+\underbrace{ \frac{1}{2}(A-A^{t}) }_{ \in T }
+A=\underbrace{ \frac{1}{2}(A+A^{\top}) }_{ \in S }+\underbrace{ \frac{1}{2}(A-A^{\top}) }_{ \in T }
 $$
 As:
 $$
-\left( \frac{1}{2}(A+A^{t}) \right)^{t}=\frac{1}{2}(A^{t}+(A^{t})^{t})=\frac{1}{2}(A^{t}+A)
+\left( \frac{1}{2}(A+A^{\top}) \right)^{\top}=\frac{1}{2}(A^{\top}+(A^{\top})^{\top})=\frac{1}{2}(A^{\top}+A)
 $$
 and
 $$
-\left( \frac{1}{2}(A-A^{t}) \right)^{t}=\frac{1}{2}(A^{t}-(A^{t})^{t})=\frac{1}{2}(A^{t}-A)=-\frac{1}{2}(A-A^{t})
+\left( \frac{1}{2}(A-A^{\top}) \right)^{\top}=\frac{1}{2}(A^{\top}-(A^{\top})^{\top})=\frac{1}{2}(A^{\top}-A)=-\frac{1}{2}(A-A^{\top})
 $$
-Suppse $A\in S\cap T$, then $A=A^{t}=-A$, so $ZA=0$
+Suppse $A\in S\cap T$, then $A=A^{\top}=-A$, so $ZA=0$
 
 #Mathematics #LinAlg #Definition #Theorem 

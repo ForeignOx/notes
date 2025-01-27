@@ -62,15 +62,15 @@ x_{1} \\ x_{2} \\ \vdots \\ x_{n}
 $$
 Which means we have $(A-\lambda I)$ multiplying by a non-zero vector and getting the zero vector, meaning that $A-\lambda I$ is singular, if it weren't, we could let $B=A-\lambda I$, which would have an inverse $B^{-1}$, so
 $$
-B\vec{x}=\vec{0}
+B\underline{x}=\underline{0}
 $$
 $$
-\implies B^{-1}B\vec{x}=B^{-1}\vec{0}
+\implies B^{-1}B\underline{x}=B^{-1}\underline{0}
 $$
 $$
- \implies\vec{x}=\vec{0}
+ \implies\underline{x}=\underline{0}
 $$
-But $\vec{x}\neq \vec{0}$
+But $\underline{x}\neq \underline{0}$
 ## Characteristic Polynomial
 $p_{A}(t)=\det(A-tI)$ is a polynomial in $t$ since the calculation of [[Determinants|determinant]] causes the linear terms to be multiplied with each other. For example consider 
 $$
@@ -86,7 +86,7 @@ $$
 $$
 = t^{2}-(a+d)t+ad-bc
 $$
-It is known as the charactersitic polynomial of $A$. If $A$ is $N\times N$, it's a polynomial of degree $N$, and contains information about eigenvalues. In fact $\lambda$ is an eigenvalue of $A\iff\lambda$ is a root of $p_{A}(t)$. We have derived the one of the directions above, let's check the other way: if $t^{*}\in\mathbb{C}$ is a root of $p_{A}(t)\implies \det(A-t^{*}I)=0\implies A-t^{*}I$ is singular, so there is at least one $\vec{v}\neq  \vec{0}$ such that $(a-t^{*}I)\vec{v}=\vec{0}\implies A\vec{v}=t^{*}\vec{v}\implies t^{*}$ is an eigenvalue
+It is known as the charactersitic polynomial of $A$. If $A$ is $N\times N$, it's a polynomial of degree $N$, and contains information about eigenvalues. In fact $\lambda$ is an eigenvalue of $A\iff\lambda$ is a root of $p_{A}(t)$. We have derived the one of the directions above, let's check the other way: if $t^{*}\in\mathbb{C}$ is a root of $p_{A}(t)\implies \det(A-t^{*}I)=0\implies A-t^{*}I$ is singular, so there is at least one $\underline{v}\neq  \underline{0}$ such that $(a-t^{*}I)\underline{v}=\underline{0}\implies A\underline{v}=t^{*}\underline{v}\implies t^{*}$ is an eigenvalue
 ## Multiplicity of the Eigenvalue
 Any degree $N$ polynomial $p(t)$ can be written as $p(t)=a(t-\lambda_{1})^{k_{1}}(t-\lambda_{2})^{k_{2}}\dots(t-\lambda_{p})^{k_{p}}$ where $a\neq 0$ and $\lambda_{1},\dots,\lambda_{p}$ are the distinct roots of $p(t)$, $\lambda_{i}\in\mathbb{C},\lambda_{i}\neq\lambda_{j}$ if $i\neq j$, $k_{i}\in\mathbb{N},1\leq k_{i}\leq N,\sum_{i=1}^{p}k_{i}=N$. Clearly $p(\lambda_{i})=0$
 ### Algebraic Multiplicity

@@ -5,14 +5,14 @@ $$
 ![[Dot Product 2024-10-08 11.39.32.excalidraw]]
 Using this diagram we can see that we can write:
 $$
-\vec{v}=\begin{pmatrix}
+\underline{v}=\begin{pmatrix}
 r\cos\theta\\ r\sin\theta
 \end{pmatrix}
 $$
-Where [[Magnitude of a Vector|$r=|v|$]] and $0\leq\theta \leq 2\pi$ is the angle made by $\vec{v}$ in an anticlockwise direction with the positive real axis
+Where [[Magnitude of a Vector|$r=|v|$]] and $0\leq\theta \leq 2\pi$ is the angle made by $\underline{v}$ in an anticlockwise direction with the positive real axis
 If
 $$
-\vec{v}=\begin{pmatrix}
+\underline{v}=\begin{pmatrix}
 v_{1}\\v_{2}
 \end{pmatrix}
 $$
@@ -26,11 +26,11 @@ But be careful with this definition of $\theta$ as the $\arctan$ function gives 
 
 We define $(r,\theta)\in(0,\infty)\times[0,2\pi)$ to be the unique numbers such that
 $$
-\vec{v}=\begin{pmatrix}
+\underline{v}=\begin{pmatrix}
 r\cos\theta\\ r\sin\theta
 \end{pmatrix}
 $$
-We call $(r,\theta)$ the polar coordinates of $\vec{v}$
+We call $(r,\theta)$ the polar coordinates of $\underline{v}$
 This has the problem of the angle $\theta$ being well-defined if $r=0$
 
 #Mathematics #LinAlg 

@@ -57,7 +57,7 @@ Second equation states $0x_{1}+0x_{2}=b_{2}$, so solution set empty unless $b_{2
 $$
 \left\{  \begin{pmatrix}
 x_{1}\\b_{1}
-\end{pmatrix}\mid x_{1}\in \mathbb{R}  \right\}
+\end{pmatrix}\middle| x_{1}\in \mathbb{R}  \right\}
 $$
 ___
 

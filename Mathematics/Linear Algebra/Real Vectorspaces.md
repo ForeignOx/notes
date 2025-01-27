@@ -3,55 +3,55 @@ $$
 V\times V\to V
 $$
 $$
-(\vec{u},\vec{v})\mapsto \vec{u}+\vec{v}
+(\underline{u},\underline{v})\mapsto \underline{u}+\underline{v}
 $$
 And scalar multiplication by a [[Real Numbers|real number]] (hence real vectorspace):
 $$
 \mathbb{R}\times V\to V
 $$
 $$
- (\lambda,\vec{v})\mapsto\lambda \vec{v}
+ (\lambda,\underline{v})\mapsto\lambda \underline{v}
 $$
 And must satisfy these axioms:
 We often refer to elements of $V$ as [[Vectors|vectors]]
 ## Axioms for Vector Addition
 $\hspace{0pt}1$. Existance of Additive identity - there exists an additive identity
 $$
-\vec{0}\in V: \vec{0}+\vec{v}=\vec{v}+\vec{0}=\vec{v} \,\,\,\, \forall \vec{v} \in V
+\underline{0}\in V: \underline{0}+\underline{v}=\underline{v}+\underline{0}=\underline{v} \,\,\,\, \forall \underline{v} \in V
 $$
 $\hspace{0pt}2$. Commutativity 
 $$
-\forall  \vec{w},\vec{v} \in V,\vec{v}+\vec{w}=\vec{w}+\vec{v}
+\forall  \underline{w},\underline{v} \in V,\underline{v}+\underline{w}=\underline{w}+\underline{v}
 $$
 $\hspace{0pt}3$. Existance of Additive Inverse
 $$
-\forall \vec{v} \in V \exists (-\vec{v})\in V:\vec{v}+(-\vec{v})=(-\vec{v})+\vec{v}=\vec{0}
+\forall \underline{v} \in V \exists (-\underline{v})\in V:\underline{v}+(-\underline{v})=(-\underline{v})+\underline{v}=\underline{0}
 $$
 $\hspace{0pt}4$. Associativity
 $$
-\forall \vec{u},\vec{v},\vec{w} \in V,(\vec{u}+\vec{v})+\vec{w}=\vec{u}+(\vec{v}+\vec{w})
+\forall \underline{u},\underline{v},\underline{w} \in V,(\underline{u}+\underline{v})+\underline{w}=\underline{u}+(\underline{v}+\underline{w})
 $$
 Using axioms $\hspace{0pt}1$,$\hspace{0pt}3$,$\hspace{0pt}4$, we know that $(V,+)$ is a [[Groups|group]]
 Using all four axioms we know that $(V,+)$ is an [[Abelian Groups|abelian group]] 
 ## Axioms for Scalar Multiplication
 $\hspace{0pt}1$. Multiplication by 0
 $$
-0 \vec{v}=\vec{0}\forall \vec{v}\in V
+0 \underline{v}=\underline{0}\forall \underline{v}\in V
 $$
 $\hspace{0pt}2$. Multiplication by 1
 $$
-1\vec{v}=\vec{v}\forall \vec{v}\in V
+1\underline{v}=\underline{v}\forall \underline{v}\in V
 $$
 $\hspace{0pt}3$. Associativity
 $$
-\lambda(\mu \vec{v})=(\lambda\mu)\vec{v}\,\forall\lambda,\mu \in \mathbb{R},\forall \vec{v}\in V
+\lambda(\mu \underline{v})=(\lambda\mu)\underline{v}\,\forall\lambda,\mu \in \mathbb{R},\forall \underline{v}\in V
 $$
 $\hspace{0pt}4$. Distributivity
 $$
-(\lambda+\mu)\vec{v}=\lambda \vec{v}+\mu \vec{v}\,\forall\lambda,\mu \in \mathbb{R},\forall \vec{v}\in V
+(\lambda+\mu)\underline{v}=\lambda \underline{v}+\mu \underline{v}\,\forall\lambda,\mu \in \mathbb{R},\forall \underline{v}\in V
 $$
 $$
-\lambda(\vec{v}+\vec{w})=\lambda \vec{v}+\lambda \vec{w}\,\forall\lambda \in \mathbb{R},\forall \vec{v},\vec{w}\in V
+\lambda(\underline{v}+\underline{w})=\lambda \underline{v}+\lambda \underline{w}\,\forall\lambda \in \mathbb{R},\forall \underline{v},\underline{w}\in V
 $$
 ## Examples
 - [[Vectorspace Rn|$\mathbb{R}^{n}$]] is an important vectorspace

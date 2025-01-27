@@ -14,16 +14,16 @@ So $B$ and $C$ must be equal
 # 
 ___
 - If $A,B \in M_{n}(\mathbb{R})$ are invertible, then $AB$ is also invertible: $(AB)^{-1}=B^{-1}A^{-1}$
-- If $A\in M_{n}(\mathbb{R})$ is invertible, then so is [[Transpose|$A^{t}$]]: $(A^{t})^{-1}=(A^{-1})^{t}$
+- If $A\in M_{n}(\mathbb{R})$ is invertible, then so is [[Transpose|$A^{\top}$]]: $(A^{\top})^{-1}=(A^{-1})^{\top}$
 ### Proof
 $$
-A^{t}(A^{-1})^{t}=(A^{-1}A)^{t}=(I_{n})^{t}=I_{n}
+A^{\top}(A^{-1})^{\top}=(A^{-1}A)^{\top}=(I_{n})^{\top}=I_{n}
 $$
 And
 $$
-(A^{-1})^{t}A^{t}=(AA^{-1})^{t}=(I_{n})^{t}=I_{n}
+(A^{-1})^{\top}A^{\top}=(AA^{-1})^{\top}=(I_{n})^{\top}=I_{n}
 $$
-So $(A^{-1})^{t}=(A^{t})^{-1}$
+So $(A^{-1})^{\top}=(A^{\top})^{-1}$
 # 
 ___
 - If $A,B\in M_{n}(\mathbb{R})$ and $AB=I_{n}$, then $BA=I_{n}$, $B=A^{-1}$ and $A=B^{-1}$

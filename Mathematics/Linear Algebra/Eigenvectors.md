@@ -1,8 +1,8 @@
-A non-zero [[Vectors|vector]] $\vec{v}$ is an eigenvector of $A$ with eigenvalue $\lambda \in\mathbb{C}$ if
+A non-zero [[Vectors|vector]] $\underline{v}$ is an eigenvector of $A$ with eigenvalue $\lambda \in\mathbb{C}$ if
 $$
-A\vec{v}=\lambda \vec{v}
+A\underline{v}=\lambda \underline{v}
 $$
-Note if $\vec{v}$ is an eigenvector, so is $c\vec{v},\forall c\neq 0$ with the same eigenalue. Note $\vec{0}$ always solves $A \vec{0}=\lambda \vec{0}$ 
+Note if $\underline{v}$ is an eigenvector, so is $c\underline{v},\forall c\neq 0$ with the same eigenalue. Note $\underline{0}$ always solves $A \underline{0}=\lambda \underline{0}$ 
 
 To find eigenvectors for a given [[Eigenvalues|eigenvalue]] $\lambda$ for a square matrix, substitute $\lambda$ into:
 $$

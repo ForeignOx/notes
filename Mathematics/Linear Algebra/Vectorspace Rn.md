@@ -2,7 +2,7 @@ $\mathbb{R}^n$ is the [[Real Vectorspaces|vectorspace]] of the [[Real Numbers|re
 ## Definition
 $n$-dimensional real space
 $$
-\mathbb{R}^n:=\left\{  \vec{x}=\begin{pmatrix}
+\mathbb{R}^n:=\left\{  \underline{x}=\begin{pmatrix}
 x_{1}\\x_{2}\\\vdots\\ x_{n}
 \end{pmatrix}\middle| x_{i}\in \mathbb{R},0\leq i\leq n  \right\}
 $$
@@ -12,10 +12,10 @@ $$
 \mathbb{R}^n\times \mathbb{R}^n\to \mathbb{R}^n
 $$
 $$
-(\vec{v},\vec{w})\mapsto  \vec{v}+\vec{w}
+(\underline{v},\underline{w})\mapsto  \underline{v}+\underline{w}
 $$
 $$
-\vec{v}+\vec{w}=\begin{pmatrix}
+\underline{v}+\underline{w}=\begin{pmatrix}
 v_{1}\\v_{2}\\\vdots\\v_{n}
 \end{pmatrix}
 +
@@ -31,10 +31,10 @@ $$
 \mathbb{R}\times\mathbb{R}^n\to \mathbb{R}^n
 $$
 $$
-(\lambda,\vec{v})\mapsto\lambda \vec{v}
+(\lambda,\underline{v})\mapsto\lambda \underline{v}
 $$
 $$
-\lambda \vec{v}=\lambda \begin{pmatrix}
+\lambda \underline{v}=\lambda \begin{pmatrix}
 v_{1}\\v_{2}\\\vdots\\v_{n}
 \end{pmatrix}=\begin{pmatrix}
 \lambda v_{1}\\\lambda v_{2}\\\vdots\\\lambda v_{n}
@@ -43,7 +43,7 @@ $$
 These operations satisfy the axioms of a real vectorspace
 The vectorspace $\mathbb{R}^n$ quite obviously satisfies the vectorspace axioms, especially when you consider:
 $$
--\vec{v}=(-1)\begin{pmatrix}
+-\underline{v}=(-1)\begin{pmatrix}
 v_{1}\\v_{2}\\\vdots\\v_{n}
 \end{pmatrix}=
 \begin{pmatrix}
@@ -67,21 +67,21 @@ $$
 Is a spanning set for $\mathbb{R}^{2}$, since $\text{dim}(\mathbb{R}^{2})=2$, tiis $B$ is in vact a basis for $\mathbb{R}^{2}$
 
 ## Theorem
-Suppose $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}\subseteq \mathbb{R}^{n}$, then
-If $r>n$, then $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is not [[Linear Independence|linearly independent]]
-If $r<n$, then $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is not [[Span|spanning]]
-Suppose $r=n$, we have that $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is a [[Basis|Basis]] iff:
+Suppose $\{ \underline{u}_{1},\dots,\underline{u}_{r} \}\subseteq \mathbb{R}^{n}$, then
+If $r>n$, then $\{ \underline{u}_{1},\dots,\underline{u}_{r} \}$ is not [[Linear Independence|linearly independent]]
+If $r<n$, then $\{ \underline{u}_{1},\dots,\underline{u}_{r} \}$ is not [[Span|spanning]]
+Suppose $r=n$, we have that $\{ \underline{u}_{1},\dots,\underline{u}_{r} \}$ is a [[Basis|Basis]] iff:
 $$
 A=\begin{pmatrix}
-\vec{u}_{1}&\vec{u}_{2}&\dots&\vec{u}_{n}
+\underline{u}_{1}&\underline{u}_{2}&\dots&\underline{u}_{n}
 \end{pmatrix}\in M_{n}(\mathbb{R})
 $$
 Is non-[[Matrix Inverses|singular]] iff [[Determinants|$\det(A)\neq 0$]]
 ### Proof
 The first two are just the previous theorem
-The third one: $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is a basis iff $\{ \vec{u}_{1},\dots,\vec{u}_{r} \}$ is linearly independent (again by previous theorem) iff
+The third one: $\{ \underline{u}_{1},\dots,\underline{u}_{r} \}$ is a basis iff $\{ \underline{u}_{1},\dots,\underline{u}_{r} \}$ is linearly independent (again by previous theorem) iff
 $$
-\lambda_{1}\vec{u}_{1}+\dots+\lambda_{n}\vec{u}_{n}\implies\lambda_{1}+\dots+\lambda_{n}\vec{u}_{n}=\vec{0}\iff \vec{\lambda}=\vec{0}
+\lambda_{1}\underline{u}_{1}+\dots+\lambda_{n}\underline{u}_{n}\implies\lambda_{1}+\dots+\lambda_{n}\underline{u}_{n}=\underline{0}\iff \underline{\lambda}=\underline{0}
 $$
 iff $A$ is invertible; $\det(A)\neq 0$
 
