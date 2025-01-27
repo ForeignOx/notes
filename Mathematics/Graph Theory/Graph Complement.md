@@ -1,4 +1,4 @@
-Let $G=(V,E)$ be a [[Simple Graphs|simple]] [[graphs|graph]]. Then the complement of $G$ is $\bar{G}=(V,F)$, where $F=\{ uv\in\mathbb{V}|uv\not\in E \}$
+Let $G=(V,E)$ be a [[Simple Graphs|simple]] [[Graphs|graph]]. Then the complement of $G$ is $\bar{G}=(V,F)$, where $F=\{ uv\in\mathbb{V}|uv\not\in E \}$
 So $\bar{G}$ has all other edges
 If you combine a graph and its complement, you get the [[Complete Graphs|complete graph]]: $K=(V,E\cup F)$ cc
 ## Example
