@@ -49,7 +49,7 @@ $$
 $$
 This is because you essentially are ignoring the first $r$ trials
 ___
-## [[E(X)]]
+## [[Expectation]]
 Find $E(X)$
 $$
 E(X)=\sum_{r=1}^\infty r(1-p)^{r-1}p=p\sum_{r=1}^\infty r(1-p)^{r-1}
@@ -69,7 +69,7 @@ $$
 \therefore E(X)=\frac{1}{p}
 $$
 ___
-## [[Var(X)]]
+## [[Variance]]
 Consider $E(X(X-1))$
 $$
 E(X(X-1))= 1\cdot 0p+2\cdot 1 p(1-p)+3 \cdot 2p(1-p)^{2}+4\cdot 3p(1-p)^{3}+\dots

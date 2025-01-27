@@ -42,7 +42,7 @@ Let $X$ and $Y$ be jointly continuous, with pdf $f$, then:
 $$
 f_{X}(x)=\int_{-\infty}^{\infty} f_{X|Y}(x|y)f_{Y}(y) \, dx 
 $$
-## [[E(X)|Expectation]]
+## [[Expectation|Expectation]]
 Let $E_{1},E_{2},\dots,E_{k}$ be a finite partition, then
 $$
 E(X)=\sum_{i=1}^{k}E(X|E_{i})\mathbb{P}(E_{i})

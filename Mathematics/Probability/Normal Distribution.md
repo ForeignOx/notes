@@ -57,7 +57,7 @@ $$
 $$
  =\mathbb{P}(Z\geq-z)=1-\Phi(-z)
 $$
-## [[E(X)|E(X)]]
+## [[Expectation|Expectation]]
 Let $Z\sim N(0,1)$, find $E(Z)$
 $$
 E(Z)=\int_{-\infty}^{\infty} z\phi(z) \, dx 
@@ -75,7 +75,7 @@ $$
 E(X)=\mu+\sigma E(Z)=\mu
 $$
 ___
-## [[Var(X)|Var(X)]]
+## [[Variance|Variance]]
 Assume for now $Var(Z)=1$, then $Var(X)=Var(\mu+\sigma X)=\sigma^{2}Var(Z)=\sigma^{2}$
 
 

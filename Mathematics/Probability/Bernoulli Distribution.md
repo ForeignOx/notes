@@ -16,12 +16,12 @@ $$
 Note that [[Binomial Distribution|$\text{Bernoulli}(p)=B(1,p)$]] 
 A Bernoulli variable will be a [[Discrete Random Variables|discrete random variable]]
 ___
-## [[E(X)]]
+## [[Expectation]]
 $$
 E(X)=\sum xP(X=x)=1\times p+0\times(1-p)=p
 $$
 ___
-## [[Var(X)]]
+## [[Variance]]
 $$
 Var(X)=\sum x^{2}P(X=x)-(E(X))^{2}=1^{2}\times p+0^{2}\times (1-p)-p^{2}=p-p^{2}=p(1-p)=pq
 $$

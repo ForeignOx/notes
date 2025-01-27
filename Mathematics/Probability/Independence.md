@@ -60,7 +60,7 @@ And [[Continuous Random Variables|continuous variables]] as:
 $$
 f(x,y)=f_{X}(x)f_{Y}(y)
 $$
-## [[E(X)|Expectation]]
+## [[Expectation|Expectation]]
 If $X$ and $Y$ are independent, then $E(XY)=E(X)E(Y)$ and more generally, 
 $$
 E(g(X)h(Y))=E(g(X))E(h(Y))

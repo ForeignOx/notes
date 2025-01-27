@@ -1,6 +1,6 @@
 $E(X)$ is the expected value, or mean of a [[Discrete Random Variables|discrete random variable]] X, and can be calculated like so:
 $$
-E(X)=\sum_{x\in \mathbb{R}} xP(X=x)
+E(X)=\sum_{x\in X} xP(X=x)=\sum_{x\in X}xf(x)
 $$
 Or for a [[Continuous Random Variables|continuous random variable]],
 $$
@@ -8,7 +8,7 @@ E(X)=\int_{-\infty}^{\infty} xf(x) \, dx
 $$
 Note expectation does not always exist, since expectation exists finitely, which means that, for discrete $\sum|x|p(x)<\infty$, and for continuous, $\int_{-\infty}^{\infty} |x|f(x) \, dx<\infty$
 ___
-THis process is equivalent to haveing the function:
+This process is equivalent to haveing the function:
 $$
 X:\Omega\to \mathbb{R}\to \mathbb{R}
 $$
@@ -22,7 +22,7 @@ To find $E(f(X))$, where $f(X)$ is a function of $X$, you can use the formula:
 $$
 E(f(X))=\sum f(x)P(X=x)
 $$
-This is useful for calculating [[Var(X)|variance]]
+This is useful for calculating [[Variance|variance]]
 This is also useful to show:
 $$
 E(aX+b)=\sum (ax+b)P(X=x)

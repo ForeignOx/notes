@@ -1,4 +1,4 @@
-This relates [[E(X)|$E(X)$]] to the pmf or pdf
+This relates [[Expectation|$E(X)$]] to the pmf or pdf
 $$
 E(g(X))=\sum_{x}g(x)p(x)
 $$

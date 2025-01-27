@@ -6,12 +6,12 @@ X\sim \text{Uniform}(n) \iff P(x=r)=\begin{cases}
 \end{cases}
 $$
 ___
-## [[E(X)]]
+## [[Expectation]]
 $$
 E(X)=\sum_{ r=1} ^{ n}  rP(X=r)=\sum_{ r=1} ^{ n}  \frac{r}{n}=\frac{1}{n}\sum_{ r=1} ^{ n}  r=\frac{1}{n}\times\frac{1}{2}n(n+1)=\frac{1}{2}(n+1)
 $$
 ___
-## [[Var(X)]]
+## [[Variance]]
 $$
 E(X^{2})=\sum_{ r=1} ^{ n}  r^{2}P(X=r)=\sum_{ r=1} ^{ n}  \frac{r^{2}}{n}=\frac{1}{n}\sum_{ r=1} ^{ n}  r^{2}=\frac{1}{n}\times \frac{1}{6}n(n+1)(2n+1)=\frac{1}{6}(n+1)(2n+1)
 $$

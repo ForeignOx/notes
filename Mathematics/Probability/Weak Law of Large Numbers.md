@@ -2,10 +2,10 @@ Idea: if we consider a sample of size $n$, $X_{1},X_{2},\dots,X_{n}$, then the s
 $$
 \overline{X}_{n}=\frac{1}{n}\sum_{ i=1} ^{ n}X_{i}
 $$
-Then $\overline{X}_{n}$ converges to [[E(X)|E(X)]]
+Then $\overline{X}_{n}$ converges to [[Expectation|Expectation]]
 ___
 Theorem:
-Let $X_{1},X_{2},\dots$ be an [[Independence|independent]] sequence of [[Random Variables|random variables]], with [[E(X)|$E(X_{i})=\mu$]] and [[Var(X)|$Var(X_{i})=\sigma^{2}$]] for all $i\geq 1$, 
+Let $X_{1},X_{2},\dots$ be an [[Independence|independent]] sequence of [[Random Variables|random variables]], with [[Expectation|$E(X_{i})=\mu$]] and [[Variance|$Var(X_{i})=\sigma^{2}$]] for all $i\geq 1$, 
 Let $\overline{X}_{n}=\frac{1}{n}\sum_{i=1}^{n}X_{i}$, then for any $\epsilon>0$, the sequence will converge in probability, i.e.
 $$
 \lim_{ n \to \infty } \mathbb{P}(| \overline{X}_{n}-\mu|>\epsilon)=0

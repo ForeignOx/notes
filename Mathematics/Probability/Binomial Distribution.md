@@ -39,13 +39,13 @@ $$
 For $r \in \{ 0,1,\dots,n \}$
 This is because $p^rq^{n-r}$ is the probability of obtaining the sequence of $n$ Bernoulli trials in which the first $r$ trials are successes and the remaining $n-r$ trials result in failure. Since the trials are independent with probabilities remaining constant between them, any sequence of $n$ trials with $x$ successes has the same probability of being achieved. There are $^nC_{r}=\frac{n!}{r!(n-r)!}$ such sequences. The binomial distribution is concerned with the probability of obtaining any of these sequences, meaning the probability of one of them must be added $^nC_{r}$ times
 ___
-## [[E(X)]]
+## [[Expectation]]
 Since a binomial distribution is the sum of $n$ independent bernoulli distributions:
 $$
 E(Y)=\sum_{ r=1} ^{ n}  E(X_{r})=\sum_{ r=1} ^{ n}p=np
 $$
 ___
-## [[Var(X)]]
+## [[Variance]]
 Since a binomial distribution is the sum of $n$ independent bernoulli distributions:
 $$
 Var(Y)=\sum_{ r=1} ^{ n}  Var(X_{r})=\sum_{ r=1} ^{ n}  pq=npq

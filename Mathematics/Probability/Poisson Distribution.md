@@ -34,10 +34,15 @@ $$
 
 We write this in the following way:
 $$
-X \sim Po(\lambda)\iff P(X=r)=\frac{e^{-\lambda}\lambda^r}{r!},r\in \mathbb{N}
+X \sim Po(\lambda)\iff P(X=r)=\frac{e^{-\lambda}\lambda^r}{r!},r\in \mathbb{N}_{0}
 $$
-
-
+We can also write this as:
+$$
+f(x|\lambda)=\mathbb{P}(X=x|\lambda)=\begin{cases}
+\frac{e^{ -\lambda }\lambda^{x}}{x!}&\text{for }x\in \mathbb{N}_{0}\\0&\text{otherwise}
+\end{cases}
+$$
+And you say "$f$ of $x$ given $\lambda$"
 ___
 ## Shape of the distribution
 
@@ -93,7 +98,7 @@ $$
 $$
 So the probabilities do indeed sum to 1.
 ___
-## [[E(X)|Expectation]]
+## [[Expectation|Expectation]]
 Find $E(X)$:
 $$
 E(X)=\sum_{r=0}^\infty\left( r\left( \frac{e^{-\lambda}\lambda^r}{r!} \right) \right)=e^{-\lambda}\sum_{r=1}^\infty\left( \frac{\lambda^r}{(r-1)!} \right) 
@@ -103,7 +108,7 @@ $$
 $$
 Therefore $E(X)=\lambda$
 ___
-## [[Var(X)|Variance]] 
+## [[Variance|Variance]] 
 Find $Var(X)$:
 $$
 E(X^{2})-E(X)=E(X(X-1))=\sum_{r=0}^\infty\left( r(r-1) \frac{e^{-\lambda}\lambda^r}{r!} \right)

@@ -5,7 +5,7 @@ $$
 $$
 Y:\Omega\to \mathbb{R}
 $$
-Then the covariance of $X$ and $Y$ is related to [[E(X)|expextation]] and is defined as:
+Then the covariance of $X$ and $Y$ is related to [[Expectation|expextation]] and is defined as:
 $$
 Cov(X,Y):=E((X-E(X))(Y-E(Y)))
 $$
@@ -33,7 +33,7 @@ $$
 Cov(X,Y)=\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} (x-E(X))(y-E(Y))f(x,y) \, dx  \, dy 
 $$
 ___
-Note that [[Var(X)|variance]] is related in such a way:
+Note that [[Variance|variance]] is related in such a way:
 $$
 Cov(X,X)=E((X-E(X))(X-E(X)))=E((X-E(X))^{2})=Var(X)
 $$
