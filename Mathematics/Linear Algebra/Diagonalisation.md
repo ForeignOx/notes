@@ -1,20 +1,20 @@
-Let $T:\mathbb{R}^{n}\to \mathbb{R}^{n}$ be a [[Linear Maps|linear mapping]], to represent it using an $n\times n$ [[Matrices|matrix]] $M$, we need to make a choice of [[Basis|basis]] for $\mathbb{R}^{n}$, usually weith standard basis [[Standard Basis Vectors|$\vec{e}_{1},\vec{e}_{2},\dots,\vec{e}_{n}$]], in a different basis, $M$ changes
+Let $T:\mathbb{R}^{n}\to \mathbb{R}^{n}$ be a [[Linear Maps|linear mapping]], to represent it using an $n\times n$ [[Matrices|matrix]] $M$, we need to make a choice of [[Basis|basis]] for $\mathbb{R}^{n}$, usually weith standard basis [[Standard Basis Vectors|$\underline{e}_{1},\underline{e}_{2},\dots,\underline{e}_{n}$]], in a different basis, $M$ changes
 ## Lemma
-Suppose $\vec{x}\in\mathbb{R}^{n}$ is given with respect to a standard basis as 
+Suppose $\underline{x}\in\mathbb{R}^{n}$ is given with respect to a standard basis as 
 $$
-\vec{x}=\begin{pmatrix}
+\underline{x}=\begin{pmatrix}
 x_{1}\\x_{2}\\\vdots\\x_{n}
-\end{pmatrix}=x_{1}\vec{e}_{1}+x_{2}\vec{e}_{2}+\dots+x_{n}\vec{e}_{n}
+\end{pmatrix}=x_{1}\underline{e}_{1}+x_{2}\underline{e}_{2}+\dots+x_{n}\underline{e}_{n}
 $$
 And $M$ is the matrix representing a linear transformation $T$ in this basis,
 $$
-T(\vec{x})=M\begin{pmatrix}
+T(\underline{x})=M\begin{pmatrix}
 x_{1}\\\vdots\\x_{n}
 \end{pmatrix}
 $$
-Suppose we instead have a different basis $\{ \vec{v}_{1},\dots,\vec{v}_{n} \}$ is a different basis, then we could write
+Suppose we instead have a different basis $\{ \underline{v}_{1},\dots,\underline{v}_{n} \}$ is a different basis, then we could write
 $$
-\vec{x}=\tilde{x}_{1}\vec{v}_{1}+\tilde{x}_{2}\vec{v}_{2}+\dots+\tilde{x}_{n}\vec{v}_{n}
+\underline{x}=\tilde{x}_{1}\underline{v}_{1}+\tilde{x}_{2}\underline{v}_{2}+\dots+\tilde{x}_{n}\underline{v}_{n}
 $$
 Where $\tilde{x}_{1},\tilde{x}_{2},\dots \tilde{x}_{n}\in\mathbb{R}$ such that
 $$
@@ -55,17 +55,17 @@ So $B\not\in[I]$, but $p_{A}(t)=(1-t)^{2}=p_{B}(t)$
 - If $A$ is diagonalisable, but $B$ is not, then they cannot be similar. Diagonalisability of $A$ means that $A\sim D$ for some diagonal matrix $D$; if $A$ were to be similar to $B$, this would mean, by the transitivity of $\sim$, that $B\sim D$, contradicting our hypothesis
 - Not all square matrices are diagonalisable; the matrix $B$ above is an example; if it was diagonalisable, it would be similar to the identity matrix, but it wasn't
 - If the eigenvalues of $A$ are distinct, then $A$ is diagonalisable
-- If $A$ is a real symmetric matrix, [[Transpose|$A=A^{T}$]], then $A$ is diagonalisable
+- If $A$ is a real symmetric matrix, [[Transpose|$A=A^{\top}$]], then $A$ is diagonalisable
 ___
 Key Idea: find a "smart" basis, i.e. a basis of eigenvectors
 ### The $n\times n$ Matrix $A$ is Diagonalisable iff it has $n$ [[Linear Independence|Linearly Independent]] [[Eigenvectors|Eigenvectors]]
 #### Proof
 $\impliedby$:
-Suppse $\{ \lambda_{1},\dots,\lambda_{n} \}$ are the eigenvalues (not distinct) and $\{ \vec{v}_{1},\dots,\vec{v}_{n} \}$ are a set of linearly independent eigenvectors for $A$. Can we diagonalise $A$?
+Suppse $\{ \lambda_{1},\dots,\lambda_{n} \}$ are the eigenvalues (not distinct) and $\{ \underline{v}_{1},\dots,\underline{v}_{n} \}$ are a set of linearly independent eigenvectors for $A$. Can we diagonalise $A$?
 Consider 
 $$
 M=\begin{pmatrix}
-\vec{v}_{1}&\dots&\vec{v}_{n}
+\underline{v}_{1}&\dots&\underline{v}_{n}
 \end{pmatrix}
 $$
 So an $n\times n$ matrix with the eigenvectors as its columns, and let 
@@ -74,17 +74,17 @@ D=\begin{pmatrix}
 \lambda_{1}&0&\dots&0\\0&\lambda_{2}&\dots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&\dots&\lambda_{n}
 \end{pmatrix}
 $$
-We know $A\vec{v}_{1}=\lambda_{1}\vec{v}_{1},A\vec{v}_{2}=\lambda_{2}\vec{v}_{2},\dots,A\vec{v}_{n}=\lambda_{n}\vec{v}_{n}$, so computing $AM$ we get:
+We know $A\underline{v}_{1}=\lambda_{1}\underline{v}_{1},A\underline{v}_{2}=\lambda_{2}\underline{v}_{2},\dots,A\underline{v}_{n}=\lambda_{n}\underline{v}_{n}$, so computing $AM$ we get:
 $$
 AM=\begin{pmatrix}
-A\vec{v}_{1}&A\vec{v}_{2}&\dots&A\vec{v}_{n}
+A\underline{v}_{1}&A\underline{v}_{2}&\dots&A\underline{v}_{n}
 \end{pmatrix}=\begin{pmatrix}
-\lambda_{1}\vec{v}_{1}&\lambda_{2}\vec{v}_{2}&\dots&\lambda_{n}\vec{v}_{n}
+\lambda_{1}\underline{v}_{1}&\lambda_{2}\underline{v}_{2}&\dots&\lambda_{n}\underline{v}_{n}
 \end{pmatrix}
 $$
 $$
 = \begin{pmatrix}
-\vec{v}_{1}&\vec{v}_{2}&\dots&\vec{v}_{n}
+\underline{v}_{1}&\underline{v}_{2}&\dots&\underline{v}_{n}
 \end{pmatrix}\begin{pmatrix}
 \lambda_{1}&0&\dots&0\\0&\lambda_{2}&\dots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&\dots&\lambda_{n}
 \end{pmatrix}=MD
@@ -93,10 +93,32 @@ So $AM=MD\implies A=MDM^{-1}$ so $A\sim D$, so $A$ is diagonalisable. We know $M
 $\implies$ Suppose $M^{-1}AM=D$, then $AM=MD$. Think of $M$ column by column as 
 $$
 M=\begin{pmatrix}
-\vec{v}_{1}&\dots&\vec{v}_{n}
+\underline{v}_{1}&\dots&\underline{v}_{n}
 \end{pmatrix}
 $$
 So they must be linearly independent since $M$ is [[Matrix Inverses|invertible]]
+## Procedure
+This is an algorigthm that we can use in general
+Fix the eigenvalues using the characteristic polynomial:
+$$
+p_{A}(t)=\underbrace{ a }_{ \neq 0 }(t-\lambda_{1})^{k_{1}}(t-\lambda_{2})^{k_{2}}\dots(t-\lambda_{p})^{k_{p}}
+$$
+Where $\lambda_{i}\neq\lambda_{j}$ if $i\neq j$ and the $k_{i}$'s are the algebraic multiplicities of the eigenvalues. If $A$ is $N\times N$, then $\sum_{i=1}^{p}k_{i}=N$, and $k_{i}\geq 1$
+Then you work eigenspace by [[Eigenspaces|eigenspace]]: pick $\lambda \in\{ \lambda_{1},\dots,\lambda_{p} \}$ and find $V_{\lambda}=\text{ker}(A-\lambda I)=\{ \underline{v}|(A-\lambda I)\underline{v}=\underline{0} \}$, and $\dim(V_{\lambda})=p_{\lambda}$ i.e. the geometric multiplicity of $\lambda$ $1\leq p_{i}\leq k_{i}$, then go on to the next until you have run out
+___
+The crucial fact that is working behind the scene is that eigenvectors corresponding to different eigenvalues are linearly independent
+### Proof (for $\hspace{0pt}2$ eigenvectors/eigenvalues)
+Supple $\lambda_{1}\neq\lambda_{2}$ and $A\underline{v}_{1}\lambda_{1}\underline{v}_{1}$, $A\underline{v}_{2}=\lambda_{2}\underline{v}_{2}$, and $\underline{v}_{1},\underline{v}_{2}\neq  \underline{0}$
+Suppose they were linearly dependent, then $\underline{0}=c_{1}\underline{v}_{1}+c_{2}\underline{v}_{2},c_{1},c_{2}\in\mathbb{C}$ i.e. $\underline{v}_{2}=\alpha \underline{v}_{1}$ for some $\alpha \neq 0$, then
+$$
+A\underline{v}_{2}=\lambda_{2}\underline{v}_{2}=\lambda_{2}\alpha \underline{v}_{1}=\alpha A\underline{v}_{1}=\alpha\lambda_{1}\underline{v}_{1}=\lambda_{1}\underline{v}_{2}
+$$
+So
+$$
+\lambda_{2}\underline{v}_{2}=\lambda_{1}\underline{v}_{2}\implies(\lambda_{2}-\lambda_{1})\underline{v}_{2}=\underline{0}
+$$
+Which is impossible
+For generalisation to $> 2$ eigenvalues is In notes pls dooooo
 ## Example
 Consider a Predator-Prey model in discrete time. Let $x_{n}$ be the number of owls at the end of year $n$ and $y_{n}$ be the number of mice at the end of year $n$. Owls are predators, mice are prey
 A possible equation could be:
@@ -120,18 +142,18 @@ x_{n}\\y_{n}
 $$
 Which can be rewritten as
 $$
-\vec{v}_{n+1}=M\vec{v}_{n}
+\underline{v}_{n+1}=M\underline{v}_{n}
 $$
-What we want to find is the population after $n$ years given a starting population $\vec{v}_{0}$, 
+What we want to find is the population after $n$ years given a starting population $\underline{v}_{0}$, 
 $$
-\vec{v}_{1}=M\vec{v}_{0}
+\underline{v}_{1}=M\underline{v}_{0}
 $$
 $$
- \vec{v}_{2}=M\vec{v}_{1}=M^{2}\vec{v}_{0}
+ \underline{v}_{2}=M\underline{v}_{1}=M^{2}\underline{v}_{0}
 $$
 Which can be extended to
 $$
-M^{n}\vec{v}_{n}
+M^{n}\underline{v}_{n}
 $$
 But if $M$ were diagonal, that is easy since 
 $$
@@ -235,7 +257,7 @@ $$
 $$
 We find the eigenvectors one-by-one. Take $\lambda_{1}=1$:
 $$
-(A-I)\vec{v}_{1}=\vec{0}
+(A-I)\underline{v}_{1}=\underline{0}
 $$
 $$
 \implies \begin{pmatrix}
@@ -251,7 +273,7 @@ $$
 $$
 So we can pick 
 $$
-\vec{v}_{1}=\begin{pmatrix}
+\underline{v}_{1}=\begin{pmatrix}
 2\\1
 \end{pmatrix}
 $$
@@ -263,7 +285,7 @@ V_{\lambda_{1}=1}=\text{ker}(A-I)=\left< \begin{pmatrix}
 $$
 Now for the next eigenvector, take $\lambda_{2}=3$:
 $$
-(A-3I)\vec{v}_{2}=\vec{0}
+(A-3I)\underline{v}_{2}=\underline{0}
 $$
 $$
 \implies \begin{pmatrix}
@@ -279,7 +301,7 @@ $$
 $$
 So we can pick:
 $$
-\vec{v}_{2}=\begin{pmatrix}
+\underline{v}_{2}=\begin{pmatrix}
 1\\1
 \end{pmatrix}
 $$
@@ -292,7 +314,7 @@ Low and behold the eigenvectors are linearly independent :)
 Now we diagnoalise, set
 $$
 M=\begin{pmatrix}
-\vec{v}_{1}&\vec{v}_{2}
+\underline{v}_{1}&\underline{v}_{2}
 \end{pmatrix}=\begin{pmatrix}
 2&1\\1&1
 \end{pmatrix}
@@ -344,11 +366,11 @@ w_{1}\\w_{2}
 $$
 So we are shifting to a basis of eigenvectors of $A$
 $$
-\vec{x}=x\begin{pmatrix}
+\underline{x}=x\begin{pmatrix}
 1\\0
 \end{pmatrix}+y\begin{pmatrix}
 0\\1
-\end{pmatrix}=w_{1}\vec{v}_{1}+w_{2}\vec{v}_{2}
+\end{pmatrix}=w_{1}\underline{v}_{1}+w_{2}\underline{v}_{2}
 $$
 Then
 $$
@@ -390,7 +412,7 @@ x\\y
 \end{pmatrix}=M\begin{pmatrix}
 w_{1}\\w_{2}
 \end{pmatrix}=\begin{pmatrix}
-\vec{v}_{1}&\vec{v}_{2}
+\underline{v}_{1}&\underline{v}_{2}
 \end{pmatrix}\begin{pmatrix}
 w_{1}\\w_{2}
 \end{pmatrix}
@@ -401,11 +423,6 @@ $$
 
 
 
-
-
-
-
-## Applications
 
 
 #Mathematics #LinAlg 
