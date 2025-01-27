@@ -30,14 +30,48 @@ So the error term must shrink faster than the tangent line
 - There are $\hspace{0pt}2$ ways that a function can fail to be differentiable at a point where it is continuous:
     - The tangent line is vertical at the point
     - There is no unique tangent line at the point
+#### Differentiability is a Stronger Property than Continuity
+Let $X\subset \mathbb{R}$ and $f:X\to \mathbb{R}$. If $f$ is differentiable at $c\in X$, then $f$ is also continuous at $c$
+##### Proof
+Assume $f$ is differentiable at $x=c$
+$$
+f(x)-f(c)=(x-c) \frac{f(x)-f(c)}{x-c}\to0\cdot f'(c)=0
+$$
+As $x\to c$, so $\lim_{ x \to c }f(x)=f(c)$, in other words, $f$ is continuous at $c$
+# 
+___
+##### Remarks
+The converse is false! Take for example $f(x)=\left| x \right|$, this is not differentiable at $x=0$, but is continuous
+You can even have functions that are continuous everywhere and differentiable nowhere. Historically there was the longstanding belief that every continuous function should be differentiable everywhere except for a set of isolated points. This misconception was proven incorrect by Karl Weierstrass who provided a counterexample: 
+$$
+f(x)=\sum_{k=0}^{\infty} \frac{1}{2^{k}}\cos(15^{k}\pi x)
+$$
+Which you can show by [[Series#Comparison Test|comparison test]] converges for all $x$, but is differentiable nowhere 
 ### Multiple Derivatives
 If $f(x)$ is differentiable, then $f'(x)$ may also be differentiable, and we say $f$ is twice differentiable which we write as: $f''(x)$, the second derivative
 More generally, $f^{(n)}(x)$ is the $n$th derivative. Other common notation includes $\frac{d^nf}{dx^{n}}$ or $Df,D^{n}f$ or if we have a function of time as the variable eg. position, $r(t)$, then one usually writes velocity as $\dot{r}(t)$, then acceleration $\ddot{r}(t)$
 ### Examples
+Calculate the derivative of $f(x)=\frac{1}{x^{2}}$ in $(0,\infty)$. Let $c\in(0,\infty)$, then
+$$
+\lim_{ x \to c }  \frac{f(x)-f(c)}{x-c}=\lim_{ x \to c } \frac{\frac{1}{x^{2}}-\frac{1}{c^{2}}}{x-c}
+$$
+$$
+= \lim_{ x \to c } \frac{c^{2}-x^{2}}{x^{2}c^{2}(x-c)}=\lim_{ x \to c } \frac{(c-x)(c+x)}{(x-c)x^{2}c^{2}}=\lim_{ x \to c } -\frac{c+x}{x^{2}c^{2}}
+$$
+$$
+= -\frac{2c}{c^{4}}=-\frac{2}{c^{3}}
+$$
+___
 With $f(x)=x^{2}$, calculate $f'(a)$ using the limit definition:
 $$
 f'(a)=\lim_{ h \to 0 } \frac{f(a+h)-f(a)}{h}=\lim_{ h \to 0 } \frac{(a+h)^{2}-a^{2}}{h}=\lim_{ h \to 0 } \frac{2ah+h^{2}}{h}=\lim_{ h \to 0 } 2a+h=2a
 $$
+___
+Let $f(x)$ be a polynomial. Then $f(x)-f(c)$ is also a polynomial which has a $\hspace{0pt}0$ at $x=c$. Thus by polynomial division, we can write
+$$
+f(x)-f(c)=(x-c)f_{1}(x)
+$$
+For some polynomial $f_{1}(x)$. In particular, $f_{1}(x)$ is continuous. We therefore have shown that all polynomials are differentiable
 ___
 Calculate the deribative of $f(x)=\sin x$
 $$
@@ -51,6 +85,7 @@ $f(x)=x^{1/3}$ is not differentiable at $x=0$ as the tangent is vertical:
 ![[Pasted image 20241024141454.png]]
 ___
 $f(x)=|x|$ is not differentiable at $x=0$ as its gradient has a left sided limit and a right sided limit, but they were not equal
+
 ## Differentiability for Functions of $\hspace{0pt}2$ Variables $f(x,y)$
 In words: A function $f(x,y)$ is differentiable at $(x_{0},y_{0})=\vec{x}_{0}$ if when I zoom in, it looks like its [[Tangent Plane|tangent plane]] 
 ![[Differentiation 2025-01-21 14.18.57.excalidraw]]

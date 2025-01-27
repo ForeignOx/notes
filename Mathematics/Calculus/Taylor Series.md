@@ -1,3 +1,34 @@
+## First Order Taylor
+If you have a function $f:X\to \mathbb{C}$ and $f$ is differentiable at $c$, then there exists a constant $m\in\mathbb{R}$ and a function $r(x)$ such that
+$$
+f(x)=f(c)+m(x-c)+r(x)(x-c)
+$$
+Such that $r(x)$ is [[Continuity|continuous]] at $c$ and $\lim_{ x \to c }r(x)=r(c)=0$. In this case, $m=f'(c)$
+### Remarks
+- Continuity in this context is "Taylor order 0" i.e. $f(x)=f(c)+\tilde{r}(x)$ with $\lim_{ x \to c }\tilde{r}(x)=\tilde{r}(c)=0$
+- We can view differentiability as the attempt to approximate $f(x)$ in a neighbourhood of $c$ by a linear function $L(x)=f(c)+m(x-c)$. Then differentiability stipulates that the error $r(x)(x-c)$ is of "higher order" as $\lim_{ x \to c }r(x)=0$, so differentiability is "Taylor order 1"
+- In practice one often considers $f_{1}(x)=m+r(x)$ which is continuous at $c$ with value $f_{1}(c)=m$. Thus differentiability at $c$ is equivalent to: there exists a function $f_{1}:X\to \mathbb{R}$ such that
+$$
+f(x)=f(c)+(x-c)f_{1}(x)
+$$
+    And $f_{1}$ is continuous at $c$. Then $\lim_{ x \to c }f_{1}(x)=f_{1}(c)=f'(c)$. This is useful as you don't need to know the value of the derivative in advance
+### Proof
+Set $m=f'(c)$ and 
+$$
+r(x)=\begin{cases}
+\frac{f(x)-f(c)-m(x-c)}{x-c}&x\neq c\\0&x=c
+\end{cases}
+$$
+Then we only need to check whether $r(x)$ is continuous at $c$, so
+$$
+\lim_{ x \to c } r(x)=\lim_{ x \to c } \frac{f(x)-(f(c)+m(x-c))}{x-c}=\lim_{ x \to c } \frac{f(x)-f(c)}{x-c}-m=m-m=0
+$$
+As required
+Conversely, if $r$ is continuous at $c$ and $r(c)=0$, then
+$$
+0=r(c)=\lim_{ x \to c } r(x)=\lim_{ x \to c }  \frac{f(x)-(f(c)+m(x-c))}{x-c}=\lim_{ x \to c } \left(  \frac{f(x)-f(c)}{x-c}-m  \right)
+$$
+This limit is only possible if $\lim_{ x \to c } \frac{f(x)-f(c)}{x-c}$ exists and is equal to $m$
 ## Taylor's Theorem
 Taylor's theorem states that if [[Functions|$f$]] has $n+1$ continuous [[Differentiation|derivatives]] in an open [[Intervals|interval]] $I$, containing the point $x=a$, then $\forall x\in I$:
 $$
