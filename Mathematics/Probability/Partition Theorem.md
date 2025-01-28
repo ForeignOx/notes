@@ -1,5 +1,5 @@
 The partin theorem is also known as the law of total probability
-Let $E_{1},E_{2},\dots$ be a [[Partition|partition]] or [[Sample Spaces|$\Omega$]], then for any [[Events|event]] $A$, we have:
+Let $E_{1},E_{2},\dots$ be a [[Set Partition|partition]] or [[Sample Spaces|$\Omega$]], then for any [[Events|event]] $A$, we have:
 $$
 \mathbb{P}(A)=\sum_{ i=1} ^{ k}\mathbb{P}(E_{i})\mathbb{P}(A|E_{i})  
 $$

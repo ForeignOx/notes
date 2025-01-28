@@ -1,0 +1,2 @@
+A drawing of a [[graphs|graph]] $G$ in the plane is a representation of $G$ on $\mathbb{R}^{2}$ in which vertices are associated with points of $\mathbb{R}^{2}$ and edges are associated with homeomorphic images of $[0,1]$
+More concretely, given a graph $G=(V,E,\phi)$, with  $\left| V \right|=n$ and $\left| E \right|=m$, a drawing of $G$ is the union of the [[Injective Functions|injective]] [[Linear Maps|map]] $\mathcal{D}_{\phi}:V\to \mathbb{R}^{2}$, which gives the [[Image and Pre-Image|images]] of the vertices in the plane, and the map

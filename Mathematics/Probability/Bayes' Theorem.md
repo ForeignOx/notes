@@ -7,7 +7,7 @@ $$
 \mathbb{P}( A|B\cap C) =\frac{\mathbb{P}(A|C)\mathbb{P}(B|A\cap C)}{\mathbb{P}(B|C)}
 $$
 The most general form is:
-Let $A_{1},\dots A_{k}$ be a [[Partition|partition]] and, and let $B$ e an even with $\mathbb{P}(B)>0$, then:
+Let $A_{1},\dots A_{k}$ be a [[Set Partition|partition]] and, and let $B$ e an even with $\mathbb{P}(B)>0$, then:
 $$
 \mathbb{P}(A_{j}|B)=\frac{\mathbb{P}(A_{j})\mathbb{P}(B|A_{j})}{\sum_{ i=1} ^{ k} \mathbb{P}(B|A_{i})\mathbb{P}(A_{i}) }
 $$
