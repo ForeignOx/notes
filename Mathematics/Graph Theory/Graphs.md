@@ -38,3 +38,5 @@ The incidence matrix will be
 ![[Pasted image 20250126215558.png]]
 ## Alternate Representations
 It is possible to extend from the graphs considered here to graphs that also allow loops, i.e, edges whose two endpoints are the same vertex. We can also consier graphs whose edges are directed, that is, with a defined start-point and end-point. To account for these features requires us to modify our formal definitions a little, but is not difficult
+
+#Mathematics #Graphs #Definition 

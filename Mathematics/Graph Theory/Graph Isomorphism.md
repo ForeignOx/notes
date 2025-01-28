@@ -18,3 +18,5 @@ $$
  cd \mapsto \varphi(c)\varphi(d)=vx
 $$
 And so we have an edge in $G_{1}$ iff $\varphi$ produces a corresponding edge in $G_{2}$, and $G_{1}\simeq G_{2}$ as required
+
+#Mathematics #Graphs #Definition 

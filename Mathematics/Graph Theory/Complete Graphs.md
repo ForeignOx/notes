@@ -2,3 +2,6 @@ The complete [[Graphs|graph]] on $n$ vertices is called $K_{n}$. Given $\left| V
 ## Example
 The complete graph $K_{6}$
 ![[Complete Graph 2025-01-16 15.36.18.excalidraw]]
+
+
+#Mathematics #Graphs #Definition 

@@ -2,3 +2,5 @@ The wheel [[Graphs|graph]] on $n$ vertices is called $W_{n}$. It can be construc
 ## Example
 The wheel graph $W_{6}$
 ![[Wheel Graphs 2025-01-26 23.12.43.excalidraw]]
+
+#Mathematics #Graphs #Definition 

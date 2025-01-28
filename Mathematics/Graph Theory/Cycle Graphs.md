@@ -2,3 +2,5 @@ The cycle [[Graphs|graph]] on $n$ vertices is called $C_{n}$. Given $\left| V \r
 ## Example
 $C_{6}$ below:
 ![[Cycle Graph 2025-01-26 22.56.53.excalidraw]]
+
+#Mathematics #Graphs #Definition 

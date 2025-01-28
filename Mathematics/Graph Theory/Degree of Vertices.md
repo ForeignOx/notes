@@ -3,3 +3,6 @@ $$
 d_{G}(v):=\sum_{e\in E}\mathbb{1}_{\{ v\in \phi(e) \}}
 $$
 For [[Simple Graphs|simple graphs]] (or any graphs with no loops), this is the same as the number of edges incident to the vertex
+
+
+#Mathematics #Graphs #Definition 

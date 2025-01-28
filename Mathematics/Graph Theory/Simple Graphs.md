@@ -15,3 +15,5 @@ $$
 A(i,j):=\mathbb{1}_{\{ v_{i}v_{j}\in E \}}
 $$
 
+
+#Mathematics #Graphs #Definition 

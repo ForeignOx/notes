@@ -11,3 +11,5 @@ Let $\left| V \right|=n$ and $\left| E \right|=m$, and let the number of vertice
 #
 ___
 The name handshaking comes from the two ways you could count the hand-shakes at an event; the RHS is like counting each hand-shake as it happens, the LHS is like asking each person, at the end of the conference, how many times they shook hands
+
+#Mathematics #Graphs #Theorem 

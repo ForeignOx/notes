@@ -10,3 +10,5 @@ $$
 \gamma=w_{k}e_{k+1}w_{k+1}\dots w_{i}e_{i+1}w_{i+1}
 $$
 Is a cycle in $G$ as required
+
+#Mathematics #Graphs #Definition #Theorem

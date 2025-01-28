@@ -5,3 +5,6 @@ $n=1$, $V=\{ 0,1 \}$, $E=\{01 \}$
 $n=2,V_{2}=\{ 00,01,10,11 \}$, $E_{2}=\{ \dots \}$
 ![[n-Cube 2025-01-16 15.40.53.excalidraw]]
 $n=3$:![[n-Cube 2025-01-16 15.42.01.excalidraw]]
+
+
+#Mathematics #Graphs #Definition 

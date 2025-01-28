@@ -14,3 +14,5 @@ For a [[Simple Graphs|simple graph]], we don't need to be specific which edge we
 $$
 \gamma=(w_{0}w_{1}\dots w_{k})
 $$
+
+#Mathematics #Graphs #Definition 

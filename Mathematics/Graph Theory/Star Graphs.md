@@ -2,3 +2,5 @@ The star [[Graphs|graph]] on $n$ vertices is called $S_{n}$. Of the $\left| V\ri
 ## Example
 ![[Star Graphs 2025-01-26 23.03.04.excalidraw]]
 The star graph $S_{6}$
+
+#Mathematics #Graphs #Definition 

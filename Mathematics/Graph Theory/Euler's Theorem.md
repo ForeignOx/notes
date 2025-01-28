@@ -21,3 +21,5 @@ H=C_{1}\cup C_{2}\cup\dots \cup C_{n-1}
 $$
 As in the proof of the lemma above, $H$ has all degrees even. It may not be connected, so consider its [[Connectedness#Connected Components|connected components]] $H_{1},H_{2},\dots,H_{k}$. Since each cycle $C_{i}$ (for $1\leq i\leq n-1$) lies within only one connected component $H_{j}$, we know that there are at most $n-1$ connected components, that is $1\leq k\leq n-1$. Furthermore, since the union $C_{1}\cup C_{2}\cup\dots \cup C_{n-1}$ makes up the whole of $H$, each $H_{j}$ must be made up by $\leq n-1$ edge-dijoint cycles (i.e. $H_{j}$ is made up by those $C_{i}$ which lie within it). So by the induction hypothesis, eah connected component $H_{j}$ has an Euler circuit $E_{j}$
 But since $G$ was connected, $C_{n}$ must visit each $H_{j}$. So we can make an Euler circuit for $G$ like this; follow $C_{n}$, but when we first visit each $H_{j}$, follow $S_{j}$ all the way round before continuing
+
+#Mathematics #Graphs #Theorem 
