@@ -1,4 +1,4 @@
-The rate of change of [[Momentum|momentum]] of a body is directly proportional to the resultant force acting upon it
+zThe rate of change of [[Momentum|momentum]] of a body is directly proportional to the resultant force acting upon it
 This implies that the [[Acceleration|acceleration]] of an object depends on the [[Mass|mass]] of the object and the amount of force applied
 For constant mass, this implies $F=ma=m\dot{v}=m\ddot{x}$
 In SI, we define the rate of change of momentum as equal to the force expressed in $\pu{ N }$, so
