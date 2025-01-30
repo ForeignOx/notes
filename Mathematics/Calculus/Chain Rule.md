@@ -41,6 +41,37 @@ And so, comparing with our first equation,
 $$
 \frac{d y}{dt} =\frac{d y}{dx} \frac{d x}{dt} 
 $$
+### Proof
+$g$ differentiable at $c$ means that $g(x)=g(c)+g_{1}(x)(x-c)$ (we can form a linear approximation), where $g_{1}(x)$ is constant at $c$ and $g_{1}(c)=\lim_{ x \to c }g_{1}(x)=g'(c)$.
+Similarly, $f$ differentiable at $f(c)=d$ means that $f(y)=f(g(c))+f_{1}(y)(y-g(c))$, so
+$$
+f\circ g(x)=f(g(x))=f(g(c))+f_{1}(g(x))(g(x)-g(c))
+$$
+Substituting our $g(x)$:
+$$
+= f(g(c))+f_{1}(g(x))(g(c)+g_{1}(x)(x-c)-g(c))
+$$
+$$
+= f(g(c))+f_{1}(g(x))g_{1}(x)(x-c)
+$$
+From this we claim victory as this is the same as the expression for a derivative, so calling $f\circ g=h$, this is equivalent to:
+$$
+h(c)+h_{1}(x)(x-c)
+$$
+Where
+$$
+h_{1}(x)=f_{1}(g(x))g_{1}(x)
+$$
+So now we just need to take [[Limit|limits]], so since $f_{1}$ is [[Continuity|continuous]] at $g(c)$, and $g_{1}$ is continuous at $c$, then by continuity
+$$
+\lim_{ x \to c } h_{1}(x)=f_{1}(g(c))g_{1}(c)=f'(g(c))g'(c)
+$$
+___
+A worse proof would involve doing this:
+$$
+(f\circ g)'=\lim_{ x \to c } \frac{f(g(x))-f(g(c))}{x-c}=\lim_{ x \to c } \frac{f(g(x))-f(g(c))}{g(x)-g(c)} \frac{g(x)-g(c)}{x-c}=f'(g(c))g'(c)
+$$
+But $g(x)-g(c)$ could be $\hspace{0pt}0$ quite reasonably, so this bad
 ### Examples
 Calculate $\frac{d }{dx}((x^{2}+3x)^{4})$, Let $f(x)=x^{4}$, $g(x)=x^{2}+3x$, then $(x^{2}+3x)^{4}=f(g(x))$, $f'(x)=4x^{3}$, $g'(x)=2x+3$, so
 $$

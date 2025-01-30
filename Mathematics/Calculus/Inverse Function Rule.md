@@ -26,4 +26,9 @@ So
 $$
 \frac{d }{dx} \sin ^{-1}(x)=\frac{1}{\sqrt{ 1-x^{2} }}
 $$
- 
+___
+For $\ln x=(e^{ x })^{-1}$ (the inverse), we have
+$$
+(\ln x)'=\frac{1}{e^{ \ln x }}=\frac{1}{x}
+$$
+

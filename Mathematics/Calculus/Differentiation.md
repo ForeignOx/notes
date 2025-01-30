@@ -85,6 +85,35 @@ $f(x)=x^{1/3}$ is not differentiable at $x=0$ as the tangent is vertical:
 ![[Pasted image 20241024141454.png]]
 ___
 $f(x)=|x|$ is not differentiable at $x=0$ as its gradient has a left sided limit and a right sided limit, but they were not equal
+___
+Using the fact about the [[Exponential Functions|exponential function]] that
+$$
+x\leq e^{ x }-1\leq \frac{x}{x-1}
+$$
+So
+$$
+1\leq \frac{e^{ x }-1}{x}\leq \frac{1}{1-x}
+$$
+So by squeezing, we get the limit
+$$
+\lim_{ x \to 0 } \frac{e^{ x }-1}{x}=\lim_{ x \to 0 }  \frac{e^{ x }-e^{ 0 }}{x-0}=1=e^{ 0 }
+$$
+So due to the addition law, we know it everywhere else since we know it at one point:
+$$
+(e^{ x })'(0)=e^{ 0 }=1
+$$
+So general $c$:
+$$
+\frac{e^{ x }-e^{ c }}{x-c}=e^{ c }\left( \frac{e^{ x-c }-1}{x-c} \right)
+$$
+So as $x\to c$, this goes to
+$$
+e^{ c }\times 1=e^{ c }
+$$
+So
+$$
+(e^{ x })'=e^{ x }
+$$
 
 ## Differentiability for Functions of $\hspace{0pt}2$ Variables $f(x,y)$
 In words: A function $f(x,y)$ is differentiable at $(x_{0},y_{0})=\vec{x}_{0}$ if when I zoom in, it looks like its [[Tangent Plane|tangent plane]] 
