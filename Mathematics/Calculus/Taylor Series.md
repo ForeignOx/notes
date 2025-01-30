@@ -240,6 +240,31 @@ $$
 \frac{d ^{2}F}{dt^{2}} =\left( \delta x\frac{ \partial  }{ \partial x } +\delta y \frac{ \partial  }{ \partial y } \right)^{2}=(\delta x)^{2}f_{xx}+2(\delta x)(\delta y)f_{xy}+(\delta y)^{2}f_{yy}
 $$
 So                         
+___
+### Example
+Find the Taylor series of $f(x,y)=x+\sin(x+y)$ around the point $(x_{0},y_{0})=\left( \frac{\pi}{2},0 \right)$ to quadratic order
+$$
+f(x_{0},y_{0})=f\left( \frac{\pi}{2},0 \right)=\frac{\pi}{2}+\sin\left( \frac{\pi}{2}+0 \right)=\frac{\pi}{2}+1
+$$
+$$
+f_{x}=1+\cos(x+y)=1+0=1
+$$
+$$
+ f_{y}=\cos(x+y)=0
+$$
+$$
+ f_{xx}=-\sin(x+y)=-1
+$$
+$$
+ f_{xy}=-\sin(x+y)=-1
+$$
+$$
+ f_{yy}=-\sin(x+y)=-1 
+$$
+So
+$$
+f(x,y)=1+\frac{\pi}{2}+\left( x-\frac{\pi}{2} \right)+\frac{1}{2}\left( -\left( x-\frac{\pi}{2} \right)^{2}-2\left( x-\frac{\pi}{2} \right)y-y^{2} \right)+\dots 
+$$
 
 
 #Mathematics #Calculus #Theorem 
