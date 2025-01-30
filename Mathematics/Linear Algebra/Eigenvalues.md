@@ -92,14 +92,30 @@ Any degree $N$ polynomial $p(t)$ can be written as $p(t)=a(t-\lambda_{1})^{k_{1}
 ### Algebraic Multiplicity
 The algebraic multiplicity of the eigenvalue $\lambda_{i}$ is $k_{i}$. Suppose we have an eigenvalue $\lambda$ with algebraic multiplicity $k_{\lambda}$, then$p_{A}(t)=(t-\lambda)^{k_{\lambda}}Q(t)$ with $Q(\lambda)\neq 0$ and degree of $Q=N-k_{\lambda}$
 ### Geometric Multiplicity
-There are $p_{\lambda}$ [[Linear Independence|linearly independendent]] eigenvectors of $A$ with eigenvalue $\lambda$, where $1\leq p_{\lambda}\leq k_{\lambda}$, $p_{\lambda}$ is called the geometric multiplicity of $\lambda$ and is defined to be the [[Dimension|dimension]] of the [[Eigenspaces|eigenspace]]. Note the geometric multiplicity must be less than or equal to the algebraic multiplicity
-### Geometrical Interpretations
-#### Reflection
+There are $p_{\lambda}$ [[Linear Independence|linearly independendent]] eigenvectors of $A$ with eigenvalue $\lambda$, where $1\leq p_{\lambda}\leq k_{\lambda}$, $p_{\lambda}$ is called the geometric multiplicity of $\lambda$ and is defined to be the [[Dimension|dimension]] of the [[Eigenspaces|eigenspace]]
+### Algebraic Multiplicity $\geq$ Geometric Multiplicity
+For every eigenvalue $\lambda$, $k_{\lambda}\geq p_{\lambda}$
+#### Proof
+Suppose geometric multiplicity of $\lambda$ is $p$ then let $\underline{v}_{1},\dots,\underline{v}_{p}$ be independent eigenvectors with this eigenvalue:
+$$
+A\underline{v}_{i}=\lambda \underline{v}_{i}
+$$
+For $i=1\dots p$
+Complete the [[basis|basis]] with $\underline{w}_{1},\dots,\underline{w}_{n-p}$ (if $A$ is $n\times n$), so $\left\{ \underline{v}_{1},\dots,\underline{v}_{p},\underline{w}_{1},\dots,\underline{w}_{n-p} \right\}$ spans $\mathbb{R}^{n}$. In this basis,
+![[Eigenvalues 2025-01-30 10.12.55.excalidraw]]
+So we calculate the determinant columnwise, so 
+$$
+\det(A-tI)=(\lambda-t)^{p}\det(C-tI)
+$$
+So we have our result (?) see notes to consolidate perchance
+
+## Geometrical Interpretations
+### Reflection
 Consider a $3\times{3}$ matrix $M$ that represents a reflection, we know that $\det M=-1$ as orientation is not preserved and volume doesn\'t change. We know its eigenvalues must be 1, 1 and -1 as there is an eigenplane which is unaffected by the transformation and then the other is for the invariant lines which represent the reflection perpendicular to the plane. To find the plane of reflection of a matrix, solve
 $$
 M\underline{x}=1\underline{x}\implies(M-I)\underline{x}=\underline{0}
 $$
-#### Rotation
+### Rotation
 For a $2\times 2$ rotation matrix, the two eigenvalues will be real for $0^{\circ}$ or $180^{\circ}$, for $0^{\circ}$, they will be 1 and 1, for $180^{\circ}$, they will be -1 and -1, and for both, the entire plane will be the set of eigenvectors
 For a $3\times 3$ rotation matrix, one eigenvalue will be 1 and the other two will be complex, the eigenvectors will be a zero vector with a non-zero value for the axis of rotation, so for example for a rotation about the $z-$axis, an eigenvector would be:
 $$
