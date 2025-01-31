@@ -109,37 +109,70 @@ $$
 $$
 Near the stationary point, by Taylor series we have:
 $$
-f(x_{0}+\delta x,y_{0}+\delta y)=f(x_{0},y_{0})+\underbrace{ f_{x}\delta x+f_{y}\delta y }_{ =0 }+\frac{1}{2}(f_{xx}(\delta x)^{2}+2f_{xy}\delta x\delta y+f_{yy}(\delta y)^{2})+\dots
+f(x_{0}+\delta x,y_{0}+\delta y)=f(x_{0},y_{0})+\underbrace{ f_{x}(x_{0},y_{0})\delta x+f_{y}(x_{0},y_{0})\delta y }_{ =0 }
 $$
 $$
-\implies \delta f=f(x_{0}+\delta x,y_{0}+\delta y)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ +\frac{1}{2}(f_{xx}(x_{0},y_{0})(\delta x)^{2}+2f_{xy}(x_{0},y_{0})\delta x\delta y+f_{yy}(x_{0},y_{0})(\delta y)^{2})+\dots
 $$
-
+$$
+\implies \delta f=f(x_{0}+\delta x,y_{0}+\delta y)-f(x_{0},y_{0})\approx \frac{1}{2}Q(\delta x,\delta y)
+$$
+Where
+$$
+Q(x,y)=f_{x x}x^{2}+2f_{xy}xy+f_{yy}y^{2}
+$$
+Where $Q$ is an example of a quadratic form $Ax^{2}+Bxy+Cy^{2}$. And $Q$ can be written as a [[Matrices|matrix]] equation with the [[Hessian Matrix|Hessian]]:
+$$
+\begin{pmatrix}
+x&y
+\end{pmatrix}\begin{pmatrix}
+f_{xx}&f_{xy}\\f_{xy}&f_{yy}
+\end{pmatrix}\begin{pmatrix}
+x\\y
+\end{pmatrix}=\underline{x}^{\top}H\underline{x}
+$$
+Note that
+$$
+Q(\lambda x,\lambda y)=(\lambda x)^{2}f_{x x}+2(\lambda x)(\lambda y)f_{xy}+(\lambda y)^{2}f_{yy}=\lambda^{2}Q(x,y)
+$$
+For a saddle point, since we know there are regions where $Q>0$ and regions where $Q<0$, we must have (at least) two lines where $Q=0$. If $Q=0$, then
+$$
+f_{x x}x^{2}+2f_{xy}xy+f_{yy}y^{2}=0
+$$
+Since it is trivial if $x=0$, we can divide:
+$$
+f_{xx}+2 f_{yx}\left( \frac{x}{y} \right)+f_{yy}\left( \frac{y}{x} \right)^{2}
+$$
+Which is a [[Quadratic Equations|quadratic]], so has solutions
+$$
+\frac{y}{x}= \frac{-2f_{xy}\pm \sqrt{ (2f_{xy})^{2}-4f_{x x}f_{yy} }}{2f_{yy}}
+$$
+Need the discriminant to be greater than $\hspace{0pt}0$, so
+$$
+(f_{xy})^{2}-f_{x x }f_{yy}>0
+$$
+Or using the Hessian:
+$$
+\det(H)<0
+$$
+If $\det(H)>0$, then there are no lines for which $Q=0$ which implies either $Q>0\forall(x,y)\neq(0,0)$, giving a minimum, or $Q<0\forall(x,y)\neq(0,0)$, giving a maximum
+Now consider $Q(x,0)=f_{xx}x^{2}$, then 
+$$
+Q>0\forall(x,y)\neq(0,0)
+$$
+if $f_{x x}>0$ or 
+$$
+Q<0\forall(x,y)\neq(0,0)
+$$
+if $f_{x x}<0$
+So to summarise, classification of stationary points using method 1: 
+1. $\det(H)>0$ and $f_{x x}>0$, then minimum point
+2. $\det(H)>0$ and $f_{x x}<0$ then maximum
+3. $\det(H)<0$ then saddle point
+4. $\det(H)=0$ then degenerate case
+Note that you can equivalently use $f_{yy}$
+### Method 2
+This method works for functions of $\hspace{0pt}2$ or more variables. This method relies on [[Diagonalisation|diagonalising]] $H$
 ### Example
 Find the stationary points of $f(x,y)=xye^{ -x^{2}-y^{2} }$,
 $$
@@ -153,6 +186,54 @@ If $x^{2}=\frac{1}{2}$, then the second equation gives $2y^{2}=1$, so $y^{2}=\fr
 This looks like
 ![[Pasted image 20250130144120.png]]
 So $(0,0)$ is a saddle point, $\left( \frac{1}{\sqrt{ 2 }}, \frac{1}{\sqrt{ 2 }} \right),\left(- \frac{1}{\sqrt{ 2 }}, -\frac{1}{\sqrt{ 2 }} \right)$ are maxima, and $\left( -\frac{1}{\sqrt{ 2 }}, \frac{1}{\sqrt{ 2 }} \right),\left( \frac{1}{\sqrt{ 2 }}, -\frac{1}{\sqrt{ 2 }} \right)$
+___
+Find and classigy the stationary points of $f(x,y)=-\frac{x^{2}}{2}(y-1)+\frac{y^{2}}{2}+y$
+For a stationary point $0=f_{x}=f_{y}$
+$$
+f_{x}=-x(y-1)=0
+$$
+$$
+ f_{y}=\frac{x^{2}}{2}+y+1
+$$
+The first implies either $x=0$ or $y=1$, if $x=0$, then the second gives $y=-1$, if $y=1$ then the second gives $x=\pm2$, so three stationary points at $(0,-1),(2,1),(-2,1)$, now we classify them. The Hessian matrix is:
+$$
+H=\begin{pmatrix}
+f_{x x}&f_{xy}\\f_{xy}&f_{yy}
+\end{pmatrix}=\begin{pmatrix}
+-y+1&-x\\-x&1
+\end{pmatrix}
+$$
+Then
+$$
+\det(H)=1-y-x^{2}
+$$
+Now we see what this is at each stationary point, at $(0,-1),\det(H)=2>0$ and $f_{x x }=2>0$, so it's a minimum. At $(\pm2,1)$, $\det(H)=-4<0$, so saddle points
+___
+Consider if $Q(x,y)=2x^{2}+2xy+y^{2}$, then
+$$
+Q(x,y)=\begin{pmatrix}
+x&y
+\end{pmatrix}\begin{pmatrix}
+2&1\\1&1
+\end{pmatrix}\begin{pmatrix}
+x\\y
+\end{pmatrix}
+$$
+If we plot a contour of $Q$, it looks like:
+![[Pasted image 20250131154543.png]]
+So has two [[Eigenvectors|eigenvectors]] going in the axes of symmetry. Since along axes of symmetry we can take the [[Directional Derivatives|directional derivative]] $\underline{\nabla Q}$ which is normal to the level set and parallel to the eigenvector $\underline{x}$, so $\underline{\nabla Q}=2\lambda \underline{x}$, (the two for convenience), so
+$$
+\underline{\nabla Q} =\begin{pmatrix}
+\frac{ \partial Q }{ \partial x } \\\frac{ \partial Q }{ \partial y } 
+\end{pmatrix}=\begin{pmatrix}
+2f_{x x}x+2f_{xy}y\\2f_{xy}+2f_{yy}y
+\end{pmatrix}=2\begin{pmatrix}
+f_{x x}&f_{xy}\\f_{xy}&f_{yy}
+\end{pmatrix}\begin{pmatrix}
+x\\y
+\end{pmatrix}=2H\underline{x}
+$$
+So along axes of symmetry $2H\underline{x}=2\lambda \underline{x}\implies H\underline{x}=\lambda \underline{x}$ showing they're eigenvectors as expected. 
 
 
 #Mathematics #Calculus #Definition 
