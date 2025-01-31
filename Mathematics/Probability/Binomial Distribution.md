@@ -27,12 +27,12 @@ So, since $\{ X=x \}=\{ \omega:X(\omega)=x \}=\left\{  \omega:\omega=(\omega_{1}
 $$
 \sum_{\omega:\sum_{ i=1} ^{ n}  \omega_{i}=x}\mathbb{P}(\{ \omega \})={n \choose x }p^{x}(1-p)^{n-x}
 $$
-Which is how we obtain the pmf below (?????)
+Which is how we obtain the pmf below
 ___
 ## [[Discrete Random Variables#Probability Mass Function|PMF]]
 The probability mass function is as follows:
 $$
-P(X=r)=\begin{pmatrix}
+P(X=r)=f(x|n,p)=\begin{pmatrix}
 n\\r
 \end{pmatrix}p^{r}q^{n-r}
 $$
@@ -51,6 +51,10 @@ $$
 Var(Y)=\sum_{ r=1} ^{ n}  Var(X_{r})=\sum_{ r=1} ^{ n}  pq=npq
 $$
 ___
+## [[Moment Generating Functions|Moment Generating Function]]
+$$
+\psi(t)=E(e^{ tX })=\prod_{i=1}^{n}E(e^{ tX_{i} })=(pe^{ t }+q)^{nc}
+$$
 ## Requirements
 The binomial distribution is a suitable modelling distribution if the following hold:
 - Each trial has only two possible outcomes, success, or failure
