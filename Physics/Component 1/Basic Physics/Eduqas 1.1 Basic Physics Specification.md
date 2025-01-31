@@ -10,8 +10,8 @@ There are opportunities within this topic for learners to carry out experimental
 - [[SI units|the 6 essential base SI units (kg, m, s, A, mol, K)]]
 - [[Dimension of Quantity|representing units in terms of the 6 base SI units]] and their [[SI multipliers|prefixes]]
 - [[Homogeinity of Equations|checking equations for homogeneity using units]]
-- the difference between [[Scalar Quantities|scalar]] and [[Vector Quantities|vector]] quantities and to give examples of each – displacement, velocity, acceleration, force, speed, time, density, pressure etc
-- the addition and subtraction of coplanar [[Vector Quantities|vectors]], and perform mathematical calculations limited to [[Components of vectors|two perpendicular vectors]]
+- the difference between [[Scalar Quantities|scalar]] and [[Vectors|vector]] quantities and to give examples of each – displacement, velocity, acceleration, force, speed, time, density, pressure etc
+- the addition and subtraction of coplanar [[Vectors|vectors]], and perform mathematical calculations limited to [[Components of vectors|two perpendicular vectors]]
 - [[Components of vectors|how to resolve a vector into two perpendicular components]]
 - the concept of [[Density]] and how to use the equation $\rho=\frac{m}{V}$ to calculate mass, density and volume
 - [[Moments|what is meant by the turning effect of a force]]

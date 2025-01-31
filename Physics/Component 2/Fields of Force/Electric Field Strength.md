@@ -2,7 +2,7 @@ The [[Electric Fields|electric field]] strength, $E$, at a point, $P$, is define
 $$
 E=\frac{\text{force of a charge}, q, \text{at }P}{q}=\frac{F}{q}
 $$
-It is a [[Vector Quantities|vector]] whose direction is that of the force on a positive test charge. It has unit of $\pu{NC-1=Vm-1  }$
+It is a [[Vectors|vector]] whose direction is that of the force on a positive test charge. It has unit of $\pu{NC-1=Vm-1  }$
 Note that if we double the test [[Electric Charge|charge]], the force will double, so we get the same value for $E$. If we change from a positive test charge to a negative one, the force direction will reverse, but dividing $F$ by a negative quantity ($q$) reverses the direction again. In other words, $E$ tells us about the field in which we place $q$, independently of the magnitude or sign of $q$
 In the [[Coulomb's Law]] equation we can regard one of the charges as the source of an electric field, and the other as a testing charge. Calling these $Q$ and $q$ respectively, the equation becomes:
 $$

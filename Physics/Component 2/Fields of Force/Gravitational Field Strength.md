@@ -6,7 +6,7 @@ That is
 $$
 g=\frac{\text{force on a test mass, } m}{m}
 $$
-It is a [[Vector Quantities|vector]] with units $\pu{ Nkg-1 }$
+It is a [[Vectors|vector]] with units $\pu{ Nkg-1 }$
 At a distance $r$ from the centre of a spherically symmetric mass distribution, $M$, 
 $$
 g=(-)\frac{GM}{r^{2}}

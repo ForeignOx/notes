@@ -1,4 +1,4 @@
-Magnetic flux density (or [[Magnetic Fields|magnetic field]] strength) is a [[Vector Quantities|vector]] of magnitude:
+Magnetic flux density (or [[Magnetic Fields|magnetic field]] strength) is a [[Vectors|vector]] of magnitude:
 $$
 B=\frac{F_\text{max}}{Il}
 $$
