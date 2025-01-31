@@ -3,5 +3,11 @@ It is also considered as rate of change of [[Position|position]]
 $$
 v(t)=\dot{x}
 $$
+Or in higher dimensions, such as $\mathbb{R}^{3}$,
+$$
+\underline{v}=\underline{\dot{r}}=\dot{x}\underline{e}_{1}+\dot{y}\underline{e}_{2}+\dot{z}\underline{e}_{3}
+$$
+Note that the [[Standard Basis Vectors|basis vectors]] are constant
+
 
 #Physics #Kinematics #Definition 
