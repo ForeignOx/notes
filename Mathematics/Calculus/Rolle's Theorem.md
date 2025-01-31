@@ -1,10 +1,10 @@
-If [[Functions|$f(x)$]] is [[Continuity|continuous]] on [[Intervals|$[a,b]$]], [[Differentiation|differentiable]] on $(a,b)$ and $f(a)=f(g)$, then $\exists c\in(a,b):f'(c)=0$
+If [[Functions|$f(x)$]] is [[Continuity|continuous]] on [[Intervals|$[a,b]$]], [[Differentiation|differentiable]] on $(a,b)$ and $f(a)=f(b)$, then $\exists c\in(a,b):f'(c)=0$
 ## Proof
 By the [[Extreme Value Theorem|extreme value theorem]], $\exists x_{1},x_{2}\in[a,b]:f(x_{1})\leq f(x)\leq f(x_{2})\forall x\in[a,b]$
 If $x_{2}\in(a,b)$, then $x_{2}$ is a local max and $f'(x_{2})=0$
-If $x_{1}\in(a,b)$, then $x_{1}$ is a local minimu, then $f'(x_{1})=0$
+If $x_{1}\in(a,b)$, then $x_{1}$ is a local minimum, then $f'(x_{1})=0$
 If neither are true, $x_{1}$ can't be in the interval and $x_{2}$ cannot be in the interval, so they are endpoints
-Otherwise $x_{1}$ and $x_{2}$ areendpoings $a,b$. But since $f(a)=f(b), f(x_{1})$, so $f(a)\leq f(x)\leq f(a)$ for al $x\in(a,b)$
+Otherwise $x_{1}$ and $x_{2}$ are endpoings $a,b$. But since $f(a)=f(b), f(x_{1})$, so $f(a)\leq f(x)\leq f(a)$ for al $x\in(a,b)$
 ## Corollary
 If $f(x)$ is differentiable on an open interval $I$, then each pair of zeros of $f$ is separated by at least one zero of $f'(x)$
 This follows from Rolle's Theorem with $a$ and $b$ zeros of $f(x)$ such that $f(a)=f(b)=0$
