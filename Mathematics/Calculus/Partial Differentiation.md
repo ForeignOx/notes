@@ -25,7 +25,7 @@ $$
 $$
 As $R(x,y)$ goes to $\hspace{0pt}0$ faster than $\delta x,\delta y$ as $\delta x,\delta y\to 0$
 In two or more dimensions the slope I experience depends on which direction I move in
-Suppose we move parallel to $x$ axis, $\vec{x}=(x_{0}+\delta x,y_{0})$, $\delta y=0$
+Suppose we move parallel to $x$ axis, $\underline{x}=(x_{0}+\delta x,y_{0})$, $\delta y=0$
 Then
 $$
 \delta f=f(x_{0}+\delta x,y_{0})=M\delta x+\underbrace{ N\delta y }_{ =0 }+R(x_{0}+\delta x,y_{0})
@@ -39,7 +39,7 @@ $$
 $$
 And
 $$
-\lim_{ \delta x \to 0 } \frac{R(x,y)}{\left| \vec{x}-\vec{x}_{0} \right| }=0
+\lim_{ \delta x \to 0 } \frac{R(x,y)}{\left| \underline{x}-\underline{x}_{0} \right| }=0
 $$
 Since $f(x,y)$ is [[Differentiation#Differentiability for Functions of $ hspace{0pt}2$ Variables $f(x,y)$|differentiable]] 
 Hence
