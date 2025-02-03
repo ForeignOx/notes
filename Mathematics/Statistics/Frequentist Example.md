@@ -65,3 +65,56 @@ $$
 \hat{p}=Y=\frac{X}{n}=\frac{1}{n}\sum_{i=1}^{n}X_{i}
 $$
 Note that $\hat{p} =Y$ is also the mean of the $X_{i}$'s but is $\hat{p}$ any good?
+## Sample Proportion $\hat{p}$ as an Estimator $p$
+How good is $\hat{p}=Y$ as an estimator for $p$
+As $X\sim B(n,p)$
+$$
+E(\hat{p})=E(Y)=E\left( \frac{X}{n} \right)=\frac{1}{n}E(X)=\frac{1}{n}np=p
+$$
+Which is what we want to estimate, now importantly we want the variance, telling us how far from $p$ it will be:
+$$
+Var(\hat{p})=Var(Y)=Var\left( \frac{X}{n} \right)=\frac{1}{n^{2}}Var(X)=\frac{1}{n^{2}}npq=\frac{pq}{n}=\frac{p(1-p)}{n}
+$$
+We have that $E(\hat{p})=p$, so we say that the estimator is unbiased. As we have $Var(\hat{p})=\frac{p(1-p)}{n}$, we now have some understanding and some control over how accurate $\hat{p}$ is 
+## Normal Approximation
+As $X\sim B(n,p)$ and $\hat{p}=Y=\frac{X}{n}$, we can calculate probabilities for $\hat{p}$ but if $n$ is large, this can be cumbersome, so we can just use the Normal approximation;
+$$
+X\sim N(np,np(1-p))
+$$
+(Approximation is ok if $np\gg1$, and $n(1-p)\gg 1$), so 
+$$
+\hat{p}=Y\sim N\left(p, \frac{p(1-p)}{n}\right)
+$$
+(Also need a continuity correction)
+## Margin of Error
+So how accurate is $\hat{p}$? The Margin of Error of an estimate can be roughly defined as $\hspace{0pt}2$ standard deviations on either side of the estimate, suggesting the true value of $p$ may lie in an interval of the form:
+$$
+Y\pm2s\sqrt{ \frac{p(1-p)}{n} }
+$$
+This is pretty useless, since the accuracy involves $p$, which is what we are guessing
+However we can find a bound on the Margin of Error by finding the max of $p\in[0,1]$, for the quadratic $p(1-p)=\frac{1}{4}$, when $p=\frac{1}{2}$, so the margin of error:
+$$
+2\sqrt{ \frac{p(1-p)}{n} }\leq 2\sqrt{ \frac{1}{4n} }=\frac{1}{\sqrt{ n }}
+$$
+No matter what value $p$ takes
+Therefore we have the interval $Y\pm \frac{1}{\sqrt{ n }}$, a very widely used result
+## US Presiential Election !!
+It 22nd Oct $\hspace{0pt}2024$,we are about to ask $\hspace{0pt}1000$ people in our poll. 
+Question 1: find the expected value and marginal error for the proportion of Trump voters in our sample if we were magically told that $p=0.5$, or $p=0.3$
+The answer for $p=0.5$, is $E(X)=np=1000\times 0.5=500$, $E(\hat{p})=p=0.5$, $Var(X)=np(1-p)=250$
+$SD(X)=15.8$ people, $Var(\hat{p})=\frac{p(1-p)}{n}=0.00025$, so our margin of error is equal to $2\sqrt{ \frac{p(1-p)}{n} }=0.0316$ or 3.16%
+The answer for $p=0.3$, $E(\hat{p})=0.3$, and the margin of error is equal to $0.0290$, which is 2.90%
+Question 2: Poll has been performed, $n=1000$, $\hspace{0pt}515$ for trump, $\hspace{0pt}485$ for Harris. What is your estimate for $p$ and its margin of Error?
+$$
+\hat{p}=\frac{x}{n}=\frac{515}{1000}
+$$
+We do not know $p$, so we use the maximum bound for the margin of error
+$$
+\frac{1}{\sqrt{ n }}=\frac{1}{\sqrt{ 1000 }}=0.0316=3.16\%
+$$
+So we think $p$ will lie in the interval
+$$
+51.5\%\pm3.16\%
+$$
+Question 3: Your company has time to perform one more poll before the election. How large a poll is needed to ensure a Margin of Error less than $1\%$?
+The answer is that $\frac{1}{\sqrt{ n }}<0.01\iff n>10000$ so it unlikely we getting that
