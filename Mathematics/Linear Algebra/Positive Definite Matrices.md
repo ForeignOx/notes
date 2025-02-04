@@ -17,5 +17,4 @@ $$
 = \left( \sum_{ i=1} ^{ n}  c_{i}\underline{v}_{i} \right)\cdot\left( \sum_{ j=1} ^{ n}  c_{j}\lambda_{j}\underline{v}_{j} \right)=\sum_{ i=1} ^{ n}  c^{2}_{i}(\underline{v}_{i}\cdot \underline{v}_{i})\lambda_{i}
 $$
 Where the last equality is derived since $v_{i}\cdot v_{j}=0$ for $i\neq j$. The last line is greater than $\hspace{0pt}0$ if all the eigenvalues are positive
-## Sylverster's Criterion
-A criterion for a real symmetric matrix $B$ to be positive-definite is that all $n$ of its upper left square submatrices, i.e. the upper left $1\times 1$
+

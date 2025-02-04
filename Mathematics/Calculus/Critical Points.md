@@ -123,7 +123,7 @@ Q(x,y)=f_{x x}x^{2}+2f_{xy}xy+f_{yy}y^{2}
 $$
 Where $Q$ is an example of a quadratic form $Ax^{2}+Bxy+Cy^{2}$. And $Q$ can be written as a [[Matrices|matrix]] equation with the [[Hessian Matrix|Hessian]]:
 $$
-\begin{pmatrix}
+=\begin{pmatrix}
 x&y
 \end{pmatrix}\begin{pmatrix}
 f_{xx}&f_{xy}\\f_{xy}&f_{yy}
@@ -173,6 +173,85 @@ So to summarise, classification of stationary points using method 1:
 Note that you can equivalently use $f_{yy}$
 ### Method 2
 This method works for functions of $\hspace{0pt}2$ or more variables. This method relies on [[Diagonalisation|diagonalising]] $H$
+
+We can then prove that if $x$ lies along axis of symmetry of an ellipse, it is an eigenvector of $H$
+We can prove that axes of symmetry are orthogonal
+#### Proof
+Consider
+$$
+\underline{e}_{1}\cdot(H\underline{e}_{2})=\underline{e}_{1}^{\top}(H\underline{e}_{2})=\begin{pmatrix}
+*&*
+\end{pmatrix}\begin{pmatrix}
+*&*\\ *&*
+\end{pmatrix}\begin{pmatrix}
+*\\ *
+\end{pmatrix}
+$$
+Which is just a number, and by properties of the [[Transpose|transpose]], 
+$$
+=(\underline{e}_{1}^{\top}H\underline{e}_{2})^{\top}=\underline{e}_{2}^{\top}H\underline{e}_{1}
+$$
+And since $H$ is a [[Symmetric and Anti-Symmetric Matrices|symmetric]] matrix,
+$$
+\therefore \underline{e}_{1}\cdot(H\underline{e}_{2})=\underline{e}_{2}\cdot(H\underline{e}_{1})
+$$
+So
+$$
+\underline{e}_{1}\cdot H\underline{e}_{2}=\underline{e}_{1}\cdot\lambda_{2}\underline{e}_{2}=\underline{e}_{2}\cdot H\underline{e}_{1}=\underline{e}_{2}\cdot\lambda_{1}\underline{e}_{1}
+$$
+$$
+\implies (\lambda_{2}-\lambda_{1})\underline{e}_{1}\cdot \underline{e}_{2}=0
+$$
+If $\lambda_{1}\neq\lambda_{2}$, then $\underline{e}_{1}\cdot \underline{e}_{2}=0$; they are orthogonal
+If $\lambda_{1}=\lambda_{2}$, then the ellipse becomes a circle which means all directions are axes of symmetry, all vectors are eigenvectors of $H$; so we can pick them to be orthogonal.
+___
+Let's work in a basis of eigenvectors $\underline{e}_{1},\underline{e}_{2}$, we know $\underline{e}_{1}\cdot \underline{e}_{2}=0$, we will want unit vectors; $\underline{e}_{1}\cdot \underline{e}_{1}=\underline{e}_{2}\cdot \underline{e}_{2}=1$
+$$
+Q=\underline{x}\cdot H\underline{x}
+$$
+Let $\underline{x}=x_{1}\underline{e}_{1}+x_{2}\underline{e}_{2}$
+Then
+$$
+Q=(x_{1}\underline{e}_{1}+x_{2}\underline{e}_{2})\cdot H(x_{1}\underline{e}_{1}+x_{2}\underline{e}_{2})
+$$
+$$
+= (x_{1}\underline{e}_{1}+x_{2}\underline{e}_{2})\cdot(x_{1}H\underline{e}_{1}+x_{2}H\underline{e}_{2})
+$$
+$$
+= (x_{1}\underline{e}_{1}+x_{2}\underline{e}_{2})\cdot(x_{2}\lambda_{1}\underline{e}_{1}+x_{2}\lambda_{2}\underline{e}_{2})=\lambda_{1}x_{1}^{2}+\lambda_{2}x_{2}^{2}
+$$
+$$
+= \begin{pmatrix}
+x_{1}&x_{2}
+\end{pmatrix}\begin{pmatrix}
+\lambda_{1}&0\\0&\lambda_{2}
+\end{pmatrix}\begin{pmatrix}
+x_{1}\\x_{2}
+\end{pmatrix}
+$$
+So $Q>0\forall(x_{1},x_{2})\neq(0,0)$ if $\lambda_{1},\lambda_{2}>0$ (minimum point)
+$Q<0\forall(x_{1},x_{2})\neq(0,0)$ if $\lambda_{1},\lambda_{2}<0$ (maximum point)
+So if $\lambda_{1},\lambda_{2}\neq 0$ and different signs, then you have a saddle point
+___
+This can be generalised to more than two variables... For functions of $n$ variables $f(x_{1},x_{2},\dots,x_{n})$, we will find (when we work in a basis of eigenvectors) $\underline{x}=x_{1}\underline{e}_{1}+x_{2}\underline{e}_{2}+\dots+x_{n}\underline{e}_{n}$, where $\underline{e}_{1},\dots,\underline{e}_{n}$ are eigenvectors of $H$; $H\underline{e}_{i}=\lambda_{i}\underline{e}_{i}$, then
+$$
+Q=\lambda_{1}x_{1}^{2}+\lambda_{2}x_{2}^{2}+\dots+\lambda_{n}x_{n}^{2}
+$$
+If I move away from the stationary point int the direction of $\underline{e}_{i}$th eigenvector; $\underline{x}=(0,0,\dots,0,\delta x_{i},0,\dots,0)$ with $\delta x_{i}$ as the $i$th entry, then $Q=\lambda_{i}(\delta x_{i})^{2}$ will be a parabola
+![[Critical Points 2025-02-04 14.30.52.excalidraw]]
+Then we can classify them
+#### Rules for this Method
+Suppose $f(x_{1},\dots,x_{n})$ has a stationary point at $\underline{x}=\underline{a}$, then we can evaluate the Hessian $H$ at $\underline{x}=\underline{a}$ and find its $n$ eigenvalues $\lambda_{1},\dots,\lambda_{n}$ (guaranteed real by symmetry of $H$), then
+- If $\lambda_{i}>0\forall 1\leq i\leq n$ and $Q>0\forall \underline{x}\neq  \underline{0}$ then it is a minimum point
+- If $\lambda_{i}<0\forall_{1}\leq i\leq n$ and $Q<0\forall \underline{x}\neq  \underline{0}$ then it is a maximum point
+- If $\lambda_{i}\neq 0\forall 1\leq i\leq n$ and have different signs, then it is a saddle point
+- If $\lambda_{i}=0$ for some $i$, then $\det(H)=\prod_{i=1}^{n}\lambda_{i}=0$, so it is a degenerate
+This method is kinda overkill, since we don't want the exact values of $\lambda$, we just want their signs (if they're positive or not)
+### Method 3
+This solves the issue of method $\hspace{0pt}2$ taking ages, and is the best of both worlds; it is a generalisation of Method $\hspace{0pt}1$, and involves [[Sylvester's Criterion|Sylvester's Criterion]]
+If $H$ has all positive eigenvalues, the $H$ will correspond to a minimum. If $H$ has all negative eigenvalues, then $-H$ must have all positive eigenvalues and satisfy Sylversers criterion, but for matrices of even size $2n\times 2n$, the negative of them will have the same determinant, so for a maximum, we need an alternating pattern of determinants with alternating signs, starting with a minus; $\det(H^{(i)})(-1)^{i}>0$
+If $H$ corresponds to a degenerate stationary point, then $\lambda_{i}=0$ for some $i$, then $\det(H)=0$
+All other cases give saddle points
 ### Example
 Find the stationary points of $f(x,y)=xye^{ -x^{2}-y^{2} }$,
 $$
@@ -234,6 +313,31 @@ x\\y
 \end{pmatrix}=2H\underline{x}
 $$
 So along axes of symmetry $2H\underline{x}=2\lambda \underline{x}\implies H\underline{x}=\lambda \underline{x}$ showing they're eigenvectors as expected. 
-
+___
+Using Method $\hspace{0pt}2$, $f(x,y,z)=xy+xz+yz$, we want to find and classify stationary points, so we need
+$$
+f_{x}=y+z=0
+$$
+$$
+ f_{y}=x+z=0
+$$
+$$
+ f_{z}=y+x=0
+$$
+So only stationary point at $(x,y,z)=(0,0,0)$, so let's find what type it is, so we consider the Hessian matrix:
+$$
+H=\begin{pmatrix}
+f_{xx}&f_{xy}&f_{xz}\\f_{xy}&f_{yy}&f_{yz}\\f_{zx}&f_{yz}&f_{zz}
+\end{pmatrix}=\begin{pmatrix}
+0&1&1\\1&0&1\\1&1&0
+\end{pmatrix}
+$$
+Then eigenvalues are given by $\det(H-\lambda t)=0$;
+$$
+\det\begin{pmatrix}
+-\lambda&1&1\\1&-\lambda&1\\1&1&-\lambda
+\end{pmatrix}=-\lambda^{3}+3\lambda+2=-(\lambda-2)(\lambda+1)^{2}
+$$
+So $\lambda=-1,-1,2$ so the $\lambda$'s are not $\hspace{0pt}0$ and have different signs, so it is a saddle point
 
 #Mathematics #Calculus #Definition 
