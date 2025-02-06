@@ -1,4 +1,4 @@
-If $V$ is a finite dimensional [[Real Vectorspaces|vectorspace]], we define its dimension, $\text{dim}(V)$ to be the [[Cardinality of Sets|cardinality]] of any [[Basis|basis]] of $V$
+If $V$ is a finite dimensional [[Vectorspaces|vectorspace]], we define its dimension, $\text{dim}(V)$ to be the [[Cardinality of Sets|cardinality]] of any [[Basis|basis]] of $V$
 ## Examples
 $\text{dim}(\mathbb{R}^{n})=n$, as $n=|\{ \underline{e}_{1},\dots,\underline{e}_{n} \}|$
 ___

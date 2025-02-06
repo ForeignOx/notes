@@ -1,4 +1,4 @@
-Suppose $V,W$ are [[Real Vectorspaces|vectorspaces]], a linear map (aka linear transformation) is a [[Functions|function]] $T:V\to W$ satisfying linearity:
+Suppose $V,W$ are [[Vectorspaces|vectorspaces]], a linear map (aka linear transformation) is a [[Functions|function]] $T:V\to W$ satisfying linearity:
 - For all $\underline{u},\underline{v}\in V$, we have
 $$
 T(\underline{u}+\underline{v})=T(\underline{u})+T(\underline{v})

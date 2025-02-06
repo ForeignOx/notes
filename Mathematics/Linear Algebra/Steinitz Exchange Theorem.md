@@ -1,5 +1,5 @@
 Also known as SET, states that:
-Suppose that $V$ is a [[Real Vectorspaces|vectorspace]] and $S=\{ \underline{v}_{1},\dots,\underline{v}_{k} \}\subseteq V$ is a [[Span|spanninng]] [[Sets|set]] for $V$, $L=\{ \underline{u}_{1},\dots,\underline{u}_{l} \}$ is a [[Linear Independence|linearly independent]] set. Then there exists distinct [[Vectors|vectors]]:
+Suppose that $V$ is a [[Vectorspaces|vectorspace]] and $S=\{ \underline{v}_{1},\dots,\underline{v}_{k} \}\subseteq V$ is a [[Span|spanninng]] [[Sets|set]] for $V$, $L=\{ \underline{u}_{1},\dots,\underline{u}_{l} \}$ is a [[Linear Independence|linearly independent]] set. Then there exists distinct [[Vectors|vectors]]:
 $$
 \underline{v}_{i_{1}},\underline{v}_{i_{2}},\dots,\underline{v}_{i_{l}}\in S
 $$

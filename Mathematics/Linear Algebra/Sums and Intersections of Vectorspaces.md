@@ -1,4 +1,4 @@
-Suppose $V$ is a [[Real Vectorspaces|vectorspace]], and $U,W\subseteq V$ are [[Subspaces|subspaces]], then
+Suppose $V$ is a [[Vectorspaces|vectorspace]], and $U,W\subseteq V$ are [[Subspaces|subspaces]], then
 $$
 U+W:=\{ \underline{u}+\underline{w}\mid \underline{u}\in U,\underline{w}\in W \}\subseteq V
 $$

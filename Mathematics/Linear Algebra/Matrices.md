@@ -89,7 +89,7 @@ $$
 $$
 \lambda(X+Y)=\lambda X+\lambda Y,\forall\lambda,\mu \in \mathbb{R},\forall X,Y \in M_{m\times n}
 $$
-The fact that matrices have all these properties means that matrices are a [[Real Vectorspaces|vectorspace]]
+The fact that matrices have all these properties means that matrices are a [[Vectorspaces|vectorspace]]
 ## Matrix Multiplication
 Matrix multiplication is a function:
 $$

@@ -1,4 +1,4 @@
-Suppose $V$ and $W$ are finite dimensional [[Real Vectorspaces|vectorspaces]], and [[Linear Maps|$T:V\to W$]] is linear, then the [[Kernel|nullity]] and [[Image|rank]] are related to the [[Dimension|dimension]] of $V$ like so:
+Suppose $V$ and $W$ are finite dimensional [[Vectorspaces|vectorspaces]], and [[Linear Maps|$T:V\to W$]] is linear, then the [[Kernel|nullity]] and [[Image|rank]] are related to the [[Dimension|dimension]] of $V$ like so:
 $$
 \text{rk}(T)+\text{null}(T)=\dim(V)
 $$

@@ -1,5 +1,5 @@
 ## Real Inner Product Space
-A [[Real Vectorspaces|real vectorspace]], $V$ equipped with an [[Inner Product|inner product]] $(\cdot,\cdot)$ is called a real inner product space
+A [[Vectorspaces|real vectorspace]], $V$ equipped with an [[Inner Product|inner product]] $(\cdot,\cdot)$ is called a real inner product space
 ### Examples
 $V=\mathbb{R}^{n}$ with usual Euclidian [[Dot Product|dot product]]
 $$

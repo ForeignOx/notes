@@ -1,4 +1,4 @@
-The eigenspace $V_{\lambda}$ corresponding to an [[Eigenvalues|eigenvalue]] $\lambda$ is the [[Real Vectorspaces|vector]] [[Subspaces|subspace]] [[Span|spanned]] by the respective [[Eigenvectors|eigenvectors]] 
+The eigenspace $V_{\lambda}$ corresponding to an [[Eigenvalues|eigenvalue]] $\lambda$ is the [[Vectorspaces|vector]] [[Subspaces|subspace]] [[Span|spanned]] by the respective [[Eigenvectors|eigenvectors]] 
 $$
 V_{\lambda}=\text{ker}(A-\lambda I)=\{ \underline{v}\in  V \mid(A-\lambda I)\underline{v}=\underline{0}\}
 $$

@@ -1,11 +1,11 @@
-A real vectorspace is a non-empty set $V$ with two operations, addition:
+A vectorspace is a non-empty set $V$ with two operations, addition:
 $$
 V\times V\to V
 $$
 $$
 (\underline{u},\underline{v})\mapsto \underline{u}+\underline{v}
 $$
-And scalar multiplication by a [[Real Numbers|real number]] (hence real vectorspace):
+And  a real vectorspace satisfies scalar multiplication by a [[Real Numbers|real number]]:
 $$
 \mathbb{R}\times V\to V
 $$

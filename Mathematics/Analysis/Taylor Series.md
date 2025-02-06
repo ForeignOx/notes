@@ -31,17 +31,27 @@ $$
 $$
 This limit is only possible if $\lim_{ x \to c } \frac{f(x)-f(c)}{x-c}$ exists and is equal to $m$
 ### Taylor's Theorem
-Taylor's theorem states that if [[Functions|$f$]] has $n+1$ continuous [[Differentiation|derivatives]] in an open [[Intervals|interval]] $I$, containing the point $x=a$, then $\forall x\in I$:
+Taylor's theorem states that if [[Functions|$f$]] has $n$ continuous [[Differentiation|derivatives]] in an open [[Intervals|interval]] $I$, containing the point $x=a$, then $\forall x\in I$:
 $$
-f(x)=\sum_{ k=0} ^{ n}  \frac{f^{(k)}(a)}{k!}(x-a)^{k}+R_{n}(x)
+f(x)=\sum_{ k=0} ^{ n}  \frac{f^{(k)}(a)}{k!}(x-a)^{k}+R_{n}(x)=T^{(n)}_{f,a}+r_{n}(x)(x-c)^{n}
 $$
-With
+With if $f$ is $n+1$ times differentiable,
 $$
 R_{n}(x)=\frac{1}{n!}\int _{a}^{x}(x-t)^{n}f^{(n+1)}(t) \, dt 
 $$
-Called the remainder
+Called the remainder with $\lim_{ x \to a }r_{n}(x)=0$
 #### Proof
-Fix $x\in I$, then consider:
+Solve for $r_{n}(x)$,
+$$
+r_{n}(x)= \frac{f(x)-T^{(n)}_{f,a}(x)}{(x-a)^{n}}
+$$
+We need to complute $\lim_{ x \to a }r_{n}(x)$, we note that substituting $x=a$, into this, gives a situation where we appear to be dividing $\hspace{0pt}0$ by $\hspace{0pt}0$, so we want to use [[L'Hopital's Rule|L'Hopital's rule]], but derivatives will have the same issue, so we use L'Hopitals again and again; $n$ times, until we get:
+$$
+\lim_{ x \to a }  \frac{f(x)-f^{(n)}(a)}{n!}
+$$
+Since $f$ is differentiable there, then the top of the fraction is simply $\hspace{0pt}0$, so proved :)
+___
+Alternate proof with integration, fix $x\in I$, then consider:
 $$
 \int _{a}^{x}f'(t) \, dt =f(x)-f(a)
 $$
@@ -65,7 +75,7 @@ Which is the claimed result when $n=1$, for $n=2$, we integrate by parts again a
 ### Taylor Polynomials
 The combination $P_{n}(x)=f(x)-R_{n}(x)$ is a polynomial in $x$ of degree $n$ called the $n$th order Taylor polynomial of $f$ about $x=a$:
 $$
-P_{n}(x)=f(a)+f'(a)(x-a)+\frac{f''(a)}{2}(x-a)^{2}+\dots+\frac{f^{(n)}(a)}{n!}(x-a)^{n}
+T^{(n)}_{f,a}(x)=P_{n}(x)=f(a)+f'(a)(x-a)+\frac{f''(a)}{2}(x-a)^{2}+\dots+\frac{f^{(n)}(a)}{n!}(x-a)^{n}
 $$
 If the term about $x=a$ is omitted, then we take this to mean about $x=0$
 The Taylor polynomial $P_{n}(x)$ is an approximation to $f(x)$. Generally it is a good approximation when sufficiently close to $a$ and the approximation improves as $n$ increases. The remainder $R_{n}(x)$ gives an exact expression for the error
@@ -74,6 +84,7 @@ $$
 f(x)=\sum_{ k=0} ^{\infty}  \frac{f^{(k)}(a)}{k!}(x-a)^{k}
 $$
 Note that the $n$th order Taylor polynomial $P_{n}(x)$ is obtained by taking the first $n+1$ terms of the Taylor series (counting terms even if they're zero)
+Note that the $k$th derivative of the Taylor Polynomial evaluated at $a$, is equal to the $k$th derivative of $f$ evaluated at $a$
 ### Examples
 I can do these, but can't be bothered rn:
 $$
@@ -129,7 +140,7 @@ There is a more convenient expression for the remainder term in Taylor's theorem
 $$
 R_{n}(x)=\frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}
 $$
-For some $c \in(a,x)$
+For some $c \in(a,x)$, this does however assume $f$ is $n+1$ times differentiable
 #### Lemma
 Let $h(t)$ be differentiable $n+1$ times on $[a,x]$, with $h^{(k)}(a)=0$ for some $0\leq k\leq n$ and $h(x)=0$ then $\exists c_{1}\in(a,x):h'(c)=0$
 Then since $h'(a)=h'(c_{1})=0,\exists c_{2}\in(a,c_{1}):h''(c_{2})=0$. Applying this arguments a total of $n$ times we get:

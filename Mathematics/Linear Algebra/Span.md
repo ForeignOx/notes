@@ -1,4 +1,4 @@
-The span, or linear span of some [[Vectors|vectors]] in a [[Real Vectorspaces|vectorspace]] $V$, $\underline{u_{1}},\underline{u_{2}},\dots,\underline{u_{k}}\in V$ is the [[Subsets|subset]]:
+The span, or linear span of some [[Vectors|vectors]] in a [[Vectorspaces|vectorspace]] $V$, $\underline{u_{1}},\underline{u_{2}},\dots,\underline{u_{k}}\in V$ is the [[Subsets|subset]]:
 $$
 \text{span}(\underline{u}_{1},\underline{u}_{2},\dots,\underline{u}_{k}):=\{ \lambda_{1}\underline{u}_{1}+\lambda_{2}\underline{u}_{2}+\dots+\lambda_{k}\underline{u}_{k}\mid\lambda_{1},\lambda_{2},\dots,\lambda_{k}\in \mathbb{R} \}
 $$

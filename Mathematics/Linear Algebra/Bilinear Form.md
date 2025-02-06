@@ -1,4 +1,4 @@
-A bilinear form $B$ on a [[Real Vectorspaces|real vectorspace]] $V$ is a mapping assigning to each pair of [[Vectors|vectors]] $\underline{u},\underline{v}\in V$ a [[Real Numbers|real number]] $B(\underline{u},\underline{v})$ 
+A bilinear form $B$ on a [[Vectorspaces|real vectorspace]] $V$ is a mapping assigning to each pair of [[Vectors|vectors]] $\underline{u},\underline{v}\in V$ a [[Real Numbers|real number]] $B(\underline{u},\underline{v})$ 
 $$
 B:V\times V\to \mathbb{R}
 $$

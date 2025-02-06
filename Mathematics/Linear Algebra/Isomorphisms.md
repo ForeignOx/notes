@@ -22,7 +22,7 @@ T^{-1}(\lambda \underline{w}_{1})=\lambda \underline{v}_{1}=\lambda T^{-1}(\unde
 $$
 Prove the second part here :)
 ## Fundamental Example
-If $B$ is a [[Basis|basis]] for [[Real Vectorspaces|$V$]], $\{ \underline{v}_{1},\dots,\underline{v}_{n} \}$, then we have a [[Coordinates|coordinate]] map
+If $B$ is a [[Basis|basis]] for [[Vectorspaces|$V$]], $\{ \underline{v}_{1},\dots,\underline{v}_{n} \}$, then we have a [[Coordinates|coordinate]] map
 $$
 \Phi_{B}:V\to \mathbb{R}^{n}
 $$
