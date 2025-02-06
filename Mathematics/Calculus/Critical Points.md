@@ -249,9 +249,11 @@ Suppose $f(x_{1},\dots,x_{n})$ has a stationary point at $\underline{x}=\underli
 This method is kinda overkill, since we don't want the exact values of $\lambda$, we just want their signs (if they're positive or not)
 ### Method 3
 This solves the issue of method $\hspace{0pt}2$ taking ages, and is the best of both worlds; it is a generalisation of Method $\hspace{0pt}1$, and involves [[Sylvester's Criterion|Sylvester's Criterion]]
-If $H$ has all positive eigenvalues, the $H$ will correspond to a minimum. If $H$ has all negative eigenvalues, then $-H$ must have all positive eigenvalues and satisfy Sylversers criterion, but for matrices of even size $2n\times 2n$, the negative of them will have the same determinant, so for a maximum, we need an alternating pattern of determinants with alternating signs, starting with a minus; $\det(H^{(i)})(-1)^{i}>0$
-If $H$ corresponds to a degenerate stationary point, then $\lambda_{i}=0$ for some $i$, then $\det(H)=0$
-All other cases give saddle points
+- If $H$ has all positive eigenvalues, the $H$ will correspond to a minimum. If $H$ has all negative eigenvalues, then $-H$ must have all positive eigenvalues and satisfy Sylversers criterion
+- For matrices of even size $2n\times 2n$, the negative of them will have the same determinant, so for a maximum, we need an alternating pattern of determinants with alternating signs, starting with a minus; $\det(H^{(i)})(-1)^{i}>0$
+- If $H$ corresponds to a degenerate stationary point, then $\lambda_{i}=0$ for some $i$, then $\det(H)=0$
+- All other cases give saddle points
+Note that for $n=2$, we are considering $\det(H)$, and $H^{(1)}=f_{xx}$
 ### Example
 Find the stationary points of $f(x,y)=xye^{ -x^{2}-y^{2} }$,
 $$
@@ -339,5 +341,26 @@ $$
 \end{pmatrix}=-\lambda^{3}+3\lambda+2=-(\lambda-2)(\lambda+1)^{2}
 $$
 So $\lambda=-1,-1,2$ so the $\lambda$'s are not $\hspace{0pt}0$ and have different signs, so it is a saddle point
+___
+$f(x,y,z)=-\frac{3x^{2}}{2}-\frac{3y^{2}}{2}-\frac{z^{2}}{2}+xy+yz-xz$, has a stationary point at $(0,0,0)$, where $f_{x}=f_{y}=f_{z}=0$, we have the Hessian:
+$$
+H=\begin{pmatrix}
+f_{x x}&f_{xy}&f_{xz}\\f_{xy}&f_{yy}&f_{yz}\\f_{xz}&f_{yz}&f_{zz}
+\end{pmatrix}=\begin{pmatrix}
+-3&1&-1\\1&-3&1\\-1&1&-1
+\end{pmatrix}
+$$
+$$
+\det(H^{(1)})=-3<0
+$$
+$$
+ \det(H^{(2)})=\det \begin{pmatrix}
+-3&1\\1&-3
+\end{pmatrix}=8>0
+$$
+$$
+ \det(H^{(3)})=-4<0
+$$
+So we have a pattern of negative-positive-negative, so we have a maximum!
 
 #Mathematics #Calculus #Definition 
