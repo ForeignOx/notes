@@ -34,5 +34,77 @@ $$
 $$
 However we can't do this integral :(
 Note however, that $V(x)\leq E$, since $\frac{1}{2}mv^{2}\geq 0$, which restricts 
+## In $\mathbb{R}^{3}$
+A force $\underline{F}(\underline{r})$ is conservative if there exists a real function $V(\underline{r})=V(x,y,z)$ such that 
+$$
+\underline{F}=-\frac{ \partial V }{ \partial x } \underline{e}_{1}-\frac{ \partial V }{ \partial y } \underline{e}_{2}-\frac{ \partial V }{ \partial z } \underline{e}_{3}=-\underline{\nabla V} 
+$$
+### Conservation of Energy
+A particle of mass $m$ moving in a conservative force $\underline{F}$ has conserved energy $E$, where
+$$
+E=\frac{1}{2}mv^{2}+V
+$$
+Where $v$ is its speed. Again the first part is the kinetic energy, the second part is the potential energy
+So $\frac{d E}{dt}=0$
+#### Proof
+First:
+$$
+\frac{d V}{dt} =\frac{ \partial V }{ \partial x } \frac{d x}{dt} +\frac{ \partial V }{ \partial y } \frac{d y}{dt} +\frac{ \partial V }{ \partial z } \frac{d z}{dt} 
+$$
+Write
+$$
+\underline{F}=F_{x}\underline{e}_{1}+F_{y}\underline{e}_{2}+F_{z}\underline{e}_{3}
+$$
+Then
+$$
+\frac{d V}{dt} =-F_{x}\dot{x}-F_{y}\dot{y}-F_{z}\dot{z}=-\underline{F}\cdot  \underline{\dot{r}}
+$$
+Then using $v^{2}=\underline{\dot{r}}\cdot  \underline{\dot{r}}$
+$$
+\frac{d }{dt} \left( \frac{1}{2}mv^{2} \right)=\frac{d }{dt}\left( \frac{1}{2}m(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}) \right)=m(\dot{x}\ddot{x} +\dot{y}\ddot{y}+\dot{z}\ddot{z})-m \underline{\dot{r}}\cdot  \underline{\ddot{r}}
+$$
+Thus:
+$$
+\frac{d E}{dt} = \underline{\dot{r}}\cdot(m  \underline{\ddot{r}}-\underline{F})=0
+$$
+By equation of motion
+### Criterion for Conservative Forces
+$\underline{F}$ is conservative iff
+$$
+\frac{ \partial F_{x} }{ \partial y } =\frac{ \partial F_{y} }{ \partial x } ,\frac{ \partial F_{y} }{ \partial z } =\frac{ \partial F_{z} }{ \partial y } ,\frac{ \partial F_{x} }{ \partial z } =\frac{ \partial F_{z} }{ \partial x } 
+$$
+#### Proof
+Suppose $F$ is conservative, so $F_{x}=-\frac{ \partial V }{ \partial x }$ etc, then
+$$
+\frac{ \partial F_{x} }{ \partial y } -\frac{ \partial F_{y} }{ \partial x } =-\frac{ \partial^{2}V }{ \partial y\partial x }+ \frac{ \partial^{2}V }{ \partial x\partial y } =0 
+$$
+
+You can do the same for the other two by symmetry
+#### Remark
+In parctice, if given $\underline{F}$, just try to find $V$, if you can, then it is conservative
+#### Example
+Let $\underline{F}=(z-y)\underline{e}_{1}+(\alpha x-z)\underline{e}_{2}+(\beta x-y)\underline{e}_{3}$, for which values of $\alpha,\beta$ is $\underline{F}$ conservative? For those $\alpha,\beta$, find $V$
+Solve
+$$
+\frac{ \partial V }{ \partial x } -F_{x},\frac{ \partial V }{ \partial y } =-F_{y},\frac{ \partial V }{ \partial z } =-F_{z}
+$$
+$$
+V=(y-z)x+g(y,z)
+$$
+Substituting this into the $y$-equation:
+$$
+\frac{ \partial V }{ \partial y } =x+\frac{ \partial g }{ \partial y } =z-\alpha x\iff \alpha=-1, \frac{ \partial g(y,z) }{ \partial y } =z
+$$
+So
+$$
+g=zy+h(z)
+$$
+Finally substitute $V=(y-z)x+zy+h(z)$ into $z$ equation:
+$$
+\frac{ \partial V }{ \partial z } =y-\beta x=-x+y+\frac{d h}{dz} 
+$$
+Only if $\beta=1, h=c$ (some constant)
+
+
 
 #Physics #Energy #Definition
