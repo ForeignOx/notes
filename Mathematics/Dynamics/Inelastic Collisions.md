@@ -29,5 +29,4 @@ Z=1-\frac{\frac{1}{4}mv^{2}+\frac{9}{2}mv^{2}}{\frac{1}{2}\times 2m\times v^{2}}
 $$
 Which is impossible, the energy after was more than the energy before? This could happen if some external feature involved itself, but in this simple model, we forbid this
 
-
-#Physics #Dynamics #Definition 
+#Mathematics #Physics #Dynamics #Definition 

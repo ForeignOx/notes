@@ -37,4 +37,6 @@ In a [[Forced Oscillations|forced oscillation]], consider the natural [[Frequenc
 These can be collated into resonance curves:
 ![[Pasted image 20240302164850.png]]
 
+
+#Mathematics #Dynamics 
 #Physics #Vibrations 

@@ -26,3 +26,6 @@ For $n$ variables we can say $x_{n+1}=f(x_{2},x_{2},\dots,x_{n})$ as defining an
 $$
 (x_{1},x_{2},\dots,x_{n},x_{n+1})=(x_{1},x_{2},\dots,x_{n},f(x_{1},x_{2},\dots,x_{n}))
 $$
+
+
+#Mathematics #Calculus 

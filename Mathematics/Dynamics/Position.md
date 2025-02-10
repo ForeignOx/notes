@@ -7,3 +7,5 @@ If we have two particles $A$ and $B$
 ![[Inclined Plane 2025-01-31 16.46.16.excalidraw]]
 Then the position of $B$ relative to $A$ is $\underline{r}_{BA}=\underline{r}_{B}-\underline{r}_{A}$
 So the we can essentially consider one constant, the other as our only particle moving
+
+#Mathematics #Dynamics 

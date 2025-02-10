@@ -15,3 +15,5 @@ $$
 x(t)=\frac{1}{2}(g\sin\alpha-\mu g\cos\alpha)t^{2}
 $$
 Note that if $\mu g\cos\alpha>g\sin\alpha$, then it would be negative which is not the behaviour we want and corresponds to the friction being capped at $g\sin\alpha$, i.e. the solution is valid for $\tan\alpha>\mu$, if $\tan\alpha \leq \mu$, then there is too much friction and the particle doesn't move; $x(t)=0\forall t$
+
+#Mathematics #Dynamics

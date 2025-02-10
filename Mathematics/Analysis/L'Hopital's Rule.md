@@ -86,4 +86,4 @@ $$
 = \frac{-2+8}{1}=6 
 $$
 
-#Mathematics #Calculus #Theorem 
+#Mathematics #Analysis #Calculus #Theorem 

@@ -3,4 +3,4 @@ There is an electric field at any point, $P$, where a charged body (at rest) exp
 We shall call a charged body used to test for the presence of an electric field a test charge. Ideally it would have a tiny charge (so as to not displace the very charges that are giving rise to the field), and would occupy very little space, so as to respond to the field at a point
 Not only do charges respond to electric fields, they also create electric fields around them
 
-#Physics #Fields #Definition
+#Mathematics #Dynamics #Physics #Fields #Definition

@@ -29,5 +29,4 @@ $$
 
 
 
-
-#Physics #Dynamics #Definition
+#Mathematics #Physics #Dynamics #Definition

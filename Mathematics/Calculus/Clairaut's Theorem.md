@@ -1,4 +1,4 @@
-Let $f(x_{1},x_{2},\dots,x_{n})$ be a [[Functions|funciton]] $f:\mathbb{R}^{n}\to \mathbb{R}$. If all:
+Let $f(x_{1},x_{2},\dots,x_{n})$ be a [[Functions|function]] $f:\mathbb{R}^{n}\to \mathbb{R}$. If all:
 $$
 \frac{ \partial^{2}f }{ \partial x_{i}\partial x_{j} } 
 $$
@@ -24,3 +24,5 @@ $$
 \frac{ \partial f_{y} }{ \partial x }=f_{yx}=3\ln(x+y)+\frac{3y}{x+y}+\frac{3x}{x+y}-\frac{3xy}{(x+y)^{2}}
 $$
 Hence $f_{xy}=f_{yx}$
+
+#Mathematics #Calculus #Theorem 

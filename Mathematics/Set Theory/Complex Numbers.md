@@ -37,3 +37,5 @@ Let $z,w\in\mathbb{C}$ with $z=x+iy$. Then
 - $\overline{z}=z$ iff $z=x$
 - $\overline{z}=-z$ iff $z=iy$
 - $z\cdot\overline{z}=x^{2}+y^{2}\geq 0$, since $x$ and $y$ are real numbers
+
+#Mathematics #Set 

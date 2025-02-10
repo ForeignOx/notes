@@ -39,4 +39,5 @@ As the degree of damping increases, the system initially returns to equilibrium 
 ![[Pasted image 20240302163350.png]]
 For many purposes, engineers attempt to design systems which are critically damped, as critically damped oscillations converge most rapidly
 
+#Mathematics #Dynamics
 #Physics #Vibrations 

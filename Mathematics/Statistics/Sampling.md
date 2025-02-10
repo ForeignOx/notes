@@ -4,3 +4,5 @@ There are many ways to take a [[Samples|sample]] from a [[Population|population]
 ## Stratified Random Sample
 
 ## Quota Sample
+
+#Mathematics #Statistics 

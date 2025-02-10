@@ -54,3 +54,5 @@ $$
 2x+2y=4
 $$
 So we have $\hspace{0pt}3$ equations in $\hspace{0pt}3$ variables, but from the first two equations, $2\lambda=x=y$, so we already know it is a square, then using the third equation, $2x+2y=4x=4\implies x=y=1$
+
+#Mathematics #Calculus 

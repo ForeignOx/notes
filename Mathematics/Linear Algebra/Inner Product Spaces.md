@@ -29,3 +29,5 @@ $$
 (f,f)=\int ^{b}_{a} f^{2}(t) \, dt \geq \int_{t_{0}-\delta}^{t_{0}+\delta} f^{2}(t) \, dt \geq \int_{t_{0}-\delta}^{t_{0}+\delta} \frac{c^{2}}{4} \, dt\geq \frac{c^{2}}{2}\delta>0 
 $$
 Giving us our contradiction
+
+#Mathematics #LinAlg #Definition 

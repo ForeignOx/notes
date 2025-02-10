@@ -1,5 +1,18 @@
-Suppose $\underline{u},\underline{v}\in\mathbb{R}^n$ with $\underline{u},\underline{v}\neq \underline{0}$ then we define the angle between them to be the unique $0\leq\theta \leq \pi$ such that $\underline{u}\cdot \underline{v}=|u| |v|\cos\theta$ 
-Note for $\underline{u},\underline{v}\in\mathbb{R}^n$, $\underline{u},\underline{v}\neq 0$ if $\underline{v}\cdot \underline{u}=0$, we call $\underline{u}$, $\underline{v}$ orthogonal
+Suppose we have a [[Vectorspaces|vectorspace]] $V$, with real [[Inner Product|inner product]] $(,)$; a real [[Inner Product Spaces|inner product space]], then $\forall \underline{u},\underline{v}\in V$, then by the [[Cauchy-Schwarz Inequality|Cauchy-Schwarz inequality]],
+$$
+-\lvert \lvert \underline{u} \rvert \rvert \lvert \lvert \underline{v} \rvert \rvert \leq(\underline{u},\underline{v})\leq \lvert \lvert \underline{u} \rvert \rvert \lvert \lvert \underline{v} \rvert \rvert 
+$$
+Where $\lvert \lvert . \rvert \rvert$ is the induced [[Norms|norm]]
+We can say that 
+$$
+(\underline{u},\underline{v})=\lvert \lvert \underline{u} \rvert \rvert \lvert \lvert \underline{v} \rvert \rvert \cos\theta
+$$
+With $\theta \in[0,\pi]$, we call $\theta$ the angle between $\underline{u}$ and $\underline{v}$.
+Special cases:
+- $\theta=0\iff(\underline{u},\underline{v})=\lvert \lvert \underline{u} \rvert \rvert\lvert \lvert \underline{v} \rvert \rvert\iff$ $\underline{u},\underline{v}$ are parallel
+- $\theta=\frac{\pi}{2}\iff (\underline{u},\underline{v})=0\iff \underline{u}\bot\underline{v}$ ($\underline{u},\underline{v}$ are [[Orthogonality|orthogonal]])
+- $\theta=\pi \iff(\underline{u},\underline{v})=-\lvert \lvert \underline{u} \rvert \rvert\lvert \lvert \underline{v} \rvert \rvert\iff \underline{u},\underline{v}$ are antiparallel
+Note we can't define a real angle with a [[Hermitian Inner Product|hermitian inner product]], since $\left< \underline{u},\underline{v} \right>$ might be complex (but orthogonality still makes sense)
 ## Example
 FInd all unit vectors $\underline{w}\in\mathbb{R}^3$ that make an angle of $\frac{\pi}{4}$ with both:
 $$

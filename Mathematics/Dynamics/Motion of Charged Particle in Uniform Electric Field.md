@@ -13,4 +13,4 @@ $$
 $$
 In which $\Delta V$ is the potential difference in going from $A$ to $B$. Note that the value of $q$ is signed
 
-#Physics #Fields 
+#Mathematics #Dynamics #Physics #Fields 

@@ -9,3 +9,5 @@ This was formalissed by Bruno DeFenetti in his book: “Theory of Probability”
 This is the foundation of Bayesian statistics
 ## Example
 If you say your probability that 'Your Team' wins its next match is $\frac{1}{2}$, this means that you view £$\hspace{0pt}0.5$ as a fair price for the gamble winning you £$\hspace{0pt}1$ if Your Team wins, but otherwise nothing. Others may disagree with you
+
+#Mathematics #Statistics 

@@ -9,5 +9,4 @@ $$
 $$
 Note that the [[Standard Basis Vectors|basis vectors]] are constant
 
-
-#Physics #Kinematics #Definition 
+#Mathematics #Dynamics #Physics #Kinematics #Definition 

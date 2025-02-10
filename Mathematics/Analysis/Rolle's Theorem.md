@@ -22,4 +22,4 @@ $$
 But $x^{4}\geq 0$, so $x^{4}\neq-1$ in $\mathbb{R}$, so $f''(x)$ has only $\hspace{0pt}1$ real root hence contradiction yayyy
 
 
-#Mathematics #Calculus #Theorem 
+#Mathematics #Analysis #Calculus #Theorem 

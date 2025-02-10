@@ -100,4 +100,4 @@ Which will have a stationary point at $-\frac{mg}{k}$
 ## Damping
 
 
-#Physics #Vibrations #Definition #Equation
+#Mathematics #Dynamics #Physics #Vibrations #Definition #Equation

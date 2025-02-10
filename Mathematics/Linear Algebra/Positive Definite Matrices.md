@@ -18,3 +18,4 @@ $$
 $$
 Where the last equality is derived since $v_{i}\cdot v_{j}=0$ for $i\neq j$. The last line is greater than $\hspace{0pt}0$ if all the eigenvalues are positive
 
+#Mathematics #LinAlg #Definition 

@@ -13,4 +13,5 @@ $$
 \left| f(x_{n})-f(y_{n}) \right| \geq\epsilon
 $$
 Using the [[Bolzano-Weierstrass Theorem|Bolzano-Weierstrass Theorem]]
-___
+
+#Mathematics #Analysis #Theorem 

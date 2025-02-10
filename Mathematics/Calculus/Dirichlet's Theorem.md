@@ -13,3 +13,5 @@ $$
 $$
 \implies \sum_{ n=1} ^{\infty}  \frac{1}{(2n-1)^{2}}=\frac{\pi^{2}}{8}
 $$
+
+#Mathematics #Calculus #Theorem 

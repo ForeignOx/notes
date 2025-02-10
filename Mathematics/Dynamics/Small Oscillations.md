@@ -31,3 +31,5 @@ $$
 P=2\pi \sqrt{ \frac{m}{V''(x_{0})} }=2\pi \sqrt{ \frac{3}{3} }=2\pi
 $$
 This is an approximation, but is a good one for small oscillations
+
+#Mathematics #Dynamics 

@@ -20,4 +20,4 @@ x_{1} \\ x_{2} \\ \vdots \\ x_{n}
 $$
 which will generate a set of linear equations, and any values of $x_{1}, x_{2}, \dots, x_{n}$ that satisfies every linear equation will be an eigenvector for $\lambda$ if there are any free parameters, then that value of $x_{k}$ will be 0 
 
-#Mathematics #LinAlg 
+#Mathematics #LinAlg #Definition 

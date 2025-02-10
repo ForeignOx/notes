@@ -3,4 +3,4 @@ If a body in equilibrium has 3 non-parallel forces acting on it, all the lines o
 ## Energy
 Since $F=0$ at a point of equilibrium, the [[Energy|potential energy]] has the property that $V'(x)=0$, since $V(x)=-\int F \, dx$
 
-#Physics #Basic_Physics #Definition
+#Mathematics #Dynamics #Physics #Basic_Physics #Definition

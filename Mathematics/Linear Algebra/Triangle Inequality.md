@@ -92,5 +92,22 @@ $$
 \implies |\underline{u}+\underline{v}|\leq|\underline{u}|+|\underline{v}|
 $$
 Since $|\underline{u}+\underline{v}|^{2}$ is the square of a magnitude (and so is positive) and $|\underline{u}|+|\underline{v}|$ is the sum of two magnitudes (and so is also positive)
+## With [[Norms|Norms]]
+Suppose we have a [[Vectorspaces|vectorspace]] $V$, with real [[Inner Product|inner product]] $(,)$; a real [[Inner Product Spaces|inner product space]], then $\forall \underline{u},\underline{v}\in V$,
+next board, we want
+$$
+(\lvert \lvert \underline{u} \rvert \rvert +\lvert \lvert \underline{v} \rvert \rvert )^{2}-\lvert \lvert \underline{u}+\underline{v} \rvert \rvert ^{2}\geq 0
+$$
+$$
+(\lvert \lvert \underline{u} \rvert \rvert +\lvert \lvert \underline{v} \rvert \rvert )^{2}-\lvert \lvert \underline{u}+\underline{v} \rvert \rvert ^{2}=\lvert \lvert \underline{u} \rvert \rvert ^{2}+2\lvert \lvert \underline{u} \rvert \rvert \lvert \lvert \underline{v} \rvert \rvert +\lvert \lvert \underline{v} \rvert \rvert^{2}-(\underline{u}+\underline{v},\underline{u}+\underline{v})
+$$
+$$
+= \lvert \lvert \underline{u} \rvert \rvert ^{2}+2\lvert \lvert \underline{u} \rvert \rvert \lvert \lvert \underline{v} \rvert \rvert +\lvert \lvert \underline{v} \rvert \rvert ^{2}-\lvert \lvert \underline{u} \rvert \rvert ^{2}-2(\underline{u},\underline{v})-\lvert \lvert \underline{v} \rvert \rvert ^{2}
+$$
+$$
+= 2(\lvert \lvert \underline{u} \rvert \rvert \lvert \lvert \underline{v} \rvert \rvert -(\underline{u},\underline{v})) 
+$$
+Which is positive by [[Cauchy-Schwarz Inequality|Cauchy-Schwarz]]
+
 
 #Mathematics #LinAlg #Theorem

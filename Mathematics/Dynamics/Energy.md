@@ -106,5 +106,4 @@ $$
 Only if $\beta=1, h=c$ (some constant)
 
 
-
-#Physics #Energy #Definition
+#Mathematics #Dynamics #Physics #Energy #Definition

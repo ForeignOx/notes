@@ -6,5 +6,4 @@ It is a law of nature that the total [[Momentum|momentum]] is conserved by colli
 The total [[Energy|energy]] (which is all kinetic energy) may be conserved, in which case the collision would be [[Elastic Collisions|elastic]], or not conserved, yielding an [[Inelastic Collisions|inelastic collision]] 
 
 
-
-#Physics #Dynamics #Law
+#Mathematics #Physics #Dynamics #Law

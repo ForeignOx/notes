@@ -77,3 +77,5 @@ So $z(t)=0$ for all $t$. Now we eliminate $y$:
 $$
 \ddot{xq}=B\dot{q}=-B
 $$
+
+#Mathematics #Dynamics #Equation 

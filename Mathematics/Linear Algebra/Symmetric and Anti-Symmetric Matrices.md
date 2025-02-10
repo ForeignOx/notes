@@ -5,3 +5,4 @@ B=\frac{B+B^{\top}}{2}+\frac{B-B^{\top}}{2}
 $$
 
 
+#Mathematics #LinAlg #Definition 

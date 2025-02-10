@@ -31,6 +31,26 @@ $$
 $$
 \lvert \lvert \underline{v} \rvert \rvert =0\iff(\underline{v},\underline{v})=0\iff \underline{v}=\underline{0}
 $$
-By positive definitivity, but the second one needs the [[Cauchy-Schwarz Inequality]]
+By positive definitivity
+The second one is proved with triangle inequality
+## Complex Version
+Let $\left\{ V,\left< , \right> \right\}$ be a complex inner product space with [[Hermitian Inner Product|hermitian inner product]] $\left< , \right>$.
+Then the norm induced by $\left< , \right>$ is 
+$$
+\lvert \lvert \underline{v} \rvert \rvert =\sqrt{ \left< \underline{v},\underline{v} \right>  }
+$$
+(the same as the real case) $\forall \underline{v}\in V$
+This is ok by the positive definite property of $\left< \underline{v},\underline{v} \right>$
+### Properties
+$$
+\lvert \lvert a\underline{v} \rvert \rvert =\sqrt{ \left< a\underline{v},a\underline{v} \right>  }=\sqrt{ \left| a \right| ^{2}\lvert \lvert \underline{v},\underline{v} \rvert \rvert  }
+$$
+Since $\left| a \right|^{2}=a \overline{a}$ for any $a\in\mathbb{C}$
+$$
+\implies \lvert \lvert a\underline{v} \rvert \rvert =\left|  a\right| \sqrt{ \left< \underline{v},\underline{v} \right>  }=\left| a \right| \lvert \lvert \underline{v},\underline{v} \rvert \rvert 
+$$
+
 ## Unit Vectors
 $\underline{v}$ is a unit vector s $\lvert \lvert \underline{v} \rvert \rvert=1$
+
+#Mathematics #LinAlg #Definition 

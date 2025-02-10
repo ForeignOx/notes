@@ -32,3 +32,5 @@ $$
 (\ln x)'=\frac{1}{e^{ \ln x }}=\frac{1}{x}
 $$
 
+
+#Mathematics #Calculus #Theorem 

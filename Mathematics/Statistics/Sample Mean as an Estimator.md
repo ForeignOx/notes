@@ -40,3 +40,5 @@ $$
 $$
 Due to the sum of normal random variables being also Normal
 ![[Pasted image 20250207144339.png]]
+
+#Mathematics #Statistics 

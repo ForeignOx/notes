@@ -43,3 +43,4 @@ u_{1}&u_{2}&\dots&u_{n}
 v_{1}\\v_{2}\\\vdots\\v_{n}
 \end{pmatrix}=u_{1}v_{1}
 $$
+#Mathematics #LinAlg #Definition 

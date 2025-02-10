@@ -106,3 +106,5 @@ $$
 \left< f,g \right> =\int ^{b}_{a} f(t)\overline{g(t)} \, dt 
 $$
 Defines a hermitian inner product
+
+#Mathematics #LinAlg #Definition 

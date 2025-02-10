@@ -4,3 +4,5 @@ If $0<\mathbb{P}(A)<1$, then the probability indicates our degree of belief of t
 For repeatable experiments, such as rolling dice, this question is more easy, but many real-life scenarios such as global warming, this is not so clear
 The axioms are useful, but say nothing about how we should decide our initial probabilities
 Logic provides us with consistency and ways to go when you have started, so if $A\implies B$, then if $A$ is true $B$ is true, but logic tells us nothing about whether $A$ is true. The same goes for probability.
+
+#Mathematics #Statistics 

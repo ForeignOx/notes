@@ -118,3 +118,5 @@ $$
 $$
 Question 3: Your company has time to perform one more poll before the election. How large a poll is needed to ensure a Margin of Error less than $1\%$?
 The answer is that $\frac{1}{\sqrt{ n }}<0.01\iff n>10000$ so it unlikely we getting that
+
+#Mathematics #Statistics 

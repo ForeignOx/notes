@@ -1,4 +1,4 @@
-## Indeinite Integrals (or Anti-[[Differentiation|Derivative]])
+## Indefinite Integrals (or Anti-[[Differentiation|Derivative]]s)
 A [[Functions|function]] $F(x)$ is called an indefinite integral or antiderivative of a function $f(x)$ in the [[Intervals|interval]] $(a,b)$ if $F(x)$ is differentiable:
 $$
 F'(x)=f(x)\forall x\in (a,b)

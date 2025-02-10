@@ -70,4 +70,4 @@ A=\begin{pmatrix}
 $$
 This is symmetric and positive definite
 
-
+#Mathematics #LinAlg #Definition 
