@@ -39,3 +39,12 @@ $$
  \frac{\frac{h}{x}}{1+\frac{h}{x}}\leq\frac{\log\left( 1+\frac{h}{x} \right)}{h}\leq \frac{\frac{h}{x}}{h}=\frac{1}{x}
 $$
 Both tend to $\frac{1}{x}$, so by squeeze theorem, we have proved it
+___
+We want to show using $\log'(x)=\frac{1}{x}$ that 
+$$
+\frac{x}{x+1}\leq \log(1+x)\leq x
+$$
+Using the growth theorem, take the deriavatives:
+$$
+\frac{1}{1+x^{2}}\leq \frac{1}{1+x}\leq 1
+$$
