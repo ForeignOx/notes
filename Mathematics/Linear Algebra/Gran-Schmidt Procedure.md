@@ -27,7 +27,7 @@ $$
 = (\underline{v}_{2},\underline{u}_{1})-(\underline{v}_{2},\underline{u}_{1})\underbrace{ (\underline{u}_{1},\underline{u}_{1}) }_{ =1 }=0
 $$
 Hence $\underline{\tilde{v}}\bot\underline{u}_{1}$
-Note that $\underline{\tilde{v}}_{2}\neq 0$ since $\underline{\tilde{v}}_{2}\in \text{span}\left\{ \underline{v}_{1} \right\}=\text{span}\left\{ \underline{u}_{1} \right\}$
+Note that $\underline{\tilde{v}}_{2}\neq 0$ since $\underline{\tilde{v}}_{2}\notin \text{span}\left\{ \underline{v}_{1} \right\}=\text{span}\left\{ \underline{u}_{1} \right\}$
 But $\underline{\tilde{v}}_{2}$ might not have unit norm, so we fix this by setting 
 $$
 \underline{u}_{2}= \frac{\underline{\tilde{v}}_{2}}{\lvert \lvert \underline{\tilde{v}}_{2} \rvert \rvert }
@@ -43,7 +43,7 @@ $$
 (\underline{\tilde{v}}_{r+1},\underline{u}_{i})=(\underline{v}_{r+1},\underline{u}_{i})-(\underline{v}_{r+1},\underline{u}_{i})\underbrace{ (\underline{u}_{i},\underline{u}_{i}) }_{ =1 }=0
 $$
 For all $1\leq i\leq r$
-Furthermore $\underline{\tilde{v}}_{r+1}\neq 0$ since $\underline{v}_{r+1}\in \text{span}\left\{ \underline{u}_{1},\dots ,\underline{u}_{r} \right\}=\text{span}\left\{ \underline{v}_{1},\dots,\underline{v}_{r} \right\}$
+Furthermore $\underline{\tilde{v}}_{r+1}\neq 0$ since $\underline{v}_{r+1}\notin \text{span}\left\{ \underline{u}_{1},\dots ,\underline{u}_{r} \right\}=\text{span}\left\{ \underline{v}_{1},\dots,\underline{v}_{r} \right\}$
 So $\underline{\tilde{v}}_{r+1}\bot\underline{u}_{i}\forall i=1,\dots,r$
 Then we make it a unit vector so set
 $$
@@ -52,7 +52,7 @@ $$
 And then keep going provided $U$ is finite [[Dimension|dimensional]], eventually $r+1=k$ and we're done
 ## Examples
 In $\mathbb{R}^{2}$
-Suppose we have vectors $\underline{v}_{1}$ and $\underline{v}_{2}$:
+Suppose we have vectors $\underline{v}_{1}$ and $\underline{v}_{2}$, we start by nor malising $\underline{v}_{1}$ to get $\underline{u}_{1}$, then we subtract a component of $\underline{u}_{1}$ from $\underline{v}_{2}$ to get a vector orthogonal to $\underline{u}_{1}$, $\underline{\tilde{v}}_{2}$, finally normalise $\underline{\tilde{v}}_{2}$ to get $\underline{u}_{1}$:
 ![[Gran-Schmidt Procedure 2025-02-11 11.50.36.excalidraw]]
 ___
 Let $V$ be the set of [[Continuity|continuous]] [[Functions|functions]] in the [[Intervals|interval]] $[-1,1]$; $V=C[-1,1]$ with the condition:
