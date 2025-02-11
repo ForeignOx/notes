@@ -50,7 +50,14 @@ $$
 \underline{u}_{r+1}= \frac{\underline{\tilde{v}}_{r+1}}{\lvert \lvert \underline{\tilde{v}}_{r+1} \rvert \rvert }
 $$
 And then keep going provided $U$ is finite [[Dimension|dimensional]], eventually $r+1=k$ and we're done
-## In $\mathbb{R}^{2}$
+## Examples
+In $\mathbb{R}^{2}$
 Suppose we have vectors $\underline{v}_{1}$ and $\underline{v}_{2}$:
 ![[Gran-Schmidt Procedure 2025-02-11 11.50.36.excalidraw]]
+___
+Let $V$ be the set of [[Continuity|continuous]] [[Functions|functions]] in the [[Intervals|interval]] $[-1,1]$; $V=C[-1,1]$ with the condition:
+$$
+(f,g)=\int_{-1}^{1} f(t)g(t) \, dt 
+$$
+Let $U=\text{span}\left\{ f_{1}(t),f_{2}(t) \right\}$ with $f_{1}(t)=1,f_{2}(t)=t^{2}$ find an orthonormal
 
