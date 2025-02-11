@@ -92,7 +92,7 @@ $$
 \implies |\underline{u}+\underline{v}|\leq|\underline{u}|+|\underline{v}|
 $$
 Since $|\underline{u}+\underline{v}|^{2}$ is the square of a magnitude (and so is positive) and $|\underline{u}|+|\underline{v}|$ is the sum of two magnitudes (and so is also positive)
-## With [[Norms|Norms]]
+## Real [[Norms|Norms]]
 Suppose we have a [[Vectorspaces|vectorspace]] $V$, with real [[Inner Product|inner product]] $(,)$; a real [[Inner Product Spaces|inner product space]], then $\forall \underline{u},\underline{v}\in V$,
 next board, we want
 $$
@@ -108,6 +108,22 @@ $$
 = 2(\lvert \lvert \underline{u} \rvert \rvert \lvert \lvert \underline{v} \rvert \rvert -(\underline{u},\underline{v})) 
 $$
 Which is positive by [[Cauchy-Schwarz Inequality|Cauchy-Schwarz]]
+## Complex Norms
+Suppose we have a complex vectorspace $V$, with [[Hermitian Inner Product|hermitian inner product]] $\left< , \right>$, then $\forall \underline{u},\underline{v}\in V$, we want
+$$
+\lvert \lvert \underline{u}+\underline{v} \rvert \rvert \leq \lvert \lvert \underline{u} \rvert \rvert +\lvert \lvert \underline{v} \rvert \rvert 
+$$
+### Proof
+$$
+(\lvert \lvert \underline{u} \rvert \rvert +\lvert \lvert \underline{v} \rvert \rvert )^{2}-\lvert \lvert \underline{u}+\underline{v} \rvert \rvert ^{2}=\lvert \lvert \underline{u} \rvert \rvert ^{2}+2\lvert \lvert \underline{u} \rvert \rvert \lvert \lvert \underline{v} \rvert \rvert +\lvert \lvert \underline{v} \rvert \rvert ^{2}-\left< \underline{u}+\underline{v},\underline{u}+\underline{v} \right> 
+$$
+$$
+= \lvert \lvert \underline{u} \rvert \rvert ^{2}+2\lvert \lvert \underline{u} \rvert \rvert \lvert \lvert \underline{v} \rvert \rvert +\lvert \lvert \underline{v} \rvert \rvert ^{2}-\lvert \lvert \underline{u} \rvert \rvert -\left< \underline{u},\underline{v} \right> -\left< \underline{v},\underline{u} \right> -\lvert \lvert \underline{v} \rvert \rvert ^{2}
+$$
+$$
+= 2(\lvert \lvert \underline{u} \rvert \rvert \lvert \lvert \underline{v} \rvert \rvert -\mathrm{Re}\left< \underline{u},\underline{v} \right> )\geq 2(\lvert \lvert \underline{u} \rvert \rvert \lvert \lvert \underline{v} \rvert \rvert -\left| \left< \underline{u},\underline{v} \right>  \right| )\geq 0
+$$
+By Caucy-Schwarz
 
 
 #Mathematics #LinAlg #Theorem
