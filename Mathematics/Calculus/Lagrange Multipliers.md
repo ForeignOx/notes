@@ -18,7 +18,7 @@ $$
 So $\underline{\nabla \phi}=0$. If I have $n$ equations, $\frac{ \partial \phi }{ \partial x_{i} } =0$ for $1\leq i\leq n$, and 
 ## Example
 What is the maximum area of a rectangle given the constraint the rectangle has perimeter $P=4$, 
-We are finding the masimum of 
+We are finding the maximum of 
 $$
 A=f(x,y)=xy
 $$
