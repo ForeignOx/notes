@@ -132,7 +132,7 @@ The following table lists terms that can appear in $\phi$ in order to use this m
 | $\sin(\gamma x)$  | $a_{1}\cos(\gamma x)+a_{2}\sin(\gamma x)$  |
 If $\phi(x)$ contains sums or products of the above terms,, we try the corresponding sum/product of the corresponding forms
 If the listed form to try is already in the complimentary function, then putting this into the original ODE will give $0$ rather than $\phi(x)$, we then try a $y_{PI}$ of the suggested form multiplied by $x$. We can apply this rule twice (or more times) if the first applicatio also gives a terms in $y_{CF}$
-## Method of Variation of Parameters
+### Method of Variation of Parameters
 Our method of undetermined coefficients allows us to solve an inhomogeneous ODE, but only when the inhomogeneous terms $\phi(x)$ takes particular forms. The following method allows us to solve more general inhomogeneous ODEs
 We wish to find a particular integral for the inhomogeneous ODE, we swtart by considering the two linearly independent solutions $y_{1},y_{2}$ of the associated homogeneous ODE:
 $$
@@ -259,6 +259,54 @@ $$
 And so the general solution to the ODE is
 $$
 y(x)=y_{CF}+y_{PI}=e^{ x }\left( A+Bx-\frac{1}{2}\ln(x^{2}+1)+x\arctan(x) \right)
+$$
+## Linear ODEs
+The canonical form of a second order linear ODE is:
+$$
+\frac{d ^{2}y}{dx^{2}} +p(x)\frac{d y}{dx} +q(x)y=0
+$$
+We can solve these by finding [[Power Series|power]] [[Series|series]] of the form
+$$
+y=\sum_{n=0}^{\infty} a_{n}(x-x_{0})^{2} 
+$$
+A solution can be found in this form provided $x_{0}$ is a regular point of the ODE
+### Example
+Find series solution for $\frac{d ^{2}y}{dx^{2}}-y=0$, in canonical form, $p=0$, $q=-1$, these functions are equal to their [[Taylor Series|Taylor series]], so are analytic everywhere, so all points are regular. Choose $x_{0}=0$, and
+$$
+y=\sum_{n=0}^{\infty} a_{n}x^{n} 
+$$
+We substitute this in:
+$$
+\frac{d ^{2}}{dx^{2}} \left( \sum_{n=0}^{\infty} a_{n}x^{n}  \right)-\sum_{n=0}^{\infty} a_{n}x^{n}=0
+$$
+$$
+\implies \sum_{n=0}^{\infty} a_{n}n(n-1)x^{n-2}-\sum_{n=0}^{\infty} a_{n}x^{n}=0
+$$
+Relabel $n\to n+2$:
+$$
+\implies \sum_{n=-2}^{\infty} a_{n+2}(n+2)(n+1)x^{n}-\sum_{n=0}^{\infty} a_{n}x^{n}=0    
+$$
+But the first two terms of the first series are both $\hspace{0pt}0$, so:
+$$
+\sum_{n=0}^{\infty} a_{n+2}(n+2)(n+1)x^{n}-\sum_{n=0}^{\infty} a_{n}x^{n}  =0
+$$
+$$
+\implies \sum_{n=0}^{\infty} x^{n}(a_{n+2}(n+2)(n+1)-a_{n})=0
+$$
+$$
+\implies a_{n+2}=\frac{a_{n}}{(n+1)(n+2)} 
+$$
+By looking at some terms, we get
+$$
+a_{2}=\frac{a_{0}}{2\times 1},a_{4}=\frac{a_{2}}{4\times 3}=\frac{a_{0}}{4\times 3\times 2\times 1}
+$$
+We essentially get:
+$$
+a_{2n}=\frac{a_{0}}{(2n)!},a_{2n+1}=\frac{a_{1}}{(2n+1)!}
+$$
+So
+$$
+y=\sum_{n_{0}}^{\infty} a_{k} 
 $$
 
 

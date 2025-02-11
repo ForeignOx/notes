@@ -14,7 +14,7 @@ Young’s experiment and how it demonstrated the wave nature of light. Learners 
 - the idea that if $\lambda$ is equal to or greater than the width of a slit, waves spread as roughly semicircular wavefronts, but if $\lambda$ is less than the slit width the main beam spreads through less than $180^{\circ}$
 - how two source [[Interference]] occurs
 - the historical importance of [[Young's Double Slit Experiment|Young’s experiment]]
-- the [[Principle of Superposition]], giving appropriate sketch graphs
+- the [[Principle of Superposition of Waves]], giving appropriate sketch graphs
 - the [[Path Difference]] rules for constructive and destructive interference between waves from in phase sources
 - the [[Young's Double Slit Experiment|use of]] $\lambda=\frac{a\Delta y}{D}$
 - the derivation and use of $n\lambda=d\sin\theta$ for a [[Diffraction Gratings|diffraction grating]]
