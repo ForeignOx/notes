@@ -7,7 +7,7 @@ $$
 $$
 For $\underline{u},\underline{v}\in V$ such that:
 - $\left< \underline{v},\underline{u} \right>= \overline{\left< \underline{u},\underline{v} \right>}$ (Hermiticity)
-- $\left< \underline{u}+\underline{v},\underline{w} \right>=\left< \underline{u},\underline{w} \right> +\left< \underline{v},\underline{w} \right>$
+- $\left< \underline{u}+\underline{v},\underline{w} \right>=\left< \underline{u},\underline{w} \right> +\left< \underline{v},\underline{w} \right>$ 
 - $\left< \lambda \underline{u},\underline{v} \right>=\lambda \left< \underline{u},\underline{v} \right>$ (this and previous, make linear in first argument)
 - $\left< \underline{v},\underline{v} \right>\geq 0$ with $\left< \underline{v},\underline{v} \right> =0\iff \underline{v}=\underline{0}$
 Why is $\left< \underline{v},\underline{v} \right>\in\mathbb{R}$, it follows from the first point that swapping the vectors gives the conjugate, so they must map to $\mathbb{R}$
