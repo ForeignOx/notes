@@ -1,9 +1,57 @@
 For a recurrence [[Sequences|sequence]] defined as so:
 $$
-a_{1}u_{n-k}+a_{2}u_{n-k+1}+\dots+a_{k-1}u_{n-1}+a_{k}u_{n}=f(n)
+u_{n}=a_{1}u_{n-1}+a_{2}u_{n-2}+\dots+a_{k}u_{n-k}+p(n)
 $$
 You must solve it in two parts, the homogeneous solution and the particular solution
 ## Homogeneous Solution
+### Linear Algebra Derivation
+Consider the homogeneous case, sart
+$$
+\underline{u}_{n}=\begin{pmatrix}
+u_{n}\\u_{n}\\\vdots\\u_{n-k+1}
+\end{pmatrix},\underline{u}_{0}=\begin{pmatrix}
+u_{k-1}\\u_{k-2}\\\vdots\\u_{0}
+\end{pmatrix}
+$$
+We construct a [[Matrices|matrix]] of coefficients to relate $\underline{u}_{n}$ to $\underline{u}_{n-1}$:
+$$
+\underline{u}_{n+1}=\begin{pmatrix}
+a_{1}&a_{2}&\dots&a_{k-1}&a_{k}\\
+1&0&\dots&0&0\\0&1&\dots&0&0\\\vdots&\vdots&\ddots&\vdots&\vdots\\0&0&\dots&1&0
+\end{pmatrix}\underline{u}_{n}
+$$
+$$
+\implies \underline{u}_{n+1}=\begin{pmatrix}
+a_{1}&a_{2}&\dots&a_{k-1}&a_{k}\\
+1&0&\dots&0&0\\0&1&\dots&0&0\\\vdots&\vdots&\ddots&\vdots&\vdots\\0&0&\dots&1&0
+\end{pmatrix}^{n}\underline{u}_{0}
+$$
+$$
+\underline{u}_{n+1}=A^{n}\underline{u}_{0}
+$$
+So we want to [[Diagonalisation|diagonalise]] our matrix $A$, we can do so by finding
+$$
+\det(A-tI)=\det \begin{pmatrix}
+a_{1}-t&a_{2}&\dots&a_{k-1}&a_{k}\\
+1&-t&\dots&0&0\\0&1&\dots&0&0\\\vdots&\vdots&\ddots&\vdots&\vdots\\0&0&\dots&1&-t
+\end{pmatrix}
+$$
+Which gives a characteristic polynomial, which will have roots of [[Eigenvalues|eigenvalues]] $\lambda_{1},\dots,\lambda_{k}$, each with associated [[Eigenvectors|eigenvector]] $\underline{v}_{\lambda_{i}}$ so we can write
+$$
+A=\begin{pmatrix}
+\underline{v}_{\lambda_{1}}&\underline{v}_{\lambda_{2}}&\dots&\underline{v}_{\lambda_{k}}
+\end{pmatrix}\begin{pmatrix}
+\lambda_{1}&0&\dots&0\\0&\lambda_{2}&\dots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&\dots&\lambda_{k}
+\end{pmatrix}\begin{pmatrix}
+\underline{v}_{\lambda_{1}}&\underline{v}_{\lambda_{2}}&\dots&\underline{v}_{\lambda_{k}}
+\end{pmatrix}^{-1}
+$$
+
+
+
+ 
+___
+### Method
 Take the homogeneous part of $u_{n}$:
 $$
 a_{1}u_{n-k}+a_{2}u_{n-k+1}+\dots+a_{k-1}u_{n-1}+a_{k}u_{n}=0

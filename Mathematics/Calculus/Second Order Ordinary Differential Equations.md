@@ -1,6 +1,47 @@
 ## Linear Constant-Coefficient ODEs
 ### Homogeneous
-
+#### Linear Algebra Derivation
+If we have:
+$$
+a\ddot{x}+b\dot{x}+cx=0
+$$
+With $x(0)=\alpha$, $\dot{x}(0)=\beta$, we introduce $y\equiv \dot{x}$, then our equation becomes
+$$
+a\dot{y}+by+cx=0
+$$
+So is equivalent to the [[Systems of 1st Order ODEs|1st order system of ODEs]]:
+$$
+\dot{x}=y
+$$
+$$
+ \dot{y}=-\frac{c}{a}x-\frac{b}{a}y
+$$
+Which we can solve with [[Matrices|matrices]], by rewriting:
+$$
+\begin{pmatrix}
+\dot{x}\\\dot{y}
+\end{pmatrix}=\begin{pmatrix}
+0&1\\-\frac{c}{a}& -\frac{b}{a}
+\end{pmatrix}\begin{pmatrix}
+x\\y
+\end{pmatrix}
+$$
+$$
+\dot{\underline{x}}=B\underline{x}
+$$
+So we will want to [[Diagonalisation|diagonalise]] $B$:
+$$
+p_{B}(t)=\det \begin{pmatrix}
+-t&1\\-\frac{c}{a} & -\frac{b}{a}-t
+\end{pmatrix}=t^{2}+\frac{b}{a}t+\frac{c}{a}
+$$
+$$
+\implies at^{2}+bt+c=0
+$$
+Os the characteristic polynomial for our original equation
+This is always fine unless we have a repeated root :(
+___
+#### Method
 For a 2nd order, linear homogeneous ODE with constant coefficients:
 $$
 a \frac{d^{2}y}{dx^{2}}+b \frac{dy}{dx}+cy=0
@@ -306,8 +347,9 @@ a_{2n}=\frac{a_{0}}{(2n)!},a_{2n+1}=\frac{a_{1}}{(2n+1)!}
 $$
 So
 $$
-y=\sum_{n_{0}}^{\infty} a_{k} 
+y=\sum_{n=0}^{\infty} a_{k} 
 $$
+
 
 
 #Mathematics #Calculus
