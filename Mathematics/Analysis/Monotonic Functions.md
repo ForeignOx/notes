@@ -14,7 +14,7 @@ A function $f(x)$ is strictly monotonic decreasing in $[a,b]$ if
 $$
 f(x_{1})< f(x_{2})\forall x_{1},x_{2}:a\leq x_{1}<x_{2}\leq b
 $$
-## Using Differentiation
+## Growth Theorem
 Let $f:I\to \mathbb{R}$ be a [[Continuity|continuous]] function on an interval $I$, [[Differentiation|differentiable]] in its interior, then
 - If $f'(x)=0$ for all $x$, then $f$ is constant
 - If $f'(x)\geq 0$, for all $x$, then $f$ is monotonically increasing

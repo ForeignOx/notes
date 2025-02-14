@@ -65,6 +65,73 @@ $$
 \exp(y-x)=\lim_{ n \to \infty } \left( 1+\frac{y-x}{n} \right)^{n}>1=\exp(y)\exp(-x)=\frac{\exp(y)}{\exp(x)}
 $$
 So $\exp(x)<\exp(y)$, so the exponential function is strictly monotonically increasing
+___
+### [[Power Series|Power Series]]
+We can instead define $\exp (x)$ as:
+$$
+\exp(x)=\sum_{k=0}^{\infty} \frac{x^{k}}{k!}
+$$
+This power series converges for all $x\in\mathbb{R}$
+#### $\exp(0)=1$
+To show this we let $x=0$; so
+$$
+\exp(0)=\frac{1}{0!}+0+\dots=1
+$$
+#### [[Differentiation|Differentiation]]
+We want to show:
+$$
+\exp'(x)=\exp(x)
+$$
+$$
+\left( \sum_{k=0}^{\infty} \frac{x^{k}}{k!}  \right)'=\sum_{k=1}^{\infty} \frac{kx^{k-1}}{k!}=\sum_{k=0}^{\infty} \frac{(k+1)x^{k}}{(k+1)!}=\sum_{k=0}^{\infty} \frac{x^{k}}{k!}   
+$$
+Which is what we want
+#### Additive property
+We want to show for all $x,y\in\mathbb{R}$:
+$$
+\exp(y+x)=\exp(x)\exp(y)
+$$
+$$
+ \exp(-x)=\frac{1}{\exp(x)}
+$$
+We can do this in two ways. One uses the [[Cauchy Product Theorem|Cauchy Product theorem]], the other, we can consider
+$$
+f(t)=\exp(x+t)\exp(y-t)
+$$
+$$
+f(0)=\exp(x)\exp(y)
+$$
+$$
+ f(y)=\exp(x+y)\exp(y-y)=\exp(x+y)
+$$
+Consider 
+$$
+f'(t)=epx(x+t)\exp(y-t)-\exp(x+t)\exp(y-t)=0
+$$
+So from what we know about [[Monotonic Functions|monotonic functions]] and the growth theorem, we $f(t)$ is constant, hence 
+$$
+\exp(x)\exp(y)=\exp(x+y)
+$$
+Since $f(y)=f(0)$
+For $\exp(-x)=\frac{1}{\exp(x)}$, we plug in $y=-x$
+$$
+\exp(0)=\exp(x)\exp (-x)
+$$
+$$
+\implies \exp(-x)=\frac{1}{\exp(x)}
+$$
+#### $\exp(x)>0\forall x\in\mathbb{R}$
+It is clearly true for $x>0$, for $x<0$, $\exp(x)=\frac{1}{\exp(-x)}>0$
+#### $\exp(x)$ is Monotone Increasing
+$$
+\exp'(x)=\exp(x)>0
+$$
+So strictly increasing by growth theorem
+#### Limits Tending to Infinity
+For $x>0$, $\exp(x)>1+x$ which is unbounded, so
+$$
+\lim_{ x \to \infty } \exp(x)=\infty
+$$
 ## Other bases
 For $a>0$ and $x\in\mathbb{R}$, define
 $$
