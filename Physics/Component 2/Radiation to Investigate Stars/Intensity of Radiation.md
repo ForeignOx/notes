@@ -1,4 +1,4 @@
-The intensity, $I$, of radiation is the [[Power]] per unit area incident on a surface at right angles to the radiation. The unit is $\pu{ W m-2 }$
+The intensity, $I$, of radiation is the [[Git?/Physics/Component 1/Energy Concepts/Power]] per unit area incident on a surface at right angles to the radiation. The unit is $\pu{ W m-2 }$
 We can relate the intensity of a [[Electromagnetic Radiation|radiation]] beam to the number of photons crossing an area per second. Consider a monochromatic beam, of [[Frequency]] $f$, crossing a surface. Let $N$ be the number of photons crossing the surface per second. The power in the radiation is given by:
 $$
 P=NE_\text{ph}

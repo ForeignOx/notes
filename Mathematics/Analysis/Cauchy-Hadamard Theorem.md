@@ -49,3 +49,13 @@ $$
 $$
 This is in fact the case for any ratio of polynomials in $k$ 
 It does however, effect the endpoints with drastic repurcussions
+## Corollary
+If $\sum_{k=0}^{\infty} a_{k}c^{k}$ converges for some $c\in\mathbb{R}$ then $\sum_{k=0}^{\infty} a_{k}x^{k}$ converges $\forall x\in(-\left| c \right|,\left| c \right|)$
+### Proof
+Must have $\left| c \right|\leq R$, so $(-\left| c \right|,\left| c \right|)\subseteq(-R,R)$
+## What Happens at the Endpoints
+Assume $\sum_{k=0}^{\infty} a_{k}x^{k}=f(x)$ converges at $x=R$. Is $f(x)$ left-[[Continuity|continuous]] at $x=R$; is
+$$
+\lim_{ x \to R^{-} }f(x)=f(R) 
+$$
+By Abel's Theorem, we say yes!
