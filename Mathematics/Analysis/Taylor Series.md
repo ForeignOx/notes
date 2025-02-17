@@ -85,56 +85,6 @@ f(x)=\sum_{ k=0} ^{\infty}  \frac{f^{(k)}(a)}{k!}(x-a)^{k}
 $$
 Note that the $n$th order Taylor polynomial $P_{n}(x)$ is obtained by taking the first $n+1$ terms of the Taylor series (counting terms even if they're zero)
 Note that the $k$th derivative of the Taylor Polynomial evaluated at $a$, is equal to the $k$th derivative of $f$ evaluated at $a$
-### Examples
-I can do these, but can't be bothered rn:
-$$
-e^{x}=\sum_{ k=0} ^{\infty}  \frac{1}{k!}
-$$
-$$
-\sin(x)=\sum_{ k=0} ^{\infty}  \frac{(-1)^{k}}{(2k+1)!}x^{2k+1}
-$$
-$$
-\cos(x)=\sum_{ k=0} ^{\infty}  \frac{(-1)^{k}}{(2k)!}x^{2k}
-$$
-We can calculate the Taylor series of $\sinh x=f(x)$ by noting that for any non-negative integer $k$, the $k$th derivative of $\sinh$ is $\sinh$ if $k$ is even, and is $\cosh$ if $k$ is odd, and then the same sort of thing for $\cosh$, and so for $\sinh$, $f^{(2k)}(0)=0,f^{(2k+1)}(0)=1$, so
-$$
-\sinh (x)=\sum_{ k=0} ^{\infty} \frac{1}{(2k+1)!}x^{2k+1}
-$$
-$$
-\cosh(x)=\sum_{ k=0} ^{\infty}  \frac{1}{(2k)!}x^{2k}
-$$
-This also follows directly from the Taylor series of the exponential since $\cosh$ is the [[Even Functions|even]] part and $\sinh$ is the [[Odd Functions|odd]] part of $e^{ x }$. Note that this works for any odd and even function combination
-Since $\ln (x)$ is not defined at $x=0$, it doesn't make sense at $x=0$, so instead, we usually consider the Taylor series about $x=1$
-$$
-f(x)=\ln x,f(1)=0
-
-$$
-$$
- f'(x)=\frac{1}{x},f'(1)=1
-$$
-$$
- f''(x)=-\frac{1}{x^{2}},f''(1)=-1
-
-$$
-$$
- f'''(x)=\frac{2}{x^{3}},f'''(1)=2
-$$
-$$
- f^{(4)}(1)=-6
-$$
-We see that for $k>0$, 
-$$
-f^{(k)}(x)=(-1)^{k-1} \frac{(k-1)!}{x^{k}},f^{(k)}(1)=(-1)^{k}(k-1)!
-$$
-Hence 
-$$
-\ln (x)=\sum_{ k=1} ^{\infty}  \frac{(-1)^{k-1}(k-1)!}{k!}-\sum_{ k=1} ^{\infty}  \frac{(-1)^{k-1}}{k}(x-1)^{k}
-$$
-It is common to change variables with $y=x-1$ such that
-$$
-\ln(y+1)=\sum_{ k=1} ^{\infty}  \frac{(-1)^{k}}{k}x^{k}
-$$
-One can show that in order for $\lim_{ n \to \infty }R_{n}(x)=0$ we must have $-1\leq x\leq 1$. So this Taylor series for $\ln(1+x)$ is vali only for $-1\leq x\leq 1$ (otherwise it doesn't converge)
 ### Lagrange Form of the Remainder
 There is a more convenient expression for the remainder term in Taylor's theorem. The Lagrange form of the remainder is:
 $$
@@ -197,8 +147,121 @@ $$
 \left| R_{6}(x) \right| \leq \frac{3\left| x \right| ^{7}}{7!}\leq \frac{3}{7!}
 $$
 Since $\frac{3}{7!}<0.0006$, and so we have the required result
+### Using [[Power Series|Power Series]]
+Here we have many of the same features as with general power series, we can consider:
+$$
+f(x)=\sum_{k=0}^{\infty} a_{k}(x-c)^{k} 
+$$
+And by the [[Cauchy-Hadamard Theorem|Cauchy-Hadamard theorem]], we have a radius of convergence $R>0$ around $c$, and we can termwise differentiate/integrate
+We also have the following useful equation:
+$$
+f^{(n)}(c)=k!a_{k}
+$$
+We can then also go the other way: take $f(x)$ to be a [[Smooth Fuctions|smooth]] function on an interval $I$. Then for some $c\in I$, we can construct the Taylor series:
+$$
+T_{f,c}(x)=\lim_{ n \to \infty }T^{(n)}_{f,c}(x)=   \sum_{k=0}^{\infty}  \frac{f^{(k)}(c)}{k!}(x-c)^{k} 
+$$
+Clearly a function given as a power series at $c$ is equal to its taylor series at $c$ since all the terms cancel
+Where else does $T_{f,c}(x)$ converge?
+Is $T_{f,c}(x)=f(x)$, if so, in what region? We say that a function is in fact only faithfully represented by the Taylor series, not all functions satisfy this however; ones that do are known as [[Analytic Functions|analytic]]
+The question of representability is equivalent to whether the remainder in Taylor's theorem vanishes as $n\to \infty$, since
+$$
+\left| f(x)-T^{(n)}_{f,c}(x) \right|=\text{remainder}=\left| \frac{f^{(n+1)}(\xi)}{(n+1)!}(x-c)^{n+1} \right|  
+$$
+### Examples
+I can do these, but can't be bothered rn:
+$$
+e^{x}=\sum_{ k=0} ^{\infty}  \frac{1}{k!}
+$$
+$$
+\sin(x)=\sum_{ k=0} ^{\infty}  \frac{(-1)^{k}}{(2k+1)!}x^{2k+1}
+$$
+$$
+\cos(x)=\sum_{ k=0} ^{\infty}  \frac{(-1)^{k}}{(2k)!}x^{2k}
+$$
+We can calculate the Taylor series of $\sinh x=f(x)$ by noting that for any non-negative integer $k$, the $k$th derivative of $\sinh$ is $\sinh$ if $k$ is even, and is $\cosh$ if $k$ is odd, and then the same sort of thing for $\cosh$, and so for $\sinh$, $f^{(2k)}(0)=0,f^{(2k+1)}(0)=1$, so
+$$
+\sinh (x)=\sum_{ k=0} ^{\infty} \frac{1}{(2k+1)!}x^{2k+1}
+$$
+$$
+\cosh(x)=\sum_{ k=0} ^{\infty}  \frac{1}{(2k)!}x^{2k}
+$$
+This also follows directly from the Taylor series of the exponential since $\cosh$ is the [[Even Functions|even]] part and $\sinh$ is the [[Odd Functions|odd]] part of $e^{ x }$. Note that this works for any odd and even function combination
+Since $\ln (x)$ is not defined at $x=0$, it doesn't make sense at $x=0$, so instead, we usually consider the Taylor series about $x=1$
+$$
+f(x)=\ln x,f(1)=0
+
+$$
+$$
+ f'(x)=\frac{1}{x},f'(1)=1
+$$
+$$
+ f''(x)=-\frac{1}{x^{2}},f''(1)=-1
+
+$$
+$$
+ f'''(x)=\frac{2}{x^{3}},f'''(1)=2
+$$
+$$
+ f^{(4)}(1)=-6
+$$
+We see that for $k>0$, 
+$$
+f^{(k)}(x)=(-1)^{k-1} \frac{(k-1)!}{x^{k}},f^{(k)}(1)=(-1)^{k}(k-1)!
+$$
+Hence 
+$$
+\ln (x)=\sum_{ k=1} ^{\infty}  \frac{(-1)^{k-1}(k-1)!}{k!}-\sum_{ k=1} ^{\infty}  \frac{(-1)^{k-1}}{k}(x-1)^{k}
+$$
+It is common to change variables with $y=x-1$ such that
+$$
+\ln(y+1)=\sum_{ k=1} ^{\infty}  \frac{(-1)^{k}}{k}x^{k}
+$$
+One can show that in order for $\lim_{ n \to \infty }R_{n}(x)=0$ we must have $-1\leq x\leq 1$. So this Taylor series for $\ln(1+x)$ is vali only for $-1\leq x\leq 1$ (otherwise it doesn't converge)
+___
+Consider a function
+$$
+f(x)=\begin{cases}
+e^{ -1/x^{2} }&x\neq 0\\0&x=0
+\end{cases}
+$$
+First we need to show that it is infinitely differentiable at $x=0$ with $f^{(k)}(0)=0$, we can consider
+$$
+T_{f,0}(x)=0+0x+0x^{2}+\dots=0\neq f(x)
+$$
+Only at $x=0$ this is issuous somehow
+___
+We know about the function
+$$
+\sum_{k=0}^{\infty} k!x^{k} 
+$$
+Which we know has $R=0$, but there exists a smooth function $g(x)$ such that
+$$
+g^{(k)}(0)=k!
+$$
+We can show this as the solution to the differential equation:
+$$
+(x-1)y+xy'+1=0
+$$
+To solve this, we have to divide by $x$, so will have a singularity at $\hspace{0pt}0$, which is why $R=0$
+___
+Consider $f(x)=\frac{1}{1+x^{2}}$ which is smooth on $\mathbb{R}$
+We can work out the Taylor series by differentiating a bunch of times ect. but this is dull as hell. We instead can consider it as a [[Series#Geometric Series|geometric series]]:
+$$
+\frac{1}{1+x^{2}}=\frac{1}{1-(-x^{2})}=\sum_{k=0}^{\infty} (-x^{2})^{k}=\sum_{k=0}^{\infty} (-1)^{k}x^{2k}  
+$$
+Which is the Taylor Series at $c=0$ because we can write it as a power series, and the fact that you can do this means the Taylor series works. But this doesn't represent the function everywhere; only in the radius of convergence $\left| x \right|<1$. We see that these coefficients are unique for that value of $c$, very cool. So the Taylor series represents the function not everywhere, but only "locally" $(-1,1)$
+This occurs because the function in fact has zeroes at $\pm i$ which is why it isn't working
+___
+If we consider a $f(x)=p(x)$ a polynomial of degree $N$, then $f^{(n)}(x)=0$ for all $n\geq N+1$, so the Lagrange remainder clearly vanishes, so we can say that any polynomial of degree $N$ is exacltly represented by its Taylor series
+___
+If we consider the trigonometric functions, $f(x)=\sin(x),\cos(x)$, then $f^{(k)}(x)=\pm \sin (x),\cos(x)$, so
+$$
+\left| f^{(n+1)}(\xi) \right| \leq 1
+$$
+So the Lagrange
 ### [[Limit|Limits]] using Taylor Series
-If we knwo a Taylor series is valid on some suitable open interval, then it may be useful for calculating certain limits
+If we know a Taylor series is valid on some suitable open interval, then it may be useful for calculating certain limits
 One can show that the Taylor Series for $\sin$ and $\cos$ are valid $\forall x\in\mathbb{R}$
 #### Example
 Use Taylor series to calculate $\lim_{ x \to 0 } \frac{\sin x}{x}$
