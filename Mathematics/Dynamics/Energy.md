@@ -104,6 +104,55 @@ $$
 \frac{ \partial V }{ \partial z } =y-\beta x=-x+y+\frac{d h}{dz} 
 $$
 Only if $\beta=1, h=c$ (some constant)
+## [[Newton's Second Law of Motion|Equation of Motion]]
+If you have a central force
+$$
+\underline{F}=f(r)\underline{e}_{r}
+$$
+Recall $\underline{r}=r\underline{e}_{r}$,
+$$
+\underline{v}=\underline{\dot{r}}= \dot{r}\underline{e}_{r}+r \dot{\theta}\underline{e}_{\theta}
+$$
+$$
+\implies \underline{L}=m\underline{r}\times \underline{v}=mr^{2}  \dot{\theta}\underbrace{ \underline{e}_{r}\underline{e}_{\theta} }_{ =\underline{e}_{3} }
+$$
+So
+$$
+L=mr^{2}   \dot{\theta}
+$$
+Next
+$$
+\underline{\dot{v}}=\ddot{r}=(\ddot{r}-r \dot{\theta}^{2})\underline{e}_{r}+(2\dot{r} \dot{\theta}+r \ddot{\theta})\underline{e}_{\theta}
+$$
+So equation of motion
+$$
+m  \underline{\dot{v}}-\underline{\ddot{v}}=\underline{F}=f(r)\underline{e}_{r}
+$$
+Becomes
+$$
+m(\ddot{r}-r \dot{\theta}=f(r))
+$$
+$$
+\implies 2\dot{r}\dot{\theta}+r \ddot{\theta}
+$$
+Note that
+$$
+\frac{d L}{dt} =\frac{d }{dt} (mr^{2}  \dot{\theta})=m(2r  \dot{r}  \dot{\theta}+r^{2}  \ddot{\theta})=0
+$$
+SInce $L$ is constant. So we're left with $mr^{2}  \dot{\theta}=L$ whoch is zero since $L$ is constant, So we're left with
+$$
+mr^{2}   \dot{\theta}=L
+$$
+Is constant and
+$$
+m(  \ddot{r}-r \dot{\theta}^{2})=f
+$$
+Substituting $\dot{\theta}=\frac{L}{mr^{2}}$ into the $\ddot{r}$ equation gives
+$$
+m  \ddot{r}-\frac{L^{2}}{m}=f(r)
+$$
+
+
 
 
 #Mathematics #Dynamics #Physics #Energy #Definition
