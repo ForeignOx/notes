@@ -106,5 +106,34 @@ $$
 \left< f,g \right> =\int ^{b}_{a} f(t)\overline{g(t)} \, dt 
 $$
 Defines a hermitian inner product
+## Change of [[Basis|Basis]] for Hermitian Inner Product
+Every inner product has the form
+$$
+\left< \underline{z},\underline{w} \right> =\underline{q}^{*}B  \underline{p}
+$$
+Where $\underline{p}$ is the coordinates of $\underline{z}$ in a given basis $\left\{ \underline{w}_{1},..,\underline{w}_{k} \right\}$, and $\underline{q}$ is coordinates of $\underline{w}$ in that basis, so
+$$
+B_{ij}=\left< \underline{w}_{j},\underline{w}_{i} \right>
+$$
+Is the matrix representation of $(,)$ in this basis
+So there exists $N$ which is [[Matrix Inverses|invertible]] such that
+$$
+\underline{p}=N\underline{\tilde{p}}
+$$
+$$
+ \underline{q}=M  \underline{\tilde{q}}
+$$
+Where $\underline{\tilde{p}}$ and $\underline{\tilde{q}}$ are the coordinates of $\underline{z}$ and $\underline{w}$ in the new basis
+What is the matrix representation of the same inner product in the new basis?
+$$
+\left< \underline{z},\underline{w} \right> =\underline{q}^{*}B  \underline{p}=(N  \underline{\tilde{q}})^{*}B(N  \underline{p})=\underline{\tilde{q}}^{*}(N^{*}BN)  \underline{p}
+$$
+So we can conclude that in our new basis:
+$$
+b\to \tilde{b}=N^{*}BN
+$$
+(For the matrix of a linear transformation, we instead found $A= P ^{-1}AP$, this is different)
+So a big question for [[Diagonalisation|diagonalisation]], is can we find $M$ such that $N^{*}BN$ is diagonal, and a subquestion, what if $M^{*}=M^{-1}$ 
+
 
 #Mathematics #LinAlg #Definition 

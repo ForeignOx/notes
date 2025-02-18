@@ -57,9 +57,84 @@ $\underline{u}_{0}$ is sometimes called the least-squares approximation to $\und
 Let $V=\mathbb{R}^{4}$ with [[Dot Product|dot product]], then let 
 $$
 U=\text{span}\left\{ \underline{u}_{1}=\begin{pmatrix}
-1\\1\\0\\1
+1\\1\\0\\0
 \end{pmatrix},\underline{u}_{2}=\begin{pmatrix}
 0\\1\\1\\0
 \end{pmatrix} \right\}
 $$
  
+We start by finding $U^{\bot}$, we don't need [[Gran-Schmidt Procedure|Gran-Schmidt]], for this, we just can set
+$$
+\underline{v}=\begin{pmatrix}
+a\\b\\c\\d
+\end{pmatrix}
+$$
+Then it is enough to check that
+$$
+(\underline{v},\underline{v}_{1})=(\underline{v},\underline{v}_{2})=0
+$$
+$$
+(\underline{v},\underline{v}_{1})=a+b=0
+$$
+$$
+ (\underline{v},\underline{v}_{2})=b+c=0
+$$
+So we have $a=-b=c$, and $d$ is anything, so we can set:
+$$
+\underline{v}=a\begin{pmatrix}
+1\\-1\\1\\0
+\end{pmatrix}+d\begin{pmatrix}
+0\\0\\0\\1
+\end{pmatrix}
+$$
+So
+$$
+U^{\bot}=\text{span}\left\{ \begin{pmatrix}
+1\\-1\\1\\0
+\end{pmatrix},\begin{pmatrix}
+0\\0\\0\\1
+\end{pmatrix} \right\}
+$$
+Then $V=U\oplus U^{\bot}$, so we want the point in $U$ nearest to 
+$$
+\underline{v}=\begin{pmatrix}
+1\\1\\1\\1
+\end{pmatrix}
+$$
+I.e. $P_{U}(\underline{v})$
+For this we need to use G-S on $U$, so we let
+$$
+\underline{u}_{1}=\frac{\underline{v}_{1}}{\lvert \lvert \underline{v}_{1} \rvert \rvert }=\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1\\1\\0\\0
+\end{pmatrix}
+$$
+$$
+\underline{\tilde{v}}_{2}=\underline{v}_{2}-(\underline{v}_{2},\underline{u}_{1})\underline{u}_{1}
+$$
+$$
+(\underline{v}_{2},\underline{u}_{1})=\frac{1}{\sqrt{ 2 }}
+$$
+$$
+\underline{\tilde{v}}_{2}=\frac{1}{2}\begin{pmatrix}
+-1\\1\\2\\0
+\end{pmatrix}
+$$
+$$
+\underline{v}_{2}= \frac{\underline{\tilde{v}}_{2}}{\lvert \lvert \underline{\tilde{v}}_{2} \rvert \rvert }=\frac{1}{\sqrt{ 6 }}\begin{pmatrix}
+-1\\1\\2\\0
+\end{pmatrix}
+$$
+So $U=\text{span}\left\{ \underline{u}_{1},\underline{u}_{2} \right\}$ with $(\underline{u}_{i},\underline{u}_{j})=\delta_{ij}$:
+$$
+P_{U}(\underline{v})=P_{U}\begin{pmatrix}
+1\\1\\1\\1
+\end{pmatrix}=\left( \begin{pmatrix}
+1\\1\\1\\1
+\end{pmatrix}, \underline{u}_{1} \right)\underline{u}_{1}+\left(  \begin{pmatrix}
+1\\1\\1\\1
+\end{pmatrix},\underline{u}_{2} \right)\underline{u}_{2}=\frac{1}{3}\begin{pmatrix}
+2\\4\\2\\0
+\end{pmatrix}\in U
+$$
+Note that $P_{U}(\underline{v})$ is the nearest vector to $\underline{v}$ in $U$, and it is shorter than $\underline{v}$ (by [[Pythagoras' Theorem|Pythagoras' Theorem]]), this is known as Bessel's Inequality
+

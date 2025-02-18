@@ -69,5 +69,32 @@ A=\begin{pmatrix}
 \end{pmatrix}
 $$
 This is symmetric and positive definite
-
+## Change of [[Basis|Basis]] for Inner Product
+Every inner product has the form
+$$
+(\underline{u},\underline{v})=\underline{y}^{\top}A\underline{x}
+$$
+Where $\underline{x}$ is the coordinates of $\underline{u}$ in a given basis $\left\{ \underline{v}_{1},..,\underline{v}_{k} \right\}$, and $\underline{y}$ is coordinates of $\underline{v}$ in that basis, so
+$$
+A_{ij}=(\underline{v}_{j},\underline{v}_{i})
+$$
+Is the matrix representation of $(,)$ in this basis
+So there exists $M$ which is [[Matrix Inverses|invertible]] such that
+$$
+\underline{x}=M\underline{\tilde{x}}
+$$
+$$
+ \underline{y}=M  \underline{\tilde{y}}
+$$
+Where $\underline{\tilde{x}}$ and $\underline{\tilde{y}}$ are the coordinates of $\underline{u}$ and $\underline{v}$ in the new basis
+What is the matrix representation of the same inner product in a new basis?
+$$
+(\underline{u},\underline{v})=\underline{y}^{\top}A\underline{x}=(M  \underline{\tilde{y}})^{\top}A(M  \underline{\tilde{x}})= \underline{\tilde{y}}^{\top}(M^{\top}AM)  \underline{\tilde{x}}
+$$
+So we can conclude that in our new basis:
+$$
+A\to \tilde{A}=M^{\top}AM
+$$
+(For the matrix of a linear transformation, we instead found $A= P ^{-1}AP$, this is different)
+So a big question for [[Diagonalisation|diagonalisation]], is can we find $M$ such that $M^{\top}AM$ is diagonal, and a subquestion, what if $M^{\top}=M^{-1}$ 
 #Mathematics #LinAlg #Definition 
