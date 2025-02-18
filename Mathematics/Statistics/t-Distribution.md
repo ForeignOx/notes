@@ -79,4 +79,4 @@ $$
 $$
 \implies \mathbb{P}(X<1112.35)=0.05
 $$
-    We should use this threshold instead of the (dangerous) $\hspace{0pt}1160$ and we will only be wrong 5% of the time
+We should use this threshold instead of the (dangerous) $\hspace{0pt}1160$ and we will only be wrong 5% of the time
