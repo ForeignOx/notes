@@ -82,4 +82,172 @@ These are known as Legendre Polynomials which are examples of [[Orthogonality|or
 | 2               | 6                | $1-3x^{2}$         | $\sim\sim\sim$      |            |
 | 3               | 12               | $\sim\sim\sim$     | $x-\frac{5}{3}^{3}$ |            |
 | 4               | 20               |                    | $\sim\sim\sim$      | ``         |
+___
+We can rewrite Legendre's equation using a [[Linear Differential Operators|linear differential operator]]:
+$$
+(1-x^{2})\frac{d ^{2}y}{dx^{2}} -2x\frac{d y}{dx} +\lambda y=0
+$$
+As
+$$
+\underbrace{ \left[ (x^{2}-1)\frac{d ^{2}}{dx^{2}} +2x\frac{d }{dx}  \right] }_{  =\mathcal{L}_{L}}y=\lambda y
+$$
+Since we can think of $\mathcal{L}_{L}$ as a matrix, we can write it as:
+$$
+\mathcal{L}_{L}y=\lambda y
+$$
+Which looks a lot like the form of 
+$$
+M\underline{v}=\lambda \underline{v}
+$$
+Which reminds us of [[Eigenvalues|eigenvalues]], so we in fact call $y$ that satisfies this an eigenfunction, and again $\lambda$ is the eigenvalue
+If we consider a Legendre polynomial $p_{m}(x)$ of order $m$ satisfies the equation for $\lambda=m(m+1)$:
+$$
+\mathcal{L}_{L}p_{m}(x)=m(m+1)p_{m}(x)
+$$
+So $p_{m}(x)$ is an eigenfunction of $\mathcal{L}_{L}$ with eigenvalue $m(m+1)$
+Infinite-dimensional vectorspaces are tricky things, so we make the analogy between differential operators and matrices precise by restricting, for example $y(x)\in\mathbb{R}[x]_{3}$, $y$ is a cubic polynomial. We can choose as our [[Basis|basis]] $1,x,x^{2},x^{3}$ so we can write:
+$$
+y(x)=a_{0}+a_{1}x+a_{2}x^{2}+a_{3}x^{3}
+$$
+So $y(x)$ corresponds to the [[Vectors|vector]]:
+$$
+\begin{pmatrix}
+a_{0}\\a_{1}\\a_{2}\\a_{3}
+\end{pmatrix}
+$$
+Consider the action of $\mathcal{L}_{L}$ on the basis $x^{n}$ for $n=0,\dots,3$:
+$$
+\left[ (x^{2}-1)\frac{d ^{2}}{dx^{2}}+2x\frac{d }{dx}   \right]x^{n}=(x^{2}-1)n(n-1)x^{n-2}+2xnx^{n-1}
+$$
+$$
+= n(n-1)x^{n}-n(n-1)x^{n-2}+2nx^{n}
+$$
+$$
+\mathcal{L}_{L}x^{n}=n(n+1)x^{n}-n(n-1)x^{n-2}
+$$
+So $\mathcal{L}_{L}$ never raises the power of $x$, so $\mathcal{L}_{L}$ acting on a cubic polynomial gives a cubic polynomial:
+$$
+\mathcal{L}_{L}:\mathbb{R}[x]_{3}\to \mathbb{R}[x]_{3}
+$$
+So we can represent it as the $4\times 4$ matrix $M_{L}$, we can now consider the actions on vectors to construc $M_{L}$:
+$$
+\mathcal{L}_{L}x^{0}=0
+$$
+$$
+\implies M_{L}\begin{pmatrix}
+1\\0\\0\\0
+\end{pmatrix}=\begin{pmatrix}
+0\\0\\0\\0
+\end{pmatrix}
+$$
+$$
+\mathcal{L}_{L}x^{1}=2x
+$$
+$$
+\implies M_{L}\begin{pmatrix}
+0\\1\\0\\0
+\end{pmatrix}=\begin{pmatrix}
+0\\2\\0\\0
+\end{pmatrix}
+$$
+$$
+\mathcal{L}_{L}x^{2}=6x^{2}-2
+$$
+$$
+\implies M_{L}\begin{pmatrix}
+0\\0\\1\\0
+\end{pmatrix}=\begin{pmatrix}
+-2\\0\\6\\0
+\end{pmatrix}
+$$
+$$
+\mathcal{L}_{L}x^{3}=12x^{3}-6x
+$$
+$$
+\implies M_{L}\begin{pmatrix}
+0\\0\\0\\1
+\end{pmatrix}=\begin{pmatrix}
+0\\-6\\0\\12
+\end{pmatrix}
+$$
+So
+$$
+M_{L}=\begin{pmatrix}
+0&0&-2&0\\0&2&0&-6\\0&0&6&0\\0&0&0&12
+\end{pmatrix}
+$$
+$M_{L}$ is upper triangular (as it cannot raise the power of $x$), so it has eigenvalues $0,2,6,12$
+We expect this as these are values of $m(m+1)$ for $m=0,1,2,3$
+We have the first few Legendre polynomials as:
+$$
+p_{0}(x)=1,p_{1}(x)=x,p_{2}(x)=\frac{3x^{2}-1}{2},p_{3}(x)=\frac{5x^{3}-3x}{2}
+$$
+So for example $p_{2}(x)$ corresponds to:
+$$
+M_{L}\begin{pmatrix}
+-\frac{1}{2}\\0\\ \frac{3}{2}\\0
+\end{pmatrix}=\begin{pmatrix}
+0&0&-2&0\\0&2&0&-6\\0&0&6&0\\0&0&0&12
+\end{pmatrix}\begin{pmatrix}
+-\frac{1}{2}\\0\\ \frac{3}{2}\\0
+\end{pmatrix}=\begin{pmatrix}
+-3\\0\\9\\0
+\end{pmatrix}=6\begin{pmatrix}
+-\frac{1}{2}\\0\\ \frac{3}{2}\\0
+\end{pmatrix}
+$$
+Where $6=m(m+1)$ for $m=2$
+$p_{m}$ are of order $m$ (differnt orders to each other), so they are [[Linear Independence|linearly independent]], so $p_{0},\dots p_{3}$ can forma  basis for $\mathbb{R}[x]_{3}$
+So we can write $y\in\mathbb{R}[x]_{3}$ as
+$$
+y=\sum_{n=0}^{3}b_{n}p_{n}(x)
+$$
+$$
+ y=a_{0}+a_{1}x+a_{2}x^{2}+a_{3}x^{3}=b_{0}p_{0}(x)+b_{1}p_{1}(x)+b_{2}p_{2}(x)+b_{3}p_{3}(x)
+$$
+$$
+= b_{0}+b_{1}x+b_{2}\left( \frac{3x^{2}}{2}-\frac{1}{2} \right)+b_{3}\left( \frac{5x^{3}}{2}-\frac{3x}{2} \right)
+$$
+So
+$$
+a_{0}=b_{0}-\frac{b_{2}}{2}
+$$
+$$
+a_{1}=b_{1}-\frac{3b_{3}}{2}
+$$
+$$
+ a_{2}=\frac{3b_{2}}{2}
+$$
+$$
+ a_{3}=\frac{5b_{3}}{2}
+$$
+So
+$$
+\begin{pmatrix}
+a_{0}\\a_{1}\\a_{2}\\a_{3}
+\end{pmatrix}=N\begin{pmatrix}
+b_{0}\\b_{1}\\b_{2}\\b_{3}
+\end{pmatrix}=\begin{pmatrix}
+1&0&-\frac{1}{2}&0\\0&1&0& -\frac{3}{2}\\0&0& \frac{3}{2}&0\\0&0&0& \frac{5}{2}
+\end{pmatrix}\begin{pmatrix}
+b_{0}\\b_{1}\\b_{2}\\b_{3}
+\end{pmatrix}
+$$
+So in Legendre polynomial basis,
+$$
+\mathcal{L}_{L}y=\mathcal{L}_{L}\sum_{n=0}^{3}b_{n}p_{n}(x)=\sum_{n=0}^{3}b_{n}\mathcal{L}_{L}p_{n}(x)=\sum_{n=0}^{3}n(n+1)b_{n}p_{n}(x)
+$$
+So we can represent $\mathcal{L}_{L}$ as a [[Diagonalisation|diagonal]] matrix:
+$$
+\begin{pmatrix}
+0&0&0&0\\0&2&0&0\\0&0&6&0\\0&0&0&12
+\end{pmatrix}=N^{-1}M_{L}N
+$$
+This in fact works for any $n$th order polynomial:
+- can represent $\mathcal{L}_{L}$ as a $n+1\times n+1$ matrix
+- eigenvalues would be $m(m+1)$ for $m=0,\dots,n$
+- eigenfunctions would correspond to $p_{m}(x)$ for $m=0,\dots,m$
+- could write $y(x)\in\mathbb{R}[x]_{n}$ as $y(x)=\sum_{n=0}^{n}b_{n}p_{n}(x)$
+- in this basis, $\mathcal{L}_{L}$ would be diagonal
+In fact we can expand this to any suitable non-polynomial functions by considering [[Power Series|power series]] and write $y(x)=\sum_{n=0}^{\infty} b_{n}p_{n}(x)$
 

@@ -20,12 +20,3 @@ As
 $$
 \underbrace{ \left[ (x^{2}-1)\frac{d ^{2}}{dx^{2}} +2x\frac{d }{dx}  \right] }_{  =\mathcal{L}_{L}}y=\lambda y
 $$
-Since we can think of $\mathcal{L}_{L}$ as a matrix, we can write it as:
-$$
-\mathcal{L}_{L}y=\lambda y
-$$
-Which looks a lot like the form of 
-$$
-M\underline{v}=\lambda \underline{v}
-$$
-Which reminds us of [[Eigenvalues|eigenvalues]], so we in fact call $y$ that satisfies this an eigenfunction, and again $\lambda$ is the eigenvalue
