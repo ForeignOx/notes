@@ -1,6 +1,6 @@
 A point $x_{0}$ is called a regular point of a [[Linear Ordinary Differential Equations|linear ODE]] if the functions $p_{1}(x),\dots,p_{n}(x)$ are [[Analytic Functions|analytic]] at $x_{0}$
 If a point is not regular, it is singular
-## [[Second Order Differential Equations|Second Order ODEs]]
+## [[Second Order Ordinary Differential Equations]]
 For 
 $$
 y''+p(x)y'+q(x)y=0

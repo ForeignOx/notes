@@ -10,7 +10,7 @@ So in general, force can depend on time, [[Position|position]], or even [[veloci
 $$
 F=F(t,x,\dot{x})=m\ddot{x}
 $$
-This is a [[Second Order Differential Equations|second order differential equation]] which cannot be solved explicitly in general, but we tend to focus on special cases which can be solved
+This is a [[Second Order Ordinary Differential Equations|second order differential equation]] which cannot be solved explicitly in general, but we tend to focus on special cases which can be solved
 ___
 ## Constant Force
 The simplest example is if the force is constant, which arises in many cases, for example, vertical motion under [[Gravitational Force|gravity]] close to the surface of a planet. In this case, the magnitude of $F$ is $\left| F \right|=mg$

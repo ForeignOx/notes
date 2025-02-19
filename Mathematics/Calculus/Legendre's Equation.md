@@ -1,4 +1,4 @@
-Legendre's Equation is a [[Second Order Differential Equations|second order]] [[Linear Ordinary Differential Equations|linear ordinary]] [[Differential Equations|differential equation]] of the form:
+Legendre's Equation is a [[Second Order Ordinary Differential Equations|second order]] [[Linear Ordinary Differential Equations|linear ordinary]] [[Differential Equations|differential equation]] of the form:
 $$
 (1-x^{2})\frac{d ^{2}y}{dx^{2}} -2x\frac{d y}{dx} +\lambda y=0
 $$
