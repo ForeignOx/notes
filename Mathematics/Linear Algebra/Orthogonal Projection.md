@@ -5,7 +5,7 @@ $$
 With $\underline{u}\in U,\tilde{\underline{u}}\in U^{\bot}$
 We call $\underline{u}$ the orthogonal projection of $\underline{v}$ onto the subspace $U$, and we write this as $P_{U}(\underline{v})$
 ## Proof
-Apply [[Gran-Schmidt Procedure|Gran-Schmidt]], to $U$, so
+Apply [[Gram-Schmidt Procedure|Gran-Schmidt]], to $U$, so
 $$
 U=\text{span}\left\{ \underline{u}_{1},\dots,\underline{u}_{k} \right\}
 $$
@@ -63,7 +63,7 @@ U=\text{span}\left\{ \underline{u}_{1}=\begin{pmatrix}
 \end{pmatrix} \right\}
 $$
  
-We start by finding $U^{\bot}$, we don't need [[Gran-Schmidt Procedure|Gran-Schmidt]], for this, we just can set
+We start by finding $U^{\bot}$, we don't need [[Gram-Schmidt Procedure|Gran-Schmidt]], for this, we just can set
 $$
 \underline{v}=\begin{pmatrix}
 a\\b\\c\\d

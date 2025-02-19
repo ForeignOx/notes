@@ -1,5 +1,5 @@
 Given $\left\{ V,(,) \right\}$ being an [[Inner Product|inner product]] [[Inner Product Spaces|space]], and $U=\text{span}\left\{ \underline{v}_{1},\dots \underline{v}_{k} \right\}\subseteq V$, a [[Subspaces|subspace]] of [[Vectorspaces|$V$]], can we find an [[Orthonormal Vectors|orthonormal]] [[Basis|basis]] for $U$?
-I.e. we can say $U=\text{span}\left\{ \underline{v}_{1},\dots,\underline{v}_{k} \right\}$ with $(\underline{v}_{i},\underline{v}_{j})=\delta_{ij}\forall i,j=1,\dots,k$
+I.e. we can say $U=\text{span}\left\{ \underline{v}_{1},\dots,\underline{v}_{k} \right\}$ with $(\underline{v}_{i},\underline{v}_{j})=\delta_{ij}\forall i,j=1,\dots,k$ 
 ## Method
 What we've got is 
 $$
