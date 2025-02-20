@@ -168,6 +168,77 @@ The question of representability is equivalent to whether the remainder in Taylo
 $$
 \left| f(x)-T^{(n)}_{f,c}(x) \right|=\text{remainder}=\left| \frac{f^{(n+1)}(\xi)}{(n+1)!}(x-c)^{n+1} \right|  
 $$
+#### Proposition
+Assume $f(x)=\sum_{k=0}^{\infty} a_{k}x^{k}$, is given by a power series converging in $(-R,R)$, Let $c\in(-R,R)$, then $T_{f,c}(x)$ converges with radius of convergence:
+$$
+\left| \left| c \right| -R \right| 
+$$
+And is equal to $f(x)$
+##### Proof 
+Skipped, wait till next year :(
+##### Examples
+Consider $e^{ x }=f(x)$, consider the Lagrange Remainder:
+$$
+\left| R_{n}(x) \right| =\left| \frac{e^{ \xi }}{(n+1)!}(x-c)^{n+1} \right| \leq \frac{e^{ y }\left| (x-c) \right|^{n+1} }{(n+1)!}
+$$
+Where $y=\text{max}\left\{ \left| x \right|,\left| c \right| \right\}$, which we can show converges to $\hspace{0pt}0$ as $n\to \infty$
+___
+$$
+f(x)=\frac{1}{1-x}=\sum_{k=0}^{\infty} x^{k} 
+$$
+$$
+\frac{1}{1-x}=\frac{1}{(1-c)-(x-c)}=\frac{\frac{1}{1-c}}{1-\frac{x-c}{1-c}}
+$$
+$$
+= \frac{1}{1-c}\sum_{k=0}^{\infty}  \left( \frac{x-c}{1-c}  \right)^{k}=\sum_{k=0}^{\infty} \left( \frac{1}{1-c} \right)^{k+1}(x-c)^{k} 
+$$
+This is valid if $\left| \frac{x-c}{1-c} \right|<1\iff \left| x-c \right|<\left| 1-c \right|$, where $\left| x-c \right|$ is the distance from $x$ to $c$, and $\left| 1-c \right|$ is the distance from $\hspace{0pt}1$ to $c$:
+![[Taylor Series 2025-02-20 11.27.03.excalidraw]]
+___
+$f(x)=e^{ x^{2} }$, we simply substitute $x=x^{2}$ into the Taylor series for $e^{ x }$,
+$$
+e^{ x^{2} }=\sum_{k=0}^{\infty} \frac{(x^{2})^{k}}{k!}=\sum_{k=0}^{\infty} \frac{x^{2k}}{k!}  
+$$
+___
+$f(x)=\frac{\sin x}{x}$, we can do like so:
+$$
+\frac{\sin(x)}{x}=\frac{1}{x}\sum_{k=0}^{\infty} \frac{(-1)^{k}x^{2k+1}}{(2k+1)!}=\sum_{k=0}^{\infty} \frac{(-1)^{k}x^{2k}}{(2k+1)!}  
+$$
+___
+$f(x)=\ln(1+x)$
+Recall
+$$
+\frac{1}{1+x}=\frac{1}{1-(-x)}=\sum_{k=0}^{\infty} (-1)^{k}x^{k} 
+$$
+Which is true for $\left| x \right|<1$, but we also have
+$$
+\frac{d }{dx} \ln(1+x)=\frac{1}{1+x}
+$$
+So we can take the antiderivative termwise:
+$$
+\ln(1+x)=\sum_{k=0}^{\infty} \frac{(-1)^{k}}{k+1}x^{k+1}+c 
+$$
+With $c=\log(1+0)=0$, so in conclusion
+$$
+\ln(1+x)=\sum_{k=1}^{\infty} \frac{(-1)^{k+1}}{k}x^{k} 
+$$
+Which holds for $\left| x \right|<1$
+This is easier to compute than doing with Lagrange remainder, this also holds for negative $x$, but does not work for $x=1$, whereas the Lagrange remainder does, giving us
+$$
+\ln(2)=\sum_{k=1}^{\infty} \frac{(-1)^{k+1}}{k} 
+$$
+This converges really slowly, so kinda sucks for anything except being pretty, but we can instead do:
+$$
+\ln\left( \frac{1}{2} \right)=-\ln(2)=\sum_{k=1}^{\infty} \frac{(-1)^{k+1}}{k}\left( \frac{1}{2} \right)^{k}=\frac{1}{2}+\frac{1}{2} \frac{1}{4}-\frac{1}{3} \frac{1}{8}+ \frac{1}{4}  \frac{1}{16}+\dots
+$$
+Which is better, but not by much. It is better to consider with $x=\frac{1}{3}$
+$$
+\ln(1+x)-\ln(1-x)=\ln\left( \frac{1+x}{1-x} \right)=\ln\left(  \frac{\frac{4}{3}}{\frac{2}{3}} \right)=\ln(2)
+$$
+This is better since $x$ is smaller, so converges faster. ``
+
+
+
 ### Examples
 I can do these, but can't be bothered rn:
 $$
