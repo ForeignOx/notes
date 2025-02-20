@@ -30,4 +30,4 @@ Then we can contruct a $(1-2\alpha)$ confidence interval for $\theta$, and then 
 ## Example
 For cuckoo egg data, we had a $95\%$ confidence interval for $\mu$ (mean egg length) $[22.36,22.78]$
 This would suggest evidence against $\mu=22$ as it is not inside the interval
-We can perform hypothesis testing by checking whether a proposed value of $\mu$ lies inside the confidence interval 
+We can perform hypothesis testing by checking whether a proposed value of $\mu$ lies inside the confidence intervalhny
