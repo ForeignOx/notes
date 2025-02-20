@@ -249,5 +249,8 @@ This in fact works for any $n$th order polynomial:
 - eigenfunctions would correspond to $p_{m}(x)$ for $m=0,\dots,m$
 - could write $y(x)\in\mathbb{R}[x]_{n}$ as $y(x)=\sum_{n=0}^{n}b_{n}p_{n}(x)$
 - in this basis, $\mathcal{L}_{L}$ would be diagonal
-In fact we can expand this to any suitable non-polynomial functions by considering [[Power Series|power series]] and write $y(x)=\sum_{n=0}^{\infty} b_{n}p_{n}(x)$
-
+In fact we can expand this to any suitable non-polynomial functions by considering [[Power Series|power series]] and write 
+$$
+y(x)=\sum_{k=0}^{\infty} b_{k}p_{k}(x) 
+$$
+Which is an $n$th order Legendre polynomial

@@ -14,7 +14,7 @@ d&-c\\-b&a
 d&-b\\-c&a
 \end{pmatrix}
 $$
-This looks suspiciously like the [[Matrix Inverses]] of a matrix....
+This looks suspiciously like the [[Matrix Inverses|inverse]] of a matrix....
 ## Proposition
 Suppose $A\in M_{n}(\mathbb{R})$, then:
 $$
