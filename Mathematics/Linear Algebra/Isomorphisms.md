@@ -181,7 +181,7 @@ $$
 Since $\phi$ is onto, $\text{im}(\psi \circ T\circ \phi)=\text{im}(\psi \circ T)=\psi(\text{im}(T))$, but since $\psi$ is an isomorphism, it has the same dimension as $\text{im}(T)$, so since it is injective, by this [[Linear Maps#Corollary|this corollary]], it is equal
 $\psi$ is 1$\hspace{0pt}-1$ so $\text{ker}(\psi \circ T\circ \phi)=\text{ker}(T\circ \phi)$, but $\text{ker}(T \circ \phi)=\phi ^{-1}(\text{ker}(T))$ which has the same dimnsion as $\text{ker}(T)$ by the corollary again
 ## Group Theory
-Two [[Group|groups]] are isomorphic ($G_{1} \cong G_{2}$) if there is a one-to-one mapping (isomorphism) that preserves the structure of the group
+Two [[Groups|groups]] are isomorphic ($G_{1} \cong G_{2}$) if there is a one-to-one mapping (isomorphism) that preserves the structure of the group
 Two isomorphic groups are either both finite and of the same order or both infinite
 Two isomorphic groups are either both [[Abelian Groups|abelian]] or both non-abelian
 The identity elements of isomorphic groups are mapped to each other by the isomorphism

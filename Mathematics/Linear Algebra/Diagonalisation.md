@@ -131,7 +131,7 @@ p\leq\dim(V_{\lambda_{1}})+\dim(V_{\lambda_{2}})+\dots+\dim(V_{\lambda_{p}})\leq
 $$
 So for $A$ to be diagonalisable we need $N$ linearly independent eigenvectors which is only possible if $\dim(V_{\lambda_{i}})=p_{i}=k_{i}\forall i=1,\dots ,p$ 
 ## $A$ is Diagonalisable if Geometric Multiplicity is equal to Algebraic Multiplicity
-
+some nonsense here maychance?
 
 ## Example
 Consider a Predator-Prey model in discrete time. Let $x_{n}$ be the number of owls at the end of year $n$ and $y_{n}$ be the number of mice at the end of year $n$. Owls are predators, mice are prey
@@ -434,7 +434,76 @@ $$
 $$
 \implies x(t)=2c_{1}e^{ t }+c_{2}e^{ 3t },y(t)=c_{1}e^{ t }+c_{2}e^{ 3t }
 $$
-
+## Orthogonal Diagonalisation
+We say that $A$ is orthogonally diagonalisable if $\exists M\in O(n):M^{\top}AM=D$ where $D$ is a diagonal matrix
+### Proposition
+Suppose $A$ is real symmetric, $A=A^{\top}$, then the eigenvalues of $A$ are real
+#### Proof like below
+yay
+## Unitary Diagonalisation
+We say that $B$ is unitarily diagonalisable if $\exists P\in U(n):P^{*}AP=D$, where $D$ is a diagonal matrix
+### Proposition
+Suppose $A$ is complex hermitian, $A=A^{*}$, then the eigenvalues of $A$ are real
+#### Proof
+Suppose $A\underline{x}=\lambda \underline{x}$ for some $\underline{x}\neq 0$, then 
+$$
+\underline{x}^{*}A\underline{x}=\lambda \underline{x}^{*}\underline{x}
+$$
+Since $\underline{x}^{*}\underline{x}=\left< \underline{x},\underline{x} \right>$, we then take "$*$" of both sides:
+$$
+\underline{x}^{*}A^{*}\underline{x}=\overline{\lambda}\underline{x}^{*}\underline{x}
+$$
+$$
+\implies \underline{x}^{*}A\underline{x}=\overline{\lambda}\underline{x}^{*}\underline{x}
+$$
+Since $A=A^{*}$
+$$
+\implies \lambda \underline{x}^{*}\underline{x}=\overline{\lambda}\underline{x}^{*}\underline{x}
+$$
+$$
+\implies \lambda=\overline{\lambda}\implies \lambda \in \mathbb{R}
+$$
+If $A$ is real symmetric, then the eigenvectors can be taken to be real as well since they solve $(A-\lambda I)\underline{v}=\underline{0}$
+### Proposition
+Let $A$ be complex hermitian, then the eigenvectors of $A$ corresponding to different eigenvalues are [[Mutually Orthogonal Vectors|mutually orthogonal]] using the [[Dot Product|standard]] [[Hermitian Inner Product|inner produc]] on $\mathbb{C}^{n}$
+#### Proof
+Suppose the eigenvalues are $\lambda$ and $\mu$, both are in $\mathbb{R}$, from above proof, then
+$$
+A\underline{x}=\lambda \underline{x},\underline{x}\neq 0
+$$
+$$
+ A\underline{y}=\mu \underline{y},\underline{y}\neq 0
+$$
+So
+$$
+\underline{x}^{*}A\underline{y}=\mu \underline{x}^{*}\underline{y}
+$$
+$$
+ \underline{y}^{*}A\underline{x}=\lambda \underline{y}^{*}\underline{x}
+$$
+By taking "$*$ of both sides we get:
+$$
+\underline{x}^{*}A^{*}\underline{y}=\overline{\lambda}\underline{x}^{*}\underline{y}
+$$
+Since $A=A^{*},\lambda \in\mathbb{R}$
+$$
+\implies \underline{x}^{*}A\underline{y}=\lambda \underline{x}^{*}\underline{y}
+$$
+Combined with the equation for $\mu$, we have
+$$
+\lambda \underline{x}\underline{y}^{*}=\mu \underline{x}^{*}\underline{y}
+$$
+$$
+\implies (\lambda-\mu)\underline{x}^{*}\underline{y}=0
+$$
+$$
+\implies x^{*}\underline{y}=0
+$$
+Since $\lambda \neq \mu$, so $\underline{x}\bot\underline{y}$
+So if all eigenvalues of $A$ are different, have $n$ orthogonal eigenvectors, so we can diagonalise $A$ with a unitary matrix $P$ (after rescaling eigenvectors to unit length)
+### Proposition
+If $A$ is complex hermitian, then $\exists P \in U(n):P^{*}AP=D$ where $D$ is a diagonal (real) matrix
+In each case, the columns of $P$ are an [[Orthonormal Vectors|orthonormal]] basis
 
 
 
