@@ -235,8 +235,7 @@ Which is better, but not by much. It is better to consider with $x=\frac{1}{3}$
 $$
 \ln(1+x)-\ln(1-x)=\ln\left( \frac{1+x}{1-x} \right)=\ln\left(  \frac{\frac{4}{3}}{\frac{2}{3}} \right)=\ln(2)
 $$
-This is better since $x$ is smaller, so converges faster. ``
-
+This is better since $x$ is smaller, so converges faster. 
 
 
 ### Examples
