@@ -64,3 +64,32 @@ $$
 $$
 And $\mu$ is to the left of this interval, so we reject $H_{0}$ at the $5\%$ level of significance
 ___
+
+
+
+## Errors in Hypothesis Testing
+We can make two kinds of mistakes in hypothesis testing:
+
+|                        | $H_{0}$ True     | $H_{0}$ False    |
+| ---------------------- | ---------------- | ---------------- |
+| Fail to reject $H_{0}$ | Correct Decision | Type II error    |
+| Reject $H_{0}$         | Type I error     | Correct Decision |
+
+We have significance level $\alpha$ given by:
+$$
+\alpha=\mathbb{P}(\text{type I error}|H_{0})
+$$
+So a low significance level is desirable
+We also have something called the power of the test, $\beta$:
+$$
+\beta=1-\mathbb{P}(\text{type II error}|H_{a} )
+$$
+High power is desirable 
+Our aim is to design a test to have high power and low significance level
+![[Hypothesis Testing 2025-02-21 14.45.09.excalidraw]]
+## Dangers of Hypothesis Testing
+Why should we fail to reject $H_{0}$ at a $p$-value of $5.00000001\%$ and rejecting at $5\%$, surely some sort of scale would be more reasonable
+We always want to explore the data first
+## Are Hypothesis Tests Meaningful?
+We reject $H_{0}$ if $p$-value ois small, and the $p$-value is the probability the thing we're testing is at least as extreme as the one observed given the hypothesis was true.
+Really, we should calculate the probability that $H_{0}$ is true given the sample mean

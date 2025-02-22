@@ -4,5 +4,19 @@ $$
 W=Fx=max=m\frac{1}{2}(v^{2}-u^{2})
 $$
 (for a constant acceleration)
+## Rotational Motion
+$$
+K=\frac{1}{2}m  \underline{\dot{r}}\cdot\underline{\dot{r}}=\frac{1}{2}m(\dot{r}^{2}+r^{2}\dot{\theta}^{2})
+$$
+Since $\underline{\dot{r}}=\dot{r}\underline{e}_{r}+r\dot{\theta}\underline{e}_{\theta}$
+We can use the [[Angular Momentum|angular momentum]] to write:
+$$
+\dot{\theta}=\frac{L}{mr^{2}}
+$$
+To say
+$$
+K=\frac{1}{2}m\left( \dot{r}^{2}+\frac{L^{2}}{m^{2}r^{2}} \right)
+$$
+
 
 #Physics #Energy #Definition #Equation 

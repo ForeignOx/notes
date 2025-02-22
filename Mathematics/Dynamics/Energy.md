@@ -149,9 +149,83 @@ m(  \ddot{r}-r \dot{\theta}^{2})=f
 $$
 Substituting $\dot{\theta}=\frac{L}{mr^{2}}$ into the $\ddot{r}$ equation gives
 $$
-m  \ddot{r}-\frac{L^{2}}{m}=f(r)
+m  \ddot{r}-\frac{L^{2}}{mr^{3}}=f(r)
 $$
-
+___
+We can show that the kinetic energy is equal to
+$$
+K=\frac{1}{2}m(\dot{r}^{2}+r^{2}\dot{\theta}^{2})=\frac{1}{2}m\left( \dot{r}^{2}+\frac{L^{2}}{m^{2}r^{2}} \right)
+$$
+And we can guess that the potential energy is given by
+$$
+V(r)=-\int f(r) \, dr 
+$$
+We justify this by proving that $\frac{d E}{dt}=0$, where $E=K+V$
+$$
+ \frac{d E}{dt} =\frac{d K}{dt}+\frac{d V}{dt} =\frac{d }{dt}\left( \frac{1}{2}m\left( \dot{r}^{2}+\frac{L^{2}}{m^{2}r^{2}} \right) \right)-\frac{d }{dt} \int f(r) \, dr   
+$$
+$$
+= m  \dot{r} \ddot{r} -\frac{L^{2}   \dot{r}}{mr^{3}}-f  \dot{r}
+$$
+By applying the [[Chain Rule|chain rule]] several times
+$$
+=\dot{r}\left( m  \ddot{r}-\frac{L^{2}}{mr^{3}}-f(r) \right)=0
+$$
+Since the central part is the equation of motion
+### Example
+A unit mass particle moves in an attractive central force of magnitude $\frac{8}{r^{3}}$. Initial conditions: $\underline{r}(0)=2\underline{e}_{r}$ and $\underline{\dot{r}}(0)=\frac{1}{2}\underline{e}_{r}+\underline{e}_{\theta}$. Using conservation of $E$, obtain an equation for $\dot{r}$ as a function of $r$, and solve :) good luck!!
+Here $m=1$, we want $L$, at time 0:
+$$
+\underline{L}=\underline{r}\times \underline{\dot{r}}=2\underline{e}_{3}
+$$
+So $L=2$.
+We know
+$$
+\left| f \right| =\left| \underline{F} \right| =\frac{8}{r^{3}}
+$$
+$$
+\implies f(r)=-\frac{8}{r^{3}}
+$$
+Since it is attractive
+$$
+\implies V(r)=-\frac{4}{r^{2}}
+$$
+Thus
+$$
+E=\frac{1}{2}  \dot{r}^{2} +\frac{2}{r^{2}}-\frac{4}{r^{2}}=\frac{1}{2}\dot{r}^{2}-\frac{2}{r^{2}}
+$$
+Which is constant, since energy is conserved. By evaluating at $t=0$, we get $\dot{r}(0)=\frac{1}{2},r(0)=2$
+$$
+E=\frac{1}{8}-\frac{1}{2}=-\frac{3}{8}
+$$
+We can rearrange the equation of kinetic energy for orther $t$:
+$$
+\dot{r}^{2}=\frac{4}{r^{2}}-\frac{3}{4}
+$$
+Since $\dot{r}^{2}\geq 0$, we have
+$$
+\frac{4}{r^{2}}\geq \frac{3}{4}
+$$
+$$
+\implies r\leq \frac{4}{\sqrt{ 3 }}
+$$
+So the trajectory is bounded: $r(t)\leq \frac{4}{\sqrt{ 3 }}$. We solve the equation:
+$$
+\frac{d r}{dt} =\dot{r}=\frac{\sqrt{ 16-3r^{2} }}{2r}
+$$
+We take the positive square root, since $\dot{r}(0)=\frac{1}{2}>0$, so $\dot{r}>0\forall r$
+$$
+\implies \int \frac{2r}{\sqrt{ 16-3r^{2} }} \, dr =\int  \, dt 
+$$
+$$
+\implies r(t)=\sqrt{ 4+2t-\frac{3}{4}t^{2} }
+$$
+![[Energy 2025-02-21 16.42.16.excalidraw]]
+The solution is valid for $0\leq t\leq 4$, to get $\theta(t)$, simply integrate
+$$
+\frac{d \theta}{dt}=\dot{\theta}=\frac{2}{r^{2}}=\frac{2}{4+2t-\frac{3}{4}t^{2}}
+$$
+The path will be a kind of spiral... 
 
 
 
