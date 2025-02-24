@@ -42,7 +42,7 @@ Hence we have $\underline{v}(t)$. We then integrate to get $\underline{r}(t)$.
 ## Example
 Take $\underline{u}=u(\cos \theta)\underline{e}_{1}+u(\sin\theta)\underline{e}_{3}$, no air resistance:
 ![[Projectiles 2025-02-12 11.31.44.excalidraw]]
-Compute rnage $R$: we have:
+Compute range $R$: we have:
 $$
 x(t)=ut(\cos \theta)
 $$
