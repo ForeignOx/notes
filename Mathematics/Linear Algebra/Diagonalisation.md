@@ -440,6 +440,107 @@ We say that $A$ is orthogonally diagonalisable if $\exists M\in O(n):M^{\top}AM=
 Suppose $A$ is real symmetric, $A=A^{\top}$, then the eigenvalues of $A$ are real
 #### Proof like below
 yay
+### Proposition
+If $A$ is orthogonally diagonalisable, then $A$ is symmetric
+#### Proof
+If $P^{\top}AP=D$ with $D$ diagonal, $P$ orthogonal, then $A=PDP^{\top}$ which is clearly symmetric
+### Example
+If possible, find $P \in O(2)$ such that $P^{\top}AP=D$ where $D$ is diagonal and 
+$$
+A=\begin{pmatrix}
+2&-2\\-2&5
+\end{pmatrix}
+$$
+This is possible, since $A=A^{\top}$
+$$
+p_{A}(t)=\det(A-tI)=\det \begin{pmatrix}
+2-t&-2\\-2&5-t
+\end{pmatrix}=(2-t)(5-t)-4=t^{2}-7t+6=(t-1)(t-6)
+$$
+So we have eigenvalues $\lambda_{1}=1,\lambda_{2}=6$, now we find the eigenvectors
+Starting with $\lambda_{1}$:
+$$
+(A-I)\begin{pmatrix}
+a\\b
+\end{pmatrix}=\begin{pmatrix}
+1&-2\\-2&4
+\end{pmatrix}\begin{pmatrix}
+a\\b
+\end{pmatrix}=\begin{pmatrix}
+0\\0
+\end{pmatrix}
+$$
+$$
+\implies \underline{v}_{1}=\begin{pmatrix}
+2\\1
+\end{pmatrix}
+$$
+$$
+\lvert \lvert \underline{v}_{1} \rvert \rvert ^{2}=5
+$$
+$$
+\implies \underline{u}_{1}= \frac{\underline{v}_{1}}{\lvert \lvert \underline{v}_{1} \rvert \rvert }=\frac{1}{\sqrt{ 5 }}\begin{pmatrix}
+2\\1
+\end{pmatrix}
+$$
+Now
+$$
+U_{1}=\text{span}\left\{ \frac{1}{\sqrt{ 5 }}\begin{pmatrix}
+2\\1
+\end{pmatrix} \right\}
+$$
+$$
+\implies U_{1}^{\bot}:\underline{u}_{1}\cdot \begin{pmatrix}
+a\\b
+\end{pmatrix}=\begin{pmatrix}
+0\\0
+\end{pmatrix}
+$$
+$$
+\implies 2a+b=0
+$$
+So
+$$
+U_{1}^{\bot}=\text{span}\left\{ \begin{pmatrix}
+1\\-2
+\end{pmatrix} \right\}
+$$
+So take
+$$
+\underline{u}_{2}=\frac{1}{\sqrt{ 5 }}\begin{pmatrix}
+1\\-2
+\end{pmatrix}
+$$
+We can do a sanity chack to see if $\underline{u}_{2}$ is in fact an eigenvector for $\lambda_{2}=6$:
+$$
+A\underline{u}_{2}=\frac{1}{\sqrt{ 5 }}\begin{pmatrix}
+2&-2\\-2&5
+\end{pmatrix}\begin{pmatrix}
+1\\-2
+\end{pmatrix}=\frac{1}{\sqrt{ 5 }}\begin{pmatrix}
+6\\-12
+\end{pmatrix}=6\underline{u}_{2}
+$$
+Which is what we wanted (we could have instead just done it normally, but this is cooler)
+So
+$$
+P=\begin{pmatrix}
+\underline{u}_{1}&\underline{u}_{2}
+\end{pmatrix}=\frac{1}{\sqrt{ 5 }}\begin{pmatrix}
+2&1\\1&-2
+\end{pmatrix}
+$$
+$P$ is equal to its transpose, but this is a fluke, we can then check:
+$$
+P^{\top}P=\frac{1}{5}  \begin{pmatrix}
+2&1\\1&-2
+\end{pmatrix} \begin{pmatrix}
+2&1\\1&-2
+\end{pmatrix}=\begin{pmatrix}
+1&0\\0&1
+\end{pmatrix}
+$$
+Which is cool :)
 ## Unitary Diagonalisation
 We say that $B$ is unitarily diagonalisable if $\exists P\in U(n):P^{*}AP=D$, where $D$ is a diagonal matrix
 ### Proposition
@@ -504,7 +605,41 @@ So if all eigenvalues of $A$ are different, have $n$ orthogonal eigenvectors, so
 ### Proposition
 If $A$ is complex hermitian, then $\exists P \in U(n):P^{*}AP=D$ where $D$ is a diagonal (real) matrix
 In each case, the columns of $P$ are an [[Orthonormal Vectors|orthonormal]] basis
-
+#### Proof
+Pick an eigenvalue $\lambda_{1}$ and associated unit eigenvector $\underline{u}_{1}:A\underline{u}_{1}=\lambda_{1}\underline{u}_{1}$, and write
+$$
+U_{1}=\text{span}\left\{ \underline{u}_{1} \right\}
+$$
+And construct the [[Orthogonal Complement|orthogonal complement]] $U_{1}^{\bot}$ using the [[Dot Product|standard inner product]] on $\mathbb{C}^{n}$, then we know from the [[Sums and Intersections of Vectorspaces#Direct Sums|direct sum]] that:
+$$
+\mathbb{C}^{n}=U_{1}\oplus U_{1}^{\bot}
+$$
+Now note that $A$ acting on any $\underline{v}\in U_{1}^{\bot}$ gives another element of $U_{1}^{\bot}$ since:
+$$
+\left< A\underline{v},\underline{u}_{1} \right> = \underline{u}_{1}^{*}A\underline{v}=(A\underline{u}_{1})^{*}\underline{v}
+$$
+Using $A=A^{*}$
+$$
+=(\lambda_{1}\underline{u}_{1})^{*}\underline{v}=\overline{\lambda}_{1}\underline{u}_{1}^{*}\underline{v}=\overline{\lambda}_{1}\left< \underline{u}_{1},\underline{v} \right> =0
+$$
+Since $\underline{v}\in U^{\bot}$, hence $A\underline{v}\in U_{1}^{\bot}$
+So we can talk about the restriction of $A$ to $U_{1}^{\bot}$, denoted 
+$$
+A|_{U_{1}^{\bot}}:U_{1}^{\bot}\to U_{1}^{\bot}
+$$
+This is a Hermitian operator operating on $U_{1}^{\bot}\cong\mathbb{C}^{n-1}$ (one dimension less)
+Now we repeat, so we pick $\underline{u}_{1}\in U_{1}^{\bot}$ with $A\underline{u}_{2}=\lambda_{2}\underline{u}_{2}$, set $U_{2}=\text{span}\left\{ \underline{u}_{2} \right\}$, and $U_{1}=U_{2}\oplus U_{2}^{\bot}$ and so on
+In th end, we get to
+$$
+\mathbb{C}^{n}=U_{1}\oplus U_{2}\oplus\dots \oplus U_{n}
+$$
+Where each $U_{i}=\text{span}\left\{ \underline{u}_{i} \right\}$ where all $\underline{u}_{i}$'s are orthogonal and unit length, which is what we wanted
+___
+It works the other way too:
+### Proposition
+If $A$ is unitarily diagonalisable, then $A$ is hermitian
+#### Proof
+If $P^{*}AP=D$ with $D$ diagonal, $P$ orthogonal, then $A=PDP^{*}$ which is true iff the eigenvalues of $D$ are all real, which thankfully is the case
 
 
 
