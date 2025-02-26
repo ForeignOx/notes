@@ -105,7 +105,7 @@ $$
 So $\mathcal{L}_{L}$ is self-adjoint with that inner product
 So the eigenfunctions of $\mathcal{L}_{L}$ are orthogonal, so
 $$
-(p_{n},p_{m})=\int_{-1}^{1} p_{n}p_{m} \, dx =0,n\neq m
+(P_{n},P_{m})=\int_{-1}^{1} p_{n}p_{m} \, dx =0,n\neq m
 $$
 So we have the Legendre expansion $y(x)=\sum_{n=0}^{\infty} b_{n}p_{n}(x)$, so find $b_{m}$, so we can take the inner product of the equation with $p_{m}(x)$:
 $$
@@ -121,4 +121,23 @@ $$
 $$
 \therefore b_{m}=\frac{2m+1}{2}(y,p_{m})=\frac{(2m+1)}{2}\int_{-1}^{1} y(x)p_{m}(x) \, dx 
 $$
-
+If $y(x)$ is even/odd, then $b_{m}=0$ for $m$ even/odd, since it will be the integral of an odd function as $p_{m}(x)$ is odd/even for odd/even $m$
+### Example
+Find the first non-vanishing term in the Legendre expansion of
+$$
+\cos(\pi x)=\sum_{k=0}^{\infty} b_{k}P_{k}(x) 
+$$
+$$
+b_{0}=\frac{1}{2}\int_{-1}^{1} y(x)P_{0}(x) \, dx =\frac{1}{2}\int_{-1}^{1} \cos(\pi x) \, dx =\frac{1}{2\pi}[\sin(\pi x)]=0
+$$
+$$
+b_{1}=\frac{3}{2}\int_{-1}^{1} y(x)P_{1}(x) \, dx =\frac{3}{2}\int_{-1}^{1} \underbrace{ x\cos(\pi x) }_{ \text{odd}\times \text{even}=\text{odd} } \, dx =0
+$$
+We can extend this logic and say that for odd $n$, since $\cos$ is even, will integrate an odd function, so will vanish
+$$
+b_{2}=\frac{5}{2}\int_{-1}^{1} y(x)P_{2}(x) \, dx =\frac{5}{4}\int_{-1}^{1} \cos(\pi x)(3x^{2}-1) \, dx 
+$$
+$$
+= \frac{5}{4\pi}\underbrace{ [\sin(\pi x)(3x^{2}-1)]_{-1}^{1} }_{ =0 }-\frac{15}{2\pi}\int_{-1}^{1} \sin(\pi x)x \, dx =\frac{15}{2\pi^{2}}[\cos(\pi x)x]_{-1}^{1}-\frac{15}{\pi^{2}}\int_{-1}^{1} \cos(\pi x) \, dx =-\frac{15}{\pi^{2}}
+$$
+So the first non-vanishing term is $\cos(\pi x)\approx-\frac{15}{2\pi^{2}}(3x^{2}-1)$ 

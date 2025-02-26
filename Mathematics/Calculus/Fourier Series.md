@@ -71,7 +71,7 @@ For the fifth, the method is similar to above (pls do here)
 
 In general if $f(x)$ is even on $(-L,L)$, then all $b_{n}=0$ and the Fourier series contains only $\cos$ terms (plus a constant term) we call such a series a cosine series
 ## Fourier Coefficients
-We say that the [[Sets|set]] of functions $\left\{  1,\cos\left( \frac{n\pi x}{L} \right),\sin\left( \frac{n\pi x}{L} \right)  \right\}$ form an orthogonal (or orthonormal) set on $[-L,L]$, because if $\phi,\psi$ are different elements of the set, then 
+We say that the [[Sets|set]] of functions $\left\{  1,\cos\left( \frac{n\pi x}{L} \right),\sin\left( \frac{n\pi x}{L} \right)  \right\}$ form an orthogonal (or [[Orthonormal Vectors|orthonormal]]) set on $[-L,L]$, because if $\phi,\psi$ are different elements of the set, then 
 $$
 \frac{1}{L}\int _{-L}^{L}\phi \psi \, dx =0
 $$
@@ -113,6 +113,54 @@ S_{m}(x)=\frac{a_{0}}{2}+\sum_{n=1}^{m}a_{n}\cos\left( \frac{n\pi x}{L} \right)+
 $$
 In general the partial sum $S_{m}$ is an approximation to $f(x)$ which improves as $m\to \infty$
 In general we want to know what happens to the partial sum $S_{m}(x)$ for all $x$ as $m\to \infty$ and how this relates to the original function
+## Linear Algebra Derivation
+If $y(x)$ is a function of periodicity $2L$, we can write
+$$
+y(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty} a_{n}\cos\left( \frac{n\pi x}{L} \right)+\sum_{n=1}^{\infty} b_{n}\sin\left( \frac{n\pi x}{L} \right)  
+$$
+So we have the [[Basis|basis]] eigenfunctions of some [[Linear Differential Operators|differential operator]] $\mathcal{L}_{F}$. We know that these coefficients satisfy:
+$$
+a_{n}=\frac{1}{L}\int _{-L}^{L}y(x)\cos\left( \frac{n\pi x}{L} \right) \, dx =\frac{\left( y,\cos\left( \frac{n\pi x}{L} \right) \right)}{\left( \cos\left( \frac{n\pi x}{L} \right),\cos\left( \frac{n\pi x}{L} \right) \right)}
+$$
+For some [[Inner Product|inner product]], so we will take the inner product to be:
+$$
+(f,g)=\int _{-L}^{L}f(x)g(x) \, dx 
+$$
+We know that $\sin (nx),\cos(nx)$ satisfy [[Simple Harmonic Motion|simple harmonic motion]] differential equations: $y''+n^{2}y=0$, so 
+$$
+\mathcal{L}_{F}=\frac{d ^{2}}{dx^{2}} 
+$$
+Now we must check whether $\mathcal{L}_{F}$ is [[Self-Adjoint|self-adjoint]] with respect to the inner product, so we need to show
+$$
+(\mathcal{L}_{F}f,g)=(f,\mathcal{L}_{F}g)
+$$
+$$
+ (\mathcal{L}_{F}f,g)=       (f'',g)=\int_{-L}^{L}f''g  \, dx =[f'g]_{-L}^{L}-\int_{-L}^{L}f'g'  \, dx =[f'g]_{-L}^{L}-[fg']_{-L}^{L}+\int_{-L}^{L}fg'  \, dx 
+$$
+$$
+ =[f'g-fg']_{-L}^{L}+(f,\mathcal{L}_{F}g)
+$$
+So we need $[f'g-g'f]_{-L}^{L}=0$, which is true if $f,g$ are periodic with period $2L$ 
+So what are the eigenfunctions of $\mathcal{L}_{F}=\frac{d ^{2}}{dx^{2}}$ which are periodic with period $2L$. 
+We want to solve $y''=\lambda y$, so let 
+$\lambda=n^{2}>0$, then $y''=n^{2}y$ gives $y(x)=Ae^{ nx }+Be^{ -nx }$ which has no non-vanishing periodic functions
+$\lambda=0$, then $y''=0$ which gives $y(x)=Ax+B$, so $y=1$ is periodic and no others
+$\lambda=-n^{2}<0$, then $y(x)=A\sin(nx)+B\cos(nx)$ which has periodicity $2\pi$ when $n$ is a positive integer, so we can scale this to find $n$ periodic with period $2L$
+So the eigenfunctions of $\mathcal{L}_{F}$ with period $2\pi$ are $\left\{ 1,\cos(nx),\sin(nx) \right\}$, so
+$$
+y(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty} a_{n}\cos\left( \frac{nx\pi}{L} \right)+\sum_{n=1}^{\infty} b_{n}\sin\left( \frac{n\pi x}{L} \right)  
+$$
+And $\left\{ \cos(nx),\sin(nx) \right\},1$ are orthogonal since $\mathcal{L}_{F}$ is self-adjoint
+### Example
+Find $b_{7}$ in the expansion, i.e. the coefficient of $\sin(7x)$: 
+$$
+(y(x),\sin(7x))=\left( \frac{a_{0}}{2}+\sum_{n=1}^{\infty} a_{n}\cos\left( \frac{nx\pi}{L} \right)+\sum_{n=1}^{\infty} b_{n}\sin\left( \frac{n\pi x}{L} \right), \sin(7x)  \right)
+$$
+$$
+= a_{0}\left( \frac{1}{2},\sin(7x) \right)+\sum_{n=1}^{\infty} a_{n}\left( \cos \left( \frac{n\pi x}{L} \right),\sin(7x) \right)+\sum_{n=1}^{\infty} b_{n} \left( \sin\left( \frac{n\pi x}{L} \right),\sin(7x) \right) 
+$$
+Which are all $0$, except the coefficient of $\sin(7x)$
+
 ## Cosine Series
 If $f(x)$ is [[Even Functions|even]] on $(-L,L)$, then all $b_{n}=0$ and the Fourier series contains only cosine terms (plus a constant), such a series is called a cosine series
 ## Sine Series
