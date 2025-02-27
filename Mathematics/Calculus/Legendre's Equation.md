@@ -254,3 +254,32 @@ $$
 y(x)=\sum_{k=0}^{\infty} b_{k}p_{k}(x) 
 $$
 Which is an $n$th order Legendre polynomial
+## Using Legendre Expansions to Approximate Functions
+Suppose we have Legendre expansion $y(x)=\sum_{n=0}^{\infty} b_{n}p_{n}(x)$. Consider the partial sum:
+$$
+s_{m}=\sum_{n=0}^{m} b_{n}p_{n}(x) 
+$$
+Which is an $m$th order polynomial
+$s_{m}$ is the 'best' $n$th order polynomial approximation to $y(x)$
+Best means the following. Let $f_{m}$ be an $m$th order polynomial
+$$
+\lvert \lvert y(x)-f_{m} \rvert \rvert ^{2}(y-f_{m},y-f_{m})=\int _{-1}^{1}(y-f_{m})^{2} \, dx 
+$$
+Which is minimised by picking $f_{m}=s_{m}$
+### Proof
+Let $g(x)=\sum_{n=0}^{\infty} a_{n}p_{n}(x)$,
+$$
+\int_{-1}^{1} g(x)^{2} \, dx \lvert \lvert g(x) \rvert \rvert ^{2}=(g,g)=\left( \sum_{n=0}^{\infty}a_{n}p_{n}(x),\sum_{n=0}^{\infty}a_{n}p_{n}(x) \right)=\sum_{n,m=0}^{\infty}a_{n}a_{m}\underbrace{ (p_{n},p_{m}) }_{ =0\text{ when }n\neq m }
+$$
+$$
+\implies \int_{-1}^{1} g(x)^{2} \, dx =\sum_{n-0}^{\infty} a_{n}^{2}(p_{n},p_{n})=\sum_{n=0}^{\infty}a_{n}^{2}  \frac{2}{2n+1} 
+$$
+If we consider $p_{0},p_{1},\dots,p_{m}$ which form a basis for $\mathbb{R}[x]_{m}$, so we can write $f_{m}=\sum_{n=0}^{m}c_{n}p_{n}(x)$, so
+$$
+y-f_{m}=\sum_{n=0}^{\infty}b_{n}p_{n}(x)-\sum_{n=0}^{m}c_{n}p_{n}(x)=\sum_{n=0}^{m}(b_{n}-c_{n})p_{n}(x)+\sum_{n=m+1}^{\infty}b_{n}p_{n}(x)
+$$
+$$
+ \therefore \lvert \lvert y-f_{m} \rvert \rvert ^{2}=\int_{-1}^{1} (y-f_{m})^{2} \, dx =\sum_{n=0}^{m}(b_{n}-c_{n})^{2}  \frac{2}{2n+1}+\sum_{n=m+1}^{\infty}b_{n}^{2}  \frac{2}{2n+1}
+$$
+We want to consider how to change the $c_{n}$'s to minimise this norm, so we want to minimise $(b_{n}-c_{n})^{2}$, which is when $b_{n}=c_{n}$
+Therefore $\lvert \lvert y-f_{m} \rvert \rvert^{2}$ is minimised when $f_{m}=\sum_{n=0}^{m}b_{n}p_{n}(x)=s_{m}$

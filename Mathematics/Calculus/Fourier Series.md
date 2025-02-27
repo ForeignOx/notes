@@ -160,7 +160,6 @@ $$
 = a_{0}\left( \frac{1}{2},\sin(7x) \right)+\sum_{n=1}^{\infty} a_{n}\left( \cos \left( \frac{n\pi x}{L} \right),\sin(7x) \right)+\sum_{n=1}^{\infty} b_{n} \left( \sin\left( \frac{n\pi x}{L} \right),\sin(7x) \right) 
 $$
 Which are all $0$, except the coefficient of $\sin(7x)$
-
 ## Cosine Series
 If $f(x)$ is [[Even Functions|even]] on $(-L,L)$, then all $b_{n}=0$ and the Fourier series contains only cosine terms (plus a constant), such a series is called a cosine series
 ## Sine Series
