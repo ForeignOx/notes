@@ -52,4 +52,31 @@ And $\frac{1}{n}$ is independent of $x$, and tends to $\hspace{0pt}0$, so...
 Pick $\varepsilon>0$, let $N=\frac{1}{\varepsilon}$, then $\left| f_{n}(x)-f(x) \right|<\frac{1}{n}\leq \frac{1}{N}=\varepsilon$ for $n\geq N$
 ## Uniform Convergence on Compact [[Subsets|Subsets]] (Subintervals)
 This is more strict than pointwise convergence, but less strict than uniform convergence, it is the goldilocks
-    If $f_{n}:I\to \mathbb{R}$ tends to $f$ uniformly in compact subintervals if $f_{n}\to f$ on all $[a,b]\subseteq I$
+If $f_{n}:I\to \mathbb{R}$ tends to $f$ uniformly in compact subintervals if $f_{n}\to f$ on all $[a,b]\subseteq I$
+## Lemma (Criterion)
+- If $\left| f(x)-f_{n}(x) \right|\leq a_{n}$ for all $x\in I$ with $\lim_{ n \to \infty }a_{n}=0$, then uniform convergence on $I$ (where $a_{n}$ must not depend on $x$)
+- If $\exists\varepsilon>0$ and a sequence $x_{n}\in I$ such that for all $n$ sufficiently large, $\left| f(x)-f_{n}(x_{n}) \right|\geq\varepsilon$, then convergence is not uniform on $I$
+## Theorem
+Assume $f_{n}\to f$ uniformly on compact subsets on $I$, with $f_{n}$ [[Continuity|continuous]], then $f$ will be continuous on $I$
+### Proof
+We have $f_{n}\to f$ uniformly, so pick $\varepsilon>0$, so
+$$
+\exists N:\forall x\in I,\forall n\geq N,\left| f(x)-f_{n}(x) \right| <\varepsilon
+$$
+So we can take $N$, then, since $f_{n}(x)$ is continuous, given $c\in I$ we can find $\delta>0$ such that 
+$$
+|f_{n}(x)-f(c)|<\varepsilon \forall x:\left| x-c \right|<\delta
+$$
+We need to look at $\left| f(x)-f(c) \right|$ and need this to be smol. Due to convergence, $f$ is close to $f_{N}$, so
+$$
+\left| f(x)-f(c) \right| =\left| f(x)-f_{N}(x)+f_{N}(x)-f(c) \right| 
+$$
+But $f_{N}(x)$ is close to $f_{N}(c)$, and $f_{N}(c)$ is close to $f(c)$ by uniform convergence, so we have:
+$$
+\left| f(x)-f(c) \right| =\left| f(x)-f_{N}(x)+f_{N}(x)-f_{N}(c)+f_{N}(c)-f(c) \right|
+$$
+$$
+ \leq \underbrace{ \left| f(x)-f_{N}(x) \right| }_{ <\varepsilon } +\underbrace{ \left| f_{N}(x)-f_{N}(c) \right| }_{ <\varepsilon } +\underbrace{  \left| f_{N}(c)-f(c) \right|  }_{ <\varepsilon }<3\varepsilon
+$$
+The first from our definition of uniform convergence, second from continuity, third from definition of uniform convergence, so letting each $\varepsilon=\frac{\varepsilon}{3}$, we get our result
+
