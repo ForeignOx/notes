@@ -11,5 +11,33 @@ A&B\\B&C
 \end{pmatrix}
 $$
 ### Hyperbolic PDE
-If $\det(M)<0$, then the PDE is hyperbolic. An equation of this is the [[Wave Equation|Wave equation]]
+If $\det(M)<0$, then the PDE is hyperbolic. An equation of this form is the [[Wave Equation|Wave equation]]
 These describe propagation along lines
+### Parabolic PDE
+If $\det (M)=0$, then the PDE is parabolic. An equation of this form is the [[Heat Equation|Heat equation]] 
+### Elliptic PDE
+If $\det(M)>0$, then the PDE is elliptical. An equation of this form is [[Laplace's Equation|Laplace's Equation]]
+___
+A linear PDE solution space is an infinite-[[Dimension|dimensional]] [[Vectorspaces|vectorspace]], so
+$$
+u(x,t)=\sum_{i=0}^{\infty} a_{i}u_{i}(x,t) 
+$$
+Which is an infinite sum (or an integral)
+We need to specify $\infty$ of $a_{i}$ numbers (or functions) to pin down $u$
+___
+## Important Examples
+Consider an IVP on the whole line $x$, for example the transverse displacement of infinitely long string obeys the wave equation $u_{tt}=c^{2}u_{x x}$:
+![[Second Order Partial Differential Equations 2025-02-28 15.25.24.excalidraw]]
+We can define the initial position $u(x,0)=R(x)$, and the initial velocity $u_{t}(x,0)=S(x)$
+If instead we have an infinitely long bar of metal, we might want to use the heat equation to model its heat, so it obeys $u_{t}=k^{2}u_{x x}$
+![[Second Order Partial Differential Equations 2025-02-28 15.28.04.excalidraw]]
+For the heat equation on the whole line we need $u(x,0)=R(x)$
+If we switch to finite pieces of string/metal, we instead do things on an interval $x\in[a,b]$ and we can consider the $xt$-plane:
+![[Second Order Partial Differential Equations 2025-02-28 15.29.55.excalidraw]]
+For the wave equation, at $t=0,u(x,0)=R(x)$ for $a\leq x\leq b$, and $u_{t}(x,0)=S(x)$ for $a\leq x\leq b$
+But we need to specify what happens at the endpoints; boundary conditions: 
+- $u(b,t)=0$ would be known as a fixed end Dirichlet boundary condition
+- $u_{x}(b,t)=0$ would be known as a fixed end Neumann boundary condition
+- And the same thing but at $x=a$
+For the heat equation, it's the same except for the first part, we don't need $u_{t}$, so only $u(x,0)=R(x)$
+For Laplace's equation, we have a similar sort of thing, but we either specify $u$ or a normal derivative of $u$ on boundary
