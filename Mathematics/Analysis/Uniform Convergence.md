@@ -79,4 +79,20 @@ $$
  \leq \underbrace{ \left| f(x)-f_{N}(x) \right| }_{ <\varepsilon } +\underbrace{ \left| f_{N}(x)-f_{N}(c) \right| }_{ <\varepsilon } +\underbrace{  \left| f_{N}(c)-f(c) \right|  }_{ <\varepsilon }<3\varepsilon
 $$
 The first from our definition of uniform convergence, second from continuity, third from definition of uniform convergence, so letting each $\varepsilon=\frac{\varepsilon}{3}$, we get our result
-
+We can in fact do this on only compact subsets of $I$ by taking $c\in I$, finding an interval $[a,b]$ containing $c$, on $[a,b]$ we have uniform convergence, so we have continuity of $f$ for $x\in[a,b]$ 
+## Theorem
+Say we have a sequence of functions $f_{n}:I\to \mathbb{R}$ that are all [[Differentiation|differentiable]] with $f'(x)$ continuous, assume $f_{n}\to f$ pointwise and $f_{n}'$ converges uniformly (in compact subsets) to some function $g(x)$, then $f(x)$ is differentiable on $I$ with $f'(x)=g(x)=\lim_{ n \to \infty }f_{n}'(x)$ 
+### Proof
+laterz
+## Example
+Consider $f_{n}(x)=\frac{\sin(nx)}{n}$, since $\sin(nx)$ is bounded in $[-1,1]$, this tends $\hspace{0pt}0$, uniformly on $\mathbb{R}$;
+$$
+\left| f_{n}(x)-f(x) \right| =\left| \frac{\sin(nx)}{n} \right| \leq \frac{1}{n}
+$$
+And $\frac{1}{n}$ is independent of $x$, so we can find an $\varepsilon$ and we have convergence :)
+So the limit function is continuous which is good since it is 0
+But 
+$$
+f_{n}'(x)=\frac{n\cos(nx)}{n}=\cos(nx)
+$$
+Which doesn't even converge pointwise (for most $x$)

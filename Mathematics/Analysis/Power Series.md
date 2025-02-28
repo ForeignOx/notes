@@ -49,6 +49,14 @@ $$
 $$
 Which converges due to formal derivatives converging and this [[Cauchy-Hadamard Theorem#Corollary|corollary]] 
 ___
+A further proof, since they converge [[Uniform Convergence|uniformly]] on compact subsets of $(-R,R)$:
+Take a compact subset $[a,b]\subset[-r,r]\subset(-R,R)$, so $r<R$
+Take $x\in[-r,r]$, then 
+$$
+\sum_{k=0}^{\infty} \underbrace{ \left| a_{k} x^{k} \right|  }_{ =f_{k}(x) }\leq \sum_{k=0}^{\infty} \left| a_{k} \right| r^{k}=\sum_{k=0}^{\infty} M_{k}  
+$$
+Since $r<R$
+___
 Warning typically $\sum_{k=0}^{\infty} a_{k}x^{k}$ is not Lipschitz on $(-R,R)$
 ### Power Series are Differentiable in Radius of Convergence
 A power series $\sum_{k=0}^{\infty} a_{k}x^{k=f(x)}$ is [[Differentiation|differentiable]] in $(-R,R)$ with termwise derivative 
