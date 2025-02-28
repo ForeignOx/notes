@@ -74,3 +74,68 @@ A=0.8
 \omega=0.3
 r(\theta)=1/(A*\cos(\omega*\theta))
 ```
+___
+## Circular Orbits
+Is there a circular orbit $u=b$? We need $f(r)<0$, we write $g(u)=-f\left( \frac{1}{u} \right)$, so
+$$
+u''+u=\frac{m}{L^{2}u^{2}}g(u)
+$$
+So $u=b$ being constant is true iff
+$$
+L^{2}=\frac{m}{u^{3}}g(u)=\frac{m}{b^{3}}g(b)
+$$
+For any $b>0$, we can choose the initial speed such that this holds
+So we can have a circular orbit of any desired radius
+Bt is it stable? If w ut it in a small perturbation, does $u(\theta)$ stay close to $b$?
+So take $u(\theta)=b+\varepsilon(\theta)$ with $\varepsilon(\theta)$ small, so keep it simple, let's assume that the perturbation does not change $L$.
+Substituting $u(\theta)$ into the orbit equation gives:
+$$
+\epsilon''+b+\varepsilon=\frac{m}{L^{2}}(b+\varepsilon)^{-2}g(b+\varepsilon)
+$$
+We can consider the [[Taylor Series|taylor series]] expansions of these as $\varepsilon$ is small, we can use these to approximate;
+$$
+g(b+\varepsilon)=g(b)+\varepsilon g'(b)+\dots
+$$
+And we do a similar thing for $(b+\varepsilon)^{-2}$; we use the [[Binomial Theorem|binomial expansion]]:
+$$
+(b+\varepsilon)^{-2}=\left( b\left( 1+\frac{\varepsilon}{b} \right) \right)^{-2}=b^{-2}\left( 1+\frac{\varepsilon}{b} \right)^{-2}=b^{-2}\left( 1-\frac{2\varepsilon}{b}+\dots \right)
+$$
+So
+$$
+\varepsilon''+b+\varepsilon=\frac{m}{L^{2}}b^{-2}\left( 1-\frac{2\varepsilon}{b} \right)(g(b)+\varepsilon g'(b))=\frac{m}{L^{2}b^{2}}\left( g(b)+\varepsilon\left( g'(b)-\frac{2}{b}g(b) \right) \right)+\underbrace{ \varepsilon^{2} }_{ \approx0 }
+$$
+Using $b=\frac{mg(b)}{L^{2}b^{2}}$ leeaves
+$$
+\varepsilon''=\left( -1+\frac{m}{L^{2}b^{2}}\left( g'(b)-\frac{2}{b}g(b) \right) \right)\varepsilon
+$$
+Now we can use $\frac{m}{L^{2}b^{2}}=\frac{b}{g(b)}$:
+$$
+\varepsilon''=\left( -1+\frac{b}{g(b)}\left( g'(b)-\frac{2}{b}g(b) \right) \right)\varepsilon=\left( -1+\frac{bg'(b)}{g(b)}-2 \right)\varepsilon=\left( \frac{bg'(b)}{g(b)}-3 \right)\varepsilon
+$$
+If $\frac{bg'(b)}{g(b)}-3>0$ then $\varepsilon(\theta)=A\exp\left( \theta\sqrt{ \frac{bg'(b)}{g(b)}-3 } \right)$ which is unstable
+If $\frac{bg'(b)}{g(b)}-3=0$, then $\varepsilon(\theta)=A\theta$, which also is unstable
+If $\frac{bg'(b)}{g(b)}-3<0$, then $\varepsilon(\theta)\sim \cos,\sin$ so remains small
+So we conclude that the orbit is stable iff
+$$
+\frac{bg'(b)}{g(b)}-3<0
+$$
+## Example
+If $f(r)=-\frac{k}{r^{2}}$ under gravity, so $g(u)=ku^{2}$, and
+$$
+\frac{bg'(b)}{g(b)}=\frac{2kb^{2}}{kb^{2}}-3=-1<0
+$$
+So it is stable
+___
+If $f(r)=-\frac{k}{r^{3}}$, this has $g(u)=ku^{3}$, then
+$$
+\frac{bg'(b)}{g(b)}-3=\frac{3kb^{2}b}{kb^{3}}=0
+$$
+So this is unstable
+___
+If $f(r)=-\frac{2}{r^{2}}-\frac{1}{r^{3}}$ has $g(u)=2u^{2}+u^{3}$, then
+$$
+\frac{bg'(b)}{g(b)}-3=\frac{(4b+3b^{2})b}{2b^{2}+b^{3}}-3=\frac{4b^{2}+3b^{3}-6b^{2}-3b^{3}}{2b^{2}+b^{3}}=-\frac{2b^{2}}{2b^{2}+b^{3}}<0
+$$
+```desmos-graph
+y=-2*x^2/(2*x^2+x^3)
+```
