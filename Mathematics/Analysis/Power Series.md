@@ -68,7 +68,28 @@ $$
 f^{(n)}(0)=n!a_{n}
 $$
 #### Proof
-Part $\hspace{0pt}1$ to come!
+Part 1:
+Recall
+$$
+f(x)=f(c)+(x-c)\underbrace{ \sum_{k=1}^{\infty}a_{k}(x^{k-1}+x^{k-2}c+x^{k-3}c^{2}+\dots+xc^{k-2}+c^{k-1}) }_{ =f_{1}(x) }
+$$
+[[Taylor Series#First Order Taylor|First order taylor]] gives that $f(x)$ is differentiable at $c$ iff $f_{1}(x)$ is constant at $x=c$ and then
+$$
+f'(c)=f_{1}(c)=\sum_{k=1}^{\infty}a_{k}kc^{k-1}
+$$
+We can apply $M$-test to $f_{1}(x)$ in the compact interval $(-r,r)\subset[-R,R]$, where $c\in(-r,r)$, indeed
+$$
+\left| g_{k}(x) \right| =\left| a_{k}(x^{k-1}+x^{k-2}c+x^{x-3}c^{2}+\dots+xc^{k-2}+c^{k-1}) \right|
+$$
+$$
+  \leq \left| a_{k} \right| (\left| x \right| ^{k-1}+\left| x \right| ^{k-2}\left| c \right| +\left| x \right| ^{k-3}\left| c \right|^{2}+\dots+\left| x \right| \left| c \right| ^{k-2}+\left| c \right| ^{k-1} )
+$$
+By [[Triangle Inequality|triangle inequality]], then substituting $x=c=r$
+$$
+\left| a_{k} \right| (r^{k-1}+r^{k-1}+\dots+r^{k-1})=\left| a_{k} \right| kr^{k-1}:=M_{k}
+$$
+Which is independent of $x$, so it must converge uniformly as the formal derivative of $f(x)$ evalueated at $x=r<R$, (so the radius of convergence is conserved)
+
 Part 2:
 Assuming part $\hspace{0pt}1$, we have
 $$
