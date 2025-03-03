@@ -1,4 +1,4 @@
-We imagine that we will gather data $X_{i}$ with $i=1,2,\dots,n$. Now we may not know the precise distribution that generated this data, but we may suspect that the distribugtion is one of a family of possible distributions laelled on parameterised by a parameter $\theta$ ($\theta$ could even represent a list of parameters). An example of this is saying $X_{i}\sim \text{Bernoulli}(p)$, here $\theta=p$. We also often wee $X_{i}\sim N(\mu,\sigma^{2})$, here $\theta=\left\{ \mu,\sigma \right\}$
+We imagine that we will gather data $X_{i}$ with $i=1,2,\dots,n$. Now we may not know the precise distribution that generated this data, but we may suspect that the distribution is one of a family of possible distributions laelled on parameterised by a parameter $\theta$ ($\theta$ could even represent a list of parameters). An example of this is saying $X_{i}\sim \text{Bernoulli}(p)$, here $\theta=p$. We also often write $X_{i}\sim N(\mu,\sigma^{2})$, here $\theta=\left\{ \mu,\sigma \right\}$
 The joint pdf of the data is simply represented as:
 $$
 f(x_{1},x_{2},\dots,x_{n}|\theta)
