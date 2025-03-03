@@ -246,7 +246,7 @@ $$
 This in fact works for any $n$th order polynomial:
 - can represent $\mathcal{L}_{L}$ as a $n+1\times n+1$ matrix
 - eigenvalues would be $m(m+1)$ for $m=0,\dots,n$
-- eigenfunctions would correspond to $p_{m}(x)$ for $m=0,\dots,m$
+- [[Eigenfunctions|eigenfunctions]] would correspond to $p_{m}(x)$ for $m=0,\dots,m$
 - could write $y(x)\in\mathbb{R}[x]_{n}$ as $y(x)=\sum_{n=0}^{n}b_{n}p_{n}(x)$
 - in this basis, $\mathcal{L}_{L}$ would be diagonal
 In fact we can expand this to any suitable non-polynomial functions by considering [[Power Series|power series]] and write 

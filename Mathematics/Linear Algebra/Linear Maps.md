@@ -274,6 +274,12 @@ Suppose $\underline{u}\neq 0$ and $\underline{u}\in\text{ker}(T)$ then $\{ \unde
 Let $T:V\to W$ be linear and suppose $\text{ker}(T)=0$, then if $\{ \underline{v}_{1},\dots,\underline{v}_{n} \}$ is a basis for $\underline{v}$, we have that $\{ T(\underline{v}_{1}),\dots,T(\underline{v}_{n}) \}$ is a basis for $\text{im}(T)$, hence $\text{rk}(T)=\dim(\text{im}(T))=n=\dim(V)$
 #### Proof
 $\{ T(\underline{v}_{1}),\dots,T(\underline{v}_{n}) \}$ is spanning by [[Image#Lemma|this lemma]] and linearly independent by the proposition, so is a basis for $\text{im}(T)$
-
+___
+## Symmetric Linear Operators
+A linear map or linear operator is symmetric if it is [[Self-Adjoint|self-adjoint]]
+### Theorem
+Associated with each [[Inner Product|inner product]], there is a special linear operator which is symmetric with respect to that inner product
+### Examples
+[[Legendre's Equation|Legendre]], $\mathcal{L}_{L}f=(1-x^{2})f''-2xf'$ is symmetric with respect to inner product
 
 #Mathematics #LinAlg #Definition #Theorem 

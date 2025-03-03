@@ -54,7 +54,7 @@ $$
 \end{pmatrix}
 $$
 ## Observation 2
-The [[Eigenvectors|eigenvectors]]/eigenfunctions of a [[Self-Adjoint|self-adjoint]] [[Matrices|matrix]]/operator are orthogonal
+The [[Eigenvectors|eigenvectors]]/[[Eigenfunctions|eigenfunctions]] of a [[Self-Adjoint|self-adjoint]] [[Matrices|matrix]]/operator are orthogonal
 ### Proof
 Let $\underline{v}_{1},\underline{v}_{2}$ be eigenvectors of $\mathcal{L}$:
 $$

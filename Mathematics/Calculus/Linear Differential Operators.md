@@ -20,3 +20,12 @@ As
 $$
 \underbrace{ \left[ (x^{2}-1)\frac{d ^{2}}{dx^{2}} +2x\frac{d }{dx}  \right] }_{  =\mathcal{L}_{L}}y=\lambda y
 $$
+## Theorem
+If $\left\{ p_{0},p_{1},\dots p_{n} \right\}$ is an [[Orthonormal Vectors|orthonormal]] [[Sets|set]] of polynomials with respect to an [[Inner Product|inner product]] $(,)$ with $\deg(p_{j})=j$ and $\mathcal{L}:\mathbb{R}[x]\to \mathbb{R}[x]$ is a [[Self-Adjoint|self-adjoint]] linear operator with respect to the same inner product such that
+$$
+\deg(\mathcal{L}(p(x)))\leq \deg(p(x))\forall p(x)\in \mathbb{R}[x]
+$$
+then each $p_{j}(x)$ is an [[Eigenfunctions|eigenfunction]] of $\mathcal{L}$:
+$$
+\mathcal{L}(p_{j}(x))=\lambda_{j}p_{j}(x),\lambda_{j}\in \mathbb{R}
+$$

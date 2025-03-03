@@ -118,7 +118,7 @@ If $y(x)$ is a function of periodicity $2L$, we can write
 $$
 y(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty} a_{n}\cos\left( \frac{n\pi x}{L} \right)+\sum_{n=1}^{\infty} b_{n}\sin\left( \frac{n\pi x}{L} \right)  
 $$
-So we have the [[Basis|basis]] eigenfunctions of some [[Linear Differential Operators|differential operator]] $\mathcal{L}_{F}$. We know that these coefficients satisfy:
+So we have the [[Basis|basis]] [[Eigenfunctions|eigenfunctions]] of some [[Linear Differential Operators|differential operator]] $\mathcal{L}_{F}$. We know that these coefficients satisfy:
 $$
 a_{n}=\frac{1}{L}\int _{-L}^{L}y(x)\cos\left( \frac{n\pi x}{L} \right) \, dx =\frac{\left( y,\cos\left( \frac{n\pi x}{L} \right) \right)}{\left( \cos\left( \frac{n\pi x}{L} \right),\cos\left( \frac{n\pi x}{L} \right) \right)}
 $$
