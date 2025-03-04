@@ -254,6 +254,21 @@ $$
 y(x)=\sum_{k=0}^{\infty} b_{k}p_{k}(x) 
 $$
 Which is an $n$th order Legendre polynomial
+We can find the general term of $\mathcal{L}_{L}(x^{k})$:
+$$
+\mathcal{L}_{L}(x^{k})=\left[ (1-x^{2})\frac{d }{dx^{2}} -2x\frac{d }{dx}  \right]x^{k}
+$$
+$$
+= (1-x^{2})k(k-1)x^{k-2}-2kx x^{k-1}=k(k-1)x^{k-2}-k(k-1)x^{k}-2kx^{k}
+$$
+$$
+= k(k-1)x^{k-1}-k(k+1)x^{k}
+$$
+Where the second term is the general diagonal term, so the matrix representation of $\mathcal{L}_{L}$ on $\mathbb{R}[x]_{n}$ is:
+![[Legendre's Equation 2025-03-04 11.47.46.excalidraw]]
+
+Which is upper triangular, so the eigenvalues of $\mathcal{L}_{L}$ are $-k(k+1)$ for $k\in\mathbb{N}_{0}$ which checks out with what we showed using series
+To find eigenfunctions, we do need the full matrix, these are calculated manually
 ## Using Legendre Expansions to Approximate Functions
 Suppose we have Legendre expansion $y(x)=\sum_{n=0}^{\infty} b_{n}p_{n}(x)$. Consider the partial sum:
 $$
