@@ -1,4 +1,3 @@
-A power [[series|series]] is a [[Functions|function]] of the form
 $$
 \sum_{k=0}^{\infty} a_{k} x^{k}
 $$
