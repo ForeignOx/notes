@@ -447,3 +447,53 @@ $$
 \implies t_{c}=\frac{0.4726}{k^{2}}
 $$
 If we did this with a sphere, we'd get $t_{s}=\frac{0.5336}{k^{2}}$; $t_{c}=88\%t_{s}$
+___
+A membrane is stretched on a frame above the square region of the $xy$-plane $0<x<\pi$, $0<y<\pi$. Its vertical displacement is given by $u(x,y)$, which obeys Laplace's equation $u_{xx}+u_{yy}=0$. The frame is such that $u(0,y)=u(\pi,0)=0$ for $0<y<\pi$, $u_{y}(x,0)=0$ and $u(x,\pi)=1$ for $0<x<\pi$
+![[Second Order Partial Differential Equations 2025-03-07 15.48.39.excalidraw]]
+Look for solution in separable form
+$$
+u(x,y)=X(x)Y(y)
+$$
+$$
+ X''Y+Y''X=0
+$$
+$$
+\implies \frac{X''}{X}=-\frac{Y''}{Y}
+$$
+$$
+\implies X''=\lambda X
+$$
+$$
+ Y''=-\lambda Y
+$$
+Subject to $X(0)=X(\pi)=0$, we have options for $\lambda$
+If $\lambda=n^{2}>0$, then $X=A\cosh(nx)+B\sinh(nx)$ which would imply that $A,B=0$, so we don't care
+If $\lambda=0$, then $X=A+Bx$, which means $A,B=0$, so we don't care
+If $\lambda=-n^{2}<0$, then $X=A\cos(nx)+B\sin(nx)$, which with our conditions gives $X=\sin(nx),n\in\mathbb{Z}$
+So $Y''=-\lambda Y$ gives
+$$
+Y=A\cosh(ny)+B\sinh(ny)
+$$
+So
+$$
+u(x,y)=\sum_{n=1}^{\infty}\sin(nx)(A_{n}\cosh(ny)+B_{n}\sinh(ny))
+$$
+$$
+u_{y}(x,y)=\sum_{n=1}^{\infty}\sin(nx)(nA_{n}\sinh(ny)+nB_{n}\cosh(ny))
+$$
+$$
+ u_{y}(x,0)=0=\sum_{n=1}^{\infty}\sin(nx)nB_{n}\implies B_{n}=0
+$$
+$$
+\implies u(x,y)=\sum_{n=1}^{\infty}A_{n}\sin(nx)\cosh(ny)
+$$
+$$
+ u(x,\pi)=1=\sum_{n=1}^{\infty}\underbrace{ A_{n}\cosh(n\pi) }_{ =D_{n} }\sin(nx)\implies \sum_{n=1}^{\infty}D_{n}\sin(nx)=1
+$$
+$$
+\implies D_{n}=\frac{2}{\pi}\int_{0}^{\pi} \sin nx \, dx =-\frac{2}{\pi n}[\cos(nx)]_{0}^{\pi}=\frac{2}{\pi}(1-(-1)^{n})
+$$
+Which is $\frac{4}{\pi n}$ for odd $n$, and $0$ for even $n$, so
+$$
+u(x,y)=\sum_{n=0}^{\infty} \frac{4}{\pi(2n+1)\cos((2n+1)\pi)}\sin((2n+1)x)\cosh((2n+1)y)
+$$

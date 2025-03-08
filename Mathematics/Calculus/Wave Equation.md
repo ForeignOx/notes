@@ -69,3 +69,84 @@ Then we can make the same shape for
 We can consider $t=10$,
 ![[Wave Equation 2025-03-03 14.49.40.excalidraw]]
 This is a wave travelling rightwards with speed $c$, but the profile is the same
+Another solution of the wave equation is obtained by taking any function $g(q)$ and putting
+$$
+u(x,t)=g(x+ct)
+$$
+Which is a wave of fixed shape moving in negative direction at speed $c$
+Since the wave equation is [[linear|linear]] in $u$, if $u_{1},u_{2}$ are solutions, then so is $u=u_{1}+u_{2}$, so for any $f(p),g(q)$, the function
+$$
+u(x,t)=f(x-ct)+g(x+ct)
+$$
+We claim that this is the general solution
+We need to prove that if we specify initial conditions at $t=0$, namely $u(x,0)=R(x)$, the initial position, and $\frac{ \partial u }{ \partial t }(x,t)|_{t=0}=S(x)$, the initial velocity, then we need to find $f(p),g(q)$ such that
+$$
+u(x,t)=f(x-ct)+g(x+ct)
+$$
+Has those initial conditions
+### Proof
+We have 
+$$
+u(x,0)=f(x)+g(x)=R(x)
+$$
+$$
+\dot{u}(x,0)=c(g'(x)-f'(x))=S(x)
+$$
+By integrating with respect to $x$, we get
+$$
+-cf(x)+cg(x)=\int_{0}^{x} S(x) \, dx 
+$$
+So we can solve these to get:
+$$
+f(x)=\frac{1}{2}\left( R(x)-\frac{1}{c}\int_{0}^{x} S(x) \, dx  \right)
+$$
+$$
+ g(x)=\frac{1}{2}\left( R(x)+\frac{1}{c}\int_{0}^{x} S(x) \, dx  \right)
+$$
+Which proves that $f(x-ct)+g(x+ct)$ is the general solution
+## D'Alembert's Formula
+We've shown that
+$$
+u(x,t)=\frac{1}{2}\left( R(x-ct)-\frac{1}{c}\int_{0}^{x-ct} S(x) \, dx  \right)+\frac{1}{2}\left( R(x+ct)+\frac{1}{c}\int_{0}^{x+ct} S(x) \, dx  \right)
+$$
+And since $\int_{0}^{a}-\int_{0}^{b}=\int_{b}^{a}$, we have
+$$
+u(x,t)=\frac{1}{2}(R(x-ct)+R(x+ct))+\frac{1}{2c}\int_{x-ct}^{x+ct} S(x) \, dx 
+$$
+## Examples
+An infinite string is plucked, so $S(x)=0$, with $R(x)=e^{ -x^{2} }$. Then
+$$
+u(x,t)=\frac{1}{2}e^{ -(x-ct)^{2} }+\frac{1}{2}e^{ -(x+ct)^{2} }
+$$
+```desmos-graph
+R\left(x\right)=e^{-x^{2}}
+S\left(x\right)=0
+t=1.8
+c=2.3
+\frac{1}{2}\left(R\left(x-ct\right)+R\left(x+ct\right)\right)+\frac{1}{2c}\int_{x-ct}^{x+ct}S\left(a\right)da
+```
+Instead, strike the string, so $R(x)=0$, take $S(x)=xe^{ -x^{2} }$, here $\int S(x)  \, dx=-\frac{1}{2}e^{ -x^{2} }$ and
+$$
+u(x,t)=-\frac{1}{4c}(e^{ -(x+ct)^{2} }-e^{ -(x-ct)^{2} })
+$$
+```desmos-graph
+R\left(x\right)=0
+S\left(x\right)=xe^{-x^{2}}
+t=1.8
+c=1
+\frac{1}{2}\left(R\left(x-ct\right)+R\left(x+ct\right)\right)+\frac{1}{2c}\int_{x-ct}^{x+ct}S\left(a\right)da
+```
+___
+Solve $4\frac{ \partial^{2}u }{ \partial t^{2} }=\frac{ \partial^{2}u }{ \partial x^{2} }$ with $u(x,0)=\frac{1}{1+x^{2}}$, and $\frac{ \partial u }{ \partial t }(x,t)|_{t=0}=\frac{x}{(1+x^{2})^{2}}$, this has the solution
+$$
+\int S \, dx =\int \frac{x}{(1+x^{2})^{2}} \, dx =-\frac{1}{2} \frac{1}{1+x^{2}}=-\frac{1}{2}R(x)
+$$
+(note $c=\frac{1}{2}$), so
+$$
+u(x,t)=\frac{1}{2}R(x+ct)+\frac{1}{2}R(x-ct)-\frac{1}{2}R(x+ct)+\frac{1}{2}R(x-ct)=R(x-ct)=\frac{1}{1+(x-ct)^{2}}
+$$
+$$
+=\frac{1}{1+\left( x-\frac{t}{2} \right)^{2}}
+$$
+
+$$
