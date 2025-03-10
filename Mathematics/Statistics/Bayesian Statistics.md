@@ -64,6 +64,11 @@ And we can find $C$ by integrating that $C=74256$
 This acutally corresponds to a $\text{Beta}(12,6)$ distribution
 ![[Bayesian Statistics 2025-03-10 15.41.24.excalidraw]]
 ```desmos-graph
+left=-0.5
+right = 1.5
+top = 7
+bottom = -0.5
+---
 \frac{x^{11}\left(1-x\right)^{5}}{\int_{0}^{1}x^{11}\left(1-x\right)^{5}dx}\{0<=x<=1\}
 y=1\{0<=x<=1\}
 ```
