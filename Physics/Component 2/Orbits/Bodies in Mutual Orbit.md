@@ -1,4 +1,4 @@
-When two bodies exert gravitational attraction on each other, they rotate about their [[Git?/Physics/Component 1/Basic Physics/Centres of Mass|centre of mass]] (C), which for two bodies is quite easy to calculate:
+When two bodies exert gravitational attraction on each other, they rotate about their [[Centre of Mass|centre of mass]] (C), which for two bodies is quite easy to calculate:
 ![[Bodies in Mutual Orbit 2024-04-01 21.45.49.excalidraw]]
 $$
 r_{1}=\frac{m_{2}}{m_{1}+m_{2}}d

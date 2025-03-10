@@ -4,7 +4,7 @@ Taking the mass of the bar to be negligible:
 $$
 E_\text{k}=\frac{1}{2}m_{1}v_{1}^{2}+\frac{1}{2}m_{2}v_{2}^{2}
 $$
-We can express this in terms of the [[Angular Speed]], $\omega$, using the relationship, $v=r\omega$
+We can express this in terms of the [[Angular Velocity]], $\omega$, using the relationship, $v=r\omega$
 $$
 E_\text{k}=\frac{1}{2}m_{1}(r_{1}\omega)^{2}+\frac{1}{2}m_{2}(r_{2}\omega^{2})
 $$

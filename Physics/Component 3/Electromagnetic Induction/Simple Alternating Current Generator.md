@@ -10,7 +10,7 @@ $$
 N\Phi=NBA\cos \phi
 $$
 $A\cos \phi$ is the area that the coil presents normally to the flux. For example, when $\phi=0$, the coil presents 'full frontally' and $A\cos \phi=A$, but when $\phi=\frac{\pi}{2}$, the coil presents 'edge-on' and $A\cos \phi=0$
-To find out how the emf changes with time, we note that, if the coil is being turned at a steady [[Angular Speed]] $\omega$, then at time $t$:
+To find out how the emf changes with time, we note that, if the coil is being turned at a steady [[Angular Velocity]] $\omega$, then at time $t$:
 $$
 \phi=\omega t+\phi_{0}
 $$

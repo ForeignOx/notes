@@ -8,7 +8,7 @@ There are a number of opportunities for the development of mathematical skills i
 - the terms [[Period|period of rotation]], [[Frequency |frequency]]
 - the definition of the unit radian as a measure of angle
 - the use of the radian as a measure of angle
-- the definition of [[Angular Speed|angular velocity]], ω, for an object performing circular motion and performing simple harmonic motion
+- the definition of [[Angular Velocity|angular velocity]], ω, for an object performing circular motion and performing simple harmonic motion
 - the idea that the [[Centripetal Force]] is the resultant force acting on a body moving at constant speed in a circle
 - the [[Centripetal Force]] and [[Centripetal Acceleration|acceleration]] are directed towards the centre of the circular motion
 - the use of the following equations relating to circular motion:

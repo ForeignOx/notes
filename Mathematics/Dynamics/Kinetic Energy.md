@@ -17,6 +17,14 @@ To say
 $$
 K=\frac{1}{2}m\left( \dot{r}^{2}+\frac{L^{2}}{m^{2}r^{2}} \right)
 $$
+## [[Rigid Bodies|Rigid Bodies]]
+Consider we have masses $m_{i}$ at a distance of $\underline{r}_{i}$ from the axis, each with angular speed $v_{i}=r_{i}\left| \dot{\theta} \right|$:
+![[Rigid Bodies 2025-03-10 14.23.04.excalidraw]]
+Then we can find the kinetic energy of the system to be:
+$$
+K=\frac{1}{2}m_{1}v_{1}^{2}+\dots+\frac{1}{2}m_{N}v_{N}^{2}=\frac{1}{2}m_{1}(r_{1}\dot{\theta})^{2}+\dots+\frac{1}{2}m_{N}(r_{N}\dot{\theta})^{2}=\frac{1}{2}I\dot{\theta}^{2}
+$$
+Where $I=m_{1}r_{1}^{2}+\dots+m_{N}r_{N}^{2}$ is the [[Moment of Inertia|moment of inertia]], the rotational equivalent to mass
 
 
 #Physics #Energy #Definition #Equation 

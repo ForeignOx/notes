@@ -16,7 +16,7 @@ Using the small angle approximation: $\lim_{ \theta \to 0 }\frac{\sin\theta}{\th
 $$
 a=\frac{v^{2}}{r}
 $$
-And using [[Angular Speed]], $v=r\omega$
+And using [[Angular Velocity]], $v=r\omega$
 $$
 \implies a=\omega^{2}r
 $$
