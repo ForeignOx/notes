@@ -2,7 +2,7 @@ The [[Sets|set]] (which is also a [[Groups|group]]) of $n\times n$ [[Orthogonal 
 $$
 O(n):=\left\{ M\in  GL(n,\mathbb{R})|M^{\top}M=MM^{\top}=I \right\}
 $$
-It turns out this is the set of rotational and reflective matrices
+It turns out this is the set of rotational and reflective matrices and is a [[Subgroups|subgroup]] of the [[General Linear Group|general linear group]] 
 In practice, if $M\in O(n)$, then we can write it as $n$ column [[Vectors|vectors]], and $M^{\top}$ as row vectors:
 $$
 M=\begin{pmatrix}
