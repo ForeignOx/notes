@@ -188,6 +188,7 @@ The identity elements of isomorphic groups are mapped to each other by the isomo
 The inverses of corresponding elements are mapped to each other by the isomorphism
 The inverses of the corresponding elements are mapped to each other by the isomorphism
 The order of an element is preserved by isomorphism
+An isomorphism is a bijective [[Homomorphisms|homomorphism]] 
 
 
 

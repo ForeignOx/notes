@@ -1,4 +1,3 @@
-
 You can think about it as if you have $m$ places, $r$ of these will be filled with objects of type $\hspace{0pt}1$, then the remaining $m-r$ places must then be filled with the objects of type 2
 ## Example
 Toss a "fair" coin $\hspace{0pt}7$ times

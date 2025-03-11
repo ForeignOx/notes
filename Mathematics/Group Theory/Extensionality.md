@@ -1,1 +1,0 @@
-Things that may seem different but are in fact the same can be considered the same
