@@ -7,6 +7,11 @@ f(x)=\frac{a_{0}}{2}+\sum_{ n=1} ^{\infty}  \left( a_{n}\cos\left( \frac{n\pi x}
 $$
 where $a_{0},a_{n},b_{n}$ are constants labelled by the positive integer $n$, and are called the Fourier coefficients of $f(x)$
 If the constants are such that the series converges, then it is called the Fourier Series of $f(x)$
+___
+Fourier Series can be thought of as "frequency analysis of periodic functions" and $a_{n}$ and $b_{n}$ tell you how much frequency $n$ is in $f(x)$. If we consider the graph of $\sin(nx)$, we can get various properties from it:
+![[Fourier Series 2025-03-11 14.14.21.excalidraw]]
+So we find that [[Wavelength|wavelength]] is $\lambda=\frac{2\pi}{n}$, the [[Frequency|frequency]] is $\frac{1}{\lambda}=\frac{n}{2\pi}$ and the angular frequency is $2\pi f=n$
+This is very useful for example it is how our brains analyse sound and so on
 ## Example
 $$
 f(x)=2\cos ^{2}\left( \frac{\pi x}{L} \right)+3\sin\left( \frac{\pi x}{L} \right)
