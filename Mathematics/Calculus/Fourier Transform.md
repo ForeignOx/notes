@@ -56,3 +56,116 @@ $$
 $$
 Which looks like:
 ![[Fourier Transform 2025-03-11 14.52.10.excalidraw]]
+## Properties
+### Taking Fourier Transform is a [[linear|Linear]] Operation
+If $f_{1}(x),f_{2}(x)$ have fourier transforms $\tilde{f}_{1}(p),\tilde{f}_{2}(p)$ respectively, then $F(x)=\alpha f_{1}(x)+\beta f_{2}(x)$ has fourier transform 
+$$
+\tilde{F}(p)=\alpha \tilde{f}_{1}(p)+\beta \tilde{f}_{2}(p)
+$$
+#### Proof
+$$
+\tilde{F}(p)=\int_{-\infty}^{\infty} F(x)e^{ -ipx } \, dx=\int_{-\infty}^{\infty} (\alpha f_{1}(x)+\beta f_{2}(x))e^{ -ipx } \, dx 
+$$
+$$
+ =\alpha \int_{-\infty}^{\infty} f_{1}(x)e^{ -ipx } \, dx +\beta \int_{-\infty}^{\infty} f_{2}(x)e^{ -ipx } \, dx =\alpha \tilde{f}_{1}(p)+\beta \tilde{f}_{2}(p)
+$$
+### Shift Theorem
+Let $f(x)$ have fourier trnasform $\tilde{f}(p)$, and $g(x)=f(x+a)$, then 
+$$
+\tilde{g}(p)=e^{ ipa }\tilde{f}(p)
+$$
+You can think of this as if you move in $x$ space, then you multiply by a shift factor in $p$ space
+#### Proof
+$$
+    \tilde{g}(p)=\int_{-\infty}^{\infty} g(x)e^{ -ipx } \, dx =\int_{-\infty}^{\infty} f(x+a)e^{ -ipx } \, dx 
+$$
+Let $u=x+a,du=dx$, bounds are equal,
+$$
+    =\int_{-\infty}^{\infty} f(u)e^{ -ip(u-a) } \, du =e^{ ipa }\int_{-\infty}^{\infty} f(u)e^{ -ipu } \, du =e^{ ipa }\tilde{f}(p)
+$$
+#### Example
+What is the Fourier transform of
+$$
+g(x)=\begin{cases}
+1 & 0\leq x\leq 2\\0 & \text{otherwise}
+\end{cases}
+$$
+Note that we know the fourier transform above of 
+$$
+f(x)=\begin{cases}
+1 & -1\leq x\leq 1\\0 & \text{otherwise}
+\end{cases}
+
+$$
+So since $g(x)=f(x-1)$, by shift theorem, 
+$$
+\tilde{g}(p)=\tilde{f}(p)e^{ -ip }=\frac{2\sin(p)e^{ -ip }}{p}
+$$
+### Scaling Theorem
+Let $f(x)$ have fourier transform $\tilde{f}(p)$, then if $g(x)=f(bx)$ with $b\neq 0$, then
+ $$
+\tilde{g}(p)=\frac{1}{\left| b \right| }\tilde{f}\left( \frac{p}{b} \right)
+$$
+We can think of this as stretching all the waves' wavelengths by $b$, hence their frequency scales with $\frac{1}{b}$ as well as shifting the height of the graph
+#### Proof
+$$
+\tilde{g}(p)=\int_{-\infty}^{\infty} g(x)e^{ -ipx } \, dx =\int_{-\infty}^{\infty} f(bx)e^{ -ipx } \, dx 
+$$
+Let $u=bx,du=bdx$, if $b<0$, bounds swap
+$$
+=\int_{-\infty \times \text{sign} (b)}^{\infty \times\text{sign} (b)} \frac{f(u)}{b}e^{ -ipu/b } \, du=\frac{1}{b\times \text{sign} (b)}\int_{-\infty}^{\infty} f(u)e^{ -i\frac{p}{b} u} \, du=\frac{1}{\left| b \right| }\tilde{f}\left( \frac{p}{b} \right)
+$$
+### [[Odd Functions|Odd]]/[[Even Functions|Even]] Functions
+The fourier transform of an even/odd function $f(x)$ is $\tilde{f}(p)$ which is even/odd
+#### Proof
+Consider $g(x)=f(-x)=f(bx)$, using the scaing theorem with $b=-1$
+$$
+\tilde{g}(p)=\frac{1}{\left| -1 \right| }\tilde{f}\left( \frac{p}{-1} \right)=\tilde{f}(-p)
+$$
+Let $f(x)$ be even, then
+$$
+f(x)=f(-x)=g(x)\implies \tilde{f}(p)=\tilde{g}(p)=\tilde{f}(-p)
+$$
+So $\tilde{f}$ is even
+Let $f(x)$ be odd, then
+$$
+f(x)=-f(-x)=-g(x)\implies \tilde{f}(p)=-\tilde{g}(p)=-\tilde{f}(-p)
+$$
+So $\tilde{f}$ is odd
+## [[Differentiation|Derivative]] Theorem
+Let $f(x)$ have fourier transform $\tilde{f}(p)$, then if $g(x)=\frac{d f}{dx}(x)$, then
+$$
+\tilde{g}(p)=ip\tilde{f}(p)
+$$
+This is useful, since it is saying that differetiating in $x$-space is the same as multiplying by $ip$ in $p$-space
+#### Proof
+$$
+\tilde{g}(p)=\int_{-\infty}^{\infty} g(x)e^{ -ipx } \, dx =\int_{-\infty}^{\infty} \frac{d f}{dx} e^{ -ipx } \, dx 
+$$
+Integrating by [[Integration by Parts|parts]] gives:
+$$
+=[fe^{ -ipx }]_{-\infty}^{\infty}-\int_{-\infty}^{\infty} f(x)(-ip)e^{ -ipx } \, dx 
+$$
+We assume $\lim_{ \left| x \right| \to \infty }f(x)=0$ which is necessary for these improper integrals to converge, so the first term vanishes
+$$
+=ip \int_{-\infty}^{\infty} f(x)e^{ -ipx } \, dx =ip \tilde{f}(p)
+$$
+### [[Convolution of Functions|Convolution]] Thorem
+Let $f(x)$ have fourier transform $\tilde{f}(p)$ and $g(x)$ have fourier transform $\tilde{g}(p)$, then if $F(x)=(f*g)(x)$, then
+$$
+\tilde{F}(p)=\tilde{f}(p)\tilde{g}(p)
+$$
+#### Proof
+$$
+\tilde{F}(p)=\int_{-\infty}^{\infty} F(x)e^{ -ipx } \, dx =\int_{-\infty}^{\infty} (f*g) e^{ -ipx } \, dx 
+$$
+$$
+= \int_{-\infty}^{\infty} \left( \int_{-\infty}^{\infty} f(t)g(x-t) \, dt \right) e^{  -ipx} \, dx 
+$$
+$$
+= \int_{-\infty}^{\infty} f(t)\left( \int_{-\infty}^{\infty} g(x-t)e^{ -ipx } \, dx  \right) \, dt 
+$$
+The inner integral is the fourier transform of $g(x-t)$ by shift theorem it is equal to $\tilde{g}(p)e^{ -ipt }$
+$$
+=\int_{-\infty}^{\infty} f(t)\tilde{g}(p)e^{ -ipt } \, dt=
+$$
