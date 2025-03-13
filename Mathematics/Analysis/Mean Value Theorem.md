@@ -55,6 +55,34 @@ $$
 h'(c)=(g(b)-g(a))f'(c)-(f(b)-f(a))g'(c)=0
 $$
 Which can be rearranged to get the result we want
-
+## Mean Value Theorem for [[Integration|Integration]]
+Let $f(x)$ be [[Continuity|continuous]] and integrable on $[a,b]$, then there exists $c\in[a,b]$, such that
+$$
+\int ^{b}_{a} f(x) \, dx =c(b-a)
+$$
+### Proof
+$f$ is continuous, hence takes minimum $m$, and maximum $M$ (since [[Regulated Functions|regulated functions]] are [[Boundedness|bounded]], so we can find [[Supremum and Infimum|supremum and infimum]], which we take to be the [[Maximum|maximum]] and [[Minimum|minimum]])
+We know that
+$$
+m(b-a)\leq \int ^{b}_{a} f(t) \, dt \leq M(b-a)
+$$
+Then there exists some number $C$, which we define to be
+$$
+C=\frac{\int ^{b}_{a} f(t) \, dt}{b-a}
+$$
+With $m\leq c\leq M$ (by dividing the above equation by $b-a$)
+By the [[Intermediate Value Theorem|intermediate value theorem]], there exists $c\in[a,b]:f(c)=C$, so
+$$
+f(c)(b-a)=C(b-a)=\int ^{b}_{a} f(x) \, dx 
+$$
+___
+We do really need continuity:
+For example if we take 
+$$
+f(x)=\begin{cases}
+0 & x\in \left[ 0,\frac{1}{2} \right]\\1 & x\in \left[ \frac{1}{2},1 \right]
+\end{cases}
+$$
+Then $\int_{0}^{1} f(x) \, dx=\frac{1}{2}$, here $b-a=1$, but no value of $f(x)$ takes the value $\frac{1}{2}$, so we have a counterexample
 
 #Mathematics #Calculus #Theorem 

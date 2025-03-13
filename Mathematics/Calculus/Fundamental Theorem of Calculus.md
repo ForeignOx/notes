@@ -1,8 +1,19 @@
 The following theorem connects definite and indefinite [[Integration|integrals]]
-If [[Functions|$f(x)$]] is [[Continuity|continuous]] on [[Intervals|$[a,b]$]], then the function
+If [[Functions|$f(x)$]] is [[Regulated Functions|regulated]] on [[Intervals|$[a,b]$]], then the function
 $$
 F(x)=\int ^{x}_{a} f(t) \, dt 
 $$
+Is Lipschitz continuous on $[a,b]$ with $M=\sup(\left| f(x) \right|),x\in[a,b]$, hence $F$ is [[Continuity|continuous]] on 
+## Proof
+$$
+\left| F(x)-F(y) \right| =\left| \int_{a}^{x} f(t) \, dt -\int_{a}^{y} f(t) \, dt  \right|=\left| \int_{y}^{x} f(t) \, dt   \right| 
+$$
+By additivity. By monotonicity:
+$$
+\leq \int_{x}^{y} \left| f(t) \right|  \, dt \leq \int_{x}^{y} M \, dt =M(x-y)
+$$
+
+
 Defined for all points $x\in[a,b]$ is continuous on $[a,b]$, [[Differentiation|differentiable]] on $(a,b)$ and is the indefinite integral of $f(x)$ on $(a,b)$, i.e.
 $$
 F'(x)=\frac{d }{dx} \int ^{x}_{a} f(t) \, dt =f(x)\forall x\in (a,b)

@@ -85,11 +85,11 @@ $$
 It can be shown that this limit does exists if $f$ is continuous on $[a,b]$
 We can define:
 $$
-\int ^{b}_{a} f(x) \, dx -\int ^{a}_{b}  f(x)\, dx 
+\int ^{b}_{a} f(x) \, dx= -\int ^{a}_{b}  f(x)\, dx 
 $$
 Which implies:
 $$
-\int ^{a}_{a} f(x) \, d=0
+\int ^{a}_{a} f(x) \, dx=0
 $$
 ### Properties
 The definite integral satisfies the following properties:
@@ -98,11 +98,14 @@ Let $f(x),g(x)$ be integrable functions in $(a,b)$
 $$
 \int ^{b}_{a} (\lambda f+\mu g)(x) \, dx =\lambda \int ^{b}_{a} f(x) \, dx +\mu \int ^{b}_{a} g(x) \, dx 
 $$
-- If $c\in[a,b]$, then
+- If $c\in[a,b]$, then we have additivity:
 $$
 \int ^{b}_{a} f(x) \, dx =\int ^{c}_{a} f(x) \, dx +\int ^{b}_{c} f(x) \, dx 
 $$
-- If $f(x)\geq g(x)\forall x\in(a,b)$, then
+- If $f(x)\geq g(x)\forall x\in(a,b)$, then we have monotonicity:
+$$
+\left| \int ^{b}_{a} f(x) \, dx  \right| \leq \int ^{b}_{a} \left| f(x) \right|  \, dx 
+$$
 $$
 \int ^{b}_{a} f(x) \, dx \geq \int ^{b}_{a} g(x) \, dx 
 $$
@@ -110,5 +113,21 @@ $$
 $$
 m(b-a)\leq\int ^{b}_{a} f(x) \, dx \leq M(b-a)
 $$
+#### Proof of Monotonicity
+By linearity, it is enough to consider if $f(x)\geq 0$ and show $\int ^{b}_{a} f(x) \, dx \geq 0$. So take $f_{n}\to f$ uniformly, so given $\varepsilon>0$, find $f_{n}(x)$ such that $\left| f(x)-f_{n}(x) \right|<\varepsilon \forall x\in[a,b]$
+Since $f(x)>0$, we get
+$$
+f_{n}(x)>-\varepsilon \forall x\in [a,b]
+$$
+(We can't rule out that $f_{n}$ is not negative, but the most negative it can be is if $f(x)=0\forall x\in[a,b]$, giving us the above inequality)
+![[Integration 2025-03-13 11.26.40.excalidraw]]
+This means that
+$$
+I(f_{n})>-\varepsilon(b-a)
+$$
+So $\lim_{ n \to \infty }I(f_{n})$ is bigger than any negative number $\implies I(f)\geq 0$
+Next consider that $\left| f(x) \right|=\pm f(x)$, so $f(x)\leq \left| f(x) \right|$, but $\left| f(x) \right|>0$, so we get our property with absolute values we want
+For the last part we can consider the following diagram:
+![[Integration 2025-03-13 11.33.41.excalidraw]]
 
 #Mathematics #Calculus #Definition
