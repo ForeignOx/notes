@@ -12,9 +12,9 @@ By additivity. By monotonicity:
 $$
 \leq \int_{x}^{y} \left| f(t) \right|  \, dt \leq \int_{x}^{y} M \, dt =M(x-y)
 $$
-
-
-Defined for all points $x\in[a,b]$ is continuous on $[a,b]$, [[Differentiation|differentiable]] on $(a,b)$ and is the indefinite integral of $f(x)$ on $(a,b)$, i.e.
+___
+## Theorem
+$F(x)$ must be defined for all points $x\in[a,b]$ is continuous on $[a,b]$, [[Differentiation|differentiable]] on $(a,b)$ and has derivative $f(x)$ on $(a,b)$, i.e.
 $$
 F'(x)=\frac{d }{dx} \int ^{x}_{a} f(t) \, dt =f(x)\forall x\in (a,b)
 $$
@@ -22,6 +22,7 @@ Furthermore if $\tilde{F}(x)$ is any indefinite integral of $f(x)$ on $(a,b)$, t
 $$
 \int ^{b}_{a} f(t) \, dt =\tilde{F}(b)-\tilde{F}(a)=[\tilde{F}(x)]^b_{a}
 $$
+In fact it only needs to be continuous at some $c\in(a,b)$ which can be used to show differentiability
 ## Proof
 Important parts only (for now)
 For $a\leq x<x+h<b$, we have:
@@ -59,6 +60,22 @@ $$
 [\tilde{F}(x)]_{a}^{b}=\tilde{F}(b)-\tilde{F}(a)=(F(b)+c)-(F(a)+c)=F(b)-F(a)=\int ^{b}_{a} f(t) \, dt 
 $$
 The FTOC gives a simple rule for differentiating a definite integral with respect to its limits
+___
+Analysis proof
+Let $c\in(a,b)$. Need to show that
+$$
+\lim_{ x \to c }  \frac{F(x)-F(c)}{x-c}
+$$
+Exists and is equal to $f(c)$. So for $x\neq c$,
+$$
+\frac{1}{x-c}\left( \int_{a}^{x} f(t) \, dt  -\int_{a}^{c} f(t) \, dt\right)=\frac{1}{x-c}\int_{c}^{x} f(t) \, dt 
+$$
+Assume $x>c$, (it is the same if $x<c$), using the [[Mean Value Theorem|MVT]] for integrals,
+$$
+=\frac{1}{x-c}(x-c)f(\xi)=f(\xi)
+$$
+With $\xi \in(c,x)$, as $x\to c,\xi\to c$, so $f(\xi)=f(c)$
+
 ## Example
 $$
 \frac{d }{dx}\int ^{x}_{0} \frac{1}{1+\sin ^{2}t}  \, dt=\frac{1}{1+\sin ^{2}x}
@@ -74,6 +91,5 @@ $$
 $$
 = \frac{1}{1+e^{u}}2x=\frac{2x}{1+e^{x^{2}}}
 $$
-
 
 #Mathematics #Calculus #Theorem 

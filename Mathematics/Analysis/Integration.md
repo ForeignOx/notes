@@ -67,6 +67,33 @@ $$
 \frac{d }{dx} (F_{2}(x)-F_{1}(x))=\frac{d }{dx} (F_{2}(x))-\frac{d }{dx} (F_{1})(x)=f(x)-f(x)=0
 $$
 Therefore $F_{2}(x)-F_{1}(x)$ is constant. or is it...? yeh it is
+___
+### Examples
+Let $f(x)=\frac{1}{x}$ on $(0,\infty)$, set 
+$$
+L(x)=\int_{1}^{x} \frac{1}{t} \, dt
+$$
+Then $L(1)=0$, $L'(x)=\frac{1}{x}$ from [[Fundamental Theorem of Calculus|FToC]]. Now $L(x)$ is increasing, $L'(x)>0$, we also have 
+$$
+L(xy)=L(x)+L(y)
+$$
+We can show it is true for one point $y=1$, we want to take derivatives and show that it is constant:
+$$
+LHS:  y\times \frac{1}{xy}=\frac{1}{x}
+$$
+$$
+RHS: \frac{1}{x}
+$$
+These are the same, so this is always true, so we also have by letting $y=\frac{1}{x}$:
+$$
+L\left( \frac{1}{x} \right)=-L(x)
+$$
+We also know that $L(2)>\frac{1}{2}$, since
+$$
+\int_{1}^{2} \frac{1}{t} \, dt >\int_{1}^{2} \frac{1}{2} \, dt
+$$
+We can then say that $L(2^{n})>\frac{n}{2}$ by using the addition law many times, i.e. $nL(2)$, so $L(x)\to \infty$ as $x\to \infty$
+So we have a function that satisfies all the logarithm properties, so it is the logarithm, hence we have the exponential function as the inverse, so from this we can get $\sinh$ and $\cosh$ properties ect. We can do the same technique with $\arcsin$ to find $\sin$
 ## Integrability
 We say $f(x)$ is integrable in $(a,b)$ if it has an indefinite integral on $(a,b)$ which is [[Continuity|continuous]] on $[a,b]$
 ## Definite Integrals
@@ -113,6 +140,10 @@ $$
 $$
 m(b-a)\leq\int ^{b}_{a} f(x) \, dx \leq M(b-a)
 $$
+- If $f(x)\geq 0\forall x\in(a,b)$, then and $f$ continuous and there exists a point $c\in[a,b]:f(c)>0$
+$$
+\int ^{b}_{a} f(x) \, dx >0
+$$
 #### Proof of Monotonicity
 By linearity, it is enough to consider if $f(x)\geq 0$ and show $\int ^{b}_{a} f(x) \, dx \geq 0$. So take $f_{n}\to f$ uniformly, so given $\varepsilon>0$, find $f_{n}(x)$ such that $\left| f(x)-f_{n}(x) \right|<\varepsilon \forall x\in[a,b]$
 Since $f(x)>0$, we get
@@ -129,5 +160,17 @@ So $\lim_{ n \to \infty }I(f_{n})$ is bigger than any negative number $\implies 
 Next consider that $\left| f(x) \right|=\pm f(x)$, so $f(x)\leq \left| f(x) \right|$, but $\left| f(x) \right|>0$, so we get our property with absolute values we want
 For the last part we can consider the following diagram:
 ![[Integration 2025-03-13 11.33.41.excalidraw]]
+#### Proof of $f(x)\geq 0\implies \int ^{b}_{a} f(x) \, dx\geq 0$ 
+Set $C=f(c)$, by continuity, there exists a $\delta>0$ such that $f(x)>\frac{C}{2}$ for $\left| x-c \right|<\delta$ with this:
+$$
+\int ^{b}_{a} f(x) \, dx =\int_{a}^{c-\delta} \underbrace{ f(x) }_{ \geq 0 } \, dx +\int_{c-\delta}^{c+\delta} \underbrace{ f(x) }_{ \geq \frac{C}{2} } \, dx +\int_{c+\delta}^{b} \underbrace{ f(x)  }_{ \geq 0 }\, dx \geq 0+\frac{C}{2}2\delta+0=C\delta>0
+$$
+This does in fact require continuity, consider the function
+$$
+f(x)=\begin{cases}
+0 & x\neq 0\\1 & x=0
+\end{cases}
+$$
+Which is not continuous at $x=0$, and $f(x)\geq 0$, but $\int_{-1}^{1} f(x) \, dx=0$ since the step functions tend to 0
 
 #Mathematics #Calculus #Definition
