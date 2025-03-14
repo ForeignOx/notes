@@ -73,4 +73,55 @@ Giving
 $$
 \dot{\theta}_\text{max}=\dots
 $$
-    
+___
+A real pendulum: a rod of mass $M$, with a mass $m$ at the end, rod has length $L$. Find the distance $D$ of the centre of mass from the pivot. Compute the moment of inertia $I$, find an expression for energy $E$
+For the first part regard the rod as a particle of mass $M$ at centre $\frac{L}{2}$, then
+$$
+D=\frac{M\times \frac{L}{2}+mL}{M+m}=\frac{\frac{1}{2}M+m}{M+m}L
+$$
+For the second part we can simply add:
+$$
+I=\underbrace{ \frac{1}{3}ML^{2} }_{ \text{rod} }+\underbrace{ mL^{2} }_{ m }=\left( \frac{1}{3}M+m \right)L^{2}
+$$
+For the third part we simply substitute:
+$$
+E=\frac{1}{2}I\dot{\theta}^{2}+(M+m)gD(1-\cos\theta)
+$$
+___
+A mass $m$ on string wound around a uniform round pulley of mass $M$ and radius $L$. Pulley is on horizontal axis, gravity acts downwards. Find the acceleration $A$ of the mass as it falls, via the energy $E$
+We expect $A=f\left( \frac{M}{m} \right)g$ for some function $f\left( \frac{M}{m} \right)$ independent of $L$. We also expect $f\left( \frac{M}{m} \right)\to1$ as $\frac{M}{m}\to 0$ and $f\left( \frac{M}{m} \right)\to 0$ as $\frac{M}{m}\to \infty$
+![[Compound Pendula 2025-03-14 16.28.08.excalidraw]]
+The kinetic energy of $m$ is $\frac{1}{2}mv^{2}=\frac{1}{2}m\dot{z}^{2}$. The kinetic energy of the pulley is $\frac{1}{2}I\dot{\theta}^{2}$ and $\dot{z}=L\dot{\theta}$
+So we need the moment of inertia $I$, which we can do by looking at the disk in [[Polar Coordinates|polar coordinates]] $(r,\theta)$ and consider a little section
+![[Compound Pendula 2025-03-14 16.32.21.excalidraw]]
+So the mss of our little piece is
+$$
+\frac{Mrd\theta dr}{\pi L^{2}}
+$$
+So
+$$
+I=\int _{0}^{L}\int_{0}^{2\pi} \frac{Mr}{\pi L^{2}} \, d\theta  \, dr =\int_{0}^{L} \frac{Mr}{\pi L^{2}}2\pi \, dr =\frac{1}{2}ML^{2}
+$$
+The potential energy of the pulley is constant as its centre of mass is constant
+The potential energy of $m$ is $V=-\int mg \, dz=-mgz$ (note that $z$ is acting downwards)
+So
+$$
+E=\frac{1}{2}m\dot{z}^{2}+\frac{1}{4}M\underbrace{ L^{2}\dot{\theta}^{2} }_{ =\dot{z}^{2} }-mgz
+$$
+And $\frac{d E}{dt}=0$, so
+$$
+m\dot{z} \ddot{z}+\frac{1}{2}M\dot{z} \ddot{z}-mg\dot{z}=0
+$$
+$\dot{z}=0$ is a useless solution, so we can divide
+$$
+\ddot{z}  \left( 1+\frac{1}{2}\frac{M}{m} \right)=g
+$$
+And $\ddot{z}=A$, so
+$$
+A=\frac{g}{\left( 1+\frac{1}{2} \frac{M}{m} \right)}
+$$
+Note that this is what we expected with 
+$$
+f\left( \frac{M}{m} \right)=\frac{1}{1+\frac{1}{2} \frac{M}{m}}
+$$
+And as $\frac{M}{m}\to0,f\left( \frac{M}{m} \right)\to1$, and as $\frac{M}{m}\to \infty,f\left( \frac{M}{m} \right)\to 0$ 

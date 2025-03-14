@@ -49,4 +49,4 @@ $$
 y=\frac{1}{e^{ 3x }}\int_{}^{x} f(t)e^{ 3t } \, dt 
 $$
 ___
-
+another example
