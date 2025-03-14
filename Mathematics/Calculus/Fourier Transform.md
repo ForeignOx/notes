@@ -167,5 +167,56 @@ $$
 $$
 The inner integral is the fourier transform of $g(x-t)$ by shift theorem it is equal to $\tilde{g}(p)e^{ -ipt }$
 $$
-=\int_{-\infty}^{\infty} f(t)\tilde{g}(p)e^{ -ipt } \, dt=
+=\int_{-\infty}^{\infty} f(t)\tilde{g}(p)e^{ -ipt } \, dt=\tilde{g}(p)\int_{-\infty}^{\infty} f(t)e^{ -ipt } \, dt =\tilde{f}(p)\tilde{g}(p)
 $$
+
+## Example
+$$
+f(x)=\begin{cases}
+e^{ -ax } & x\geq 0\\0 & x<0
+\end{cases}
+$$
+$$
+\tilde{f}(p)=\int_{-\infty}^{\infty} f(x)e^{ ipx } \, dx =\int_{0}^{\infty} e^{ -ax }e^{ -ipx } \, dx =\int_{0}^{\infty} e^{ -(ip+a)x } \, dx =\left[ -\frac{1}{ip+a}e^{ -(ip+a)x } \right]^{\infty}_{0}=\frac{1}{ip+a}
+$$
+___
+$$
+g(x)=e^{ -a\left| x \right|  }
+$$
+$$
+\implies \tilde{g}(p)=\int_{-\infty}^{\infty} g(x)e^{ -ipx } \, dx =\int_{-\infty}^{0} e^{ ax }e^{ -ipx } \, dx +\int_{0}^{\infty} e^{ -ax }e^{ -ipx } \, dx 
+$$
+$$
+= \int_{-\infty}^{0} e^{ (a-ip)x } \, dx +\int_{0}^{\infty} e^{ -(ip+a)x } \, dx=\left[ \frac{1}{a-ip}e^{ (a-ip)x } \right]_{-\infty}^{0}-\left[ \frac{1}{ip+a}e^{ -(ip+a)x } \right]_{0}^{\infty}
+$$
+$$
+= \frac{1}{a-ip}+\frac{1}{ip+a}=\frac{2a}{a^{2}+p^{2}} 
+$$
+___
+$$
+f(x)=e^{ -x^{2} }
+$$
+$$
+ \tilde{f}(p)=\int_{-\infty}^{\infty} f(x)e^{ -ipx } \, dx=\int_{-\infty}^{\infty} e^{ -x^{2} }e^{ -ipx } \, dx =\int_{-\infty}^{\infty} e^{ -(x+ip/2)^{2} }e^{ (ip/2)^{2} } \, dx  
+$$
+$$
+= e^{ -p^{2}/4 }\int_{-\infty}^{\infty} e^{ -(x+ip/2)^{2} } \, dx =e^{ -p^{2}/4 }\int_{-\infty}^{\infty} e^{ -x'^{2} } \, dx' =\sqrt{ p }e^{ -p^{2}/4 }
+$$
+Where we made the substitution $x'=x+\frac{ip}{2}$
+We can then do other quadratics
+$$
+F(x)=e^{ -bx^{2}-cx }=e^{ -(\sqrt{ b }x+c/2\sqrt{ b })^{2} }e^{ c^{2}/4b }=e^{ c^{2}/4b }f\left( \sqrt{ bx }+\frac{c}{2\sqrt{ b }} \right)
+$$
+So let $h(x)=f\left( \sqrt{ b }x+\frac{c}{2\sqrt{ b }} \right)$, $g(x)=h\left( \frac{x}{\sqrt{ b }} \right)=f\left( x+\frac{c}{2\sqrt{ b }} \right)$, so by the shift theorem:
+$$
+\tilde{g}(p)=\tilde{f}(p)e^{ ipc/2\sqrt{ b } }=\sqrt{ \pi }e^{ -p^{2}/4 }e^{ ipc/2\sqrt{ b } }
+$$
+Then $h(x)=g(\sqrt{ b }x)$, so by scaling theorem:
+$$
+\tilde{h}(p)=\frac{1}{\sqrt{ b }}\tilde{g}\left( \frac{p}{\sqrt{ b }} \right)=\sqrt{ \frac{\pi}{b} }e^{ -\frac{p^{2}}{4b} }e^{ \frac{ic}{2\sqrt{ b }}p }
+$$
+Finally $F(x)=e^{ \frac{c^{2}}{4b} }h(x)$, so
+$$
+\tilde{F}(p)=\sqrt{ \frac{\pi}{b} }e^{ \frac{c^{2}}{4b} }e^{ -\frac{p^{2}}{4b} }e^{ \frac{icp}{2b} }=\sqrt{ \frac{\pi}{b} }e^{ -\frac{1}{4b}(p-ic)^{2} }
+$$
+
