@@ -1,3 +1,7 @@
+To set up the general approach to [[Bayesian Statistics|Bayesian analysis]] of binomial data, we need to identify an appropriate prior for the probability parameter. The distribution we shall use for this is the beta distribution, which is very flexible and defined over $[0,1]$, so is ideal for representing probability. The [[Beta Distribution|Beta distribution]] has a similar functional form as the binomial likelihood, so we can investigate whether it is a conjugate prior
+We have data $Y_{1},Y_{2},\dots,Y_{n}$ where each $Y_{i}$ is $\hspace{0pt}1$ in the even of success with probability $p$, and $0$ otherwise. Assuming the $Y_{i}$ are independent and $p$ is constant, then our data are [[Independent and Identically Distributed|IID]] [[Bernoulli Distribution|Bernoulli]] random variables with parameter $p$. If we cound the number of successes, $X=\sum_{i}Y_{i}$, then we have $X\sim B(n,p)$
+To find the prosterior for $p|X$, we need to combine the binomial likelihood with a prior for $p$. The beta distribution is an ideal candidate
+___
 Suppose we observe a [[Random Variables|random variable]] $X=x$ where $X|p\sim Bin(n,p)$ is [[Binomial Distribution|binomially distributed]]. If our [[Bayesian Statistics|prior]] distribution for $p=\theta$ is such that $p\sim Beta(a,b)$, then the posterior distribution for $p|x$ is:
 $$
 p|x \sim Beta(a+x,b+n-x)
@@ -38,8 +42,8 @@ $$
 This is the convenience of conjugacy!
 A heavy calculation of the posterior is reduced to adding
 This gives great insight into the meaning of the the prior parameters $a$ and $b$. We see from the posterior that:
-- $a$ is "like" $x$ which is the number of successes
-- $b$ is "like" $n-x$ which is the number of failures
+- $a$ is “like” $x$ which is the number of successes
+- $b$ is “like” $n-x$ which is the number of failures
 We can think of our prior as representing an equivalent hypothetical prior samplee of size $(a+b)$ in which we observe $a$ successes and $b$ failures
 We also note that we can express the posterior [[Expectation|expectation]] for $p|x$ as
 - Prior: 
