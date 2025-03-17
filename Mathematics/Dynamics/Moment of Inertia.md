@@ -14,5 +14,13 @@ This is easy because all the particles are at the same distance $r$, from the ax
 | Solid sphere    | $\frac{2}{5}mr^{2}$  |
 | Spherical shell | $\frac{2}{3}mr^{2}$  |
 | Uniform rod     | $\frac{1}{12}mr^{2}$ |
+## Example
+Consider the moment of inertia $I$ of a square light plate with $\hspace{0pt}4$ masses $m$ attached to each cornier, with side-length $D$, about an axis perpendicular to plate halfway along an edge:
+![[Moment of Inertia 2025-03-17 14.24.41.excalidraw]]
+We do this by considering each mass and using [[Pythagoras' Theorem|pythagoras]]
+$$
+I=m\left( \frac{D}{2} \right)^{2}+{m}\left( \frac{D}{2} \right)^{2}+m\left( \left( \frac{D}{2} \right)^{2}+D^{2} \right)+m\left( \left( \frac{D}{2} \right)^{2}+D^{2} \right)=3mD^{2}
+$$
+
 
 #Physics #Sports

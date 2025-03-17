@@ -148,5 +148,31 @@ $$
 $$
 =\frac{1}{1+\left( x-\frac{t}{2} \right)^{2}}
 $$
-
+## String with $\hspace{0pt}1$ Boundary Condition
+Say the string lies on $x\geq 0$ and is fixed at $x=0$ by the boundary condition $u(0,t)=0\forall t$. The general solution
 $$
+u(x,t)=f(x-ct)+g(x+ct)
+$$
+Satisfies this boundary condition iff $f(-ct)+g(ct)=0\forall t$ (substitute $x=0$). This means however that $f$ and $g$ are no longer independent:
+$$
+g(q)=-f(-q)
+$$
+So one of the functions, say $f$, is arbitrary, whereas $g$ is not or vice versa.
+For example take $f(p)=e^{ -p^{2} }$, then
+$$
+u(x,t)=e^{ -(x-ct)^{2} }-e^{ -(x+ct)^{2} }
+$$
+And we can check that 
+$$
+u(0,t)=e^{ -(ct)^{2} }-e^{ -(ct)^{2} }=0
+$$
+```desmos-graph
+f\left(x\right)=e^{-x^{2}}|hidden
+c=1
+u\left(x\right)=f\left(x-ct\right)-f\left(x+ct\right)
+t=5.08
+```
+![[Wave Equation 2025-03-17 14.20.32.excalidraw]]
+## String with Two Boundary Conditions
+For two boundary conditions, a string will create harmonics, which we can usually solve with [[Fourier Series|fourier series]]
+
