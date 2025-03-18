@@ -1,0 +1,1 @@
+The symmetric group of degree $n$, $S_{n}$ is the group with elements which are permutations of $n$ distinct symbols with group operation being the composition of permutations. $\left| S_{n} \right|=n!$

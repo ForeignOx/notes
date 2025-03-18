@@ -1,0 +1,3 @@
+A [[Groups|group]] is called simple if its only [[Normal Subgroups|normal]] [[Subgroups|subgroups]] ae the trivial group $\left\{ \varepsilon \right\}$ or the whole group itself.
+For examples $\mathbb{Z}_{2},\mathbb{Z}_{3},A_{5}$ are simple. $A_{5}$ is the smallest non-abelian finite simple group
+The classification of finite simple groups, completed in $\hspace{0pt}2004$, is very long. The full write-up of this is in progress
