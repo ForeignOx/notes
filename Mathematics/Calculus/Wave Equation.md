@@ -113,6 +113,70 @@ And since $\int_{0}^{a}-\int_{0}^{b}=\int_{b}^{a}$, we have
 $$
 u(x,t)=\frac{1}{2}(R(x-ct)+R(x+ct))+\frac{1}{2c}\int_{x-ct}^{x+ct} S(x) \, dx 
 $$
+### Proof Using [[Fourier Transform|Fourier Transforms]]
+If we have $u_{tt}=c^{2}u_{x x},u(x,0)=R(x),u_{t}(x,0)=S(x)$, then we can take fourier transforms of both sides to get:
+$$
+\tilde{u}_{tt}=c^{2}(ip)^{2}\tilde{u}=-c^{2}p^{2}\tilde{u}
+$$
+Which is an ODE, in fact it is [[Simple Harmonic Motion|SHM]], so
+$$
+\tilde{u}(p,t)=A(p)\cos(cpt)+B(p)\sin(cpt)
+$$
+$$
+ \tilde{u}(p,0)=A(p)=\tilde{R}(p)
+$$
+$$
+ \tilde{u}_{t}(p,t)=-cpA(p)\sin(cpt)+cpB(p)\cos(cpt)
+$$
+$$
+ \tilde{u}_{t}(p,0)=cpB(p)=\int_{-\infty}^{\infty} u_{t}(x,0)e^{ -ipx } \, dx =\int_{-\infty}^{\infty} S(x)e^{ -ipx } \, dx =\tilde{S}(p)
+$$
+Soooo
+$$
+\tilde{u}(p,t)=\tilde{R}(p)\cos(cpt)+\frac{\tilde{S}}{pc}\sin(cpt)
+$$
+So we need to find some function $u(x,t)$ which has this as its fourier transform. Note
+$$
+\tilde{R}(p)\cos(pct)=\frac{\tilde{R}(p)e^{ icpt }}{2}+\frac{\tilde{R}(p)e^{ -icpt }}{2}
+$$
+Which by shift theorem is the fourier transform of
+$$
+\frac{1}{2}R(x+ct)+\frac{1}{2}R(x-ct)
+$$
+Next we consider
+$$
+\frac{\tilde{S}(p)\sin(pct)}{pc}=\tilde{S}(p)\tilde{g}(p)
+$$
+If we can find $g(x)$ with Fourier Transform $\tilde{g}(p)$, then by the [[Convolution of Functions|convolution]] theorem, $S(x)*g(x)$ will have this fourier transform. We can recall that the fourier transform of:
+$$
+F(x)=\begin{cases}
+1 & \left| x \right| <1\\0 & \left| x \right| >1
+\end{cases}
+$$
+Is
+$$
+\tilde{F}(p)=\frac{2\sin(p)}{p}
+$$
+Then if we let $g(x)=KF(bx)$ for $b>0$, then by the scaling theorem:
+$$
+\tilde{g}(p)=\frac{K}{b}\tilde{F}\left( \frac{p}{b} \right)=\frac{\frac{K}{b}2\sin\left( \frac{p}{b} \right)}{\frac{p}{b}}=\frac{2K\sin\left( \frac{p}{b} \right)}{p}=\frac{\sin(pct)}{pc}
+$$
+$$
+\implies K=\frac{1}{2c},b=\frac{1}{ct}
+$$
+Therefore
+$$
+g(x)=\frac{1}{2x}F\left( \frac{x}{ct} \right)=\begin{cases}
+\frac{1}{2c} & \left| \frac{x}{ct} \right| <1\\0 & \text{otherwise}
+\end{cases}
+$$
+So now we need
+$$
+S(x)*g(x)=\int_{-\infty}^{\infty} S(x')g(x-x') \, dx'=\frac{1}{2c}\int_{x-ct}^{x+ct} S(x') \, dx'
+$$
+$$
+ \therefore u(x,t)=\frac{1}{2}(R(x+ct)+R(x-ct))+\frac{1}{2c}\int_{x-ct}^{x+ct} S(x') \, dx'   
+$$
 ## Examples
 An infinite string is plucked, so $S(x)=0$, with $R(x)=e^{ -x^{2} }$. Then
 $$
