@@ -200,7 +200,7 @@ $$
  \tilde{f}(p)=\int_{-\infty}^{\infty} f(x)e^{ -ipx } \, dx=\int_{-\infty}^{\infty} e^{ -x^{2} }e^{ -ipx } \, dx =\int_{-\infty}^{\infty} e^{ -(x+ip/2)^{2} }e^{ (ip/2)^{2} } \, dx  
 $$
 $$
-= e^{ -p^{2}/4 }\int_{-\infty}^{\infty} e^{ -(x+ip/2)^{2} } \, dx =e^{ -p^{2}/4 }\int_{-\infty}^{\infty} e^{ -x'^{2} } \, dx' =\sqrt{ p }e^{ -p^{2}/4 }
+= e^{ -p^{2}/4 }\int_{-\infty}^{\infty} e^{ -(x+ip/2)^{2} } \, dx =e^{ -p^{2}/4 }\int_{-\infty}^{\infty} e^{ -x'^{2} } \, dx' =\sqrt{ \pi }e^{ -p^{2}/4 }
 $$
 Where we made the substitution $x'=x+\frac{ip}{2}$
 We can then do other quadratics
