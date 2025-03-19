@@ -74,7 +74,7 @@ So $\left| f(x)-f_{N}(x) \right|<\varepsilon=1$ for all $x$, so
 $$
 \left| f(x) \right| <\left| f_{N}(x) \right| +1
 $$
-Which menas that $f(x)$ is bounded, since $f_{N}(x)$ take only finitely many values. Same for the $f_{n}(x)$, for $n\geq N$, so $f_{1},\dots,f_{N-1}$ are bounded universally, so we just take the maximum
+Which means that $f(x)$ is bounded, since $f_{N}(x)$ take only finitely many values. Same for the $f_{n}(x)$, for $n\geq N$, so $f_{1},\dots,f_{N-1}$ are bounded universally, so we just take the maximum
 ### Proposition "Regulated CoLT"
 If $f_{n}\to f,g_{n}\to g$, $f,g$ are regulated, so
 - $\alpha f+\beta g$ is regulated by $\alpha f_{n}+\beta g_{n}$
