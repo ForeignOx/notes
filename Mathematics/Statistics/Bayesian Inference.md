@@ -52,13 +52,4 @@ Find intervals that capture a proportion of the possible values of $\theta$, suc
 $$
 \mathbb{P}(l<\theta<u)=1-\alpha
 $$
-### Credible Intervals
-Credible intervals are the Bayesian equivalent of the frequentist confidence interval
-A $100(1-\alpha)\%$ credible interval $[l,u]$ from $l$ lower and $u$ upper for a [[Random Variables|random variable]] $\theta \in\mathbb{R}$ satisfies:
-$$
-\mathbb{P}(l\leq\theta \leq u)=\mathbb{P}(\theta \in [l,u])=1-\alpha
-$$
-Similarly, a $100(1-\alpha)\%$ credible interval for $\theta$ given the data $X=x$ satisfies:
-$$
-\mathbb{P}(l\leq\theta \leq u|X=x)=
-$$
+
