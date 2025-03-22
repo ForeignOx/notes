@@ -139,3 +139,25 @@ $$
 ```desmos-graph
 y=-2*x^2/(2*x^2+x^3)
 ```
+___
+Unit mass in an attractive central force of magnitude $\frac{5}{r^{2}}$, we have initial conditions: $\underline{r}(0)=2\underline{e}_{r}$, $\underline{v}(0)=\gamma \underline{e}_{r}+\underline{e}_{\theta}$ where $\gamma$ is a positive constant. Use $E$ to find $\gamma$ such that the trajectory is bounded. For which $\gamma$ is $r_\text{max}=9r_\text{min}$?
+It is bounded iff $E<0$ since $E=\frac{1}{2}mv^{2}+V(r)$, $V=-\int -\frac{5}{r^{2}} \, dr=-\frac{5}{r}$, so $E\geq 0$ to reach $r=\infty$. Here
+$$
+E=\frac{1}{2}(\gamma^{2}+1)-\frac{5}{2}=\frac{1}{2}(\gamma^{2}-4)
+$$
+So bounded for
+$$
+0<\gamma<2
+$$
+We also know that
+$$
+E=\frac{1}{2}v^{2}+V=\frac{1}{2}(\dot{r}^{2}+r^{2}\dot{\theta}^{2})-\frac{5}{r}
+$$
+$$
+ L=m\underline{r}\times \underline{v}=2\underline{e}_{r}\times \underline{e}_{\theta}\implies L=2=r^{2}\dot{\theta}
+$$
+$$
+\sum_{k=1}^{k}k\alpha 
+$$
+
+$a\in S, \pi n\sin \in$ $M_{n}(\mathbb{R})$
