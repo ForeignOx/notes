@@ -1,4 +1,4 @@
-Suppose we have [[Simple Harmonic Motion|simple harmonic motion]], but there is an external forcing term $F(t)$, as well as the motion being [[Damped Oscillations|damped]], now the equation of motion is:
+ergzkovSuppose we have [[Simple Harmonic Motion|simple harmonic motion]], but there is an external forcing term $F(t)$, as well as the motion being [[Damped Oscillations|damped]], now the equation of motion is:
 $$
 m\ddot{x}+2mb\dot{x}+kx=F(t)
 $$
