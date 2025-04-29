@@ -53,7 +53,7 @@ $$
 ___
 ## [[Moment Generating Functions|Moment Generating Function]]
 $$
-\psi(t)=E(e^{ tX })=\prod_{i=1}^{n}E(e^{ tX_{i} })=(pe^{ t }+q)^{nc}
+\psi(t)=E(e^{ tX })=\prod_{i=1}^{n}E(e^{ tX_{i} })=(pe^{ t }+q)^{n}
 $$
 ## Requirements
 The binomial distribution is a suitable modelling distribution if the following hold:
