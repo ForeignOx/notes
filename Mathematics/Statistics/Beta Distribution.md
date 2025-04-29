@@ -1,4 +1,4 @@
-Let a [[Random Variables|random variable]] $X\sim Beta(a,b)$ for $a,b>0$ known, then $X$ has Beta distribution with pdf
+zLet a [[Random Variables|random variable]] $X\sim Beta(a,b)$ for $a,b>0$ known, then $X$ has Beta distribution with pdf
 $$
 f(x)=\frac{1}{\beta(a,b)}x^{a-1}(1-x)^{b-1}=\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}x^{a-1}(1-x)^{b-1},0\leq x\leq 1
 $$
