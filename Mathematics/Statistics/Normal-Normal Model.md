@@ -42,7 +42,7 @@ Before we prove this, we need to find the [[Core of a Distribution|core]] for a 
 $$
 f(x|\mu,\sigma^{2})\propto e^{ -\frac{1}{2\sigma^{2}}(x-\mu)^{2} }=e^{ -\frac{\tau}{2}(x-\mu^{2}) }
 $$
-But we can bultiply out the quadratic inside the exponential to get:
+But we can multiply out the quadratic inside the exponential to get:
 $$
 f(x|\mu,\sigma^{2})\propto \exp\left( -\frac{1}{2\sigma^{2}}(x^{2}+\mu^{2}-2x\mu) \right)
 $$
