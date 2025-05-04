@@ -52,7 +52,7 @@ And $\frac{1}{n}$ is independent of $x$, and tends to $\hspace{0pt}0$, so...
 Pick $\varepsilon>0$, let $N=\frac{1}{\varepsilon}$, then $\left| f_{n}(x)-f(x) \right|<\frac{1}{n}\leq \frac{1}{N}=\varepsilon$ for $n\geq N$
 ## Uniform Convergence on Compact [[Subsets|Subsets]] (Subintervals)
 This is more strict than pointwise convergence, but less strict than uniform convergence, it is the goldilocks
-If $f_{n}:I\to \mathbb{R}$ tends to $f$ uniformly in compact subintervals if $f_{n}\to f$ on all $[a,b]\subseteq I$
+If $f_{n}:I\to \mathbb{R}$ tends to $f$ uniformly in compact subintervals if $f_{n}\to f$ on all $[a,b]\subset I$
 ## Lemma (Criterion)
 - If $\left| f(x)-f_{n}(x) \right|\leq a_{n}$ for all $x\in I$ with $\lim_{ n \to \infty }a_{n}=0$, then uniform convergence on $I$ (where $a_{n}$ must not depend on $x$)
 - If $\exists\varepsilon>0$ and a sequence $x_{n}\in I$ such that for all $n$ sufficiently large, $\left| f(x)-f_{n}(x_{n}) \right|\geq\varepsilon$, then convergence is not uniform on $I$
