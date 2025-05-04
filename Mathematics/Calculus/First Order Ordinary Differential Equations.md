@@ -178,7 +178,7 @@ The equality of the mixed partial derivatives:
 $$
 \frac{ \partial^{2}g }{ \partial x\partial y }=\frac{ \partial^{2}g }{ \partial y \partial x }  
 $$
-Requires that for an exace ODE:
+Requires that for an exact ODE:
 $$
 \frac{ \partial N }{ \partial x } =\frac{ \partial M }{ \partial y } 
 $$
