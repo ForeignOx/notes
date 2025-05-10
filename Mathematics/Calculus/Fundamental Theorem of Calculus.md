@@ -1,4 +1,4 @@
-The following theorem connects definite and indefinite [[Integration|integrals]]
+*The* following theorem connects definite and indefinite [[Integration|integrals]]
 If [[Functions|$f(x)$]] is [[Regulated Functions|regulated]] on [[Intervals|$[a,b]$]], then the function
 $$
 F(x)=\int ^{x}_{a} f(t) \, dt 
