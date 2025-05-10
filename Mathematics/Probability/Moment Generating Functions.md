@@ -1,4 +1,4 @@
-Let $X:\Omega\to \mathbb{R}$ be a [[Random Variables|random variable]] then the meent generating function of $X$ is defined and denoted by:
+2Let $X:\Omega\to \mathbb{R}$ be a [[Random Variables|random variable]] then the meent generating function of $X$ is defined and denoted by:
 $$
 M_{X}(t)=E(x^{tx}),t\in \mathbb{R}
 $$
