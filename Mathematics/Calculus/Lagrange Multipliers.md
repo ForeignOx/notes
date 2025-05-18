@@ -4,7 +4,7 @@ $$
 $$
 So $\phi$ has an unconstraned stationary point
 ___
-We can generalise to find stationary points of $f(x_{2},x_{2},\dots,x_{n})$ subject to $m<n$ constraints $g_{j}(x_{1},\dots,x_{n})=0$ with $1\leq j\leq m$. At stationary points of $f(x_{1},\dots,x_{n})$ on $n-m$ dimensional constraint surface, we split [[Sums and Intersections of Vectorspaces#Direct Sums|$\mathbb{R}^{n}=V_\text{tangent}\oplus V_\text{normal}$]], where[[Dimension| $\dim(V_\text{tangent})=n-m$]], $\dim(V_\text{normal})=m$#
+We can generalise to find stationary points of $f(x_{1},x_{2},\dots,x_{n})$ subject to $m<n$ constraints $g_{j}(x_{1},\dots,x_{n})=0$ with $1\leq j\leq m$. At stationary points of $f(x_{1},\dots,x_{n})$ on $n-m$ dimensional constraint surface, we split [[Sums and Intersections of Vectorspaces#Direct Sums|$\mathbb{R}^{n}=V_\text{tangent}\oplus V_\text{normal}$]], where[[Dimension| $\dim(V_\text{tangent})=n-m$]], $\dim(V_\text{normal})=m$#
 $\underline{\nabla g_{i}}\in V_\text{normal}$, since normal to level sets $g_{j}=0$, so we assume $\underline{\nabla g_{i}}$ is a [[Basis|basis]] for $V_\text{normal}$
 If $f$ is stationary on constrant furvace, then $\underline{\nabla f}\cdot  \underline{\hat{n}}=0$, ie. $\underline{\nabla f}$ is [[Orthogonality|orthogonal]] to $V_\text{tangent}$
 Therefore $\underline{\nabla f}\in V_\text{normal}$, since $\underline{\nabla g_{i}}$ are a basis for $V_\text{normal}$ and $\underline{\nabla f}\in V_\text{normal}$, so $\underline{\nabla f}$ can be written as a [[Linear Combinations|linear combination]] of $\underline{\nabla g_{i}}$'s:
