@@ -171,7 +171,7 @@ The following table lists terms that can appear in $\phi$ in order to use this m
 | $x^{n}$           | $a_{0}+a_{1}x+a_{2}x^{2}+\dots+a_{n}x^{n}$ |
 | $\cos(\gamma x)$  | $a_{1}\cos(\gamma x)+a_{2}\sin(\gamma x)$  |
 | $\sin(\gamma x)$  | $a_{1}\cos(\gamma x)+a_{2}\sin(\gamma x)$  |
-If $\phi(x)$ contains sums or products of the above terms,, we try the corresponding sum/product of the corresponding forms
+If $\phi(x)$ contains sums or products of the above terms, we try the corresponding sum/product of the corresponding forms
 If the listed form to try is already in the complimentary function, then putting this into the original ODE will give $0$ rather than $\phi(x)$, we then try a $y_{PI}$ of the suggested form multiplied by $x$. We can apply this rule twice (or more times) if the first applicatio also gives a terms in $y_{CF}$
 ### Method of Variation of Parameters
 Our method of undetermined coefficients allows us to solve an inhomogeneous ODE, but only when the inhomogeneous terms $\phi(x)$ takes particular forms. The following method allows us to solve more general inhomogeneous ODEs
