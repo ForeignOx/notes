@@ -1,4 +1,4 @@
-The generic first order [[Differential Equations|ODE]] can be written in the form:
+2The generic first order [[Differential Equations|ODE]] can be written in the form:
 $$
 \frac{d y}{dx} =f(x,y)
 $$
