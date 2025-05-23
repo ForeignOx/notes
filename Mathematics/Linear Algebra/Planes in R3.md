@@ -168,7 +168,7 @@ Then we know $l=\underline{n}\cdot \underline{a}$, so $l=-2+5=3$, so we have:
 $$
 \Pi=\left\{  \begin{pmatrix}
 x\\y\\ z
-\end{pmatrix}\in \mathbb{R}^3|-2x+8y+5z=3  \right\}
+\end{pmatrix}\in \mathbb{R}^3\middle|-2x+8y+5z=3  \right\}
 $$
 
 #Mathematics #LinAlg 
