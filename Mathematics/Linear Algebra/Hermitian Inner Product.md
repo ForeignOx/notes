@@ -10,7 +10,7 @@ For $\underline{u},\underline{v}\in V$ such that:
 - $\left< \underline{u}+\underline{v},\underline{w} \right>=\left< \underline{u},\underline{w} \right> +\left< \underline{v},\underline{w} \right>$ 
 - $\left< \lambda \underline{u},\underline{v} \right>=\lambda \left< \underline{u},\underline{v} \right>$ (this and previous, make linear in first argument)
 - $\left< \underline{v},\underline{v} \right>\geq 0$ with $\left< \underline{v},\underline{v} \right> =0\iff \underline{v}=\underline{0}$
-Why is $\left< \underline{v},\underline{v} \right>\in\mathbb{R}$, it follows from the first point that swapping the vectors gives the conjugate, so they must map to $\mathbb{R}$
+Why is $\left< \underline{v},\underline{v} \right>\in\mathbb{R}$, it follows from the first point that swapping the vectors gives the conjugate, so they must map to $\mathbb{R}$  $\rank f\le\dim\mathbb R^3=3, \rank(g\circ f)\le\min(\rank f,\rank g)\le3, \rank(g\circ f)\le3<4$
 - $\left< \underline{v},\underline{v} \right>\in\mathbb{R}$
 Note that $\left< , \right>$ is not quite linear in its second argument, we can use property $\hspace{0pt}1$ to show that $\left< \underline{u},\lambda \underline{v} \right> =\overline{\left< \lambda \underline{v},\underline{u} \right> }$ then by the third property is equal to $\overline{\lambda \left< \underline{v},\underline{u} \right>}=\overline{\lambda}\overline{\left< \underline{v},\underline{u} \right>}$, which by the first property is then equal to $\overline{\lambda}\left< \underline{u},\underline{v} \right>$
 - $\left< \underline{u},\lambda \underline{v} \right>=\overline{\lambda}\left< \underline{u},\underline{v} \right>$
