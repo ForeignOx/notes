@@ -133,7 +133,7 @@ $$
 b\to \tilde{b}=N^{*}BN
 $$
 (For the matrix of a linear transformation, we instead found $A= P ^{-1}AP$, this is different)
-So a big question for [[Diagonalisation|diagonalisation]], is can we find $M$ such that $N^{*}BN$ is diagonal, and a subquestion, what if $M^{*}=M^{-1}$ 
+So a big question for [[Diagonalisation|diagonalisation]], is can we find $M$ such that $N^{*}BN$ is diagonal, and a subquestion, what if $M^{*}=M^{-1}$
 
 
 #Mathematics #LinAlg #Definition 
