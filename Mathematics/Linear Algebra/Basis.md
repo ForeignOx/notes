@@ -1,4 +1,4 @@
-*A* basis for a [[Vectorspaces|vectorspace]] $V$ is a finite [[Sets|set]] of [[Vectors|vectors]]:
+z*A* basis for a [[Vectorspaces|vectorspace]] $V$ is a finite [[Sets|set]] of [[Vectors|vectors]]:
 $$
 \{ \underline{v}_{1},\underline{v}_{2},\dots,\underline{v}_{n} \}\subseteq V
 $$
