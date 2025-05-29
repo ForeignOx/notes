@@ -350,20 +350,4 @@ $$
 y=\sum_{n=0}^{\infty} a_{k} 
 $$
 
-
-
-
-$\frac{d^{2}y}{dx^{2}}-a^{2}y=0$,
-$\lambda^{2}-a^{2}=0\implies\lambda_{\pm}=\pm a$
-$$
-y=Ae^{ ax }+Be^{ -ax }
-$$
-$$
-\sinh x=\frac{e^{ x }-e^{ -x }}{2},\cosh x=\frac{e^{ x }+e^{ -x }}{2}
-$$
-$$
-y=A\sinh(ax)+B\cosh(ax)
-$$
-
-
 #Mathematics #Calculus
