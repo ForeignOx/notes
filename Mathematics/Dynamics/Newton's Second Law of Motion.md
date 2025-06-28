@@ -6,7 +6,7 @@ $$
 \sum F=\frac{dp}{d t}=\dot{p}
 $$
 This gives us an equation of motion
-So in general, force can depend on time, [[Position|position]], or even [[velocity|velocity]], so
+So in general, force can depend on time, [[Position|position]], or even [[Velocity|Velocity]], so
 $$
 F=F(t,x,\dot{x})=m\ddot{x}
 $$

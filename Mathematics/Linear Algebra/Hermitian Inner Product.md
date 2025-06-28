@@ -36,7 +36,7 @@ $$
 B_{11}
 \end{pmatrix}
 $$
-Where $B_{ji}=\left< \underline{v}_{i},\underline{v}_{j} \right>\in\mathbb{C}$, and $\underline{y}^{*}=(\overline{\underline{y}})^{\top}$, so $B$ is the [[Matrices|matrix]] representation of $\left< , \right>$ in the [[basis|basis]] $\left\{ v_{i} \right\}$
+Where $B_{ji}=\left< \underline{v}_{i},\underline{v}_{j} \right>\in\mathbb{C}$, and $\underline{y}^{*}=(\overline{\underline{y}})^{\top}$, so $B$ is the [[Matrices|matrix]] representation of $\left< , \right>$ in the [[Basis|Basis]] $\left\{ v_{i} \right\}$
 $B$ must satisfy $B=(\overline{B})^{\top}=B^{*}$, called the hermitian [[Transpose|transpose]], or the conjugate transpose, or the hermitian conjugate, sometimes written $B^{\dagger}$. Matrices that satisfy $B=B^{*}$ are called Hermitian, likewise $B$ is anti-Hermitian i $B^{*}=-B$
 Any complex matrix is the sum of a Hermitian and an anti-Hermitian matrix:
 $$

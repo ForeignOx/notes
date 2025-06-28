@@ -6,7 +6,7 @@ We can convert this to canonical form:
 $$
 \frac{d ^{2}y}{dx^{2}} +\frac{2x}{x^{2}-1}\frac{d y}{dx} -\frac{\lambda}{x^{2}-1}y=0
 $$
-So $p(x)=\frac{2x}{x^{2}-1}$, $q(x)=-\frac{\lambda}{x^{2}-1}$, these are rational [[functions|functions]] [[Analytic Functions|analytic]] everywhere except when $x^{2}-1=0\implies x=\pm 1$, so all points $x_{0}\in\mathbb{R}$ are [[Regular Points|regular points]], except $x_{0}=\pm 1$, which are singular
+So $p(x)=\frac{2x}{x^{2}-1}$, $q(x)=-\frac{\lambda}{x^{2}-1}$, these are rational [[Functions|Functions]] [[Analytic Functions|analytic]] everywhere except when $x^{2}-1=0\implies x=\pm 1$, so all points $x_{0}\in\mathbb{R}$ are [[Regular Points|regular points]], except $x_{0}=\pm 1$, which are singular
 Take $x_{0}=0$, we form a [[Power Series|power series]]
 $$
 y(x)=\sum_{n=0}^{\infty} a_{n}x^{n} 

@@ -27,7 +27,7 @@ The [[Geometric Progressions|geometric series]] $\sum_{k=0}^{\infty} x^{k}$, i.e
 And divergence for $\left| x \right|>1$
 If $x=\pm1$, then we are looking at $(\pm 1)^{k}$, which clearly diverges
 ___
-Consider the [[series|series]] $\sum_{k=0}^{\infty} \frac{x^{k}}{k!}$, we use the ratio test:
+Consider the [[Series|Series]] $\sum_{k=0}^{\infty} \frac{x^{k}}{k!}$, we use the ratio test:
 $$
 \frac{\left| x \right| ^{k+1}}{(k+1)!} \frac{k!}{\left| x \right| ^{k}}=\frac{\left| x \right| }{k+1}\to0<1
 $$

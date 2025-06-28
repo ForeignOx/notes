@@ -1,4 +1,4 @@
-If we take the time derivative of angular momentum for a particle of [[mass|mass]] $m$ at [[position|position]] $\underline{r}$ with [[Velocity|velocity]] $\underline{\dot{r}}$, we have:
+If we take the time derivative of angular momentum for a particle of [[Mass|Mass]] $m$ at [[Position|Position]] $\underline{r}$ with [[Velocity|velocity]] $\underline{\dot{r}}$, we have:
 $$
 \frac{d }{dt} \underline{L}=m \underbrace{ \underline{\dot{r}}\times\underline{v} }_{ =\underline{0} }+m\underline{r}\times  \underline{\dot{v}}=\underline{r} \times (m\underline{\dot{v}})=\underline{r}\times \underline{F}
 $$

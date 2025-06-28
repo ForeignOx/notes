@@ -11,7 +11,7 @@ $$
  z'=3y-4z+2x
 $$
 Satisfying the initial conditions $y(0)=1,z(0)=2$
-We rewrite the system of two coupled first order ODEs as a [[Second Order ordinary Differential Equations|second order ODE]] for $y$ or $z$, which we can solve
+We rewrite the system of two coupled first order ODEs as a [[Second Order Ordinary Differential Equations|second order ODE]] for $y$ or $z$, which we can solve
 From the first equation;
 $$
 z=-\frac{y'}{2}+\frac{y}{2}+x

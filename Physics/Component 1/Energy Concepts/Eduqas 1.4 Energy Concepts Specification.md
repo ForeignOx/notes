@@ -11,7 +11,7 @@ There are opportunities within this topic for learners to use theories, models a
 - [[Work|the calculation of the work done for constant forces, when the force is not along the line of motion]] (work done = $Fx\cos\theta$
 - the [[Principle of Conservation of Energy]] including knowledge of [[Gravitational Potential Energy]] $(mg\Delta h)$ , [[Elastic Potential Energy]] $(\frac{1}{2}kx^{2})$ and [[Kinetic Energy]] $\left( \frac{1}{2}mv^{2} \right)$
 - the work-energy relationship: $Fx=\frac{1}{2}mv^{2}-\frac{1}{2}m u^{2}$
-- [[Git?/Physics/Component 1/Energy Concepts/Power|power being the rate of energy transfer]]
+- [[Power|power being the rate of energy transfer]]
 - [[Efficiency|dissipative forces for example, friction and drag cause energy to be transferred from a system and reduce the overall efficiency of the system]]
 - [[Efficiency|the equation]] $\text{efficiency}=\frac{\text{useful energy transfer}}{\text{total energy input}}\times 100\%$
 

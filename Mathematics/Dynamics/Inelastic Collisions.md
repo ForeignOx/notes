@@ -1,6 +1,6 @@
 Inelastic collisions are collisions where [[Kinetic Energy|kinetic energy]] is lost. These tend to occur when two objects collide and then combine into one object, while energy is lost, [[Momentum|momentum]] is conserved.
 ## Example
-[[mass|Mass]] $2m$ with [[Speed|speed]] collides with stationary mass $m$. Afterwards, they move in the same direction and the $2m$-particle moves with speed $\frac{1}{2}v$. What is the speed $u$ of the other particle, and what is the fraction $Z$ of energy lost?
+[[Mass|Mass]] $2m$ with [[Speed|speed]] collides with stationary mass $m$. Afterwards, they move in the same direction and the $2m$-particle moves with speed $\frac{1}{2}v$. What is the speed $u$ of the other particle, and what is the fraction $Z$ of energy lost?
 First draw pictures for before and after
 ![[Law of Conservation of Momentum 2025-01-29 11.10.59.excalidraw]]
 By considering [[Law of Conservation of Momentum|conservation of momentum]],

@@ -1,4 +1,4 @@
-Energy is the ability to do [[work]], it has a standard unit of $\pu{ J}$, the quantity of energy transferred is equal to the work done. Work is not the only way of transferring energy, [[Internal Energy|internal energy]] can be transferred by heat (conduction, convection or radiation)
+Energy is the ability to do [[Work]], it has a standard unit of $\pu{ J}$, the quantity of energy transferred is equal to the work done. Work is not the only way of transferring energy, [[Internal Energy|internal energy]] can be transferred by heat (conduction, convection or radiation)
 ## Mathematically
 Consider the case of [[Newton's Second Law of Motion|Newton's second law]] where $F=F(x)$ (force depends only on [[Position|position]]). Define $V(x)=-\int F(x) \, dx$ as the potential. Then
 $$

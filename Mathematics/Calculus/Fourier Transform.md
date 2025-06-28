@@ -57,7 +57,7 @@ $$
 Which looks like:
 ![[Fourier Transform 2025-03-11 14.52.10.excalidraw]]
 ## Properties
-### Taking Fourier Transform is a [[linear|Linear]] Operation
+### Taking Fourier Transform is a [[Linear|Linear]] Operation
 If $f_{1}(x),f_{2}(x)$ have fourier transforms $\tilde{f}_{1}(p),\tilde{f}_{2}(p)$ respectively, then $F(x)=\alpha f_{1}(x)+\beta f_{2}(x)$ has fourier transform 
 $$
 \tilde{F}(p)=\alpha \tilde{f}_{1}(p)+\beta \tilde{f}_{2}(p)

@@ -1,4 +1,4 @@
-Suppose you have an [[Linear Ordinary Differential Equations|ordinary differential equation]] with some number of [[Regular Points|singular points]], then the [[Cauchy-Hadamard Theorem|radius of convergence]] about some point is as large as the distance to the nearest singular point, for the [[power series|power series]] $y=\sum_{n=0}^{\infty} a_{n}(x-x_{0})^{n}$ with singular points $x_{1},x_{2},\dots$:
+Suppose you have an [[Linear Ordinary Differential Equations|ordinary differential equation]] with some number of [[Regular Points|singular points]], then the [[Cauchy-Hadamard Theorem|radius of convergence]] about some point is as large as the distance to the nearest singular point, for the [[Power Series|Power Series]] $y=\sum_{n=0}^{\infty} a_{n}(x-x_{0})^{n}$ with singular points $x_{1},x_{2},\dots$:
 ![[Frobenius' Method 2025-02-18 12.52.50.excalidraw]]
 $$
 R=\text{min}\left| x_{0}-x_{i} \right| 

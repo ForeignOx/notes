@@ -1,6 +1,6 @@
 We assume that there is a [[Population|population]] with a mean $\mu$, and [[Standard Deviation|standard deviation]] $\sigma$ (often both unknown), our main aim is to estimate with little bias and small variance, $\mu$.
 Our secondary aim is to estimate $\sigma$
-We take a [[sampling|simple random sample]] of size $n$ from the population (of size $N\gg n$), we denote the [[samples|sample]] values as $X_{1},X_{2},\dots,X_{n}$ where $X_{i}$ are random variables with $X_{i}\in\mathbb{R}$ (not $\hspace{0pt}0$,1)
+We take a [[Sampling|simple random sample]] of size $n$ from the population (of size $N\gg n$), we denote the [[Samples|sample]] values as $X_{1},X_{2},\dots,X_{n}$ where $X_{i}$ are random variables with $X_{i}\in\mathbb{R}$ (not $\hspace{0pt}0$,1)
 Before we see their values, each $X_{i}$ is a [[Random Variables|random variable]] having the same mean and standard deviation:
 $$
 E(X_{i})=\mu 

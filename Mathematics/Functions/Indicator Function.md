@@ -1,4 +1,4 @@
-The function $\mathbb{1}$ is a function of a [[Subsets|subset]] of a [[sets|set]] that maps elements of the subset to one, and all other elements to $\hspace{0pt}0$. That is, if $A\subset X$:
+The function $\mathbb{1}$ is a function of a [[Subsets|subset]] of a [[Sets|set]] that maps elements of the subset to one, and all other elements to $\hspace{0pt}0$. That is, if $A\subset X$:
 $$
 \mathbb{1}_{A}(x)=\begin{cases}
 1&\text{if }x\in A\\0&\text{otherwise}

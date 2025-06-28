@@ -1,7 +1,7 @@
 
 
 ## Examples
-Say we have a [[light|light]] rod and two masses:
+Say we have a [[Light|Light]] rod and two masses:
 ![[Rigid Bodies 2025-03-10 14.33.56.excalidraw]]
 Then the distance $D$ from the axis to the [[Centre of Mass|centre of mass]] is 
 $$

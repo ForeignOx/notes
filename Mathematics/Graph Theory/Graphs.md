@@ -1,5 +1,5 @@
 A graph is a set of vertices joined by edges
-Given a finite [[sets|set]] $V$, let $\mathbb{V}=\{ \{ a,b \},a,b\in V,a \}$ be the set of subsets of $V$
+Given a finite [[Sets|set]] $V$, let $\mathbb{V}=\{ \{ a,b \},a,b\in V,a \}$ be the set of subsets of $V$
 ## Finite Undirected Graph
 A finite undirected graph $G$ is an ordered triple $(V,E,\Phi)$, where $V,E$ are finite sets and 
 $$

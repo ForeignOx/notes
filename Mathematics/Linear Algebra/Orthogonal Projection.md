@@ -33,7 +33,7 @@ $$
 So $\tilde{\underline{u}}\bot \underline{u}_{i}\forall i=1\dots k$ so $\underline{\tilde{u}}$ is orthogonal to all elements of $U$, so $\underline{\tilde{u}}\in U^{\bot}$
 ## Properties
 $P_{U}$ is a [[Linear Maps|linear]] operator $P:V\to V$
-The [[image|image]] of $P$ is $\text{Im}(P)=U$, while its [[Kernel|kernel]] is $\text{ker}(P)=U^{\bot}$
+The [[Image|Image]] of $P$ is $\text{Im}(P)=U$, while its [[Kernel|kernel]] is $\text{ker}(P)=U^{\bot}$
 $P_{U}^{2}=P_{U}$, since if you have a vector in the subspace, if you apply the transformation again, nothing happens , i.e. $\forall \underline{v}\in V$,
 $$
 P_{U}^{2}(\underline{v})=P_{U}(\underline{v})

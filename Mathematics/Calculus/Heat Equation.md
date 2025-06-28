@@ -20,7 +20,7 @@ We want the solution to the initial value problem for on the whole line, so we h
 $$
 \tilde{u}_{t}=k^{2}(ip)^{2}\tilde{u}=-k^{2}p^{2}\tilde{u}
 $$
-Which is a [[first Order Ordinary Differential Equations|first order ODE]],  so
+Which is a [[First Order Ordinary Differential Equations|first order ODE]],  so
 $$
 \tilde{u}=A(p)e^{ -k^{2}p^{2}t }
 $$

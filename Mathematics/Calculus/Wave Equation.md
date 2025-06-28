@@ -74,7 +74,7 @@ $$
 u(x,t)=g(x+ct)
 $$
 Which is a wave of fixed shape moving in negative direction at speed $c$
-Since the wave equation is [[linear|linear]] in $u$, if $u_{1},u_{2}$ are solutions, then so is $u=u_{1}+u_{2}$, so for any $f(p),g(q)$, the function
+Since the wave equation is [[Linear|Linear]] in $u$, if $u_{1},u_{2}$ are solutions, then so is $u=u_{1}+u_{2}$, so for any $f(p),g(q)$, the function
 $$
 u(x,t)=f(x-ct)+g(x+ct)
 $$

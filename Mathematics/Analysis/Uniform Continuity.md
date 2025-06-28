@@ -1,4 +1,4 @@
-If we have a [[Functions|function]] $f:X\to \mathbb{R}$ on an [[intervals|interval]] $X$ if uniformly [[Continuity|continuous]] if
+If we have a [[Functions|function]] $f:X\to \mathbb{R}$ on an [[Intervals|interval]] $X$ if uniformly [[Continuity|continuous]] if
 $$
 \forall\varepsilon>0\exists\delta>0:\forall c,x\in X\text{ with }\left| x-c \right| <\delta\implies \left| f(x)-f(c) \right| <\varepsilon
 $$

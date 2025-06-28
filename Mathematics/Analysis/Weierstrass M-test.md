@@ -1,4 +1,4 @@
-If we have the [[Series|series]] $\sum_{k=0}^{\infty}f_{k}(x)$ on an [[intervals|interval]] $I$, (where $f_{k}(x)$ is a [[Sequences of Functions|sequence of functions]])
+If we have the [[Series|series]] $\sum_{k=0}^{\infty}f_{k}(x)$ on an [[Intervals|interval]] $I$, (where $f_{k}(x)$ is a [[Sequences of Functions|sequence of functions]])
 Assuming $f_{k}(x)$ are all [[Boundedness|bounded]]: $\left| f_{k}(x) \right|\leq M_{k}~\forall x\in I$ and $\sum_{k=0}^{\infty} M_{k}$ [[Convergence|converges]], then $\sum_{k=0}^{\infty} f_{k}(x)$ [[Uniform Convergence|converges uniformly]] on $I$
 ## Proof
 By comparison, 

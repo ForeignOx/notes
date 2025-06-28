@@ -33,7 +33,7 @@ X=\{ x:A(x) \}=\{ x|A(x) \}
 $$
 Which means that $X$ is the set of all objects $x$ for which the [[Proposition|contitional proposition]] $A(x)$ is true
 
-Two sets $R$ and $S$ are equal iff [[subsets|$R\subseteq S$]] and $S\subseteq R$
+Two sets $R$ and $S$ are equal iff [[Subsets|$R\subseteq S$]] and $S\subseteq R$
 
 Note that there is no largest set $\mathfrak{U}$ such that $X\subset \mathfrak{U}$ for all $X$
 

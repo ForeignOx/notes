@@ -2,7 +2,7 @@ This is often abbreviated to IVT, and states that if I have a [[Functions|functi
 ![[Intermediate Value Theorem 2024-10-22 14.24.01.excalidraw]]
 One important application of the IVT is finding the zeros (roots) of a function. If $f$ is continuous on $[a,b]$ and $f(a)<0<f(b)$ then by the IVT it must go through zero somewhere in the interval there is at least one root such that $f(x)=0$
 ## Proof
-Pick $d$, assume $d<f(b)$ (otherwice pick $c=b$) Define the [[sets|set]]
+Pick $d$, assume $d<f(b)$ (otherwice pick $c=b$) Define the [[Sets|set]]
 $$
 X:=\{ x\in [a,b]|f(x)\leq d \}
 $$

@@ -101,7 +101,7 @@ $$
 A\underline{v}_{i}=\lambda \underline{v}_{i}
 $$
 For $i=1\dots p$
-Complete the [[basis|basis]] with $\underline{w}_{1},\dots,\underline{w}_{n-p}$ (if $A$ is $n\times n$), so $\left\{ \underline{v}_{1},\dots,\underline{v}_{p},\underline{w}_{1},\dots,\underline{w}_{n-p} \right\}$ spans $\mathbb{R}^{n}$. In this basis,
+Complete the [[Basis|Basis]] with $\underline{w}_{1},\dots,\underline{w}_{n-p}$ (if $A$ is $n\times n$), so $\left\{ \underline{v}_{1},\dots,\underline{v}_{p},\underline{w}_{1},\dots,\underline{w}_{n-p} \right\}$ spans $\mathbb{R}^{n}$. In this basis,
 ![[Eigenvalues 2025-01-30 10.12.55.excalidraw]]
 So we calculate the determinant columnwise, so 
 $$

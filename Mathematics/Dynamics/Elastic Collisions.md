@@ -1,6 +1,6 @@
 Elastic collisions are collisions where no [[Kinetic Energy|kinetic energy]] is lost. This typically involves two objects moving towards each other, colliding, and then moving away from each other
 ## Example
-[[Mass|Mass]] $2m$ with [[speed|speed]] $v$ collides elastically with stationary mass $m$, afterwards, they move in same direction, what's the speed of each particle afterwards?
+[[Mass|Mass]] $2m$ with [[Speed|Speed]] $v$ collides elastically with stationary mass $m$, afterwards, they move in same direction, what's the speed of each particle afterwards?
 If this was not an elastic collision, we could not predict the results (without using [[Coefficient of Restitution|coefficient of restitution]])
 ![[Elastic Collisions 2025-01-29 11.30.32.excalidraw]]
 Considering [[Law of Conservation of Momentum|conservation of momentum]]:
